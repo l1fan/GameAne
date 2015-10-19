@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/layout_10">
+            <LinearLayout android:id="@id/fragment_online_commit_layout" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40">
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorHintText" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/fragment_online_commit_problem_text" android:background="@color/colorEditBackground" android:paddingLeft="@dimen/layout_10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/commit_problem_type" android:maxLines="1" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:id="@id/fragment_online_commit_problem_type" android:background="@mipmap/icon_button_bg3" android:layout_width="@dimen/layout_50" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/fragment_online_commit_problem_img" android:layout_width="@dimen/layout_25" android:layout_height="@dimen/layout_25" android:src="@mipmap/icon_more" />
+                </LinearLayout>
+            </LinearLayout>
+            <EditText android:textSize="@dimen/text_15" android:textColor="@color/black" android:textColorHint="@color/colorHintText" android:gravity="left" android:id="@id/fragment_online_commit_problem_edit" android:background="@drawable/edit_tip_bg" android:padding="@dimen/layout_10" android:layout_width="fill_parent" android:layout_height="@dimen/layout_100" android:layout_marginTop="@dimen/layout_10" android:hint="@string/please_input_problem" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/layout_65" android:layout_marginTop="@dimen/layout_10">
+                <ImageView android:id="@id/fragment_online_commit_upload1" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                <ImageView android:id="@id/fragment_online_commit_upload2" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                <ImageView android:id="@id/fragment_online_commit_upload3" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                <ImageView android:id="@id/fragment_online_commit_upload4" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                <ImageView android:id="@id/fragment_online_commit_upload5" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                <LinearLayout android:orientation="vertical" android:id="@id/fragment_online_commit_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_1">
+                    <ImageView android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:src="@mipmap/upload_picture" />
+                    <TextView android:textSize="@dimen/text_10" android:textColor="@color/colorHintText" android:gravity="center_horizontal" android:layout_width="@dimen/layout_50" android:layout_height="fill_parent" android:text="@string/upload_picture" />
+                </LinearLayout>
+            </LinearLayout>
+            <EditText android:textSize="@dimen/text_13" android:gravity="center" android:id="@id/fragment_online_commit_email_edit" android:background="@color/colorEditBackground" android:padding="@dimen/layout_10" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginTop="@dimen/layout_10" android:hint="@string/please_input_email" />
+            <Button android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:gravity="center" android:id="@id/fragment_online_commit_button" android:background="@drawable/button_bg1" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginTop="@dimen/layout_10" android:layout_marginBottom="@dimen/layout_20" android:text="@string/commit_button" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AccountKit.AgreementText" parent="@style/Base.AccountKit.AgreementText">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="AccountKit.Button" parent="@style/Base.AccountKit.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="AccountKit.InputText" parent="@style/Base.AccountKit.InputText">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="AccountKit.Text" parent="@style/Base.AccountKit.Text">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="AccountKit.TitleText" parent="@style/Base.AccountKit.TitleText">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="Widget.MediaRouter.ChooserText" parent="">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Widget.MediaRouter.ControllerText.Title" parent="@style/Widget.MediaRouter.ControllerText">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="com_facebook_auth_dialog_instructions_textview">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/com_facebook_device_auth_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:fontFamily">roboto</item>
+    </style>
+</resources>

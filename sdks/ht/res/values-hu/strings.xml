@@ -1,39 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">Tetszik</string>
+    <string name="abc_action_bar_home_description">Ugrás a főoldalra</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Felfelé mozgatás</string>
+    <string name="abc_action_menu_overflow_description">További lehetőségek</string>
+    <string name="abc_action_mode_done">Kész</string>
+    <string name="abc_activity_chooser_view_see_all">Összes megtekintése</string>
+    <string name="abc_activitychooserview_choose_application">Válasszon ki egy alkalmazást</string>
+    <string name="abc_capital_off">KI</string>
+    <string name="abc_capital_on">BE</string>
+    <string name="abc_search_hint">Keresés…</string>
+    <string name="abc_searchview_description_clear">Lekérdezés törlése</string>
+    <string name="abc_searchview_description_query">Keresési lekérdezés</string>
+    <string name="abc_searchview_description_search">Keresés</string>
+    <string name="abc_searchview_description_submit">Lekérdezés küldése</string>
+    <string name="abc_searchview_description_voice">Hangalapú keresés</string>
+    <string name="abc_shareactionprovider_share_with">Megosztás a következővel:</string>
+    <string name="abc_shareactionprovider_share_with_application">Megosztás a következővel: %s</string>
+    <string name="abc_toolbar_collapse_description">Összecsukás</string>
+    <string name="accept">Elfogadás</string>
+    <string name="cast_ad_label">Hirdetés</string>
+    <string name="cast_casting_to_device">Átküldés ide: %1$s</string>
+    <string name="cast_closed_captions">Feliratok</string>
+    <string name="cast_closed_captions_unavailable">A feliratok nem érhetők el</string>
+    <string name="cast_disconnect">Szétválasztás</string>
+    <string name="cast_expanded_controller_ad_image_description">Ez a kép látható, amíg a Cast-erősítő hirdetést jelenít meg</string>
+    <string name="cast_expanded_controller_ad_in_progress">Hirdetés folyamatban…</string>
+    <string name="cast_expanded_controller_background_image">Lemezborító</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Élő közvetítés</string>
+    <string name="cast_expanded_controller_loading">Betöltés…</string>
+    <string name="cast_expanded_controller_skip_ad_label">Átugrás</string>
+    <string name="cast_forward">Előretekerés</string>
+    <string name="cast_forward_10">Előretekerés tíz másodperccel</string>
+    <string name="cast_forward_30">Előretekerés harminc másodperccel</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">Némítás</string>
+    <string name="cast_notification_connected_message">Csatlakozva a következőhöz: %1$s</string>
+    <string name="cast_notification_connecting_message">Csatlakozás a következőhöz: %1$s</string>
+    <string name="cast_notification_disconnect">Leválasztás</string>
+    <string name="cast_pause">Szüneteltetés</string>
+    <string name="cast_play">Lejátszás</string>
+    <string name="cast_rewind">Visszatekerés</string>
+    <string name="cast_rewind_10">Visszatekerés tíz másodperccel</string>
+    <string name="cast_rewind_30">Visszatekerés 30 másodperccel</string>
+    <string name="cast_seek_bar">Lejátszási keresősáv</string>
+    <string name="cast_skip_next">Ugrás a következő elemre</string>
+    <string name="cast_skip_prev">Ugrás az előző elemre</string>
+    <string name="cast_stop">Leállítás</string>
+    <string name="cast_stop_live_stream">Élő közvetítés leállítása</string>
+    <string name="cast_tracks_chooser_dialog_audio">Hang</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Mégse</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Feliratok</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">%1$d követése</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">Nem áll rendelkezésre hangsáv</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">Nem áll rendelkezésre szöveges sáv</string>
+    <string name="cast_tracks_chooser_dialog_none">Nincs</string>
+    <string name="cast_tracks_chooser_dialog_ok">OK</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Feliratok</string>
+    <string name="cast_unmute">Némítás feloldása</string>
+    <string name="com_accountkit_button_begin">Kezdés</string>
+    <string name="com_accountkit_button_cancel">Mégsem</string>
+    <string name="com_accountkit_button_confirm">Visszaigazolás</string>
+    <string name="com_accountkit_button_continue">Folytatás</string>
+    <string name="com_accountkit_button_edit">MÓDOSÍTÁS</string>
+    <string name="com_accountkit_button_log_in">Bejelentkezés</string>
+    <string name="com_accountkit_button_next">Tovább</string>
+    <string name="com_accountkit_button_ok">OK</string>
+    <string name="com_accountkit_button_resend_code_in">A kód újraküldése %1$s múlva</string>
+    <string name="com_accountkit_button_resend_sms">Kód újraküldése</string>
+    <string name="com_accountkit_button_send">Küldd el.</string>
+    <string name="com_accountkit_button_send_code_in_fb">Kód küldése a Facebook</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">A Kód küldése a Facebook pontra koppintva értesítést küldhetsz a megadott telefonszámhoz kapcsolt Facebook-fióknak.</string>
+    <string name="com_accountkit_button_start">Indítás</string>
+    <string name="com_accountkit_button_start_over">Újra</string>
+    <string name="com_accountkit_button_submit">Küldés</string>
+    <string name="com_accountkit_check_email">Nyisd meg a levelezésedet.</string>
+    <string name="com_accountkit_code_sent_to">"A kódot a következő elérhetőségedre küldtük el
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Koppints a %1$s gombra a Facebook &lt;a href=%2$s>használati feltételeinek&lt;/a>, &lt;a href=%3$s>adatkezelési szabályzatának&lt;/a> és &lt;a href=%4$s>a cookie-k használatáról szóló tájékoztatásának&lt;/a> elfogadásához.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Koppints a %1$s gombra a Facebook &lt;a href=%2$s>használati feltételeinek&lt;/a>, &lt;a href=%3$s>adatkezelési szabályzatának&lt;/a>, &lt;a href=%4$s>a cookie-k használatáról szóló tájékoztatásának&lt;/a>, valamint a(z) %6$s &lt;a href=%5$s>adatvédelmi szabályzatának&lt;/a> elfogadásához.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Koppints a %1$s gombra a Facebook &lt;a href=%2$s>használati feltételeinek&lt;/a>, &lt;a href=%3$s>adatkezelési szabályzatának&lt;/a>, &lt;a href=%4$s>a cookie-k használatáról szóló tájékoztatásának&lt;/a>, valamint a(z) %7$s &lt;a href=%5$s>adatvédelmi szabályzatának&lt;/a> és &lt;a href=%6$s>használati feltételeinek&lt;/a> elfogadásához.</string>
+    <string name="com_accountkit_confirmation_code_text">Nem kaptad meg a kódot?</string>
+    <string name="com_accountkit_confirmation_code_title">Írd be a kódot</string>
+    <string name="com_accountkit_email_invalid">Ez az e-mail cím helytelen. Kérjük, próbáld meg újra.</string>
+    <string name="com_accountkit_email_loading_title">E-mail küldése…</string>
+    <string name="com_accountkit_email_login_retry_title">Az e-mail cím megerősítése</string>
+    <string name="com_accountkit_email_login_text">A(z) %1$s gombra koppintva a Facebook Account Kit e-mailben küldött értesítéssel könnyítheti meg a(z) %2$s használatát. A használathoz nincs szükséged Facebook-fiókra. &lt;a href=%3$s>Tájékoztatás arról, hogyan használja a Facebook az adataidat&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">Add meg az e-mail címedet.</string>
+    <string name="com_accountkit_email_not_received">E-mail újraküldése</string>
+    <string name="com_accountkit_email_verify_title">Nyisd meg az általunk küldött e-mailt, és erősítsd meg a címedet.</string>
+    <string name="com_accountkit_error_title">Sajnos hiba történt.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Írd be a Facebooktól kapott kódot.</string>
+    <string name="com_accountkit_phone_loading_title">A kód elküldése folyamatban van…</string>
+    <string name="com_accountkit_phone_login_retry_title">Erősítsd meg a telefonszámodat.</string>
+    <string name="com_accountkit_phone_login_text">A(z) %1$s gombra koppintva a Facebook Account Kit SMS-ben küldött értesítéssel könnyítheti meg a(z) %2$s használatát. A használathoz nincs szükséged Facebook-fiókra. Ez üzenet- és adatforgalmi szolgáltatási díjakkal járhat. &lt;a href=%3$s>Tájékoztatás arról, hogyan használja a Facebook az adataidat&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">Add meg a telefonszámodat.</string>
+    <string name="com_accountkit_resend_check">Kérjük, a kód újraküldése előtt ellenőrizd a számot.</string>
+    <string name="com_accountkit_resend_email_text">Új e-mail küldése</string>
+    <string name="com_accountkit_resend_title">Elnézést kérünk. A folytatáshoz próbálkozz ezekkel a lehetőségekkel.</string>
+    <string name="com_accountkit_return_title">Visszalépés: %1$s…</string>
+    <string name="com_accountkit_sent_title">Elküldve!</string>
+    <string name="com_accountkit_success_title">Kész!</string>
+    <string name="com_accountkit_toolbar_title">Bejelentkezés a(z) %1$s alkalmazásba</string>
+    <string name="com_accountkit_verify_confirmation_code_title">"A kódot nem sikerült ellenőrizni.
+Próbáld meg újra:"</string>
+    <string name="com_accountkit_verify_title">A kód ellenőrzése…</string>
+    <string name="com_facebook_device_auth_instructions">Keresd fel a &lt;b>facebook.com/device&lt;/b> címet, és írd be a fent megjelenített kódot.</string>
+    <string name="com_facebook_image_download_unknown_error">Váratlan hiba történt egy kép betöltése közben.</string>
+    <string name="com_facebook_internet_permission_error_message">A webes bejelentkezéshez szükséges a jogosultság az internet használatára.</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest-hiba</string>
     <string name="com_facebook_like_button_liked">Kedveled</string>
-    <string name="com_facebook_loginview_log_out_button">Kijelentkezés</string>
+    <string name="com_facebook_like_button_not_liked">Tetszik</string>
+    <string name="com_facebook_loading">Betöltés…</string>
+    <string name="com_facebook_loginview_cancel_action">Törlés</string>
     <string name="com_facebook_loginview_log_in_button">Bejelentkezés</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Folytatás a Facebookkal</string>
     <string name="com_facebook_loginview_log_in_button_long">Bejelentkezés a Facebook használatával</string>
+    <string name="com_facebook_loginview_log_out_action">Kijelentkezés</string>
+    <string name="com_facebook_loginview_log_out_button">Kijelentkezés</string>
     <string name="com_facebook_loginview_logged_in_as">Bejelentkezve %1$s néven</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Bejelentkezve a Facebook használatával</string>
-    <string name="com_facebook_loginview_log_out_action">Kijelentkezés</string>
-    <string name="com_facebook_loginview_cancel_action">Törlés</string>
-    <string name="com_facebook_loading">Betöltés...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest-hiba</string>
-    <string name="com_facebook_internet_permission_error_message">A webes bejelentkezéshez szükséges a jogosultság az internet használatára.</string>
-    <string name="com_facebook_tooltip_default">Újdonság! A döntés a kezedben van: kiválaszthatod, hogy milyen adatokat osztasz meg az alkalmazásokkal.</string>
-    <string name="com_facebook_image_download_unknown_error">Váratlan hiba történt egy kép betöltése közben.</string>
-    <string name="com_facebook_share_button_text">Megosztás</string>
     <string name="com_facebook_send_button_text">Küldés</string>
+    <string name="com_facebook_share_button_text">Megosztás</string>
+    <string name="com_facebook_smart_device_instructions">A fiók hozzákapcsolásához nyisd meg a Facebook alkalmazást a mobilkészülékeden, és nézd meg az értesítéseket.</string>
+    <string name="com_facebook_smart_device_instructions_or">- VAGY -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">Nem te vagy az?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Bejelentkezés megerősítése</string>
+    <string name="com_facebook_tooltip_default">A döntés a kezedben van: kiválaszthatod, hogy milyen adatokat osztasz meg az alkalmazásokkal.</string>
+    <string name="common_google_play_services_enable_button">Engedélyezés</string>
+    <string name="common_google_play_services_enable_text">"A(z) %1$s alkalmazás csak akkor működik, ha  engedélyezi a Google Play-szolgáltatásokat."</string>
+    <string name="common_google_play_services_enable_title">Google Play-szolgáltatások engedélyezése</string>
+    <string name="common_google_play_services_install_button">Telepítés</string>
+    <string name="common_google_play_services_install_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek hiányoznak az eszközről.</string>
+    <string name="common_google_play_services_install_title">A Google Play-szolgáltatások beszerzése</string>
+    <string name="common_google_play_services_notification_ticker">Google Play-szolgáltatások – hiba</string>
+    <string name="common_google_play_services_unknown_issue">A(z) %1$s alkalmazás problémába ütközött a Google Play-szolgáltatások használata során. Próbálkozzon újra.</string>
+    <string name="common_google_play_services_unsupported_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyeket eszköze nem támogat.</string>
+    <string name="common_google_play_services_update_button">Frissítés</string>
+    <string name="common_google_play_services_update_text">A(z) %1$s alkalmazás csak akkor fog működni, ha frissíti a Google Play-szolgáltatásokat.</string>
+    <string name="common_google_play_services_update_title">A Google Play-szolgáltatások frissítése</string>
+    <string name="common_google_play_services_updating_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek frissítése folyamatban van.</string>
+    <string name="common_google_play_services_wear_update_text">A Google Play-szolgáltatások új verziójára van szükség. A szolgáltatás hamarosan frissíti önmagát.</string>
+    <string name="common_open_on_phone">Megnyitás a telefonon</string>
+    <string name="common_signin_button_text">Bejelentkezés</string>
+    <string name="common_signin_button_text_long">Bejelentkezés Google-fiókkal</string>
+    <string name="create_calendar_message">Engedélyezi a hirdetés számára naptáresemény létrehozását?</string>
+    <string name="create_calendar_title">Naptáresemény létrehozása</string>
+    <string name="debug_menu_ad_information">Hirdetési információ</string>
+    <string name="debug_menu_creative_preview">Kreatív előnézete</string>
+    <string name="debug_menu_title">Hibaelhárítási mód kiválasztása</string>
+    <string name="debug_menu_troubleshooting">Problémamegoldás</string>
+    <string name="decline">Elutasítás</string>
+    <string name="mr_button_content_description">Átküldés gomb</string>
+    <string name="mr_chooser_searching">Eszközök keresése</string>
+    <string name="mr_chooser_title">Átküldés ide</string>
+    <string name="mr_controller_album_art">Lemezborító</string>
+    <string name="mr_controller_casting_screen">Képernyőtartalom átküldése</string>
+    <string name="mr_controller_close_description">Bezárás</string>
+    <string name="mr_controller_collapse_group">Összecsukás</string>
+    <string name="mr_controller_disconnect">Leválasztás</string>
+    <string name="mr_controller_expand_group">Kibontás</string>
+    <string name="mr_controller_no_info_available">Nincs információ</string>
+    <string name="mr_controller_no_media_selected">Nincs média kiválasztva</string>
+    <string name="mr_controller_pause">Szüneteltetés</string>
+    <string name="mr_controller_play">Lejátszás</string>
+    <string name="mr_controller_stop">Átküldés leállítása</string>
+    <string name="mr_system_route_name">Rendszer</string>
+    <string name="mr_user_route_category_name">Eszközök</string>
+    <string name="place_autocomplete_clear_button">Keresés törlése</string>
+    <string name="place_autocomplete_search_hint">Keresés</string>
+    <string name="search_menu_title">Keresés</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">Engedélyezi a hirdetés számára a kép tárolását a Képgalériában?</string>
+    <string name="store_picture_title">Kép mentése</string>
+    <string name="wallet_buy_button_place_holder">Vásárlás a Google-lal</string>
 </resources>

@@ -1,39 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">좋아요</string>
+    <string name="abc_action_bar_home_description">홈 탐색</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">위로 탐색</string>
+    <string name="abc_action_menu_overflow_description">옵션 더보기</string>
+    <string name="abc_action_mode_done">완료</string>
+    <string name="abc_activity_chooser_view_see_all">전체 보기</string>
+    <string name="abc_activitychooserview_choose_application">앱 선택</string>
+    <string name="abc_capital_off">사용 안함</string>
+    <string name="abc_capital_on">사용</string>
+    <string name="abc_search_hint">검색...</string>
+    <string name="abc_searchview_description_clear">검색어 삭제</string>
+    <string name="abc_searchview_description_query">검색어</string>
+    <string name="abc_searchview_description_search">검색</string>
+    <string name="abc_searchview_description_submit">검색어 보내기</string>
+    <string name="abc_searchview_description_voice">음성 검색</string>
+    <string name="abc_shareactionprovider_share_with">공유 대상</string>
+    <string name="abc_shareactionprovider_share_with_application">%s와(과) 공유</string>
+    <string name="abc_toolbar_collapse_description">접기</string>
+    <string name="accept">동의</string>
+    <string name="cast_ad_label">광고</string>
+    <string name="cast_casting_to_device">%s(으)로 전송</string>
+    <string name="cast_closed_captions">자막</string>
+    <string name="cast_closed_captions_unavailable">자막 사용 불가</string>
+    <string name="cast_disconnect">연결 해제</string>
+    <string name="cast_expanded_controller_ad_image_description">Cast 수신기에서 광고를 재생할 때 이미지가 표시됨</string>
+    <string name="cast_expanded_controller_ad_in_progress">광고 진행 중…</string>
+    <string name="cast_expanded_controller_background_image">앨범아트</string>
+    <string name="cast_expanded_controller_live_stream_indicator">실시간 스트림</string>
+    <string name="cast_expanded_controller_loading">로드 중…</string>
+    <string name="cast_expanded_controller_skip_ad_label">건너뛰기</string>
+    <string name="cast_forward">앞으로</string>
+    <string name="cast_forward_10">10초 앞으로</string>
+    <string name="cast_forward_30">30초 앞으로</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">음소거</string>
+    <string name="cast_notification_connected_message">%1$s에 연결됨</string>
+    <string name="cast_notification_connecting_message">%1$s에 연결 중</string>
+    <string name="cast_notification_disconnect">연결 해제</string>
+    <string name="cast_pause">일시중지</string>
+    <string name="cast_play">재생</string>
+    <string name="cast_rewind">되감기</string>
+    <string name="cast_rewind_10">10초 되감기</string>
+    <string name="cast_rewind_30">30초 되감기</string>
+    <string name="cast_seek_bar">재생 찾기 컨트롤</string>
+    <string name="cast_skip_next">다음 항목으로 건너뛰기</string>
+    <string name="cast_skip_prev">이전 항목으로 건너뛰기</string>
+    <string name="cast_stop">중지</string>
+    <string name="cast_stop_live_stream">실시간 스트리밍 중지</string>
+    <string name="cast_tracks_chooser_dialog_audio">오디오</string>
+    <string name="cast_tracks_chooser_dialog_cancel">취소</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">자막</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">트랙 %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">사용 가능한 오디오 트랙이 없습니다.</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">사용 가능한 텍스트 트랙이 없습니다.</string>
+    <string name="cast_tracks_chooser_dialog_none">없음</string>
+    <string name="cast_tracks_chooser_dialog_ok">확인</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">자막</string>
+    <string name="cast_unmute">음소거 해제</string>
+    <string name="com_accountkit_button_begin">시작</string>
+    <string name="com_accountkit_button_cancel">취소</string>
+    <string name="com_accountkit_button_confirm">확인</string>
+    <string name="com_accountkit_button_continue">계속</string>
+    <string name="com_accountkit_button_edit">수정</string>
+    <string name="com_accountkit_button_log_in">로그인</string>
+    <string name="com_accountkit_button_next">다음</string>
+    <string name="com_accountkit_button_ok">확인</string>
+    <string name="com_accountkit_button_resend_code_in">%1$s에서 코드 재전송</string>
+    <string name="com_accountkit_button_resend_sms">코드 재전송</string>
+    <string name="com_accountkit_button_send">보내기</string>
+    <string name="com_accountkit_button_send_code_in_fb">Facebook 코드 보내기</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Facebook 코드 보내기 버튼을 누르면 입력하신 전화번호와 연결된 Facebook 계정으로 알림을 보내드립니다.</string>
+    <string name="com_accountkit_button_start">시작</string>
+    <string name="com_accountkit_button_start_over">다시 시도</string>
+    <string name="com_accountkit_button_submit">제출</string>
+    <string name="com_accountkit_check_email">이메일 열기</string>
+    <string name="com_accountkit_code_sent_to">"다음에 코드를 전송했습니다
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">%1$s 버튼을 눌러 Facebook의 &lt;a href=%2$s>약관&lt;/a>, &lt;a href=%3$s>데이터 정책&lt;/a>, &lt;a href=%4$s>쿠키 사용&lt;/a>에 동의합니다.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">%1$s 버튼을 눌러 Facebook의 &lt;a href=%2$s>약관&lt;/a>, &lt;a href=%3$s>데이터 정책&lt;/a>, &lt;a href=%4$s>쿠키 사용&lt;/a> 및 %6$s의 &lt;a href=%5$s>개인정보취급방침&lt;/a>에 동의합니다.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">%1$s 버튼을 눌러 Facebook의 &lt;a href=%2$s>약관&lt;/a>, &lt;a href=%3$s>데이터 정책&lt;/a>, &lt;a href=%4$s>쿠키 사용&lt;/a> 및 %7$s의 &lt;a href=%5$s>개인정보취급방침&lt;/a>, &lt;a href=%6$s>서비스 약관&lt;/a>에 동의합니다.</string>
+    <string name="com_accountkit_confirmation_code_text">코드를 받지 못하셨나요?</string>
+    <string name="com_accountkit_confirmation_code_title">코드 입력</string>
+    <string name="com_accountkit_email_invalid">올바른 이메일이 아닙니다. 다시 시도해보세요.</string>
+    <string name="com_accountkit_email_loading_title">이메일 보내는 중…</string>
+    <string name="com_accountkit_email_login_retry_title">이메일을 확인하세요</string>
+    <string name="com_accountkit_email_login_text">%1$s 버튼을 누르면 Facebook Account Kit에서 이메일 인증을 받을 수 있습니다. 인증을 받으면 Facebook 계정 정보 없이도 %2$s 앱을 이용할 수 있습니다. &lt;a href=%3$s>Facebook에서 사용자 정보를 이용하는 방식에 대해 알아보기&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">이메일 주소 입력</string>
+    <string name="com_accountkit_email_not_received">이메일 다시 보내기</string>
+    <string name="com_accountkit_email_verify_title">Facebook에서 보낸 이메일을 열고 주소를 확인하세요</string>
+    <string name="com_accountkit_error_title">죄송합니다. 문제가 발생했습니다.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Facebook에서 전송한 코드를 입력하세요</string>
+    <string name="com_accountkit_phone_loading_title">코드를 전송하는 중…</string>
+    <string name="com_accountkit_phone_login_retry_title">휴대폰 번호 확인</string>
+    <string name="com_accountkit_phone_login_text">%1$s 버튼을 누르면 Facebook Account Kit에서 SMS 인증을 받을 수 있습니다. 인증을 받으면 Facebook 계정 정보 없이도 %2$s 앱을 이용할 수 있습니다. 메시지 및 데이터 요금이 부과될 수 있습니다. &lt;a href=%3$s>Facebook에서 사용자 정보를 이용하는 방식에 대해 알아보기&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">휴대폰 번호 입력</string>
+    <string name="com_accountkit_resend_check">휴대폰 번호를 확인한 다음 코드를 재전송하세요.</string>
+    <string name="com_accountkit_resend_email_text">새 이메일 보내기</string>
+    <string name="com_accountkit_resend_title">죄송합니다. 계속하려면 다른 방법으로 코드를 요청하세요.</string>
+    <string name="com_accountkit_return_title">%1$s에 이동하는 중…</string>
+    <string name="com_accountkit_sent_title">보냈습니다!</string>
+    <string name="com_accountkit_success_title">완료!</string>
+    <string name="com_accountkit_toolbar_title">%1$s에 로그인</string>
+    <string name="com_accountkit_verify_confirmation_code_title">"코드를 확인할 수 없습니다.
+다시 시도:"</string>
+    <string name="com_accountkit_verify_title">코드를 인증하는 중…</string>
+    <string name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b>를 방문하여 위에 표시된 코드를 입력하세요.</string>
+    <string name="com_facebook_image_download_unknown_error">이미지를 다운로드하는 중 예기치 않은 오류가 발생했습니다.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView에 로그인하려면 인터넷 권한이 필요합니다</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest 오류</string>
     <string name="com_facebook_like_button_liked">좋아요</string>
-    <string name="com_facebook_loginview_log_out_button">로그아웃</string>
+    <string name="com_facebook_like_button_not_liked">좋아요</string>
+    <string name="com_facebook_loading">읽어들이는 중…</string>
+    <string name="com_facebook_loginview_cancel_action">취소</string>
     <string name="com_facebook_loginview_log_in_button">로그인</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Facebook으로 계속</string>
     <string name="com_facebook_loginview_log_in_button_long">Facebook으로 로그인</string>
+    <string name="com_facebook_loginview_log_out_action">로그아웃</string>
+    <string name="com_facebook_loginview_log_out_button">로그아웃</string>
     <string name="com_facebook_loginview_logged_in_as">로그인할 이름: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Facebook 계정으로 로그인함</string>
-    <string name="com_facebook_loginview_log_out_action">로그아웃</string>
-    <string name="com_facebook_loginview_cancel_action">취소</string>
-    <string name="com_facebook_loading">읽어들이는 중...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest 오류</string>
-    <string name="com_facebook_internet_permission_error_message">WebView에 로그인하려면 인터넷 권한이 필요합니다</string>
-    <string name="com_facebook_tooltip_default">새로운 기능! 이제 앱과 어떤 정보를 공유할지 자유롭게 선택할 수 있습니다.</string>
-    <string name="com_facebook_image_download_unknown_error">이미지를 다운로드하는 중 예기치 않은 오류가 발생했습니다.</string>
-    <string name="com_facebook_share_button_text">공유하기</string>
     <string name="com_facebook_send_button_text">보내기</string>
+    <string name="com_facebook_share_button_text">공유하기</string>
+    <string name="com_facebook_smart_device_instructions">계정을 연결하려면 모바일 기기에서 Facebook 앱을 열고 알림을 확인하세요.</string>
+    <string name="com_facebook_smart_device_instructions_or">- 또는 -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">회원님이 아닌가요?</string>
+    <string name="com_facebook_smart_login_confirmation_title">로그인 확인</string>
+    <string name="com_facebook_tooltip_default">원하는 정보를 선택하여 앱에 공유할 수 있습니다.</string>
+    <string name="common_google_play_services_enable_button">사용 설정</string>
+    <string name="common_google_play_services_enable_text">Google Play 서비스를 사용하도록 설정해야 %1$s이(가) 작동합니다.</string>
+    <string name="common_google_play_services_enable_title">Google Play 서비스 사용</string>
+    <string name="common_google_play_services_install_button">설치</string>
+    <string name="common_google_play_services_install_text">기기에 Google Play 서비스가 설치되어 있어야 %1$s이(가) 실행됩니다.</string>
+    <string name="common_google_play_services_install_title">Google Play 서비스 설치</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 서비스 오류</string>
+    <string name="common_google_play_services_unknown_issue">%1$s에서 Google Play 서비스를 사용하는 데 문제가 있습니다. 다시 시도하세요.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s은(는) Google Play 서비스 없이는 실행되지 않으나, 기기에서 Google Play 서비스를 지원하지 않습니다.</string>
+    <string name="common_google_play_services_update_button">업데이트</string>
+    <string name="common_google_play_services_update_text">Google Play 서비스를 업데이트해야 %1$s이(가) 실행됩니다.</string>
+    <string name="common_google_play_services_update_title">Google Play 서비스 업데이트</string>
+    <string name="common_google_play_services_updating_text">현재 업데이트 중인 Google Play 서비스가 있어야 %1$s이(가) 실행됩니다.</string>
+    <string name="common_google_play_services_wear_update_text">새 버전의 Google Play 서비스가 필요합니다. 곧 자동으로 업데이트됩니다.</string>
+    <string name="common_open_on_phone">스마트폰에서 열기</string>
+    <string name="common_signin_button_text">로그인</string>
+    <string name="common_signin_button_text_long">Google 계정으로 로그인</string>
+    <string name="create_calendar_message">광고에서 캘린더 일정을 만들도록 허용하시겠습니까?</string>
+    <string name="create_calendar_title">캘린더 일정 만들기</string>
+    <string name="debug_menu_ad_information">광고 정보</string>
+    <string name="debug_menu_creative_preview">광고 소재 미리보기</string>
+    <string name="debug_menu_title">디버그 모드 선택</string>
+    <string name="debug_menu_troubleshooting">문제해결</string>
+    <string name="decline">거부</string>
+    <string name="messenger_send_button_text">보내기</string>
+    <string name="mr_button_content_description">전송 버튼</string>
+    <string name="mr_chooser_searching">기기를 찾는 중</string>
+    <string name="mr_chooser_title">전송할 기기</string>
+    <string name="mr_controller_album_art">앨범아트</string>
+    <string name="mr_controller_casting_screen">화면 전송 중</string>
+    <string name="mr_controller_close_description">닫기</string>
+    <string name="mr_controller_collapse_group">접기</string>
+    <string name="mr_controller_disconnect">연결 해제</string>
+    <string name="mr_controller_expand_group">펼치기</string>
+    <string name="mr_controller_no_info_available">정보가 없습니다.</string>
+    <string name="mr_controller_no_media_selected">선택한 미디어 없음</string>
+    <string name="mr_controller_pause">일시중지</string>
+    <string name="mr_controller_play">재생</string>
+    <string name="mr_controller_stop">전송 중지</string>
+    <string name="mr_system_route_name">시스템</string>
+    <string name="mr_user_route_category_name">기기</string>
+    <string name="place_autocomplete_clear_button">검색어 지우기</string>
+    <string name="place_autocomplete_search_hint">검색</string>
+    <string name="search_menu_title">검색</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">광고에서 사진 갤러리에 이미지를 저장하도록 허용하시겠습니까?</string>
+    <string name="store_picture_title">이미지 저장</string>
+    <string name="wallet_buy_button_place_holder">Google로 구매</string>
 </resources>

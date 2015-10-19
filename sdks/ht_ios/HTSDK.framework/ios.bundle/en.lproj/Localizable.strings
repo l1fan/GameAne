@@ -1,0 +1,123 @@
+"正在登录"="Logging In";
+"登录成功"="Logged In";
+"网络连接失败"="Network connection failed";
+"绑定失败,该账号已绑定过"="Account-linking failed. Account already linked";
+"绑定失败"="Account-linking failed";
+"请输入有效邮箱账号"="Please enter a valid email account";
+"请输入密码"="Please enter password";
+"请输入新密码"="Enter new password";
+"请再次输入密码"="Confirm password";
+"登录"="Login";
+"确认"="Confirm";
+"绑定"="Link";
+"关闭"="Close";
+"返回"="Return";
+"取消"="Cancel";
+"用户名或密码不能为空"="Username or password cannot be empty";
+"请输入正确的邮箱账号"="Please enter a valid email account";
+"密码长度在6位至16位之间"="Password must be between 6 - 16 characters";
+"密码不能含有空格"="Password cannot contain spaces";
+"两次输入不一致"="Password does not match";
+"正在绑定"="Linking";
+"绑定成功"="Account linked";
+"绑定失败,邮箱已被绑定"="Account-linking failed. Email already linked";
+"绑定失败,设备或账号已被绑定过"="Account-linking failed. Device or account already linked";
+"账号中心"="Account Center";
+"游客账号:"="Visitor Account:";
+"官方账号:"="Official Account:";
+"已绑定"="Linked";
+"未绑定"="Not Linked";
+"修改密码"="Change Password";
+"绑定官方账号,获得价值10$大礼包"="Link the official account to get a gift $10 of value";
+"其他账号:"="Other Accounts:";
+"切换账号"="Switch Account";
+"联系客服"="Contact Customer Service";
+"粉丝页"="Fan Page";
+"优惠储值"="Discounted Purchase";
+"账号登录"="Account Login";
+"请输入账号"="Please enter account";
+"账号注册"="Account Registration";
+"忘记密码"="Forgot Password";
+"用户名或密码为空"="Username or password is empty";
+"用户名或密码错误"="Username or password incorrect";
+"登录失败"="Login failed";
+"账号切换"="Switch Account";
+"请选择登录方式"="Select Login Method";
+"官方账号"="Official Account";
+"手机账号"="Mobile Account";
+"iOS 10使用者需要手动到设置里面登录游戏中心"="iSO10 users must login into the game center from settings manually";
+"进入游戏"="Enter Game";
+"快速登录"="Enter Game";
+"当前账号:"="Current Account";
+"正在载入"="Loading";
+"其他登录方式"="Other login method";
+"请输入官方账号注册邮箱"="Please enter the registered email for the official account";
+"重置"="Reset";
+"请输入正确的邮箱"="Please enter a valid email address";
+"正在发送"="Sending";
+"密码已发送,请注意查收"="Password sent. Please check your mail";
+"邮箱不正确"="Wrong email";
+"不正确"="Incorrect";
+"详情查看"="View Details";
+"[已回复]"="[Replied]";
+"[未回复]"="[Not Replied]";
+"问:"="Q:";
+"答:"="A:";
+"请详细描述您的问题,我们会尽快回复您!"="Please describe your issues encountered, and we will get back to you ASAP!";
+"上传图片"="Upload image";
+"提交"="Submit";
+"请描述您的问题"="Please describe your issues encountered";
+"不能包含表情和特殊字符"="Cannot contain emoticon or special characters";
+"正在提交"="Submitting";
+"提交成功"="Submitted";
+"提交失败,请重试"="Submission failed. Please try again";
+"隐私条款"="Privacy Policy";
+"当前没有联系记录"="No contact records currently";
+"网络连接失败"="Network connection failed";
+"游戏类问题"="Game issues";
+"活动类问题"="Event issues";
+"充值类问题"="Payment issues";
+"账号密码类问题"="Account/password issues";
+"建议类问题"="Recommendations";
+"其他问题"="Other issues";
+"请选择问题类型"="Please select issue category";
+"请留下您的联系邮箱,方便我们与您取得联系!"="Please leave your email so we can get back to you!";
+"其他账号绑定"="Other account linking";
+"注：每个游客只能绑定一个其他账号"="Note: Every visitor can only link one other account";
+"手机号码"="Cellphone Number";
+"完成"="Complete";
+"图片最多可选择五张"="Select up to 5 images";
+
+"请输入正确的邮箱XXXX@XX.XXX"="Please enter a valid email address XXXX@XX.XXX";
+"请输入新密码"="Enter new password";
+
+"我同意"="I agree";
+"服务条款"="Terms of Service";
+"和"="&";
+"隐私条款"="Privacy Policy";
+"注册并登录"="Register and Login";
+"请输入常用邮箱,方便密码找回"="Enter an email address to retrieve your password";
+
+"用戶名長度應在6位至32位之間"="Username must be between 6 - 32 characters";
+
+"密码输入不一致请重新输入"="Password does not match. Please try again";
+"请同意使用者协议"="Please agree to our user agreement";
+"正在注册"="Registering";
+"注册并登录成功"="Registered and Logged in";
+"用户名已存在"="Username already exists";
+
+
+
+"请再次输入新密码"="Confirm new password";
+"密码不能为空"="Password cannot be empty";
+"确认修改"="Confirm change";
+
+
+"密码修改成功,请重新登录游戏"="Password change. Please relog into the game";
+"新密码不能和旧密码相同"="New password cannot be as same as the old";
+"常见问题"="FAQ";
+"在线提交"="Submit Online";
+"我的记录"="My Records";
+
+
+

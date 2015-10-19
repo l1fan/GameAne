@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorHintText" android:gravity="center_vertical" android:id="@id/item_online_commit_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/layout_10" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/item_online_commit_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_25" android:checked="true" android:button="@drawable/check_list" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,39 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">ถูกใจ</string>
+    <string name="abc_action_bar_home_description">นำทางไปหน้าแรก</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">นำทางขึ้น</string>
+    <string name="abc_action_menu_overflow_description">ตัวเลือกอื่น</string>
+    <string name="abc_action_mode_done">เสร็จสิ้น</string>
+    <string name="abc_activity_chooser_view_see_all">ดูทั้งหมด</string>
+    <string name="abc_activitychooserview_choose_application">เลือกแอป</string>
+    <string name="abc_capital_off">ปิด</string>
+    <string name="abc_capital_on">เปิด</string>
+    <string name="abc_search_hint">ค้นหา…</string>
+    <string name="abc_searchview_description_clear">ล้างข้อความค้นหา</string>
+    <string name="abc_searchview_description_query">ข้อความค้นหา</string>
+    <string name="abc_searchview_description_search">ค้นหา</string>
+    <string name="abc_searchview_description_submit">ส่งข้อความค้นหา</string>
+    <string name="abc_searchview_description_voice">ค้นหาด้วยเสียง</string>
+    <string name="abc_shareactionprovider_share_with">แชร์กับ</string>
+    <string name="abc_shareactionprovider_share_with_application">แชร์กับ %s</string>
+    <string name="abc_toolbar_collapse_description">ยุบ</string>
+    <string name="accept">ยอมรับ</string>
+    <string name="cast_ad_label">โฆษณา</string>
+    <string name="cast_casting_to_device">กำลังแคสต์ไปยัง %1$s</string>
+    <string name="cast_closed_captions">คำอธิบายภาพ</string>
+    <string name="cast_closed_captions_unavailable">คำบรรยายไม่พร้อมใช้งาน</string>
+    <string name="cast_disconnect">ยกเลิกการเชื่อมต่อ</string>
+    <string name="cast_expanded_controller_ad_image_description">ภาพที่แสดงขณะที่เครื่องรับการแคสต์กำลังเล่นโฆษณา</string>
+    <string name="cast_expanded_controller_ad_in_progress">โฆษณาอยู่ระหว่างดำเนินการ...</string>
+    <string name="cast_expanded_controller_background_image">ปกอัลบั้ม</string>
+    <string name="cast_expanded_controller_live_stream_indicator">การสตรีมแบบสด</string>
+    <string name="cast_expanded_controller_loading">กำลังโหลด…</string>
+    <string name="cast_expanded_controller_skip_ad_label">ข้าม</string>
+    <string name="cast_forward">กรอไปข้างหน้า</string>
+    <string name="cast_forward_10">กรอไปข้างหน้า 10 วินาที</string>
+    <string name="cast_forward_30">กรอไปข้างหน้า 30 วินาที</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">ปิดเสียง</string>
+    <string name="cast_notification_connected_message">เชื่อมต่อ %1$s แล้ว</string>
+    <string name="cast_notification_connecting_message">กำลังเชื่อมต่อ %1$s</string>
+    <string name="cast_notification_disconnect">ยกเลิกการเชื่อมต่อ</string>
+    <string name="cast_pause">หยุดชั่วคราว</string>
+    <string name="cast_play">เล่น</string>
+    <string name="cast_rewind">กรอกลับ</string>
+    <string name="cast_rewind_10">กรอกลับ 10 วินาที</string>
+    <string name="cast_rewind_30">กรอกลับ 30 วินาที</string>
+    <string name="cast_seek_bar">ตัวควบคุมการค้นหาในการเล่น</string>
+    <string name="cast_skip_next">ข้ามไปยังรายการถัดไป</string>
+    <string name="cast_skip_prev">ข้ามไปยังรายการก่อนหน้า</string>
+    <string name="cast_stop">หยุด</string>
+    <string name="cast_stop_live_stream">หยุดการสตรีมแบบสด</string>
+    <string name="cast_tracks_chooser_dialog_audio">เสียง</string>
+    <string name="cast_tracks_chooser_dialog_cancel">ยกเลิก</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">คำอธิบายภาพ</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">ติดตาม %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">ไม่มีแทร็กเสียง</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">ไม่มีแทร็กข้อความ</string>
+    <string name="cast_tracks_chooser_dialog_none">ไม่มี</string>
+    <string name="cast_tracks_chooser_dialog_ok">ตกลง</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">คำบรรยาย</string>
+    <string name="cast_unmute">เปิดเสียง</string>
+    <string name="com_accountkit_button_begin">เริ่มต้น</string>
+    <string name="com_accountkit_button_cancel">ยกเลิก</string>
+    <string name="com_accountkit_button_confirm">ยืนยัน</string>
+    <string name="com_accountkit_button_continue">ดำเนินต่อ</string>
+    <string name="com_accountkit_button_edit">แก้ไข</string>
+    <string name="com_accountkit_button_log_in">เข้าสู่ระบบ</string>
+    <string name="com_accountkit_button_next">ถัดไป</string>
+    <string name="com_accountkit_button_ok">ตกลง</string>
+    <string name="com_accountkit_button_resend_code_in">ส่งรหัสอีกครั้งใน %1$s</string>
+    <string name="com_accountkit_button_resend_sms">ส่งรหัสอีกครั้ง</string>
+    <string name="com_accountkit_button_send">ส่ง</string>
+    <string name="com_accountkit_button_send_code_in_fb">ส่งรหัสใน Facebook</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">แตะ ส่งรหัส ใน Facebook เพื่อส่งการแจ้งเตือนไปยังบัญชีผู้ใช้ Facebook ที่เชื่อมโยงกับหมายเลขโทรศัพท์ที่คุณป้อน</string>
+    <string name="com_accountkit_button_start">เริ่ม</string>
+    <string name="com_accountkit_button_start_over">ลองอีกครั้ง</string>
+    <string name="com_accountkit_button_submit">ส่ง</string>
+    <string name="com_accountkit_check_email">เปิดอีเมลของคุณ</string>
+    <string name="com_accountkit_code_sent_to">เราได้ส่งรหัสไปยัง %1$s แล้ว</string>
+    <string name="com_accountkit_confirmation_code_agreement">แตะ %1$s เพื่อยอมรับ&lt;a href=%2$s>ข้อกำหนด&lt;/a> &lt;a href=%3$s>นโยบายข้อมูล&lt;/a> และ &lt;a href=%4$s>การใช้งานคุกกี้&lt;/a> ของ Facebook</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">แตะ %1$s เพื่อยอมรับ&lt;a href=%2$s>ข้อกำหนด&lt;/a> &lt;a href=%3$s>นโยบายข้อมูล&lt;/a> &lt;a href=%4$s>การใช้งานคุกกี้&lt;/a> และ &lt;a href=%5$s>นโยบายความปลอดภัย&lt;/a> ของ %6$s ของ Facebook</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">แตะ %1$s เพื่อยอมรับ&lt;a href=%2$s>ข้อกำหนด&lt;/a> &lt;a href=%3$s>นโยบายข้อมูล&lt;/a> &lt;a href=%4$s>การใช้งานคุกกี้&lt;/a> และ &lt;a href=%5$s>นโยบายความปลอดภัย&lt;/a> และ &lt;a href=%6$s>ข้อกำหนดการให้บริการ&lt;/a> ของ %7$s ของ Facebook</string>
+    <string name="com_accountkit_confirmation_code_text">ไม่ได้รับรหัสใช่หรือไม่</string>
+    <string name="com_accountkit_confirmation_code_title">ป้อนรหัสของคุณ</string>
+    <string name="com_accountkit_email_invalid">อีเมลนี้ไม่ถูกต้อง โปรดลองใหม่อีกครั้ง</string>
+    <string name="com_accountkit_email_loading_title">กำลังส่งอีเมล</string>
+    <string name="com_accountkit_email_login_retry_title">ยืนยันอีเมลของคุณ</string>
+    <string name="com_accountkit_email_login_text">แตะ %1$s เพื่อรับอีเมลยืนยันจากชุดเครื่องมือบัญชีผู้ใช้ของ Facebook เพื่อช่วยคุณในการใช้งาน %2$s คุณไม่จำเป็นต้องมีบัญชีผู้ใช้ Facebook สำหรับการใช้งานส่วนนี้ &lt;a href=%3$s>ดูข้อมูลว่า Facebook ใช้ข้อมูลของคุณอย่างไรบ้้าง&lt;/a></string>
+    <string name="com_accountkit_email_login_title">ป้อนที่อยู่อีเมลของคุณ</string>
+    <string name="com_accountkit_email_not_received">ส่งอีเมลอีกครั้ง</string>
+    <string name="com_accountkit_email_verify_title">เปิดอีเมลที่เราส่งถึงคุณและยืนยันที่อยู่ของคุณ</string>
+    <string name="com_accountkit_error_title">ขออภัย มีบางสิ่งผิดพลาด</string>
+    <string name="com_accountkit_facebook_code_entry_title">ป้อนรหัสของคุณจาก Facebook</string>
+    <string name="com_accountkit_phone_loading_title">กำลังส่งรหัสถึงคุณ…</string>
+    <string name="com_accountkit_phone_login_retry_title">ยืนยันหมายเลขโทรศัพท์ของคุณ</string>
+    <string name="com_accountkit_phone_login_text">แตะ %1$s เพื่อรับ SMS ยืนยันจากชุดเครื่องมือบัญชีผู้ใช้ของ Facebook เพื่อช่วยคุณในการใช้งาน %2$s คุณไม่จำเป็นต้องมีบัญชีผู้ใช้ Facebook สำหรับการใช้งานส่วนนี้ ทั้งนี้ อาจมีการเรียกเก็บค่ารับส่งข้อความและบริการอินเทอร์เน็ต &lt;a href=%3$s>ดูข้อมูลว่า Facebook ใช้ข้อมูลของคุณอย่างไรบ้้าง&lt;/a></string>
+    <string name="com_accountkit_phone_login_title">ป้อนหมายเลขโทรศัพท์ของคุณ</string>
+    <string name="com_accountkit_resend_check">โปรดตรวจสอบหมายเลขก่อนทำการส่งรหัสอีกครั้ง</string>
+    <string name="com_accountkit_resend_email_text">ส่งอีเมลใหม่</string>
+    <string name="com_accountkit_resend_title">ขออภัย ลองตัวเลือกเหล่านี้เพื่อดำเนินการต่อ</string>
+    <string name="com_accountkit_return_title">กำลังนำคุณกลับไปที่ %1$s…</string>
+    <string name="com_accountkit_sent_title">ส่งแล้ว!</string>
+    <string name="com_accountkit_success_title">เรียบร้อย!</string>
+    <string name="com_accountkit_toolbar_title">เข้าสู่ระบบ %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">"เราไม่สามารถยืนยันรหัสของคุณ
+โปรดลองอีกครั้ง:"</string>
+    <string name="com_accountkit_verify_title">กำลังยืนยันรหัสของคุณ</string>
+    <string name="com_facebook_device_auth_instructions">ไปที่ &lt;b>facebook.com/device&lt;/b> และใส่โค้ดที่แสดงด้านบน</string>
+    <string name="com_facebook_image_download_unknown_error">เกิดข้อผิดพลาดที่ไม่คาดคิดขณะดาวน์โหลดรูปภาพ</string>
+    <string name="com_facebook_internet_permission_error_message">การเข้าสู่ระบบ WebView จำเป็นต้องได้รับอนุญาตจากอินเทอร์เน็ต</string>
+    <string name="com_facebook_internet_permission_error_title">ข้อผิดพลาดของ AndroidManifest</string>
     <string name="com_facebook_like_button_liked">ถูกใจแล้ว</string>
-    <string name="com_facebook_loginview_log_out_button">ออกจากระบบ</string>
+    <string name="com_facebook_like_button_not_liked">ถูกใจ</string>
+    <string name="com_facebook_loading">กำลังโหลด…</string>
+    <string name="com_facebook_loginview_cancel_action">ยกเลิก</string>
     <string name="com_facebook_loginview_log_in_button">เข้าสู่ระบบ</string>
+    <string name="com_facebook_loginview_log_in_button_continue">ดำเนินการต่อด้วย Facebook</string>
     <string name="com_facebook_loginview_log_in_button_long">เข้าสู่ระบบด้วย Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">ออกจากระบบ</string>
+    <string name="com_facebook_loginview_log_out_button">ออกจากระบบ</string>
     <string name="com_facebook_loginview_logged_in_as">เข้าสู่ระบบในชื่อ: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">เข้าสู่ระบบโดยใช้ Facebook</string>
-    <string name="com_facebook_loginview_log_out_action">ออกจากระบบ</string>
-    <string name="com_facebook_loginview_cancel_action">ยกเลิก</string>
-    <string name="com_facebook_loading">กำลังโหลด...</string>
-    <string name="com_facebook_internet_permission_error_title">ข้อผิดพลาดของ AndroidManifest</string>
-    <string name="com_facebook_internet_permission_error_message">การเข้าสู่ระบบ WebView จำเป็นต้องได้รับอนุญาตจากอินเทอร์เน็ต</string>
-    <string name="com_facebook_tooltip_default">ใหม่! คุณเป็นฝ่ายควบคุม โปรดเลือกข้อมูลที่คุณต้องการแชร์ด้วยแอพ</string>
-    <string name="com_facebook_image_download_unknown_error">เกิดข้อผิดพลาดที่ไม่คาดคิดขณะดาวน์โหลดรูปภาพ</string>
-    <string name="com_facebook_share_button_text">แชร์</string>
     <string name="com_facebook_send_button_text">ส่ง</string>
+    <string name="com_facebook_share_button_text">แชร์</string>
+    <string name="com_facebook_smart_device_instructions">หากต้องการเชื่อมต่อบัญชีผู้ใช้ของคุณ ให้เปิดแอพ Facebook บนอุปกรณ์มือถือของคุณและตรวจสอบการแจ้งเตือน</string>
+    <string name="com_facebook_smart_device_instructions_or">- หรือ -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">หากไม่ใช่คุณ</string>
+    <string name="com_facebook_smart_login_confirmation_title">ยืนยันการเข้าสู่ระบบ</string>
+    <string name="com_facebook_tooltip_default">คุณเป็นฝ่ายควบคุม โปรดเลือกข้อมูลที่คุณต้องการแชร์ด้วยแอพ</string>
+    <string name="common_google_play_services_enable_button">เปิดใช้</string>
+    <string name="common_google_play_services_enable_text">%1$s จะไม่ทำงานจนกว่าคุณจะเปิดใช้บริการ Google Play</string>
+    <string name="common_google_play_services_enable_title">เปิดใช้บริการ Google Play</string>
+    <string name="common_google_play_services_install_button">ติดตั้ง</string>
+    <string name="common_google_play_services_install_text">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซี่งไม่มีในอุปกรณ์ของคุณ</string>
+    <string name="common_google_play_services_install_title">ติดตั้งบริการ Google Play</string>
+    <string name="common_google_play_services_notification_ticker">ข้อผิดพลาดของบริการ Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s มีปัญหาเกี่ยวกับบริการของ Google Play โปรดลองอีกครั้ง</string>
+    <string name="common_google_play_services_unsupported_text">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งอุปกรณ์ของคุณไม่สนับสนุน</string>
+    <string name="common_google_play_services_update_button">อัปเดต</string>
+    <string name="common_google_play_services_update_text">%1$s จะไม่ทำงานจนกว่าคุณจะอัปเดตบริการ Google Play</string>
+    <string name="common_google_play_services_update_title">อัปเดตบริการ Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งกำลังอัปเดตอยู่ในขณะนี้</string>
+    <string name="common_google_play_services_wear_update_text">จำเป็นต้องใช้บริการ Google Play เวอร์ชันใหม่ ซึ่งจะอัปเดตอัตโนมัติในอีกไม่ช้า</string>
+    <string name="common_open_on_phone">เปิดบนโทรศัพท์</string>
+    <string name="common_signin_button_text">ลงชื่อเข้าใช้</string>
+    <string name="common_signin_button_text_long">ลงชื่อเข้าใช้ด้วย Google</string>
+    <string name="create_calendar_message">อนุญาตให้โฆษณาสร้างกิจกรรมในปฏิทินไหม</string>
+    <string name="create_calendar_title">สร้างกิจกรรมในปฏิทิน</string>
+    <string name="debug_menu_ad_information">ข้อมูลโฆษณา</string>
+    <string name="debug_menu_creative_preview">ดูตัวอย่างครีเอทีฟโฆษณา</string>
+    <string name="debug_menu_title">เลือกโหมดแก้ปัญหา</string>
+    <string name="debug_menu_troubleshooting">การแก้ปัญหา</string>
+    <string name="decline">ปฏิเสธ</string>
+    <string name="messenger_send_button_text">ส่ง</string>
+    <string name="mr_button_content_description">ปุ่ม \"แคสต์\"</string>
+    <string name="mr_chooser_searching">กำลังค้นหาอุปกรณ์</string>
+    <string name="mr_chooser_title">แคสต์ไปยัง</string>
+    <string name="mr_controller_album_art">ปกอัลบั้ม</string>
+    <string name="mr_controller_casting_screen">กำลังแคสต์หน้าจอ</string>
+    <string name="mr_controller_close_description">ปิด</string>
+    <string name="mr_controller_collapse_group">ยุบ</string>
+    <string name="mr_controller_disconnect">ยกเลิกการเชื่อมต่อ</string>
+    <string name="mr_controller_expand_group">ขยาย</string>
+    <string name="mr_controller_no_info_available">ไม่มีข้อมูล</string>
+    <string name="mr_controller_no_media_selected">ไม่ได้เลือกสื่อไว้</string>
+    <string name="mr_controller_pause">หยุดชั่วคราว</string>
+    <string name="mr_controller_play">เล่น</string>
+    <string name="mr_controller_stop">หยุดการแคสต์</string>
+    <string name="mr_system_route_name">ระบบ</string>
+    <string name="mr_user_route_category_name">อุปกรณ์</string>
+    <string name="place_autocomplete_clear_button">ล้างการค้นหา</string>
+    <string name="place_autocomplete_search_hint">ค้นหา</string>
+    <string name="search_menu_title">ค้นหา</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">อนุญาตให้โฆษณาจัดเก็บรูปภาพในแกลเลอรีภาพไหม</string>
+    <string name="store_picture_title">บันทึกรูปภาพ</string>
+    <string name="wallet_buy_button_place_holder">ซื้อด้วย Google</string>
 </resources>

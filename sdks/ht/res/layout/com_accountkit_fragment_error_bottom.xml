@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.accountkit.ui.ConstrainedLinearLayout style="@style/AccountKit.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/com_accountkit_start_over_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/com_accountkit_button_start_over" style="@style/AccountKit.Button" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/com_accountkit_spacer_normal" />
+    <TextView android:textColor="?com_accountkit_button_border_color" android:gravity="center_horizontal" android:id="@id/com_accountkit_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/com_accountkit_button_cancel" style="@style/AccountKit.Text" />
+</com.facebook.accountkit.ui.ConstrainedLinearLayout>

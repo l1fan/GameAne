@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/icon_background1" android:layout_width="@dimen/layout_340" android:layout_height="@dimen/layout_250">
+        <TextView android:textSize="@dimen/text_25" android:textStyle="bold" android:textColor="@color/colorTitleText" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/layout_50" android:text="@string/account_login" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/fast_login_display_account" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_10" android:layout_marginTop="@dimen/layout_10">
+            <TextView android:textSize="@dimen/text_13" android:textColor="@color/colorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_account" />
+            <TextView android:textSize="@dimen/text_13" android:textColor="@color/colorBackground" android:id="@id/fast_login_account_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_5" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:id="@id/fast_login_button_login" android:background="@drawable/button_bg1" android:layout_width="fill_parent" android:layout_height="@dimen/layout_50" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:text="@string/fast_login" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_20" android:layout_marginRight="@dimen/layout_20">
+            <View android:background="@color/colorBackground" android:layout_width="@dimen/layout_100" android:layout_height="@dimen/layout_1" />
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_5" android:layout_marginRight="@dimen/layout_5" android:text="@string/other_login_methods" />
+            <View android:background="@color/colorBackground" android:layout_width="@dimen/layout_100" android:layout_height="@dimen/layout_1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_10">
+            <ImageView android:id="@id/fast_login_facebook_login" android:layout_width="@dimen/layout_40" android:layout_height="@dimen/layout_40" android:layout_marginRight="@dimen/layout_15" android:src="@mipmap/facebook_logo" />
+            <ImageView android:id="@id/fast_login_account_kit_login" android:layout_width="@dimen/layout_40" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_15" android:layout_marginRight="@dimen/layout_15" android:src="@mipmap/phone_logo" />
+            <ImageView android:id="@id/fast_login_account_login" android:layout_width="@dimen/layout_40" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_15" android:layout_marginRight="@dimen/layout_15" android:src="@mipmap/account_logo" />
+            <ImageView android:id="@id/fast_login_google_login" android:layout_width="@dimen/layout_40" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_15" android:src="@mipmap/google_logo" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

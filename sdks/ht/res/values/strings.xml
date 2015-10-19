@@ -1,185 +1,315 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">登录sdk</string>
-
-    <!-- toast -->
-    <string name="login_success_tip">登录成功！！</string>
-    <string name="login_field_tip">登录失败请重试！！</string>
-    <string name="illegal_contain_tip">您输入的用户名包含非法字符，用户名只能由字母、数字、下划线组成！！</string>
-    <string name="error_operation">操作失败请重试！！</string>
-    <string name="error_RSA">未知错误请重试</string>
-    <string name="error_parametr">未知错误请重试</string>
-    <string name="error_token">未知错误请重试</string>
-    <string name="over_time">据您上次登录的时间过久请您重新登录</string>
-    <string name="intent_stats">数据访问失败请检查网络状态</string>
-    <string name="account_bind">账号绑定</string>
-    <string name="divice_bind">设备绑定</string>
-    <string name="facebook_bind">Facebook绑定</string>
-    <string name="bind_stats_yes">已绑定</string>
-    <string name="bind_stats_no">未绑定</string>
-    <string name="bind_account">绑定账号</string>
-    <string name="regist">注册</string>
-    <string name="login_title">登录</string>
-    <string name="login_account_edit_hint">请输入用户邮箱</string>
-    <string name="login_password_edit_hint">请输入用户密码</string>
-    <string name="login">登录</string>
-    <string name="signup_title">注册</string>
-    <string name="forgetpassword">忘记密码？</string>
-    <string name="reset">重置</string>
-    <string name="found">找回密码</string>
-    <string name="reset_edit">请输入官方账号注册邮箱</string>
-    <string name="signup_account">请使用邮箱进行注册</string>
-    <string name="signup_password">请输入用户密码</string>
-    <string name="signup_password_again">重新输入密码</string>
-    <string name="signup">注册新账号</string>
-    <string name="bind">绑定（注册为正式用户）</string>
-    <string name="bind_title">绑定</string>
-    <string name="Iagree">我同意</string>
-    <string name="and">和</string>
-    <string name="tourist_login">快速登录</string>
-    <string name="delete_tip_title">温馨提示</string>
-    <string name="delete_tip">确认是否删除</string>
-    <string name="other_account">其他账户登录</string>
-    <string name="confirm">确认</string>
-    <string name="cancel">取消</string>
-    <string name="loading">正在加载</string>
-    <string name="login_success_orher">登录成功,请及时绑定官方账号以保护数据安全</string>
-    <string name="login_success">登录成功</string>
-    <string name="bind_success">绑定成功</string>
-    <string name="signup_success">注册成功</string>
-    <string name="login_fail">登录失败,请重试</string>
-    <string name="bind_fail">绑定失败,请重试</string>
-    <string name="signup_fail">注册失败,请重试</string>
-    <string name="user_exist_tip">用户名已存在</string>
-    <string name="null_email_or_password_tip">用户名，密码不能为空</string>
-    <string name="illegal_length_tip">用户名长度不能超过32个字符</string>
-    <string name="illegal_uname_tip">请输入常用邮箱，方便密码找回</string>
-    <string name="illegal_pwd_tip">密码长度在6-16个字符之间</string>
-    <string name="agreement_tip">请认真阅读并同意服务协议和隐私协议</string>
-    <string name="illegal_password">密码包含空格等非法字符，请重新输入</string>
-    <string name="signup_password_different">两次输入的密码不一致请重新输入</string>
-    <string name="loginBack">点击登录才可以畅玩游戏</string>
-    <string name="forget_password">我们已将密码重置链接发至您的邮箱，请注意查收</string>
-    <string name="empty_email">邮箱地址不能为空</string>
-    <string name="bind_name_empty">请选择你要绑定的账号</string>
-    <string name="login_name_empty">请选择你要登录的账号</string>
-    <string name="already_bind">该账户已绑定</string>
-    <string name="network">请检查网络后重试</string>
-    <string name="not_suginup">该账号尚未注册，请注册后重试</string>
-    <string name="error_password">密码错误，请重试</string>
-    <string name="init_Success">该账户不存在</string>
-    <string name="pay_for_three">充值平台</string>
-    <string name="permission_ask">请授权给我这个权限，我才可以登录</string>
-    <string name="permission_denied">READ_PHONE_STATE 权限被拒</string>
-    
-    <string name="com_facebook_like_button_not_liked">Like</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="accept">Accept</string>
+    <string name="cast_ad_label">Ad</string>
+    <string name="cast_casting_to_device">Casting to %1$s</string>
+    <string name="cast_closed_captions">Closed captions</string>
+    <string name="cast_closed_captions_unavailable">Closed captions unavailable</string>
+    <string name="cast_disconnect">Disconnect</string>
+    <string name="cast_expanded_controller_ad_image_description">Image displayed while the cast receiver is playing an ad</string>
+    <string name="cast_expanded_controller_ad_in_progress">Ad in progress…</string>
+    <string name="cast_expanded_controller_background_image">Album art</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Live stream</string>
+    <string name="cast_expanded_controller_loading">Loading…</string>
+    <string name="cast_expanded_controller_skip_ad_label">Skip</string>
+    <string name="cast_forward">Forward</string>
+    <string name="cast_forward_10">Forward ten seconds</string>
+    <string name="cast_forward_30">Forward thirty seconds</string>
+    <string name="cast_intro_overlay_button_text">@android:string/ok</string>
+    <string name="cast_mute">Mute</string>
+    <string name="cast_notification_connected_message">Connected to %1$s</string>
+    <string name="cast_notification_connecting_message">Connecting to %1$s</string>
+    <string name="cast_notification_disconnect">Disconnect</string>
+    <string name="cast_pause">Pause</string>
+    <string name="cast_play">Play</string>
+    <string name="cast_rewind">Rewind</string>
+    <string name="cast_rewind_10">Rewind ten seconds</string>
+    <string name="cast_rewind_30">Rewind thirty seconds</string>
+    <string name="cast_seek_bar">Playback seek control</string>
+    <string name="cast_skip_next">Skip to next item</string>
+    <string name="cast_skip_prev">Skip to previous item</string>
+    <string name="cast_stop">Stop</string>
+    <string name="cast_stop_live_stream">Stop live stream</string>
+    <string name="cast_tracks_chooser_dialog_audio">Audio</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Cancel</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Closed Captions</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">Track %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">No Audio Tracks Available</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">No Text Tracks Available</string>
+    <string name="cast_tracks_chooser_dialog_none">None</string>
+    <string name="cast_tracks_chooser_dialog_ok">OK</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Subtitles</string>
+    <string name="cast_unmute">Unmute</string>
+    <string name="com_accountkit_button_begin">Begin</string>
+    <string name="com_accountkit_button_cancel">Cancel</string>
+    <string name="com_accountkit_button_confirm">Confirm</string>
+    <string name="com_accountkit_button_continue">Continue</string>
+    <string name="com_accountkit_button_edit">EDIT</string>
+    <string name="com_accountkit_button_log_in">Log In</string>
+    <string name="com_accountkit_button_next">Next</string>
+    <string name="com_accountkit_button_ok">OK</string>
+    <string name="com_accountkit_button_resend_code_in">Resend code in %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Resend Code</string>
+    <string name="com_accountkit_button_send">Send</string>
+    <string name="com_accountkit_button_send_code_in_fb">Send Code in Facebook</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Tap Send Code in Facebook to send a notification to the Facebook account linked to the phone number you entered.</string>
+    <string name="com_accountkit_button_start">Start</string>
+    <string name="com_accountkit_button_start_over">Try Again</string>
+    <string name="com_accountkit_button_submit">Submit</string>
+    <string name="com_accountkit_check_email">Open your Email</string>
+    <string name="com_accountkit_code_sent_to">"We sent the code to
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">"Tap %1$s to accept Facebook's &lt;a href=%2$s>Terms&lt;/a>, &lt;a href=%3$s>Data Policy&lt;/a> and &lt;a href=%4$s>cookie use&lt;/a>."</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">"Tap %1$s to accept Facebook's &lt;a href=%2$s>Terms&lt;/a>, &lt;a href=%3$s>Data Policy&lt;/a>, &lt;a href=%4$s>cookie use&lt;/a> and the &lt;a href=%5$s>Privacy Policy&lt;/a> of %6$s."</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">"Tap %1$s to accept Facebook's &lt;a href=%2$s>Terms&lt;/a>, &lt;a href=%3$s>Data Policy&lt;/a>, &lt;a href=%4$s>cookie use&lt;/a> and the &lt;a href=%5$s>Privacy Policy&lt;/a> and &lt;a href=%6$s>Terms of Service&lt;/a> of %7$s."</string>
+    <string name="com_accountkit_confirmation_code_text">"Didn't get code?"</string>
+    <string name="com_accountkit_confirmation_code_title">Enter your code</string>
+    <string name="com_accountkit_email_invalid">This email is incorrect. Please try again.</string>
+    <string name="com_accountkit_email_loading_title">Sending email…</string>
+    <string name="com_accountkit_email_login_retry_title">Confirm your email</string>
+    <string name="com_accountkit_email_login_text">"Tap %1$s to get an email confirmation from Account Kit by Facebook to help you use %2$s. You don't need a Facebook account to use it. &lt;a href=%3$s>Learn how Facebook uses your info&lt;/a>."</string>
+    <string name="com_accountkit_email_login_title">Enter your email address</string>
+    <string name="com_accountkit_email_not_received">Resend Email</string>
+    <string name="com_accountkit_email_verify_title">Open the email and confirm your address</string>
+    <string name="com_accountkit_error_title">"We're sorry, something went wrong."</string>
+    <string name="com_accountkit_facebook_code_entry_title">Enter your code from Facebook</string>
+    <string name="com_accountkit_phone_loading_title">Sending your code…</string>
+    <string name="com_accountkit_phone_login_retry_title">Confirm your phone number</string>
+    <string name="com_accountkit_phone_login_text">"Tap %1$s to get an SMS confirmation from Account Kit by Facebook to help you use %2$s. You don't need a Facebook account to use it. Message and data rates may apply. &lt;a href=%3$s>Learn how Facebook uses your info&lt;/a>."</string>
+    <string name="com_accountkit_phone_login_title">Enter your phone number</string>
+    <string name="com_accountkit_resend_check">Please check the number before resending code.</string>
+    <string name="com_accountkit_resend_email_text">Send New Email</string>
+    <string name="com_accountkit_resend_title">"We're sorry. Try these options to continue."</string>
+    <string name="com_accountkit_return_title">Taking you back to %1$s…</string>
+    <string name="com_accountkit_sent_title">Sent!</string>
+    <string name="com_accountkit_success_title">Done!</string>
+    <string name="com_accountkit_toolbar_title">Log Into %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">"We couldn't verify your code.
+Please try again:"</string>
+    <string name="com_accountkit_verify_title">Verifying your code…</string>
+    <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
+    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
     <string name="com_facebook_like_button_liked">Liked</string>
-    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_like_button_not_liked">Like</string>
+    <string name="com_facebook_loading">Loading…</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
     <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Continue with Facebook</string>
     <string name="com_facebook_loginview_log_in_button_long">Log in with Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log out</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
     <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
-    <string name="com_facebook_loginview_log_out_action">Log out</string>
-    <string name="com_facebook_loginview_cancel_action">Cancel</string>
-    <string name="com_facebook_loading">Loading...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
-    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
-    <string name="com_facebook_tooltip_default">New! You\'re in control - choose what info you want to share with apps.</string>
-    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
-    <string name="com_facebook_share_button_text">Share</string>
     <string name="com_facebook_send_button_text">Send</string>
-    <!-- 协议 -->
-    <string name="service_provision_name">服务条款</string>
-    <string name="service_provision">在安裝、使用或以其他方式訪問服務的同時，您需同意遵守本服務條款。如果您不同意遵守本服務條款，請勿選擇安裝、使用或以其他方式訪問相關服務。官方有權在任何時候自行決定變更、修改、增加或刪減《服務條款》和 《隱私保護政策》的相關條款。您如果繼續使用相關服務，則視為您接受上述變更。如果您在任何時候不同意屆時有效的《服務條款》、《隱私保護政策》中的任何內容，您須立即停止使用服務。
-登錄信息和您的帳戶
-在帳戶創建的過程中，您需要設置壹個密碼（“登錄信息”）。請勿同他人共享您的帳戶或登錄信息，也不得讓他人登錄您的帳戶或者做出任何其他可能威脅您帳戶 安全的行為。如果您得知或者有合理理由懷疑存在安全威脅，包括但不限於賬號丟失、被盜或未經授權的登錄，您必須立即通知官方並修改您的登錄信息。您須對登錄信息的持續保密性獨自承擔責任，並對登錄信息的所有使用行為負責，包括但不限於購買行為（不論是否得到您的授權）。您對通過您帳戶發生的任何事宜負責。
-官方保留在任何時候以任何理由刪除或要求收回任何用戶名的權利，包括但不限於第三方申訴因用戶名侵犯第三方權利而提出索賠的情況。
-您同意您在任何情況下將不得：
-•	從事任何官方認為的與服務的宗旨或意圖相違背的行為，或者任何使用官方所支持服務的不當的行為。
-•	使用為修改或幹預服務、任何官方遊戲或任何官方遊戲體驗而設計的作弊、濫用、自動化軟件、 機器人程序、黑客、木馬程序或任何未經許可的第三方軟件，或者未經官方的明確書面同意，修改或促使修改屬於服務或任何官方遊 戲壹部分的任何文件。
-•	擾亂、超負荷運轉或協助擾亂或超負荷運轉用於提供或支持服務或任何官方遊戲的任何計算機或服務器（“服務器”）。
-•	發布任何辱罵、威脅、淫穢、中傷、誹謗，或者在種族、性、宗教或其他方面侮辱性或攻擊性的信息。
-•	實施或試圖實施騷擾、濫用或傷害，提倡或煽動騷擾、濫用或傷害他人、集體的行為，包括官方的員工（其中包括官方的客戶服務代表）。
-•	實施反向工程、反編譯、拆解、破譯或以其他方式試圖取得任何用於提供服務或任何官方遊戲的底層軟件或其他知識產權的源代碼的行為，或著以任何未經官方明確許可的方式從服務或任何官方遊戲中獲取任何信息。
-•	通過服務征集或試圖向服務或其他任何官方遊戲的用戶征集個人信息，或者收集或發布任何人的私人信息，包括個人可識別信息（無論是文字、圖像還是視頻形式）、身份證明文件或者財務信息。
-官方保留權利來認定相關行為是否違反使用規則或超出服務條款或服務本身的宗旨和精神。官方保留權利來據此采取相關措施，包括終止您的帳戶和禁止您使用全部或部分服務。
-
-對帳戶和服務的中斷和終止
-
-當您違反或者官方懷疑您違反本服務條款的任何條款，或存在實際或涉嫌違法或不當使用服務的行為時，官方有權經過或不經通知 您，限制、中斷、終止、修改或者刪除您的帳戶或對服務的全部或部分使用。帳戶的終止和限制可能導致您喪失用戶名和人物角色，以及與您使用服務相關的任何利 益、特權、獲得的物品及購買的物品，且官方對由此給您帶來的任何損失或後果不承擔任何賠償責任。
-官方有權終止任何連續180天不使用的帳戶。
-官方有權在任何時候停止提供和/或支持服務或某特定遊戲或部分服務，此時，對您使用全部或部分服務的許可自動終止。 在此情況下，官方不因該等服務停止而承擔任何向用戶退款、返還利益或賠償損失的義務。對您的帳戶的終止措施包括限制用戶使用全部或部分服務 的權限，其中包括您或他人上傳的內容。
-所有權
-與服務相關的壹切權利、所有權和利益（包括但不限於任何遊戲、影片、計算機代碼、主題、物體、人物、人物的名字、故事、對話、短 語、概念、圖形、動畫、聲音、音樂作品、視聽效果、操作方法、精神權利、文件、遊戲內聊天記錄、人物檔案信息、使用遊戲客戶端的遊戲記錄、 官方遊戲客戶端和服務器軟件）由官方所有。官方保留與遊戲和服務相關的所有權利，包括但不限於知識產權和其他 專有權利。
-您確認並同意，您對帳戶並不享有任何所有權或其他財產權利，並且您進壹步確認和同意與帳戶相關的所有權利均由官方享有。
-虛擬物品
-官方享有在服務和官方遊戲中出現的全部內容的所有權，有權以許可或其他方式使用在服務和 官方遊戲中出現的全部內容。即使本條款存在任何相反的規定，您同意，您對服務中出現的任何內容沒有所有權或任何其他權利，包括但不限於您從 官方購買或從遊戲中賺得的從任何官方遊戲中產生或出現的虛擬商品或貨幣，以及任何與帳戶相關的或存儲於服務中的其他任何屬 性。
-用戶內容
-“用戶內容”指您本人通過官方遊戲客戶端或服務上傳或傳輸，或由其他用戶上傳或傳輸的包括聊天文本在內的任何通訊、 圖像、聲音以及所有資料、數據和信息。在使用服務的過程中傳輸或提交用戶內容時，您確認、陳述並保證該傳輸或提交行為（a）涉及的信息準確且非保密信息； （b）不違反任何法律規定、合同義務，且不侵犯其他第三人權利，在用戶內容中包含第三人的個人信息或知識產權時，您應征得該第三人的同意；（c）涉及的內 容沒有病毒、廣告軟件、間諜軟件、蠕蟲和其他惡意代碼；以及（d）您確認並同意官方將根據隱私權政策在任何時候對該等內容中包含的您的個人信息進行處理。官方有權不經通知，在任何時候以任何理由自行決定審閱、監控、阻止、編輯、刪除，禁用或以其它方式禁止訪問任何用戶內容（包括但不限於您的用戶內容）。
-個人內容責任自負
-您對於通過服務或與服務相關發布的信息以及您向他人提供的信息獨自承擔責任。官方有權以任何理由或無理由拒絕、拒絕發布或者刪除任何用戶信息，包括但不限於經官方單獨認定違反本服務條款的用戶內容。
-用戶交互
-您對於您與其他服務用戶以及您通過服務和/或官方遊戲互動的其他方之間進行的互動獨自承擔全部責任。 官方保留權利，但沒有義務以任何方式參與這些爭議。您應全力配合官方調查任何涉嫌違法、欺詐或不當行為，包括但不限於允許 官方訪問您存在密碼保護的帳號。
-如果您與壹名或多名用戶之間發生糾紛，您免除我們（包括我們的管理人員、董事、代理、子公司、合資企業和員工）受到由上述糾紛產生或以任何方式與上述糾紛相關的、已知和未知的、任何類型和性質的主張、請求和索賠（實際損害和間接損害）。
-費用和購買條款
-在使用服務的過程中，您可以使用“現實世界”的貨幣購買有限的、個人的、不可轉讓的、不得分許可的、可撤銷的許可，可使用（a） “虛擬貨幣”，包括但不限於全部用於官方遊戲的虛擬貨幣或鉆石；（b）“虛擬的遊戲內物品”（與“虛擬貨幣”並稱“虛擬財產”）；以及 （c）其他商品或服務（“商品”）。您只可以通過我們或我們授權的官方合作夥伴來購買虛擬貨幣！
-官方可以在任何時候經通知或不經通知，管理、規制、控制、修改或者刪除虛擬財產或商品。官方在行使任何相關權利時不對您或任何第三方承擔任何責任。
-除在服務中有明確授權外，無形財產和商品的轉讓是禁止的。除非在服務中有明確授權，您無權向任何個人或實體出售、兌換或以其它方式轉讓虛擬財產或商品，包括官方、其他用戶或者任何第三方。
-通過服務對第三方虛擬貨幣進行的購買或兌換均為最終的、無法退款的。
-費用的支付
-您同意支付由您或他人使用您的註冊帳號而產生的壹切費用和適用的稅費。官方可以在任何時候調整通過服務所提供的商品 和服務的價格。請知悉，官方沒有義務因任何理由提供退款，而且，當帳號無論因為自願還是非自願而關閉時，您將不會就尚未使用的虛擬財產獲得 任何退款或其他補償。
-不可抗力
-官方對超出其控制範圍所導致的延遲或未能履行的義務不承擔任何責任，包括但不限於因不能預見的或超出其控制範圍的原因，例如天災、戰爭、恐 怖活動、騷亂、禁運、民事或軍事當局行為、火災、水災、事故、罷工、交通運輸設施短缺、燃料短缺、燃料或能源短缺、勞動力短缺和原料短缺。
-</string>
-    <string name="privacy_clause_name">隐私条款</string>
-    <string name="privacy_clause">對我們來說, 保護您的隱私是壹項十分重要的工作。 
-本隱私政策描述了我們收集、儲存、使用和管理信息的方式。這些信息包括您向我們提供的個人信息或者我們通過移動設備（如：蘋果設備和安卓設備）提供的遊戲（服務端）。請註意，該政策範圍僅限於您在享受我們的服務時向官方提交的信息。官方不會為任何其他第三方個人或者公司的行為負責，包括他們的網站內容、他們對您所提供信息的使用、或者他們提供的其他產品或服務。
-使用我們的服務就意味著您同意本政策，並同意根據本政策中規定的方式對您的數據（包括您的個人信息）進行處理。如果您不同意這些條款，請不要使用服務。 
-
-信息收集和使用
-官方收集和使用信息的首要目的是為您創建賬號、向您提供服務、提高我們的服 務質量、與您取得聯系、進行調研並制作內部報告。我們將這些數據通過亞馬遜網絡服務存儲在位於美國的服務器上，也有可能存儲在其他國家的服務器或設備上。 
-蘋果（iOS）和安卓平臺 
-當您在移動平臺上使用任何官方遊戲或應用程序時，我們可能收集並記錄某些信息，比如您的產品唯壹身份標識（持續的／ 間斷的）、硬件種類、介質訪問控制（“MAC”）地址、國際移動電話設備識別碼（“IMEI”）、您的操作系統（“OS”）版本、您設備的名稱、您的郵箱 （如果您連接了Facebook或Google+）和您的位置（基於您的網絡協議（“IP”）地址）。這壹信息有助於我們解決問題並了解使用傾向。 
-我們可能收集您的位置信息以向您提供正確的應用程序版本。我們不會與任何第三方分享這壹信息。如果您不再希望我們跟蹤或使用這壹信息，您可以在設備上關閉該功能。請註意，如果我們無法得知您的位置（特別是國家），應用程序可能無法正常運作。 
-Facebook連接，遊戲中心和Google＋
-您可以使用登錄服務（“SN服務”），比如Facebook連接、LinkedIn、蘋果遊戲中心或壹個公用賬號等登錄我們的遊戲。這些服務將鑒定您的身份並請您選擇與我們分享某些個人信息（比如您的姓名、電子郵箱和簡歷）來預填我們的註冊表。諸如Facebook連接等服務允許 您選擇是否將您在本遊戲的活動信息發布到個人資料頁面上，並在您的圈子中與他人分享。 
-我們可能根據SN服務的政策和條款通過該服務收集並記錄信息。在您的用戶賬戶接入SN服務時，我們所收集的信息可能包括：（1）您 的姓名，（2）您的SN服務用戶身份號碼和／或用戶名，（3）地點、城市、州或國家，（4）性別，（5）生日，（6）電子郵箱，（7）個人照片或其鏈接， 和（8）同樣登錄官方遊戲的您的朋友的SN服務用戶身份號碼。 
-
-推送通知
-我們可能時不時地通過我們的移動應用程序向您發送有關遊戲更新、高分和其他與服務相關且可能對您十分重要的推送通知。您可以隨時在您的手機設置中關閉推送，不再接收這類信息。 
-遊戲數據收集
-每當您運行我們的遊戲時，我們都會通過服務器記錄文件夾收集所有關於您與遊戲和與其他玩家在遊戲中進行互動的數據。為了向您提供服務並提高服務質量，這壹信息可能與您的玩家身份、IP地址或設備身份相關聯。 
-移動分析
-我們會使用移動分析軟件以更好地了解我們的移動軟件在您設備上的功能。該軟件將記錄諸如您使用應用的頻率、應用內發生的事件、匯總使用情況、性能數據以及應用下載地址等信息。但我們不會將儲存在分析軟件內的信息與您提交於移動應用的任何個人信息相關聯。 
-第三方服務
-我們提供的服務將包括屬於我們的服務供應商的第三方追蹤工具。該第三方可能會在我們提供的服務中使用cookies、APIs（應用程序編程接口）及SDKs（軟件程序開發 包），由此代表我們收集並分析用戶信息。第三方將有權訪問諸如您的設備標識符、MAC（媒體訪問控制）地址、IMEI（移動設備國際身份碼）、區域（使用 給定語言的特定地點）、地理位置信息及IP地址等信息，旨在實現在其各自隱私權政策下提供服務。我們的隱私權政策不會覆蓋到第三方追蹤工具的使用。我們沒 有權限訪問或控制這些第三方。 
-廣告網絡
-我們可能在服務中放映廣告, 廣告商可能會收集並使用有關您的信息，例如您的服務會話活動、設備標識符、MAC地址、IMEI、地理位置及IP地址。他們會基於此信息向您提供您所感興趣的廣告。 
-此外，您可能會看到其他服務中有我們遊戲的廣告。在點擊任意這些廣告且安裝我們的遊戲之後，您將成為我們服務的用戶。廣告商會共享壹個設備標識符以驗證安裝。
-
-我們如何使用信息 
-我們會根據本政策中所描述的，或在我們相關服務條款中向您展現的相關規定來使用在我們的服務中所收集到的信息。例如，我們可能將您的信息用於： 
-•	創建遊戲賬戶並允許用戶使用我們的遊戲； 
-•	運營及改善我們的服務； 
-•	了解您與您的喜好，以提升您使用我們服務的體驗與樂趣； 
-•	回復您的評論與問題，並提供客戶服務； 
-•	提供及交付您要求的產品與服務； 
-•	給您傳達促銷、獎勵、近期活動的信息與其他有關由官方及我們精選合作夥伴所提供產品與服務的新聞； 
-•	使您能與其他用戶交流； 
-•	將其與我們從第三方獲得的其他信息相聯系或結合，以更好地了解您的喜好並為您提供更優質的服務。 
- 
-對您信息的披露
-除非獲得您的批準或出現以下情況，否則官方不會向任何其他個人或機構分享您的個人信息： 
-•	獲得您的同意。例如，當您同意我們為第三方自身營銷的目的（受限於其單獨的隱私權政策），將您的信息分享與其他第三方。
-•	我們會在法律允許的範圍內發布您的信息，例如為遵守法庭傳票，或當我們相信該發布是為遵守法律而適當的；調查欺詐行為，回復政府要求，執行或運用我們的權利；或保護我們或我們的用戶或其他人的權利、財產或安全。以上行為涉及為防止欺詐行為而與其他公司及機構交換信息。 
-•	我們可能會因合並交易、資產售出，或我們與另壹公司之間針對全部或部分業務進行融資或兼並時分享您的信息。 
-•	我們可能會與廣告商、出版商、商業夥伴、贊助商及其他第三方分享有關您的匯總或匿名信息。 
-
-
-安全
-官方采用合理措施以保護您的信息免於第三方的非授權訪問或因第三方導致的損失、濫用或更改。但我們無法確保該等信息在我們系統上的傳輸或存儲過程中絕對安 全。此外，雖然我們試圖確保我們網絡及系統的完整性與安全性，但我們無法保證我們的安全措施能夠完全防止第三方“黑客”非法獲得訪問此等信息的權限。我們不保證且不聲明，您的信息將免於第三方導致的損失、濫用或變更。然而，任何互聯網傳輸方法或電子儲存方法都不是100%安全的。因此，我們不能保證其絕對的安全。
-</string>
-    <string name="facebook_app_id" translatable="false">267349303600324</string>
-
+    <string name="com_facebook_share_button_text">Share</string>
+    <string name="com_facebook_smart_device_instructions">To connect your account, open the Facebook app on your mobile device and check for notifications.</string>
+    <string name="com_facebook_smart_device_instructions_or">- OR -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">Not you?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Confirm Login</string>
+    <string name="com_facebook_tooltip_default">"You're in control - choose what info you want to share with apps."</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
+    <string name="create_calendar_title">Create calendar event</string>
+    <string name="debug_menu_ad_information">Ad Information</string>
+    <string name="debug_menu_creative_preview">Creative Preview</string>
+    <string name="debug_menu_title">Select a Debug Mode</string>
+    <string name="debug_menu_troubleshooting">Troubleshooting</string>
+    <string name="decline">Decline</string>
+    <string name="messenger_send_button_text">Send</string>
+    <string name="mr_button_content_description">Cast button</string>
+    <string name="mr_chooser_searching">Finding devices</string>
+    <string name="mr_chooser_title">Cast to</string>
+    <string name="mr_controller_album_art">Album art</string>
+    <string name="mr_controller_casting_screen">Casting screen</string>
+    <string name="mr_controller_close_description">Close</string>
+    <string name="mr_controller_collapse_group">Collapse</string>
+    <string name="mr_controller_disconnect">Disconnect</string>
+    <string name="mr_controller_expand_group">Expand</string>
+    <string name="mr_controller_no_info_available">No info available</string>
+    <string name="mr_controller_no_media_selected">No media selected</string>
+    <string name="mr_controller_pause">Pause</string>
+    <string name="mr_controller_play">Play</string>
+    <string name="mr_controller_stop">Stop casting</string>
+    <string name="mr_system_route_name">System</string>
+    <string name="mr_user_route_category_name">Devices</string>
+    <string name="place_autocomplete_clear_button">Clear search</string>
+    <string name="place_autocomplete_search_hint">Search</string>
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">Allow Ad to store image in Picture gallery?</string>
+    <string name="store_picture_title">Save image</string>
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
+    <string name="accountKit">Account Kit:</string>
+    <string name="account_binding">账号绑定</string>
+    <string name="account_change">账号切换</string>
+    <string name="account_login">登录</string>
+    <string name="account_logins">账号登录</string>
+    <string name="account_manager">账号中心</string>
+    <string name="account_regist">账号注册</string>
+    <string name="agree">我同意</string>
+    <string name="agreement_tip">请认真阅读并同意服务协议和隐私协议</string>
+    <string name="all_images">全部图片</string>
+    <string name="and">和</string>
+    <string name="answer">答：</string>
+    <string name="back">返回</string>
+    <string name="bind_account_tip">绑定官方账号，送价值10$大礼包</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="bound">已绑定</string>
+    <string name="camera">拍摄照片</string>
+    <string name="change_account">切换账号</string>
+    <string name="click_bind">点击绑定</string>
+    <string name="commit_button">提交</string>
+    <string name="commit_field">提交失败，请重试！</string>
+    <string name="commit_problem_type">请选择问题的类型</string>
+    <string name="complete">完成</string>
+    <string name="confirm">确定</string>
+    <string name="confirm_bind">确认绑定</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="current_account">当前账号：</string>
+    <string name="edit_bind_account">请输入有效邮箱账号</string>
+    <string name="edit_bind_password_again">请再次输入密码</string>
+    <string name="edit_hint_account">请输入账号</string>
+    <string name="edit_hint_password">请输入密码</string>
+    <string name="edit_modify_new_password">请输入新密码</string>
+    <string name="empty_email">邮箱地址不能为空</string>
+    <string name="empty_problem_content">问题内容不能为空</string>
+    <string name="empty_problem_type">问题类型不能为空</string>
+    <string name="enter_the_game">进入游戏</string>
+    <string name="error_password">密码错误，请重试</string>
+    <string name="facebook">Facebook:</string>
+    <string name="fast_login">快速登录</string>
+    <string name="finish">关闭</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="forget_password_tip">我们已将密码重置链接发至您的邮箱，请注意查收</string>
+    <string name="google">Google:</string>
+    <string name="illegal_emoji">不能包含表情和特殊字符</string>
+    <string name="illegal_length_tip">用户名长度不能超过32个字符</string>
+    <string name="illegal_password">密码包含空格等非法字符，请重新输入</string>
+    <string name="illegal_pwd_tip">密码长度在6-16个字符之间</string>
+    <string name="illegal_uname_tip">帐号输入错误，请输入正确的邮箱格式“XXXXX@XXX.XXX”</string>
+    <string name="init_Success">该账户不存在</string>
+    <string name="loading">正在加载</string>
+    <string name="login_field_tip">登录失败请重试！！</string>
+    <string name="login_success">登录成功</string>
+    <string name="modify_passsword">修改密码</string>
+    <string name="modify_success">密码修改成功，请重新进入游戏</string>
+    <string name="my_record">我的记录</string>
+    <string name="network">请检查网络后重试</string>
+    <string name="normal_problem">常见问题</string>
+    <string name="not_bound">未绑定</string>
+    <string name="not_reply">【未回复】</string>
+    <string name="not_suginup">该账号尚未注册，请注册后重试</string>
+    <string name="null_email_or_password_tip">用户名，密码不能为空</string>
+    <string name="offical_account">官方账号：</string>
+    <string name="offical_accounts">官方账号</string>
+    <string name="ok">确定</string>
+    <string name="online_account_manager">账号中心</string>
+    <string name="online_commit">在线提交</string>
+    <string name="online_commit_account">账号密码类问题</string>
+    <string name="online_commit_activity">活动类问题</string>
+    <string name="online_commit_advice">建议类问题</string>
+    <string name="online_commit_game">游戏类问题</string>
+    <string name="online_commit_other">其他问题</string>
+    <string name="online_commit_pay">充值类问题</string>
+    <string name="online_fan_pange">粉丝页</string>
+    <string name="online_online_service">联系客服</string>
+    <string name="online_service">联系客服</string>
+    <string name="online_top_up">第三方支付</string>
+    <string name="order_manager">订单管理</string>
+    <string name="other_account">其他账号：</string>
+    <string name="other_account_bind_tip">注：每个游客只能绑定一个其他账号</string>
+    <string name="other_account_binding">其他账号绑定</string>
+    <string name="other_login_methods">其他登录方式</string>
+    <string name="over">完成</string>
+    <string name="permission_denied">READ_PHONE_STATE 权限被拒</string>
+    <string name="piece">张</string>
+    <string name="plase_chose_login_methods">请选择登录方式</string>
+    <string name="please_input_email">请留下您的联系邮箱，方便我们与您取得联系！</string>
+    <string name="please_input_problem">请详细描述您的问题，我们会尽快回复您！</string>
+    <string name="privacy_agreement">隐私协议</string>
+    <string name="question">问：</string>
+    <string name="record_details">详情查看</string>
+    <string name="regist_and_login">注册并登录</string>
+    <string name="reply">【已回复】</string>
+    <string name="reset_password">重置密码</string>
+    <string name="same_password">新密码不能和旧密码相同!</string>
+    <string name="select_complete">完成(%1$s/%2$s)</string>
+    <string name="select_image">选择图片</string>
+    <string name="service_provision">服务条款</string>
+    <string name="signup_fail">注册失败,请重试</string>
+    <string name="signup_password_different">两次输入的密码不一致请重新输入</string>
+    <string name="signup_success">注册成功</string>
+    <string name="top_up">Top_up</string>
+    <string name="upload_file_not_exist">文件不存在！</string>
+    <string name="upload_file_over_large">文件大小超出限制，最大不能高于2M！请重新选取</string>
+    <string name="upload_picture">图片上传</string>
+    <string name="upload_server_error">服务器出错！</string>
+    <string name="upload_success">我们已将您的问题提交至服务器，请耐心等待客服的回复！</string>
+    <string name="user_bind_field">绑定失败,该账号已绑定过</string>
+    <string name="user_exist_tip">用户名已存在</string>
+    <string name="you_have_a_select_limit">最多选择%1$s张图片</string>
+    <string name="com_facebook_smart_login_confirmation_continue_as">Continue as %1$s</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">ACCOUNT_KIT_CLIENT_TOKEN</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="app_name">NewHtLoginSdk</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="cast_invalid_stream_duration_text">--:--</string>
+    <string name="cast_invalid_stream_position_text">--:--</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="facebook_app_id">facebook_app_id</string>
+    <string name="gcm_defaultSenderId">523553637708</string>
+    <string name="hello_world" />
+    <string name="server_client_id">server_client_id</string>
+    <string name="tagmanager_preview_dialog_button">Continue</string>
+    <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
+    <string name="tagmanager_preview_dialog_title">Preview</string>
 </resources>

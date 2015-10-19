@@ -2,6 +2,12 @@ package com.l1fan.ane.ht;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.mobile.newhtloginsdk.billing.GooglePay;
+import org.mobile.newhtloginsdk.billing.GooglePay.IHPayHandler;
+import org.mobile.newhtloginsdk.billing.IabResult;
+import org.mobile.newhtloginsdk.billing.PurchaseInfo;
+import org.mobile.newhtloginsdk.utils.LoginUtils;
+import org.mobile.newhtloginsdk.utils.NetWorkUtils;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,11 +16,7 @@ import android.view.Gravity;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.TextView;
 
-import com.ht.htloginsdk.googlepayutils.GooglePay;
-import com.ht.htloginsdk.googlepayutils.GooglePay.IHPayHandler;
-import com.ht.htloginsdk.googlepayutils.IabResult;
-import com.ht.htloginsdk.googlepayutils.PurchaseInfo;
-import com.ht.htloginsdk.utils.LoginUtils;
+
 
 public class GPActivity extends Activity {
 
@@ -40,14 +42,14 @@ public class GPActivity extends Activity {
 		String productid = data.optString(SDK.PID);
 		String purchasePayload = data.optString(SDK.EXT);
 		GooglePay.buyPurchase(this, productid, purchasePayload, new IHPayHandler() {
-			
+
 			@Override
 			public void onIabPurchaseFinished(IabResult result,
 					PurchaseInfo purchase) {
 				if (result.isSuccess()) {
 					GooglePay.consumePurchase(purchase);
 					System.out.println("purchase is :"+purchase);
-					GooglePay.sendServer(SDK.mAppId, LoginUtils.getUid(GPActivity.this), SDK.mCooServer,SDK.mCooUid,purchase.getOriginalJson(), purchase.getSignature(), "");
+					NetWorkUtils.sendServer(SDK.mAppId, LoginUtils.getUid(GPActivity.this), SDK.mCooServer,SDK.mCooUid,purchase.getOriginalJson(), purchase.getSignature(), "");
 					SDK.context.dispatchData(SDK.EVENT_PAY);
 				}else{
 					SDK.context.dispatchError(SDK.EVENT_PAY, ""+result.getMessage());
@@ -61,6 +63,7 @@ public class GPActivity extends Activity {
 		if (GooglePay.onActivityResult(requestCode, resultCode, data)) {
 			super.onActivityResult(requestCode, resultCode, data);
 		}
+		finish();
 	}
 
 }

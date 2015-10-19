@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/fragment_online_record_swip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/fragment_online_record_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

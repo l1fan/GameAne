@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_00_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_01_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_02_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_03_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_04_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_05_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_06_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_07_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_08_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_09_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_10_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_11_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_12_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_13_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_14_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_15_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_16_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_17_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_18_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_19_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_20_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_21_dark" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_on_22_dark" />
+</animation-list>

@@ -1,0 +1,6 @@
+framework module HTSDK {
+  umbrella header "HTSDK.h"
+
+  export *
+  module * { export * }
+}

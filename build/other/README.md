@@ -10,6 +10,10 @@
 	
 	jar uvf adt.jar ./com/adobe/air/apk/APKOutputStream.class 
 
+air默认android的activity启动方式为`singleTask`，如果需要标准模式启动，需要修改为`standard`。 android配置文件模版位置为`com/adobe/air/apk/AndroidManifest_template.xml`，将其中`lanuchMode`值修改为标准模式即可。
+修改完再使用上面的jar包更新命令进行更新
+
+
 ###Android依赖库
 编译Android代码时需要下面两个库
 

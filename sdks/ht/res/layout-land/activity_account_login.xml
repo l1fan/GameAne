@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/icon_background2" android:layout_width="@dimen/layout_340" android:layout_height="@dimen/layout_300">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/layout_50">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_login_back" android:layout_width="wrap_content" android:layout_height="@dimen/layout_18" android:layout_marginLeft="@dimen/layout_10" android:layout_marginTop="@dimen/layout_18">
+                <ImageView android:layout_width="@dimen/layout_18" android:layout_height="@dimen/layout_18" android:src="@mipmap/icon_back" android:contentDescription="" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/back" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:id="@id/account_login_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_account" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <EditText android:textSize="@dimen/text_17" android:textColor="@color/black" android:textColorHint="@color/colorHintText" android:gravity="center" android:id="@id/account_login_edit_account" android:background="@drawable/edittext_bg" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_15" android:layout_marginRight="@dimen/layout_20" android:hint="@string/edit_hint_account" />
+        <EditText android:textSize="@dimen/text_17" android:textColor="@color/black" android:textColorHint="@color/colorHintText" android:gravity="center" android:id="@id/account_login_edit_password" android:background="@drawable/edittext_bg" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_15" android:layout_marginRight="@dimen/layout_20" android:hint="@string/edit_hint_password" android:inputType="textPassword" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_20" android:layout_marginRight="@dimen/layout_20">
+            <Button android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:layout_gravity="center" android:id="@id/account_login_button_regist" android:background="@drawable/button_bg1" android:layout_width="@dimen/layout_100" android:layout_height="@dimen/layout_40" android:text="@string/account_regist" />
+            <View android:layout_width="0.0dip" android:layout_height="@dimen/layout_40" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:layout_gravity="center" android:id="@id/account_login_button_login" android:background="@drawable/button_bg2" android:layout_width="@dimen/layout_100" android:layout_height="@dimen/layout_40" android:text="@string/account_login" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/layout_30" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorHintText" android:id="@id/account_login_forgetpassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_10" android:text="@string/forget_password" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="@color/colorHintText" android:layout_width="wrap_content" android:layout_height="@dimen/layout_1" android:layout_below="@id/account_login_forgetpassword" android:layout_alignLeft="@id/account_login_forgetpassword" android:layout_alignRight="@id/account_login_forgetpassword" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

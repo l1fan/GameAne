@@ -1,39 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">Suka</string>
+    <string name="accept">Terima</string>
+    <string name="cast_ad_label">Iklan</string>
+    <string name="cast_casting_to_device">Menghantar ke %1$s</string>
+    <string name="cast_closed_captions">Kapsyen tertutup</string>
+    <string name="cast_closed_captions_unavailable">Kapsyen tertutup tersedia</string>
+    <string name="cast_disconnect">Putuskan sambungan</string>
+    <string name="cast_expanded_controller_ad_image_description">Imej dipaparkan semasa penerima cast memainkan iklan</string>
+    <string name="cast_expanded_controller_ad_in_progress">Iklan sedang berjalan…</string>
+    <string name="cast_expanded_controller_background_image">Seni album</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Strim langsung</string>
+    <string name="cast_expanded_controller_loading">Memuatkan…</string>
+    <string name="cast_expanded_controller_skip_ad_label">Langkau</string>
+    <string name="cast_forward">Mundar</string>
+    <string name="cast_forward_10">Mundar sepuluh saat</string>
+    <string name="cast_forward_30">Mundar tiga puluh saat</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">Redam</string>
+    <string name="cast_notification_connected_message">Disambungkan ke %1$s</string>
+    <string name="cast_notification_connecting_message">Menyambung ke %1$s</string>
+    <string name="cast_notification_disconnect">Putuskan sambungan</string>
+    <string name="cast_pause">Jeda</string>
+    <string name="cast_play">Main</string>
+    <string name="cast_rewind">Mandir</string>
+    <string name="cast_rewind_10">Mandir sepuluh saat</string>
+    <string name="cast_rewind_30">Mandir tiga puluh saat</string>
+    <string name="cast_seek_bar">Kawalan jangkau main balik</string>
+    <string name="cast_skip_next">Langkau ke item seterusnya</string>
+    <string name="cast_skip_prev">Langkau ke item sebelumnya</string>
+    <string name="cast_stop">Berhenti</string>
+    <string name="cast_stop_live_stream">Hentikan strim langsung</string>
+    <string name="cast_tracks_chooser_dialog_audio">Audio</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Batal</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Kapsyen Tertutup</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">Lagu %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">Tiada Runut Audio yang Tersedia</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">Tiada Runut Teks yang Tersedia</string>
+    <string name="cast_tracks_chooser_dialog_none">Tiada</string>
+    <string name="cast_tracks_chooser_dialog_ok">OK</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Sari kata</string>
+    <string name="cast_unmute">Nyahredam</string>
+    <string name="com_accountkit_button_begin">Mula</string>
+    <string name="com_accountkit_button_cancel">Batal</string>
+    <string name="com_accountkit_button_confirm">Sahkan</string>
+    <string name="com_accountkit_button_continue">Teruskan</string>
+    <string name="com_accountkit_button_edit">SUNTING</string>
+    <string name="com_accountkit_button_log_in">Log Masuk</string>
+    <string name="com_accountkit_button_next">Seterusnya</string>
+    <string name="com_accountkit_button_ok">OK</string>
+    <string name="com_accountkit_button_resend_code_in">Hantar semula kod dalam %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Hantar Semula Kod</string>
+    <string name="com_accountkit_button_send">Hantar</string>
+    <string name="com_accountkit_button_send_code_in_fb">Handar Kod dalam Facebook</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Ketik Hantar Kod di Facebook untuk menghantar pemberitahuan ke akaun Facebook yang dikaitkan dengan nombor telefon yang anda masukkan.</string>
+    <string name="com_accountkit_button_start">Mula</string>
+    <string name="com_accountkit_button_start_over">Cuba Lagi</string>
+    <string name="com_accountkit_button_submit">Hantar</string>
+    <string name="com_accountkit_check_email">Buka e-mel anda</string>
+    <string name="com_accountkit_code_sent_to">"Kami telah menghantar kod tersebut ke
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Ketik %1$s untuk menerima &lt;a href=%2$s>Terma&lt;/a>, &lt;a href=%3$s>Dasar Data&lt;/a> dan &lt;a href=%4$s>penggunaan kuki&lt;/a>Facebook.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Ketik %1$s untuk menerima &lt;a href=%2$s>Terma&lt;/a>, &lt;a href=%3$s>Dasar Data&lt;/a>, &lt;a href=%4$s>penggunaan kuki&lt;/a> dan &lt;a href=%5$s>Dasar Privasi&lt;/a> Facebook untuk %6$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Ketik %1$s untuk menerima &lt;a href=%2$s>Terma&lt;/a>, &lt;a href=%3$s>Dasar Data&lt;/a>, &lt;a href=%4$s>penggunaan kuki&lt;/a> dan &lt;a href=%5$s>Dasar Privasi&lt;/a> serta &lt;a href=%6$s>Terma Perkhidmatan&lt;/a> Facebook untuk %7$s.</string>
+    <string name="com_accountkit_confirmation_code_text">Tidak mendapat kod?</string>
+    <string name="com_accountkit_confirmation_code_title">Masukkan kod anda</string>
+    <string name="com_accountkit_email_invalid">E-mel ini tidak betul. Sila cuba lagi.</string>
+    <string name="com_accountkit_email_loading_title">Menghantar e-mel…</string>
+    <string name="com_accountkit_email_login_retry_title">Sahkan e-mel anda</string>
+    <string name="com_accountkit_email_login_text">Ketik %1$s untuk mendapatkan pengesahan e-mel daripada Kit Akaun oleh Facebook bagi membantu anda menggunakan %2$s. Anda tidak memerlukan akaun Facebook untuk menggunakannya. &lt;a href=%3$s>Ketahui cara Facebook menggunakan maklumat anda&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">Masukkan alamat e-mel anda</string>
+    <string name="com_accountkit_email_not_received">Hantar Semula E-mel</string>
+    <string name="com_accountkit_email_verify_title">Buka e-mel yang kami hantar dan sahkan alamat e-mel anda</string>
+    <string name="com_accountkit_error_title">Kami mohon maaf, ada kesilapan berlaku.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Masukkan kod anda dari Facebook</string>
+    <string name="com_accountkit_phone_loading_title">Menghantar kod anda…</string>
+    <string name="com_accountkit_phone_login_retry_title">Sahkan nombor telefon anda</string>
+    <string name="com_accountkit_phone_login_text">Ketik %1$s untuk mendapatkan pengesahan SMS daripada Kit Akaun oleh Facebook bagi membantu anda menggunakan %2$s. Anda tidak memerlukan akaun Facebook untuk menggunakannya. Kadar mesej dan data boleh dikenakan. &lt;a href=%3$s>Ketahui cara Facebook menggunakan maklumat anda&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">Masukkan nombor telefon anda</string>
+    <string name="com_accountkit_resend_check">Sila semak nombor tersebut sebelum menghantar kod semula.</string>
+    <string name="com_accountkit_resend_email_text">Hantar E-mel Baharu</string>
+    <string name="com_accountkit_resend_title">Kami meminta maaf. Cuba pilihan ini untuk meneruskan.</string>
+    <string name="com_accountkit_return_title">Mengembalikan anda ke %1$s…</string>
+    <string name="com_accountkit_sent_title">Sudah dihantar!</string>
+    <string name="com_accountkit_success_title">Selesai!</string>
+    <string name="com_accountkit_toolbar_title">Log Masuk Ke %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">Kami tidak dapat mengesahkan kod anda. Sila cuba lagi:</string>
+    <string name="com_accountkit_verify_title">Mengesahkan kod anda…</string>
+    <string name="com_facebook_device_auth_instructions">Lawati &lt;b>facebook.com/device&lt;/b> dan masukkan kod yang ditunjukkan di atas.</string>
+    <string name="com_facebook_image_download_unknown_error">Ralat tidak dijangka ketika memuat turun imej.</string>
+    <string name="com_facebook_internet_permission_error_message">Log masuk WebView memerlukan kebenaran INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Ralat AndroidManifest</string>
     <string name="com_facebook_like_button_liked">Disukai</string>
-    <string name="com_facebook_loginview_log_out_button">Log keluar</string>
+    <string name="com_facebook_like_button_not_liked">Suka</string>
+    <string name="com_facebook_loading">Memuatkan…</string>
+    <string name="com_facebook_loginview_cancel_action">Batal</string>
     <string name="com_facebook_loginview_log_in_button">Log masuk</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Teruskan dengan Facebook</string>
     <string name="com_facebook_loginview_log_in_button_long">Log masuk dengan Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log keluar</string>
+    <string name="com_facebook_loginview_log_out_button">Log keluar</string>
     <string name="com_facebook_loginview_logged_in_as">Dilog masuk sebagai: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Dilog masuk menggunakan Facebook</string>
-    <string name="com_facebook_loginview_log_out_action">Log keluar</string>
-    <string name="com_facebook_loginview_cancel_action">Batal</string>
-    <string name="com_facebook_loading">Memuatkan...</string>
-    <string name="com_facebook_internet_permission_error_title">Ralat AndroidManifest</string>
-    <string name="com_facebook_internet_permission_error_message">Log masuk WebView memerlukan kebenaran INTERNET</string>
-    <string name="com_facebook_tooltip_default">Baru! Anda yang mengawal - pilih maklumat yang anda ingin kongsi dengan aplikasi.</string>
-    <string name="com_facebook_image_download_unknown_error">Ralat tidak dijangka ketika memuat turun imej.</string>
-    <string name="com_facebook_share_button_text">Kongsi</string>
     <string name="com_facebook_send_button_text">Hantar</string>
+    <string name="com_facebook_share_button_text">Kongsi</string>
+    <string name="com_facebook_smart_device_instructions">Untuk menghubungkan akaun anda, buka apl Facebook di peranti mudah alih anda dan semak pemberitahuan.</string>
+    <string name="com_facebook_smart_device_instructions_or">- ATAU -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">Bukan anda?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Sahkan Log Masuk</string>
+    <string name="com_facebook_tooltip_default">Anda yang mengawal - pilih maklumat yang anda ingin kongsi dengan apl.</string>
+    <string name="common_google_play_services_enable_button">Dayakan</string>
+    <string name="common_google_play_services_enable_text">%1$s tidak akan berfungsi melainkan anda mendayakan perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_enable_title">Dayakan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_install_button">Pasang</string>
+    <string name="common_google_play_services_install_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini tiada pada peranti anda.</string>
+    <string name="common_google_play_services_install_title">Dapatkan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Ralat perkhidmatan Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s menghadapi masalah berhubung perkhidmatan Google Play. Sila cuba lagi.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini tidak disokong oleh peranti anda.</string>
+    <string name="common_google_play_services_update_button">Kemas kini</string>
+    <string name="common_google_play_services_update_text">%1$s tidak akan berfungsi kecuali anda mengemas kini perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_update_title">Kemaskinikan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini sedang dikemaskinikan.</string>
+    <string name="common_google_play_services_wear_update_text">Versi baharu perkhidmatan Google Play diperlukan. Kemas kini automatik akan dijalankan sebentar lagi.</string>
+    <string name="common_open_on_phone">Buka pada telefon</string>
+    <string name="common_signin_button_text">Log masuk</string>
+    <string name="common_signin_button_text_long">Log masuk dengan Google</string>
+    <string name="create_calendar_message">Benarkan Iklan membuat acara kalendar?</string>
+    <string name="create_calendar_title">Buat acara kalendar</string>
+    <string name="debug_menu_ad_information">Maklumat Iklan</string>
+    <string name="debug_menu_creative_preview">Pratonton Kreatif</string>
+    <string name="debug_menu_title">Pilih Mod Nyahpepijat</string>
+    <string name="debug_menu_troubleshooting">Selesaikan masalah</string>
+    <string name="decline">Tolak</string>
+    <string name="messenger_send_button_text">Hantar</string>
+    <string name="place_autocomplete_clear_button">Kosongkan carian</string>
+    <string name="place_autocomplete_search_hint">Cari</string>
+    <string name="store_picture_message">Benarkan Iklan menyimpan imej dalam galeri Gambar?</string>
+    <string name="store_picture_title">Simpan imej</string>
+    <string name="wallet_buy_button_place_holder">Beli dengan Google</string>
 </resources>

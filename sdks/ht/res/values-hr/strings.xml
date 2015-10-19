@@ -1,39 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
+    <string name="abc_action_bar_home_description">Idi na početnu</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Idi gore</string>
+    <string name="abc_action_menu_overflow_description">Dodatne opcije</string>
+    <string name="abc_action_mode_done">Gotovo</string>
+    <string name="abc_activity_chooser_view_see_all">Prikaži sve</string>
+    <string name="abc_activitychooserview_choose_application">Odabir aplikacije</string>
+    <string name="abc_capital_off">ISKLJUČENO</string>
+    <string name="abc_capital_on">UKLJUČENO</string>
+    <string name="abc_search_hint">Pretražite…</string>
+    <string name="abc_searchview_description_clear">Izbriši upit</string>
+    <string name="abc_searchview_description_query">Upit za pretraživanje</string>
+    <string name="abc_searchview_description_search">Pretraživanje</string>
+    <string name="abc_searchview_description_submit">Pošalji upit</string>
+    <string name="abc_searchview_description_voice">Glasovno pretraživanje</string>
+    <string name="abc_shareactionprovider_share_with">Dijeljenje sa</string>
+    <string name="abc_shareactionprovider_share_with_application">Dijeljenje sa: %s</string>
+    <string name="abc_toolbar_collapse_description">Sažmi</string>
+    <string name="accept">Prihvati</string>
+    <string name="cast_ad_label">Oglas</string>
+    <string name="cast_casting_to_device">Emitiranje na uređaj %1$s</string>
+    <string name="cast_closed_captions">Titlovi</string>
+    <string name="cast_closed_captions_unavailable">Titlovi nisu dostupni</string>
+    <string name="cast_disconnect">Prekini vezu</string>
+    <string name="cast_expanded_controller_ad_image_description">Slika koja se prikazuje dok prijemnik Casta reproducira oglas</string>
+    <string name="cast_expanded_controller_ad_in_progress">Oglas u tijeku…</string>
+    <string name="cast_expanded_controller_background_image">Naslovnica albuma</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Strujanje uživo</string>
+    <string name="cast_expanded_controller_loading">Učitavanje…</string>
+    <string name="cast_expanded_controller_skip_ad_label">Preskoči</string>
+    <string name="cast_forward">Unaprijed</string>
+    <string name="cast_forward_10">Deset sekundi unaprijed</string>
+    <string name="cast_forward_30">Trideset sekundi unaprijed</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">Isključi zvuk</string>
+    <string name="cast_notification_connected_message">Povezano s uređajem %1$s</string>
+    <string name="cast_notification_connecting_message">Povezivanje s uređajem %1$s</string>
+    <string name="cast_notification_disconnect">Prekini vezu</string>
+    <string name="cast_pause">Pauziraj</string>
+    <string name="cast_play">Reproduciraj</string>
+    <string name="cast_rewind">Unatrag</string>
+    <string name="cast_rewind_10">Deset sekundi unatrag</string>
+    <string name="cast_rewind_30">Trideset sekundi unatrag</string>
+    <string name="cast_seek_bar">Upravljanje klizačem za reprodukciju</string>
+    <string name="cast_skip_next">Preskoči na sljedeću stavku</string>
+    <string name="cast_skip_prev">Preskoči na prethodnu stavku</string>
+    <string name="cast_stop">Zaustavi</string>
+    <string name="cast_stop_live_stream">Zaustavi stream uživo</string>
+    <string name="cast_tracks_chooser_dialog_audio">Audiozapis</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Odustani</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Titlovi</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">Zapis %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">Audiozapisi nisu dostupni</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">Tekstualni zapisi nisu dostupni</string>
+    <string name="cast_tracks_chooser_dialog_none">Ništa</string>
+    <string name="cast_tracks_chooser_dialog_ok">U redu</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Titlovi</string>
+    <string name="cast_unmute">Uključi zvuk</string>
+    <string name="com_accountkit_button_begin">Počni</string>
+    <string name="com_accountkit_button_cancel">Odustani</string>
+    <string name="com_accountkit_button_confirm">Potvrdi</string>
+    <string name="com_accountkit_button_continue">Nastavi</string>
+    <string name="com_accountkit_button_edit">UREDI</string>
+    <string name="com_accountkit_button_log_in">Prijava</string>
+    <string name="com_accountkit_button_next">Dalje</string>
+    <string name="com_accountkit_button_ok">U redu</string>
+    <string name="com_accountkit_button_resend_code_in">Ponovno pošalji kod za %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Ponovno pošalji kod</string>
+    <string name="com_accountkit_button_send">Pošalji</string>
+    <string name="com_accountkit_button_send_code_in_fb">Pošalji kod na Facebooku</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Dodirnite Pošalji kod na Facebooku da biste poslali obavijest na Facebookov račun povezan s telefonskim brojem koji ste unijeli.</string>
+    <string name="com_accountkit_button_start">Početak</string>
+    <string name="com_accountkit_button_start_over">Pokušajte ponovno</string>
+    <string name="com_accountkit_button_submit">Pošalji</string>
+    <string name="com_accountkit_check_email">Otvorite e-poštu</string>
+    <string name="com_accountkit_code_sent_to">"Poslali smo kod na broj
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Dodirnite %1$s da biste prihvatili Facebookove &lt;a href=%2$s>uvjete&lt;/a>, &lt;a href=%3$s>pravilnik o podacima&lt;/a> i &lt;a href=%4$s>korištenje kolačića&lt;/a>.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Dodirnite %1$s da biste prihvatili Facebookove &lt;a href=%2$s>uvjete&lt;/a>, &lt;a href=%3$s>pravilnik o podacima&lt;/a>, &lt;a href=%4$s>korištenje kolačića&lt;/a> i &lt;a href=%5$s>pravila zaštite podataka&lt;/a> za %6$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Dodirnite %1$s da biste prihvatili Facebookove &lt;a href=%2$s>uvjete&lt;/a>, &lt;a href=%3$s>pravilnik o podacima&lt;/a>, &lt;a href=%4$s>korištenje kolačića&lt;/a> i &lt;a href=%5$s>pravila zaštite podataka&lt;/a> te &lt;a href=%6$s>uvjete pružanja usluge&lt;/a> za %7$s.</string>
+    <string name="com_accountkit_confirmation_code_text">Niste dobili kod?</string>
+    <string name="com_accountkit_confirmation_code_title">Unesite kod</string>
+    <string name="com_accountkit_email_invalid">Pogrešna adresa e-pošte. Pokušajte ponovno.</string>
+    <string name="com_accountkit_email_loading_title">Slanje e-pošte…</string>
+    <string name="com_accountkit_email_login_retry_title">Potvrdite adresu e-pošte</string>
+    <string name="com_accountkit_email_login_text">Dotaknite %1$s da bi vam Facebookov Account Kit e-poštom poslao potvrdu da biste mogli lakše upotrebljavati %2$s. Za to vam nije potreban račun za Facebook. &lt;a href=%3$s>Saznajte na koji način Facebook upotrebljava vaše podatke&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">Unesite adresu e-pošte</string>
+    <string name="com_accountkit_email_not_received">Ponovno pošalji e-poštu</string>
+    <string name="com_accountkit_email_verify_title">Otvorite poruku e-pošte koju smo vam poslali i potvrdite svoju adresu</string>
+    <string name="com_accountkit_error_title">Nažalost, nešto nije u redu.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Unesite kod s Facebooka</string>
+    <string name="com_accountkit_phone_loading_title">Slanje koda…</string>
+    <string name="com_accountkit_phone_login_retry_title">Potvrdite telefonski broj</string>
+    <string name="com_accountkit_phone_login_text">Dotaknite %1$s da bi vam Facebookov Account Kit SMS-om poslao potvrdu da biste mogli lakše upotrebljavati %2$s. Za to vam nije potreban račun za Facebook. Naplaćuju se naknade za poruke i podatkovni promet. &lt;a href=%3$s>Saznajte na koji način Facebook upotrebljava vaše podatke&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">Unesite telefonski broj</string>
+    <string name="com_accountkit_resend_check">Prije ponovnog slanja koda provjerite broj.</string>
+    <string name="com_accountkit_resend_email_text">Pošalji novu poruku e-pošte</string>
+    <string name="com_accountkit_resend_title">Žao nam je. Isprobajte ove mogućnosti da biste nastavili.</string>
+    <string name="com_accountkit_return_title">Vraćate se na %1$s…</string>
+    <string name="com_accountkit_sent_title">Poslano!</string>
+    <string name="com_accountkit_success_title">Gotovo!</string>
+    <string name="com_accountkit_toolbar_title">Prijavite se na račun %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">Nismo mogli potvrditi vaš kod. Unesite ga ponovno:</string>
+    <string name="com_accountkit_verify_title">Potvrđivanje koda…</string>
+    <string name="com_facebook_device_auth_instructions">Posjetite adresu &lt;b>facebook.com/device&lt;/b> i unesite gore prikazan kod.</string>
+    <string name="com_facebook_image_download_unknown_error">Prilikom preuzimanja slike došlo je do neočekivane pogreške.</string>
+    <string name="com_facebook_internet_permission_error_message">Za prijavu u aplikaciju WebView potrebna je dozvola INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Pogreška datoteke AndroidManifest</string>
+    <string name="com_facebook_like_button_liked">Označeno sa sviđa mi se</string>
     <string name="com_facebook_like_button_not_liked">Sviđa mi se</string>
-    <string name="com_facebook_like_button_liked">Označeno sa "sviđa mi se"</string>
-    <string name="com_facebook_loginview_log_out_button">Odjavi se</string>
+    <string name="com_facebook_loading">Učitavanje u tijeku…</string>
+    <string name="com_facebook_loginview_cancel_action">Odustani</string>
     <string name="com_facebook_loginview_log_in_button">Prijavi se</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Nastavite s korištenjem Facebooka</string>
     <string name="com_facebook_loginview_log_in_button_long">Prijava putem Facebooka</string>
+    <string name="com_facebook_loginview_log_out_action">Odjavi se</string>
+    <string name="com_facebook_loginview_log_out_button">Odjavi se</string>
     <string name="com_facebook_loginview_logged_in_as">Prijavljen kao: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Prijavljen putem Facebooka</string>
-    <string name="com_facebook_loginview_log_out_action">Odjavi se</string>
-    <string name="com_facebook_loginview_cancel_action">Odustani</string>
-    <string name="com_facebook_loading">Učitavanje u tijeku…</string>
-    <string name="com_facebook_internet_permission_error_title">Pogreška datoteke AndroidManifest</string>
-    <string name="com_facebook_internet_permission_error_message">Za prijavu u aplikaciju WebView potrebna je dozvola INTERNET</string>
-    <string name="com_facebook_tooltip_default">Novo! Vi odlučujete – odaberite koje informacije želite podijeliti u aplikacijama.</string>
-    <string name="com_facebook_image_download_unknown_error">Prilikom preuzimanja slike došlo je do neočekivane pogreške.</string>
-    <string name="com_facebook_share_button_text">Dijeli</string>
     <string name="com_facebook_send_button_text">Pošalji</string>
+    <string name="com_facebook_share_button_text">Dijeli</string>
+    <string name="com_facebook_smart_device_instructions">Da biste povezali račun, otvorite aplikaciju Facebook na mobilnom uređaju i potražite obavijesti.</string>
+    <string name="com_facebook_smart_device_instructions_or">- ILI -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">To niste vi?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Potvrda prijave</string>
+    <string name="com_facebook_tooltip_default">Vi odlučujete – odaberite koje podatke želite dijeliti u aplikacijama.</string>
+    <string name="common_google_play_services_enable_button">Omogući</string>
+    <string name="common_google_play_services_enable_text">%1$s neće funkcionirati ako ne omogućite usluge Google Playa.</string>
+    <string name="common_google_play_services_enable_title">Omogućivanje usluga Google Playa</string>
+    <string name="common_google_play_services_install_button">Instaliraj</string>
+    <string name="common_google_play_services_install_text">%1$s neće funkcionirati bez usluga Google Playa koje nisu instalirane na vašem uređaju.</string>
+    <string name="common_google_play_services_install_title">Preuzimanje usluga Google Playa</string>
+    <string name="common_google_play_services_notification_ticker">Pogreška Usluga za Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ima poteškoća s uslugama Google Playa. Pokušajte ponovo.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s neće funkcionirati bez usluga Google Playa koje vaš uređaj ne podržava.</string>
+    <string name="common_google_play_services_update_button">Ažuriraj</string>
+    <string name="common_google_play_services_update_text">%1$s neće funkcionirati ako ne ažurirate Google Play usluge.</string>
+    <string name="common_google_play_services_update_title">Ažuriranje usluga Google Playa</string>
+    <string name="common_google_play_services_updating_text">%1$s neće se pokrenuti bez usluga Google Playa koje se trenutačno ažuriraju.</string>
+    <string name="common_google_play_services_wear_update_text">Potrebna je nova verzija usluga Google Playa. Uskoro će se ažurirati.</string>
+    <string name="common_open_on_phone">Otvori na telefonu</string>
+    <string name="common_signin_button_text">Prijava</string>
+    <string name="common_signin_button_text_long">Prijava putem Googlea</string>
+    <string name="create_calendar_message">Želite li dopustiti oglasu da izradi događaj u kalendaru?</string>
+    <string name="create_calendar_title">Izrada događaja u kalendaru</string>
+    <string name="debug_menu_ad_information">Podaci o oglasu</string>
+    <string name="debug_menu_creative_preview">Pregled oglasa</string>
+    <string name="debug_menu_title">Odaberite način otklanjanja pogrešaka</string>
+    <string name="debug_menu_troubleshooting">Rješavanje problema</string>
+    <string name="decline">Odbij</string>
+    <string name="mr_button_content_description">Gumb za emitiranje</string>
+    <string name="mr_chooser_searching">Traženje uređaja</string>
+    <string name="mr_chooser_title">Emitiranje na</string>
+    <string name="mr_controller_album_art">Naslovnica albuma</string>
+    <string name="mr_controller_casting_screen">Emitiranje zaslona</string>
+    <string name="mr_controller_close_description">Zatvaranje</string>
+    <string name="mr_controller_collapse_group">Sažimanje</string>
+    <string name="mr_controller_disconnect">Prekini vezu</string>
+    <string name="mr_controller_expand_group">Proširivanje</string>
+    <string name="mr_controller_no_info_available">Informacije nisu dostupne</string>
+    <string name="mr_controller_no_media_selected">Nije odabran nijedan medij</string>
+    <string name="mr_controller_pause">Pauziranje</string>
+    <string name="mr_controller_play">Reprodukcija</string>
+    <string name="mr_controller_stop">Zaustavi emitiranje</string>
+    <string name="mr_system_route_name">Sustav</string>
+    <string name="mr_user_route_category_name">Uređaji</string>
+    <string name="place_autocomplete_clear_button">Brisanje pretraživanja</string>
+    <string name="place_autocomplete_search_hint">Pretražite</string>
+    <string name="search_menu_title">Pretraživanje</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">Želite li dopustiti oglasu da spremi sliku u galeriju slika?</string>
+    <string name="store_picture_title">Spremanje slike</string>
+    <string name="wallet_buy_button_place_holder">Kupi putem Googlea</string>
 </resources>

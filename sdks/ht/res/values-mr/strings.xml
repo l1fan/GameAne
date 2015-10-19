@@ -1,39 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">आवडले</string>
+    <string name="accept">स्वीकार करा</string>
+    <string name="cast_ad_label">जाहिरात</string>
+    <string name="cast_casting_to_device">%s वर कास्ट करीत आहे</string>
+    <string name="cast_closed_captions">बंद मथळे</string>
+    <string name="cast_closed_captions_unavailable">उपशीर्षक अनुपलब्ध आहेत</string>
+    <string name="cast_disconnect">डिस्कनेक्ट करा</string>
+    <string name="cast_expanded_controller_ad_image_description">कास्ट प्राप्तकर्ता जाहिरात प्ले करतो तेव्हा प्रतिमा प्रदर्शित केली जाते</string>
+    <string name="cast_expanded_controller_ad_in_progress">जाहिरात प्रगतीपथावर आहे...</string>
+    <string name="cast_expanded_controller_background_image">अल्बम कला</string>
+    <string name="cast_expanded_controller_live_stream_indicator">थेट प्रवाह</string>
+    <string name="cast_expanded_controller_loading">लोड करीत आहे...</string>
+    <string name="cast_expanded_controller_skip_ad_label">वगळा</string>
+    <string name="cast_forward">पुढे करा</string>
+    <string name="cast_forward_10">दहा सेकंदांपर्यंत पुढे करा</string>
+    <string name="cast_forward_30">तीस सेकंदांपर्यंत पुढे करा</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">नि:शब्द करा</string>
+    <string name="cast_notification_connected_message">%1$s शी कनेक्ट केले</string>
+    <string name="cast_notification_connecting_message">%1$s शी कनेक्ट करीत आहे</string>
+    <string name="cast_notification_disconnect">डिस्कनेक्ट करा</string>
+    <string name="cast_pause">विराम द्या</string>
+    <string name="cast_play">प्ले करा</string>
+    <string name="cast_rewind">मागे न्या</string>
+    <string name="cast_rewind_10">दहा सेकंदांपर्यंत मागे न्या</string>
+    <string name="cast_rewind_30">तीस सेकंदांपर्यंत मागे न्या</string>
+    <string name="cast_seek_bar">प्लेबॅक नियंत्रण शोधते</string>
+    <string name="cast_skip_next">पुढील आयटमवर जा</string>
+    <string name="cast_skip_prev">मागील आयटमवर जा</string>
+    <string name="cast_stop">थांबा</string>
+    <string name="cast_stop_live_stream">थेट प्रवाह थांबवा</string>
+    <string name="cast_tracks_chooser_dialog_audio">ऑडिओ</string>
+    <string name="cast_tracks_chooser_dialog_cancel">रद्द करा</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">बंद केलेले मथळे</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">%1$d चा मागोवा घ्या</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">कोणतेही ऑडिओ ट्रॅक उपलब्ध नाहीत</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">कोणतेही मजकूर ट्रॅक उपलब्ध नाहीत</string>
+    <string name="cast_tracks_chooser_dialog_none">काहीही नाही</string>
+    <string name="cast_tracks_chooser_dialog_ok">ठीक आहे</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">उपशीर्षके</string>
+    <string name="cast_unmute">सशब्द करा</string>
+    <string name="com_accountkit_button_begin">आरंभ करा</string>
+    <string name="com_accountkit_button_cancel">रद्द करा</string>
+    <string name="com_accountkit_button_confirm">पुष्टी करा</string>
+    <string name="com_accountkit_button_continue">सुरू ठेवा</string>
+    <string name="com_accountkit_button_edit">संपादित करा</string>
+    <string name="com_accountkit_button_log_in">लॉग इन करा</string>
+    <string name="com_accountkit_button_next">पुढील</string>
+    <string name="com_accountkit_button_ok">ठीक</string>
+    <string name="com_accountkit_button_resend_code_in">%1$s मध्ये कोड पुन्हा पाठवा</string>
+    <string name="com_accountkit_button_resend_sms">कोड पुन्हा पाठवा</string>
+    <string name="com_accountkit_button_send">पाठवा</string>
+    <string name="com_accountkit_button_send_code_in_fb">Facebook मध्ये कोड पाठवा</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">आपण प्रविष्‍ट केलेल्‍या फोन नंबरशी लिंक असलेल्‍या Facebook खात्‍यावर सूचना पाठवण्‍यासाठी Facebook मध्‍ये कोड पाठवा टॅप करा.</string>
+    <string name="com_accountkit_button_start">सुरू करा</string>
+    <string name="com_accountkit_button_start_over">पुन्‍हा प्रयत्‍न करा</string>
+    <string name="com_accountkit_button_submit">सादर करा</string>
+    <string name="com_accountkit_check_email">आपला ईमेल उघडा</string>
+    <string name="com_accountkit_code_sent_to">आम्ही %1$s वर कोड पाठविला आहे</string>
+    <string name="com_accountkit_confirmation_code_agreement">Facebook च्या &lt;a href=%2$s> अटी&lt;/a>, &lt;a href=%3$s>डेटा धोरण&lt;/a> आणि &lt;a href=%4$s>कुकी वापर&lt;/a> स्वीकारण्यासाठी %1$s वर टॅप करा.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Facebook च्या &lt;a href=%2$s>अटी&lt;/a>, &lt;a href=%3$s>डेटा धोरण&lt;/a>, &lt;a href=%4$s>कुकी वापर&lt;/a> आणि %6$s चे &lt;a href=%5$s>गोपनीयता धोरण&lt;/a> स्वीकारण्यासाठी %1$s वर टॅप करा.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Facebook च्या &lt;a href=%2$s>अटी&lt;/a>, &lt;a href=%3$s>डेटा धोरण&lt;/a>, &lt;a href=%4$s>कुकी वापर&lt;/a>, &lt;a href=%5$s>गोपनीयता धोरण&lt;/a> स्वीकारण्यासाठी आणि %7$s च्या &lt;a href=%6$s>सेवेच्या अटीं&lt;/a> साठी %1$s वर टॅप करा.</string>
+    <string name="com_accountkit_confirmation_code_text">कोड प्राप्त झाला नाही?</string>
+    <string name="com_accountkit_confirmation_code_title">आपला कोड प्रविष्‍ट करा</string>
+    <string name="com_accountkit_email_invalid">हा ईमेल चुकीचा आहे. कृपया पुन्हा प्रयत्न करा.</string>
+    <string name="com_accountkit_email_loading_title">ईमेल पाठवित आहे</string>
+    <string name="com_accountkit_email_login_retry_title">आपल्या ईमेलची पुष्टी करा</string>
+    <string name="com_accountkit_email_login_text">आपल्‍याला %2$s वापरण्‍यात मदत करण्‍यासाठी Facebook द्वारे असलेल्‍या खाते किटवरून ईमेल पुष्‍टी मिळवण्‍यासाठी %1$s टॅप करा. आपल्‍याला हे वापरण्‍यासाठी Facebook खात्‍याची गरज नाही. &lt;a href=%3$s>Facebook आपली माहिती कसे वापरते याविषयी जाणून घ्‍या&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">आपला ईमेल पत्‍ता प्रविष्‍ट करा</string>
+    <string name="com_accountkit_email_not_received">ईमेल पुन्‍हा पाठवा</string>
+    <string name="com_accountkit_email_verify_title">आम्‍ही पाठवलेला ईमेल उघडा आणि आपल्‍या पत्‍त्‍याची पुष्‍टी करा</string>
+    <string name="com_accountkit_error_title">आम्‍ही क्षमस्‍व आहोत, काहीतरी चूक झाली.</string>
+    <string name="com_accountkit_facebook_code_entry_title">आपला कोड Facebook वरून प्रविष्‍ट करा</string>
+    <string name="com_accountkit_phone_loading_title">आपला कोड पाठवत आहे…</string>
+    <string name="com_accountkit_phone_login_retry_title">आपल्‍या फोन नंबरची पुष्‍टी करा</string>
+    <string name="com_accountkit_phone_login_text">आपल्‍याला %2$s वापरण्‍यात मदत करण्‍यासाठी Facebook द्वारे असलेल्‍या खाते किटवरून SMS पुष्‍टी मिळवण्‍यासाठी %1$s टॅप करा. आपल्‍याला हे वापरण्‍यासाठी Facebook खात्‍याची गरज नाही. संदेश आणि डेटा शुल्‍क लागू होण्‍याची शक्‍यता आहे. &lt;a href=%3$s>Facebook आपली माहिती कसे वापरते याविषयी जाणून घ्‍या&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">आपला फोन नंबर प्रविष्‍ट करा</string>
+    <string name="com_accountkit_resend_check">कृपया कोड पुन्हा पाठवण्यापुर्वी नंबर तपासा.</string>
+    <string name="com_accountkit_resend_email_text">नवीन ईमेल पाठवा</string>
+    <string name="com_accountkit_resend_title">आम्‍ही क्षमस्‍व आहोत. पुढे सुरू ठेवण्‍यासाठी हे पर्याय वापरून पहा.</string>
+    <string name="com_accountkit_return_title">आपल्‍याला पुन्‍हा %1$s येथे नेत आहे…</string>
+    <string name="com_accountkit_sent_title">पाठविले!</string>
+    <string name="com_accountkit_success_title">पूर्ण झाले!</string>
+    <string name="com_accountkit_toolbar_title">%1$s मध्‍ये लॉग इन करा</string>
+    <string name="com_accountkit_verify_confirmation_code_title">आपल्‍या कोडची आम्‍ही पडताळणी करू शकलो नाही. कृपया पुन्हा प्रयत्न करा:</string>
+    <string name="com_accountkit_verify_title">आपल्‍या कोडची पडताळणी करत आहे…</string>
+    <string name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b> वर भेट द्या आणि वर दर्शवलेला कोड प्रविष्ट करा.</string>
+    <string name="com_facebook_image_download_unknown_error">प्रतिमा डाउनलोड करताना अनपेक्षित त्रुटी.</string>
+    <string name="com_facebook_internet_permission_error_message">वेबदृश्य लॉग इन आवश्यकता इंटरनेट परवानगी</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest त्रुटी</string>
     <string name="com_facebook_like_button_liked">आवडलेले</string>
-    <string name="com_facebook_loginview_log_out_button">लॉग आउट करा</string>
+    <string name="com_facebook_like_button_not_liked">आवडले</string>
+    <string name="com_facebook_loading">लोड होत आहे…</string>
+    <string name="com_facebook_loginview_cancel_action">रद्द करा</string>
     <string name="com_facebook_loginview_log_in_button">लॉग इन करा</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Facebook सह चालू ठेवा</string>
     <string name="com_facebook_loginview_log_in_button_long">फेसबुकसह लॉग इन करा</string>
+    <string name="com_facebook_loginview_log_out_action">लॉग आउट करा</string>
+    <string name="com_facebook_loginview_log_out_button">लॉग आउट करा</string>
     <string name="com_facebook_loginview_logged_in_as">म्हणून लॉग इन केले: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">फेसबुक वापरून लॉग इन केले</string>
-    <string name="com_facebook_loginview_log_out_action">लॉग आउट करा</string>
-    <string name="com_facebook_loginview_cancel_action">रद्द करा</string>
-    <string name="com_facebook_loading">लोड होत आहे...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest त्रुटी</string>
-    <string name="com_facebook_internet_permission_error_message">वेबदृश्य लॉग इन आवश्यकता इंटरनेट परवानगी</string>
-    <string name="com_facebook_tooltip_default">नवीन! आपण नियंत्रणात आहात - आपण कोणती माहिती अनुप्रयोगांसह शेअर करू इच्छिता ते निवडा.</string>
-    <string name="com_facebook_image_download_unknown_error">प्रतिमा डाउनलोड करताना अनपेक्षित त्रुटी.</string>
-    <string name="com_facebook_share_button_text">सामायिक करा</string>
     <string name="com_facebook_send_button_text">पाठवा</string>
+    <string name="com_facebook_share_button_text">सामायिक करा</string>
+    <string name="com_facebook_smart_device_instructions">तुमचे खाते कनेक्ट करण्यासाठी, तुमच्या मोबाईल उपकरणावर Facebook अॅप उघडा आणि सूचना तपासा.</string>
+    <string name="com_facebook_smart_device_instructions_or">- किंवा -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">तुम्ही नाही?</string>
+    <string name="com_facebook_smart_login_confirmation_title">लॉग इन पुष्टी करा</string>
+    <string name="com_facebook_tooltip_default">तुम्ही नियंत्रणात आहात - तुम्ही कोणती माहिती अॅपसह सामायिक करू इच्छिता ते निवडा.</string>
+    <string name="common_google_play_services_enable_button">सक्षम करा</string>
+    <string name="common_google_play_services_enable_text">आपण Google Play सेवा सक्षम केल्याशिवाय %1$s हा अॅप कार्य करणार नाही.</string>
+    <string name="common_google_play_services_enable_title">Google Play सेवा सक्षम करा</string>
+    <string name="common_google_play_services_install_button">स्‍थापित करा</string>
+    <string name="common_google_play_services_install_text">Google Play सेवा आपल्या डिव्हाइसवर उपलब्ध नाही, त्याशिवाय %1$s चालणार नाही.</string>
+    <string name="common_google_play_services_install_title">Google Play सेवा मिळवा</string>
+    <string name="common_google_play_services_notification_ticker">Google Play सेवा त्रुटी</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ला Google Play सेवांमध्ये समस्या येत आहे. कृपया पुन्हा प्रयत्न करा.</string>
+    <string name="common_google_play_services_unsupported_text">आपले डिव्हाइस समर्थन देत नसलेल्या, Google Play सेवांशिवाय %1$s चालणार नाही.</string>
+    <string name="common_google_play_services_update_button">अद्यतनित करा</string>
+    <string name="common_google_play_services_update_text">आपण Google Play सेवा अद्यतनित करेपर्यंत %1$s चालणार नाही.</string>
+    <string name="common_google_play_services_update_title">Google Play सेवा अद्यतनित करा</string>
+    <string name="common_google_play_services_updating_text">सध्‍या अद्यतनित होत असलेल्‍या, Google Play सेवांशिवाय %1$s चालणार नाही.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play सेवांच्या नवीन आवृत्तीची आवश्यकता आहे. हे स्वत:ला लवकरच अद्यतनित करेल.</string>
+    <string name="common_open_on_phone">फोनवर उघडा</string>
+    <string name="common_signin_button_text">साइन इन करा</string>
+    <string name="common_signin_button_text_long">Google सह साइन इन करा</string>
+    <string name="create_calendar_message">जाहिरातीस कॅलेंडर इव्हेंट तयार करण्याची परवानगी द्यायची?</string>
+    <string name="create_calendar_title">कॅलेंडर इव्हेंट तयार करा</string>
+    <string name="debug_menu_ad_information">जाहिरात माहिती</string>
+    <string name="debug_menu_creative_preview">क्रिएटिव्ह पूर्वावलोकन</string>
+    <string name="debug_menu_title">डीबग मोड निवडा</string>
+    <string name="debug_menu_troubleshooting">समस्यानिवारण</string>
+    <string name="decline">नकार द्या</string>
+    <string name="messenger_send_button_text">पाठवा</string>
+    <string name="place_autocomplete_clear_button">शोध साफ करा</string>
+    <string name="place_autocomplete_search_hint">शोध</string>
+    <string name="store_picture_message">चित्र गॅलरीत प्रतिमा संग्रहित करण्याची जाहिरातीस अनुमती द्यायची?</string>
+    <string name="store_picture_title">प्रतिमा जतन करा</string>
+    <string name="wallet_buy_button_place_holder">Google सह खरेदी करा</string>
 </resources>

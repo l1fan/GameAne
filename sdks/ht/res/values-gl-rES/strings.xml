@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Ir á páxina de inicio</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Desprazarse cara arriba</string>
+    <string name="abc_action_menu_overflow_description">Máis opcións</string>
+    <string name="abc_action_mode_done">Feito</string>
+    <string name="abc_activity_chooser_view_see_all">Ver todas</string>
+    <string name="abc_activitychooserview_choose_application">Escoller unha aplicación</string>
+    <string name="abc_capital_off">DESACTIVAR</string>
+    <string name="abc_capital_on">ACTIVAR</string>
+    <string name="abc_search_hint">Buscar…</string>
+    <string name="abc_searchview_description_clear">Borrar consulta</string>
+    <string name="abc_searchview_description_query">Consulta de busca</string>
+    <string name="abc_searchview_description_search">Buscar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Busca de voz</string>
+    <string name="abc_shareactionprovider_share_with">Compartir con</string>
+    <string name="abc_shareactionprovider_share_with_application">Compartir con %s</string>
+    <string name="abc_toolbar_collapse_description">Contraer</string>
+    <string name="mr_button_content_description">Botón de emitir</string>
+    <string name="mr_chooser_searching">Buscando dispositivos</string>
+    <string name="mr_chooser_title">Emitir en</string>
+    <string name="mr_controller_album_art">Portada do álbum</string>
+    <string name="mr_controller_casting_screen">Emisión de pantalla</string>
+    <string name="mr_controller_close_description">Pechar</string>
+    <string name="mr_controller_collapse_group">Contraer</string>
+    <string name="mr_controller_disconnect">Desconectar</string>
+    <string name="mr_controller_expand_group">Ampliar</string>
+    <string name="mr_controller_no_info_available">Non hai información dispoñible</string>
+    <string name="mr_controller_no_media_selected">Non se seleccionaron recursos</string>
+    <string name="mr_controller_pause">Pausa</string>
+    <string name="mr_controller_play">Reproduce</string>
+    <string name="mr_controller_stop">Parar de emitir</string>
+    <string name="mr_system_route_name">Sistema</string>
+    <string name="mr_user_route_category_name">Dispositivos</string>
+    <string name="search_menu_title">Buscar</string>
+    <string name="status_bar_notification_info_overflow">>999</string>
+</resources>

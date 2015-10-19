@@ -1,79 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_width="@dimen/layout_width"
-        android:layout_height="@dimen/layout_hight"
-        android:background="@drawable/bg_agreement"
-        android:layout_gravity="center"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/agreement_title"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/layout_width1"
-                android:layout_marginTop="@dimen/layout_margin_right"
-                android:background="#0000"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="@dimen/textSize_title" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/layout_hight_view"
-                android:layout_marginLeft="@dimen/layout_margin"
-                android:layout_marginRight="@dimen/layout_margin"
-                android:background="@color/green" />
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@mipmap/icon_background4" android:layout_width="@dimen/layout_340" android:layout_height="@dimen/layout_300">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40">
+            <TextView android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:gravity="center" android:id="@id/agreement_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         </LinearLayout>
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/agreement_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/layout_marginTop"
-                    android:padding="@dimen/layout_marginBottom"
-                    android:layout_marginLeft="@dimen/layout_margin"
-                    android:layout_marginRight="@dimen/layout_margin"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/textForget"
-                    android:background="#0000"></TextView>
-
+        <ScrollView android:layout_width="fill_parent" android:layout_height="@dimen/layout_200">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/colorHintText" android:id="@id/agreement_content" android:background="#00000000" android:padding="@dimen/layout_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_10" android:layout_marginTop="@dimen/layout_5" android:layout_marginRight="@dimen/layout_10" />
             </LinearLayout>
         </ScrollView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/item_layout_hight1"
-            android:layout_gravity="bottom"
-            android:gravity="center"
-            android:layout_marginTop="@dimen/layout_hight1"
-            android:orientation="vertical">
-            <Button
-                android:id="@+id/agreement_btn"
-                android:layout_width="@dimen/dialog_view_hight"
-                android:layout_height="@dimen/layout_width1"
-                android:layout_marginBottom="@dimen/layout_margin"
-                android:background="@drawable/btn_bg3"
-                android:gravity="center"
-                android:text="@string/confirm"
-                android:textColor="@color/button"
-                android:textSize="@dimen/textSize_title" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/layout_50" android:layout_marginTop="@dimen/layout_10">
+            <Button android:textSize="@dimen/text_20" android:textColor="@color/colorTitleText" android:gravity="center" android:id="@id/agreement_btn" android:background="@drawable/button_bg1" android:layout_width="@dimen/layout_150" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/layout_10" android:text="@string/confirm" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

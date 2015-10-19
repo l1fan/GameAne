@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/icon_background1" android:layout_width="@dimen/layout_340" android:layout_height="@dimen/layout_300">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/layout_48">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_manager_back" android:layout_width="wrap_content" android:layout_height="@dimen/layout_18" android:layout_marginLeft="@dimen/layout_10" android:layout_marginTop="@dimen/layout_15">
+                <ImageView android:layout_width="@dimen/layout_18" android:layout_height="@dimen/layout_18" android:src="@mipmap/icon_back" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/back" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_manager" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/myProgressBar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/layout_2" style="?android:attr/progressBarStyleHorizontal" />
+        <WebView android:id="@id/order_manager_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

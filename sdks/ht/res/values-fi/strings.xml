@@ -1,39 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">Tykkää</string>
+    <string name="abc_action_bar_home_description">Siirry etusivulle</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Siirry ylös</string>
+    <string name="abc_action_menu_overflow_description">Lisää</string>
+    <string name="abc_action_mode_done">Valmis</string>
+    <string name="abc_activity_chooser_view_see_all">Näytä kaikki</string>
+    <string name="abc_activitychooserview_choose_application">Valitse sovellus</string>
+    <string name="abc_capital_off">POIS KÄYTÖSTÄ</string>
+    <string name="abc_capital_on">KÄYTÖSSÄ</string>
+    <string name="abc_search_hint">Haku…</string>
+    <string name="abc_searchview_description_clear">Tyhjennä kysely</string>
+    <string name="abc_searchview_description_query">Hakulauseke</string>
+    <string name="abc_searchview_description_search">Haku</string>
+    <string name="abc_searchview_description_submit">Lähetä kysely</string>
+    <string name="abc_searchview_description_voice">Puhehaku</string>
+    <string name="abc_shareactionprovider_share_with">Jakaminen:</string>
+    <string name="abc_shareactionprovider_share_with_application">Jakaminen: %s</string>
+    <string name="abc_toolbar_collapse_description">Kutista</string>
+    <string name="accept">Hyväksy</string>
+    <string name="cast_ad_label">Mainos</string>
+    <string name="cast_casting_to_device">Suoratoistetaan laitteeseen %1$s</string>
+    <string name="cast_closed_captions">Tekstitykset</string>
+    <string name="cast_closed_captions_unavailable">Tekstitykset eivät ole käytettävissä.</string>
+    <string name="cast_disconnect">Katkaise yhteys</string>
+    <string name="cast_expanded_controller_ad_image_description">Kuva näytetään vastaanottimen toistaessa mainosta.</string>
+    <string name="cast_expanded_controller_ad_in_progress">Mainos käynnissä…</string>
+    <string name="cast_expanded_controller_background_image">Albumin kansikuva</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Suoratoisto</string>
+    <string name="cast_expanded_controller_loading">Ladataan…</string>
+    <string name="cast_expanded_controller_skip_ad_label">Ohita</string>
+    <string name="cast_forward">Kelaa eteenpäin</string>
+    <string name="cast_forward_10">Kelaa eteenpäin 10 sekuntia</string>
+    <string name="cast_forward_30">Kelaa eteenpäin 30 sekuntia</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">Mykistä</string>
+    <string name="cast_notification_connected_message">Yhdistetty näyttöön %1$s</string>
+    <string name="cast_notification_connecting_message">Yhdistetään näyttöön %1$s</string>
+    <string name="cast_notification_disconnect">Katkaise yhteys</string>
+    <string name="cast_pause">Keskeytä</string>
+    <string name="cast_play">Toista</string>
+    <string name="cast_rewind">Kelaa taaksepäin</string>
+    <string name="cast_rewind_10">Kelaa taaksepäin 10 sekuntia</string>
+    <string name="cast_rewind_30">Kelaa taaksepäin 30 sekuntia</string>
+    <string name="cast_seek_bar">Toiston liukusäädin</string>
+    <string name="cast_skip_next">Siirry seuraavaan kohteeseen</string>
+    <string name="cast_skip_prev">Siirry edelliseen kohteeseen</string>
+    <string name="cast_stop">Pysäytä</string>
+    <string name="cast_stop_live_stream">Pysäytä stream</string>
+    <string name="cast_tracks_chooser_dialog_audio">Ääni</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Peruuta</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Tekstitykset</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">Raita %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">Ei ääniraitoja käytettävissä</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">Ei tekstiraitoja käytettävissä</string>
+    <string name="cast_tracks_chooser_dialog_none">Ei valittu</string>
+    <string name="cast_tracks_chooser_dialog_ok">OK</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Tekstitykset</string>
+    <string name="cast_unmute">Poista mykistys</string>
+    <string name="com_accountkit_button_begin">Aloita</string>
+    <string name="com_accountkit_button_cancel">Peruuta</string>
+    <string name="com_accountkit_button_confirm">Vahvista</string>
+    <string name="com_accountkit_button_continue">Jatka</string>
+    <string name="com_accountkit_button_edit">MUOKKAA</string>
+    <string name="com_accountkit_button_log_in">Kirjaudu sisään</string>
+    <string name="com_accountkit_button_next">Seuraava</string>
+    <string name="com_accountkit_button_ok">OK</string>
+    <string name="com_accountkit_button_resend_code_in">Lähetä koodi uudelleen: %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Lähetä koodi uudelleen</string>
+    <string name="com_accountkit_button_send">Lähetä</string>
+    <string name="com_accountkit_button_send_code_in_fb">Lähetä koodi Facebookissa</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Napauta Lähetä koodi Facebookissa, niin ilmoitus lähetetään antamaasi puhelinnumeroon linkitettyyn Facebook-käyttäjätiliin.</string>
+    <string name="com_accountkit_button_start">Alku</string>
+    <string name="com_accountkit_button_start_over">Yritä uudelleen</string>
+    <string name="com_accountkit_button_submit">Lähetä</string>
+    <string name="com_accountkit_check_email">Avaa sähköpostisi</string>
+    <string name="com_accountkit_code_sent_to">"Lähetimme koodin numeroon
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Hyväksy Facebookin &lt;a href=%2$s>käyttöehdot&lt;/a>, &lt;a href=%3$s>tietokäytäntö&lt;/a> ja &lt;a href=%4$s>evästeiden käyttöä koskeva käytäntö&lt;/a> valitsemalla %1$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Hyväksy Facebookin &lt;a href=%2$s>käyttöehdot&lt;/a>, &lt;a href=%3$s>tietokäytäntö&lt;/a> ja &lt;a href=%4$s>evästeiden käyttöä koskeva käytäntö&lt;/a> ja sovelluksen %6$s &lt;a href=%5$s>yksityisyyskäytäntö&lt;/a> valitsemalla %1$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Hyväksy Facebookin &lt;a href=%2$s>käyttöehdot&lt;/a>, &lt;a href=%3$s>tietokäytäntö&lt;/a> ja &lt;a href=%4$s>evästeiden käyttöä koskeva käytäntö&lt;/a> ja sovelluksen %7$s &lt;a href=%5$s>yksityisyyskäytäntö&lt;/a> ja &lt;a href=%6$s>käyttöehdot&lt;/a> valitsemalla %1$s.</string>
+    <string name="com_accountkit_confirmation_code_text">Etkö saanut koodia?</string>
+    <string name="com_accountkit_confirmation_code_title">Anna koodi</string>
+    <string name="com_accountkit_email_invalid">Sähköpostiosoite on virheellinen. Yritä uudelleen.</string>
+    <string name="com_accountkit_email_loading_title">Lähetetään sähköpostiviestiä…</string>
+    <string name="com_accountkit_email_login_retry_title">Vahvista sähköpostisi</string>
+    <string name="com_accountkit_email_login_text">Valitsemalla %1$s saat Account Kit by Facebookilta sähköpostivahvistuksen, jonka avulla voit käyttää palvelua %2$s. Käyttö ei edellytä Facebook-käyttäjätiliä. &lt;a href=%3$s>Katso, miten Facebook käyttää tietojasi&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">Anna sähköpostiosoitteesi</string>
+    <string name="com_accountkit_email_not_received">Lähetä sähköpostiviesti uudelleen</string>
+    <string name="com_accountkit_email_verify_title">Avaa lähettämämme sähköpostiviesti ja vahvista osoitteesi</string>
+    <string name="com_accountkit_error_title">Valitettavasti tapahtui virhe.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Anna Facebookista saamasi koodi</string>
+    <string name="com_accountkit_phone_loading_title">Lähetetään koodiasi…</string>
+    <string name="com_accountkit_phone_login_retry_title">Vahvista puhelinnumerosi</string>
+    <string name="com_accountkit_phone_login_text">Valitsemalla %1$s saat Account Kit by Facebookilta tekstiviestivahvistuksen, jonka avulla voit käyttää palvelua %2$s. Käyttö ei edellytä Facebook-käyttäjätiliä. Viesteistä ja tiedonsiirrosta voidaan periä veloitus. &lt;a href=%3$s>Katso, miten Facebook käyttää tietojasi&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">Anna puhelinnumerosi</string>
+    <string name="com_accountkit_resend_check">Tarkista numero ennen koodin uudelleenlähettämistä.</string>
+    <string name="com_accountkit_resend_email_text">Lähetä uusi sähköposti</string>
+    <string name="com_accountkit_resend_title">Pahoittelemme. Jatka kokeilemalla näitä vaihtoehtoja.</string>
+    <string name="com_accountkit_return_title">Siirryt takaisin kohteeseen %1$s…</string>
+    <string name="com_accountkit_sent_title">Lähetettiin!</string>
+    <string name="com_accountkit_success_title">Valmis!</string>
+    <string name="com_accountkit_toolbar_title">Kirjaudu sisään kohteeseen %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">Koodin vahvistaminen epäonnistui. Yritä uudelleen:</string>
+    <string name="com_accountkit_verify_title">Vahvistetaan koodiasi…</string>
+    <string name="com_facebook_device_auth_instructions">Siirry osoitteeseen &lt;b>facebook.com/device&lt;/b> ja kirjoita oheinen koodi sivulle.</string>
+    <string name="com_facebook_image_download_unknown_error">Odottamaton virhe kuvan palvelimesta lataamisen aikana.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView-kirjautuminen edellyttää INTERNET-käyttöoikeutta</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest-virhe</string>
     <string name="com_facebook_like_button_liked">Tykätty</string>
-    <string name="com_facebook_loginview_log_out_button">Kirjaudu ulos</string>
+    <string name="com_facebook_like_button_not_liked">Tykkää</string>
+    <string name="com_facebook_loading">Ladataan…</string>
+    <string name="com_facebook_loginview_cancel_action">Peruuta</string>
     <string name="com_facebook_loginview_log_in_button">Kirjaudu sisään</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Jatka Facebook-tunnuksilla</string>
     <string name="com_facebook_loginview_log_in_button_long">Kirjaudu sisään Facebookin avulla</string>
+    <string name="com_facebook_loginview_log_out_action">Kirjaudu ulos</string>
+    <string name="com_facebook_loginview_log_out_button">Kirjaudu ulos</string>
     <string name="com_facebook_loginview_logged_in_as">Sisäänkirjautunut nimellä: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Sisäänkirjautunut Facebookin avulla</string>
-    <string name="com_facebook_loginview_log_out_action">Kirjaudu ulos</string>
-    <string name="com_facebook_loginview_cancel_action">Peruuta</string>
-    <string name="com_facebook_loading">Ladataan...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest-virhe</string>
-    <string name="com_facebook_internet_permission_error_message">WebView-kirjautuminen edellyttää INTERNET-käyttöoikeutta</string>
-    <string name="com_facebook_tooltip_default">Uutta! Sinä päätät – valitse, mitä haluat jakaa sovellusten kanssa.</string>
-    <string name="com_facebook_image_download_unknown_error">Odottamaton virhe kuvan palvelimesta lataamisen aikana.</string>
-    <string name="com_facebook_share_button_text">Jaa</string>
     <string name="com_facebook_send_button_text">Lähetä</string>
+    <string name="com_facebook_share_button_text">Jaa</string>
+    <string name="com_facebook_smart_device_instructions">Pääset liittämään käyttäjätilisi avaamalla Facebook-sovelluksen mobiililaitteellasi ja tarkistamalla ilmoitukset.</string>
+    <string name="com_facebook_smart_device_instructions_or">- TAI -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">Etkö tämä ole sinä?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Vahvista sisäänkirjautuminen</string>
+    <string name="com_facebook_tooltip_default">Sinä voit valita, mitä tietoja jaat sovelluksille.</string>
+    <string name="common_google_play_services_enable_button">Ota käyttöön</string>
+    <string name="common_google_play_services_enable_text">%1$s ei toimi, ellet ota Google Play Palveluita käyttöön.</string>
+    <string name="common_google_play_services_enable_title">Ota Google Play Palvelut käyttöön</string>
+    <string name="common_google_play_services_install_button">Asenna</string>
+    <string name="common_google_play_services_install_text">%1$s ei toimi ilman Google Play Palveluita, jotka puuttuvat laitteeltasi.</string>
+    <string name="common_google_play_services_install_title">Asenna Google Play Palvelut</string>
+    <string name="common_google_play_services_notification_ticker">Virhe Google Play -palveluissa</string>
+    <string name="common_google_play_services_unknown_issue">Sovelluksella %1$s on ongelmia Google Play Palveluiden kanssa. Yritä uudelleen.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ei toimi ilman Google Play Palveluita, joita laitteesi ei tue.</string>
+    <string name="common_google_play_services_update_button">Päivitä</string>
+    <string name="common_google_play_services_update_text">%1$s ei toimi, ellet päivitä Google Play Palveluita.</string>
+    <string name="common_google_play_services_update_title">Päivitä Google Play Palvelut</string>
+    <string name="common_google_play_services_updating_text">%1$s ei toimi ilman Google Play Palveluita, joita päivitetään tällä hetkellä.</string>
+    <string name="common_google_play_services_wear_update_text">Uusi Google Play Palveluiden versio tarvitaan. Se päivittyy pian.</string>
+    <string name="common_open_on_phone">Avaa puhelimessa</string>
+    <string name="common_signin_button_text">Kirjaudu sisään</string>
+    <string name="common_signin_button_text_long">Kirjaudu Google-tilille</string>
+    <string name="create_calendar_message">Myönnetäänkö mainokselle oikeus luoda kalenteritapahtuma?</string>
+    <string name="create_calendar_title">Luo kalenteritapahtuma</string>
+    <string name="debug_menu_ad_information">Mainoksen tiedot</string>
+    <string name="debug_menu_creative_preview">Mainoksen esikatselu</string>
+    <string name="debug_menu_title">Virheenkorjaustilan valinta</string>
+    <string name="debug_menu_troubleshooting">Vianetsintä</string>
+    <string name="decline">Hylkää</string>
+    <string name="messenger_send_button_text">Lähetä</string>
+    <string name="mr_button_content_description">Cast-painike</string>
+    <string name="mr_chooser_searching">Etsitään laitteita</string>
+    <string name="mr_chooser_title">Suoratoiston kohde</string>
+    <string name="mr_controller_album_art">Albumin kansikuva</string>
+    <string name="mr_controller_casting_screen">Suoratoistetaan näyttöä</string>
+    <string name="mr_controller_close_description">Sulje</string>
+    <string name="mr_controller_collapse_group">Tiivistä</string>
+    <string name="mr_controller_disconnect">Katkaise yhteys</string>
+    <string name="mr_controller_expand_group">Laajenna</string>
+    <string name="mr_controller_no_info_available">Tietoja ei ole saatavilla</string>
+    <string name="mr_controller_no_media_selected">Ei valittua mediaa.</string>
+    <string name="mr_controller_pause">Keskeytä</string>
+    <string name="mr_controller_play">Toista</string>
+    <string name="mr_controller_stop">Lopeta suoratoisto</string>
+    <string name="mr_system_route_name">Järjestelmä</string>
+    <string name="mr_user_route_category_name">Laitteet</string>
+    <string name="place_autocomplete_clear_button">Tyhjennä haku.</string>
+    <string name="place_autocomplete_search_hint">Haku</string>
+    <string name="search_menu_title">Haku</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">Myönnetäänkö mainokselle oikeus tallentaa kuva galleriaan?</string>
+    <string name="store_picture_title">Tallenna kuva</string>
+    <string name="wallet_buy_button_place_holder">Maksa Googlen kautta</string>
 </resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Joan orri nagusira</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Joan gora</string>
+    <string name="abc_action_menu_overflow_description">Aukera gehiago</string>
+    <string name="abc_action_mode_done">Eginda</string>
+    <string name="abc_activity_chooser_view_see_all">Ikusi guztiak</string>
+    <string name="abc_activitychooserview_choose_application">Aukeratu aplikazio bat</string>
+    <string name="abc_capital_off">DESAKTIBATUTA</string>
+    <string name="abc_capital_on">AKTIBATUTA</string>
+    <string name="abc_search_hint">Bilatu…</string>
+    <string name="abc_searchview_description_clear">Garbitu kontsulta</string>
+    <string name="abc_searchview_description_query">Bilaketa-kontsulta</string>
+    <string name="abc_searchview_description_search">Bilatu</string>
+    <string name="abc_searchview_description_submit">Bidali kontsulta</string>
+    <string name="abc_searchview_description_voice">Ahots bidezko bilaketa</string>
+    <string name="abc_shareactionprovider_share_with">Partekatu hauekin</string>
+    <string name="abc_shareactionprovider_share_with_application">Partekatu %s erabiltzailearekin</string>
+    <string name="abc_toolbar_collapse_description">Tolestu</string>
+    <string name="mr_button_content_description">Igorri botoia</string>
+    <string name="mr_chooser_searching">Gailuak bilatzen</string>
+    <string name="mr_chooser_title">Igorri hona</string>
+    <string name="mr_controller_album_art">Albumaren azala</string>
+    <string name="mr_controller_casting_screen">Pantaila igortzen</string>
+    <string name="mr_controller_close_description">Itxi</string>
+    <string name="mr_controller_collapse_group">Tolestu</string>
+    <string name="mr_controller_disconnect">Deskonektatu</string>
+    <string name="mr_controller_expand_group">Zabaldu</string>
+    <string name="mr_controller_no_info_available">Ez dago informaziorik</string>
+    <string name="mr_controller_no_media_selected">Ez da hautatu multimedia-edukirik</string>
+    <string name="mr_controller_pause">Pausatu</string>
+    <string name="mr_controller_play">Erreproduzitu</string>
+    <string name="mr_controller_stop">Utzi igortzeari</string>
+    <string name="mr_system_route_name">Sistema</string>
+    <string name="mr_user_route_category_name">Gailuak</string>
+    <string name="search_menu_title">Bilatu</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

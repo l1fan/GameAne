@@ -1,39 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">赞</string>
+    <string name="abc_action_bar_home_description">转到主屏幕</string>
+    <string name="abc_action_bar_home_description_format">%1$s：%2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s - %2$s：%3$s</string>
+    <string name="abc_action_bar_up_description">转到上一层级</string>
+    <string name="abc_action_menu_overflow_description">更多选项</string>
+    <string name="abc_action_mode_done">完成</string>
+    <string name="abc_activity_chooser_view_see_all">查看全部</string>
+    <string name="abc_activitychooserview_choose_application">选择应用</string>
+    <string name="abc_capital_off">关闭</string>
+    <string name="abc_capital_on">开启</string>
+    <string name="abc_search_hint">搜索…</string>
+    <string name="abc_searchview_description_clear">清除查询</string>
+    <string name="abc_searchview_description_query">搜索查询</string>
+    <string name="abc_searchview_description_search">搜索</string>
+    <string name="abc_searchview_description_submit">提交查询</string>
+    <string name="abc_searchview_description_voice">语音搜索</string>
+    <string name="abc_shareactionprovider_share_with">分享方式</string>
+    <string name="abc_shareactionprovider_share_with_application">通过%s分享</string>
+    <string name="abc_toolbar_collapse_description">收起</string>
+    <string name="accept">接受</string>
+    <string name="cast_ad_label">广告</string>
+    <string name="cast_casting_to_device">正在投射到%1$s</string>
+    <string name="cast_closed_captions">字幕</string>
+    <string name="cast_closed_captions_unavailable">无可用字幕</string>
+    <string name="cast_disconnect">断开连接</string>
+    <string name="cast_expanded_controller_ad_image_description">投射接收器播放广告时显示的图片</string>
+    <string name="cast_expanded_controller_ad_in_progress">广告进行中…</string>
+    <string name="cast_expanded_controller_background_image">专辑封面</string>
+    <string name="cast_expanded_controller_live_stream_indicator">直播</string>
+    <string name="cast_expanded_controller_loading">正在加载…</string>
+    <string name="cast_expanded_controller_skip_ad_label">跳过</string>
+    <string name="cast_forward">快进</string>
+    <string name="cast_forward_10">快进 10 秒</string>
+    <string name="cast_forward_30">快进 30 秒</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">静音</string>
+    <string name="cast_notification_connected_message">已连接到%1$s</string>
+    <string name="cast_notification_connecting_message">正在连接到%1$s</string>
+    <string name="cast_notification_disconnect">断开连接</string>
+    <string name="cast_pause">暂停</string>
+    <string name="cast_play">播放</string>
+    <string name="cast_rewind">快退</string>
+    <string name="cast_rewind_10">快退 10 秒</string>
+    <string name="cast_rewind_30">快退 30 秒</string>
+    <string name="cast_seek_bar">播放进度滑块控件</string>
+    <string name="cast_skip_next">跳至下一项</string>
+    <string name="cast_skip_prev">跳至上一项</string>
+    <string name="cast_stop">停止</string>
+    <string name="cast_stop_live_stream">停止直播</string>
+    <string name="cast_tracks_chooser_dialog_audio">音频</string>
+    <string name="cast_tracks_chooser_dialog_cancel">取消</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">字幕</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">曲目 %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">无可用的音轨</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">无可用的文字轨</string>
+    <string name="cast_tracks_chooser_dialog_none">无</string>
+    <string name="cast_tracks_chooser_dialog_ok">确定</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">字幕</string>
+    <string name="cast_unmute">取消静音</string>
+    <string name="com_accountkit_button_begin">开始</string>
+    <string name="com_accountkit_button_cancel">取消</string>
+    <string name="com_accountkit_button_confirm">确认</string>
+    <string name="com_accountkit_button_continue">继续</string>
+    <string name="com_accountkit_button_edit">编辑</string>
+    <string name="com_accountkit_button_log_in">登录</string>
+    <string name="com_accountkit_button_next">下一页</string>
+    <string name="com_accountkit_button_ok">确定</string>
+    <string name="com_accountkit_button_resend_code_in">%1$s 后重发验证码</string>
+    <string name="com_accountkit_button_resend_sms">重发验证码</string>
+    <string name="com_accountkit_button_send">发送</string>
+    <string name="com_accountkit_button_send_code_in_fb">通过 Facebook 发送代码</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">轻触 Facebook 中的“发送验证码”，向与您输入的手机号码相关联的 Facebook 帐户发送通知。</string>
+    <string name="com_accountkit_button_start">开始</string>
+    <string name="com_accountkit_button_start_over">重试</string>
+    <string name="com_accountkit_button_submit">提交</string>
+    <string name="com_accountkit_check_email">打开邮件</string>
+    <string name="com_accountkit_code_sent_to">"我们已将验证码发送至
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">轻触 %1$s 接受 Facebook 的&lt;a href=%2$s>条款&lt;/a>、&lt;a href=%3$s>数据使用政策&lt;/a>和允许使用&lt;a href=%4$s>cookie&lt;/a>。</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">轻触 %1$s 接受 Facebook 的&lt;a href=%2$s>条款&lt;/a>、&lt;a href=%3$s>数据使用政策&lt;/a>和 %6$s 的&lt;a href=%5$s>隐私权政策&lt;/a>，并允许使用 &lt;a href=%4$s>cookie&lt;/a>。</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">轻触 %1$s 接受 Facebook 的&lt;a href=%2$s>条款&lt;/a>、&lt;a href=%3$s>数据使用政策&lt;/a>和 %7$s 的&lt;a href=%5$s>隐私权政策&lt;/a>及&lt;a href=%6$s>服务条款&lt;/a>，并允许使用 &lt;a href=%4$s>cookie&lt;/a>。</string>
+    <string name="com_accountkit_confirmation_code_text">没有收到验证码？</string>
+    <string name="com_accountkit_confirmation_code_title">输入你的代码</string>
+    <string name="com_accountkit_email_invalid">电子邮件不正确。请重试。</string>
+    <string name="com_accountkit_email_loading_title">正在发送电子邮件…</string>
+    <string name="com_accountkit_email_login_retry_title">确认您的邮箱</string>
+    <string name="com_accountkit_email_login_text">轻触 %1$s 获取 Facebook Account Kit 的确认电子邮件，以便您在没有 Facebook 帐户的情况下使用 %2$s。&lt;a href=%3$s>了解 Facebook 如何使用您的个人信息&lt;/a>。</string>
+    <string name="com_accountkit_email_login_title">输入你的电子邮箱</string>
+    <string name="com_accountkit_email_not_received">重新发送邮件</string>
+    <string name="com_accountkit_email_verify_title">打开我们发送的邮件并确认你的地址</string>
+    <string name="com_accountkit_error_title">抱歉，出错了。</string>
+    <string name="com_accountkit_facebook_code_entry_title">输入从 Facebook 获取的验证码</string>
+    <string name="com_accountkit_phone_loading_title">发送代码…</string>
+    <string name="com_accountkit_phone_login_retry_title">确认电话号码</string>
+    <string name="com_accountkit_phone_login_text">轻触 %1$s 获取 Facebook Account Kit 的确认短信，以便您在没有 Facebook 帐户的情况下使用 %2$s。可能需支付信息费和流量费。&lt;a href=%3$s>了解 Facebook 如何使用您的个人信息&lt;/a>。</string>
+    <string name="com_accountkit_phone_login_title">输入电话号码</string>
+    <string name="com_accountkit_resend_check">请检查电话号码再重发验证码。</string>
+    <string name="com_accountkit_resend_email_text">发送新邮件</string>
+    <string name="com_accountkit_resend_title">很抱歉。请尝试以下方法继续操作。</string>
+    <string name="com_accountkit_return_title">即将回到 %1$s…</string>
+    <string name="com_accountkit_sent_title">已发送！</string>
+    <string name="com_accountkit_success_title">完成！</string>
+    <string name="com_accountkit_toolbar_title">登录 %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">"我们无法验证你的代码。
+请重试："</string>
+    <string name="com_accountkit_verify_title">正在验证你的代码…</string>
+    <string name="com_facebook_device_auth_instructions">请访问 &lt;b>facebook.com/device&lt;/b> 并输入上方显示的验证码。</string>
+    <string name="com_facebook_image_download_unknown_error">下载图片时出现意外错误。</string>
+    <string name="com_facebook_internet_permission_error_message">Web 登录需要互联网许可</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest 错误</string>
     <string name="com_facebook_like_button_liked">赞了</string>
-    <string name="com_facebook_loginview_log_out_button">退出</string>
+    <string name="com_facebook_like_button_not_liked">赞</string>
+    <string name="com_facebook_loading">正在加载…</string>
+    <string name="com_facebook_loginview_cancel_action">取消</string>
     <string name="com_facebook_loginview_log_in_button">登录</string>
+    <string name="com_facebook_loginview_log_in_button_continue">继续使用 Facebook 登录</string>
     <string name="com_facebook_loginview_log_in_button_long">使用 Facebook 登录</string>
+    <string name="com_facebook_loginview_log_out_action">退出</string>
+    <string name="com_facebook_loginview_log_out_button">退出</string>
     <string name="com_facebook_loginview_logged_in_as">已以%1$s 身份登录</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">已使用 Facebook 登录</string>
-    <string name="com_facebook_loginview_log_out_action">退出</string>
-    <string name="com_facebook_loginview_cancel_action">取消</string>
-    <string name="com_facebook_loading">正在加载...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest 错误</string>
-    <string name="com_facebook_internet_permission_error_message">Web 登录需要互联网许可</string>
-    <string name="com_facebook_tooltip_default">新增功能！一切任您掌控 — 选择您想通过应用分享的信息。</string>
-    <string name="com_facebook_image_download_unknown_error">下载图片时出现意外错误。</string>
-    <string name="com_facebook_share_button_text">分享</string>
     <string name="com_facebook_send_button_text">发送</string>
+    <string name="com_facebook_share_button_text">分享</string>
+    <string name="com_facebook_smart_device_instructions">要关联你的帐户，请在移动设备上打开 Facebook 应用，并查看通知。</string>
+    <string name="com_facebook_smart_device_instructions_or">- 或者 -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">不是你？</string>
+    <string name="com_facebook_smart_login_confirmation_title">确认登录</string>
+    <string name="com_facebook_tooltip_default">一切任您掌控 — 选择您想通过应用分享的信息。</string>
+    <string name="common_google_play_services_enable_button">启用</string>
+    <string name="common_google_play_services_enable_text">您必须先启用 Google Play 服务，然后才能运行%1$s。</string>
+    <string name="common_google_play_services_enable_title">启用 Google Play 服务</string>
+    <string name="common_google_play_services_install_button">安装</string>
+    <string name="common_google_play_services_install_text">您的设备没有安装 Google Play 服务，因此无法运行%1$s。</string>
+    <string name="common_google_play_services_install_title">获取 Google Play 服务</string>
+    <string name="common_google_play_services_notification_ticker">Google Play服务出错</string>
+    <string name="common_google_play_services_unknown_issue">%1$s无法访问 Google Play 服务，请重试。</string>
+    <string name="common_google_play_services_unsupported_text">您的设备不支持 Google Play 服务，因此无法运行%1$s。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">您必须先更新 Google Play 服务，然后才能运行%1$s。</string>
+    <string name="common_google_play_services_update_title">更新 Google Play 服务</string>
+    <string name="common_google_play_services_updating_text">Google Play 服务当前正在更新，因此您无法运行%1$s。</string>
+    <string name="common_google_play_services_wear_update_text">必须使用新版 Google Play 服务。该服务很快就会自行更新。</string>
+    <string name="common_open_on_phone">在手机上打开</string>
+    <string name="common_signin_button_text">登录</string>
+    <string name="common_signin_button_text_long">使用 Google 帐号登录</string>
+    <string name="create_calendar_message">允许广告创建日历活动吗？</string>
+    <string name="create_calendar_title">创建日历活动</string>
+    <string name="debug_menu_ad_information">广告信息</string>
+    <string name="debug_menu_creative_preview">广告素材预览</string>
+    <string name="debug_menu_title">选择调试模式</string>
+    <string name="debug_menu_troubleshooting">问题排查</string>
+    <string name="decline">拒绝</string>
+    <string name="messenger_send_button_text">发送</string>
+    <string name="mr_button_content_description">投射按钮</string>
+    <string name="mr_chooser_searching">正在查找设备</string>
+    <string name="mr_chooser_title">投射到</string>
+    <string name="mr_controller_album_art">专辑封面</string>
+    <string name="mr_controller_casting_screen">正在投射屏幕</string>
+    <string name="mr_controller_close_description">关闭</string>
+    <string name="mr_controller_collapse_group">折叠</string>
+    <string name="mr_controller_disconnect">断开连接</string>
+    <string name="mr_controller_expand_group">展开</string>
+    <string name="mr_controller_no_info_available">没有任何相关信息</string>
+    <string name="mr_controller_no_media_selected">未选择任何媒体</string>
+    <string name="mr_controller_pause">暂停</string>
+    <string name="mr_controller_play">播放</string>
+    <string name="mr_controller_stop">停止投射</string>
+    <string name="mr_system_route_name">系统</string>
+    <string name="mr_user_route_category_name">设备</string>
+    <string name="place_autocomplete_clear_button">清除搜索内容</string>
+    <string name="place_autocomplete_search_hint">搜索</string>
+    <string name="search_menu_title">搜索</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">允许广告将图片存储在图库中吗？</string>
+    <string name="store_picture_title">保存图片</string>
+    <string name="wallet_buy_button_place_holder">通过 Google 购买</string>
 </resources>

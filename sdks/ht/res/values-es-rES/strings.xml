@@ -1,39 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">Me gusta</string>
+    <string name="com_accountkit_button_begin">Empezar</string>
+    <string name="com_accountkit_button_cancel">Cancelar</string>
+    <string name="com_accountkit_button_confirm">Confirmar</string>
+    <string name="com_accountkit_button_continue">Continuar</string>
+    <string name="com_accountkit_button_edit">EDITAR</string>
+    <string name="com_accountkit_button_log_in">Iniciar sesión</string>
+    <string name="com_accountkit_button_next">Siguiente</string>
+    <string name="com_accountkit_button_ok">Aceptar</string>
+    <string name="com_accountkit_button_resend_code_in">Volver a enviar el código en %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Volver a enviar el código</string>
+    <string name="com_accountkit_button_send">Enviar</string>
+    <string name="com_accountkit_button_send_code_in_fb">Enviar código en Facebook</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Toca Enviar código en Facebook para enviar una notificación a la cuenta de Facebook vinculada al número de teléfono que has introducido.</string>
+    <string name="com_accountkit_button_start">Comenzar</string>
+    <string name="com_accountkit_button_start_over">Volver a intentarlo</string>
+    <string name="com_accountkit_button_submit">Enviar</string>
+    <string name="com_accountkit_check_email">Abre tu correo electrónico</string>
+    <string name="com_accountkit_code_sent_to">"Hemos enviado el código a
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Toca %1$s para aceptar las &lt;a href=%2$s>Condiciones&lt;/a>, la &lt;a href=%3$s>Política de datos&lt;/a> y el &lt;a href=%4$s>Uso de cookies&lt;/a> de Facebook.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Toca %1$s para aceptar las &lt;a href=%2$s>Condiciones&lt;/a>, la &lt;a href=%3$s>Política de datos&lt;/a> y el &lt;a href=%4$s>Uso de cookies&lt;/a> de Facebook, y la &lt;a href=%5$s>Política de privacidad&lt;/a> de %6$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Toca %1$s para aceptar las &lt;a href=%2$s>Condiciones&lt;/a>, la &lt;a href=%3$s>Política de datos&lt;/a>, el &lt;a href=%4$s>Uso de cookies&lt;/a> de Facebook, y la &lt;a href=%5$s>Política de privacidad&lt;/a> y las &lt;a href=%6$s>Condiciones del servicio&lt;/a> de %7$s.</string>
+    <string name="com_accountkit_confirmation_code_text">Volver a enviar el código</string>
+    <string name="com_accountkit_confirmation_code_title">Introduce el código</string>
+    <string name="com_accountkit_email_invalid">La dirección de correo electrónico no es correcta. Vuelve a intentarlo.</string>
+    <string name="com_accountkit_email_loading_title">Enviando correo electrónico…</string>
+    <string name="com_accountkit_email_login_retry_title">Confirma tu correo electrónico</string>
+    <string name="com_accountkit_email_login_text">Toca %1$s para recibir un correo electrónico de confirmación de Account Kit de Facebook y obtener ayuda sobre el uso de %2$s. No necesitas tener una cuenta de Facebook para utilizarlo. &lt;a href=%3$s>Obtén información sobre cómo usa tus datos Facebook&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">Escribe tu dirección de correo electrónico</string>
+    <string name="com_accountkit_email_not_received">Volver a enviar el mensaje</string>
+    <string name="com_accountkit_email_verify_title">Abre el correo electrónico que te hemos enviado y confirma tu dirección</string>
+    <string name="com_accountkit_error_title">Se ha producido un error.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Introduce tu código de Facebook</string>
+    <string name="com_accountkit_phone_loading_title">Enviando tu código…</string>
+    <string name="com_accountkit_phone_login_retry_title">Confirma tu número de teléfono</string>
+    <string name="com_accountkit_phone_login_text">Toca %1$s para recibir un SMS de confirmación de Account Kit de Facebook y obtener ayuda sobre el uso de %2$s. No necesitas tener una cuenta de Facebook para utilizarlo. Se pueden aplicar cargos por mensajes y datos. &lt;a href=%3$s>Obtén información sobre cómo usa tus datos Facebook&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">Escribe tu número de teléfono</string>
+    <string name="com_accountkit_resend_check">Comprueba el número antes de volver a enviar el código.</string>
+    <string name="com_accountkit_resend_email_text">Enviar un nuevo correo electrónico</string>
+    <string name="com_accountkit_resend_title">Lo sentimos. Pruebas las siguientes opciones para continuar.</string>
+    <string name="com_accountkit_return_title">Se te está redirigiendo a %1$s…</string>
+    <string name="com_accountkit_sent_title">¡Enviado!</string>
+    <string name="com_accountkit_success_title">¡Hecho!</string>
+    <string name="com_accountkit_toolbar_title">Iniciar sesión en %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">"No hemos podido verificar tu código.
+Inténtalo de nuevo:"</string>
+    <string name="com_accountkit_verify_title">Verificando tu código…</string>
+    <string name="com_facebook_device_auth_instructions">Visita &lt;b>facebook.com/device&lt;/b> e introduce el código que se muestra arriba.</string>
+    <string name="com_facebook_image_download_unknown_error">Error inesperado al descargar una imagen.</string>
+    <string name="com_facebook_internet_permission_error_message">El inicio de sesión de WebView requiere permiso para INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Error de AndroidManifest</string>
     <string name="com_facebook_like_button_liked">Te gusta</string>
-    <string name="com_facebook_loginview_log_out_button">Salir</string>
+    <string name="com_facebook_like_button_not_liked">Me gusta</string>
+    <string name="com_facebook_loading">Cargando…</string>
+    <string name="com_facebook_loginview_cancel_action">Cancelar</string>
     <string name="com_facebook_loginview_log_in_button">Inicio de sesión</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Continuar con Facebook</string>
     <string name="com_facebook_loginview_log_in_button_long">Iniciar sesión con Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Salir</string>
+    <string name="com_facebook_loginview_log_out_button">Salir</string>
     <string name="com_facebook_loginview_logged_in_as">Sesión iniciada como: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Sesión iniciada con Facebook</string>
-    <string name="com_facebook_loginview_log_out_action">Salir</string>
-    <string name="com_facebook_loginview_cancel_action">Cancelar</string>
-    <string name="com_facebook_loading">Cargando...</string>
-    <string name="com_facebook_internet_permission_error_title">Error de AndroidManifest</string>
-    <string name="com_facebook_internet_permission_error_message">El inicio de sesión de WebView requiere permiso para INTERNET</string>
-    <string name="com_facebook_tooltip_default">Novedad: Tú eres quien controla y elige la información que quieres compartir con las aplicaciones.</string>
-    <string name="com_facebook_image_download_unknown_error">Error inesperado al descargar una imagen.</string>
-    <string name="com_facebook_share_button_text">Compartir</string>
     <string name="com_facebook_send_button_text">Enviar</string>
+    <string name="com_facebook_share_button_text">Compartir</string>
+    <string name="com_facebook_smart_device_instructions">Para conectar tu cuenta, abre la aplicación de Facebook en tu dispositivo móvil y comprueba las notificaciones.</string>
+    <string name="com_facebook_smart_device_instructions_or">- O -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">¿No eres tú?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Confirmar inicio de sesión</string>
+    <string name="com_facebook_tooltip_default">Tú tienes el control: elige la información que quieres compartir con las aplicaciones.</string>
+    <string name="messenger_send_button_text">Enviar</string>
 </resources>

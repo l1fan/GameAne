@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/20.0">
+<application xmlns="http://ns.adobe.com/air/application/23.0">
     <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
     <id>com.ht.htloginsdk.demo</id>
     <!-- <id>com.hydx.payDemo</id> -->
@@ -24,93 +24,92 @@
         android:normalScreens="true"
         android:smallScreens="true" />
 
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+        <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+        <uses-permission android:name="android.permission.GET_TASKS"/>
         <uses-permission android:name="com.android.vending.BILLING" />
-        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-
+        <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+        <permission android:name="com.facebook.notifications.sample.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+        <uses-permission android:name="com.facebook.notifications.sample.permission.C2D_MESSAGE"/>
+        <uses-permission android:name="android.permission.WAKE_LOCK"/>
+        <permission android:name="org.mobile.newhtloginsdk.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+        <uses-permission android:name="org.mobile.newhtloginsdk.permission.C2D_MESSAGE"/>
+        <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="22" />
 
     <application
-      android:name="com.ht.htloginsdk.MyApp"
+      android:name="org.mobile.newhtloginsdk.MyApplication"
         android:allowBackup="true" >
-
-        <activity
-            android:name="com.ht.htloginsdk.activity.MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.ht.htloginsdk.activity.AgainLoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Transparent" >
-        </activity>
-        <activity
-            android:name="com.ht.htloginsdk.activity.ForgetPasswordActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Transparent" >
-        </activity>
-        <activity
-            android:name="com.ht.htloginsdk.activity.LoginActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/Transparent" >
-        </activity>
-        <activity
-            android:name="com.ht.htloginsdk.activity.SignupActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/Transparent" >
-        </activity>
-        <activity
-            android:name="com.ht.htloginsdk.activity.BindActivity"
-            android:label="@string/app_name"
-            android:launchMode="standard"
-            android:screenOrientation="portrait"
-            android:theme="@style/Transparent" >
-        </activity>
-        <activity
-            android:name="com.ht.htloginsdk.activity.AgreementActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Transparent" >
-        </activity>
-        <activity
-            android:name="com.ht.htloginsdk.activity.JudgeActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Transparent" >
-        </activity>
+        <activity android:launchMode="singleTop" android:name="org.mobile.newhtloginsdk.activity.FastLoginActivity" android:screenOrientation="user" android:theme="@style/AppThemes" />
+        <activity android:launchMode="singleTop" android:name="org.mobile.newhtloginsdk.activity.AccountManagerActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.BindAccountActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.OtherAccountActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.BindOtherAccountActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.AccountLoginActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.RegistAccountActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.ModifyPasswordActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:launchMode="singleTop" android:name="org.mobile.newhtloginsdk.activity.TopUpActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.OrderManagerActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.AgreementActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.ForgetPasswordActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="org.mobile.newhtloginsdk.activity.OnlineServiceActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.RecordDetailActivity" android:screenOrientation="user" android:theme="@style/AppThemes"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.ImagesGridActivity" android:screenOrientation="user"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.ImagePreviewActivity" android:screenOrientation="user"/>
+        <activity android:name="org.mobile.newhtloginsdk.activity.TestActivity" android:theme="@style/AppTheme.NoActionBar"/>
         
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.accountkit.ClientToken" android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN"/>
+        <!-- 打包ane之前按下面说明修改ane中的sdks/ht/res/value/strings.xml中相关参数-->
+        <!-- 设置fb的 appid和facebook Kit token参数，对应文件中的facebook_app_id和ACCOUNT_KIT_CLIENT_TOKEN -->
+        <!-- 设置google的 oauth2 client id和项目编号project number，对应文件中的server_client_id和gcm_defaultSenderId -->
+        <!-- 下面的FacebookContentProvider后面要添加和上面一样的fb appid值 -->
+        <provider android:authorities="com.facebook.app.FacebookContentProvider559717777526537" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <meta-data android:name="com.facebook.accountkit.ApplicationName" android:value="@string/app_name"/>
         
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="8487000" />
-        <!-- 设置fb appid，修改请到ane中的sdks/ht/res/value/string.xml中修改，再打包ane -->
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
-
-        <!-- FacebookContentProvider后面要添加和上面一样的id -->
-        <provider
-            android:name="com.facebook.FacebookContentProvider"
-            android:authorities="com.facebook.app.FacebookContentProvider267349303600324"
-            android:exported="true" />
-
-        <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
-            android:name="com.ht.htloginsdk.activity.WebActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Transparent" >
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:screenOrientation="user" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:label="@string/com_accountkit_button_log_in" android:launchMode="singleTop" android:name="com.facebook.accountkit.ui.AccountKitActivity" android:theme="@style/AppLoginTheme" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="org.mobile.newhtloginsdk.server.FloatMenuService" android:process=":background" android:screenOrientation="user"/>
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:process=":background">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.facebook.notifications.sample"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="org.mobile.newhtloginsdk.server.MyFirebaseMessagingService" android:process=":background">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="org.mobile.newhtloginsdk.server.MyFirebaseInstanceIDService" android:process=":background">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="org.mobile.newhtloginsdk.server.RegistrationIntentService" android:process=":background"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity" android:noHistory="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:exported="true" android:name="com.google.android.gms.appinvite.PreviewActivity" android:theme="@style/Theme.AppInvite.Preview">
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
         <activity
             android:name="com.l1fan.ane.ht.GPActivity"
@@ -118,14 +117,58 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
         </activity>
+
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <service android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService" android:process=":background_crash"/>
+        <service android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService" android:process=":background_crash"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.tagmanager.TagManagerService"/>
+        <activity android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.org.mobile.newhtloginsdk"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="org.mobile.newhtloginsdk"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="org.mobile.newhtloginsdk.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.facebook.notifications.internal.activity.CardActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         
         <!-- 配置appId, 如果在代码中也传递了参数，优先取代码中参数 init start-->
-        <meta-data android:name="appId" android:value="" />
+        <meta-data android:name="appId" android:value="100000" />
         <!-- 配置渠道 -->
-        <meta-data android:name="channel" android:value="" />
+        <meta-data android:name="channel" android:value="test" />
 
-        <!-- 
-        1. 统计接口需在登录成功后，创建或登录角色时调用，否则会影响支付操作
+        <!-- 调用方法Android和iOS相同
+        1. 统计接口
               var o:Object = new Object();
               o.type = "reg";     // log/reg分别指已创建和未创建角色
               o.version = "";     // 版本  ？  
@@ -133,13 +176,13 @@
               o.coo_uid = "";     // 角色id
               sdk.call("track",JSON.stringify(o));
               
-        2. facebook邀请好友方法
+        2. facebook邀请好友方法，结果响应事件 FB_INVITE
               var o:Object = new Object();
               o.title = "xxx";      
               o.message = "xxxx";
               sdk.call("invite",JSON.stringify(o));
               
-        3. facebook分享方法
+        3. facebook分享方法，结果响应事件 FB_SHARE
               var o:Object = new Object();
               o.title = "xxx";      
               o.message = "xxxx";
@@ -157,37 +200,117 @@
     <iPhone>
         <InfoAdditions>
       <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>
-      <key>CFBundleURLTypes</key>
-      <array>
+    
+     <key>LSApplicationQueriesSchemes</key>
+     <array>
+       <string>fbapi</string> 
+       <string>fb-messenger-api</string> 
+       <string>fbauth2</string> 
+       <string>fbshareextension</string>
+     </array>
+     
+     <key>NSAppTransportSecurity</key> 
+     <dict>
+        <key>NSExceptionDomains</key> 
         <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>ZHPAY-com.phoenix.zombie.ios.haima</string>
-            </array>
-            <key>CFBundleURLName</key>
-            <string>ZHPAY-com.phoenix.zombie.ios.haima</string>
+          <key>akamaihd.net</key>
+    			<dict>
+    				<key>NSIncludesSubdomains</key>
+    				<true/>
+    				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+    				<false/>
+    			</dict>
+    			<key>facebook.com</key>
+    			<dict>
+    				<key>NSIncludesSubdomains</key>
+    				<true/>
+    				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+    				<false/>
+    			</dict>
+    			<key>fbcdn.net</key>
+    			<dict>
+    				<key>NSIncludesSubdomains</key>
+    				<true/>
+    				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+    				<false/>
+    			</dict>
+    			<key>gamehetu.com</key>
+    			<dict>
+    				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+    				<true/>
+    				<key>NSIncludesSubdomains</key>
+    				<true/>
+    				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+    				<false/>
+    			</dict>
         </dict>
-    </array>
-    <key>LSApplicationQueriesSchemes</key>
-  	<array>
-  		<string>alipay</string>
-  		<string>safepay</string>
-  		<string>haima</string>
-  		<string>haimavip</string>
-  		<string>haimavipipad</string>
-  	</array>
-    <key>NSAppTransportSecurity</key>
-  	<dict>
-  		<key>NSAllowsArbitraryLoads</key>
-  		<true/>
   	</dict>
-    <key>UIRequiredDeviceCapabilities</key>
-  	<array>
-  		<string>armv7</string>
-  	</array>
+    
+    <!-- 设置默认语言 -->
+    <key>CFBundleDevelopmentRegion</key> 
+    <string>en</string>
+    
+     <!-- 填写facebook的accountKIT,从facebook开发者平台获取 -->
+    <key>AccountKitClientToken</key>
+    <string>0708793081ca9d82514fec02e78b3d5e</string>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+              <!-- 将下面的fb和ak前缀后的id修改为fb appid -->
+              <string>fb903157366448932</string>
+              <string>ak903157366448932</string>
+          </array>
+      </dict>
+      <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+              <!-- 打包ane前先到google后台下载配置文件https://developers.google.com/mobile/add?platform=ios，选择和使用对应的游戏的配置和包名。放在与ane项目的sdks/ht_ios目录下 -->
+              <!-- 从谷歌的配置文件中获取的REVERSED_CLIENT_ID -->
+              <string>com.googleusercontent.apps.1047879244101-ab7hk0r62dq3oqjk6jpmp6knimk4p2un</string>
+          </array>
+      </dict>
+    </array>
+    <!-- 从谷歌的配置文件中获取的CLIENT_ID -->
+    <key>clientID</key>
+    <string>1047879244101-ab7hk0r62dq3oqjk6jpmp6knimk4p2un.apps.googleusercontent.com</string>
+    <!-- facebook id -->
+    <key>FacebookAppID</key> 
+    <string>903157366448932</string> 
+    <key>FacebookDisplayName</key> 
+    <string>GameHeTu</string>
+    
+    <!-- 配置平台appid和channel,优先取代码中传递的参数 -->
+    <key>appId</key>
+    <string>100000</string>
+    <!-- 手机号国家代码，只需数字 -->
+    <key>countryNumber</key>
+    <string>86</string>
+    <key>channel</key>
+    <string></string>
 
     ]]>
           </InfoAdditions>
+          <Entitlements> 
+            <![CDATA[ 
+               <!-- 下面三个权限需要在apple后台开启生效 -->
+               <!-- 推送设置 Push Notification，production为生产环境，development为开发环境 -->
+               <!-- <key>aps-environment</key> 
+               <string>production</string>  -->
+               <!-- 游戏中心Game Center -->
+               <!-- <key>com.apple.developer.game-center</key>
+               <true/> -->
+               <!-- keychains sharing -->
+               <key>keychain-access-groups</key>
+                <array>
+                 <!-- 修改包名，前缀prefix 9YFX35TJ5Y 修改为自己开发者证书的team id，也可以直接到后台App IDs中查找到prefix https://developer.apple.com/account/ios/certificate -->
+                 <string>79B95779S7.tw.zc.ios.pac2</string>
+               </array>
+            ]]> 
+         </Entitlements> 
+          
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
 <extensions>

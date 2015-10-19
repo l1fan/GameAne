@@ -1,39 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">Páči sa mi to</string>
+    <string name="abc_action_bar_home_description">Prejsť na plochu</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Prejsť hore</string>
+    <string name="abc_action_menu_overflow_description">Ďalšie možnosti</string>
+    <string name="abc_action_mode_done">Hotovo</string>
+    <string name="abc_activity_chooser_view_see_all">Zobraziť všetko</string>
+    <string name="abc_activitychooserview_choose_application">Zvoľte aplikáciu</string>
+    <string name="abc_capital_off">VYP.</string>
+    <string name="abc_capital_on">ZAP.</string>
+    <string name="abc_search_hint">Vyhľadať…</string>
+    <string name="abc_searchview_description_clear">Vymazať dopyt</string>
+    <string name="abc_searchview_description_query">Vyhľadávací dopyt</string>
+    <string name="abc_searchview_description_search">Hľadať</string>
+    <string name="abc_searchview_description_submit">Odoslať dopyt</string>
+    <string name="abc_searchview_description_voice">Hlasové vyhľadávanie</string>
+    <string name="abc_shareactionprovider_share_with">Zdieľať pomocou</string>
+    <string name="abc_shareactionprovider_share_with_application">Zdieľať pomocou %s</string>
+    <string name="abc_toolbar_collapse_description">Zbaliť</string>
+    <string name="accept">Prijať</string>
+    <string name="cast_ad_label">Reklama</string>
+    <string name="cast_casting_to_device">Prenáša sa do zariadenia %1$s</string>
+    <string name="cast_closed_captions">Skryté titulky</string>
+    <string name="cast_closed_captions_unavailable">Skryté titulky nie sú k dispozícii</string>
+    <string name="cast_disconnect">Odpojiť</string>
+    <string name="cast_expanded_controller_ad_image_description">Obrázok, ktorý sa zobrazí, keď prijímač prenášaného obsahu bude prehrávať reklamu</string>
+    <string name="cast_expanded_controller_ad_in_progress">Zobrazená reklama…</string>
+    <string name="cast_expanded_controller_background_image">Obrázok albumu</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Živé vysielanie</string>
+    <string name="cast_expanded_controller_loading">Načítava sa…</string>
+    <string name="cast_expanded_controller_skip_ad_label">Preskočiť</string>
+    <string name="cast_forward">Pretočiť dopredu</string>
+    <string name="cast_forward_10">Pretočiť dopredu desať sekúnd</string>
+    <string name="cast_forward_30">Pretočiť dopredu tridsať sekúnd</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">Vypnúť zvuk</string>
+    <string name="cast_notification_connected_message">Pripojené k obrazovke %1$s</string>
+    <string name="cast_notification_connecting_message">Prebieha pripájanie k obrazovke %1$s</string>
+    <string name="cast_notification_disconnect">Odpojiť</string>
+    <string name="cast_pause">Pozastaviť</string>
+    <string name="cast_play">Prehrať</string>
+    <string name="cast_rewind">Pretočiť späť</string>
+    <string name="cast_rewind_10">Pretočiť späť desať sekúnd</string>
+    <string name="cast_rewind_30">Pretočiť spať tridsať sekúnd</string>
+    <string name="cast_seek_bar">Posúvač prehrávania</string>
+    <string name="cast_skip_next">Preskočiť na ďalšiu položku</string>
+    <string name="cast_skip_prev">Preskočiť na predchádzajúcu položku</string>
+    <string name="cast_stop">Zastaviť</string>
+    <string name="cast_stop_live_stream">Zastaviť priamy prenos</string>
+    <string name="cast_tracks_chooser_dialog_audio">Zvuk</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Zrušiť</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Skryté titulky</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">%1$d. skladba</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">Nie sú k dispozícii žiadne zvukové stopy</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">Nie sú k dispozícii žiadne textové stopy</string>
+    <string name="cast_tracks_chooser_dialog_none">Žiadne</string>
+    <string name="cast_tracks_chooser_dialog_ok">OK</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Titulky</string>
+    <string name="cast_unmute">Zapnúť zvuk</string>
+    <string name="com_accountkit_button_begin">Začať</string>
+    <string name="com_accountkit_button_cancel">Zrušiť</string>
+    <string name="com_accountkit_button_confirm">Potvrdiť</string>
+    <string name="com_accountkit_button_continue">Pokračovať</string>
+    <string name="com_accountkit_button_edit">UPRAVIŤ</string>
+    <string name="com_accountkit_button_log_in">Prihlásiť sa</string>
+    <string name="com_accountkit_button_next">Ďalej</string>
+    <string name="com_accountkit_button_ok">OK</string>
+    <string name="com_accountkit_button_resend_code_in">Poslať kód znova o %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Poslať kód znova</string>
+    <string name="com_accountkit_button_send">Poslať</string>
+    <string name="com_accountkit_button_send_code_in_fb">Poslať kód vo Facebooku</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Ťuknite na Poslať kód na Facebooku, ak chcete, aby sa poslalo upozornenie na účet na Facebooku prepojený s telefónnym číslom, ktoré ste zadali.</string>
+    <string name="com_accountkit_button_start">Štart</string>
+    <string name="com_accountkit_button_start_over">Skúsiť znova</string>
+    <string name="com_accountkit_button_submit">Odoslať</string>
+    <string name="com_accountkit_check_email">Otvorte svoj e-mail</string>
+    <string name="com_accountkit_code_sent_to">"Kód sme poslali na číslo
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Ťuknutím na %1$s vyjadríte súhlas s &lt;a href=%2$s>Podmienkami&lt;/a> Facebooku a jeho &lt;a href=%3$s>Zásadami využívania údajov&lt;/a> vrátane &lt;a href=%4$s>používania cookies&lt;/a>.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Ťuknutím na %1$s vyjadríte súhlas s &lt;a href=%2$s>Podmienkami&lt;/a> Facebooku a jeho &lt;a href=%3$s>Zásadami využívania údajov&lt;/a> vrátane &lt;a href=%4$s>používania cookies&lt;/a>, a tiež so &lt;a href=%5$s>Zásadami ochrany súkromia&lt;/a> služby %6$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Ťuknutím na %1$s vyjadríte súhlas s &lt;a href=%2$s>Podmienkami&lt;/a> Facebooku a jeho &lt;a href=%3$s>Zásadami využívania údajov&lt;/a> vrátane &lt;a href=%4$s>používania cookies&lt;/a>, a tiež so &lt;a href=%5$s>Zásadami ochrany súkromia&lt;/a> a &lt;a href=%6$s>Zmluvnými podmienkami&lt;/a> služby %7$s.</string>
+    <string name="com_accountkit_confirmation_code_text">Nedostali ste kód?</string>
+    <string name="com_accountkit_confirmation_code_title">Zadajte svoj kód</string>
+    <string name="com_accountkit_email_invalid">Táto e-mailová adresa je nesprávna. Skúste znova.</string>
+    <string name="com_accountkit_email_loading_title">Posiela sa e-mail…</string>
+    <string name="com_accountkit_email_login_retry_title">Potvrďte svoju e-mailovú adresu</string>
+    <string name="com_accountkit_email_login_text">Ťuknite na %1$s, aby ste dostali potvrdzujúci e-mail od služby Account Kit by Facebook, ktorá vám pomôže použiť %2$s. Na použitie nepotrebujete mať účet na Facebooku. &lt;a href=%3$s>Prečítajte si, ako Facebook používa vaše informácie&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">Zadajte svoju e-mailovú adresu</string>
+    <string name="com_accountkit_email_not_received">Poslať e-mail znova</string>
+    <string name="com_accountkit_email_verify_title">Otvorte e-mail, ktorý sme vám poslali, a potvrďte svoju adresu</string>
+    <string name="com_accountkit_error_title">Ľutujeme, vyskytol sa nejaký problém.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Zadajte svoj kód od Facebooku</string>
+    <string name="com_accountkit_phone_loading_title">Posiela sa vám kód…</string>
+    <string name="com_accountkit_phone_login_retry_title">Potvrďte svoje telefónne číslo</string>
+    <string name="com_accountkit_phone_login_text">Ťuknite na %1$s, aby ste dostali potvrdzujúcu SMS od služby Account Kit by Facebook, ktorá vám pomôže použiť %2$s. Na použitie nepotrebujete mať účet na Facebooku. Môžu sa účtovať poplatky za SMS a dáta. &lt;a href=%3$s>Prečítajte si, ako Facebook používa vaše informácie&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">Zadajte svoje telefónne číslo</string>
+    <string name="com_accountkit_resend_check">Pred opätovným poslaním kódu skontrolujte číslo.</string>
+    <string name="com_accountkit_resend_email_text">Poslať nový e-mail</string>
+    <string name="com_accountkit_resend_title">Ľutujeme. Na pokračovanie vyskúšajte tieto možnosti.</string>
+    <string name="com_accountkit_return_title">Prechádzate späť na %1$s…</string>
+    <string name="com_accountkit_sent_title">Odoslané!</string>
+    <string name="com_accountkit_success_title">Hotovo!</string>
+    <string name="com_accountkit_toolbar_title">Prihlásiť sa do účtu %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">Váš kód sa nepodarilo overiť. Skúste to znova:</string>
+    <string name="com_accountkit_verify_title">Overuje sa váš potvrdzovací kód…</string>
+    <string name="com_facebook_device_auth_instructions">Navštívte stránku &lt;b>facebook.com/device&lt;/b> a zadajte kód zobrazený vyššie.</string>
+    <string name="com_facebook_image_download_unknown_error">Pri sťahovaní obrázka sa vyskytla neočakávaná chyba.</string>
+    <string name="com_facebook_internet_permission_error_message">Na prihlásenie sa v rozhraní WebView sa vyžaduje povolenie pre INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Chyba súboru AndroidManifest</string>
     <string name="com_facebook_like_button_liked">Páči sa mi to</string>
-    <string name="com_facebook_loginview_log_out_button">Odhlásiť sa</string>
+    <string name="com_facebook_like_button_not_liked">Páči sa mi to</string>
+    <string name="com_facebook_loading">Načítava sa…</string>
+    <string name="com_facebook_loginview_cancel_action">Zrušiť</string>
     <string name="com_facebook_loginview_log_in_button">Prihlásiť sa</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Pokračovať s Facebookom</string>
     <string name="com_facebook_loginview_log_in_button_long">Prihlásiť sa cez Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Odhlásiť sa</string>
+    <string name="com_facebook_loginview_log_out_button">Odhlásiť sa</string>
     <string name="com_facebook_loginview_logged_in_as">Prihlásený ako: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Prihlásený cez Facebook</string>
-    <string name="com_facebook_loginview_log_out_action">Odhlásiť sa</string>
-    <string name="com_facebook_loginview_cancel_action">Zrušiť</string>
-    <string name="com_facebook_loading">Načítava sa...</string>
-    <string name="com_facebook_internet_permission_error_title">Chyba súboru AndroidManifest</string>
-    <string name="com_facebook_internet_permission_error_message">Na prihlásenie sa v rozhraní WebView sa vyžaduje povolenie pre INTERNET</string>
-    <string name="com_facebook_tooltip_default">Novinka! Máte to pod kontrolou: vyberte, ktoré informácie chcete zdieľať s aplikáciami.</string>
-    <string name="com_facebook_image_download_unknown_error">Pri sťahovaní obrázka sa vyskytla neočakávaná chyba.</string>
-    <string name="com_facebook_share_button_text">Zdieľať</string>
     <string name="com_facebook_send_button_text">Odoslať</string>
+    <string name="com_facebook_share_button_text">Zdieľať</string>
+    <string name="com_facebook_smart_device_instructions">Na pripojenie svojho účtu otvorte vo svojom mobilnom zariadení aplikáciu Facebook a skontrolujte upozornenia.</string>
+    <string name="com_facebook_smart_device_instructions_or">- ALEBO -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">Nie ste to vy?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Potvrdiť prihlásenie</string>
+    <string name="com_facebook_tooltip_default">Máte to pod kontrolou: vyberte, ktoré informácie chcete zdieľať s aplikáciami.</string>
+    <string name="common_google_play_services_enable_button">Povoliť</string>
+    <string name="common_google_play_services_enable_text">Aplikácia %1$s bude fungovať až po povolení služieb Google Play.</string>
+    <string name="common_google_play_services_enable_title">Povoliť služby Google Play</string>
+    <string name="common_google_play_services_install_button">Inštalovať</string>
+    <string name="common_google_play_services_install_text">Na spustenie aplikácie %1$s sa vyžadujú služby Google Play, ktoré na zariadení nemáte.</string>
+    <string name="common_google_play_services_install_title">Inštalovať služby Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Chyba služieb Google Play</string>
+    <string name="common_google_play_services_unknown_issue">Aplikácia %1$s má problémy so službami Google Play. Skúste to znova.</string>
+    <string name="common_google_play_services_unsupported_text">Aplikáciu %1$s nebude možné spustiť bez služieb Google Play, ktoré vaše zariadenie nepodporuje.</string>
+    <string name="common_google_play_services_update_button">Aktualizovať</string>
+    <string name="common_google_play_services_update_text">Aplikáciu %1$s bude možné spustiť až po aktualizácii služieb Google Play.</string>
+    <string name="common_google_play_services_update_title">Aktualizácia služieb Google Play</string>
+    <string name="common_google_play_services_updating_text">Na spustenie aplikácie %1$s sa vyžadujú služby Google Play, ktoré sa momentálne aktualizujú.</string>
+    <string name="common_google_play_services_wear_update_text">Vyžaduje sa nová verzia služieb Google Play. Aktualizujú sa automaticky v najbližšom čase.</string>
+    <string name="common_open_on_phone">Otvoriť v telefóne</string>
+    <string name="common_signin_button_text">Prihlásiť sa</string>
+    <string name="common_signin_button_text_long">Prihlásiť sa do účtu Google</string>
+    <string name="create_calendar_message">Povoliť reklame vytvoriť udalosť v kalendári?</string>
+    <string name="create_calendar_title">Vytvorenie udalosti v kalendári</string>
+    <string name="debug_menu_ad_information">Informácie o reklame</string>
+    <string name="debug_menu_creative_preview">Ukážka kreatívy</string>
+    <string name="debug_menu_title">Vybrať režim ladenia</string>
+    <string name="debug_menu_troubleshooting">Riešenie problémov</string>
+    <string name="decline">Odmietnuť</string>
+    <string name="mr_button_content_description">Tlačidlo prenosu</string>
+    <string name="mr_chooser_searching">Vyhľadávanie zariadení</string>
+    <string name="mr_chooser_title">Prenos do</string>
+    <string name="mr_controller_album_art">Obrázok albumu</string>
+    <string name="mr_controller_casting_screen">Prenáša sa obrazovka</string>
+    <string name="mr_controller_close_description">Zavrieť</string>
+    <string name="mr_controller_collapse_group">Zbaliť</string>
+    <string name="mr_controller_disconnect">Odpojiť</string>
+    <string name="mr_controller_expand_group">Rozbaliť</string>
+    <string name="mr_controller_no_info_available">Nie sú k dispozícii žiadne informácie</string>
+    <string name="mr_controller_no_media_selected">Nie sú vybrané žiadne médiá</string>
+    <string name="mr_controller_pause">Pozastaviť</string>
+    <string name="mr_controller_play">Prehrať</string>
+    <string name="mr_controller_stop">Zastaviť prenos</string>
+    <string name="mr_system_route_name">Systém</string>
+    <string name="mr_user_route_category_name">Zariadenia</string>
+    <string name="place_autocomplete_clear_button">Vymazať vyhľadávanie</string>
+    <string name="place_autocomplete_search_hint">Vyhľadávajte</string>
+    <string name="search_menu_title">Vyhľadávanie</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">Povoliť reklame uložiť obrázok do galérie obrázkov?</string>
+    <string name="store_picture_title">Uloženie obrázka</string>
+    <string name="wallet_buy_button_place_holder">Kúpiť cez Google</string>
 </resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Vrati se na početnu stranicu</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Navigiraj prema gore</string>
+    <string name="abc_action_menu_overflow_description">Više opcija</string>
+    <string name="abc_action_mode_done">Završeno</string>
+    <string name="abc_activity_chooser_view_see_all">Vidi sve</string>
+    <string name="abc_activitychooserview_choose_application">Odaberite aplikaciju</string>
+    <string name="abc_capital_off">ISKLJUČI</string>
+    <string name="abc_capital_on">UKLJUČI</string>
+    <string name="abc_search_hint">Pretraži...</string>
+    <string name="abc_searchview_description_clear">Obriši upit</string>
+    <string name="abc_searchview_description_query">Pretraži upit</string>
+    <string name="abc_searchview_description_search">Traži</string>
+    <string name="abc_searchview_description_submit">Pošalji upit</string>
+    <string name="abc_searchview_description_voice">Pretraživanje glasom</string>
+    <string name="abc_shareactionprovider_share_with">Podijeli sa</string>
+    <string name="abc_shareactionprovider_share_with_application">Podijeli sa %s</string>
+    <string name="abc_toolbar_collapse_description">Skupi</string>
+    <string name="mr_button_content_description">Dugme za prebacivanje</string>
+    <string name="mr_chooser_searching">Traženje uređaja</string>
+    <string name="mr_chooser_title">Prebacujte na</string>
+    <string name="mr_controller_album_art">Omot albuma</string>
+    <string name="mr_controller_casting_screen">Prebacuje se ekran</string>
+    <string name="mr_controller_close_description">Zatvori</string>
+    <string name="mr_controller_collapse_group">Skupi</string>
+    <string name="mr_controller_disconnect">Prekini vezu</string>
+    <string name="mr_controller_expand_group">Proširi</string>
+    <string name="mr_controller_no_info_available">Nema dostupnih informacija</string>
+    <string name="mr_controller_no_media_selected">Nijedan medij nije odabran</string>
+    <string name="mr_controller_pause">Pauziraj</string>
+    <string name="mr_controller_play">Reproduciraj</string>
+    <string name="mr_controller_stop">Zaustavi prebacivanje</string>
+    <string name="mr_system_route_name">Sistem</string>
+    <string name="mr_user_route_category_name">Uređaji</string>
+    <string name="search_menu_title">Pretraži</string>
+    <string name="status_bar_notification_info_overflow">>999</string>
+</resources>

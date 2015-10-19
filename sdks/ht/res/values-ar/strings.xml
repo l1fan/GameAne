@@ -1,39 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">إعجاب</string>
+    <string name="abc_action_bar_home_description">التنقل إلى الشاشة الرئيسية</string>
+    <string name="abc_action_bar_home_description_format">%1$s، %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s، %2$s، %3$s</string>
+    <string name="abc_action_bar_up_description">التنقل إلى أعلى</string>
+    <string name="abc_action_menu_overflow_description">خيارات إضافية</string>
+    <string name="abc_action_mode_done">تم</string>
+    <string name="abc_activity_chooser_view_see_all">عرض الكل</string>
+    <string name="abc_activitychooserview_choose_application">اختيار تطبيق</string>
+    <string name="abc_capital_off">إيقاف</string>
+    <string name="abc_capital_on">تشغيل</string>
+    <string name="abc_search_hint">بحث…</string>
+    <string name="abc_searchview_description_clear">محو طلب البحث</string>
+    <string name="abc_searchview_description_query">طلب البحث</string>
+    <string name="abc_searchview_description_search">بحث</string>
+    <string name="abc_searchview_description_submit">إرسال طلب البحث</string>
+    <string name="abc_searchview_description_voice">البحث الصوتي</string>
+    <string name="abc_shareactionprovider_share_with">مشاركة مع</string>
+    <string name="abc_shareactionprovider_share_with_application">‏مشاركة مع %s</string>
+    <string name="abc_toolbar_collapse_description">تصغير</string>
+    <string name="accept">قبول</string>
+    <string name="cast_ad_label">إعلان</string>
+    <string name="cast_casting_to_device">‏جارٍ الإرسال إلى %1$s</string>
+    <string name="cast_closed_captions">التسميات التوضيحية المغلقة</string>
+    <string name="cast_closed_captions_unavailable">التسميات التوضيحية المغلقة غير متاحة</string>
+    <string name="cast_disconnect">إلغاء الربط</string>
+    <string name="cast_expanded_controller_ad_image_description">‏الصورة المعروضة أثناء تشغيل مستقبل cast لأحد الإعلانات</string>
+    <string name="cast_expanded_controller_ad_in_progress">الإعلان قيد التقدم...</string>
+    <string name="cast_expanded_controller_background_image">صورة الألبوم</string>
+    <string name="cast_expanded_controller_live_stream_indicator">بث مباشر</string>
+    <string name="cast_expanded_controller_loading">جارٍ التحميل…</string>
+    <string name="cast_expanded_controller_skip_ad_label">تخطي</string>
+    <string name="cast_forward">إلى الأمام</string>
+    <string name="cast_forward_10">إلى الأمام عشر ثوانٍ</string>
+    <string name="cast_forward_30">إلى الأمام ثلاثين ثانية</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">كتم الصوت</string>
+    <string name="cast_notification_connected_message">تم الاتصال بـ %1$s</string>
+    <string name="cast_notification_connecting_message">جارٍ الاتصال بـ %1$s</string>
+    <string name="cast_notification_disconnect">إلغاء الربط</string>
+    <string name="cast_pause">إيقاف مؤقت</string>
+    <string name="cast_play">تشغيل</string>
+    <string name="cast_rewind">إرجاع</string>
+    <string name="cast_rewind_10">إرجاع عشر ثوانٍ</string>
+    <string name="cast_rewind_30">إرجاع ثلاثين ثانية</string>
+    <string name="cast_seek_bar">تشغيل شريط التحكم</string>
+    <string name="cast_skip_next">التخطي إلى العنصر التالي</string>
+    <string name="cast_skip_prev">التخطي إلى العنصر السابق</string>
+    <string name="cast_stop">إيقاف</string>
+    <string name="cast_stop_live_stream">إيقاف البث المباشر</string>
+    <string name="cast_tracks_chooser_dialog_audio">الصوت</string>
+    <string name="cast_tracks_chooser_dialog_cancel">إلغاء</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">التسميات التوضيحية المغلقة</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">المقطع الصوتي %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">لا تتوفر أي مقاطع صوتية</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">لا تتوفر أي مقاطع صوتية مزودة بنصوص</string>
+    <string name="cast_tracks_chooser_dialog_none">لا شيء</string>
+    <string name="cast_tracks_chooser_dialog_ok">موافق</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">الترجمات المصاحبة</string>
+    <string name="cast_unmute">إعادة الصوت</string>
+    <string name="com_accountkit_button_begin">بدء</string>
+    <string name="com_accountkit_button_cancel">إلغاء</string>
+    <string name="com_accountkit_button_confirm">تأكيد</string>
+    <string name="com_accountkit_button_continue">متابعة</string>
+    <string name="com_accountkit_button_edit">تعديل.</string>
+    <string name="com_accountkit_button_log_in">تسجيل الدخول</string>
+    <string name="com_accountkit_button_next">التالي</string>
+    <string name="com_accountkit_button_ok">موافق</string>
+    <string name="com_accountkit_button_resend_code_in">إعادة إرسال الرمز خلال %1$s</string>
+    <string name="com_accountkit_button_resend_sms">إعادة إرسال الرمز</string>
+    <string name="com_accountkit_button_send">إرسال</string>
+    <string name="com_accountkit_button_send_code_in_fb">إرسال الرمز على فيسبوك</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">اضغط على إرسال الرمز في فيسبوك لإرسال إشعار إلى حساب فيسبوك المرتبط برقم الهاتف الذي أدخلته.</string>
+    <string name="com_accountkit_button_start">بدء</string>
+    <string name="com_accountkit_button_start_over">حاول مرة أخرى</string>
+    <string name="com_accountkit_button_submit">تقديم</string>
+    <string name="com_accountkit_check_email">فتح البريد الإلكتروني</string>
+    <string name="com_accountkit_code_sent_to">"أرسلنا الرمز إلى 
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">اضغط على %1$s لقبول &lt;a href=%2$s>شروط&lt;/a> &lt;a href=%3$s>سياسة بيانات&lt;/a> و&lt;a href=%4$s>استخدام ملفات تعريف الارتباط&lt;/a> لفيسبوك.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">اضغط على %1$s لقبول &lt;a href=%2$s>شروط&lt;/a> &lt;a href=%3$s>خصوصية بيانات&lt;/a> و&lt;a href=%4$s>استخدام ملفات تعريف الارتباط&lt;/a> لفيسبوك و&lt;a href=%5$s>سياسة خصوصية&lt;/a> %6$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">اضغط على %1$s لقبول &lt;a href=%2$s>شروط&lt;/a> &lt;a href=%3$s>خصوصية بيانات&lt;/a> و&lt;a href=%4$s>استخدام ملفات تعريف الارتباط&lt;/a> لفيسبوك و&lt;a href=%5$s>سياسة خصوصية&lt;/a> و&lt;a href=%6$s>شروط خدمة&lt;/a> %7$s.</string>
+    <string name="com_accountkit_confirmation_code_text">ألم تحصل على الرمز؟</string>
+    <string name="com_accountkit_confirmation_code_title">أدخل الرمز</string>
+    <string name="com_accountkit_email_invalid">عنوان البريد الإلكتروني غير صحيح. يرجى المحاولة مرة أخرى.</string>
+    <string name="com_accountkit_email_loading_title">جارٍ إرسال بريد إلكتروني…</string>
+    <string name="com_accountkit_email_login_retry_title">قم بتأكيد بريدك الإلكتروني</string>
+    <string name="com_accountkit_email_login_text">اضغط على %1$s للحصول على رسالة تأكيد عبر البريد الإلكتروني من Account Kit by Facebook لمساعدتك على استخدام %2$s. لا يتطلب الأمر وجود حساب فيسبوك لاستخدامه. &lt;a href=%3$s>تعرف على كيفية استخدام فيسبوك لمعلوماتك&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">أدخل عنوان بريدك الإلكتروني</string>
+    <string name="com_accountkit_email_not_received">إعادة إرسال البريد الإلكتروني</string>
+    <string name="com_accountkit_email_verify_title">افتح البريد الإلكتروني الذي تم إرساله وقم بتأكيد عنوانك</string>
+    <string name="com_accountkit_error_title">عذراً، حدث خطأ ما.</string>
+    <string name="com_accountkit_facebook_code_entry_title">أدخل الرمز الذي تم إرساله من فيسبوك</string>
+    <string name="com_accountkit_phone_loading_title">جارٍ إرسال الرمز…</string>
+    <string name="com_accountkit_phone_login_retry_title">تأكيد رقم هاتفك</string>
+    <string name="com_accountkit_phone_login_text">اضغط على %1$s للحصول على رسالة تأكيد عبر SMS من Account Kit by Facebook لمساعدتك على استخدام %2$s. لا يتطلب الأمر وجود حساب فيسبوك لاستخدامه. يتم تطبيق أسعار الرسائل وبيانات الاتصال. &lt;a href=%3$s>تعرف على كيفية استخدام فيسبوك لمعلوماتك&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">أدخل رقم هاتفك</string>
+    <string name="com_accountkit_resend_check">يرجى التحقق من الرقم قبل إعادة إرسال الرمز.</string>
+    <string name="com_accountkit_resend_email_text">إرسال بريد إلكتروني جديد</string>
+    <string name="com_accountkit_resend_title">نأسف لذلك. جرّب هذه الخيارات للمتابعة.</string>
+    <string name="com_accountkit_return_title">عودة إلى %1$s…</string>
+    <string name="com_accountkit_sent_title">تم الإرسال!</string>
+    <string name="com_accountkit_success_title">تم!</string>
+    <string name="com_accountkit_toolbar_title">تسجيل الدخول إلى %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">تعذر عليناالتحقق من رمزك. يرجى إعادة المحاولة:</string>
+    <string name="com_accountkit_verify_title">جارٍ التحقق من الرمز…</string>
+    <string name="com_facebook_device_auth_instructions">تفضل بزيارة &lt;b>facebook.com/device&lt;/b> وإدخال الرمز الموضح أدناه.</string>
+    <string name="com_facebook_image_download_unknown_error">حدث خطأ غير متوقع أثناء تنزيل صورة.</string>
+    <string name="com_facebook_internet_permission_error_message">يتطلب تسجيل الدخول إلى WebView إذن الاتصال بالإنترنت</string>
+    <string name="com_facebook_internet_permission_error_title">خطأ AndroidManifest</string>
     <string name="com_facebook_like_button_liked">أعجبني</string>
-    <string name="com_facebook_loginview_log_out_button">تسجيل الخروج</string>
+    <string name="com_facebook_like_button_not_liked">إعجاب</string>
+    <string name="com_facebook_loading">جارٍ التحميل…</string>
+    <string name="com_facebook_loginview_cancel_action">إلغاء</string>
     <string name="com_facebook_loginview_log_in_button">تسجيل الدخول</string>
+    <string name="com_facebook_loginview_log_in_button_continue">متابعة بحساب فيسبوك</string>
     <string name="com_facebook_loginview_log_in_button_long">تسجيل الدخول بحساب فيسبوك</string>
+    <string name="com_facebook_loginview_log_out_action">تسجيل الخروج</string>
+    <string name="com_facebook_loginview_log_out_button">تسجيل الخروج</string>
     <string name="com_facebook_loginview_logged_in_as">تم تسجيل الدخول باسم: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">تم تسجيل الدخول بحساب فيسبوك</string>
-    <string name="com_facebook_loginview_log_out_action">تسجيل الخروج</string>
-    <string name="com_facebook_loginview_cancel_action">إلغاء</string>
-    <string name="com_facebook_loading">جارٍ التحميل...</string>
-    <string name="com_facebook_internet_permission_error_title">خطأ AndroidManifest</string>
-    <string name="com_facebook_internet_permission_error_message">يتطلب تسجيل الدخول إلى WebView إذن الاتصال بالإنترنت</string>
-    <string name="com_facebook_tooltip_default">جديد! أنت المتحكم - اختر المعلومات التي تريد مشاركتها مع التطبيقات.</string>
-    <string name="com_facebook_image_download_unknown_error">حدث خطأ غير متوقع أثناء تنزيل صورة.</string>
-    <string name="com_facebook_share_button_text">مشاركة</string>
     <string name="com_facebook_send_button_text">إرسال</string>
+    <string name="com_facebook_share_button_text">مشاركة</string>
+    <string name="com_facebook_smart_device_instructions">لربط حسابك، افتح تطبيق فيسبوك على جهازك المحمول ثم تفقد الإشعارات.</string>
+    <string name="com_facebook_smart_device_instructions_or">- أو -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">لست أنت؟</string>
+    <string name="com_facebook_smart_login_confirmation_title">تأكيد تسجيل الدخول</string>
+    <string name="com_facebook_tooltip_default">أنت المتحكم - اختر المعلومات التي تريد مشاركتها مع التطبيقات.</string>
+    <string name="common_google_play_services_enable_button">تمكين</string>
+    <string name="common_google_play_services_enable_text">‏لن يعمل %1$s ما لم يتم تمكين خدمات Google Play.</string>
+    <string name="common_google_play_services_enable_title">‏تمكين خدمات Google Play</string>
+    <string name="common_google_play_services_install_button">تثبيت</string>
+    <string name="common_google_play_services_install_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي لا تتوفر على جهازك.</string>
+    <string name="common_google_play_services_install_title">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_notification_ticker">‏خطأ في خدمات Google Play</string>
+    <string name="common_google_play_services_unknown_issue">‏لدى %1$s مشكلة في خدمات Google Play. الرجاء إعادة المحاولة.</string>
+    <string name="common_google_play_services_unsupported_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play التي لا يوفرها جهازك.</string>
+    <string name="common_google_play_services_update_button">تحديث</string>
+    <string name="common_google_play_services_update_text">‏لن يتم تشغيل %1$s ما لم يتم تحديث خدمات Google Play.</string>
+    <string name="common_google_play_services_update_title">‏تحديث خدمات Google Play</string>
+    <string name="common_google_play_services_updating_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي يتم تحديثها حاليًا.</string>
+    <string name="common_google_play_services_wear_update_text">‏يجب توفر إصدار جديد من خدمات Google Play. سيتم تحديثها تلقائيًا قريبًا.</string>
+    <string name="common_open_on_phone">فتح على الهاتف</string>
+    <string name="common_signin_button_text">تسجل الدخول</string>
+    <string name="common_signin_button_text_long">‏تسجيل الدخول عبر Google</string>
+    <string name="create_calendar_message">هل تريد السماح للإعلان بإنشاء حدث تقويم؟</string>
+    <string name="create_calendar_title">إنشاء حدث تقويم</string>
+    <string name="debug_menu_ad_information">معلومات عن الإعلان</string>
+    <string name="debug_menu_creative_preview">معاينة تصميمات الإعلانات</string>
+    <string name="debug_menu_title">تحديد وضع تصحيح الأخطاء</string>
+    <string name="debug_menu_troubleshooting">تحرّي الخلل وإصلاحه</string>
+    <string name="decline">رفض</string>
+    <string name="messenger_send_button_text">إرسال</string>
+    <string name="mr_button_content_description">زر الإرسال</string>
+    <string name="mr_chooser_searching">جارٍ البحث عن أجهزة</string>
+    <string name="mr_chooser_title">إرسال إلى</string>
+    <string name="mr_controller_album_art">صورة الألبوم</string>
+    <string name="mr_controller_casting_screen">جارٍ إرسال الشاشة</string>
+    <string name="mr_controller_close_description">إغلاق</string>
+    <string name="mr_controller_collapse_group">تصغير</string>
+    <string name="mr_controller_disconnect">قطع الاتصال</string>
+    <string name="mr_controller_expand_group">توسيع</string>
+    <string name="mr_controller_no_info_available">لا تتوفر أية معلومات</string>
+    <string name="mr_controller_no_media_selected">لم يتم اختيار أية وسائط</string>
+    <string name="mr_controller_pause">إيقاف مؤقت</string>
+    <string name="mr_controller_play">تشغيل</string>
+    <string name="mr_controller_stop">إيقاف الإرسال</string>
+    <string name="mr_system_route_name">النظام</string>
+    <string name="mr_user_route_category_name">الأجهزة</string>
+    <string name="place_autocomplete_clear_button">مسح البحث</string>
+    <string name="place_autocomplete_search_hint">البحث</string>
+    <string name="search_menu_title">البحث</string>
+    <string name="status_bar_notification_info_overflow">+999</string>
+    <string name="store_picture_message">هل تريد السماح للإعلان بتخزين الصورة في معرض الصور؟</string>
+    <string name="store_picture_title">حفظ الصورة</string>
+    <string name="wallet_buy_button_place_holder">الشراء عبر Google</string>
 </resources>

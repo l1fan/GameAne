@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/icon_background4" android:layout_width="@dimen/layout_340" android:layout_height="@dimen/layout_300">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/layout_41">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/record_detail_back" android:layout_width="wrap_content" android:layout_height="@dimen/layout_18" android:layout_marginLeft="@dimen/layout_10" android:layout_marginTop="@dimen/layout_12">
+                <ImageView android:layout_width="@dimen/layout_18" android:layout_height="@dimen/layout_18" android:src="@mipmap/icon_back" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/back" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/online_service" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:id="@id/record_detail_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_12" android:layout_marginRight="@dimen/layout_10" android:text="@string/finish" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/layout_20" android:layout_marginRight="@dimen/layout_20">
+                <TextView android:textSize="@dimen/text_20" android:textColor="@color/colorBackground" android:gravity="center_vertical" android:id="@id/record_detail_problem_title" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginTop="@dimen/layout_5" />
+                <org.mobile.newhtloginsdk.customview.ListViewForScrollView android:id="@id/record_detail_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <EditText android:textSize="@dimen/text_15" android:textColor="@color/black" android:textColorHint="@color/colorHintText" android:gravity="left" android:id="@id/record_detail_problem_edit" android:background="@drawable/edit_tip_bg" android:padding="@dimen/layout_10" android:layout_width="fill_parent" android:layout_height="@dimen/layout_100" android:layout_marginTop="@dimen/layout_10" android:hint="@string/please_input_problem" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/layout_65" android:layout_marginTop="@dimen/layout_10">
+                    <ImageView android:id="@id/record_detail_list_upload1" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                    <ImageView android:id="@id/record_detail_list_upload2" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                    <ImageView android:id="@id/record_detail_list_upload3" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                    <ImageView android:id="@id/record_detail_list_upload4" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                    <ImageView android:id="@id/record_detail_list_upload5" android:visibility="gone" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_margin="@dimen/layout_1" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/record_detail_list_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_1">
+                        <ImageView android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:src="@mipmap/upload_picture" />
+                        <TextView android:textSize="@dimen/text_10" android:textColor="@color/colorHintText" android:gravity="center_horizontal" android:layout_width="@dimen/layout_50" android:layout_height="fill_parent" android:text="@string/upload_picture" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:gravity="center" android:id="@id/record_detail_problem_commit" android:background="@drawable/button_bg1" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginTop="@dimen/layout_10" android:layout_marginBottom="@dimen/layout_10" android:text="@string/commit_button" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

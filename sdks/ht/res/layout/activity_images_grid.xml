@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_bar" android:background="#cc22292c" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/btn_backpress" android:background="@drawable/sel_back_press" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@mipmap/icon_back" android:layout_centerVertical="true" />
+        <View android:background="#cc111111" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_toRightOf="@id/btn_backpress" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/tv_title_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/select_image" android:layout_toRightOf="@id/btn_backpress" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_ok" android:background="@drawable/sel_top_ok" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="@string/over" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#cc22292f" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_bar" />
+</RelativeLayout>

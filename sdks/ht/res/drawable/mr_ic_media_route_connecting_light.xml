@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_00_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_01_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_02_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_03_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_04_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_05_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_06_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_07_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_08_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_09_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_10_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_11_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_12_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_13_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_14_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_15_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_16_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_17_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_18_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_19_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_20_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_21_light" />
+    <item android:duration="42" android:drawable="@drawable/ic_media_route_connecting_22_light" />
+</animation-list>

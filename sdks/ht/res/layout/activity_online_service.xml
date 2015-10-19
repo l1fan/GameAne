@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/icon_background4" android:layout_width="@dimen/layout_340" android:layout_height="@dimen/layout_300">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/layout_41">
+            <TextView android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_service" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:id="@id/online_service_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_13" android:layout_marginRight="@dimen/layout_10" android:text="@string/finish" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/colorBackground1" android:layout_width="fill_parent" android:layout_height="@dimen/layout_50">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/online_service_problem" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/online_service_problem_logo" android:layout_width="@dimen/layout_20" android:layout_height="@dimen/layout_20" android:src="@mipmap/icon_problem_pressed" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorBackground" android:ellipsize="end" android:id="@id/online_service_problem_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/normal_problem" android:maxLines="1" />
+            </LinearLayout>
+            <View android:background="@color/colorBackground" android:layout_width="@dimen/layout_1" android:layout_height="fill_parent" android:layout_marginTop="@dimen/layout_10" android:layout_marginBottom="@dimen/layout_10" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/online_service_commit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/online_service_commit_logo" android:layout_width="@dimen/layout_20" android:layout_height="@dimen/layout_20" android:src="@mipmap/icon_commit_normal" />
+                <TextView android:textSize="@dimen/text_15" android:ellipsize="end" android:id="@id/online_service_commit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_commit" android:maxLines="1" />
+            </LinearLayout>
+            <View android:background="@color/colorBackground" android:layout_width="@dimen/layout_1" android:layout_height="fill_parent" android:layout_marginTop="@dimen/layout_10" android:layout_marginBottom="@dimen/layout_10" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/online_service_record" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/online_service_record_logo" android:layout_width="@dimen/layout_20" android:layout_height="@dimen/layout_20" android:src="@mipmap/icon_record_normal" />
+                <TextView android:textSize="@dimen/text_15" android:ellipsize="end" android:id="@id/online_service_record_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_record" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/online_service_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/layout_10" />
+    </LinearLayout>
+</LinearLayout>

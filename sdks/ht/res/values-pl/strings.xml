@@ -1,39 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">Lubię to!</string>
+    <string name="abc_action_bar_home_description">Przejdź do strony głównej</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Przejdź wyżej</string>
+    <string name="abc_action_menu_overflow_description">Więcej opcji</string>
+    <string name="abc_action_mode_done">Gotowe</string>
+    <string name="abc_activity_chooser_view_see_all">Zobacz wszystkie</string>
+    <string name="abc_activitychooserview_choose_application">Wybierz aplikację</string>
+    <string name="abc_capital_off">WYŁ.</string>
+    <string name="abc_capital_on">WŁ.</string>
+    <string name="abc_search_hint">Szukaj…</string>
+    <string name="abc_searchview_description_clear">Wyczyść zapytanie</string>
+    <string name="abc_searchview_description_query">Wyszukiwane hasło</string>
+    <string name="abc_searchview_description_search">Szukaj</string>
+    <string name="abc_searchview_description_submit">Wyślij zapytanie</string>
+    <string name="abc_searchview_description_voice">Wyszukiwanie głosowe</string>
+    <string name="abc_shareactionprovider_share_with">Udostępnij dla</string>
+    <string name="abc_shareactionprovider_share_with_application">Udostępnij dla %s</string>
+    <string name="abc_toolbar_collapse_description">Zwiń</string>
+    <string name="accept">Akceptuj</string>
+    <string name="cast_ad_label">Reklama</string>
+    <string name="cast_casting_to_device">Przesyłam na: %1$s</string>
+    <string name="cast_closed_captions">Napisy</string>
+    <string name="cast_closed_captions_unavailable">Napisy są niedostępne</string>
+    <string name="cast_disconnect">Odłącz</string>
+    <string name="cast_expanded_controller_ad_image_description">Obraz wyświetlany, gdy odbiornik przesyłanych danych odtwarza reklamę</string>
+    <string name="cast_expanded_controller_ad_in_progress">Trwa wyświetlanie reklamy…</string>
+    <string name="cast_expanded_controller_background_image">Okładka albumu</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Transmisja na żywo</string>
+    <string name="cast_expanded_controller_loading">Ładuję…</string>
+    <string name="cast_expanded_controller_skip_ad_label">Pomiń</string>
+    <string name="cast_forward">Przewiń do przodu</string>
+    <string name="cast_forward_10">Przewiń do przodu o 10 sekund</string>
+    <string name="cast_forward_30">Przewiń do przodu o 30 sekund</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">Wycisz</string>
+    <string name="cast_notification_connected_message">Połączono z %1$s</string>
+    <string name="cast_notification_connecting_message">Łączę z %1$s</string>
+    <string name="cast_notification_disconnect">Odłącz</string>
+    <string name="cast_pause">Wstrzymaj</string>
+    <string name="cast_play">Odtwórz</string>
+    <string name="cast_rewind">Przewiń do tyłu</string>
+    <string name="cast_rewind_10">Przewiń do tyłu o 10 sekund</string>
+    <string name="cast_rewind_30">Przewiń do tyłu o 30 sekund</string>
+    <string name="cast_seek_bar">Element sterujący odtwarzania/przewijania</string>
+    <string name="cast_skip_next">Przeskocz do następnego elementu</string>
+    <string name="cast_skip_prev">Przeskocz do poprzedniego elementu</string>
+    <string name="cast_stop">Zatrzymaj</string>
+    <string name="cast_stop_live_stream">Zatrzymaj transmisję na żywo</string>
+    <string name="cast_tracks_chooser_dialog_audio">Dźwięk</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Anuluj</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Napisy</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">Punkt filmu %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">Brak dostępnych ścieżek audio</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">Brak dostępnych ścieżek z napisami</string>
+    <string name="cast_tracks_chooser_dialog_none">Brak</string>
+    <string name="cast_tracks_chooser_dialog_ok">OK</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Napisy</string>
+    <string name="cast_unmute">Wyłącz wyciszenie</string>
+    <string name="com_accountkit_button_begin">Rozpocznij</string>
+    <string name="com_accountkit_button_cancel">Anuluj</string>
+    <string name="com_accountkit_button_confirm">Potwierdź</string>
+    <string name="com_accountkit_button_continue">Kontynuuj</string>
+    <string name="com_accountkit_button_edit">EDYCJA</string>
+    <string name="com_accountkit_button_log_in">Zaloguj się</string>
+    <string name="com_accountkit_button_next">Dalej</string>
+    <string name="com_accountkit_button_ok">OK</string>
+    <string name="com_accountkit_button_resend_code_in">Wyślij kod ponownie %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Ponownie wyślij kod</string>
+    <string name="com_accountkit_button_send">Wyślij</string>
+    <string name="com_accountkit_button_send_code_in_fb">Wyślij kod na Facebooku</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Dotknij opcji Wyślij kod na Facebooku, aby otrzymać powiadomienie na konto w tym serwisie powiązane z wprowadzonym numerem telefonu.</string>
+    <string name="com_accountkit_button_start">Początek</string>
+    <string name="com_accountkit_button_start_over">Spróbuj ponownie</string>
+    <string name="com_accountkit_button_submit">Wyślij</string>
+    <string name="com_accountkit_check_email">Otwórz e-mail</string>
+    <string name="com_accountkit_code_sent_to">"Wysłaliśmy kod na numer
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Dotknij pozycji %1$s, aby zaakceptować &lt;a href=%2$s>Regulamin Facebooka&lt;/a>, &lt;a href=%3$s>Zasady wykorzystania danych&lt;/a> oraz &lt;a href=%4$s>Zasady stosowania plików cookie&lt;/a>.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Dotknij pozycji %1$s, aby zaakceptować &lt;a href=%2$s>Regulamin Facebooka&lt;/a>, &lt;a href=%3$s>Zasady wykorzystania danych&lt;/a>, &lt;a href=%4$s>Zasady stosowania plików cookie&lt;/a> oraz &lt;a href=%5$s>Zasady ochrony prywatności&lt;/a> %6$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Dotknij pozycji %1$s, aby zaakceptować &lt;a href=%2$s>Regulamin Facebooka&lt;/a>, &lt;a href=%3$s>Zasady wykorzystania danych&lt;/a>, &lt;a href=%4$s>Zasady stosowania plików cookie&lt;/a> oraz &lt;a href=%5$s>Zasady ochrony prywatności&lt;/a> oraz &lt;a href=%6$s>Regulamin&lt;/a> %7$s.</string>
+    <string name="com_accountkit_confirmation_code_text">Kod wciąż do Ciebie nie dotarł?</string>
+    <string name="com_accountkit_confirmation_code_title">Wprowadź kod</string>
+    <string name="com_accountkit_email_invalid">Niepoprawny adres e-mail. Spróbuj ponownie.</string>
+    <string name="com_accountkit_email_loading_title">Wysyłanie wiadomości e-mail…</string>
+    <string name="com_accountkit_email_login_retry_title">Potwierdź adres e-mail</string>
+    <string name="com_accountkit_email_login_text">Dotknij pozycji %1$s, aby otrzymać e-mail z potwierdzeniem z Account Kit by Facebook i korzystać z %2$s. Nie musisz mieć konta na Facebooku, aby to zrobić. &lt;a href=%3$s>Dowiedz się, jak Facebook wykorzystuje Twoje dane&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">Wprowadź swój adres e-mail</string>
+    <string name="com_accountkit_email_not_received">Wyślij ponownie e-mail</string>
+    <string name="com_accountkit_email_verify_title">Otwórz otrzymany od nas e-mail i potwierdź swój adres</string>
+    <string name="com_accountkit_error_title">Przepraszamy, wystąpił niezidentyfikowany problem.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Wprowadź kod otrzymany od Facebooka</string>
+    <string name="com_accountkit_phone_loading_title">Wysyłanie kodu…</string>
+    <string name="com_accountkit_phone_login_retry_title">Potwierdź numer telefonu</string>
+    <string name="com_accountkit_phone_login_text">Dotknij pozycji %1$s, aby otrzymać SMS z potwierdzeniem z Account Kit by Facebook i korzystać z %2$s. Nie musisz mieć konta na Facebooku, aby to zrobić. Mogą zostać naliczone opłaty za przesyłanie wiadomości i danych. &lt;a href=%3$s>Dowiedz się, jak Facebook wykorzystuje Twoje dane&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">Wprowadź swój numer telefonu</string>
+    <string name="com_accountkit_resend_check">Przed ponownym wysłaniem kodu sprawdź numer.</string>
+    <string name="com_accountkit_resend_email_text">Wyślij nowy e-mail</string>
+    <string name="com_accountkit_resend_title">Przepraszamy. Aby kontynuować, wypróbuj poniższe opcje.</string>
+    <string name="com_accountkit_return_title">Powrót do %1$s…</string>
+    <string name="com_accountkit_sent_title">Wysłano!</string>
+    <string name="com_accountkit_success_title">Gotowe!</string>
+    <string name="com_accountkit_toolbar_title">Logowanie do %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">Nie udało nam się zweryfikować Twojego kodu. Spróbuj ponownie:</string>
+    <string name="com_accountkit_verify_title">Weryfikowanie kodu…</string>
+    <string name="com_facebook_device_auth_instructions">Wejdź na stronę &lt;b>facebook.com/device&lt;/b> i wprowadź podany powyżej kod.</string>
+    <string name="com_facebook_image_download_unknown_error">Nieoczekiwany błąd podczas pobierania obrazu.</string>
+    <string name="com_facebook_internet_permission_error_message">Logowanie się do sieci wymaga zezwolenia na dostęp do INTERNETU</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
     <string name="com_facebook_like_button_liked">Polubione</string>
-    <string name="com_facebook_loginview_log_out_button">Wyloguj się</string>
+    <string name="com_facebook_like_button_not_liked">Lubię to!</string>
+    <string name="com_facebook_loading">Ładowanie…</string>
+    <string name="com_facebook_loginview_cancel_action">Anuluj</string>
     <string name="com_facebook_loginview_log_in_button">Zaloguj się</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Kontynuuj za pośrednictwem Facebooka</string>
     <string name="com_facebook_loginview_log_in_button_long">Zaloguj się przez Facebooka</string>
+    <string name="com_facebook_loginview_log_out_action">Wyloguj się</string>
+    <string name="com_facebook_loginview_log_out_button">Wyloguj się</string>
     <string name="com_facebook_loginview_logged_in_as">Zalogowano jako: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Zalogowano przez Facebooka</string>
-    <string name="com_facebook_loginview_log_out_action">Wyloguj się</string>
-    <string name="com_facebook_loginview_cancel_action">Anuluj</string>
-    <string name="com_facebook_loading">Ładowanie...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
-    <string name="com_facebook_internet_permission_error_message">Logowanie się do sieci wymaga zezwolenia na dostęp do INTERNETU</string>
-    <string name="com_facebook_tooltip_default">Nowość! Masz pełną kontrolę – określ, jakie informacje chcesz udostępniać aplikacjom.</string>
-    <string name="com_facebook_image_download_unknown_error">Nieoczekiwany błąd podczas pobierania obrazu.</string>
-    <string name="com_facebook_share_button_text">Udostępnij</string>
     <string name="com_facebook_send_button_text">Wyślij</string>
+    <string name="com_facebook_share_button_text">Udostępnij</string>
+    <string name="com_facebook_smart_device_instructions">Aby połączyć konto, otwórz aplikację Facebook na urządzeniu mobilnym i sprawdź powiadomienia.</string>
+    <string name="com_facebook_smart_device_instructions_or">- LUB -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">To nie Ty?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Potwierdź logowanie</string>
+    <string name="com_facebook_tooltip_default">Masz pełną kontrolę – określ, jakie informacje chcesz udostępniać aplikacjom.</string>
+    <string name="common_google_play_services_enable_button">Włącz</string>
+    <string name="common_google_play_services_enable_text">Aplikacja %1$s nie będzie działać, jeśli nie włączysz Usług Google Play.</string>
+    <string name="common_google_play_services_enable_title">Włącz Usługi Google Play</string>
+    <string name="common_google_play_services_install_button">Zainstaluj</string>
+    <string name="common_google_play_services_install_text">%1$s nie będzie działać, jeśli nie zainstalujesz na urządzeniu Usług Google Play.</string>
+    <string name="common_google_play_services_install_title">Pobierz Usługi Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Błąd Usług Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ma problem z dostępem do Usług Google Play. Spróbuj jeszcze raz.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s nie będzie działać bez Usług Google Play, które nie są obecnie obsługiwane przez urządzenie.</string>
+    <string name="common_google_play_services_update_button">Aktualizuj</string>
+    <string name="common_google_play_services_update_text">Aplikacja %1$s nie będzie działać, jeśli nie zaktualizujesz Usług Google Play.</string>
+    <string name="common_google_play_services_update_title">Zaktualizuj Usługi Google Play</string>
+    <string name="common_google_play_services_updating_text">Aplikacja %1$s nie będzie działać bez Usług Google Play, które są obecnie aktualizowane.</string>
+    <string name="common_google_play_services_wear_update_text">Wymagana jest nowa wersja Usług Google Play. Wkrótce nastąpi automatyczna aktualizacja.</string>
+    <string name="common_open_on_phone">Otwórz na telefonie</string>
+    <string name="common_signin_button_text">Zaloguj się</string>
+    <string name="common_signin_button_text_long">Zaloguj się przez Google</string>
+    <string name="create_calendar_message">Zezwolić reklamie na utworzenie wydarzenia w kalendarzu?</string>
+    <string name="create_calendar_title">Utwórz wydarzenie w kalendarzu</string>
+    <string name="debug_menu_ad_information">Informacje o reklamie</string>
+    <string name="debug_menu_creative_preview">Podgląd kreacji</string>
+    <string name="debug_menu_title">Wybierz tryb debugowania</string>
+    <string name="debug_menu_troubleshooting">Rozwiązywanie problemów</string>
+    <string name="decline">Odrzuć</string>
+    <string name="messenger_send_button_text">Wyślij</string>
+    <string name="mr_button_content_description">Przycisk Cast</string>
+    <string name="mr_chooser_searching">Znajdowanie urządzeń</string>
+    <string name="mr_chooser_title">Przesyłaj na</string>
+    <string name="mr_controller_album_art">Okładka albumu</string>
+    <string name="mr_controller_casting_screen">Przesyłam ekran</string>
+    <string name="mr_controller_close_description">Zamknij</string>
+    <string name="mr_controller_collapse_group">Zwiń</string>
+    <string name="mr_controller_disconnect">Odłącz</string>
+    <string name="mr_controller_expand_group">Rozwiń</string>
+    <string name="mr_controller_no_info_available">Brak informacji</string>
+    <string name="mr_controller_no_media_selected">Nie wybrano multimediów</string>
+    <string name="mr_controller_pause">Wstrzymaj</string>
+    <string name="mr_controller_play">Odtwórz</string>
+    <string name="mr_controller_stop">Zatrzymaj przesyłanie</string>
+    <string name="mr_system_route_name">System</string>
+    <string name="mr_user_route_category_name">Urządzenia</string>
+    <string name="place_autocomplete_clear_button">Wyczyść wyszukiwanie</string>
+    <string name="place_autocomplete_search_hint">Szukaj</string>
+    <string name="search_menu_title">Szukaj</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">Zezwolić reklamie na zapisanie obrazu w galerii zdjęć?</string>
+    <string name="store_picture_title">Zapisz obraz</string>
+    <string name="wallet_buy_button_place_holder">Kup to z Google</string>
 </resources>

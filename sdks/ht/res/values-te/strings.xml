@@ -1,39 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">ఇష్టంగా గుర్తు పెట్టు</string>
+    <string name="accept">ఆమోదించు</string>
+    <string name="cast_ad_label">ప్రకటన</string>
+    <string name="cast_casting_to_device">%1$sకి ప్రసారం చేస్తోంది</string>
+    <string name="cast_closed_captions">సంవృత శీర్షికలు</string>
+    <string name="cast_closed_captions_unavailable">సంవృత ఉపశీర్షికలు అందుబాటులో లేవు</string>
+    <string name="cast_disconnect">డిస్‌కనెక్ట్ చేయి</string>
+    <string name="cast_expanded_controller_ad_image_description">ప్రసార స్వీకర్త ప్రకటనను ప్లే చేస్తున్నప్పుడు ప్రదర్శించబడే చిత్రం</string>
+    <string name="cast_expanded_controller_ad_in_progress">ప్రకటన ప్ర్రోగ్రెస్‌లో ఉంది…</string>
+    <string name="cast_expanded_controller_background_image">ఆల్బమ్ ఆర్ట్</string>
+    <string name="cast_expanded_controller_live_stream_indicator">ప్రత్యక్ష ప్రసారం</string>
+    <string name="cast_expanded_controller_loading">లోడ్ చేస్తోంది…</string>
+    <string name="cast_expanded_controller_skip_ad_label">దాటవేయి</string>
+    <string name="cast_forward">ఫార్వార్డ్ చేయి</string>
+    <string name="cast_forward_10">పది సెకన్లు ఫార్వార్డ్ చేయి</string>
+    <string name="cast_forward_30">ముప్పై సెకన్లు ఫార్వార్డ్ చేయి</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">మ్యూట్ చేయి</string>
+    <string name="cast_notification_connected_message">%1$sకు కనెక్ట్ చేయబడింది</string>
+    <string name="cast_notification_connecting_message">%1$sకు కనెక్ట్ చేస్తోంది</string>
+    <string name="cast_notification_disconnect">డిస్‌కనెక్ట్ చేయి</string>
+    <string name="cast_pause">పాజ్ చేయి</string>
+    <string name="cast_play">ప్లే చేయి</string>
+    <string name="cast_rewind">రివైండ్ చేయి</string>
+    <string name="cast_rewind_10">పది సెకన్లు రివైండ్ చేయి</string>
+    <string name="cast_rewind_30">ముప్పై సెకన్లు రివైండ్ చేయి</string>
+    <string name="cast_seek_bar">ప్లేబ్యాక్ సీక్ నియంత్రణ</string>
+    <string name="cast_skip_next">తదుపరి అంశానికి దాటవేయి</string>
+    <string name="cast_skip_prev">మునుపటి అంశానికి దాటవేయి</string>
+    <string name="cast_stop">ఆపివేయి</string>
+    <string name="cast_stop_live_stream">ప్రత్యక్ష ప్రసారాన్ని ఆపివేయి</string>
+    <string name="cast_tracks_chooser_dialog_audio">ఆడియో</string>
+    <string name="cast_tracks_chooser_dialog_cancel">రద్దు చేయి</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">మూసివేసిన శీర్షికలు</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">%1$dని ట్రాక్ చేయి</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">ఆడియో ట్రాక్‌లు ఏవీ అందుబాటులో లేవు</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">వచన ట్రాక్‌లు ఏవీ అందుబాటులో లేవు</string>
+    <string name="cast_tracks_chooser_dialog_none">ఏవీ వద్దు</string>
+    <string name="cast_tracks_chooser_dialog_ok">సరే</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">ఉపశీర్షికలు</string>
+    <string name="cast_unmute">అన్‌మ్యూట్ చేయి</string>
+    <string name="com_accountkit_button_begin">ప్రారంభించు</string>
+    <string name="com_accountkit_button_cancel">రద్దు చేయి</string>
+    <string name="com_accountkit_button_confirm">నిర్ధారించు</string>
+    <string name="com_accountkit_button_continue">కొనసాగించు</string>
+    <string name="com_accountkit_button_edit">సవరించండి</string>
+    <string name="com_accountkit_button_log_in">లాగిన్ చేయి</string>
+    <string name="com_accountkit_button_next">తదుపరి</string>
+    <string name="com_accountkit_button_ok">సరే</string>
+    <string name="com_accountkit_button_resend_code_in">%1$sలో కోడ్‌ను మళ్లీ పంపు</string>
+    <string name="com_accountkit_button_resend_sms">కోడ్‌ను మళ్లీ పంపు</string>
+    <string name="com_accountkit_button_send">పంపు</string>
+    <string name="com_accountkit_button_send_code_in_fb">కోడ్‌ను Facebookలో పంపండి</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">మీరు నమోదు చేసిన ఫోన్ నంబర్‌కు అనుబంధించిన Facebook ఖాతాకు నోటిఫికేషన్ పంపడానికి Facebookలో కోడ్‌ను పంపు నొక్కండి.</string>
+    <string name="com_accountkit_button_start">ప్రారంభించు</string>
+    <string name="com_accountkit_button_start_over">మళ్లీ ప్రయత్నించండి</string>
+    <string name="com_accountkit_button_submit">సమర్పించు</string>
+    <string name="com_accountkit_check_email">మీ ఇమెయిల్‌ను తెరవండి</string>
+    <string name="com_accountkit_code_sent_to">మేము %1$sకి కోడ్‌ను పంపాము</string>
+    <string name="com_accountkit_confirmation_code_agreement">Facebook &lt;a href=%2$s>నిబంధనలు&lt;/a>, &lt;a href=%3$s>డేటా విధానం&lt;/a> మరియు &lt;a href=%4$s>కుక్కీ వినియోగం&lt;/a> ఆమోదించడానికి %1$s నొక్కండి.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Facebook &lt;a href=%2$s>నిబంధనలు&lt;/a>, &lt;a href=%3$s>డేటా విధానం&lt;/a>, &lt;a href=%4$s>కుక్కీ వినియోగం&lt;/a> మరియు %6$s &lt;a href=%5$s>గోప్యతా విధానం&lt;/a> ఆమోదించడానికి %1$s నొక్కండి.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Facebook &lt;a href=%2$s>నిబంధనలు&lt;/a>, &lt;a href=%3$s>డేటా విధానం&lt;/a>, &lt;a href=%4$s>కుక్కీ వినియోగం&lt;/a> మరియు %7$s &lt;a href=%5$s>గోప్యతా విధానం&lt;/a> మరియు &lt;a href=%6$s>సేవా నిబంధనలు&lt;/a> ఆమోదించడానికి %1$s నొక్కండి.</string>
+    <string name="com_accountkit_confirmation_code_text">కోడ్ రాలేదా?</string>
+    <string name="com_accountkit_confirmation_code_title">మీ కోడ్‌ను నమోదు చేయండి</string>
+    <string name="com_accountkit_email_invalid">ఈ ఇమెయిల్ తప్పు. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="com_accountkit_email_loading_title">ఇమెయిల్ పంపుతోంది…</string>
+    <string name="com_accountkit_email_login_retry_title">మీ ఇమెయిల్‌ను నిర్ధారించండి</string>
+    <string name="com_accountkit_email_login_text">%2$sని ఉపయోగించడంలో మీకు సహాయపడటం కోసం Facebook ద్వారా Account Kit నుండి ఇమెయిల్ నిర్ధారణను పొందడానికి %1$sని నొక్కండి. దీనిని ఉపయోగించడానికి మీకు Facebook ఖాతా ఉండాల్సిన అవసరం లేదు. &lt;a href=%3$s>Facebook మీ సమాచారాన్ని ఎలా ఉపయోగిస్తుందో తెలుసుకోండి&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">మీ ఇమెయిల్ చిరునామాను నమోదు చేయండి</string>
+    <string name="com_accountkit_email_not_received">ఇమెయిల్‌ను మళ్లీ పంపు</string>
+    <string name="com_accountkit_email_verify_title">మేము పంపిన ఇమెయిల్‌ను తెరిచి, మీ చిరునామాను నిర్ధారించండి</string>
+    <string name="com_accountkit_error_title">మమ్మల్ని క్షమించండి, ఏదో తప్పు జరిగింది.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Facebook నుండి మీ కోడ్‌ను నమోదు చేయండి</string>
+    <string name="com_accountkit_phone_loading_title">మీ కోడ్‌ను పంపుతోంది…</string>
+    <string name="com_accountkit_phone_login_retry_title">మీ ఫోన్ నంబర్‌ను నిర్ధారించండి</string>
+    <string name="com_accountkit_phone_login_text">%2$sని ఉపయోగించడంలో మీకు సహాయపడటం కోసం Facebook ద్వారా Account Kit నుండి SMS నిర్ధారణను పొందడానికి %1$sని నొక్కండి. దీనిని ఉపయోగించడానికి మీకు Facebook ఖాతా ఉండాల్సిన అవసరం లేదు. సందేశ మరియు డేటా ఛార్జీలు వర్తించవచ్చు. &lt;a href=%3$s>Facebook మీ సమాచారాన్ని ఎలా ఉపయోగిస్తుందో తెలుసుకోండి&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">మీ ఫోన్ నంబర్‌ను నమోదు చేయండి</string>
+    <string name="com_accountkit_resend_check">దయచేసి కోడ్‌ను మళ్లీ పంపడానికి ముందు నంబర్‌ను సరి చూసుకోండి.</string>
+    <string name="com_accountkit_resend_email_text">కొత్త ఇమెయిల్ పంపు</string>
+    <string name="com_accountkit_resend_title">మమ్మల్ని క్షమించండి. కొనసాగించడానికి ఈ ఎంపికలను ప్రయత్నించండి.</string>
+    <string name="com_accountkit_return_title">మిమ్మల్ని తిరిగి %1$sకి మళ్లిస్తోంది…</string>
+    <string name="com_accountkit_sent_title">పంపబడింది!</string>
+    <string name="com_accountkit_success_title">పూర్తయింది!</string>
+    <string name="com_accountkit_toolbar_title">%1$sకి లాగిన్ చేయండి</string>
+    <string name="com_accountkit_verify_confirmation_code_title">మేము మీ కోడ్‌ను ధృవీకరించలేకపోయాము. దయచేసి మళ్లీ ప్రయత్నించండి:</string>
+    <string name="com_accountkit_verify_title">మీ కోడ్‌ను ధృవీకరిస్తోంది…</string>
+    <string name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b> లింక్‌ను సందర్శించి, ఎగువ చూపిన కోడ్‌ను నమోదు చేయండి.</string>
+    <string name="com_facebook_image_download_unknown_error">చిత్రాన్ని డౌన్‌లోడ్ చేస్తున్నప్పుడు ఊహించని లోపం ఏర్పడింది.</string>
+    <string name="com_facebook_internet_permission_error_message">వెబ్ వీక్షణ లాగిన్‌కు ఇంటర్నెట్ అనుమతి అవసరం</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest లోపం</string>
     <string name="com_facebook_like_button_liked">ఇష్టంగా గుర్తు పెట్టబడింది</string>
-    <string name="com_facebook_loginview_log_out_button">లాగ్ అవుట్ చేయి</string>
+    <string name="com_facebook_like_button_not_liked">ఇష్టంగా గుర్తు పెట్టు</string>
+    <string name="com_facebook_loading">లోడ్ చేస్తోంది…</string>
+    <string name="com_facebook_loginview_cancel_action">రద్దు చేయి</string>
     <string name="com_facebook_loginview_log_in_button">లాగిన్ చేయి</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Facebookతో కొనసాగించండి</string>
     <string name="com_facebook_loginview_log_in_button_long">Facebookతో లాగిన్ చేయి</string>
+    <string name="com_facebook_loginview_log_out_action">లాగ్ అవుట్ చేయి</string>
+    <string name="com_facebook_loginview_log_out_button">లాగ్ అవుట్ చేయి</string>
     <string name="com_facebook_loginview_logged_in_as">ఇలా లాగిన్ చేసారు: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Facebook ఉపయోగించి లాగిన్ చేసారు</string>
-    <string name="com_facebook_loginview_log_out_action">లాగ్ అవుట్ చేయి</string>
-    <string name="com_facebook_loginview_cancel_action">రద్దు చేయి</string>
-    <string name="com_facebook_loading">లోడ్ చేస్తోంది...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest లోపం</string>
-    <string name="com_facebook_internet_permission_error_message">వెబ్ వీక్షణ లాగిన్‌కు ఇంటర్నెట్ అనుమతి అవసరం</string>
-    <string name="com_facebook_tooltip_default">సరికొత్తది! మీకు నియంత్రణ ఉంది - మీరు అప్లికేషన్‌లతో ఏ సమాచారాన్ని భాగస్వామ్యం చేయాలనుకుంటున్నారో ఎంచుకోండి.</string>
-    <string name="com_facebook_image_download_unknown_error">చిత్రాన్ని డౌన్‌లోడ్ చేస్తున్నప్పుడు ఊహించని లోపం ఏర్పడింది.</string>
-    <string name="com_facebook_share_button_text">భాగస్వామ్యం చేయండి</string>
     <string name="com_facebook_send_button_text">పంపు</string>
+    <string name="com_facebook_share_button_text">భాగస్వామ్యం చేయండి</string>
+    <string name="com_facebook_smart_device_instructions">మీ ఖాతాను అనుసంధానించడానికి, మీ మొబైల్ పరికరంలో Facebook అనువర్తనాన్ని తెరిచి, నోటిఫికేషన్‌లను తనిఖీ చేయండి.</string>
+    <string name="com_facebook_smart_device_instructions_or">- లేదా -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">మీరు కాదా?</string>
+    <string name="com_facebook_smart_login_confirmation_title">లాగిన్‌ను నిర్ధారించండి</string>
+    <string name="com_facebook_tooltip_default">మీకు నియంత్రణ ఉంది - మీరు అనువర్తనాలతో భాగస్వామ్యం చేయాలనుకునే సమాచారాన్ని ఎంచుకోండి.</string>
+    <string name="common_google_play_services_enable_button">ప్రారంభించు</string>
+    <string name="common_google_play_services_enable_text">మీరు Google Play సేవలను ప్రారంభిస్తే మినహా %1$s పని చేయదు.</string>
+    <string name="common_google_play_services_enable_title">Google Play సేవలను ప్రారంభించండి</string>
+    <string name="common_google_play_services_install_button">ఇన్‌స్టాల్ చేయి</string>
+    <string name="common_google_play_services_install_text">%1$s Google Play సేవలు లేకుండా అమలు కాదు, ఆ సేవలు మీ పరికరంలో లేవు.</string>
+    <string name="common_google_play_services_install_title">Google Play సేవలను పొందండి</string>
+    <string name="common_google_play_services_notification_ticker">Google Play సేవల లోపం</string>
+    <string name="common_google_play_services_unknown_issue">%1$s Google Play సేవలతో సమస్య కలిగి ఉంది. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s Google Play సేవలు లేకుండా అమలు కాదు, ఈ సేవలకు మీ పరికరంలో మద్దతు లేదు.</string>
+    <string name="common_google_play_services_update_button">నవీకరించు</string>
+    <string name="common_google_play_services_update_text">మీరు Google Play సేవలను నవీకరిస్తే మినహా %1$s అమలు కాదు.</string>
+    <string name="common_google_play_services_update_title">Google Play సేవలను నవీకరించండి</string>
+    <string name="common_google_play_services_updating_text">%1$s Google Play సేవలు లేకుండా అమలు కాదు, ఆ సేవలు ప్రస్తుతం నవీకరించబడుతున్నాయి.</string>
+    <string name="common_google_play_services_wear_update_text">కొత్త Google Play సేవల సంస్కరణ అవసరం. అది కొద్ది సేపట్లో దానంతట అదే నవీకరించబడుతుంది.</string>
+    <string name="common_open_on_phone">ఫోన్‌లో తెరువు</string>
+    <string name="common_signin_button_text">సైన్ ఇన్ చేయి</string>
+    <string name="common_signin_button_text_long">Googleతో సైన్ ఇన్ చేయి</string>
+    <string name="create_calendar_message">క్యాలెండర్ ఈవెంట్‌ను సృష్టించడానికి ప్రకటనను అనుమతించాలా?</string>
+    <string name="create_calendar_title">క్యాలెండర్ ఈవెంట్‌ను సృష్టించండి</string>
+    <string name="debug_menu_ad_information">ప్రకటన సమాచారం</string>
+    <string name="debug_menu_creative_preview">సృజనాత్మక పరిదృశ్యం</string>
+    <string name="debug_menu_title">డీబగ్ మోడ్‌ను ఎంచుకోండి</string>
+    <string name="debug_menu_troubleshooting">సమస్య పరిష్కారం</string>
+    <string name="decline">తిరస్కరించు</string>
+    <string name="messenger_send_button_text">పంపు</string>
+    <string name="place_autocomplete_clear_button">శోధనను తీసివేస్తుంది</string>
+    <string name="place_autocomplete_search_hint">శోధించండి</string>
+    <string name="store_picture_message">చిత్ర గ్యాలరీలో చిత్రాన్ని నిల్వ చేయడానికి ప్రకటనను అనుమతించాలా?</string>
+    <string name="store_picture_title">చిత్రాన్ని సేవ్ చేయండి</string>
+    <string name="wallet_buy_button_place_holder">Googleతో కొనుగోలు చేయి</string>
 </resources>

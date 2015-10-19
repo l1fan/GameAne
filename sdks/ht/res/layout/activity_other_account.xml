@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/icon_background3" android:layout_width="@dimen/layout_340" android:layout_height="@dimen/layout_320">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/layout_45">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/other_account_back" android:layout_width="wrap_content" android:layout_height="@dimen/layout_18" android:layout_marginLeft="@dimen/layout_10" android:layout_marginTop="@dimen/layout_15">
+                <ImageView android:layout_width="@dimen/layout_18" android:layout_height="@dimen/layout_18" android:src="@mipmap/icon_back" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/back" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/account_change" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:id="@id/other_account_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_15" android:layout_marginRight="@dimen/layout_10" android:text="@string/finish" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_25" android:textColor="@color/colorBackground" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/layout_50" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:text="@string/plase_chose_login_methods" />
+            <Button android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:id="@id/other_account_button_account" android:background="@drawable/button_bg2" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:text="@string/offical_accounts" />
+            <Button android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:id="@id/other_account_button_facebook" android:background="@drawable/button_bg1" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:text="Facebook" android:textAllCaps="false" />
+            <Button android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:id="@id/other_account_button_googel" android:background="@drawable/button_bg1" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:text="Google" android:textAllCaps="false" />
+            <Button android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:id="@id/other_account_button_account_kit" android:background="@drawable/button_bg1" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:text="Account Kit" android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

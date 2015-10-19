@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.accountkit.ui.ConstrainedLinearLayout style="@style/AccountKit.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/com_accountkit_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/com_accountkit_title_min_height" android:lineSpacingExtra="@dimen/com_accountkit_spacer_normal" style="@style/AccountKit.TitleText" />
+    <com.facebook.accountkit.ui.BorderButton android:id="@id/edit_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="56.0dip" android:text="@string/com_accountkit_button_edit" style="@style/AccountKit.BorderButton" />
+</com.facebook.accountkit.ui.ConstrainedLinearLayout>

@@ -1,39 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">விருப்பம்</string>
+    <string name="accept">ஏற்கிறேன்</string>
+    <string name="cast_ad_label">விளம்பரம்</string>
+    <string name="cast_casting_to_device">%1$sக்கு அனுப்புகிறது</string>
+    <string name="cast_closed_captions">வசனம்</string>
+    <string name="cast_closed_captions_unavailable">வசனம் இல்லை</string>
+    <string name="cast_disconnect">தொடர்பைத் துண்டி</string>
+    <string name="cast_expanded_controller_ad_image_description">Cast ரிசீவர் விளம்பரத்தை இயக்கும் போது காட்டப்படும் படம்</string>
+    <string name="cast_expanded_controller_ad_in_progress">விளம்பரம் செயலில் உள்ளது…</string>
+    <string name="cast_expanded_controller_background_image">ஆல்பம் ஆர்ட்</string>
+    <string name="cast_expanded_controller_live_stream_indicator">லைவ் ஸ்ட்ரீம்</string>
+    <string name="cast_expanded_controller_loading">ஏற்றுகிறது…</string>
+    <string name="cast_expanded_controller_skip_ad_label">தவிர்</string>
+    <string name="cast_forward">முன்செல்</string>
+    <string name="cast_forward_10">பத்து வினாடிகள் முன்செல்</string>
+    <string name="cast_forward_30">முப்பது வினாடிகள் முன்செல்</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">ஒலியடக்கு</string>
+    <string name="cast_notification_connected_message">%1$s உடன் இணைக்கப்பட்டது</string>
+    <string name="cast_notification_connecting_message">%1$s உடன் இணைக்கிறது</string>
+    <string name="cast_notification_disconnect">இணைப்பைத் துண்டி</string>
+    <string name="cast_pause">இடைநிறுத்து</string>
+    <string name="cast_play">இயக்கு</string>
+    <string name="cast_rewind">பின்செல்</string>
+    <string name="cast_rewind_10">பத்து வினாடிகள் பின்செல்</string>
+    <string name="cast_rewind_30">முப்பது வினாடிகள் பின்செல்</string>
+    <string name="cast_seek_bar">பிளேபேக் நகர்தல் கட்டுப்பாடு</string>
+    <string name="cast_skip_next">அடுத்த உருப்படிக்குச் செல்</string>
+    <string name="cast_skip_prev">முந்தைய உருப்படிக்குச் செல்</string>
+    <string name="cast_stop">நிறுத்து</string>
+    <string name="cast_stop_live_stream">லைவ் ஸ்ட்ரீமை நிறுத்து</string>
+    <string name="cast_tracks_chooser_dialog_audio">ஆடியோ</string>
+    <string name="cast_tracks_chooser_dialog_cancel">ரத்துசெய்</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">வசனம்</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">ட்ராக்: %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">ஆடியோ ட்ராக்குகள் எதுவுமில்லை</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">உரை ட்ராக்குகள் எதுவுமில்லை</string>
+    <string name="cast_tracks_chooser_dialog_none">ஏதுமில்லை</string>
+    <string name="cast_tracks_chooser_dialog_ok">சரி</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">வசனங்கள்</string>
+    <string name="cast_unmute">ஒலி இயக்கு</string>
+    <string name="com_accountkit_button_begin">தொடங்கு</string>
+    <string name="com_accountkit_button_cancel">ரத்துசெய்</string>
+    <string name="com_accountkit_button_confirm">உறுதிசெய்</string>
+    <string name="com_accountkit_button_continue">தொடரவும்</string>
+    <string name="com_accountkit_button_edit">திருத்தவும்.</string>
+    <string name="com_accountkit_button_log_in">உள்நுழை</string>
+    <string name="com_accountkit_button_next">அடுத்து</string>
+    <string name="com_accountkit_button_ok">சரி</string>
+    <string name="com_accountkit_button_resend_code_in">%1$s இல் குறியீட்டை மீண்டும் அனுப்பு</string>
+    <string name="com_accountkit_button_resend_sms">குறியீட்டை மீண்டும் அனுப்பு</string>
+    <string name="com_accountkit_button_send">அனுப்பு</string>
+    <string name="com_accountkit_button_send_code_in_fb">Facebook இல் குறியீட்டை அனுப்பு</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">நீங்கள் உள்ளிட்ட ஃபோன் எண்ணுடன் இணைந்துள்ள Facebook கணக்கிற்கு அறிவிப்பை அனுப்ப, Facebook இல் குறியீட்டை அனுப்பு என்பதைத் தட்டவும்.</string>
+    <string name="com_accountkit_button_start">தொடங்கு</string>
+    <string name="com_accountkit_button_start_over">மீண்டும் முயற்சிக்கவும்</string>
+    <string name="com_accountkit_button_submit">சமர்ப்பி</string>
+    <string name="com_accountkit_check_email">மின்னஞ்சலைத் திறக்கவும்</string>
+    <string name="com_accountkit_code_sent_to">%1$sக்கு குறியீட்டை அனுப்பியுள்ளோம்</string>
+    <string name="com_accountkit_confirmation_code_agreement">Facebook இன் &lt;a href=%2$s>விதிமுறைகள்&lt;/a>, &lt;a href=%3$s>தரவுக் கொள்கை&lt;/a> மற்றும் &lt;a href=%4$s>குக்கீ பயன்பாட்டை&lt;/a> ஏற்க, %1$s என்பதைத் தட்டவும்.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Facebook இன் &lt;a href=%2$s>விதிமுறைகள்&lt;/a>, &lt;a href=%3$s>தரவுக் கொள்கை&lt;/a>, &lt;a href=%4$s>குக்கீ பயன்பாடு&lt;/a> மற்றும் %6$s இன் &lt;a href=%5$s>தனியுரிமைக் கொள்கையை&lt;/a> ஏற்க, %1$s என்பதைத் தட்டவும்.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Facebook இன் &lt;a href=%2$s>விதிமுறைகள்&lt;/a>, &lt;a href=%3$s>தரவுக் கொள்கை&lt;/a>, &lt;a href=%4$s>குக்கீ பயன்பாடு&lt;/a> மற்றும் %7$s இன் &lt;a href=%5$s>தனியுரிமைக் கொள்கை&lt;/a>, &lt;a href=%6$s>சேவை விதிமுறைகளை&lt;/a> ஏற்க, %1$s என்பதைத் தட்டவும்.</string>
+    <string name="com_accountkit_confirmation_code_text">குறியீட்டைப் பெறவில்லையா?</string>
+    <string name="com_accountkit_confirmation_code_title">குறியீட்டை உள்ளிடவு்:</string>
+    <string name="com_accountkit_email_invalid">இந்த மின்னஞ்சல் தவறானது. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="com_accountkit_email_loading_title">மின்னஞ்சலை அனுப்புகிறது…</string>
+    <string name="com_accountkit_email_login_retry_title">உங்கள் மின்னஞ்சலை உறுதிப்படுத்தவும்</string>
+    <string name="com_accountkit_email_login_text">%2$s ஐப் பயன்படுத்துவதற்காக, Facebook வழங்கும் அக்கவுண்ட் கிட்டிலிருந்து மின்னஞ்சல் உறுதிப்படுத்தலைப் பெற, %1$s ஐத் தட்டவும். இதைப் பயன்படுத்த உங்களுக்கு Facebook கணக்கு தேவையில்லை. &lt;a href=%3$s>உங்கள் தகவலை Facebook பயன்படுத்தும் விதம் பற்றி மேலும் அறிக&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">மின்னஞ்சல் முகவரியை உள்ளிடவும்</string>
+    <string name="com_accountkit_email_not_received">மின்னஞ்சலை மீண்டும் அனுப்பவும்</string>
+    <string name="com_accountkit_email_verify_title">நாங்கள் அனுப்பிய மின்னஞ்சலைத் திறந்து, உங்கள் முகவரியை உறுதிசெய்யவும்</string>
+    <string name="com_accountkit_error_title">ஏதோ தவறாகிவிட்டது.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Facebook இலிருந்து குறியீட்டை உள்ளிடவும்</string>
+    <string name="com_accountkit_phone_loading_title">உங்களுக்கான குறியீட்டை அனுப்புகிறது…</string>
+    <string name="com_accountkit_phone_login_retry_title">ஃபோன் எண்ணை உறுதிசெய்யவும்</string>
+    <string name="com_accountkit_phone_login_text">%2$s ஐப் பயன்படுத்துவதற்காக, Facebook வழங்கும் அக்கவுண்ட் கிட்டிலிருந்து SMS உறுதிப்படுத்தலைப் பெற, %1$s ஐத் தட்டவும். இதைப் பயன்படுத்த உங்களுக்கு Facebook கணக்கு தேவையில்லை. செய்தி மற்றும் தரவுக் கட்டணங்கள் விதிக்கப்படலாம். &lt;a href=%3$s>உங்கள் தகவலை Facebook பயன்படுத்தும் விதம் பற்றி மேலும் அறிக&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">ஃபோன் எண்ணை உள்ளிடவும்</string>
+    <string name="com_accountkit_resend_check">குறியீட்டை மீண்டும் அனுப்புவதற்கு முன், எண்ணைச் சரிபார்க்கவும்.</string>
+    <string name="com_accountkit_resend_email_text">புதிய மின்னஞ்சலை அனுப்பு</string>
+    <string name="com_accountkit_resend_title">வருந்துகிறோம். தொடர, இந்த விருப்பங்களை முயற்சிக்கவும்.</string>
+    <string name="com_accountkit_return_title">%1$s க்குத் திரும்பச்செல்கிறது…</string>
+    <string name="com_accountkit_sent_title">அனுப்பப்பட்டது!</string>
+    <string name="com_accountkit_success_title">முடிந்தது!</string>
+    <string name="com_accountkit_toolbar_title">%1$s இல் உள்நுழையவும்</string>
+    <string name="com_accountkit_verify_confirmation_code_title">குறியீட்டைச் சரிபார்க்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்:</string>
+    <string name="com_accountkit_verify_title">குறியீட்டைச் சரிபார்க்கிறது…</string>
+    <string name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b> என்பதற்குச் சென்று மேலே தெரியும் குறியீட்டை உள்ளிடவும்.</string>
+    <string name="com_facebook_image_download_unknown_error">படத்தைப் பதிவிறக்கும் போது பிழை ஏற்பட்டது.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView இல் உள்நுழைய இணைய அனுமதி தேவை</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest பிழை</string>
     <string name="com_facebook_like_button_liked">விரும்பப்பட்டது</string>
-    <string name="com_facebook_loginview_log_out_button">வெளியேறு</string>
+    <string name="com_facebook_like_button_not_liked">விருப்பம்</string>
+    <string name="com_facebook_loading">ஏற்றுகிறது…</string>
+    <string name="com_facebook_loginview_cancel_action">ரத்துசெய்</string>
     <string name="com_facebook_loginview_log_in_button">உள்நுழைவு</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Facebook இல் தொடரவும்</string>
     <string name="com_facebook_loginview_log_in_button_long">Facebook மூலம் உள்நுழையவும்</string>
+    <string name="com_facebook_loginview_log_out_action">வெளியேறு</string>
+    <string name="com_facebook_loginview_log_out_button">வெளியேறு</string>
     <string name="com_facebook_loginview_logged_in_as">உள்நுழைந்துள்ள கணக்கு: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Facebook மூலம் உள்நுழையப்பட்டுள்ளது</string>
-    <string name="com_facebook_loginview_log_out_action">வெளியேறு</string>
-    <string name="com_facebook_loginview_cancel_action">ரத்துசெய்</string>
-    <string name="com_facebook_loading">ஏற்றுகிறது...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest பிழை</string>
-    <string name="com_facebook_internet_permission_error_message">WebView இல் உள்நுழைய இணைய அனுமதி தேவை</string>
-    <string name="com_facebook_tooltip_default">புதிது! உங்கள் கட்டுப்பாட்டில் இருப்பதால், பயன்பாடுகளுடன் பகிர வேண்டிய தகவலைத் தேர்வுசெய்யவும்.</string>
-    <string name="com_facebook_image_download_unknown_error">படத்தைப் பதிவிறக்கும் போது பிழை ஏற்பட்டது.</string>
-    <string name="com_facebook_share_button_text">பகிர்</string>
     <string name="com_facebook_send_button_text">அனுப்பு</string>
+    <string name="com_facebook_share_button_text">பகிர்</string>
+    <string name="com_facebook_smart_device_instructions">உங்கள் கணக்குடன் இணைக்க, உங்கள் மொபைல் சாதனத்தில் Facebook பயன்பாட்டைத் திறந்து அறிவிப்புகளைப் பார்க்கவும்.</string>
+    <string name="com_facebook_smart_device_instructions_or">- அல்லது -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">நீங்கள் இல்லையா?</string>
+    <string name="com_facebook_smart_login_confirmation_title">உள்நுழைவை உறுதிப்படுத்தவும்</string>
+    <string name="com_facebook_tooltip_default">பயன்பாடுகளில் எந்தத் தகவலைப் பகிர விரும்புகிறீர்கள் என்பதை நீங்கள் கட்டுப்படுத்தலாம்.</string>
+    <string name="common_google_play_services_enable_button">இயக்கு</string>
+    <string name="common_google_play_services_enable_text">Google Play சேவைகளை இயக்கினால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_enable_title">Google Play சேவைகளை இயக்கவும்</string>
+    <string name="common_google_play_services_install_button">நிறுவு</string>
+    <string name="common_google_play_services_install_text">Google Play சேவைகள் இருந்தால் மட்டுமே, %1$s இயங்கும். அவை உங்கள் சாதனத்தில் இல்லை.</string>
+    <string name="common_google_play_services_install_title">Google Play சேவைகளைப் பெறவும்</string>
+    <string name="common_google_play_services_notification_ticker">Google Play சேவைகள் பிழை</string>
+    <string name="common_google_play_services_unknown_issue">Google Play சேவைகளில் சிக்கல் ஏற்பட்டதால், %1$s பயன்பாட்டை அணுக முடியவில்லை. மீண்டும் முயலவும்.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play சேவைகள் இருந்தால் மட்டுமே %1$s பயன்பாடு இயங்கும். ஆனால், உங்கள் சாதனத்தில் அவை ஆதரிக்கப்படவில்லை.</string>
+    <string name="common_google_play_services_update_button">புதுப்பி</string>
+    <string name="common_google_play_services_update_text">Google Play சேவைகளை இயக்கினால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_update_title">Google Play சேவைகளைப் புதுப்பிக்கவும்</string>
+    <string name="common_google_play_services_updating_text">தற்போது புதுப்பிக்கப்படும், Google Play சேவைகள் இருந்தால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play சேவைகளின் புதிய பதிப்பு தேவை. அது விரைவில் தானாகவே புதுப்பிக்கப்படும்.</string>
+    <string name="common_open_on_phone">மொபைலில் திற</string>
+    <string name="common_signin_button_text">உள்நுழைக</string>
+    <string name="common_signin_button_text_long">Google மூலம் உள்நுழைக</string>
+    <string name="create_calendar_message">கேலெண்டர் நிகழ்வை உருவாக்க, விளம்பரத்தை அனுமதிக்கவா?</string>
+    <string name="create_calendar_title">கேலெண்டர் நிகழ்வை உருவாக்கு</string>
+    <string name="debug_menu_ad_information">விளம்பரத் தகவல்</string>
+    <string name="debug_menu_creative_preview">விளம்பரத்தின் மாதிரிக்காட்சி</string>
+    <string name="debug_menu_title">பிழைத் திருத்தப் பயன்முறையைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="debug_menu_troubleshooting">பிழைகாண்</string>
+    <string name="decline">நிராகரி</string>
+    <string name="messenger_send_button_text">அனுப்பு</string>
+    <string name="place_autocomplete_clear_button">தேடலை அழிக்கும்</string>
+    <string name="place_autocomplete_search_hint">தேடுக</string>
+    <string name="store_picture_message">பட கேலரியில் படத்தைச் சேமிக்க, விளம்பரத்தை அனுமதிக்கவா?</string>
+    <string name="store_picture_title">படத்தைச் சேமி</string>
+    <string name="wallet_buy_button_place_holder">Google மூலம் வாங்கு</string>
 </resources>

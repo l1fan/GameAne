@@ -1,40 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">Hou van</string>
+    <string name="abc_action_bar_home_description">Navigeer tuis</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Navigeer op</string>
+    <string name="abc_action_menu_overflow_description">Nog opsies</string>
+    <string name="abc_action_mode_done">Klaar</string>
+    <string name="abc_activity_chooser_view_see_all">Sien alles</string>
+    <string name="abc_activitychooserview_choose_application">"Kies 'n program"</string>
+    <string name="abc_capital_off">AF</string>
+    <string name="abc_capital_on">AAN</string>
+    <string name="abc_search_hint">Soek …</string>
+    <string name="abc_searchview_description_clear">Vee navraag uit</string>
+    <string name="abc_searchview_description_query">Soeknavraag</string>
+    <string name="abc_searchview_description_search">Soek</string>
+    <string name="abc_searchview_description_submit">Dien navraag in</string>
+    <string name="abc_searchview_description_voice">Stemsoektog</string>
+    <string name="abc_shareactionprovider_share_with">Deel met</string>
+    <string name="abc_shareactionprovider_share_with_application">Deel met %s</string>
+    <string name="abc_toolbar_collapse_description">Vou in</string>
+    <string name="accept">Aanvaar</string>
+    <string name="cast_ad_label">Advertensie</string>
+    <string name="cast_casting_to_device">Saai tans uit na %1$s</string>
+    <string name="cast_closed_captions">Onderskrifte</string>
+    <string name="cast_closed_captions_unavailable">Onderskrifte is onbeskikbaar</string>
+    <string name="cast_disconnect">Ontkoppel</string>
+    <string name="cast_expanded_controller_ad_image_description">"Prent wat gewys word wanneer die uitsaai-ontvanger 'n advertensie speel"</string>
+    <string name="cast_expanded_controller_ad_in_progress">Onvoltooide advertensie …</string>
+    <string name="cast_expanded_controller_background_image">Albumkunswerk</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Regstreekse stroming</string>
+    <string name="cast_expanded_controller_loading">Laai tans …</string>
+    <string name="cast_expanded_controller_skip_ad_label">Slaan oor</string>
+    <string name="cast_forward">Spoel vorentoe</string>
+    <string name="cast_forward_10">Spoel 10 sekondes vorentoe</string>
+    <string name="cast_forward_30">Spoel 30 sekondes vorentoe</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">Demp</string>
+    <string name="cast_notification_connected_message">Gekoppel aan %1$s</string>
+    <string name="cast_notification_connecting_message">Koppel tans aan %1$s</string>
+    <string name="cast_notification_disconnect">Ontkoppel</string>
+    <string name="cast_pause">Laat wag</string>
+    <string name="cast_play">Speel</string>
+    <string name="cast_rewind">Spoel terug</string>
+    <string name="cast_rewind_10">Spoel tien sekondes terug</string>
+    <string name="cast_rewind_30">Spoel dertig sekondes terug</string>
+    <string name="cast_seek_bar">Speelsoekkontrole</string>
+    <string name="cast_skip_next">Slaan oor na volgende item</string>
+    <string name="cast_skip_prev">Slaan oor na vorige item</string>
+    <string name="cast_stop">Stop</string>
+    <string name="cast_stop_live_stream">Stop regstreekse stroom</string>
+    <string name="cast_tracks_chooser_dialog_audio">Oudio</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Kanselleer</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Onderskrifte</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">Snit %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">Geen oudiosnitte beskikbaar nie</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">Geen tekssnitte beskikbaar nie</string>
+    <string name="cast_tracks_chooser_dialog_none">Geen</string>
+    <string name="cast_tracks_chooser_dialog_ok">OK</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Onderskrifte</string>
+    <string name="cast_unmute">Ontdemp</string>
+    <string name="com_accountkit_button_begin">Begin</string>
+    <string name="com_accountkit_button_cancel">Kanselleer</string>
+    <string name="com_accountkit_button_confirm">Bevestig</string>
+    <string name="com_accountkit_button_continue">Gaan voort</string>
+    <string name="com_accountkit_button_edit">REDIGEER</string>
+    <string name="com_accountkit_button_log_in">Meld aan</string>
+    <string name="com_accountkit_button_next">Volgende</string>
+    <string name="com_accountkit_button_ok">Goed</string>
+    <string name="com_accountkit_button_resend_code_in">Stuur weer kode oor %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Stuur weer kode</string>
+    <string name="com_accountkit_button_send">Stuur</string>
+    <string name="com_accountkit_button_send_code_in_fb">Stuur kode in Facebook</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">"Tik Stuur kode in Facebook om 'n kennisgewing na die Facebook-rekening te stuur wat met die foonnommer verbind is wat jy ingevoer het."</string>
+    <string name="com_accountkit_button_start">Begin</string>
+    <string name="com_accountkit_button_start_over">Probeer weer</string>
+    <string name="com_accountkit_button_submit">Dien in</string>
+    <string name="com_accountkit_check_email">Maak jou e-pos oop</string>
+    <string name="com_accountkit_code_sent_to">"Ons het die kode gestuur na
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Tik %1$s om Facebook se &lt;a href=%2$s>Bepalings&lt;/a>, &lt;a href=%3$s>Databeleid&lt;/a> en &lt;a href=%4$s>koekiegebruik&lt;/a> te aanvaar.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Tik %1$s om Facebook se &lt;a href=%2$s>Bepalings&lt;/a>, &lt;a href=%3$s>Databeleid&lt;/a>, &lt;a href=%4$s>koekiegebruik&lt;/a> en die &lt;a href=%5$s>Privaatheidsbeleid&lt;/a> van %6$s te aanvaar.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Tik %1$s om Facebook se &lt;a href=%2$s>Bepalings&lt;/a>, &lt;a href=%3$s>Databeleid&lt;/a>, &lt;a href=%4$s>koekiegebruik&lt;/a> en die &lt;a href=%5$s>Privaatheidsbeleid&lt;/a> en &lt;a href=%6$s>Diensbepalings&lt;/a> van %7$s te aanvaar.</string>
+    <string name="com_accountkit_confirmation_code_text">Het nie kode gekry nie?</string>
+    <string name="com_accountkit_confirmation_code_title">Voer jou kode in</string>
+    <string name="com_accountkit_email_invalid">Hierdie e-pos is verkeerd. Probeer asseblief weer.</string>
+    <string name="com_accountkit_email_loading_title">Stuur tans e-pos…</string>
+    <string name="com_accountkit_email_login_retry_title">Bevestig jou e-pos</string>
+    <string name="com_accountkit_email_login_text">"Tik %1$s om 'n e-pos-bevestiging vanaf Account Kit deur Facebook te kry om jou te help om %2$s te gebruik. Jy hoef nie 'n Facebook-rekening te hê om dit te gebruik nie. &lt;a href=%3$s>Leer hoe Facebook jou inligting gebruik&lt;/a>."</string>
+    <string name="com_accountkit_email_login_title">Voer jou e-posadres in</string>
+    <string name="com_accountkit_email_not_received">Stuur weer e-pos</string>
+    <string name="com_accountkit_email_verify_title">Maak die e-pos oop wat ons gestuur het en bevestig jou adres</string>
+    <string name="com_accountkit_error_title">Ons is jammer, iets het verkeerd gegaan.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Voer jou kode van Facebook in</string>
+    <string name="com_accountkit_phone_loading_title">Stuur tans jou kode…</string>
+    <string name="com_accountkit_phone_login_retry_title">Bevestig jou foonnommer</string>
+    <string name="com_accountkit_phone_login_text">"Tik %1$s om 'n SMS-bevestiging vanaf Account Kit deur Facebook te kry om jou te help om %2$s te gebruik. Jy hoef nie 'n Facebook-rekening te hê om dit te gebruik nie. Boodskap- en datatariewe kan dalk geld. &lt;a href=%3$s>Leer hoe Facebook jou inligting gebruik&lt;/a>."</string>
+    <string name="com_accountkit_phone_login_title">Voer jou foonnommer in</string>
+    <string name="com_accountkit_resend_check">Kontroleer asseblief die nommer voordat die kode weer gestuur word.</string>
+    <string name="com_accountkit_resend_email_text">Stuur nuwe e-pos</string>
+    <string name="com_accountkit_resend_title">Ons is jammer. Probeer hierdie opsies om voort te gaan.</string>
+    <string name="com_accountkit_return_title">Neem jou tans terug na %1$s…</string>
+    <string name="com_accountkit_sent_title">Gestuur!</string>
+    <string name="com_accountkit_success_title">Klaar!</string>
+    <string name="com_accountkit_toolbar_title">Meld by %1$s aan</string>
+    <string name="com_accountkit_verify_confirmation_code_title">Ons kon nie jou kode verifieer nie. Probeer asseblief weer:</string>
+    <string name="com_accountkit_verify_title">Verifieer tans jou kode…</string>
+    <string name="com_facebook_device_auth_instructions">Besoek &lt;b>facebook.com/device&lt;/b> en voer die kode in wat hierbo vertoon word.</string>
+    <string name="com_facebook_image_download_unknown_error">"Onverwagse fout met aflaai van 'n prent."</string>
+    <string name="com_facebook_internet_permission_error_message">Webaansig-aanmelding benodig INTERNET-toestemming</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest-fout</string>
     <string name="com_facebook_like_button_liked">Hou van</string>
-    <string name="com_facebook_loginview_log_out_button">Meld af</string>
+    <string name="com_facebook_like_button_not_liked">Hou van</string>
+    <string name="com_facebook_loading">Laai tans…</string>
+    <string name="com_facebook_loginview_cancel_action">Kanselleer</string>
     <string name="com_facebook_loginview_log_in_button">Meld aan</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Gaan voort met Facebook</string>
     <string name="com_facebook_loginview_log_in_button_long">Meld met Facebook aan</string>
+    <string name="com_facebook_loginview_log_out_action">Meld af</string>
+    <string name="com_facebook_loginview_log_out_button">Meld af</string>
     <string name="com_facebook_loginview_logged_in_as">Aangemeld as: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Met Facebook aangemeld</string>
-    <string name="com_facebook_loginview_log_out_action">Meld af</string>
-    <string name="com_facebook_loginview_cancel_action">Kanselleer</string>
-    <string name="com_facebook_loading">Laai tans...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest-fout</string>
-    <string name="com_facebook_internet_permission_error_message">Webaansig-aanmelding benodig INTERNET-toestemming</string>
-    <string name="com_facebook_tooltip_default">Nuut! Jy is in beheer - kies watter inligting jy met toepassings wil deel.</string>
-    <string name="com_facebook_image_download_unknown_error">Onverwagse fout met aflaai van \'n
-        prent.</string>
-    <string name="com_facebook_share_button_text">Deel</string>
     <string name="com_facebook_send_button_text">Stuur</string>
+    <string name="com_facebook_share_button_text">Deel</string>
+    <string name="com_facebook_smart_device_instructions">Om jou rekening te verbind, maak die Facebook-toepassing op jou mobiele toestel oop en kontroleer vir kennisgewings.</string>
+    <string name="com_facebook_smart_device_instructions_or">- OF -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">Nie jy nie?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Bevestig aantekening</string>
+    <string name="com_facebook_tooltip_default">Jy is in beheer – kies watter inligting jy met toepassings wil deel.</string>
+    <string name="common_google_play_services_enable_button">Aktiveer</string>
+    <string name="common_google_play_services_enable_text">%1$s sal nie werk nie tensy jy Google Play-dienste aktiveer.</string>
+    <string name="common_google_play_services_enable_title">Aktiveer Google Play-dienste</string>
+    <string name="common_google_play_services_install_button">Installeer</string>
+    <string name="common_google_play_services_install_text">%1$s sal nie sonder Google Play Dienste werk nie, wat nie op jou toestel is nie.</string>
+    <string name="common_google_play_services_install_title">Kry Google Play-dienste</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Services-fout</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ondervind probleme met Google Play Dienste. Probeer asseblief weer.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s sal nie werk sonder Google Play Dienste nie, wat nie deur jou toestel gesteun word nie.</string>
+    <string name="common_google_play_services_update_button">Dateer op</string>
+    <string name="common_google_play_services_update_text">%1$s sal nie werk nie tensy jy Google Play Dienste opdateer.</string>
+    <string name="common_google_play_services_update_title">Dateer Google Play-dienste op</string>
+    <string name="common_google_play_services_updating_text">%1$s sal nie sonder Google Play-dienste werk nie, wat tans opdateer.</string>
+    <string name="common_google_play_services_wear_update_text">Nuwe weergawe van Google Play-dienste is nodig. Dit sal binnekort self opdateer.</string>
+    <string name="common_open_on_phone">Maak oop op foon</string>
+    <string name="common_signin_button_text">Meld aan</string>
+    <string name="common_signin_button_text_long">Meld aan met Google</string>
+    <string name="create_calendar_message">"Laat advertensie toe om 'n kalendergeleentheid te skep?"</string>
+    <string name="create_calendar_title">Skep kalendergeleentheid</string>
+    <string name="debug_menu_ad_information">Advertensie-inligting</string>
+    <string name="debug_menu_creative_preview">Voorskou van advertensiemateriaal</string>
+    <string name="debug_menu_title">"Kies 'n ontfoutmodus"</string>
+    <string name="debug_menu_troubleshooting">Foutsporing</string>
+    <string name="decline">Wys af</string>
+    <string name="messenger_send_button_text">Stuur</string>
+    <string name="mr_button_content_description">Cast-knoppie</string>
+    <string name="mr_chooser_searching">Vind tans toestelle</string>
+    <string name="mr_chooser_title">Saai uit na</string>
+    <string name="mr_controller_album_art">Albumkunswerk</string>
+    <string name="mr_controller_casting_screen">Saai tans skerm uit</string>
+    <string name="mr_controller_close_description">Maak toe</string>
+    <string name="mr_controller_collapse_group">Vou in</string>
+    <string name="mr_controller_disconnect">Ontkoppel</string>
+    <string name="mr_controller_expand_group">Vou uit</string>
+    <string name="mr_controller_no_info_available">Geen inligting beskikbaar nie</string>
+    <string name="mr_controller_no_media_selected">Geen media is gekies nie</string>
+    <string name="mr_controller_pause">Laat wag</string>
+    <string name="mr_controller_play">Speel</string>
+    <string name="mr_controller_stop">Hou op uitsaai</string>
+    <string name="mr_system_route_name">Stelsel</string>
+    <string name="mr_user_route_category_name">Toestelle</string>
+    <string name="place_autocomplete_clear_button">Maak soektog skoon</string>
+    <string name="place_autocomplete_search_hint">Soek</string>
+    <string name="search_menu_title">Soek</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">Laat advertensie toe om prent in prentegalery te stoor?</string>
+    <string name="store_picture_title">Stoor prent</string>
+    <string name="wallet_buy_button_place_holder">Koop met Google</string>
 </resources>

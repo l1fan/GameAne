@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ہوم پر نیویگیٹ کریں</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">اوپر نیویگیٹ کریں</string>
+    <string name="abc_action_menu_overflow_description">مزید اختیارات</string>
+    <string name="abc_action_mode_done">ہو گیا</string>
+    <string name="abc_activity_chooser_view_see_all">سبھی دیکھیں</string>
+    <string name="abc_activitychooserview_choose_application">ایک ایپ منتخب کریں</string>
+    <string name="abc_capital_off">آف</string>
+    <string name="abc_capital_on">آن</string>
+    <string name="abc_search_hint">تلاش کریں…</string>
+    <string name="abc_searchview_description_clear">استفسار صاف کریں</string>
+    <string name="abc_searchview_description_query">استفسار تلاش کریں</string>
+    <string name="abc_searchview_description_search">تلاش کریں</string>
+    <string name="abc_searchview_description_submit">استفسار جمع کرائیں</string>
+    <string name="abc_searchview_description_voice">صوتی تلاش</string>
+    <string name="abc_shareactionprovider_share_with">اشتراک کریں مع</string>
+    <string name="abc_shareactionprovider_share_with_application">‏%s کے ساتھ اشتراک کریں</string>
+    <string name="abc_toolbar_collapse_description">سکیڑیں</string>
+    <string name="mr_button_content_description">کاسٹ کرنے کا بٹن</string>
+    <string name="mr_chooser_searching">آلات تلاش ہو رہے ہیں</string>
+    <string name="mr_chooser_title">اس میں کاسٹ کریں</string>
+    <string name="mr_controller_album_art">البم آرٹ</string>
+    <string name="mr_controller_casting_screen">سکرین کاسٹ ہو رہی ہے</string>
+    <string name="mr_controller_close_description">بند کریں</string>
+    <string name="mr_controller_collapse_group">سکیڑیں</string>
+    <string name="mr_controller_disconnect">غیر منسلک کریں</string>
+    <string name="mr_controller_expand_group">پھیلائیں</string>
+    <string name="mr_controller_no_info_available">کوئی معلومات دستیاب نہیں</string>
+    <string name="mr_controller_no_media_selected">کوئی میڈیا منتخب نہیں ہے</string>
+    <string name="mr_controller_pause">موقوف کریں</string>
+    <string name="mr_controller_play">چلائیں</string>
+    <string name="mr_controller_stop">کاسٹ کرنا بند کریں</string>
+    <string name="mr_system_route_name">سسٹم</string>
+    <string name="mr_user_route_category_name">آلات</string>
+    <string name="search_menu_title">تلاش</string>
+    <string name="status_bar_notification_info_overflow">‎999+‎</string>
+</resources>

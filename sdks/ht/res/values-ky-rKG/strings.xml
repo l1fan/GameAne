@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Үйгө багыттоо</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Жогору</string>
+    <string name="abc_action_menu_overflow_description">Көбүрөөк мүмкүнчүлүктөр</string>
+    <string name="abc_action_mode_done">Даяр</string>
+    <string name="abc_activity_chooser_view_see_all">Бардыгын көрүү</string>
+    <string name="abc_activitychooserview_choose_application">Колдонмо тандоо</string>
+    <string name="abc_capital_off">ӨЧҮК</string>
+    <string name="abc_capital_on">КҮЙҮК</string>
+    <string name="abc_search_hint">Издөө…</string>
+    <string name="abc_searchview_description_clear">Талаптарды тазалоо</string>
+    <string name="abc_searchview_description_query">Издөө талаптары</string>
+    <string name="abc_searchview_description_search">Издөө</string>
+    <string name="abc_searchview_description_submit">Талап жөнөтүү</string>
+    <string name="abc_searchview_description_voice">Үн аркылуу издөө</string>
+    <string name="abc_shareactionprovider_share_with">Бөлүшүү</string>
+    <string name="abc_shareactionprovider_share_with_application">%s аркылуу бөлүшүү</string>
+    <string name="abc_toolbar_collapse_description">Жыйнап коюу</string>
+    <string name="mr_button_content_description">Тышкы экранга чыгаруу баскычы</string>
+    <string name="mr_chooser_searching">Түзмөктөр изделүүдө</string>
+    <string name="mr_chooser_title">Төмөнкүгө чыгаруу</string>
+    <string name="mr_controller_album_art">Альбом мукабасы</string>
+    <string name="mr_controller_casting_screen">Тышкы экранга чыгарылууда</string>
+    <string name="mr_controller_close_description">Жабуу</string>
+    <string name="mr_controller_collapse_group">Жыйыштыруу</string>
+    <string name="mr_controller_disconnect">Ажыратуу</string>
+    <string name="mr_controller_expand_group">Жайып көрсөтүү</string>
+    <string name="mr_controller_no_info_available">Эч маалымат жок</string>
+    <string name="mr_controller_no_media_selected">Бир да медиа файл тандалган жок</string>
+    <string name="mr_controller_pause">Тындыруу</string>
+    <string name="mr_controller_play">Ойнотуу</string>
+    <string name="mr_controller_stop">Тышк экранга чыгарну токтотуу</string>
+    <string name="mr_system_route_name">Тутум</string>
+    <string name="mr_user_route_category_name">Түзмөктөр</string>
+    <string name="search_menu_title">Издөө</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

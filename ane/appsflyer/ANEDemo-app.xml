@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/20.0">
+<application xmlns="http://ns.adobe.com/air/application/23.0">
     <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
     <id>com.appsflyer.sampleapp</id>
     <filename>ANEDemo</filename>
@@ -54,7 +54,6 @@
               <data android:scheme="package"/>
           </intent-filter>
       </receiver>
-      <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
       <meta-data android:name="AppsFlyerDevKey" android:value="kFZnPcRtTVMmje5YeX5dAX"/>
 
 

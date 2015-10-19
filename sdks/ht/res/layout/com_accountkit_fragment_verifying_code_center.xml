@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AccountKit.IconContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="@dimen/com_accountkit_progress_bar_size" android:layout_height="@dimen/com_accountkit_progress_bar_size" style="@style/AccountKit.ProgressBar" />
+</FrameLayout>

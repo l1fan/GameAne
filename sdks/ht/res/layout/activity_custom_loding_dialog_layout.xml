@@ -1,69 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center" >
-
-    <LinearLayout
-        android:layout_width="@dimen/layout_width_facebook"
-        android:layout_height="@dimen/layout_width_facebook"
-        android:layout_gravity="center"
-        android:background="@drawable/dialog_bg"
-        android:orientation="vertical" >
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:layout_margin="@dimen/layout_marginTop"
-            android:gravity="center" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true" />
-
-            <ImageView
-                android:id="@+id/iv_route"
-                android:layout_width="@dimen/item_layout_hight"
-                android:layout_height="@dimen/item_layout_hight"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/loading" />
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_loading_bg" android:layout_width="@dimen/layout_150" android:layout_height="@dimen/layout_150">
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/layout_margin_10" android:layout_weight="2.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_route" android:background="@drawable/loading" android:layout_width="@dimen/layout_50" android:layout_height="@dimen/layout_50" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
         </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_marginBottom="@dimen/layout_marginTop"
-            android:layout_marginLeft="@dimen/layout_marginTop"
-            android:layout_marginRight="@dimen/layout_marginTop"
-            android:layout_weight="1"
-            android:gravity="center" >
-
-            <TextView
-                android:id="@+id/tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ellipsize="marquee"
-                android:text="@string/loading"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="@dimen/textBtn"
-                android:layout_toLeftOf="@+id/tv_point"
-                android:singleLine="true"
-                 />
-
-            <TextView
-                android:id="@+id/tv_point"
-                android:layout_width="@dimen/textBtn"
-                android:layout_height="wrap_content"
-                android:text="..."
-                android:textColor="@color/black"
-                android:textSize="@dimen/textBtn"
-                android:layout_alignParentRight="true" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/layout_margin_10" android:layout_marginRight="@dimen/layout_margin_10" android:layout_marginBottom="@dimen/layout_margin_10" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:maxLines="1" android:layout_toLeftOf="@id/tv_point" />
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:id="@id/tv_point" android:layout_width="@dimen/text_size_20" android:layout_height="wrap_content" android:text="..." android:layout_alignParentRight="true" />
         </RelativeLayout>
     </LinearLayout>
-
 </LinearLayout>

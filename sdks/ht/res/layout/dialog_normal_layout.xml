@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_tip_bg" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorBackground" android:gravity="center" android:id="@id/message" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.5" />
+        </LinearLayout>
+        <Button android:textSize="20.0sp" android:gravity="center" android:id="@id/positiveButton" android:background="@drawable/button_bg1" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="@string/ok" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/text_15_ffffff_sdw" />
+    </RelativeLayout>
+</FrameLayout>

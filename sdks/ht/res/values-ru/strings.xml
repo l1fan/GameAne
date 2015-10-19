@@ -1,39 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
-
-    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
-    copy, modify, and distribute this software in source code or binary form for use
-    in connection with the web services and APIs provided by Facebook.
-
-    As with any software that integrates with the Facebook platform, your use of
-    this software is subject to the Facebook Developer Principles and Policies
-    [http://developers.facebook.com/policy/]. This copyright notice shall be
-    included in all copies or substantial portions of the software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <resources>
-    <string name="com_facebook_like_button_not_liked">Нравится</string>
+    <string name="abc_action_bar_home_description">Перейти на главный экран</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Перейти вверх</string>
+    <string name="abc_action_menu_overflow_description">Другие параметры</string>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_activity_chooser_view_see_all">Показать все</string>
+    <string name="abc_activitychooserview_choose_application">Выбрать приложение</string>
+    <string name="abc_capital_off">ОТКЛ.</string>
+    <string name="abc_capital_on">ВКЛ.</string>
+    <string name="abc_search_hint">Поиск</string>
+    <string name="abc_searchview_description_clear">Удалить запрос</string>
+    <string name="abc_searchview_description_query">Поисковый запрос</string>
+    <string name="abc_searchview_description_search">Поиск</string>
+    <string name="abc_searchview_description_submit">Отправить запрос</string>
+    <string name="abc_searchview_description_voice">Голосовой поиск</string>
+    <string name="abc_shareactionprovider_share_with">Открыть доступ</string>
+    <string name="abc_shareactionprovider_share_with_application">Открыть доступ пользователю %s</string>
+    <string name="abc_toolbar_collapse_description">Свернуть</string>
+    <string name="accept">Принять</string>
+    <string name="cast_ad_label">Объявление</string>
+    <string name="cast_casting_to_device">Трансляция на устройство \"%s\"</string>
+    <string name="cast_closed_captions">Субтитры</string>
+    <string name="cast_closed_captions_unavailable">Субтитры недоступны</string>
+    <string name="cast_disconnect">Отключить</string>
+    <string name="cast_expanded_controller_ad_image_description">Изображение, показанное во время трансляции объявления</string>
+    <string name="cast_expanded_controller_ad_in_progress">Трансляция объявления…</string>
+    <string name="cast_expanded_controller_background_image">Обложка</string>
+    <string name="cast_expanded_controller_live_stream_indicator">Прямой эфир</string>
+    <string name="cast_expanded_controller_loading">Загрузка…</string>
+    <string name="cast_expanded_controller_skip_ad_label">Пропустить</string>
+    <string name="cast_forward">Перемотать вперед</string>
+    <string name="cast_forward_10">Перемотать на 10 секунд вперед</string>
+    <string name="cast_forward_30">Перемотать на 30 секунд вперед</string>
+    <string name="cast_intro_overlay_button_text">\@android:string/ok</string>
+    <string name="cast_mute">Отключить звук</string>
+    <string name="cast_notification_connected_message">Подключено к %1$s</string>
+    <string name="cast_notification_connecting_message">Подключение к %1$s…</string>
+    <string name="cast_notification_disconnect">Отключить</string>
+    <string name="cast_pause">Приостановить</string>
+    <string name="cast_play">Воспроизвести</string>
+    <string name="cast_rewind">Перемотать назад</string>
+    <string name="cast_rewind_10">Перемотать на 10 секунд назад</string>
+    <string name="cast_rewind_30">Перемотать на 30 секунд назад</string>
+    <string name="cast_seek_bar">Ползунок перемотки</string>
+    <string name="cast_skip_next">Перейти к следующему объекту</string>
+    <string name="cast_skip_prev">Перейти к предыдущему объекту</string>
+    <string name="cast_stop">Остановить</string>
+    <string name="cast_stop_live_stream">Остановить трансляцию</string>
+    <string name="cast_tracks_chooser_dialog_audio">Аудио</string>
+    <string name="cast_tracks_chooser_dialog_cancel">Отмена</string>
+    <string name="cast_tracks_chooser_dialog_closed_captions">Субтитры</string>
+    <string name="cast_tracks_chooser_dialog_default_track_name">Трек %1$d</string>
+    <string name="cast_tracks_chooser_dialog_no_audio_tracks">Нет доступных аудиотреков</string>
+    <string name="cast_tracks_chooser_dialog_no_text_tracks">Нет доступных текстовых треков</string>
+    <string name="cast_tracks_chooser_dialog_none">Нет</string>
+    <string name="cast_tracks_chooser_dialog_ok">ОК</string>
+    <string name="cast_tracks_chooser_dialog_subtitles">Субтитры</string>
+    <string name="cast_unmute">Включить звук</string>
+    <string name="com_accountkit_button_begin">Начать</string>
+    <string name="com_accountkit_button_cancel">Отмена</string>
+    <string name="com_accountkit_button_confirm">Подтвердить</string>
+    <string name="com_accountkit_button_continue">Продолжить</string>
+    <string name="com_accountkit_button_edit">РЕДАКТИРОВАТЬ</string>
+    <string name="com_accountkit_button_log_in">Вход</string>
+    <string name="com_accountkit_button_next">Далее</string>
+    <string name="com_accountkit_button_ok">OK</string>
+    <string name="com_accountkit_button_resend_code_in">Повторная отправка кода через %1$s</string>
+    <string name="com_accountkit_button_resend_sms">Отправить код еще раз</string>
+    <string name="com_accountkit_button_send">Отправить</string>
+    <string name="com_accountkit_button_send_code_in_fb">Отправить код Facebook</string>
+    <string name="com_accountkit_button_send_code_in_fb_disclosure">Коснитесь Отправить код на Facebook, чтобы отправить уведомление в аккаунт на Facebook, привязанный к номеру телефона, который вы указали.</string>
+    <string name="com_accountkit_button_start">Старт</string>
+    <string name="com_accountkit_button_start_over">Попробуйте еще раз</string>
+    <string name="com_accountkit_button_submit">Отправить</string>
+    <string name="com_accountkit_check_email">Откройте эл. письмо</string>
+    <string name="com_accountkit_code_sent_to">"Мы отправили код на номер
+%1$s"</string>
+    <string name="com_accountkit_confirmation_code_agreement">Коснитесь %1$s, чтобы принять &lt;a href=%2$s>Условия&lt;/a>, &lt;a href=%3$s>Политику использования данных&lt;/a> и &lt;a href=%4$s>файлов «cookie»&lt;/a> Facebook.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Коснитесь %1$s, чтобы принять &lt;a href=%2$s>Условия&lt;/a>, &lt;a href=%3$s>Политику использования данных&lt;/a> и &lt;a href=%4$s>файлов «cookie»&lt;/a> Facebook, а также &lt;a href=%5$s>Политику конфиденциальности&lt;/a> %6$s.</string>
+    <string name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Коснитесь %1$s, чтобы принять &lt;a href=%2$s>Условия&lt;/a>, &lt;a href=%3$s>Политику использования данных&lt;/a> и &lt;a href=%4$s>файлов «cookie»&lt;/a> Facebook, а также &lt;a href=%5$s>Политику конфиденциальности&lt;/a> и &lt;a href=%6$s>Пользовательское соглашение&lt;/a> %7$s.</string>
+    <string name="com_accountkit_confirmation_code_text">Не получили код?</string>
+    <string name="com_accountkit_confirmation_code_title">Введите код</string>
+    <string name="com_accountkit_email_invalid">Неверный эл. адрес. Попробуйте еще раз.</string>
+    <string name="com_accountkit_email_loading_title">Отправка…</string>
+    <string name="com_accountkit_email_login_retry_title">Подтвердите правильность своего эл. адреса</string>
+    <string name="com_accountkit_email_login_text">Коснитесь %1$s, чтобы получить эл. письмо с подтверждением со стороны Account Kit от Facebook для использования %2$s. Вам не обязательно иметь аккаунт на Facebook, чтобы использовать его. &lt;a href=%3$s>Узнайте, как Facebook использует вашу информацию&lt;/a>.</string>
+    <string name="com_accountkit_email_login_title">Введите свой эл. адрес</string>
+    <string name="com_accountkit_email_not_received">Повторная отправка эл. письма</string>
+    <string name="com_accountkit_email_verify_title">Откройте эл. письмо, которое мы вам отправили, и подтвердите свой эл. адрес</string>
+    <string name="com_accountkit_error_title">Извините, что-то пошло не так.</string>
+    <string name="com_accountkit_facebook_code_entry_title">Введите код, полученный от Facebook</string>
+    <string name="com_accountkit_phone_loading_title">Выполняется отправка кода…</string>
+    <string name="com_accountkit_phone_login_retry_title">Подтвердите свой номер телефона</string>
+    <string name="com_accountkit_phone_login_text">Коснитесь %1$s, чтобы получить SMS-подтверждение со стороны Account Kit от Facebook для использования %2$s. Вам не обязательно иметь аккаунт на Facebook, чтобы использовать его. Может взиматься плата за передачу сообщений и данных. &lt;a href=%3$s>Узнайте, как Facebook использует вашу информацию&lt;/a>.</string>
+    <string name="com_accountkit_phone_login_title">Введите свой номер телефона</string>
+    <string name="com_accountkit_resend_check">Проверьте номер перед повторной отправкой кода.</string>
+    <string name="com_accountkit_resend_email_text">Отправить письмо заново</string>
+    <string name="com_accountkit_resend_title">Приносим извинения. Попробуйте сделать следующее.</string>
+    <string name="com_accountkit_return_title">Возврат к %1$s…</string>
+    <string name="com_accountkit_sent_title">Отправлено!</string>
+    <string name="com_accountkit_success_title">Готово!</string>
+    <string name="com_accountkit_toolbar_title">Выполните вход в %1$s</string>
+    <string name="com_accountkit_verify_confirmation_code_title">"Нам не удалось проверить ваш код.
+Попробуйте еще раз:"</string>
+    <string name="com_accountkit_verify_title">Выполняется проверка вашего кода…</string>
+    <string name="com_facebook_device_auth_instructions">Откройте страницу &lt;b>facebook.com/device&lt;/b> и введите представленный выше код.</string>
+    <string name="com_facebook_image_download_unknown_error">При загрузке изображения возникла неожиданная ошибка.</string>
+    <string name="com_facebook_internet_permission_error_message">Для входа в WebView необходимо разрешение INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Ошибка AndroidManifest</string>
     <string name="com_facebook_like_button_liked">Понравилось</string>
-    <string name="com_facebook_loginview_log_out_button">Выход</string>
+    <string name="com_facebook_like_button_not_liked">Нравится</string>
+    <string name="com_facebook_loading">Загрузка…</string>
+    <string name="com_facebook_loginview_cancel_action">Отменить</string>
     <string name="com_facebook_loginview_log_in_button">Вход</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Продолжить с Facebook</string>
     <string name="com_facebook_loginview_log_in_button_long">Вход через Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Выход</string>
+    <string name="com_facebook_loginview_log_out_button">Выход</string>
     <string name="com_facebook_loginview_logged_in_as">Вы вошли как: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Выполнен вход с помощью Facebook</string>
-    <string name="com_facebook_loginview_log_out_action">Выход</string>
-    <string name="com_facebook_loginview_cancel_action">Отменить</string>
-    <string name="com_facebook_loading">Загрузка...</string>
-    <string name="com_facebook_internet_permission_error_title">Ошибка AndroidManifest</string>
-    <string name="com_facebook_internet_permission_error_message">Для входа в WebView необходимо разрешение INTERNET</string>
-    <string name="com_facebook_tooltip_default">Новинка! У вас все под контролем — выбирайте, какой информацией вы хотите поделиться с приложениями.</string>
-    <string name="com_facebook_image_download_unknown_error">При загрузке изображения возникла неожиданная ошибка.</string>
-    <string name="com_facebook_share_button_text">Поделиться</string>
     <string name="com_facebook_send_button_text">Отправить</string>
+    <string name="com_facebook_share_button_text">Поделиться</string>
+    <string name="com_facebook_smart_device_instructions">Чтобы подключить аккаунт, откройте приложение Facebook на мобильном устройстве и проверьте уведомления.</string>
+    <string name="com_facebook_smart_device_instructions_or">- ИЛИ -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">Это не вы?</string>
+    <string name="com_facebook_smart_login_confirmation_title">Подтвердить вход</string>
+    <string name="com_facebook_tooltip_default">Вы сами выбираете, какой информацией поделиться с приложениями.</string>
+    <string name="common_google_play_services_enable_button">Включить</string>
+    <string name="common_google_play_services_enable_text">Для работы приложения \"%1$s\" требуется включить сервисы Google Play.</string>
+    <string name="common_google_play_services_enable_title">Включите сервисы Google Play</string>
+    <string name="common_google_play_services_install_button">Установить</string>
+    <string name="common_google_play_services_install_text">Для работы приложения \"%1$s\" требуется установить сервисы Google Play.</string>
+    <string name="common_google_play_services_install_title">Установите сервисы Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Ошибка сервисов Google Play</string>
+    <string name="common_google_play_services_unknown_issue">Приложению \"%1$s\" не удается подключиться к сервисам Google Play. Повторите попытку.</string>
+    <string name="common_google_play_services_unsupported_text">Для работы с приложением \"%1$s\" требуются сервисы Google Play. Они не поддерживаются на вашем устройстве.</string>
+    <string name="common_google_play_services_update_button">Обновить</string>
+    <string name="common_google_play_services_update_text">Чтобы запустить приложение \"%1$s\", обновите сервисы Google Play.</string>
+    <string name="common_google_play_services_update_title">Обновите сервисы Google Play</string>
+    <string name="common_google_play_services_updating_text">Сервисы Google Play, необходимые для работы приложения \"%1$s\", в настоящий момент обновляются.</string>
+    <string name="common_google_play_services_wear_update_text">Версия сервисов Google Play устарела. Они автоматически обновятся в ближайшее время.</string>
+    <string name="common_open_on_phone">Открыть на телефоне</string>
+    <string name="common_signin_button_text">Войти</string>
+    <string name="common_signin_button_text_long">Войти через аккаунт Google</string>
+    <string name="create_calendar_message">Разрешить объявлению создать мероприятие в календаре?</string>
+    <string name="create_calendar_title">Создание мероприятия</string>
+    <string name="debug_menu_ad_information">Сведения об объявлении</string>
+    <string name="debug_menu_creative_preview">Creative Preview</string>
+    <string name="debug_menu_title">Выбрать режим отладки</string>
+    <string name="debug_menu_troubleshooting">Устранение неполадок</string>
+    <string name="decline">Отклонить</string>
+    <string name="messenger_send_button_text">Отпр</string>
+    <string name="mr_button_content_description">Кнопка трансляции</string>
+    <string name="mr_chooser_searching">Поиск устройств…</string>
+    <string name="mr_chooser_title">Выберите устройство</string>
+    <string name="mr_controller_album_art">Обложка</string>
+    <string name="mr_controller_casting_screen">Подключение к удаленному монитору</string>
+    <string name="mr_controller_close_description">Закрыть</string>
+    <string name="mr_controller_collapse_group">Свернуть</string>
+    <string name="mr_controller_disconnect">Отключить</string>
+    <string name="mr_controller_expand_group">Развернуть</string>
+    <string name="mr_controller_no_info_available">Данных нет</string>
+    <string name="mr_controller_no_media_selected">Медиафайл не выбран</string>
+    <string name="mr_controller_pause">Приостановить</string>
+    <string name="mr_controller_play">Воспроизвести</string>
+    <string name="mr_controller_stop">Остановить трансляцию</string>
+    <string name="mr_system_route_name">Система</string>
+    <string name="mr_user_route_category_name">Устройства</string>
+    <string name="place_autocomplete_clear_button">Удалить поисковый запрос</string>
+    <string name="place_autocomplete_search_hint">Поиск</string>
+    <string name="search_menu_title">Поиск</string>
+    <string name="status_bar_notification_info_overflow">>999</string>
+    <string name="store_picture_message">Разрешить объявлению сохранить изображение в галерее?</string>
+    <string name="store_picture_title">Сохранение изображения</string>
+    <string name="wallet_buy_button_place_holder">Купить через Google</string>
 </resources>

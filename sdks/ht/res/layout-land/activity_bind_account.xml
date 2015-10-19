@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/icon_background2" android:layout_width="@dimen/layout_340" android:layout_height="@dimen/layout_280">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/layout_50">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bind_account_back" android:layout_width="wrap_content" android:layout_height="@dimen/layout_18" android:layout_marginLeft="@dimen/layout_10" android:layout_marginTop="@dimen/layout_18">
+                <ImageView android:layout_width="@dimen/layout_18" android:layout_height="@dimen/layout_18" android:src="@mipmap/icon_back" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/back" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_25" android:textColor="@color/colorTitleText" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/account_binding" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <EditText android:textSize="@dimen/text_17" android:textColor="@color/black" android:textColorHint="@color/colorHintText" android:gravity="center" android:id="@id/bind_account_edit_account" android:background="@drawable/edittext_bg" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:hint="@string/edit_bind_account" />
+        <EditText android:textSize="@dimen/text_17" android:textColor="@color/black" android:textColorHint="@color/colorHintText" android:gravity="center" android:id="@id/bind_account_edit_password" android:background="@drawable/edittext_bg" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:hint="@string/edit_hint_password" android:inputType="textPassword" />
+        <EditText android:textSize="@dimen/text_17" android:textColor="@color/black" android:textColorHint="@color/colorHintText" android:gravity="center" android:id="@id/bind_account_edit_password_again" android:background="@drawable/edittext_bg" android:layout_width="fill_parent" android:layout_height="@dimen/layout_40" android:layout_marginLeft="@dimen/layout_20" android:layout_marginTop="@dimen/layout_10" android:layout_marginRight="@dimen/layout_20" android:hint="@string/edit_bind_password_again" android:inputType="textPassword" />
+        <Button android:textSize="@dimen/text_15" android:textColor="@color/colorTitleText" android:layout_gravity="center" android:id="@id/bind_account_button_bind" android:background="@drawable/button_bg1" android:layout_width="@dimen/layout_150" android:layout_height="@dimen/layout_40" android:layout_marginTop="@dimen/layout_15" android:text="@string/confirm_bind" />
+    </LinearLayout>
+</LinearLayout>
