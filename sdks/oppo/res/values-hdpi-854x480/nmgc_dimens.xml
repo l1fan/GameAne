@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_general_width">330dp</dimen>
+    <dimen name="nmgc_log_reg_width">310dp</dimen>
+    <dimen name="keke_reg_btn_width">122dp</dimen>
+</resources>

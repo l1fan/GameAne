@@ -1,0 +1,25 @@
+<resources>
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <!-- head view -->
+    <dimen name="uc_head_view_height">47dp</dimen>
+    
+    <!-- input ivew -->
+    <dimen name="uc_input_view_height">44.33dp</dimen>
+    
+    <!-- dialog -->
+    <dimen name="custom_dialog_width">320dp</dimen>
+
+    <!-- textSize -->
+    <dimen name="uc_large_title_text_size">23sp</dimen>
+    <dimen name="uc_big_text_size">18.33sp</dimen>
+    <dimen name="uc_middle_54_text_size">18sp</dimen>
+    <dimen name="uc_middle_51_text_size">17sp</dimen>
+    <dimen name="uc_small_48_text_size">16sp</dimen>
+    <dimen name="uc_small_45_text_size">15sp</dimen>
+    <dimen name="uc_min_39_text_size">13sp</dimen>
+    <dimen name="uc_min_36_text_size">12sp</dimen>
+
+</resources>

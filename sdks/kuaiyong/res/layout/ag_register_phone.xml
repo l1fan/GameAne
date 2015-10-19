@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg" >
+    
+    <include layout="@layout/ag_title"
+        android:id="@+id/register_phone_title"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/register_phone_title">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+    
+    <LinearLayout 
+        style="@style/linearlayout_textview"
+        android:id="@+id/ll_register_phone_title"
+       
+        >
+    
+    <TextView 
+        style="@style/textView_linearLayout"
+        android:text="@string/register_phone_recomond"
+        />
+    
+     </LinearLayout>
+    
+     <LinearLayout 
+         style="@style/linearLayout_1"
+         android:id="@+id/ll_et_phonenumer"
+         android:layout_below="@id/ll_register_phone_title"
+         >
+         
+         <ImageView 
+             style="@style/imageView_user_password_phone"
+             android:src="@drawable/ag_phone"
+            />
+         
+         
+         <EditText 
+             android:id="@+id/et_input_phone_number"
+             android:hint="@string/register_phone_input_phone_number"
+             android:inputType="phone"
+             style="@style/EditText_style_input"/>
+         
+         <ImageView 
+             style="@style/close_image"
+             android:id="@+id/phone"
+            />
+         
+     </LinearLayout>
+
+     
+     <LinearLayout
+         style="@style/linearlayout_contain_obtainVerifyCodeButton"
+         android:id="@+id/ll_verifycode"
+         android:layout_below="@id/ll_et_phonenumer"
+         >
+     
+     <LinearLayout 
+         android:layout_width="@dimen/ag_150dp"
+         android:layout_height="@dimen/ag_50dp"
+         android:background="@drawable/ag_linearlayout_input"
+         >
+         
+         <EditText 
+             android:id="@+id/et_input_verifycode"
+             android:hint="@string/register_phone_input_verifycode"
+             style="@style/EditText_style_input"
+             android:paddingLeft="@dimen/ag_10dp"
+             android:inputType="number"/>
+         
+         
+         
+     </LinearLayout>
+     
+     <Button 
+         style="@style/obtainVerifyCodeButton"
+         android:id="@+id/btn_obtain_verifycode"
+         android:text="@string/register_phone_obtain_verifycode"
+         />
+     
+     </LinearLayout>
+     
+     
+     <Button 
+         android:id="@+id/btn_next_step"
+         style="@style/button_blue_style"
+         android:text="@string/register_phone_next_step"
+         android:layout_below="@id/ll_verifycode"
+         android:layout_marginTop="@dimen/ag_506dp"
+        />
+    
+     
+     <TextView 
+        android:id="@+id/tv_register_user"
+        android:layout_below="@id/btn_next_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ag_25dp"
+        android:layout_marginTop="@dimen/ag_15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/color_baby_blue"
+        android:text="@string/register_phone_user_register"
+        android:textSize="@dimen/ag_16sp"
+        />
+    
+ </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

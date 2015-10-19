@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/auto_complete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/uc_selector_inputview_content_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_more_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/uc_arrow_down"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/multi_input_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/activity_login_account_label"
+            android:textSize="@dimen/uc_middle_51_text_size"
+            android:visibility="gone" />
+
+        <AutoCompleteTextView
+            android:id="@+id/multi_autocomple_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/img_more_tag"
+            android:layout_toRightOf="@id/multi_input_title"
+            android:background="@android:color/transparent"
+            android:dropDownHorizontalOffset="-10dp"
+            android:dropDownSelector="@android:color/transparent"
+            android:dropDownVerticalOffset="5dp"
+            android:ellipsize="end"
+            android:hint="@string/activity_login_auto_comtv_hint"
+            android:singleLine="true"
+            android:textColor="@color/uc_dark_text_color"
+            android:textColorHint="@color/uc_light_text_color"
+            android:textSize="@dimen/uc_middle_51_text_size" />
+
+        <ImageView
+            android:id="@+id/img_del_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/multi_autocomple_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/uc_selector_inputview_delete_img"
+            android:contentDescription="@string/app_name"
+            android:focusable="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</merge>

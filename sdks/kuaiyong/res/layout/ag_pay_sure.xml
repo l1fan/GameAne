@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/ag_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp"
+                android:paddingTop="@dimen/ag_20dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv9"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="154165418651321652" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/ag_10dp"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_20dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv10" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="物品名称" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" 
+                android:paddingBottom="@dimen/ag_5dp"
+                android:paddingTop="@dimen/ag_5dp">
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv11" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        style="@style/ag_tv_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/ag_10dp"
+                        android:text="50.00元" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_gray_white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" 
+                android:paddingBottom="@dimen/ag_5dp"
+                android:paddingTop="@dimen/ag_5dp">
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/ag_20dp"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:layout_marginTop="@dimen/ag_20dp"
+                    android:text="@string/ag_pay_red_packet_tv12" />
+
+                <LinearLayout
+                    android:id="@+id/ll_red_packet_use"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/ag_20dp"
+                    android:layout_marginTop="@dimen/ag_20dp"
+                     android:layout_marginRight="@dimen/ag_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_red_packet_use"
+                        style="@style/ag_tv_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ag_pay_red_packet_tv13" />
+
+                    <ImageView
+                        android:id="@+id/iv_red_packet_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ag_10dp"
+                        android:src="@drawable/ag_arrow_forward" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_pay_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ag_10dp"
+                android:layout_marginRight="@dimen/ag_10dp"
+                android:layout_marginTop="@dimen/ag_20dp"
+                android:background="@drawable/ag_btn_blue_select"
+                android:text="支付  （50-抵扣）元"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

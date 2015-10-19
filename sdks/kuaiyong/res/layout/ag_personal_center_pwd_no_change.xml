@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/ag_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ag_20dp"
+                android:layout_marginLeft="@dimen/ag_10dp"
+                android:layout_marginTop="@dimen/ag_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/pc_pwd_manager_tv8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_toggle_btn_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/ag_20dp"
+                    android:text="@string/pc_pwd_manager_tv11" />
+
+                <ToggleButton
+                    android:id="@+id/tv_pwd_login_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/ag_5dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/ag_toggle_btn"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_balance_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.anguotech.sdk.view.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ag_20dp"
+                    android:padding="@dimen/ag_10dp"
+                    android:numColumns="5" >
+                </com.anguotech.sdk.view.MyGridView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ag_25dp"
+                android:layout_marginLeft="@dimen/ag_25dp"
+                android:layout_marginRight="@dimen/ag_25dp"
+                android:layout_marginTop="@dimen/ag_15dp"
+                android:background="@drawable/ag_btn_blue_select"
+                android:text="@string/pc_pwd_manager_tv10"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="12dp"
+        android:background="@drawable/xh_dialog_backgroud" >
+
+        <RelativeLayout
+            android:id="@+id/privacy_policy_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <TextView
+                android:id="@+id/privacy_policy_top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/ql_quick_login_title"
+                android:textSize="14sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/privacy_policy_body"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/privacy_policy_top"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="12dp">
+
+			<!-- 老的用户协议搬到这里来 -->
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		
+		        <LinearLayout
+		            android:id="@+id/waiting_lay"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:gravity="center"
+		            android:orientation="vertical">
+		
+		            <TextView
+		                android:id="@+id/privacy_policy_textview_1"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center"
+		                android:text="@string/ql_policy_loading"
+		                android:textAppearance="?android:attr/textAppearanceSmall"
+		                android:textColor="@color/ql_black" />
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:id="@+id/content_lay"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:orientation="vertical" >
+		
+		            <WebView
+		                android:id="@+id/webview"
+		                android:layout_width="fill_parent"
+		                android:layout_height="fill_parent"
+		                android:background="@drawable/xh_dialog_backgroud"
+		                android:textAppearance="?android:attr/textAppearanceSmall" />
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:id="@+id/retry_lay"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:gravity="center"
+		            android:orientation="vertical"
+		            android:visibility="visible" >
+		
+		            <TextView
+		                android:id="@+id/privacy_policy_textview_2"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center"
+		                android:text="@string/ql_no_connection"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/ql_black" />
+		
+		        </LinearLayout>
+		        
+		    </RelativeLayout>
+		    <!-- 老的用户协议搬到这里来 -->
+		    
+        </RelativeLayout>
+
+	    <Button
+            android:id="@+id/privacy_policy_retry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/privacy_policy_body"
+            android:background="@drawable/xh_footer_selector"
+            android:text="@string/ql_btn_ok"
+            android:textColor="@color/ql_quick_login_foot_button"
+            android:textSize="13sp" />
+	    
+	    <LinearLayout
+	        android:id="@+id/policy_dialog_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/privacy_policy_body"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/policy_dialog_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/xh_footer_selector"
+                android:text="@string/ql_cacel"
+                android:textColor="@color/ql_quick_login_foot_button"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/policy_dialog_retry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/xh_footer_selector"
+                android:text="@string/ql_btn_ok"
+                android:textColor="@color/ql_quick_login_foot_button"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

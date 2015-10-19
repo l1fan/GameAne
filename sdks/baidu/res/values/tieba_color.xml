@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="tieba_red">#FFFF0000</color>
+<color name="tieba_blue">#FF007BD1</color>
+<color name="tieba_white">#FFFFFFFF</color>
+
+<color name="tieba_more_text_color">#FFF3F3F3</color>
+<color name="tieba_black">#FF000000</color>
+<color name="tieba_editimage_bar_bg">#CC3F3F3F</color>
+<color name="tieba_editimage_bg">#FF313131</color>
+<color name="tieba_login_bg_color">#FFF7F7F7</color>
+
+<color name="tieba_write_color">#FF3B3B3B</color>
+<color name="tieba_write_hint_color">#FFA5A6A8</color>
+<color name="tieba_backgroundcolor">#FFF1F1F1</color>
+<color name="tieba_gray">#FF9C9D9D</color>
+<color name="tieba_more_color">#FF3B3B3B</color>
+<color name="tieba_text_hint_color">#FF9C9D9D</color>
+<color name="tieba_reg_font_color">#FF333333</color>
+<color name="tieba_tab_hightlight_text_color">#FF0054C6</color>
+<color name="tieba_tab_text_color">#FF3B3B3B</color>
+<color name="tieba_read_thread_color">#FF737373</color>
+<color name="tieba_beautify_rotate_tab_unchecked_color">#FF969696</color>
+<color name="tieba_search_text_title">#FF666666</color>
+<color name="tieba_search_text_content">#FF262626</color>
+<color name="tieba_search_text_forum">#FF999999</color>
+<color name="tieba_pb_more_color">#FF0F1721</color>
+
+<!-- PB colors -->
+
+<color name="tieba_blue_day_2">#FF3C85E0</color>
+<color name="tieba_gray_day_2">#FFB2B6BA</color>
+<color name="tieba_gray_day_3">#FF666666</color>
+
+<color name="tieba_gray_3">#FFACC5E0</color>
+
+
+<color name="tieba_list_pressed_color_day">#DEDEDE</color>
+
+    <color name="tieba_flist_item_color_even_day">#fffcfcfc</color>
+    <color name="tieba_flist_text_color_day">#ff8791a2</color>
+    <color name="tieba_flist_selected_text_color_day">#ff353941</color>
+
+</resources>

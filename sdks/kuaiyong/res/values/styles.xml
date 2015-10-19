@@ -1,0 +1,39 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- 设置没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/ag_push_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/ag_push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/ag_push_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/ag_push_right_out</item>
+    </style>
+    
+    
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/everypage_tab_head"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:alwaysDrawnWithCache="false"
+    android:background="@drawable/buoy_bg_actionbar"
+    android:fadingEdge="none"
+    android:orientation="horizontal" >
+
+    <!-- 每个TAB页的头部 -->
+
+    <TextView
+        android:id="@+id/backGame"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:addStatesFromChildren="true"
+        android:gravity="center"
+        android:background="@drawable/buoy_game_selector"
+        android:includeFontPadding="false"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="返回游戏"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left"
+        android:layout_toLeftOf="@id/backGame"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/buoy_title_click_bg"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/has_preclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/buoy_actbar_back" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/has_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/buoy_icon_line"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dip"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

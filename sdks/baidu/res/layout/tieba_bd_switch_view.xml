@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/tieba_btn_switch_masking">
+    
+    <ImageView
+        android:id="@+id/switch_image"
+ 	    android:layout_width="wrap_content"
+   	    android:layout_height="fill_parent"
+   	    android:scaleType="fitXY"
+        android:background="@drawable/tieba_btn_switch"/>
+    
+    <!-- 
+    <ImageView
+        android:id="@+id/front_image"
+ 	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+        android:background="@drawable/tieba_"/>
+         -->
+    
+</FrameLayout>

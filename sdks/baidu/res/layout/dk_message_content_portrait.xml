@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dk_message_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/dk_color_666666"
+        android:textSize="@dimen/text_size_16_sp" />
+
+    <LinearLayout
+        android:id="@+id/dk_message_source_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dk_messge_source"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/dk_message_content_source"
+            android:textColor="@color/dk_color_666666"
+            android:textSize="@dimen/text_size_12_sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dk_messge_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/dk_color_666666"
+            android:textSize="@dimen/text_size_12_sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dk_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_size_14_dp"
+        android:textColor="@color/dk_color_666666"
+        android:textSize="@dimen/text_size_14_sp" />
+    <LinearLayout 
+        android:id="@+id/dk_message_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_size_14_dp"
+        android:layout_marginLeft="@dimen/text_size_14_dp"
+        android:layout_marginRight="@dimen/text_size_14_dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

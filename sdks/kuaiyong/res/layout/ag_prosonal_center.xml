@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/ag_title" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/ag_10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/ag_personal_center_account" />
+
+            <include layout="@layout/ag_personal_center_gridview" />
+
+            <Button
+                android:id="@+id/btn_exit"
+                style="@style/ag_tv_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ag_506dp"
+                android:layout_marginLeft="@dimen/ag_506dp"
+                android:layout_marginRight="@dimen/ag_506dp"
+                android:layout_marginTop="@dimen/ag_15dp"
+                android:background="@drawable/ag_btn_red"
+                android:text="@string/pc_account_exit"
+                android:textColor="@color/color_red" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

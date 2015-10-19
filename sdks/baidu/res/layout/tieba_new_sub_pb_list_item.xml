@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:richText="http://schemas.android.com/apk/res-auto/com.baidu.tiebasdk"
+    android:id="@+id/sub_pb_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical"
+    android:paddingTop="5dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip" >
+
+        <com.baidu.tiebasdk.view.HeadImageView
+            android:id="@+id/photo"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:clickable="true"
+            android:focusable="false"
+            android:scaleType="fitCenter" >
+        </com.baidu.tiebasdk.view.HeadImageView>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.baidu.tbadk.widget.richText.TbRichTextView
+                android:id="@+id/richText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.baidu.tbadk.widget.richText.TbRichTextView>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffb2b6ba"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="1dip"
+        android:layout_marginRight="1dip"
+        android:layout_marginTop="0dip"
+        android:visibility="visible" >
+    </View>
+
+</LinearLayout>

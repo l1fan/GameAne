@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/dk_draw_winner_bg"
+       android:layout_width="115dp"
+       android:layout_height="26dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginRight="3dp">
+       
+       <TextView 
+	       android:id="@+id/dk_draw_winner_bg_username"
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent"/>
+    	
+	   <TextView 
+	        android:id="@+id/dk_draw_prize_name_text_username"
+	        android:layout_width="115dp"
+	        android:layout_height="26dp"
+	        android:gravity="center"
+	        android:textColor="@color/dk_color_ff6e04"
+	        android:textSize="12sp"/>
+	   
+</FrameLayout>

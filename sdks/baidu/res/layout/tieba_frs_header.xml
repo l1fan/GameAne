@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dip"
+	android:id="@+id/container"
+    android:background="@drawable/tieba_bg_topbar" >
+    
+    <RelativeLayout
+        android:id="@+id/frs_image_layout"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip" >
+        
+        <com.baidu.tiebasdk.view.FrsStarImageView
+            android:id="@+id/frs_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/frs_image_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tieba_pic_bj_touxiang_n" />
+    </RelativeLayout>
+    
+	<LinearLayout
+	    android:id="@+id/forum_content"
+	    android:layout_marginLeft="95dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:padding="0dip"
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+	    <TextView 
+	        android:id="@+id/title_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textStyle="bold"
+	        android:padding="0dip"
+	        android:textColor="#FF40464F"
+	        android:textSize="16sp"
+	    	/>
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="0dip"
+	        android:gravity="center_vertical"
+	        android:id="@+id/forum_info"
+	        >
+	        <ImageView 
+	            android:id="@+id/member_image"
+	            android:src="@drawable/tieba_icon_little_people"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+	        	android:layout_centerVertical="true"
+	            />
+	        <TextView 
+	            android:id="@+id/member_num_text"
+	            android:layout_toRightOf="@id/member_image"
+	            android:layout_marginLeft="5dip"
+	            android:singleLine="true"
+	            android:textColor="#FFB2B6BA"
+	        	android:textSize="9sp"
+	        	android:padding="0dip"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_centerVertical="true"
+	            />
+	        <ImageView 
+	            android:id="@+id/post_image"
+	            android:layout_toRightOf="@id/member_num_text"
+	            android:src="@drawable/tieba_icon_little_discuss"
+	            android:layout_marginLeft="10dip"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_centerVertical="true"
+	            />
+	        <TextView 
+	            android:id="@+id/post_num_text"
+	            android:layout_toRightOf="@id/post_image"
+	            android:layout_marginLeft="5dip"
+	            android:singleLine="true"
+	            android:textColor="#FFB2B6BA"
+	        	android:textSize="9sp"
+	        	android:padding="0dip"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_centerVertical="true"
+	            />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dip"
+	        android:layout_marginBottom="10dip"
+	        android:id="@+id/bottom_info"
+	        >
+	        
+	        <Button
+	            android:id="@+id/btn_love"
+	            android:layout_width="wrap_content"
+	            android:layout_height="32dp"
+	            android:background="@drawable/tieba_frs_btn_like" />
+	        
+	        <RelativeLayout
+                android:id="@+id/btn_love_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/level_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff262626"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="8dip"
+                    android:layout_toRightOf="@id/level_name"
+                    android:textColor="#ff262626"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/love_level_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/level_name"
+                    android:layout_marginTop="4dip"
+                    android:background="@drawable/tieba_progressbar_black" />
+
+                <ImageView
+                    android:id="@+id/love_level_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/level_name"
+                    android:layout_marginTop="4dip"
+                    android:background="@drawable/tieba_progressbar_blue" />
+            </RelativeLayout>
+	        
+	        <Button 
+	            android:id="@+id/btn_sign"
+	            android:layout_marginLeft="10dip"
+	            android:layout_toRightOf="@id/btn_love"
+	            android:background="@drawable/tieba_frs_btn_sign"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="32dp" />
+	    </RelativeLayout>
+	</LinearLayout>
+
+	<RelativeLayout
+	    android:id="@+id/frs_tag_layout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="10dip" 
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true" >
+
+	    <ImageView
+	        android:id="@+id/frs_tag_bg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/tieba_label_green"/>
+	    
+	    <TextView 
+	        android:id="@+id/frs_tag_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="2dip"
+	        android:textSize="10sp"
+	        android:maxLength="4"
+	        android:textColor="#ffffff"
+	        android:text="@string/tieba_tag" />
+
+	</RelativeLayout>
+</RelativeLayout>

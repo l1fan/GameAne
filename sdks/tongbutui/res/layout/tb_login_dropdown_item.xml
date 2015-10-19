@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip">
+
+    <ImageButton
+        android:id="@+id/tb_ib_login_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/tb_edit_delete"
+        android:contentDescription="@string/tb_app_name" />
+
+    <TextView
+        android:textColor="#ff333333"
+        android:id="@+id/tb_tv_login_history"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tb_ib_login_delete"
+        android:textSize="20sp"
+        android:singleLine="true" />
+
+</RelativeLayout>

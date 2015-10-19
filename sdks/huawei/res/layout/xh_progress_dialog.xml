@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="79dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:baselineAligned="false"
+    android:background="@drawable/xh_dialog_backgroud">
+
+<!--     <ProgressBar -->
+<!--         android:id="@+id/progress" -->
+<!--         android:layout_width="36dp" -->
+<!--         android:layout_height="36dp" -->
+<!--         android:layout_gravity="center_vertical" -->
+<!--         android:layout_marginLeft="14dp" -->
+<!--         android:layout_marginRight="14dp"  -->
+<!--         android:background="@drawable/xh_circle_medium"/> -->
+    
+    <ImageView
+        android:id="@+id/progress"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/xh_circle_medium" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toLeftOf="@+id/button_layout"
+        android:layout_toRightOf="@id/progress" >
+
+	    <TextView
+	        android:id="@+id/message"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/ql_progress_text"
+	        android:textSize="13sp"/>
+    </RelativeLayout>
+        
+    
+    <RelativeLayout 
+        android:id="@+id/button_layout"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        
+        <TextView
+	        android:id="@+id/button"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/xh_switch_selector"
+	        android:gravity="center"
+	        android:text="@string/xh_switch" 
+	        android:textColor="@color/ql_quick_login_foot_button"
+	        android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

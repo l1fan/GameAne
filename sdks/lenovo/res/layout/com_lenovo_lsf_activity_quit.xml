@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commont_login_layout"
+    android:layout_marginLeft="@dimen/com_lenovo_lsf_view_margin_left"
+    android:layout_marginRight="@dimen/com_lenovo_lsf_view_margin_right"
+    android:layout_width="@dimen/com_lenovo_lsf_view_width_portrait"
+    android:layout_height="280dp"
+    
+    android:background="@drawable/com_lenovo_lsf_activity_bg" >
+
+    <RelativeLayout
+        android:id="@+id/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_lenovo_lsf_title_height"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/common_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/com_lenovo_lsf_quit_title_name"
+            android:textColor="#191919"
+            android:textSize="@dimen/com_lenovo_lsf_title_fontsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="228dp"
+        android:layout_below="@+id/common_title_layout" >
+        
+        
+        <ImageView
+        android:id="@+id/iv_advertise"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/com_lenovo_lsf_quit_default"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/layout_start_game"
+         />
+        
+
+        <LinearLayout
+            android:id="@+id/layout_start_game"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/com_lenovo_lsf_content_padding_left_right"
+            android:layout_marginRight="@dimen/com_lenovo_lsf_content_padding_left_right"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_forum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+ 				android:layout_marginRight="12dp"
+                android:background="@drawable/com_lenovo_lsf_btn_startgame_selector"
+                android:text="@string/com_lenovo_lsf_enter_forum_text"
+                android:textSize="16sp"
+                android:textColor="#ffffff" />
+            
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                
+               
+                android:background="@drawable/com_lenovo_lsf_btn_register_selector"
+                android:text="@string/com_lenovo_lsf_quit_text"
+                android:textSize="16sp"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bdp_paycenter_layout_baidu_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:layout_gravity="center_horizontal">
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="22dp"
+            android:background="@drawable/bdp_paycenter_logo_baidu" />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_customer_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#838383"
+        android:textSize="@dimen/bdp_paycenter_text_size_14_sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bdp_paycenter_customer_default" />
+    
+</LinearLayout>

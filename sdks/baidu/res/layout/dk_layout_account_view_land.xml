@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 个人中心 -->
+
+    <LinearLayout
+        android:id="@+id/dk_modify_pwd_account_manager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dk_account_manager_pre_pwd"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_edittext_selector"
+                android:digits="@string/dk_register_name_digits"
+                android:gravity="center_vertical"
+                android:hint="@string/dk_tv_string_pre_pwd"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textColorHint="@color/dk_color_999999"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dk_account_manager_new_pwd"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_edittext_selector"
+                android:digits="@string/dk_register_name_digits"
+                android:gravity="center_vertical"
+                android:hint="@string/dk_tv_string_new_pwd"
+                android:maxLength="16"
+                android:password="true"
+                android:singleLine="true"
+                android:textColorHint="@color/dk_color_999999"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dk_account_manager_check_new_pwd"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_edittext_selector"
+                android:digits="@string/dk_register_name_digits"
+                android:gravity="center_vertical"
+                android:hint="@string/dk_tv_string_confire_new_pwd"
+                android:maxLength="16"
+                android:password="true"
+                android:singleLine="true"
+                android:textColorHint="@color/dk_color_999999"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dk_btn_commit_modify_pwd"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_login_btn_selector"
+                android:gravity="center"
+                android:text="@string/dk_btn_string_confire_modify_pwd"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dk_user_identify"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dk_identify_content"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dk_identify_notify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/dk_identify_inter"
+            android:textColor="#ff0000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/dk_identify_name"
+            style="@style/dk_style_user_edittext"
+            android:layout_marginTop="10dp"
+            android:hint="@string/dk_inter_user_name"
+            android:maxLength="5" />
+
+        <EditText
+            android:id="@+id/dk_identify_number"
+            style="@style/dk_style_user_edittext"
+            android:layout_marginTop="20dp"
+            android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/dk_inter_user_identify_number"
+            android:maxLength="18" />
+
+        <Button
+            android:id="@+id/dk_identify_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dk_login_btn_selector"
+            android:gravity="center"
+            android:text="@string/dk_user_confirm"
+            android:textColor="@color/dk_gamesdk_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dk_bind_phone_account_manager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <com.duoku.platform.view.DKPhoneEditText
+                android:id="@+id/dk_phone_edit_account_manager"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_edittext_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/dk_account_manager_phone_hint"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColorHint="@color/dk_color_999999"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/dk_bind_phone_get_verify_code_account_manager"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/dk_btn_small_blue_selector"
+                android:singleLine="true"
+                android:text="@string/dk_btn_string_get_verify_code"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dk_verify_bind_phone_edit_account_manager"
+                style="@style/dk_style_user_edittext"
+                android:hint="@string/dk_et_string_verifycode_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dk_btn_commit_account_manager"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_login_btn_selector"
+                android:gravity="center"
+                android:text="@string/dk_btn_commit"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dk_check_pre_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dk_bind_phone_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dk_tv_string_cur_bind_phone"
+                android:textColor="@color/dk_color_333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dk_modify_phone_pre_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/dk_color_333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dk_get_old_duoku_verify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <com.duoku.platform.view.DKPhoneEditText
+                android:id="@+id/dk_phone_edit_account_manager_mofidy_phone"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_edittext_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/dk_account_manager_phone_hint"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColorHint="@color/dk_color_999999"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/dk_bind_phone_get_verify_code_account_manager_modify_phone"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/dk_btn_small_blue_selector"
+                android:singleLine="true"
+                android:text="@string/dk_btn_string_get_verify_code"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- 91帐号登录修改绑定的布局 -->
+
+        <LinearLayout
+            android:id="@+id/dk_get_old_91_verify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/dk_bind_phone_91_get_verify_code_account_manager_modify_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/dk_btn_small_blue_selector"
+                android:singleLine="true"
+                android:text="@string/dk_verify_to_old_phone"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dk_pre_verifycode_account_manager"
+                style="@style/dk_style_user_edittext"
+                android:hint="@string/dk_et_string_verifycode_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dk_btn_next_step_account_manager_modify_phone"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_login_btn_selector"
+                android:gravity="center"
+                android:text="@string/dk_btn_next_step"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dk_modify_bind_phone_account_manager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <com.duoku.platform.view.DKPhoneEditText
+                android:id="@+id/dk_phone_edit_account_manager_mofidy_phone_1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_edittext_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/dk_account_manager_phone_new_hint"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColorHint="@color/dk_color_999999"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/dk_bind_phone_get_verify_code_account_manager_modify_phone_1"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/dk_btn_small_blue_selector"
+                android:singleLine="true"
+                android:text="@string/dk_btn_string_get_verify_code"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dk_new_verifycode_account_manager"
+                style="@style/dk_style_user_edittext"
+                android:hint="@string/dk_et_string_verifycode_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dk_btn_next_step_account_manager_modify_phone_1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dk_login_btn_selector"
+                android:gravity="center"
+                android:text="@string/dk_btn_string_complete"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dk_account_info_account_manager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/dk_account_toast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/dk_ic_announcement" />
+
+                <TextView
+                    android:id="@+id/dk_account_toast_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/dk_color_fd711d" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bd_ll_prize"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/dk_ll_prize_up"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/bd_ll_rotate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/bd_iv_prize"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dk_iv_prize_up" />
+
+                    <ImageView
+                        android:id="@+id/bd_iv_point"
+                        android:layout_width="10dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/dk_iv_prize_point" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/bd_tv_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/bd_tv_prize"
+                    android:textColor="#fe976e"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/dk_tr_pointmall"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/dk_bg_account_manage_selsetor"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/dk_icon_pointmall"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="16.0dip"
+                            android:text="@string/dk_btn_string_pointmall"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="15.0dip"
+                            android:src="@drawable/dk_icon_item_arrow" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/dk_user_recharge"
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/dk_bg_account_manage_selsetor"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/dk_tv_account_history"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/dk_icon_recharge"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="16.0dip"
+                            android:text="@string/dk_real_recharge"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="15.0dip"
+                            android:src="@drawable/dk_icon_item_arrow" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/dk_tr_point"
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/dk_bg_account_manage_selsetor"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/dk_icon_point"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="16.0dip"
+                            android:text="@string/dk_btn_string_point"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="15.0dip"
+                            android:src="@drawable/dk_icon_item_arrow" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/dk_user_numberbox"
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/dk_bg_account_manage_selsetor"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/dk_icon_numberbox"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="16.0dip"
+                            android:singleLine="true"
+                            android:text="@string/dk_icon_numberbox"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="15.0dip"
+                            android:src="@drawable/dk_icon_item_arrow" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/dk_tr_mytools"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/dk_bg_account_manage_selsetor"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/dk_icon_mytools"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="16.0dip"
+                            android:text="@string/dk_btn_string_mytools"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="15.0dip"
+                            android:src="@drawable/dk_icon_item_arrow" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/dk_tr_modify_pass"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/dk_bg_account_manage_selsetor"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/dk_icon_modify_pass"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="16.0dip"
+                            android:text="@string/dk_btn_string_modify_pwd"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:textColor="@color/dk_color_cc3300"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="15.0dip"
+                            android:src="@drawable/dk_icon_item_arrow" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/dk_user_notify"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/dk_bg_account_manage_selsetor"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/dk_icon_user_identify"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="16.0dip"
+                            android:text="@string/dk_real_name_notify"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:textColor="@color/dk_color_cc3300"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="15.0dip"
+                            android:src="@drawable/dk_icon_item_arrow" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/dk_tr_bind_account"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/dk_bg_account_manage_selsetor"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip"
+                        android:singleLine="true" >
+
+                        <TextView
+                            android:id="@+id/dk_tv_bind_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/dk_icon_modify_bind"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="16.0dip"
+                            android:singleLine="true"
+                            android:text="@string/dk_btn_string_bind_phone"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/dk_tv_tip_bind_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:singleLine="true"
+                            android:text="@string/dk_btn_string_bind_phone"
+                            android:textColor="@color/dk_color_cc3300"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="15.0dip"
+                            android:src="@drawable/dk_icon_item_arrow" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dk_btn_changeaccount_selector"
+                android:paddingLeft="1.0dip"
+                android:shrinkColumns="0"
+                android:stretchColumns="0" >
+
+                <TableRow
+                    android:id="@+id/dk_tr_change_account"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:paddingBottom="16.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/dk_btn_string_exchange_account"
+                        android:textColor="#fff08f1e"
+                        android:textSize="14.0sp" />
+                </TableRow>
+            </TableLayout>
+
+            <include
+                android:id="@+id/dk_custom_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                layout="@layout/dk_user_bottom_logo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

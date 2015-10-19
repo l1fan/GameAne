@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+        
+    <!-- The question type region -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     	android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:textColor="@color/dk_color_666666"
+          	android:textSize="@dimen/text_size_14_sp"
+           	android:text="@string/dk_customer_question_type" />
+        
+        <HorizontalScrollView 
+            android:id="@+id/dk_scroll_view_question_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:fillViewport="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+         	android:scrollbarStyle="insideOverlay"
+         	android:scrollbarThumbHorizontal="@drawable/dk_scrollbar_gray">
+         
+        	 <LinearLayout 
+	             android:id="@+id/dk_layout_question_type"
+	             android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             android:paddingBottom="8dp"
+	             android:orientation="horizontal"
+	             android:gravity="center_vertical"
+	             android:layout_gravity="center_vertical">
+            
+       		</LinearLayout>
+       	</HorizontalScrollView>
+       	
+        <RelativeLayout 
+            android:id="@+id/dk_layout_question_detail_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical">
+         
+	         <Button
+	             android:id="@+id/dk_btn_question_detail_type"
+	             android:layout_width="108dp"
+		         android:layout_height="30dp"
+		         android:gravity="center"
+		         android:layout_alignParentRight="true"
+		         android:textColor="@color/dk_color_666666"
+		         android:text="@string/dk_btn_string_pay"
+		         android:textSize="@dimen/text_size_14_sp"
+		         android:background="@drawable/dk_bg_other_pay_press" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- The question type region end -->
+    
+    <LinearLayout 
+        android:id="@+id/dk_layout_common_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        
+        <TextView
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_14_sp"
+	        android:textColor="@color/dk_color_0066cc"
+	        android:text="@string/dk_customer_tip_question_title"/>
+    </LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:layout_marginTop="8dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray">
+        
+        <LinearLayout
+            android:id="@+id/dk_layout_question_common"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+         
+         	<LinearLayout
+         	    android:id="@+id/dk_layout_question_list"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="10"
+	            android:orientation="vertical">
+	            
+             	<com.duoku.platform.view.common.DKListViewExtend
+	                 android:id="@+id/dk_list_view_question"
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content"
+	                 android:cacheColorHint="#00000000"
+	                 android:divider="@null"
+	                 android:fadingEdge="none"
+	                 android:scrollbars="vertical"
+	                 android:listSelector="@color/dk_transparent"
+	                 android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray"/>
+   			</LinearLayout>
+   
+        	<LinearLayout
+	            android:id="@+id/dk_layout_question_detail"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="10"
+	            android:visibility="gone"
+	            android:orientation="vertical">
+             
+            	<TextView 
+	                android:id="@+id/dk_tv_question_detail_title"
+	              	android:layout_width="wrap_content"
+	              	android:layout_height="wrap_content"
+	              	android:textSize="@dimen/text_size_16_sp"
+	              	android:textColor="@color/dk_color_333333"
+	              	android:text="@string/dk_customer_tip_question_title"/>
+            
+            	<ScrollView
+            	    android:layout_width="fill_parent"
+            	    android:layout_height="fill_parent"
+            	    android:layout_marginTop="12dp"
+            	    android:fadeScrollbars="false"
+            	    android:fillViewport="true"
+            	    android:scrollbarStyle="insideOverlay"
+            	    android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray" >
+
+            	    <TextView
+            	        android:id="@+id/dk_tv_question_detail_content"
+            	        android:layout_width="wrap_content"
+            	        android:layout_height="wrap_content"
+            	        android:text="@string/dk_customer_tip_question_title"
+            	        android:textColor="@color/dk_color_666666"
+            	        android:textSize="@dimen/text_size_14_sp" />
+            	</ScrollView>
+
+        	</LinearLayout>
+        
+        	<RelativeLayout 
+	            android:id="@+id/dk_layout_baidu_logo"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="0dp"
+	        	android:layout_weight="3"
+	        	android:layout_marginTop="8dp"
+	        	android:gravity="center_horizontal|bottom">
+            
+            	<include
+	                android:layout_gravity="center_horizontal"
+	                layout="@layout/dk_payment_bottom" />
+        		</RelativeLayout>
+  			</LinearLayout>
+     </ScrollView>
+</LinearLayout>

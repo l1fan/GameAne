@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- listView 的item分割线，此种分割线与两边有间隙 -->
+    <!-- 底层为listView的中间显示的分割背景，这里设置为listView item 的前景色 -->
+    <item android:drawable="@color/transparent"/>
+    <!-- listView 中间显示的分割线前景 -->
+    <item
+        android:drawable="@drawable/list_item_divider"
+        android:left="20dp"
+        android:right="20dp"/>
+
+</layer-list>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/tb_layout_tab_menu"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/tb_layout_tab_person"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/tb_iv_tab_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tb_tab_person_normal" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tb_tv_tab_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tb_base_tab_normal"
+                    android:text="@string/tb_suspension_person"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/tb_layout_tab_game"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/tb_iv_tab_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tb_tab_game_normal" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tb_tv_tab_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tb_suspension_game"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/tb_layout_tab_sms"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/tb_ll_tab_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/tb_iv_tab_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tb_tab_sms_normal" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tb_tv_tab_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tb_base_tab_normal"
+                    android:text="@string/tb_suspension_sms"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tb_layout_tab_bbs"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/tb_iv_tab_bbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tb_tab_bbs_normal" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tb_tv_tab_bbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tb_base_tab_normal"
+                    android:text="@string/tb_suspension_bbs"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tb_view_deliver"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:background="#c7c7c7"
+        android:layout_above="@id/tb_layout_tab_menu"
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tb_view_deliver"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <com.tongbu.sdk.widget.TbMainViewPager
+            android:id="@+id/tb_main_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

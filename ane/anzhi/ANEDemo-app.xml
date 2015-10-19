@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/18.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.test.anzhi.newtest.a</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.tencent.mtt.extension.Player" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true" >
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.LogoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Transparent" >
+            <meta-data
+                android:name="ANZHIUSERCENTE_VERSIONS"
+                android:value="3.2" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.UserCenterMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.UserDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.UpdateStarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.UpdateQQActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.UpdateNickActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.AnzhiCurrencyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.PwdSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.AnzhiMessageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.PwdSettingClearActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.AccountSafeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.BindTelActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.UnbindTelActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.CurrencyChargeWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.ChargeHistoryWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.ConsumHistoryWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.GameChargeWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.OrderRecodeWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.FeedbackWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.OpenLoginforQQActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.OpenLoginforWeiboActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.BindEmailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.UnbindEmailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.MessageDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.FindPwdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.AccountSafeWindowActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/mydialog"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.NoticeActivtiy"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Transparent"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.LoadingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.UcenterOfficialLoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- =====================================华丽的分割线======================================== -->
+        <activity
+            android:name="com.anzhi.usercenter.sdk.ModifyPwdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.ResetPwdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.FindAccountFailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.NoticeDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.AnzhiGameBbsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.GameGiftActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.RechargeRedPacketWebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.GiftBagDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.MessageActivitty"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.anzhi.usercenter.sdk.GiftbagRecordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <receiver android:name="com.anzhi.usercenter.sdk.control.NetListenerReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 以下是银联支付插件 -->
+        <activity
+            android:name="com.unionpay.upomp.tbow.paymain"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Pm"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Pi"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Pr"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Mk"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Um"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Ur"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Up"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Ui"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Ua"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Cm"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Car"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Ca"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Cbr"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Cb"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.tbow.activity.Ci"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.android.mini.window.sdk.MiniPayActivity"
+            android:configChanges="orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:process="com.alipay.sdk"
+            android:screenOrientation="portrait"
+            android:theme="@style/MspAppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+            <intent-filter android:priority="800" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.android.mini.window.sdk.MiniWebActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:process="com.alipay.sdk"
+            android:theme="@style/MspAppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.alipay.android.app.MspService"
+            android:exported="false"
+            android:process="com.alipay.sdk" >
+            <intent-filter android:priority="800" />
+        </service>
+              
+    </application>
+            </manifest>
+            
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions>
+      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
+          </InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.anzhi</extensionID>
+    </extensions>
+</application>

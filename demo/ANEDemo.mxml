@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" applicationDPI="160" creationComplete="init(event)">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.l1fan.swc.HeTuGameSDK;
+			
+			import mx.events.FlexEvent;
+
+
+			private var chsdk:HeTuGameSDK = new HeTuGameSDK('com.l1fan.ane.qihoo360');
+
+
+			private function statusHandler(e:StatusEvent):void
+			{
+			   switch(e.code){
+			      case HeTuGameSDK.SDK_HETU_INIT:
+			         lbl.text ="[init]"+ e.level;
+			         break;
+			      case HeTuGameSDK.SDK_HETU_UPDATE:
+			         lbl.text ="[update]"+ e.level;
+			         break;
+			      case HeTuGameSDK.SDK_HETU_LOGIN:
+			         lbl.text = "[login]"+e.level;
+			         break;
+			      case HeTuGameSDK.SDK_HETU_LOGOUT:
+			         lbl.text = "[logout]"+e.level;
+			         break;
+			      case HeTuGameSDK.SDK_HETU_PAY:
+			         lbl.text = "[pay]"+e.level;
+			         break;
+			      case HeTuGameSDK.SDK_HETU_ERROR:
+			         lbl.text = "[error]"+e.level;
+			         break;
+			      default:
+			         lbl.text = "[default]"+e.level;
+			   }
+			}
+			
+			protected function init(event:FlexEvent):void
+			{
+                chsdk.addEventListener(StatusEvent.STATUS, statusHandler);
+                var init:Object = new Object();
+                init.appId = "195";
+                init.appKey = "6F7D62E55F4546CB96CD135771FCB5F8";
+                init.appSecret = "ug2KMdLi2JSr4naOE48XmL3h";
+                init.debugMode = false;
+                init.orientation = 1;
+                init.merchantId = "101";
+                chsdk.init(JSON.stringify(init));
+			}
+			
+			protected function onLoginClick(event:MouseEvent):void
+			{
+				chsdk.userLogin();
+			}
+			
+			protected function onPayClick(event:MouseEvent):void
+			{
+			    var pay:Object = new Object();
+			    pay.qihooUid = 377351739;
+			    pay.uname = "yiyimx";
+			    pay.uid = "377351739";	
+			    pay.notifyUrl="http://www.l1fan.com";
+			    pay.amount = "100";
+			    pay.pname = "100元宝";
+			    pay.pid = "4001";
+			    pay.orderId = "t123123123123";
+			    pay.ext = "1123";
+				chsdk.pay(JSON.stringify(pay));
+			}
+			
+			protected function onSwitchClick(event:MouseEvent):void
+			{
+			    chsdk.call('switchAccount');
+			}
+			
+			protected function onUCenterClick(event:MouseEvent):void
+			{
+				chsdk.userCenter();
+			}
+			
+			protected function onLogoutClick(event:MouseEvent):void
+			{
+				chsdk.userLogout();
+			}
+			
+			protected function onExitGameClick(event:MouseEvent):void
+			{
+				chsdk.call('destory');
+			}
+			
+			protected function onToolbarClick_show(event:MouseEvent):void
+			{
+				chsdk.call('showToolBar');
+			}
+
+			protected function onToolbarClick_hide(event:MouseEvent):void
+			{
+				chsdk.call('hideToolBar');				
+			}
+
+			protected function onDebugClick(event:MouseEvent):void
+			{
+				lbl.text = "[isSupportUC]" + chsdk.isSupportUserCenter();
+				lbl.text += "[isSupportLogout]"+chsdk.isSupportUserLogout();
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	
+	<s:VGroup width="100%" height="100%" verticalAlign="middle" horizontalAlign="center">       
+		<s:Label text="Hello, World!" id="lbl" width="85%" /> 
+		<s:Button label="登录" click="onLoginClick(event)" styleName="next"/>   
+		<s:Button label="支付" click="onPayClick(event)" styleName="next"/>   
+		<s:Button label="切换账号" click="onSwitchClick(event)" styleName="next"/>   
+		<s:Button label="用户中心" click="onUCenterClick(event)" styleName="next"/>   
+		<s:Button label="用户退出" click="onLogoutClick(event)" styleName="next"/>
+		<s:Button label="退出游戏" click="onExitGameClick(event)" styleName="next"/>
+		<s:Button label="显示工具栏" click="onToolbarClick_show(event)" styleName="next"/>
+		<s:Button label="隐藏工具栏" click="onToolbarClick_hide(event)" styleName="next"/>   
+		<s:Button label="是否支持" click="onDebugClick(event)" styleName="next"/>   
+
+	</s:VGroup>
+</s:Application>

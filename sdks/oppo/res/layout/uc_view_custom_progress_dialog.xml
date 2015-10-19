@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_progress_layout"
+    android:layout_width="@dimen/custom_dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|center"
+    android:background="@drawable/uc_bg_custom_dialog"
+    android:minHeight="60dp"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp" >
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@anim/uc_dialog_waiting_animation" />
+
+    <TextView
+        android:id="@+id/loadingmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/progress_bar"
+        android:layout_alignTop="@id/progress_bar"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/progress_bar"
+        android:gravity="center_vertical"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="0.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="0.1"
+        android:singleLine="true"
+        android:text="@string/dialog_loading_title"
+        android:textColor="@color/uc_dark_text_color"
+        android:textSize="@dimen/uc_middle_51_text_size" />
+
+</RelativeLayout>

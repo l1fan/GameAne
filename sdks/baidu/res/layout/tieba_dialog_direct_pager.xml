@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/tieba_alert_dialog_bj"
+	android:layout_height="wrap_content">
+	
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="top|center"
+        android:orientation="horizontal">
+	<TextView android:layout_height="wrap_content"
+   		android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+  		android:text="@string/tieba_redirect_to" />
+ 	<EditText android:layout_height="wrap_content"
+  		android:layout_width="100dip" 
+		android:singleLine="true"
+  		android:id="@+id/input_page_number" 
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+  		android:numeric="integer"
+  		android:maxLength="7"
+  		android:minWidth="60dip"/>
+  	<TextView android:layout_height="wrap_content"
+   		android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+  		android:text="@string/tieba_text_page" />
+  	</LinearLayout>
+  	
+  	<TextView 
+  		android:id="@+id/current_page_number" 
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="28dip"
+        android:layout_marginBottom="15dip"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+  	
+  	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_horizontal">
+        <Button 
+            android:id="@+id/dialog_button_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dip"
+            android:paddingBottom="13dip"
+            android:layout_weight="1"
+        	android:textSize="18sp"
+        	android:textColor="#ff232323"
+        	android:background="@drawable/tieba_alert_dialog_btn_cancel"
+        	android:gravity="center"
+            android:text="@string/tieba_dialog_cancel"/>
+        <Button 
+            android:id="@+id/dialog_button_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dip"
+            android:paddingBottom="13dip"
+            android:layout_weight="1"
+        	android:textSize="18sp"
+        	android:textColor="#ff232323"
+        	android:background="@drawable/tieba_alert_dialog_btn_ok"
+        	android:gravity="center"
+            android:text="@string/tieba_dialog_ok"/>
+    </LinearLayout>
+    
+</LinearLayout>

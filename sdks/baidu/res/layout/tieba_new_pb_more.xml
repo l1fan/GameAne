@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="134dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tieba_new_pb_more"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/tieba_pb_more_list_divider" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/skip_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="38dip"
+        android:background="@drawable/tieba_pb_more_botton"
+        android:clickable="true"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tieba_more_icon_sel"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/tieba_skip_page"
+            android:textSize="14sp" 
+            android:textColor="@color/tieba_pb_more_text_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/tieba_pb_more_list_divider" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/reverse_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="38dip"
+        android:background="@drawable/tieba_pb_more_botton"
+        android:clickable="true"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <ImageView
+            android:id="@+id/reverse_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tieba_more_icon_sel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/tieba_view_reverse"
+            android:textSize="14sp" 
+            android:textColor="@color/tieba_pb_more_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

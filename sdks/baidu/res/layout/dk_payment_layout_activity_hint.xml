@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dk_tv_payment_activity_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <com.duoku.platform.view.common.DKMarqueeTextView
+            android:id="@+id/dk_tv_payment_activity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/dk_tv_payment_activity_image"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/dk_color_217ac7"
+            android:textSize="@dimen/text_size_12_sp"/>
+
+        <ImageView
+            android:id="@+id/dk_tv_payment_activity_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dk_payment_activity_image" />
+    </RelativeLayout>
+
+</LinearLayout>

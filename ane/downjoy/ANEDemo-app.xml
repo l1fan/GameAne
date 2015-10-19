@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/18.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.downjoy.sdkdemo</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <!-- ali -->
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.READ_SMS" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <uses-permission android:name="android.permission.READ_SETTINGS" />
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <uses-permission android:name="android.permission.GET_TASKS" />
+        <uses-permission android:name="android.permission.READ_LOGS" />
+        <!-- nfc -->
+        <!-- 打电话权限 -->
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+        <!-- nfc权限 -->
+        <uses-permission android:name="android.permission.NFC" />
+        <!-- 手机震动 -->
+        <uses-permission android:name="android.permission.VIBRATE" />
+
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true" >
+
+        
+        <!-- SdkActivity 和 PayActivity 横竖屏设置与游戏保持一致 -->
+        <activity
+           android:name="com.downjoy.activity.SdkActivity"
+           android:configChanges="orientation|keyboardHidden|screenSize"
+           android:theme="@style/dcn_dialog_activity"
+           android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- UPPay sdk begin -->
+        <activity
+           android:name="com.unionpay.uppay.PayActivity"
+           android:configChanges="orientation|keyboardHidden|screenSize"
+           android:excludeFromRecents="true"
+           android:label="@string/app_name"
+           android:screenOrientation="portrait"
+           android:windowSoftInputMode="adjustResize" />
+        <!-- UPPay sdk end -->
+
+
+        <!-- alipay sdk begin -->
+        <activity
+           android:name="com.alipay.sdk.app.H5PayActivity"
+           android:configChanges="orientation|keyboardHidden|navigation"
+           android:exported="false"
+           android:screenOrientation="behind"
+           android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!-- alipay sdk end -->
+        <!-- QQ sdk end -->
+        <activity
+           android:name="com.tencent.connect.common.AssistActivity"
+           android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+           android:name="com.tencent.tauth.AuthActivity"
+           android:launchMode="singleTask"
+           android:noHistory="true">
+           <intent-filter>
+               <action android:name="android.intent.action.VIEW" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+               <category android:name="android.intent.category.BROWSABLE" />
+
+               <data android:scheme="tencent100772260" />
+           </intent-filter>
+        </activity>
+        <!-- Polling Service -->
+        <service android:name="com.downjoy.service.PollingService">
+           <intent-filter>
+               <action android:name="action.downjoy.polling.service" />
+           </intent-filter>
+        </service>
+
+        <!--  nfc  -->
+        <activity
+           android:name="com.wepayplugin.nfc.ui.PayStartActivity"
+           android:configChanges="orientation|keyboardHidden"
+           android:screenOrientation="portrait" >
+        </activity>
+        <activity
+           android:name="com.wepayplugin.nfc.ui.SwiperCardActivity"
+           android:configChanges="orientation|keyboardHidden"
+           android:screenOrientation="portrait" >
+        </activity>
+        <activity
+           android:name="com.wepayplugin.nfc.ui.PayResultActivity"
+           android:configChanges="orientation|keyboardHidden"
+           android:screenOrientation="portrait" >
+        </activity>
+              
+    </application>
+            </manifest>
+            
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions>
+      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
+          </InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.downjoy</extensionID>
+    </extensions>
+</application>

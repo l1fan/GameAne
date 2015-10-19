@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" 
+    android:background="@drawable/nmgc_dialog_170">
+    
+	<TextView 
+     	android:id="@+id/nmgc_upgrade_dia_title"
+      	android:layout_width="match_parent"
+     	android:layout_height="57dp"
+      	android:gravity="center"
+      	android:text="@string/nmgc_choose_game_id"
+      	android:textSize="17sp"
+      	android:textColor="#333333"/>
+	
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <Spinner 
+        	android:id="@+id/nmgc_role_spinner"
+        	android:layout_height="35dp"
+        	android:layout_width="210dp"
+        	android:spinnerMode="dropdown"
+        	android:layout_gravity="center_vertical"
+        	android:paddingLeft="10dp"       	
+        	android:dropDownVerticalOffset="3dp"
+        	android:popupBackground="@drawable/nmgc_select_role_bg"
+        	android:background="@drawable/nmgc_switc_role_spinner_bg"/>
+        
+        <ImageView 
+            android:id="@+id/nmgc_add_new_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/nmgc_add_role"
+            android:background="@drawable/nmgc_add_role_btn_selecror"/>
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp">
+        <TextView 
+            android:id="@+id/nmgc_what_is_role"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:text="@string/nmgc_what_is_role"/>
+        <TextView 
+            android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@id/nmgc_what_is_role"
+            android:layout_alignRight="@id/nmgc_what_is_role"
+            android:layout_alignBottom="@id/nmgc_what_is_role"
+            android:background="@drawable/forget_psw_line"/>
+    </RelativeLayout>
+    
+    
+    
+    <Button 
+        android:id="@+id/nmgc_start_game"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/nmgc_now_start_game"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/nmgc_green_btn_selector"/>
+    
+    <RelativeLayout 
+	        android:id="@+id/nmgc_switch_account"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:layout_marginBottom="20dp">
+        	<TextView
+        	    android:id="@+id/nmgc_switch_account_tx"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_alignParentTop="true"
+        	    android:layout_marginRight="30dp"
+        	    android:textColor="#00925f"
+        	    android:text="@string/switch_account_use_other"
+        	    android:textSize="14sp" />
+        	<TextView 
+            	android:layout_height="0.5dp"
+            	android:layout_width="match_parent"
+            	android:layout_alignLeft="@id/nmgc_switch_account_tx"
+            	android:layout_alignRight="@id/nmgc_switch_account_tx"
+            	android:layout_alignBottom="@id/nmgc_switch_account_tx"
+            	android:background="#00925f"/>
+
+    	</RelativeLayout>
+    
+
+</LinearLayout>

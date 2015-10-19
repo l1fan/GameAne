@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:inputView="http://com.oppo.usercenter.opensdk.widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="17dp"
+    android:orientation="vertical" >
+
+    <com.oppo.usercenter.opensdk.widget.InputView
+        android:id="@+id/activity_bind_mobile_et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/uc_input_view_height"
+        android:background="@drawable/uc_selector_inputview_content_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        inputView:input_enable="false"
+        inputView:input_hint="@string/fragment_register_hint_mobile"
+        inputView:input_title="@string/fragment_bind_label_mobile" />
+
+    <com.oppo.usercenter.opensdk.widget.InputView
+        android:id="@+id/activity_bind_mobile_et_smscode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/uc_input_view_height"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/uc_selector_inputview_content_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        inputView:input_hint="@string/fragment_find_pwd_hint_code"
+        inputView:input_title="@string/fragment_bind_mobile_label_code" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:text="@string/fragment_bind_mobile_tv_tips"
+        android:textColor="@color/uc_other_text_color"
+        android:textSize="@dimen/uc_min_36_text_size" />
+
+    <com.oppo.usercenter.opensdk.widget.WaitTimeButton
+        android:id="@+id/fragment_bind_mobile_bt_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/uc_selector_submit_btn_green"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:text="@string/fragment_verifycode_resend"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/uc_middle_51_text_size" />
+
+    <Button
+        android:id="@+id/fragment_register_nextstep_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/uc_selector_submit_btn_white"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:text="@string/fragment_next_step"
+        android:textColor="@color/uc_dark_text_color"
+        android:textSize="@dimen/uc_middle_51_text_size" />
+
+</LinearLayout>

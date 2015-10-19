@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" 
+    android:background="@drawable/nmgc_dialog_170">
+    
+    <TextView 
+        android:id="@+id/nmgc_upgrade_dia_title"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="@string/nmgc_login_account"
+        android:textSize="18sp"
+        android:textColor="#333333"/>
+    <TextView 
+        android:id="@+id/nmgc_upgrade_dia_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/nmgc_visitor_update_hint"
+        android:textSize="16sp"
+        android:textColor="#4f504e"/>
+    <Button 
+        android:id="@+id/nmgc_login_with_other_token"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/nmgc_comm_btn_selector"
+        android:text="@string/nmgc_login_account"
+        android:textColor="#00925f"/>
+    <Button 
+        android:id="@+id/nmgc_go_upgrade_visitor"
+       	android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/nmgc_comm_btn_selector"
+        android:text="@string/nmgc_upgrade_visitor_account"
+        android:textColor="#00925f"/>
+
+</LinearLayout>

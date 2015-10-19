@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFCF5"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/tieba_motu_bg_titlebar" >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="54dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tieba_motu_btn_back"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="@string/tieba_back"
+            android:textColor="#FFCD875F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:text="@string/tieba_share_photo_motu"
+            android:textColor="#FFAF663D"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/bar_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/tieba_share_hhoto_tieba"
+                android:textColor="#FF777777"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#999b8e83" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f6f3eb"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="19dp" >
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="140dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tieba_motu_btn_bar"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#FF777777"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="140dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tieba_motu_btn_bar"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#FF777777"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="18dp" >
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="140dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tieba_motu_btn_bar"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#FF777777"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="140dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tieba_motu_btn_bar"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#FF777777"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="18dp" >
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="140dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tieba_motu_btn_bar"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#FF777777"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="140dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tieba_motu_btn_bar"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#FF777777"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="18dp" >
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="140dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tieba_motu_btn_bar"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#FF777777"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text8"
+                        android:layout_width="140dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tieba_motu_btn_bar"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#FF777777"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_network"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f6f3eb"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/tieba_motu_image_beer"
+                android:paddingTop="80dp"
+                android:text="@string/tieba_net_error"
+                android:textColor="#FF777777"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@color/ql_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="12dp"
+        android:background="@drawable/xh_dialog_backgroud" >
+
+        <RelativeLayout
+            android:id="@+id/top_create_modify"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp" >
+
+            <ImageView
+                android:id="@+id/return_create_modify"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/xh_ic_arrow_left"
+                android:scaleType="fitXY" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/user_create_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/return_create_modify"
+                android:text="@string/xh_create_sub"
+                android:textColor="@color/ql_quick_login_title"
+                android:textSize="14sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/top_create_modify"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:scaleType="fitXY"
+            android:background="@color/ql_divide" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/body_create_modify"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/divide_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" 
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp">
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_centerVertical="true" > -->
+
+                <ImageView
+                    android:id="@+id/head_pic_create_modify"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/xh_10" />
+
+                <EditText
+                    android:id="@+id/xh_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ql_quick_login_foot_button"
+                    android:layout_toRightOf="@+id/head_pic_create_modify" 
+                    android:background="@drawable/ql_textfield_default_emui_new"/>
+<!--             </RelativeLayout> -->
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/id_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/body_create_modify"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="20dp">
+
+                <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:text="@string/xh_sub_account_tips"
+	                android:textColor="@color/ql_reset_password_hint_color"
+	                android:textSize="12sp" >
+                </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer_create_modify"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" 
+            android:background="@drawable/xh_footer_selector"
+            android:layout_below="@id/id_tips"
+            android:gravity="center">
+
+            <RelativeLayout 
+                android:id="@+id/progress_create_modify_relative"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+	            <ImageView
+	                android:id="@+id/progress_create_modify"
+	                android:layout_width="24dp"
+	                android:layout_height="24dp"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/xh_ic_loading"
+	                >
+	            </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/xh_create_modify_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/progress_create_modify_relative"
+                android:textColor="@color/ql_switch_footer_button"
+                android:textSize="14sp" >
+            </TextView>
+        </RelativeLayout>
+        <!-- end of quicklogin footer -->
+    </RelativeLayout>
+
+</RelativeLayout>

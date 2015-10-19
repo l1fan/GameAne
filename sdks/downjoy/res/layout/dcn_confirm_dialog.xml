@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dcn_login_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dcn_confirm_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:gravity="center_horizontal"
+        android:paddingBottom="24dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="24dp"
+        android:singleLine="true"
+        android:textColor="@color/dcn_light_black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/dcn_btns_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/dcn_btn_negative"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/dcn_edit_verify_btn_selector"
+            android:text="@android:string/cancel"
+            android:textColor="@color/dcn_henp_chapter_sencond_level_content"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/dcn_btn_positive"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/dcn_orange_btn_selector"
+            android:text="@string/dcn_init_upgrade_ok"
+            android:textColor="@color/dcn_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

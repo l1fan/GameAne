@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item
+        type="id"
+        name="title_id" />
+    <item
+        type="id"
+        name="pburl_id" />
+    <item type="id" name="sub_post_load_more"></item>
+    <item type="id" name="tag_skin_type"></item>
+    <item type="id" name="tag_nearby_forum_name"></item>
+    <item type="id" name="tag_nearby_forum_id"></item>
+    <item type="id" name="tag_nearby_thread_id"></item>
+    <item type="id" name="tag_nearby_person_name"></item>
+    <item type="id" name="tag_nearby_person_id"></item>
+    <item type="id" name="tag_nearby_url"></item>   
+    <item type="id" name="tag_nearby_guid_post"></item>
+    <item type="id" name="tag_clip_board"></item>
+    <item type="id" name="tag_holder"></item>
+       
+    <item type="id" name="label_parabola_computer"></item>  
+    <item type="id" name="label_ball_data"></item>    
+    <item type="id" name="label_ball_state"></item>    
+    <item type="id" name="label_smallball_checked"></item>    
+    
+    <item type="id" name="tag_photo_username"></item>    
+    <item type="id" name="tag_photo_userid"></item>    
+    <item type="id" name="tag_forum_name"></item>    
+    
+    <item type="id" name="tag_post_id"></item>    
+    <item type="id" name="tag_floor_num"></item> 
+    
+    <item type="id" name="tag_load_sub_data"></item>    
+    <item type="id" name="tag_load_sub_view"></item>
+    
+    <item type="id" name="tag_forbid_user_id"></item>    
+    <item type="id" name="tag_forbid_user_name"></item> 
+    
+    <item type="id" name="tag_del_post_id"></item>    
+    <item type="id" name="tag_del_post_type"></item>    
+    <item type="id" name="tag_manage_user_identity"></item> 
+    <item type="id" name="tag_del_post_is_self"></item> 
+    
+    
+</resources>

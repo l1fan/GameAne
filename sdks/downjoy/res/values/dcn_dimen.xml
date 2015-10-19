@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dcn_login_padding_left_right">15dp</dimen>
+    <dimen name="dcn_badge_number_text_size">12sp</dimen>
+
+    <!-- 输入框文字大小-->
+    <dimen name="dcn_edit_text_size">14sp</dimen>
+
+    <!-- title高度-->
+    <dimen name="dcn_title_height">50dp</dimen>
+
+    <!-- 底部栏高度 -->
+    <dimen name="dcn_footerbar_height">50dp</dimen>
+
+    <!-- 菜单栏图标大小 -->
+    <dimen name="dcn_menu_icon">28dp</dimen>
+    <dimen name="dcn_float_menu_width">250dp</dimen>
+
+    <dimen name="dcn_bear_width">42dp</dimen>
+    <dimen name="dcn_bear_height">42dp</dimen>
+
+    <integer name="dcn_dialog_width_scale_small">400</integer>
+    <integer name="dcn_dialog_width_scale_middle">440</integer>
+    <integer name="dcn_dialog_width_scale_large">460</integer>
+    <dimen name="dcn_divider_size">1dp</dimen>
+</resources>

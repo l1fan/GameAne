@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ql_transparent">#00000000</color>
+    <color name="ql_title_color">#2f2f2f</color>
+    <color name="ql_quick_login_color">#ffffffff</color>
+    <color name="ql_hyper_link_color">#0a9dcd</color>
+    <color name="ql_switch_login_type_color">#5b5b5b</color>
+    <color name="ql_footer_color">#efeeee</color>
+    <color name="ql_text_click_color">#b8e5f9</color>
+    <color name="ql_black">#000000</color>
+    <color name="ql_background">#f7f7f7</color>
+    <color name="ql_hint_color">#26000000</color>
+    <color name="ql_reset_password_hint_color">#bdbcbc</color>
+    <color name="ql_divide">#cbcbca</color>
+    <color name="ql_quick_login_title">#E6000000</color>
+    <color name="ql_quick_login_button1">#ffffffff</color>
+    <color name="ql_quick_login_button2">#ccffffff</color>
+    <color name="ql_quick_login_agreement">#a6000000</color>
+    <color name="ql_quick_login_foot_button">#d9000000</color>
+    <color name="ql_switch_footer_button">#cc000000</color>
+    <color name="ql_quick_login_error">#c0000000</color>
+    <color name="ql_progress_text">#b3000000</color>
+    <color name="ql_item_click">#f3dedddd</color>
+
+</resources>

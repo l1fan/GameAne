@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/waiting_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/ql_privacy_policy_linearsed_padding" >
+
+            <TextView
+                android:id="@+id/privacy_policy_textview_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ql_policy_loading"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ql_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/retry_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/ql_privacy_policy_linearfour_padding"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/privacy_policy_textview_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ql_no_connection"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ql_black" />
+
+            <LinearLayout
+                android:id="@+id/Btn_retry_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/ql_privacy_policy_linearfive_top" >
+
+                <View
+                    android:layout_width="@dimen/ql_privacy_policy_viewfirst_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" >
+                </View>
+
+                <Button
+                    android:id="@+id/Btn_retry"
+                    style="@style/ql_HoloButtonStyle"
+                    android:layout_weight="25"
+                    android:text="@string/ql_btn_ok" />
+
+                <View
+                    android:layout_width="@dimen/ql_privacy_policy_viewsed_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

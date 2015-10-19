@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue"
+        android:paddingBottom="@dimen/ag_30dp"
+        android:paddingLeft="@dimen/ag_10dp"
+        android:paddingRight="@dimen/ag_10dp"
+        android:paddingTop="@dimen/ag_10dp" >
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:text="@string/pc_wallet3"
+            android:textSize="@dimen/ag_16sp"
+            android:textColor="@color/color_white" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:src="@drawable/ag_pc_wallet_iv_more" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_show"
+            android:layout_marginBottom="@dimen/ag_30dp"
+            android:layout_marginTop="@dimen/ag_30dp"
+            android:layout_marginLeft="@dimen/ag_30dp"
+            android:text="4800.00"
+            android:textColor="@color/color_white"
+            android:textSize="36sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ag_10dp"
+        android:textSize="@dimen/ag_16sp"
+        android:textColor="@color/color_black_textview"
+        android:text="@string/pc_wallet4" />
+
+</LinearLayout>

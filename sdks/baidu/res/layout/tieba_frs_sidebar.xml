@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#17181a" >
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 内容展示方式 -->
+
+        <LinearLayout
+            android:id="@+id/show_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/show_title"
+                style="@style/sidebar_title"
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:text="@string/tieba_content" />
+
+            <LinearLayout
+                android:id="@+id/show_all"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:background="@drawable/tieba_frs_sidebar_click"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/show_all_text"
+                    style="@style/sidebar_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tieba_show_all" >
+                </TextView>
+            </LinearLayout>
+
+            <include layout="@layout/tieba_frs_sidebar_splitter" />
+
+            <LinearLayout
+                android:id="@+id/show_good"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:background="@drawable/tieba_frs_sidebar_click"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/show_good_text"
+                    style="@style/sidebar_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tieba_show_good" >
+                </TextView>
+            </LinearLayout>
+
+            <include layout="@layout/tieba_frs_sidebar_splitter" />
+
+            <LinearLayout
+                android:id="@+id/show_image"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:background="@drawable/tieba_frs_sidebar_click"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/show_image_text"
+                    style="@style/sidebar_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tieba_show_image" >
+                </TextView>
+            </LinearLayout>
+
+            <include layout="@layout/tieba_frs_sidebar_splitter" />
+
+            <TextView
+                android:id="@+id/setting_title"
+                style="@style/sidebar_title"
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:text="@string/tieba_setup" />
+
+            <!-- 摘要模式 -->
+
+            <LinearLayout
+                android:id="@+id/abstract_selection"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:background="@drawable/tieba_frs_sidebar_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/abstract_text"
+                    style="@style/sidebar_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tieba_abstract_state" >
+                </TextView>
+
+                <com.baidu.adp.widget.BdSwitchView.BdSwitchView
+                    android:id="@+id/abstract_state_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dip" >
+                </com.baidu.adp.widget.BdSwitchView.BdSwitchView>
+            </LinearLayout>
+
+            <include layout="@layout/tieba_frs_sidebar_splitter" />
+            
+            <!-- 账号管理 -->
+            <LinearLayout
+                android:id="@+id/account_manager"
+                android:layout_width="fill_parent"
+                android:layout_height="49dip"
+                android:background="@drawable/tieba_frs_sidebar_click"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/account_manager_text"
+                    style="@style/sidebar_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tieba_account_manager">
+                </TextView>
+            </LinearLayout>
+            
+			<include layout="@layout/tieba_frs_sidebar_splitter" />
+			
+            <LinearLayout
+                android:id="@+id/inform_title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/inform_title"
+                    style="@style/sidebar_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="28dip"
+                    android:text="@string/tieba_inform" />
+
+                <!-- 我的消息 -->
+
+                <LinearLayout
+                    android:id="@+id/message_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="49dip"
+                    android:background="@drawable/tieba_frs_sidebar_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/message_text"
+                        style="@style/sidebar_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tieba_my_mention" />
+
+                    <RelativeLayout
+                        android:id="@+id/message_info"
+                        android:layout_width="32dip"
+                        android:layout_height="17dip"
+                        android:layout_marginLeft="6dip" >
+
+                        <Button
+                            android:id="@+id/message_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/tieba_pic_frs_message"
+                            android:textColor="#e95620"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/tieba_frs_sidebar_splitter" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

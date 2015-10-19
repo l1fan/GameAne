@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ql_title">登录华为帐号</string>
+    <string name="ql_quick_login">立即登录</string>
+    <string name="ql_quick_login_hint">将发送短信验证身份</string>
+    <string name="ql_aggreement_check">同意</string>
+    <string name="ql_service_aggreement"><u>服务条款</u></string>
+    <string name="ql_and">和</string>
+    <string name="ql_privacy_policy"><u>隐私策略</u></string>
+    <string name="ql_service_notice">（查看服务条款和隐私策略将会联网）</string>
+    <string name="ql_switch_login">使用已有华为帐号登录</string>
+    <string name="ql_loading">登录中...</string>
+    <string name="ql_cacel">取消</string>
+    <string name="ql_retry_hint">运营商短信暂未送达，请重试或选择其他登录方式。</string>
+    <string name="ql_please_check_aggree">同意服务条款和隐私策略后，方可登录</string>
+    <string name="ql_hwid_terms">"服务条款"</string>
+    <string name="ql_hwid_policy">"隐私政策"</string>
+   <string name="ql_policy_loading">"加载中..."</string> 
+    <string name="ql_no_connection">"无连接"</string>
+    <string name="ql_retry">"重试"</string>
+    <string name="ql_network_not_available">"网络未连接，请重新设置网络连接"</string>
+    <string name="ql_set_password_hint">密码（6-32个字符）</string>
+    <string name="ql_set_password_title">注册成功</string>
+    <string name="ql_set_password_title_registed">已登录</string>
+    <string name="ql_password_length_over_error">密码字符数不能超过32位！</string>
+    <string name="ql_password_length_not_enough_error">密码字符数不能少于6位！</string>
+    <string name="ql_password_length_wrong_char_input">输入的密码字符不合法！</string>
+    <string name="ql_enter_game_btn_name">进入应用</string>
+    <string name="ql_enter_game_btn_name_reset_password">重置密码并进入应用</string>
+    <string name="ql_reset_password_hint_text">若忘记密码，可在此处重置密码</string>
+	<string name="ql_enter_game_btn_name_set_password">设置密码并进入应用</string>
+	<string name="ql_enter_game_btn_name_resetting_password">正在重置密码</string>
+	<string name="ql_enter_game_btn_name_setting_password">正在设置密码</string>
+	<string name="ql_set_password_fail">设置密码失败，请重试</string>
+	<string name="ql_reset_password_fail">重置密码失败，请重试</string>
+	<string name="ql_newuser_enter_without_setpassword_error">密码（6-32个字符）</string>
+    <string name="CS_no_send_sms_permission">没有发送短信权限</string>
+    <string name="ql_check_no_sim">未检测到SIM卡，请用已有华为账号登录</string>
+    <string name="ql_btn_ok">确定</string>
+    <string name="ql_dialog_title">注意</string>
+
+</resources>

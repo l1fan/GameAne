@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="17dp"
+    android:orientation="vertical" >
+
+    <com.oppo.usercenter.opensdk.widget.InputView
+        xmlns:inputview="http://com.oppo.usercenter.opensdk.widget"
+        android:id="@+id/findpsw_mobile_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/uc_input_view_height"
+        android:background="@drawable/uc_selector_inputview_content_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        inputview:input_hint="@string/fragment_findpsw_check_account_et_hint"
+        inputview:input_title_visiable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/fragment_findpsw_enter_account_tips"
+        android:textColor="@color/uc_other_text_color"
+        android:textSize="@dimen/uc_min_36_text_size" />
+
+    <Button
+        android:id="@+id/findpsw_check_mobile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/uc_selector_submit_btn_white"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:text="@string/fragment_next_step"
+        android:textColor="@color/uc_dark_text_color"
+        android:textSize="@dimen/uc_middle_51_text_size" />
+
+</LinearLayout>

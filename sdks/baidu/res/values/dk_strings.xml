@@ -1,0 +1,573 @@
+<resources>
+
+    <string name="dk_app_name">多酷游戏</string>
+    <string name="dk_find_wd"><u>找回密码</u></string>
+    <string name="dk_remember_login_state">记住登录状态</string>
+    <string name="dk_account">账号（手机号/用户名）</string>
+    <string name="dk_password">密码</string>
+    <string name="dk_login">登录</string>
+    <string name="dk_bind_success">绑定成功</string>
+    <string name="dk_username_register">用户名注册</string>
+    <string name="dk_free_register">免费注册</string>
+    <string name="dk_login_with_baidu_account">使用百度账号登录</string>
+    <string name="dk_login_with_duoku_account">百度多酷用户登录</string>
+    <string name="dk_userregister_progress">信息提交中，请稍候！</string>
+    <string name="dk_user_register_nameerror">请输入正确的用户名（4-14位字母或数字）</string>
+    <string name="dk_user_pwd_null">密码不能为空！</string>
+    <string name="dk_user_pwd_error">密码输入不符合规范，请重新输入！</string>
+    <string name="dk_userlogin_progress">登录中...</string>
+    <string name="dk_user_register_process">正在注册...</string>
+    <string name="dk_user_login_sucess">登录成功</string>
+    <string name="dk_user_cancle_login">用户取消登录</string>
+    <string name="dk_user_request_error">%s , 请稍候重试！</string>
+    <string name="dk_user_requesterror_net_timeout">网络超时，请稍候重试！</string>
+    <string name="dk_user_requesterror_server_dead">网络异常，请稍后重试!</string>
+    <string name="dk_user_requesterror_net_dead">网络异常，请稍后重试!</string>
+    <string name="dk_user_login_usernotexist">请输入正确的用户名或手机号！</string>
+    <string name="dk_user_login_pwderror">请输入正确的密码！</string>
+    <string name="dk_user_loginbaidu_namepwd_null">用户名，密码不能为空！</string>
+    <string name="dk_user_register_licence_hint_ok">注册前请先同意《注册协议》！</string>
+    <string name="dk_user_register_phonenum">您输入的用户名可能为手机号，请使用手机一键注册！</string>
+    <string name="dk_user_register_success">注册请求已发送，请查收短信！</string>
+    <string name="dk_user_register_fail1">注册失败！请确保网络连接正常！</string>
+    <string name="dk_user_register_fail2">注册失败！请确保手机卡通信正常！</string>
+    <string name="dk_userregister_phonenum_progress">手机号码注册中，请稍候！</string>
+    <string name="dk_confirm">确定</string>
+    <string name="dk_cancel">取消</string>
+    <string name="dk_userregister_success_1">注册成功！</string>
+    <string name="dk_user_register_name_exit">用户名已存在！</string>
+    <string name="dk_user_request_fail">请求失败，请稍候重试！</string>
+    <string name="dk_text_register_licence">注册服务协议</string>
+    <string name="dk_userlogin_forgetpwd_confirm_nobind">拨打客服找回</string>
+    <string name="dk_userlogin_findpsw_by_service">请通过拨打客服电话</string>
+    <string name="dk_userlogin_find_psw">找回密码</string>
+    <string name="dk_userlogin_forgetpwd_confirm">找回密码</string>
+    <string name="dk_user_login_name_null">账号不能为空！</string>
+    <string name="dk_user_thirdparty_login_failure">登录失败，请稍后再试！</string>
+    <string name="dk_user_welcome_back_info">欢迎你回来！</string>
+    <string name="dk_user_welcome_add_info">欢迎你加入！</string>
+    <string name="dk_logining">正在登录...</string>
+    <string name="dk_finding">正在查找...</string>
+    <string name="dk_thirdparty_login_failure">网络异常，请稍后重试!</string>
+    <string name="dk_bdlogin_error_tip_inputusername">请输入用户名！</string>
+    <string name="dk_bdlgoin_error_tip_inputpassword">请输入密码！</string>
+    <string name="dk_bdlogin_error_tip_inputverifycode">请输入验证码！</string>
+
+    <!-- add by baofeng, find psw hint msg -->
+    <string name="dk_message_header">"已下发短信到您的手机"</string>
+    <string name="dk_message_footer">"回复短信即可找回密码"</string>
+    <string name="dk_tip_progress_pay_info">正在进行，请稍后…</string>
+
+    <!-- add by wenzutong, error msg -->
+    <string name="dk_account_error">请输入正确的用户名/手机号！</string>
+    <string name="dk_account_null">请输入账号</string>
+    <string name="dk_pwd_error">请输入6-16位字母或数字!</string>
+    <string name="dk_pwd_null">请输入密码!</string>
+    <string name="dk_verifycode_error">验证码错误，请重新输入！</string>
+    <string name="dk_verifycode_null">请输入验证码！</string>
+    <string name="dk_username_error">请输入4-14位字母或数字!</string>
+    <string name="dk_username_null">请输入用户名或手机号！</string>
+    <string name="dk_username_cover">用户名已被人抢注了，我们猜您可能也喜欢:</string>
+    <string name="dk_username_digit_11">用户名不支持11位首字母为1的纯数字,请重新输入</string>
+    <string name="dk_password_rule_error">请输入符合要求的密码，6-16位字母或数字！</string>
+    <string name="dk_password_null">请输入密码！</string>
+    <string name="dk_null_check">注册前请先同意《注册服务协议》！</string>
+    <string name="dk_pre_pwd_error">请输入正确的原密码!</string>
+    <string name="dk_pre_pwd_null">请输入原密码!</string>
+    <string name="dk_new_pwd_rule_error">请输入6-16位字母或数字的新密码！</string>
+    <string name="dk_new_pwd_null">请输入新密码!</string>
+    <string name="dk_check_pwd_null">请输入确认新密码！</string>
+    <string name="dk_new_pwd_check_error">请检查两次新密码输入是否一致！</string>
+    <string name="dk_phonenum_rule_error">请输入真实的手机号码!</string>
+    <string name="dk_phonenum_null">请输入手机号！</string>
+    <string name="dk_phonenum_had_bind">该手机号码已绑定，请输入其他手机号码!</string>
+    <string name="dk_modify_nickname_interval_less_15days">距离上次修改还不足十五天哦！</string>
+    <string name="dk_bdpwd_error">请输入正确的密码！</string>
+    <string name="dk_bdverifycode_error">获取验证码失败，请重试！</string>
+    <string name="dk_username_or_pwd_error">用户名或密码错误，请重试！</string>
+    <string name="dk_login_failed_and_try_later">登录失败，请稍候重试!</string>
+    <string name="dk_xinlang_weibo_progress_info">请稍候</string>
+    <string name="dk_baidu_account_error">请输入正确的用户名！</string>
+    <string name="dk_str_tip_modify_pass">修改密码请求已经提交，请稍候！</string>
+    <string name="dk_str_tip_bind_phone">绑定手机请求已经提交，请稍候！</string>
+    <string name="dk_account_baidu_nobind_modify_tip">您当前为百度账号登录，请先绑定手机后激活修改密码功能！</string>
+    <string name="dk_account_sina_nobind_modify_tip">您当前为新浪账号登录，请先绑定手机后激活修改密码功能！</string>
+    <!-- end -->
+
+
+    <!-- add by gaoman, for phone regist -->
+    <string name="dk_phone_send_textmsg_default">↑将用您的手机发送验证信息</string>
+    <string name="dk_phone_send_msg_nosimcard">抱歉，您还没有手机号，请插入SIM卡！</string>
+    <string name="dk_phone_send_msg_noNetwork">网络异常，请稍候重试！</string>
+    <string name="dk_phone_send_msg_cannotsendsms">手机注册失败，推荐使用用户名注册哦~</string>
+    <string name="dk_phone_send_login_success">登录成功</string>
+    <string name="dk_sms_cmcc">1065750204886666</string>
+    <string name="dk_sms_cucc">106550200096386</string>
+    <string name="dk_sms_ctcc">1069032963386</string>
+    <string name="dk_sms_all">1069033312388</string>
+    <string name="dk_sms_strategy">0</string>
+    <!-- end -->
+
+
+    <!-- add by gaoman, for user login dialog -->
+    <string name="dk_user_login_dialog_msg_line1">检测到您已经存在账号</string>
+    <string name="dk_user_login_dialog_msg_line2">要注册新账号吗？</string>
+    <string name="dk_user_login_dialog_msg_btn_blue">返回登录</string>
+    <string name="dk_user_login_dialog_msg_btn_orange">注册新账号</string>
+    <string name="dk_user_auto_login_dialog_msg_duoku">多酷账号</string>
+    <string name="dk_user_auto_login_dialog_msg_progress">正在登录中...</string>
+    <string name="dk_user_auto_login_dialog_msg_btn">切换账号</string>
+    <string name="dk_user_auto_login_dialog_msg_baidu">百度账号</string>
+    <string name="dk_user_auto_login_dialog_msg_sina">91账号</string>
+    <!-- end -->
+
+
+    <!-- add by gaoman, for payment -->
+    <string name="dk_ten_bargainor_id">1212774301</string>
+    <string name="dk_ten_card">财付通</string>
+    <string name="dk_deposit_card">银行卡</string>
+    <string name="dk_recharge">充值</string>
+    <string name="dk_baifu_card">百度钱包</string>
+    <string name="dk_91_card">91豆</string>
+    <string name="dk_cashcoupon_card">代金券</string>
+    <string name="dk_tokenid_failed">服务器繁忙，请稍后重试</string>
+    <!-- end -->
+
+
+    <!-- add by gaoman, for draw -->
+    <string name="dk_draw_times">抽奖次数  </string>
+    <string name="dk_times">次</string>
+    <string name="dk_draw_prize">中奖情况</string>
+    <string name="dk_draw_desc">点击抽奖有惊喜</string>
+    <string name="dk_draw_desc_2">亲 没有中奖哦</string>
+    <string name="dk_draw_press">点击抽奖</string>
+    <string name="dk_draw_return">返回</string>
+    <string name="dk_draw_yuan">元</string>
+    <string name="dk_pay_info_return">返回游戏</string>
+    <string name="dk_pay_info_draw">抽奖</string>
+    <string name="dk_pay_info_text_success">支付成功！</string>
+    <string name="dk_pay_info_text_fail">支付失败！</string>
+    <string name="dk_draw_winner_zhong">中奖</string>
+    <string name="dk_draw_winner_yuanjiangmingdan">元名单:</string>
+    <string name="dk_draw_late_info">加载奖品信息繁忙，系统将为您累计一次抽奖机会，下次充值时使用。</string>
+    <string name="dk_draw_text">\t\t</string>
+    <string name="dk_draw_text2">\t\t</string>
+    <string name="dk_draw_land_text">\t\t</string>
+    <string name="dk_draw_land_text2">\t\t</string>
+    <string name="dk_draw_prizes">200</string>
+    <string name="dk_tenpay_name">财付通支付</string>
+    <string name="dk_tenpay_btn">支付</string>
+
+    <!-- end -->
+
+
+    <!-- add by wenzutong, for hint msg -->
+    <string name="dk_login_ing">登录中...</string>
+    <string name="dk_login_success">登录成功</string>
+    <string name="dk_register_username_hint">用户名&#160;&#160;(4-14个字母或数字)</string>
+    <string name="dk_register_pwd_hint">密　码&#160;&#160;(6-16个字母或数字)</string>
+    <string name="dk_register_agreement_hint">同意</string>
+    <string name="dk_register_licence">《注册协议》</string>
+    <string name="dk_btn_string_exchange_account">切换账号</string>
+    <string name="dk_btn_string_bind_phone">绑定手机</string>
+    <string name="dk_btn_string_modify_phone">修改绑定</string>
+    <string name="dk_btn_string_modify_pwd">修改密码</string>
+    <string name="dk_show_passord">显示密码</string>
+    <string name="dk_tv_string_charge_history">充值记录</string>
+    <string name="dk_tv_string_account_history">查看充值记录</string>
+    <string name="dk_btn_string_get_verify_code">获取验证码</string>
+    <string name="dk_verify_to_old_phone">下发验证码至原手机</string>
+    <string name="dk_tv_string_verifycode">验证码</string>
+    <string name="dk_et_string_verifycode_hint">请输入验证码</string>
+    <string name="dk_btn_commit">提交</string>
+    <string name="dk_tv_string_account_no_bind">绑定后账号更安全</string>
+    <string name="dk_tv_string_cur_bind_phone">您目前绑定的手机号码:</string>
+    <string name="dk_tv_string_pre_bind_phone">原手机号</string>
+    <string name="dk_btn_next_step">下一步</string>
+    <string name="dk_tv_string_new_phone">新手机号</string>
+    <string name="dk_btn_string_complete">完成</string>
+    <string name="dk_tv_string_pre_pwd">原密码：6-16位字母或数字</string>
+    <string name="dk_tv_pre_pwd_input">请输入原密码</string>
+    <string name="dk_et_string_pwd_rule">6-16位字母或数字</string>
+    <string name="dk_tv_string_new_pwd">新密码：6-16位字母或数字 </string>
+    <string name="dk_tv_string_confire_new_pwd">确认新密码</string>
+    <string name="dk_btn_string_confire_modify_pwd">确认修改</string>
+    <string name="dk_tv_string_loading">加载中...</string>
+    <string name="dk_tv_string_account_input">请输入您的账号</string>
+    <string name="dk_et_string_account_or_phone">用户名或手机号</string>
+    <string name="dk_tv_string_login_with_bd_account">百度账号登录</string>
+    <string name="dk_btn_string_change_verify_code">换一张</string>
+    <string name="dk_tv_string_register_service_lease">多酷注册服务协议</string>
+    <string name="dk_btn_string_i_know">我知道了</string>
+    <string name="dk_tv_string_req_bind_msg">您尚未绑定手机，忘记密码时将无法通过手机找回密码！</string>
+    <string name="dk_tv_string_req_bind_msg_2">绑定手机后可以找回密码，账号、付费更安全！</string>
+    <string name="dk_btn_string_bind_now">立即绑定</string>
+    <string name="dk_btn_string_bind_later">以后再说</string>
+    <string name="dk_tv_string_tip">温馨提示：</string>
+    <string name="dk_tv_find_psw_prompt">未绑定手机号码的用户,请联系客服人工找回</string>
+    <string name="dk_tv_string_req_bind_phone_tip_1">1、手机号码仅作为账户凭证，不会收取任何费用。</string>
+    <string name="dk_tv_string_req_bind_phone_tip_2">2、我们承诺保障您的隐私权益，不会泄漏您的手机号码。</string>
+    <string name="dk_loading">正在登录</string>
+    <string name="dk_find_pwd_hint">&#160;用户名&#160;&#160; (4-14个字母或数字) </string>
+    <!-- end -->
+
+
+    <!-- add by wenzutong, for widget -->
+    <string name="dk_welcome_to_reg_duoku">欢迎注册多酷账号</string>
+    <string name="dk_account_text">个人中心</string>
+    <string name="dk_account_title">个人中心</string>
+    <string name="dk_register_now">立即注册</string>
+    <string name="dk_register_phone">手机号一键注册</string>
+    <string name="dk_bd_platform">百度旗下移动娱乐平台</string>
+    <string name="dk_login_duoku_title_text">多酷用户登录</string>
+    <string name="dk_account_hint">请输入用户名/手机号</string>
+    <string name="dk_account_bd_hint">邮箱地址/手机号/用户名</string>
+    <string name="dk_pwd_login_hint">请输入密码</string>
+    <string name="dk_forget_pwd_text">忘记密码？</string>
+    <string name="dk_account_manager_title_text">账户管理</string>
+    <string name="dk_account_with_colon">账号登录:</string>
+    <string name="bd_tv_prize">每日抽奖</string>
+    <string name="dk_btn_string_pointmall">积分商城</string>
+    <string name="dk_dk_level_with_colon">白金vip</string>
+    <string name="dk_real_recharge">充值记录</string>
+    <string name="dk_btn_string_point">积分记录</string>
+    <string name="dk_btn_string_mytools">我的道具</string>
+    <string name="dk_icon_numberbox">我的存号箱</string>
+    <string name="dk_completeuserinfo">完善资料</string>
+    <string name="dk_point_with_colon">积分</string>
+    <string name="dk_phone_with_colon">手机：</string>
+    <string name="dk_account_logout">注销</string>
+    <string name="dk_bind_phone_hint_1st">为了您的账号安全，请尽快绑定手机</string>
+    <string name="dk_bind_phone_hint_2nd">1、直接用手机号登录，更方便</string>
+    <string name="dk_bind_phone_hint_3rd">2、手机找回密码，更安全</string>
+    <string name="dk_account_manager_phone">手机号</string>
+    <string name="dk_account_manager_phone_hint">请输入手机号</string>
+    <string name="dk_account_manager_phone_new_hint">请输入新手机号</string>
+    <string name="dk_get_verify_code_again">再次获取</string>
+    <string name="dk_register_name_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="dk_net_error">网络异常，请重新登录！</string>
+    <string name="dk_need_relogin">登录状态已失效，请重新登录！</string>
+    <!-- end -->
+
+
+    <!-- Added by yinchao, update download notification -->
+    <string name="dk_default_game_name">多酷游戏</string>
+    <string name="dk_staus_bar_start">开始下载</string>
+    <string name="dk_staus_bar_complete">下载完成</string>
+    <string name="dk_staus_bar_failure">下载失败</string>
+    <string name="dk_staus_bar_failure_retry">下载失败,请重启游戏后继续下载。</string>
+    <string name="dk_staus_bar_complete_toinstall">下载完成,点击安装。</string>
+    <!-- end -->
+
+
+    <!-- Added by hanyonglu, the prefecture start -->
+    <string name="dk_prefecture_title">专区</string>
+    <string name="dk_message_title">消息</string>
+    <string name="dk_active_title">活动</string>
+    <string name="dk_recommend_title">推荐</string>
+    <string name="dk_customer_title">客服</string>
+    <string name="dk_forum_title">论坛</string>
+    <string name="dk_bar_title">贴吧</string>
+    <string name="dk_gifts_title">礼包</string>
+    <string name="dk_safeupdate_title">安全升级</string>
+    <string name="dk_prefecture_game_title">%s专区</string>
+    <string name="dk_prefecture_other_title">百度多酷</string>
+    <!-- The prefecture end -->
+
+
+    <!-- add by baofeng , the identification need start -->
+    <string name="dk_identify_notice">未成年人家长监护与防沉迷</string>
+    <string name="dk_real_name_notify">实名认证</string>
+    <string name="dk_identify_content">根据《手机网游管理办法》，建议您通过实名认证保障信息更安全</string>
+    <string name="dk_identify_inter">请填写真实信息，认证后将无法修改!</string>
+    <string name="dk_identify_get">您已进行实名认证，信息如下:</string>
+    <string name="dk_identify_sucess">认证成功</string>
+    <string name="dk_identify_fail">认证失败</string>
+    <string name="dk_inter_user_name">请输入您的姓名</string>
+    <string name="dk_inter_user_identify_number">请输入您的身份证号</string>
+    <string name="dk_user_confirm">确认</string>
+    <!-- the identification end -->
+
+
+    <!-- Added by hanyong , the customer center start -->
+    <string name="dk_customer_center_title">客服中心</string>
+    <string name="dk_customer_my_question">我的问题</string>
+    <string name="dk_customer_common_question">常见问题</string>
+    <string name="dk_customer_submit_question">反馈问题</string>
+    <string name="dk_customer_question_type">问题类型</string>
+    <string name="dk_customer_question_time">发表时间:%s</string>
+    <string name="dk_customer_question_status">状态:%s</string>
+    <string name="dk_customer_question_submit">提交问题</string>
+    <string name="dk_customer_submit_fail">提交失败</string>
+    <string name="dk_customer_submit_retry">重新提交</string>
+    <string name="dk_customer_submit_still">继续反馈</string>
+    <string name="dk_customer_submit_success">提交成功</string>
+    <string name="dk_customer_submit_success_context">感谢您的反馈 , 我们会尽快给您答复!</string>
+    <string name="dk_customer_question_text">请输入您要反馈的问题</string>
+    <string name="dk_customer_question_phone">请输入您的手机号</string>
+    <string name="dk_customer_question_less_text">请详细描述问题，至少输入10个字</string>
+    <string name="dk_customer_tip_submit_text">亲，有什么可以帮到你的？</string>
+    <string name="dk_customer_submit_recharge_text">亲，请填写出现问题的账号、区服、角色名、充值时间、金额，问题的详细描述，我们会尽快给您回复。</string>
+    <string name="dk_customer_submit_account_text">亲，请填写出现问题的账号，区服、角色名、问题的详细描述，我们会尽快给您回复。</string>
+    <string name="dk_customer_tip_question_title">亲 , 下面常见问题 , 可能有您的答案哟~</string>
+    <string name="dk_customer_tip_none_question">亲 , 您还没有提过问题 , 您可以随时在“反馈问题”中提交您的疑问或建议 , 也可以直接打电话向客服咨询哟~</string>
+    <!-- The customer center end -->
+
+
+    <!-- Added by hanyonglu@duoku.com, paying centre start -->
+    <string name="dk_pay_centre">支付中心</string>
+    <string name="dk_btn_string_pay">支付</string>
+    <string name="dk_customer_service_title">客服:</string>
+    <string name="dk_customer_service_number">4000-826-898</string>
+    <string name="dk_tip_payment_network_error">网络异常，请检查网络状态后重试！</string>
+    <string name="dk_tip_history_retry_load">触 屏 即 可 重 试</string>
+    <string name="dk_tip_payment_webview_generic_error">出现异常情况，请稍后重试！</string>
+    <string name="dk_btn_string_back">返回游戏</string>
+    <string name="dk_kubi_balance_account">余额:</string>
+
+    <!-- Credit card info start -->
+    <string name="dk_dialog_string_close">关闭</string>
+    <string name="dk_dialog_string_get">获取</string>
+    <string name="dk_dialog_string_reget">重新获取</string>
+    <string name="dk_dialog_string_geting">正在获取</string>
+    <string name="dk_dialog_string_get_fail">获取失败</string>
+    <string name="dk_dialog_string_unbind">解除绑定</string>
+    <string name="dk_dialog_string_fail_title">解绑失败</string>
+    <string name="dk_dialog_string_next_title">请求失败</string>
+    <string name="dk_dialog_string_fail_left">重新解绑</string>
+    <string name="dk_dialog_string_next_left">重新请求</string>
+    <string name="dk_dialog_string_validate_fail">验证失败</string>
+    <string name="dk_dialog_string_validate_left">重新验证</string>
+    <string name="dk_dialog_string_message">短信验证码已经下发，请输入短信验证码！</string>
+    <string name="dk_btn_bank_manage">银行卡管理</string>
+    <string name="dk_tip_support_bank">支持银行列表</string>
+    <string name="dk_tip_credit_security">绿色安全,放心付!</string>
+    <string name="dk_tip_input_credit_info">请输入信用卡信息</string>
+    <string name="dk_tip_credit_card_number_hint">信用卡号</string>
+    <string name="dk_tip_dialog_credit_card_bind_title">绑定信用卡</string>
+    <string name="dk_tip_credit_card_phone_hint">信用卡关联手机号</string>
+    <string name="dk_tip_credit_unbind_success">该信用卡解除绑定已经成功！</string>
+    <string name="dk_tip_credit_card_date_hint">卡片有效期(格式0218)</string>
+    <string name="dk_tip_credit_card_code_hint">卡校验码(格式267)</string>
+    <string name="dk_text_credit_card_bind_last">卡尾号</string>
+    <string name="dk_tip_progress_validate_info">正在验证，请稍后…</string>
+    <string name="dk_tip_input_message">请输入短信校验码！</string>
+    <string name="dk_hint_mobile_message_validate">短信校验码</string>
+    <string name="dk_tip_dialog_get_mobile_message">获取短信校验码</string>
+    <string name="dk_tip_dialog_message_error">请输入正确的短信校验码！</string>
+    <string name="dk_tip_dialog_credit_bind_title">已绑定的信用卡</string>
+    <string name="dk_tip_credit_support_bank_list">信用卡支持银行列表</string>
+    <string name="dk_dialog_string_card_number">卡号：*** **** ****%s</string>
+    <string name="dk_tip_dialog_credit_card_bind_text">您目前没有绑定任何信用卡</string>
+    <string name="dk_text_credit_card_bind_title">使用已关联的信用卡支付</string>
+    <string name="dk_text_credit_card_bind_content">信用卡解除绑定后 , 您将无法使用一键支付.</string>
+    <string name="dk_toast_input_credit_number">请输入信用卡号！</string>
+    <string name="dk_toast_error_credit_number">请输入正确的信用卡卡号(13-19位)！</string>
+    <string name="dk_toast_input_credit_phone">请输入信用卡关联手机号！</string>
+    <string name="dk_toast_error_credit_phone_length">请输入11位手机号码！</string>
+    <string name="dk_toast_input_credit_date">请输入卡片有效期(格式0218)！</string>
+    <string name="dk_toast_input_credit_code">请输入卡校验码(格式267)！</string>
+    <string name="dk_toast_error_credit_code">请输入正确的卡校验码(格式267)！</string>
+    <string name="dk_toast_error_credit_date">请输入正确的卡片有效期(格式0218)！</string>
+    <string name="dk_toast_amount_max_title">充值单笔最高限额%s元！</string>
+    <string name="dk_tip_dialog_pay_success">%s，请返回游戏查看到账信息！</string>
+    <string name="dk_tip_dialog_pay_select_order">请返回游戏查看到账信息！</string>
+    <!-- Credit card info end -->
+    <!-- Paying centre end -->
+
+    <string name="dk_trade_status">交易状态</string>
+    <string name="dk_trade_info">兑换游戏币失败/充值x游戏币</string>
+    <string name="dk_back2game">返回游戏</string>
+    <string name="dk_dial_tip">拨打客服电话</string>
+    <string name="dk_other_pay_methods">其他充值方式</string>
+    <string name="dk_custom_service">客服：</string>
+    <string name="dk_custom_version">版本号：</string>
+    <string name="dk_custom_service_dialnum">4000826898</string>
+    <string name="dk_charge_failure">充值失败，请稍后重试或选择其他充值方式！</string>
+    <string name="dk_exchange_success">充值成功，到账</string>
+    <string name="dk_exchange">兑换</string>
+    <string name="dk_failure_choose">失败，请选择其他方式充值！</string>
+    <string name="dk_telnum">4000826898</string>
+    <string name="dk_exchange_failure">兑换失败，请稍后重试</string>
+    <string name="dk_kubi">酷币</string>
+    <string name="dk_dou">百度币</string>
+    <string name="dk_91dou">91豆</string>
+    <string name="dk_exchange_tip">温馨提示：最多能兑换</string>
+    <string name="dk_input_exchange_money">请输入兑换金额！</string>
+    <string name="dk_exchange_least_money">最少兑换金额为</string>
+    <string name="dk_reinput_exchange_money">,请重新输入兑换金额~</string>
+    <string name="dk_processing_wait">处理中，请稍后......</string>
+    <string name="dk_kubi_exchange">酷币余额兑换</string>
+    <string name="dk_xkubi">x酷币</string>
+    <string name="dk_exchange_fulltip">温馨提示：最多能兑换x游戏币</string>
+    <string name="dk_input_exchange_money2">填写兑换数量</string>
+    <string name="dk_ratio_kubi">(1酷币=x游戏币)</string>
+    <string name="dk_youxibi">游戏币</string>
+    <string name="dk_tip">提示</string>
+    <string name="dk_user_invalide">用户已失效，请重新登录！</string>
+    <string name="dk_choose_charge_mode">请选择充值方式</string>
+    <string name="dk_net_disconnect">无法连接到网络\n请检查网络连接是否可用</string>
+    <string name="dk_retry">重试</string>
+    <string name="dk_exchange_username">user_name</string>
+    <string name="dk_traderesult_tipinfo">充值已提交，由于网络原因可能出现延迟，建议您1&#8211;3分钟后查询到账信息。</string>
+    <string name="dk_paycenter_tip_correct_amount">请输入正确的金额！</string>
+
+    <!-- add by sun  the toast of Installation failed -->
+    <string name="dk_assistant_failed">安装失败</string>
+    <string name="dk_gifts_not_exist">当前游戏暂未发放礼包，敬请期待！</string>
+    <string name="dk_message_not_exist">当前暂无消息哦，去论坛逛逛吧</string>
+    <string name="dk_gifts_item_left">剩余量 ：</string>
+    <string name="dk_gifts_item_abort">截止日期 ：</string>
+    <string name="dk_gifts_item_open">立即领取</string>
+    <string name="dk_gifts_item_content">礼包内容</string>
+    <string name="dk_message_source">来源：</string>
+    <string name="dk_message_footer_more">加载更多</string>
+    <string name="dk_message_footer_loading">正在加载</string>
+    <string name="dk_message_footer_none">没有更多了</string>
+    <string name="dk_91pay_present">当前91豆 ：</string>
+    <string name="dk_91pay_amount">应付金额 ：</string>
+    <string name="dk_91pay_less">当前剩余91豆不足以本次支付！</string>
+    <string name="dk_toast_down_text">正在下载</string>
+    <string name="dk_91pay_button_text">确认支付</string>
+    <string name="dk_message_no_message">暂无消息</string>
+    <string name="dk_message_nomore">暂无更多消息</string>
+    <string name="dk_assistant_down_no_net">网络异常,请检查网络</string>
+    <string name="dk_cashcoupon_platform_text">平台代金券</string>
+    <string name="dk_cashcoupon_no_platform_text">非平台代金券</string>
+    <string name="dk_cashcoupon_date_text">有效期：%s</string>
+    <string name="dk_cashcoupon_kubi_text">酷币</string>
+    <string name="dk_cashcoupon_user_text">使用</string>
+    <string name="dk_message_bt_gift">查看礼包详情</string>
+    <string name="dk_message_bt_activity">查看活动</string>
+    <string name="dk_message_bt_detail">查看游戏详情</string>
+    <string name="dk_message_bt_web">查看</string>
+    <string name="dk_message_bt_draw">立即抽奖</string>
+    <string name="dk_message_bt_get">领取</string>
+    <string name="dk_message_bt_got">已领取</string>
+    <string name="dk_message_bt_passed">已过期</string>
+    <string name="dk_message_bt_download">下载</string>
+    <string name="dk_cashcoupon_hint_content_platform">确认要使用%s酷币代金券支付，其余额将自动作废？</string>
+    <string name="dk_cashcoupon_hint_content_noplatform">确认要使用%s酷币专用代金券支付，其余额将自动作废？</string>
+    <string name="dk_cashcoupon_hint_content_ok_noplatform">确认要使用%s酷币专用代金券支付？</string>
+    <string name="dk_cashcoupon_hint_content_ok_platform">确认要使用%s酷币代金券支付？</string>
+    <string name="dk_pay_text">支付</string>
+    <string name="dk_cancel_text">取消</string>
+    <string name="dk_cashcoupon_pay_success">恭喜您，支付成功！</string>
+    <string name="dk_cashcoupon_pay_fail">支付失败，请稍后再试！</string>
+    <string name="dk_message_get_success">领取成功</string>
+    <string name="dk_message_get_fail">领取失败，请稍后重试</string>
+    <string name="dk_message_get_again">您已领取！</string>
+    <string name="dk_message_get_passed">已过期！</string>
+    <string name="dk_dialog_install_left">返回</string>
+    <string name="dk_dialog_install_right">安装</string>
+    <string name="dk_dialog_install_content_msg">安装百度星玩家后即可进行查看哦!</string>
+    <string name="dk_dialog_install_content_draw">安装百度星玩家后即可进行抽奖哦!</string>
+    <string name="dk_message_content_title">消息内容</string>
+    <string name="dk_payment_activity_title">详情</string>
+    <string name="dk_message_content_source">来源：%s</string>
+    <string name="dk_update_safe_hint_content_new">您当前为试玩账号，支付前请尽快完善账号信息，以确保账号安全~</string>
+    <string name="dk_complete_right_now">立即完善</string>
+    <string name="dk_complete_later">以后再说</string>
+
+    <!-- 代金券 -->
+    <string name="dk_cashcoupon_value_text">使用%s元代金券</string>
+    <string name="dk_cashcoupon_effic_date">(%s到期)</string>
+    <string name="dk_kubi_value_text">使用酷币支付</string>
+    <string name="dk_payment_pay_now">立即支付</string>
+    <string name="dk_payment_need_value_text">还需支付%s元</string>
+    <string name="dk_cashcoupon_hint_text">确认要使用%s元代金券支付？超出金额部分将自动作废。</string>
+
+    <!-- app update -->
+    <string name="no_new_version_prompt_update_check">没有最新版本！</string>
+    <string name="update_dialog_titile_update_check">升级提示</string>
+    <string name="find_new_version_prompt_update_check">发现新版本:</string>
+    <string name="update_apk_size_prompt_update_check"> 大小：</string>
+    <string name="update_must_be">此版本为强制更新版本</string>
+    <string name="update_dialog_ok_update_check">立即升级</string>
+    <string name="update_dialog_cancel_update_check">取消</string>
+    <string name="new_version_check_failed_prompt_update_check">新版本检测失败！</string>
+    <string name="force_version_prompt_update_check">，该版本为强制更新版本。</string>
+    <string name="net_problem_check_failed_update_check">网络数据异常，新版本检测失败！</string>
+    <string name="dk_click_cancel_update_download">(点击取消下载)</string>
+    <string name="dk_thirdparty_login">其他账号登录</string>
+    <string name="dk_imagview_contentdesc">图片</string>
+
+    <!-- 2.0版本添加 -->
+    <string name="bd_account_login">百度登录</string>
+    <string name="bd_register_username_hint">用户名&#160;&#160;(中英文、数字和下划线)</string>
+    <string name="bd_register_userpwd_hint">密码&#160;&#160;(6-14位,字母区分大小写)</string>
+    <string name="bd_regist_baidu_account">注册百度帐号</string>
+    <string name="bd_account_input">邮箱地址/手机号/用户名</string>
+    <string name="bd_fast_try_play">快速试玩</string>
+    <string name="dk_baidu_account">百度登录</string>
+    <string name="dk_duoku_account">多酷登录</string>
+    <string name="dk_91_account">91登录</string>
+    <string name="dk_bd_find_pwd">找回密码</string>
+    <string name="dk_tyr_player_to_commonuser">安全升级</string>
+
+    <!-- 广告 -->
+    <string name="bd_ad_cancel">取消</string>
+    <string name="bd_ad_exit">退出</string>
+    <string name="bd_ad_continue_title">继续游戏 ？</string>
+
+    <!-- 2.1添加 -->
+    <string name="dk_mypoint">我的积分</string>
+    <string name="dk_tv_string_point_history">积分记录</string>
+    <string name="dk_tv_string_numberbox">我的存号箱 </string>
+    <string name="dk_tv_string_tools">我的道具 </string>
+    <string name="dk_tv_string_tools_cash">我的代金券 </string>
+    <string name="dk_tv_string_tools_charge">我的充值卡 </string>
+    <string name="dk_tv_string_tools_prize">我的抽奖卡 </string>
+    <string name="dk_tv_string_completeuserinfo">完善资料 </string>
+    <string name="dk_tv_string_point_introduce">积分说明 </string>
+    <string name="dk_tv_string_cashcard_introduce">代金券说明 </string>
+    <string name="dk_tv_string_prize_notenough">无法抽奖，积分不足哦 </string>
+    <string name="dk_tv_string_prized">您已经抽过奖了，明天再来！ </string>
+    <string name="dk_tv_string_prized_install">安装百度星玩家后即可抽奖 </string>
+    <string name="dk_tv_string_prized_content">很抱歉，您的积分不够，不能参加每日抽奖 </string>
+    <string name="dk_vip_introduce">积分说明 </string>
+    <string name="dk_dialog_method_right">如何获取积分 </string>
+    <string name="send_verifycode">发送验证码</string>
+    <string name="sms_email_erifycode">短信/邮件验证码</string>
+    <string name="email_error">Email格式不正确</string>
+    <string name="email_used">Email已被占用</string>
+    <string name="phone_error">手机号格式 错误</string>
+    <string name="phone_used">手机号已被占用</string>
+    <string name="not_oauth_user">用户非暗绑账号</string>
+    <string name="psw_easy">密码太简单</string>
+    <string name="verifycode_useless">验证码 无效</string>
+    <string name="normal_user">该用户已正常化</string>
+    <string name="email_phone_null">请输入手机号/邮箱</string>
+    <string name="parameter_error">参数异常</string>
+    <string name="dk_pay_session_invalid">您的登录状态已失效！</string>
+
+    <!--  -->
+    <string name="dk_welcom_join">欢迎加入百度移动游戏！</string>
+    <string name="dk_score_explanation">积分说明</string>
+    <string name="dk_goto_baidu_start">去星玩家看看</string>
+    <string name="dk_voucher_explanation">代金券说明</string>
+    <string name="dk_recharge_card">充值卡</string>
+    <string name="dk_prize_card">抽奖卡</string>
+    <string name="dk_voucher">代金券</string>
+    <string name="dk_stop_time">截止日期：</string>
+    <string name="dk_number">号码：</string>
+    <string name="dk_copy">复制</string>
+    <string name="dk_value">价值</string>
+    <string name="dk_only_show_three_mounth">仅显示最后三个月记录</string>
+    <string name="dk_not_use">未使用</string>
+    <string name="dk_yuan">元</string>
+    <string name="dk_secret_number">密码：</string>
+    <string name="dk_serial_number">序列号：</string>
+    <string name="dk_repayment_vip">回馈VIP抽奖</string>
+    <string name="dk_go_prize">去抽奖</string>
+    <string name="dk_effect_time">有效期：</string>
+    <string name="dk_alipay_orderid_request_net_error_tip">网络异常，请稍后重试!</string>
+    <string name="dk_btn_string_check_network">检查网络</string>
+
+    <!-- 3.1 -->
+    <string name="dk_safe_notice">为了您的信息安全，请用密码登录后使用</string>
+    <string name="dk_customer_gamequestion_hint">您好，您咨询的问题属于游戏内部问题，游戏开发商有专门处理此类问题的客服，您可以直接向其反馈，客服电话：%s。感谢您对百度移动游戏的支持！</string>
+    <string name="dk_account_upgrade_tips">升级帐号获取更多福利-></string>
+    <string name="dk_account_upgrade">升级</string>
+
+</resources>

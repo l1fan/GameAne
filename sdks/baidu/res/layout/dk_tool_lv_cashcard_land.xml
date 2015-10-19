@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:background="@drawable/dk_cashcoupon_item_bg" >
+
+    <ImageView
+        android:id="@+id/dk_cashcoupon_platform_type_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_size_14_dp"
+        android:layout_marginTop="@dimen/text_size_14_dp"
+        android:src="@drawable/dk_cashcoupon_no_platform" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/dk_cashcoupon_platform_type_iv"
+        android:layout_marginLeft="@dimen/text_size_6_dp"
+        android:layout_toRightOf="@id/dk_cashcoupon_platform_type_iv"
+        android:orientation="vertical" >
+
+        <com.duoku.platform.view.common.DKMarqueeTextView
+            android:id="@+id/dk_cashcoupon_platform_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dk_cashcoupon_platform_text"
+            android:textColor="@color/dk_color_b06b05"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="@dimen/text_size_16_sp" />
+
+        <TextView
+            android:id="@+id/dk_cashcoupon_date_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dk_cashcoupon_date_text"
+            android:textColor="@color/dk_color_b06b05"
+            android:textSize="@dimen/text_size_12_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dk_cashcoupon_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/dk_cashcoupon_line"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@id/dk_cashcoupon_line" >
+
+        <TextView
+            android:id="@+id/dk_cashcoupon_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_size_20_dp"
+            android:layout_marginTop="@dimen/text_size_16_dp"
+            android:textColor="@color/dk_color_ffffff"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/dk_cashcoupon_kubi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/dk_cashcoupon_number"
+            android:text="@string/dk_cashcoupon_kubi_text"
+            android:textColor="@color/dk_color_ffffff"
+            android:textSize="@dimen/text_size_14_sp" />
+
+        <ImageView
+            android:id="@+id/dk_cashcoupon_use_iv"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignBottom="@id/dk_cashcoupon_kubi"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/text_size_20_dp"
+            android:background="@drawable/dk_prizecard_used"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dk_cashcoupon_use_tv"
+            android:layout_width="80dp"
+            android:layout_height="58dp"
+            android:layout_alignBottom="@id/dk_cashcoupon_kubi"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/text_size_20_dp"
+            android:gravity="bottom"
+            android:text="@string/dk_not_use"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

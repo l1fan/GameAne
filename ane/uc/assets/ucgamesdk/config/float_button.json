@@ -1,0 +1,36 @@
+{ 
+   "defaultIcon":"conf/ucIcon.png",
+   "expandedIcon":"conf/ucExpanded.png",
+   "floatButtonFlashImage":"conf/float_button_flash.png",       
+   "normalIcon":"conf/ucNormalIcon.png",          
+   "slideIconRightA":"conf/slideRightA.png",
+   "slideIconRightB":"conf/slideRightB.png",
+   "slideIconLeftA":"conf/slideLeftA.png",
+   "slideIconLeftB":"conf/slideLeftB.png",
+   "width":48,                                      
+   "height":48,                                     
+   "startX":96,                                    
+   "startY":48,                                     
+   "moveThreshold":5,                               
+   "bubble":{                                    
+			"borderColor":0xFFFF0000,                   
+			"backgroundColor":0xFFFF0000,               
+			"fontColor":-1,                     
+			"fontSize":10	                     
+	},
+	"hiddenArea":{                                    
+			"background":"conf/float_hide_bg.9.png",  
+			"width":160,                                      
+   			"height":90,                  
+			"hiddenBtWidth":41,                                      
+   			"hiddenBtHeight":41,
+   			"hiddenIcon":"conf/float_hide_normal.png",
+   			"hiddenIconPress":"conf/float_hide_acitve.png",
+   			"msg":"拖到此处隐藏",
+   			"msgMarginTop":6,
+   			"msgMarginBottom":9,
+			"textColor":"#ffffff",
+			"textColorPress":"#ff8800",                      
+			"fontSize":16	                     
+	}
+}

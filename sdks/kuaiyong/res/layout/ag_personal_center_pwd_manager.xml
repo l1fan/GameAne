@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/ag_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+       <!--      <TextView
+                style="@style/ag_tv_descripte_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/ag_20dp"
+                android:paddingTop="@dimen/ag_15dp"
+                android:paddingBottom="@dimen/ag_15dp"
+                android:text="@string/pc_pwd_manager_tv1" /> -->
+
+            <RelativeLayout
+                android:id="@+id/rl_phone_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/ag_10dp"
+                android:layout_marginTop="@dimen/ag_10dp"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" 
+                android:paddingBottom="@dimen/ag_5dp"
+                android:paddingTop="@dimen/ag_5dp">
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/ag_20dp"
+                    android:text="182******36" />
+
+                <LinearLayout
+                    android:id="@+id/ll_phone_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/ag_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_phone_change_des"
+                        style="@style/ag_tv_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pc_pwd_manager_tv21" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ag_10dp"
+                        android:src="@drawable/ag_arrow_forward" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pwd_login_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ag_edittext_gray"
+                android:gravity="center_vertical" 
+                android:paddingBottom="@dimen/ag_5dp"
+                android:paddingTop="@dimen/ag_5dp">
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/ag_20dp"
+                    android:text="@string/pc_pwd_manager_tv2" />
+
+                <LinearLayout
+                    android:id="@+id/ll_pwd_login_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/ag_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pwd_login_change"
+                        style="@style/ag_tv_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pc_pwd_manager_tv21" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ag_10dp"
+                        android:src="@drawable/ag_arrow_forward" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pwd_trade_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" 
+                android:paddingBottom="@dimen/ag_5dp"
+                android:paddingTop="@dimen/ag_5dp">
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/ag_20dp"
+                    android:text="@string/pc_pwd_manager_tv3" />
+
+                <LinearLayout
+                    android:id="@+id/ll_pwd_trade_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/ag_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pwd_trade_change"
+                        style="@style/ag_tv_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pc_pwd_manager_tv21" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ag_10dp"
+                        android:src="@drawable/ag_arrow_forward" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/ag_tv_descripte_little"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ag_15dp"
+                android:text="@string/pc_pwd_manager_tv7" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pwd_no_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" 
+                android:paddingBottom="@dimen/ag_5dp"
+                android:paddingTop="@dimen/ag_5dp">
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/ag_20dp"
+                    android:text="@string/pc_pwd_manager_tv4" />
+
+                <LinearLayout
+                    android:id="@+id/ll_pwd_no_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/ag_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pwd_no_change"
+                        style="@style/ag_tv_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pc_pwd_manager_tv55" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ag_10dp"
+                        android:src="@drawable/ag_arrow_forward" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/ag_tv_descripte_little"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ag_15dp"
+                android:text="@string/pc_pwd_manager_tv8" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

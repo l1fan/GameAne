@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="6dip"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    >
+
+    <RelativeLayout
+        android:id="@+id/frs_list_control"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tieba_btn_register"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/frs_list_control_tv"
+            style="@style/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dip"
+            android:layout_marginTop="0dip"
+            android:padding="0dip"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/frs_list_control_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/frs_list_control_tv"
+            android:indeterminateDrawable="@drawable/tieba_progressbar"
+            android:visibility="gone" >
+        </ProgressBar>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/frs_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <LinearLayout
+            android:id="@+id/frs_list_item_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tieba_bg_list_top" 
+            android:padding="0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/frs_lv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="8dip"
+                android:layout_marginBottom="5dip"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:textColor="#262626"
+                android:textSize="16sp" >
+            </TextView>
+
+            <!-- 摘要 -->
+
+            <LinearLayout
+                android:id="@+id/frs_lv_abstract"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/abstract_img_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="0dip"
+                    android:paddingRight="0dip" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/abstract_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:paddingTop="0dip"
+                    android:paddingBottom="0dip"
+                    android:layout_marginBottom="5dip"
+                    android:singleLine="true"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:background="@drawable/tieba_bg_list_bottom"
+            android:padding="0dip"
+            android:gravity="center_vertical" >
+
+            <!-- 回复 数-->
+            <ImageView 
+                android:id="@+id/frs_discuss_icon"
+                android:background="@drawable/tieba_icon_little_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:gravity="left"
+                android:layout_centerVertical="true"
+                />
+            
+            <TextView
+                android:id="@+id/frs_lv_reply_num"
+                android:layout_toRightOf="@id/frs_discuss_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_centerVertical="true"
+                android:text="@string/tieba_mush_more"
+                android:textColor="#ffb2b6ba"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                
+                <!-- 作者 -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/author_icon"
+                    android:background="@drawable/tieba_icon_little_people"
+                    android:layout_gravity="center_vertical" />
+                
+                <TextView
+                    android:id="@+id/frs_lv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="#b2b6ba"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/frs_lv_reply_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center"
+                    android:textColor="#b2b2b2"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

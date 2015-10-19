@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+
+        android:id="@+id/tb_wv_web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="#fff7f7f7"
+        android:id="@+id/tb_ll_neterror"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_marginTop="50dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tb_web_networkerror" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tb_web_net_error" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tb_btn_green_bg"
+            android:id="@+id/tb_bt_web_retry"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="@string/tb_base_refresh" />
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tb_btn_gray_bg"
+            android:id="@+id/tb_bt_web_close"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="@string/tb_base_close" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tb_rl_web"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|right"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tb_tab_close" />
+    </RelativeLayout>
+
+
+</FrameLayout>

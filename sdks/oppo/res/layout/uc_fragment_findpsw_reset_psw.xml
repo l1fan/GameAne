@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:inputView="http://com.oppo.usercenter.opensdk.widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="17dp"
+    android:orientation="vertical" >
+
+    <com.oppo.usercenter.opensdk.widget.InputView
+        android:id="@+id/findpsw_first_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/uc_input_view_height"
+        android:background="@drawable/uc_selector_inputview_content_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        inputView:input_hint="@string/fragment_local_pwd_new_empty"
+        inputView:input_title="@string/fragment_reset_password_tv_pwd_new" />
+
+    <com.oppo.usercenter.opensdk.widget.InputView
+        android:id="@+id/findpsw_repeate_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/uc_input_view_height"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/uc_selector_inputview_content_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        inputView:input_hint="@string/fragment_local_pwd_repeat_empty"
+        inputView:input_title="@string/fragment_reset_password_tv_pwd_repeat" />
+
+    <Button
+        android:id="@+id/findpsw_reset_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/uc_selector_submit_btn_white"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:text="@string/fragment_reset_password_bt_save" />
+
+</LinearLayout>

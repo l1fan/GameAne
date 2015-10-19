@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/tieba_alert_dialog_bj"
+	android:layout_height="wrap_content">
+	
+	<TextView android:layout_height="wrap_content"
+   		android:layout_width="fill_parent"
+        android:gravity="center"
+        android:textColor="#ff2874ff"
+        android:textSize="16sp"
+        android:paddingTop="15dip"
+        android:paddingBottom="18dip"
+  		android:text="@string/tieba_forbid_operation" />
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:gravity="left">
+	  	<TextView android:layout_height="wrap_content"
+	   		android:layout_width="wrap_content"
+	        android:layout_gravity="left"
+	        android:textColor="@color/tieba_black"
+	        android:textSize="16sp"
+	  		android:text="@string/tieba_user_with_colon" /> 
+	  	<TextView
+	  	    android:id="@+id/user_name"
+	  	    android:layout_height="wrap_content"
+	   		android:layout_width="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/tieba_black"
+	        android:textSize="16sp"/> 
+    </LinearLayout>
+	  		  	
+  	<TextView android:layout_height="wrap_content"
+   		android:layout_width="fill_parent"
+        android:paddingLeft="20dip"
+        android:gravity="left"
+        android:textColor="@color/tieba_black"
+        android:textSize="16sp"
+  		android:text="@string/tieba_forbid_duration" />   	
+  	
+	<RadioGroup 
+       	android:id="@+id/radio_group" 
+       	android:gravity="center_vertical"
+       	android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="10dip"
+       	android:orientation="vertical" 
+       	android:layout_width="fill_parent" 
+       	android:layout_height="wrap_content">
+           <RadioButton 
+           	android:id="@+id/radio_button_1day"
+           	android:button="@null"
+           	android:text="@string/tieba_day_one"
+           	android:textColor="@color/tieba_text_white_selector_color"
+           	android:layout_width="fill_parent"
+           	android:layout_height="wrap_content"
+           	android:layout_marginLeft="40dip"
+           	android:layout_marginRight="40dip"
+           	android:layout_marginBottom="10dip"
+           	android:paddingTop="6dip"
+           	android:paddingBottom="6dip"
+           	android:gravity="center"
+       		android:background="@drawable/tieba_forbid_button"
+           	/>           
+          	<RadioButton 
+           	android:id="@+id/radio_button_3day"
+           	android:button="@null"
+           	android:text="@string/tieba_day_three"
+           	android:textColor="@color/tieba_text_white_selector_color"
+           	android:layout_width="fill_parent"
+           	android:layout_height="wrap_content"
+           	android:layout_marginLeft="40dip"
+           	android:layout_marginRight="40dip"
+           	android:layout_marginBottom="10dip"
+           	android:paddingTop="6dip"
+           	android:paddingBottom="6dip"
+           	android:gravity="center"
+       		android:background="@drawable/tieba_forbid_button"
+           	/>           
+           <RadioButton 
+           	android:id="@+id/radio_button_10day" 
+           	android:button="@null"
+           	android:text="@string/tieba_day_ten" 
+           	android:textColor="@color/tieba_text_white_selector_color"
+           	android:layout_width="fill_parent"
+           	android:layout_height="wrap_content"
+           	android:layout_marginLeft="40dip"
+           	android:layout_marginRight="40dip"
+           	android:layout_marginBottom="10dip"
+           	android:paddingTop="6dip"
+           	android:paddingBottom="6dip"
+           	android:gravity="center"
+       		android:background="@drawable/tieba_forbid_button"
+           	/>           
+	</RadioGroup>
+  	
+  	
+  		  	
+  	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_horizontal">
+        <Button 
+            android:id="@+id/dialog_button_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dip"
+            android:paddingBottom="13dip"
+            android:layout_weight="1"
+        	android:textSize="18sp"
+        	android:textColor="#ff232323"
+        	android:background="@drawable/tieba_alert_dialog_btn_cancel"
+        	android:gravity="center"
+            android:text="@string/tieba_dialog_cancel"/>
+        <Button 
+            android:id="@+id/dialog_button_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dip"
+            android:paddingBottom="13dip"
+            android:layout_weight="1"
+        	android:textSize="18sp"
+        	android:textColor="#ff232323"
+        	android:background="@drawable/tieba_alert_dialog_btn_ok"
+        	android:gravity="center"
+            android:text="@string/tieba_forbid_id"/>
+    </LinearLayout>
+    
+</LinearLayout>

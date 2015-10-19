@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tb_base_tab_press">#157efb</color>
+    <color name="tb_base_tab_normal">#919295</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="GLOBAL_CODE_NET_ERROR">网络异常</string>
+    <string name="GLOBAL_CODE_SYSTEM_UNKNOW">未知错误</string>
+    <string name="GLOBAL_CODE_SYSTEM_ERROR">系统内部错误</string>
+    <string name="GLOBAL_CODE_NOT_LOGIN">未登录</string>
+    <string name="GLOBAL_CODE_REQUEST_ERROR">请求错误</string>
+    <string name="GLOBAL_CODE_TOKEN_TIMEOUT">Token过期</string>
+    <string name="GLOBAL_CODE_OK">正常</string>
+    <string name="GLOBAL_CODE_USER_CANCEL">用户取消</string>
+    <string name="GLOBAL_CODE_NOT_JSON">返回数据不是JSON</string>
+    <string name="LOGIN_CODE_ALREADY_LOGIN">已经登录</string>
+    <string name="PAYMENT_CODE_USER_BALANCE_NOT_ENOUGH">用户余额不足</string>
+    <string name="CHARGE_CODE_FAILURE">充值失败</string>
+    <string name="PAYMENT_CODE_NDOU_NOT_ENOUGH">N豆不足</string>
+    <string name="PAYMENT_CODE_NDOU_ORDER_REPEAT">订单重复</string>
+    <string name="GOLOBAL_UNKNOW_ERROE">未知错误</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ag_100dp"
+        android:background="@drawable/dialog_card_background"
+        android:layout_marginLeft="@dimen/ag_10dp"
+        android:layout_marginRight="@dimen/ag_10dp"
+        android:layout_marginTop="@dimen/ag_20dp">
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/ag_5dp" 
+            android:id="@+id/ll_title">
+             
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示"
+            android:textSize="@dimen/ag_18sp"
+            android:textColor="@color/color_blue"
+            android:layout_gravity="center"
+            />
+            
+        </LinearLayout>
+      
+        
+        
+        <TextView 
+            android:layout_below="@id/ll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_error_msg_remind"
+            android:text="错误提示"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_10dp"/>
+        
+        
+    </RelativeLayout>
+    
+    
+    
+</RelativeLayout>

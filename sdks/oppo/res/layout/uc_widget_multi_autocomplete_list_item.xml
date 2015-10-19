@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/account_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/uc_dark_text_color"
+        android:textSize="@dimen/uc_middle_51_text_size" />
+
+</RelativeLayout>

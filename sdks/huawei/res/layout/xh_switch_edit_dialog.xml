@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@color/ql_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xh_dialog_backgroud" >
+
+        <!-- start top -->
+
+        <RelativeLayout
+            android:id="@+id/top_switch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" >
+
+            <ImageView
+                android:id="@+id/xh_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/xh_ic_arrow_left"
+                android:visibility="visible">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/text_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/xh_back"
+                android:layout_centerVertical="true"
+                android:text="@string/xh_switch_user"
+                android:textColor="@color/ql_quick_login_title"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/setting_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/setting"
+                android:scaleType="fitXY"/>
+            
+            <ImageView
+                android:id="@+id/setting_plus_hind"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+        <!-- end top -->
+
+        <ImageView
+            android:id="@+id/divide_line_switch"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/top_switch"
+            android:scaleType="fitXY"
+            android:background="@color/ql_divide">
+        </ImageView>
+
+        <!-- start body -->
+
+        <RelativeLayout
+            android:id="@+id/switch_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divide_line_switch"
+            >
+
+            <ListView
+                android:id="@+id/list_sub_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1px"
+                android:divider="@color/ql_divide"
+                android:listSelector="@drawable/xh_item_click_selector"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+        <!-- end body -->
+
+        <ImageView
+            android:id="@+id/divide_line1_switch"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/switch_body"
+            android:scaleType="fitXY"
+            android:background="@color/ql_divide"
+            android:visibility="gone"/>
+        
+        <!-- start footer -->
+        <RelativeLayout
+            android:id="@+id/switch_footer2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/divide_line1_switch"
+            android:visibility="gone" >
+            
+            <ImageView
+		        android:id="@+id/use_game_account"
+		        android:layout_width="36dp"
+		        android:layout_height="36dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentLeft="true"
+		        android:background="@drawable/ql_enter_game_account"
+		        android:scaleType="fitXY" >
+		    </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/use_game_account"
+                android:text="@string/xh_use_old_game_sub"
+                android:textColor="@color/ql_switch_footer_button"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        <!-- end footer -->
+	</RelativeLayout>
+</RelativeLayout>

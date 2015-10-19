@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/dk_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/dk_payment_header" />
+
+    <RelativeLayout
+        android:id="@+id/dk_gifts_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/dk_head"
+        android:background="@drawable/dk_bottom_dialog_new" >
+
+        <FrameLayout
+            android:id="@+id/dk_layout_net_work_error"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/dk_layout_net_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/dk_iv_network_error"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/dk_ic_network_info" />
+
+                <TextView
+                    android:id="@+id/dk_tv_network_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/dk_tip_payment_network_error"
+                    android:textColor="@color/dk_color_333333"
+                    android:textSize="@dimen/text_size_16_sp" />
+
+                <Button
+                    android:id="@+id/dk_btn_customer_retry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/dk_payment_btn_pay_selector"
+                    android:gravity="center"
+                    android:text="@string/dk_retry"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_16_sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/dk_activity_list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:listSelector="@color/dk_transparent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/dk_act_not_exist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/dk_act_not_exist_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dk_act_not_exist" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dk_act_tips"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/dk_gifts_tips_bg" >
+
+            <RelativeLayout
+                android:id="@+id/dk_act_tips_layout"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/dk_act_tips_iv"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/dk_gifts_tips_iv" />
+
+                <TextView
+                    android:id="@+id/dk_act_tips_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_size_6_dp"
+                    android:layout_toRightOf="@id/dk_act_tips_iv"
+                    android:textColor="@color/dk_color_ffffff"
+                    android:textSize="@dimen/text_size_12_sp" />
+
+                <ImageView
+                    android:id="@+id/dk_act_tips_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_size_12_dp"
+                    android:src="@drawable/dk_gifts_tips_close" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/dk_act_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:progressDrawable="@drawable/dk_gift_progressbar_style" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/dk_account_user_shodow"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/dk_head"
+        layout="@layout/dk_user_shadow"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/dk_layout_progress_account"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/dk_head"
+        android:layout_gravity="center"
+        android:background="@drawable/dk_bottom_dialog_new"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/dk_common_progress" />
+    </LinearLayout>
+
+</RelativeLayout>

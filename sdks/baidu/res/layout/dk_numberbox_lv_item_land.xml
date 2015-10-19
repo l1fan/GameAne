@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="80dp"
+    android:layout_marginRight="80dp"
+    android:background="@drawable/dk_numberbox_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_numberbox_gamelogo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/dk_numberbox_gamelogo_bg" />
+
+            <TextView
+                android:id="@+id/tv_game_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_numberbox_gamelogo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/iv_numberbox_gamelogo"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_game_title"
+                android:layout_below="@+id/tv_game_title"
+                android:text="@string/dk_stop_time"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_game_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_numberbox_gamelogo"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_numberbox_gamelogo"
+                android:text="@string/dk_number"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_game_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/btn_gamenumberbox_copy"
+                android:layout_toRightOf="@+id/textView4"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_gamenumberbox_copy"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dk_selector_btn_copy"
+                android:text="@string/dk_copy"
+                android:textColor="@drawable/dk_btn_text_copy_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_numberbox_value"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/dk_numberbox_value_bg" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="60dp"
+            android:layout_height="17dp"
+            android:layout_alignLeft="@+id/iv_numberbox_value"
+            android:layout_alignTop="@+id/iv_numberbox_value"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/dk_value"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_gamebox_value"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_numberbox_more"
+            android:layout_width="17dp"
+            android:layout_height="11dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/dk_numberbox_more_up" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_numberbox_value"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/tv_numberbox_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/iv_numberbox_more"
+            android:layout_toRightOf="@+id/textView8"
+            android:textColor="#666666" />
+    </RelativeLayout>
+
+</LinearLayout>

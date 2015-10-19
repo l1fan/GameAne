@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="labelInput">
+
+        <!-- label名称 -->
+        <attr name="labelName" format="string|reference" />
+
+        <!-- 右侧图标 -->
+        <attr name="rightIcon" format="reference" />
+
+        <!-- hint -->
+        <attr name="miniInputHint" format="string|reference" />
+
+        <!-- 是否密码 -->
+        <attr name="isPassword" format="boolean" />
+
+        <!-- 最大输入长度 -->
+        <attr name="maxInputLength" format="integer" />
+    </declare-styleable>
+
+    <!-- tableView -->
+    <declare-styleable name="tableView">
+
+        <!-- table位置 normal|top|bottom|center 默认normal(只有一行) -->
+        <attr name="tableType">
+            <flag name="normal" value="0x10" />
+            <flag name="top" value="0x11" />
+            <flag name="bottom" value="0x12" />
+            <flag name="center" value="0x13" />
+        </attr>
+
+        <!-- table样式 round_corner|list_item 默认round_corner -->
+        <attr name="tableStyle">
+            <flag name="round_corner" value="0x10" />
+            <flag name="list_item" value="0x11" />
+        </attr>
+
+        <!-- table 显示箭头 true|false 默认 true -->
+        <attr name="show_arrow" format="boolean" />
+
+        <!-- table 箭头方向向右|向下 -->
+        <attr name="arrow_type">
+            <flag name="arrow_right" value="0x20" />
+            <flag name="arrow_down" value="0x21" />
+            <flag name="arrow_up" value="0x22" />
+        </attr>
+        <!-- table 左侧文字 -->
+        <attr name="left_text" format="string|reference" />
+        <!-- table 左侧文字2 -->
+        <attr name="left_text_2" format="string|reference" />
+
+        <!-- table 左侧图片 -->
+        <attr name="left_image" format="reference" />
+
+        <!-- 左边图片宽高 -->
+        <attr name="left_imageWidth" format="dimension|reference" />
+        <attr name="left_imageHeight" format="dimension|reference" />
+
+        <!-- 是否为大图标 -->
+        <attr name="left_largeSize" format="boolean" />
+
+        <!-- table 右侧图片 -->
+        <attr name="right_image" format="reference" />
+
+        <!-- 点击时背景色是否改变 true|false 默认true -->
+        <attr name="change_backgroud" format="boolean" />
+    </declare-styleable>
+
+    <!-- 支付宝 -->
+    <string name="mini_loading_1">正在安全检测&#8230;</string>
+    <string name="mini_loading">加载中</string>
+    <string name="mini_net_error">不能连接到网络，是否重试？</string>
+    <string name="mini_redo">重试</string>
+    <string name="mini_error_title_default">提示</string>
+    <string name="mini_app_error">系统繁忙，请稍后再试。</string>
+    <string name="mini_debug_app_error">程序发生错误！点击确定退出程序。</string>
+    <string name="mini_countdown_info">秒后重发</string>
+    <string name="mini_no_input">不能为空</string>
+    <string name="mini_format_error">格式错误</string>
+    <string name="mini_page_add_title">添加银行卡</string>
+    <string name="mini_page_add_hint">银行卡号</string>
+    <string name="mini_card_no">卡号</string>
+    <string name="mini_page_add_tips"> 提供支付密码和短信验证的双重保障</string>
+    <string name="mini_page_add_other_pay"> 其他付款方式</string>
+    <string name="mini_page_msg_title">填写银行卡信息</string>
+    <string name="mini_page_next">下一步</string>
+    <string name="mini_page_name">姓名          </string>
+    <string name="mini_page_input_name_hint">持卡人姓名</string>
+    <string name="mini_card_type">卡类型</string>
+    <string name="mini_id_no">证件号</string>
+    <string name="mini_page_input_id_hint">证件号码</string>
+    <string name="mini_page_msg_check">信息加密处理，仅用于银行验证</string>
+    <string name="mini_page_msg_choose_type">选择证件类型</string>
+    <string name="mini_date">有效期</string>
+    <string name="mini_date_hint">月份/年份</string>
+    <string name="mini_safe_no">安全码</string>
+    <string name="mini_safe_no_hint">卡背面末三位数字</string>
+    <string name="mini_phone_no">手机号</string>
+    <string name="mini_phone_no_hint">银行预留手机号码</string>
+    <string name="mini_agree">同意</string>
+    <string name="mini_quickpay_protocol">《服务协议》</string>
+    <string name="mini_password">密码</string>
+    <string name="mini_switch">切换</string>
+    <string name="mini_car_default_use">默认使用该卡支付</string>
+    <string name="mini_car_limit_phone">调整交易限额，请联系银行客服：</string>
+    <string name="mini_password_hint">请输入密码</string>
+    <string name="mini_canel_install_msp">你已取消安装移动快捷支付。</string>
+    <string name="mini_canel_install_wallet">你已取消安装支付宝钱包。</string>
+    <string name="mini_setting_default_tips">默认使用该卡支付</string>
+    <string name="mini_setting_view_all_bankcard">查看全部(%1$d张)</string>
+    <string name="mini_setting_debit_cards_tips">储蓄卡</string>
+    <string name="mini_setting_credit_cards_tips">信用卡</string>
+    <string name="mini_setting_pay_password">支付密码</string>
+    <string name="mini_weakpassword_error_same">请不要使用相同的数字</string>
+    <string name="mini_weakpassword_error_serial">请不要使用连续的数字</string>
+    <string name="mini_str_null">xx</string>
+    <string name="mini_str_title">标题</string>
+    <string name="mini_sign_add">+</string>
+    <string name="mini_sign_sub">-</string>
+    <string name="mini_input_title">当前使用密码安全输入法</string>
+    <string name="mini_input_q">q</string>
+    <string name="mini_input_w">w</string>
+    <string name="mini_input_e">e</string>
+    <string name="mini_input_r">r</string>
+    <string name="mini_input_t">t</string>
+    <string name="mini_input_y">y</string>
+    <string name="mini_input_u">u</string>
+    <string name="mini_input_i">i</string>
+    <string name="mini_input_o">o</string>
+    <string name="mini_input_p">p</string>
+    <string name="mini_input_a">a</string>
+    <string name="mini_input_s">s</string>
+    <string name="mini_input_d">d</string>
+    <string name="mini_input_f">f</string>
+    <string name="mini_input_g">g</string>
+    <string name="mini_input_h">h</string>
+    <string name="mini_input_j">j</string>
+    <string name="mini_input_k">k</string>
+    <string name="mini_input_l">l</string>
+    <string name="mini_input_z">z</string>
+    <string name="mini_input_x">x</string>
+    <string name="mini_input_c">c</string>
+    <string name="mini_input_v">v</string>
+    <string name="mini_input_b">b</string>
+    <string name="mini_input_n">n</string>
+    <string name="mini_input_m">m</string>
+    <string name="mini_input_qq">Q</string>
+    <string name="mini_input_ww">W</string>
+    <string name="mini_input_ee">E</string>
+    <string name="mini_input_rr">R</string>
+    <string name="mini_input_tt">T</string>
+    <string name="mini_input_yy">Y</string>
+    <string name="mini_input_uu">U</string>
+    <string name="mini_input_ii">I</string>
+    <string name="mini_input_oo">O</string>
+    <string name="mini_input_pp">P</string>
+    <string name="mini_input_aa">A</string>
+    <string name="mini_input_ss">S</string>
+    <string name="mini_input_dd">D</string>
+    <string name="mini_input_ff">F</string>
+    <string name="mini_input_gg">G</string>
+    <string name="mini_input_hh">H</string>
+    <string name="mini_input_jj">J</string>
+    <string name="mini_input_kk">K</string>
+    <string name="mini_input_ll">L</string>
+    <string name="mini_input_zz">Z</string>
+    <string name="mini_input_xx">X</string>
+    <string name="mini_input_cc">C</string>
+    <string name="mini_input_vv">V</string>
+    <string name="mini_input_bb">B</string>
+    <string name="mini_input_nn">N</string>
+    <string name="mini_input_mm">M</string>
+    <string name="mini_input_1">1</string>
+    <string name="mini_input_2">2</string>
+    <string name="mini_input_3">3</string>
+    <string name="mini_input_4">4</string>
+    <string name="mini_input_5">5</string>
+    <string name="mini_input_6">6</string>
+    <string name="mini_input_7">7</string>
+    <string name="mini_input_8">8</string>
+    <string name="mini_input_9">9</string>
+    <string name="mini_input_0">0</string>
+    <string name="mini_input_55"> % </string>
+    <string name="mini_input_22"> \@ </string>
+    <string name="mini_input_33"> # </string>
+    <string name="mini_input_44"> $ </string>
+    <string name="mini_input_amp">"&amp;"</string>
+    <string name="mini_input_88"> * </string>
+    <string name="mini_input_sub"> - </string>
+    <string name="mini_input_add"> + </string>
+    <string name="mini_input_99"> ( </string>
+    <string name="mini_input_00"> ) </string>
+    <string name="mini_input_11"> ! </string>
+    <string name="mini_input_apos">\&apos;</string>
+    <string name="mini_input_maohao">:</string>
+    <string name="mini_input_backslash">/</string>
+    <string name="mini_input_tilde">~</string>
+    <string name="mini_input_or">|</string>
+    <string name="mini_input_mul">×</string>
+    <string name="mini_input_div">÷</string>
+    <string name="mini_input_eql">=</string>
+    <string name="mini_input_quot">\&quot;</string>
+    <string name="mini_input_fenhao">;</string>
+    <string name="mini_input_lt">"&lt;"</string>
+    <string name="mini_input_wenhao"> \?</string>
+    <string name="mini_input_big">></string>
+    <string name="mini_input_right">{</string>
+    <string name="mini_input_left">}</string>
+    <string name="mini_input_sigma">∑</string>
+    <string name="mini_input_section">§</string>
+    <string name="mini_input_qianfenhao">‰</string>
+    <string name="mini_input_rmb">￥ </string>
+    <string name="mini_input_aaa">α</string>
+    <string name="mini_input_bbb">β</string>
+    <string name="mini_input_vvv">γ</string>
+    <string name="mini_input_si">℃ </string>
+    <string name="mini_input_right_mid">[</string>
+    <string name="mini_input_left_mid">]</string>
+    <string name="mini_input_line"> _ </string>
+    <string name="mini_input_and_or"> ^ </string>
+    <string name="mini_input_z_f">±</string>
+    <string name="mini_input_dan_yin_hao">’</string>
+    <string name="mini_input_forward_slash"> \\</string>
+    <string name="mini_input_is"> ` </string>
+    <string name="mini_input_123">123</string>
+    <string name="mini_input_abc">abc</string>
+    <string name="mini_input_comma">,</string>
+    <string name="mini_input_.">.</string>
+    <string name="mini_input_sure">确定 </string>
+    <string name="msp_str_null" />
+    <string name="mini_widget_label_input">mini_widget_label_input</string>
+    <string name="mini_ui_input_content">mini_ui_input_content</string>
+    <string name="mini_ui_input_layout">mini_ui_input_layout</string>
+    <string name="uicomponenet">uicomponenet</string>
+    <string name="checkbox_relativelayout">checkbox_relativelayout</string>
+    <string name="mini_layout_relativeLayout">mini_layout_relativeLayout</string>
+    <string name="mini_linBlocksConpent">mini_linBlocksConpent</string>
+    <string name="mini_root">mini_root</string>
+    <string name="msp_app_name">支付宝快捷支付服务</string>
+    <string name="msp_error_title_default">提示</string>
+    <string name="msp_action_settings">设置</string>
+    <string name="msp_xlistview_header_hint_normal">下拉刷新</string>
+    <string name="msp_xlistview_header_last_time">上次更新时间：</string>
+    <string name="msp_xlistview_footer_hint_normal">查看更多</string>
+    <string name="msp_close">关闭</string>
+    <string name="msp_memo_user_cancel">操作已经取消。</string>
+    <string name="msp_memo_app_cancel">程序或者数据出现问题。</string>
+    <string name="msp_memo_server_cancel">系统繁忙，请稍后再试。</string>
+    <string name="msp_memo_repeat_pay">同一订单禁止同时多次支付。</string>
+    <!-- 以下提示debug专用 -->
+    <string name="msp_mini_safty_code_info">安全码是打印在信用卡背面签名区的一组数字，一般是后3位或后4位数字</string>
+    <string name="msp_mini_safty_code_title">安全码说明</string>
+    <string name="msp_mini_read_protocal_title">选择阅读协议</string>
+    <string name="msp_mini_choose_identitify">选择证件类别</string>
+    <string name="msp_mini_card_type_text">卡类型</string>
+    <string name="confirm_title">提示</string>
+    <string name="cardUnbing">解除绑定</string>
+    <string name="cardDefaultuse">默认使用该卡支付</string>
+    <string name="cardCancle">取消</string>
+
+    <dimen name="mini_margin_1">1dp</dimen>
+    <dimen name="mini_margin_3">3dp</dimen>
+    <dimen name="mini_margin_13">13dp</dimen>
+    <dimen name="mini_margin_textview_13">9dp</dimen>
+    <dimen name="mini_margin_textview_6">3dp</dimen>
+    <dimen name="mini_margin_6">6dp</dimen>
+    <dimen name="mini_margin_10">10dp</dimen>
+    <dimen name="mini_margin_left">14dp</dimen>
+    <dimen name="mini_margin_15">15dp</dimen>
+    <dimen name="mini_margin_19">19dp</dimen>
+    <dimen name="mini_margin_20">20dp</dimen>
+    <dimen name="mini_margin_top">10dp</dimen>
+    <dimen name="mini_margin_right">14dp</dimen>
+    <dimen name="mini_margin_bottom">10dp</dimen>
+    <dimen name="mini_margin_default">10dp</dimen>
+    <dimen name="mini_add_card_margin_left">21dp</dimen>
+    <dimen name="mini_margin_27">27dp</dimen>
+    <dimen name="mini_margin_42">42dp</dimen>
+    <!-- 控件默认高度 -->
+    <dimen name="mini_element_default_height">44dp</dimen>
+    <!-- 窗口高度 -->
+    <dimen name="mini_win_default_height">233dp</dimen>
+    <!-- 窗口宽度 -->
+    <dimen name="mini_win_default_width">280dp</dimen>
+    <!-- title高度 -->
+    <dimen name="mini_title_height">47dp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="mini_text_size_xx_large">20sp</dimen>
+    <dimen name="mini_text_size_large">16sp</dimen>
+    <dimen name="mini_text_size_medium">15sp</dimen>
+    <dimen name="mini_text_size_small">13sp</dimen>
+    <dimen name="mini_text_size_x_small">12sp</dimen>
+    <dimen name="mini_text_size_link">17sp</dimen>
+    <dimen name="mini_text_size_14">14sp</dimen>
+
+    <!-- list item left icon size -->
+    <dimen name="item_left_icon_large">32dp</dimen>
+    <dimen name="item_left_icon_small">29dp</dimen>
+    <dimen name="msp_font_medium">16sp</dimen>
+    <dimen name="msp_margin_left">10dp</dimen>
+    <dimen name="msp_margin_top">7dp</dimen>
+    <dimen name="msp_margin_right">10dp</dimen>
+    <dimen name="msp_margin_bottom">7dp</dimen>
+    <dimen name="msp_margin_default">7dp</dimen>
+    <dimen name="msp_dimen_40">40dp</dimen>
+    <dimen name="msp_dimen_input_40">40dp</dimen>
+
+    <color name="mini_text_color_gray">#333333</color>
+    <color name="mini_hint_color">#b2b2b2</color>
+    <color name="mini_error_hint_color">#ffffff</color>
+    <color name="mini_error_input">#FF0000</color>
+    <color name="mini_text_shadow">#fefefe</color>
+    <color name="mini_text_white">#ffffff</color>
+    <color name="mini_text_black">#000000</color>
+    <color name="mini_button_text_disable">#aaaaaa</color>
+    <color name="mini_button_text_normal">#ffffff</color>
+    <color name="mini_text_link">#2861d7</color>
+    <color name="mini_list_bg_color">#bababa</color>
+    <color name="mini_page_bg_color">#ededed</color>
+    <color name="mini_input_hint_color">#cccccc</color>
+    <color name="mini_win_background">#00000000</color>
+    <color name="mini_card_defaultuse">#FF9933</color>
+    <color name="c80000000">#80000000</color>
+    <color name="c0088dd">#0088dd</color>
+    <color name="cb3b3b3">#b3b3b3</color>
+    <color name="mini_color_gray">#666666</color>
+    <color name="mini_color_light_gray">#999999</color>
+    <color name="mini_text_color_desc">#999999</color>
+    <color name="mini_cardlimit_text_color">#000000</color>
+    <color name="mini_cardlimit_money_color">#666666</color>
+    <color name="mini_card_edti_bk">#31373e</color>
+    <color name="mini_card_edit_pop_shadow">#59000000</color>
+    <color name="setting_translucent_bg">#e0000000</color>
+    <color name="B_black">#FF000000</color>
+    <color name="C_white">#FFFFFFFF</color>
+    <color name="msp_dialog_tiltle_blue">#2277BB</color>
+    <color name="msp_text_color_gray">#333333</color>
+    <color name="msp_hint_color">#b2b2b2</color>
+    <color name="msp_line_color">#cccccc</color>
+    <color name="msp_combox_list_devider_color">#d8d8d8</color>
+
+    <drawable name="mini_web_back_text_default">#333333</drawable>
+    <drawable name="mini_web_back_text_press">#cccccc</drawable>
+    <drawable name="mini_list_devider">#bababa</drawable>
+    <drawable name="mini_page_bg_color">#ededed</drawable>
+    <drawable name="mini_win_background_draw">#00000000</drawable>
+
+</resources>

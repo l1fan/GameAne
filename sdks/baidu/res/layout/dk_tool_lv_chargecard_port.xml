@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/dk_chargecard_bg" >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/dk_chargecard_logo" />
+
+    <TextView
+        android:id="@+id/tv_list_chargecarddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dk_chargecard_date_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_list_chargecard_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="5dp"
+        android:text="@string/dk_yuan"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_list_chargecard_unit"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/tv_list_chargecard_unit"
+        android:paddingBottom="-10dp"
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/dk_serial_number"
+        android:textColor="#2f5b1f"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_chargecard_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:textColor="#2f5b1f"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="@string/dk_secret_number"
+        android:textColor="#2f5b1f"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_chargecardpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:textColor="#2f5b1f"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_chargecardtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_chargecard_number"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginBottom="16dp"
+        android:textColor="#2f5b1f"
+        android:textSize="17sp" />
+
+</RelativeLayout>

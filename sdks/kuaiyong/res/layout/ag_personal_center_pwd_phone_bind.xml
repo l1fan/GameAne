@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/ag_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_phone_change_descripte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ag_45dp"
+                android:textColor="@color/color_black_textview"
+                android:text="@string/pc_pwd_manager_tv24"
+                android:textSize="@dimen/ag_16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_et_phonenumer"
+                style="@style/linearLayout_1" >
+
+                <ImageView
+                    style="@style/imageView_user_password_phone"
+                    android:src="@drawable/ag_phone" />
+
+                <EditText
+                    android:id="@+id/et_input_phone_number"
+                    style="@style/EditText_style_input"
+                    android:hint="@string/pc_pwd_manager_tv23"
+                    android:inputType="phone" />
+
+                <ImageView
+                    android:id="@+id/phone"
+                    style="@style/close_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_verifycode"
+                style="@style/linearlayout_contain_obtainVerifyCodeButton" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/ag_150dp"
+                    android:layout_height="@dimen/ag_50dp"
+                    android:background="@drawable/ag_linearlayout_input" >
+
+                    <EditText
+                        android:id="@+id/et_phone_verify_code"
+                        style="@style/EditText_style_input"
+                        android:hint="@string/register_phone_input_verifycode"
+                        android:paddingLeft="@dimen/ag_10dp"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_obtain_verify_code"
+                    style="@style/obtainVerifyCodeButton"
+                    android:text="@string/register_phone_obtain_verifycode" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ag_10dp"
+                android:layout_marginLeft="@dimen/ag_25dp"
+                android:layout_marginRight="@dimen/ag_25dp"
+                android:layout_marginTop="@dimen/ag_506dp"
+                android:background="@drawable/ag_btn_blue_select"
+                android:text="@string/find_password_sure"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_phone_change_no_verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ag_5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/find_password_remind" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

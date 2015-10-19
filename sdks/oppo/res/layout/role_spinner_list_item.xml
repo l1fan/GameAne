@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal" 
+    android:background="@drawable/nmgc_role_item_bg_selector">
+    <TextView 
+        android:id="@+id/role_name"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="4"
+        android:textColor="#303030"
+        android:textSize="15sp"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/tb_input_bg"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/tb_lv_login_dropdown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#e0e0e0"
+        android:dividerHeight="1dp"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

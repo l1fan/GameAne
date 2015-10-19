@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/switch_account_btn_selector"
+    android:gravity="center_vertical">
+
+    <!-- <TextView
+        android:id="@+id/item_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:textSize="19dp"
+        android:textColor="#ff000000" />
+
+    <RadioButton
+        android:id="@+id/item_radio_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:button="@drawable/activity_radio_selector"
+        android:clickable="false"
+        android:focusable="false" /> -->
+        
+	<TextView 
+	    android:id="@+id/must_account_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="50dp"
+	    android:gravity="center_vertical"
+	    android:singleLine="true"
+	    android:layout_marginLeft="20dp"
+	    android:textColor="#333333"
+	    android:textSize="15sp"
+	    android:paddingLeft="10dp"/>
+	
+	<TextView 
+	    android:id="@+id/attach_user_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="50dp"
+	    android:layout_toRightOf="@id/must_account_name"
+	    android:paddingLeft="5dp"
+	    android:gravity="center_vertical"
+	    android:singleLine="true"
+	    android:visibility="gone"
+	    android:text="@string/nmgc_attach_username"
+	    android:textColor="#AAAAAA"
+	    android:textSize="12sp"/>
+
+</RelativeLayout>

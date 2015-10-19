@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" 
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/dk_tv_question_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dk_tv_question_title"
+                android:text="@string/dk_kubi"
+                android:textColor="@color/dk_color_666666"
+                android:textSize="@dimen/text_size_14_sp" />
+
+            <TextView
+                android:id="@+id/dk_tv_question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/dk_tv_question_number"
+                android:text="@string/dk_kubi"
+                android:textColor="@color/dk_color_666666"
+                android:textSize="@dimen/text_size_14_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/dk_icon_item_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/dk_ic_list_view_item" />
+
+</LinearLayout>

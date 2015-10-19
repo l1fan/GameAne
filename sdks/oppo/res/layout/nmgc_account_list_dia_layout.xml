@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="345dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/nmgc_dialog_170" >
+    <TextView 
+        android:id="@+id/nmgc_choose_account"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="@string/choice_account"
+        android:textColor="#333333"
+        android:textSize="19sp"
+        android:gravity="center"/>
+    
+    <TextView
+    	android:id="@+id/nmgc_switch_account_tx"
+     	android:layout_width="match_parent"
+    	android:layout_height="42dp"
+    	android:layout_alignParentBottom="true"
+     	android:gravity="center"
+    	android:layout_marginLeft="23dp"
+     	android:layout_marginRight="23dp"
+     	android:layout_marginBottom="10dp"
+      	android:background="@drawable/nmgc_green_btn_selector"
+      	android:textColor="#ffffff"
+     	android:text="@string/switch_account_use_other"
+     	android:textSize="15.5sp" />
+    
+   <!--  <RelativeLayout 
+	        android:id="@+id/nmgc_switch_account"
+        	android:layout_height="50dp"
+        	android:layout_width="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:layout_alignParentRight="true"
+        	android:gravity="center_vertical"
+        	android:layout_marginRight="10dp">
+        	<TextView
+        	    android:id="@+id/nmgc_switch_account_tx"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textColor="#00925f"
+        	    android:text="@string/switch_account_use_other"
+        	    android:textSize="14sp" />
+        	<TextView 
+            	android:layout_height="0.5dp"
+            	android:layout_width="match_parent"
+            	android:layout_alignLeft="@id/nmgc_switch_account_tx"
+            	android:layout_alignRight="@id/nmgc_switch_account_tx"
+            	android:layout_alignBottom="@id/nmgc_switch_account_tx"
+            	android:background="#00925f"/>
+
+    	</RelativeLayout> -->
+    <ListView 
+        android:id="@+id/account_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="@drawable/listview_item_padding_divider"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/nmgc_choose_account"
+        android:layout_above="@id/nmgc_switch_account_tx">
+        
+    </ListView>
+
+</RelativeLayout>

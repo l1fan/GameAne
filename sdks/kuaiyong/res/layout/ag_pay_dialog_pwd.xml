@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ag_shape_white_only2"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/ag_tv_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ag_20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/ag_pay_red_packet_tv22" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/ag_15dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:background="@color/color_gray_white" />
+
+        <TextView
+            android:id="@+id/ag_tv_descripte_little"
+            style="@style/ag_tv_descripte_little"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/ag_10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/ag_pay_tv1" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ag_10dp"
+            android:background="@drawable/ag_shape_white"
+            android:hint="@string/ag_pay_tv2"
+            android:inputType="textPassword"
+            android:padding="@dimen/ag_10dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/ag_tv_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ag_20dp"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:background="@drawable/ag_btn_blue_select"
+            android:text="@string/find_password_sure" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ag_20dp" >
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/ag_25dp"
+                android:clickable="true"
+                android:text="@string/pc_pwd_manager_tv19" />
+
+            <TextView
+                android:id="@+id/tv_give_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/ag_25dp"
+                android:clickable="true"
+                android:text="@string/ag_pay_tv3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

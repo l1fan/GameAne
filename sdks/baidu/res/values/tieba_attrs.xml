@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+    <declare-styleable name="TbRichTextView"> 
+        <attr name="segmentMargin" format="dimension"/>
+        <attr name="textPadding" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="linkColor" format="color"/>
+        <attr name="lineSpacing" format="float"/>
+        <attr name="maxImageWidth" format="dimension"/>
+        <attr name="maxImageHeight" format="dimension"/>
+        <attr name="defaultImage" format="reference"/>
+        <attr name="faceWidth" format="dimension"/>
+        <attr name="faceHeight" format="dimension"/>
+        <attr name="videoImage" format="reference"/>
+    </declare-styleable> 
+    
+    <declare-styleable name="AdpPullToRefreshScrollView">
+
+        <!-- 模式 -->
+        <attr name="adpMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+        </attr>
+
+        <!-- 当下拉到某一个差值的时候开始执行刷新动作的临界值 -->
+        <attr name="adpHeaderNeedRefreshDelta" format="dimension" />
+
+        <!-- 当上拉到某一个差值的时候开始执行刷新动作的临界值 -->
+        <attr name="adpFooterNeedRefreshDelta" format="dimension" />
+
+        <!-- 刷新header的高度 -->
+        <attr name="adpHeaderHeight" format="dimension" />
+
+        <!-- 下拉回位的动画duration time -->
+        <attr name="adpHeaderDurationTime" format="integer" />
+
+        <!-- 上拉回位的动画duration time -->
+        <attr name="adpFooterDurationTime" format="integer" />
+
+    </declare-styleable>
+
+    <!--下拉刷新控件自定义属性-->
+    <declare-styleable name="RefresherView">
+        <attr name="direction"
+              format="string"/>
+        <attr name="max_height"
+              format="dimension"/>
+        <attr name="threshold_height"
+              format="dimension"/>
+        <attr name="refresher_head"
+              format="integer"/>
+        <attr name="refresher_content"
+              format="integer"/>
+        <attr name="empty_view"
+              format="integer"/>
+    </declare-styleable>
+
+    <!--指示器控件自定义属性-->
+    <declare-styleable name="IndicatorView">
+        <attr name="spacing"
+              format="dimension"/>
+        <attr name="drawable"
+              format="reference"/>
+        <attr name="selector"
+              format="reference"/>
+        <attr name="autoHide"
+              format="boolean"/>
+        <attr name="count"
+              format="integer"/>
+    </declare-styleable>
+</resources>

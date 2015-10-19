@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/sogou_game_sdk_float_menu_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/sogou_game_sdk_float_icon"
+        android:contentDescription="@string/sogou_game_sdk_app_name" />
+
+</RelativeLayout>
