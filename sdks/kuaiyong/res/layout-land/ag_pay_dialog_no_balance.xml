@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ag_alert_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/ag_30dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ag_10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ag_pay_tv7" />
+
+                <TextView
+                    android:id="@+id/tv_pay_balance"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0.00元" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/ag_tv_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ag_pay_tv8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ag_20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_pay_no_balance_give_up"
+                style="@style/ag_tv_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ag_10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ag_btn_gray"
+                android:text="@string/ag_pay_tv5" />
+
+            <Button
+                android:id="@+id/btn_pay_no_balance_now_recharge"
+                style="@style/ag_tv_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ag_10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ag_btn_blue_select"
+                android:text="@string/ag_pay_tv6" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

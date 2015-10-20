@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/nmgc_log_reg_width"
+    android:layout_height="@dimen/nmgc_boyclick_webview_height"
+    android:background="@drawable/nmgc_dialog_170"
+    android:orientation="vertical" >
+    
+    <WebView
+    	android:id="@+id/nmgc_ad_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@android:color/transparent" 
+        android:layout_centerInParent="true" />    
+    <include
+        android:id="@+id/inc_loading_full_root"
+        layout="@layout/nmgc_loading_full"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/nmgc_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/nmgc_ad_webview"
+        android:layout_alignTop="@id/nmgc_ad_webview"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/nmgc_ad_x" />
+
+</RelativeLayout>

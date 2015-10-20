@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.quicklogin" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="ql_CheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ql_checkbox_btn_selector</item>
+    </style>
+
+    <style name="ql_HoloButtonStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:maxWidth">@dimen/ql_button_max_width</item>
+        <item name="android:minWidth">@dimen/ql_button_min_width</item>
+        <item name="android:layout_height">@dimen/ql_button_height</item>
+        <item name="android:paddingRight">@dimen/ql_button_paddingRight</item>
+        <item name="android:paddingLeft">@dimen/ql_button_paddingLeft</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/ql_button_text_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="ql_dialog" parent="@android:style/Theme.Dialog">
+         <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/ql_transparent</item>
+        <item name="android:windowBackground">@color/ql_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+</resources>

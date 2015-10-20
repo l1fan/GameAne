@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_find_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ag_50dp"
+		android:background="@drawable/ag_lay_top"
+	    android:orientation="vertical"
+	    >
+
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_bind_phone"
+            android:textSize="@dimen/ag_18sp"
+            android:textColor="@color/color_black_textview"
+            android:layout_centerInParent="true"
+            />
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ag_50dp"
+		android:background="@drawable/ag_lay_bottom"
+	    android:orientation="vertical"
+	    >
+
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find_password_sure"
+            android:textSize="@dimen/ag_18sp"
+            android:textColor="@color/color_deep_blue"
+            android:layout_centerInParent="true"
+            />
+        
+        
+    </RelativeLayout>
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

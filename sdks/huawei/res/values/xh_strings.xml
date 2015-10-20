@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xh_switch">切换</string>
+    <string name="xh_edit_user">编辑马甲</string>
+    <string name="xh_switch_user">切换账号</string>
+    <string name="xh_create_sub">创建新马甲</string>
+    <string name="xh_modify_sub">修改马甲</string>
+    <string name="xh_use_old_game_sub">使用已有游戏账号登录</string>
+    <string name="xh_logining">正在登录华为帐号</string>
+    <string name="xh_no_default_user">无默认用户</string>
+    <string name="xh_ok">确定</string>
+    <string name="xh_creating_user">正在创建新马甲</string>
+    <string name="xh_modifying_user">正在修改马甲</string>
+    <string name="xh_game_acct_fail">马甲登陆失败请重试</string>
+    <string name="xh_add_game_acct_fail">创建新马甲失败请重试</string>
+    <string name="xh_update_game_acct_fail">修改马甲失败请重试</string>
+    <string name="xh_second_before">1分钟内</string>
+    <string name="xh_minute_before">分钟前</string>
+    <string name="xh_hour_before">小时前</string>
+    <string name="xh_day_before">天前</string>
+    <string name="xh_month_before">个月前</string>
+    <string name="xh_year_before">年前</string>
+    <string name="xh_default_user">默认账号</string>
+    <string name="xh_user_create">马甲</string>
+    <string name="xh_over_ten_user">创建失败，您的马甲数量已达到上限</string>
+    <string name="xh_same_user">该马甲已经存在</string>
+    <string name="xh_is_loading">加载中...</string>
+    <string name="xh_is_default_user">默认账号不允许修改</string>
+    <string name="xh_login_success">登录成功</string>
+    <string name="xh_server_cer_error">证书验证不通过，请检查手机时间设置</string>
+    <string name="xh_name_null_error">马甲名称不允许为空</string>
+    <string name="xh_login_time_default">从未使用</string>
+    <string name="xh_select_subaccount_login">请选择一个账号登录</string>
+    <string name="xh_sub_account_limit">马甲数目已达到上限</string>
+    <string name="xh_sub_account_tips">注：马甲名称公开可见，请不要输入敏感信息</string>
+</resources>

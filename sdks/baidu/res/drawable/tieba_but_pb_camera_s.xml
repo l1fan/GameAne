@@ -1,0 +1,4 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:drawable="@drawable/tieba_common_title_btn_bg" />  
+    <item android:drawable="@drawable/tieba_but_pb_camera_n" />  
+</layer-list>  

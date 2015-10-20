@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dk_ll_numberbox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <GridView
+        android:id="@+id/dk_list_mynumberbox"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@color/dk_transparent"
+        android:numColumns="1"
+        android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray"
+        android:scrollbars="vertical"
+        android:verticalSpacing="10dp" />
+
+    <LinearLayout
+        android:id="@+id/dk_layout_box_no_history"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_ic_numberbox_no_recode" />
+
+        <Button
+            android:id="@+id/bd_btn_intent01"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dk_btn_selector_intent"
+            android:text="@string/dk_goto_baidu_start"
+            android:textColor="@drawable/dk_btn_textcolor_selector" />
+
+        <include
+            android:id="@+id/dk_custom_bottom0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            layout="@layout/dk_user_bottom_logo"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

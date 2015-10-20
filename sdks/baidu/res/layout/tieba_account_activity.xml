@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ListView 
+		android:id="@+id/list" 
+		android:layout_below="@+id/title"
+		android:background ="@color/tieba_backgroundcolor"
+		android:padding="0px"
+		android:cacheColorHint="@android:color/transparent"
+		android:divider="@drawable/tieba_list_divider"
+		android:listSelector="@drawable/tieba_list_selector"
+    	android:dividerHeight="2dip" 
+    	android:smoothScrollbar="true"
+    	android:fadingEdgeLength="3dip"
+   		android:fadingEdge="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+	</ListView>
+	<LinearLayout 
+		android:id="@id/title" 
+		style="@style/title_margin"
+		android:layout_alignParentTop="true"
+		android:layout_gravity="top"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<ImageView
+            android:id="@+id/title_back"
+		    style="@style/comm_controls"
+		    android:layout_gravity="center_vertical"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		</ImageView>
+		<TextView 
+			android:id="@+id/title_text" 
+			android:text="@string/tieba_account_manager"
+			android:layout_width="wrap_content" 
+			android:gravity="center_horizontal"
+			style="@style/title_info_shadow"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			android:singleLine="true"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center_vertical">
+		</TextView>
+		
+		<Button 
+		    android:id="@+id/edit" 
+		    android:text="@string/tieba_edit"
+            android:layout_gravity="center_vertical"
+			style="@style/title_comm">
+		</Button>
+
+	</LinearLayout>
+</RelativeLayout>

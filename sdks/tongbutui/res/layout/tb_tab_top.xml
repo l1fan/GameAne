@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/tb_ll_title_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tb_iv_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="center"
+                android:src="@drawable/tb_tab_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:id="@+id/tb_ll_title_close"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:id="@+id/tb_iv_title_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="center"
+                android:src="@drawable/tb_tab_close" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tb_layout_title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tb_tab_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tb_tv_title_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#ff333333"
+                android:textSize="20sp"
+                android:text="@string/tb_user_login" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#bbbbbb" />
+</LinearLayout>

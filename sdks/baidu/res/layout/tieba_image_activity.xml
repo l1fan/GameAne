@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background ="@color/tieba_black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <com.baidu.tiebasdk.view.MultiImageView
+        android:id="@+id/viewpager"
+        android:background="@android:color/black"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"/>
+	<LinearLayout 
+		android:id="@+id/title" 
+		android:layout_gravity="top"
+		style="@style/title_margin"
+		android:gravity="center_vertical"
+		android:background="@drawable/tieba_black_title_bg"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<Button 
+			android:id="@+id/back"
+			android:background="@drawable/tieba_black_back"
+			android:text="@string/tieba_back"
+			style="@style/comm_controls"
+			android:layout_marginLeft="6dip"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center_vertical|left">
+		</Button>
+		<TextView
+            android:id="@+id/titel_text"
+            android:layout_weight="1"
+            style="@style/title_info_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:singleLine="true" >
+        </TextView>
+		<FrameLayout
+			android:layout_weight="0"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_marginRight="8dp">
+			<Button 
+				android:id="@+id/save"
+				android:paddingLeft="8dip"
+				android:paddingRight="8dip"
+				android:background="@drawable/tieba_black_button"
+				android:text="@string/tieba_save"
+				style="@style/comm_controls"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" >
+			</Button>
+			<ProgressBar 
+				android:id="@+id/progress"
+				android:visibility="gone"
+				android:indeterminateDrawable="@drawable/tieba_progressbar"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_gravity="center"
+				style="?android:attr/progressBarStyleSmall">
+			</ProgressBar>
+		</FrameLayout>
+	</LinearLayout>
+</FrameLayout>

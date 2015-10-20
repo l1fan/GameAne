@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/color_bg" >
+
+    <include
+        android:id="@+id/login_hand_title"
+        layout="@layout/ag_title" />
+
+    <RelativeLayout 
+        android:layout_below="@id/login_hand_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+  
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+    
+    <LinearLayout
+        style="@style/linearlayout_textview"
+        android:id="@+id/ll_title_desc"
+        android:layout_marginTop="@dimen/ag_505dp"
+       
+         >
+
+    <TextView
+        style="@style/textView_linearLayout"
+        android:text="@string/login_hand_7659"
+        
+         />
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        style="@style/linearLayout_1"
+        android:id="@+id/ll_et_username"
+        android:layout_below="@id/ll_title_desc"
+       >
+        
+        
+        <ImageView 
+            style="@style/imageView_user_password_phone"
+            android:src="@drawable/ag_username"
+            />
+        
+        
+        <EditText 
+            style="@style/EditText_style_input"
+            android:id="@+id/et_account"
+            android:hint="@string/login_hand_input_user_or_phone"
+            />
+        
+        <ImageView 
+            style="@style/close_image"
+            android:id="@+id/close_account"
+            />
+        
+        
+        
+    </LinearLayout>
+    
+     
+    <LinearLayout
+        style="@style/linearLayout_1"
+        android:id="@+id/ll_et_password"
+        android:layout_marginTop="@dimen/ag_15dp"
+        android:layout_below="@id/ll_et_username">
+        
+        
+        <ImageView 
+            style="@style/imageView_user_password_phone"
+            android:src="@drawable/ag_pwd"
+           	/>
+        
+        
+        <EditText 
+            android:id="@+id/et_login_password"
+            android:hint="@string/login_hand_input_password"
+            android:inputType="textPassword"
+            style="@style/EditText_style_input"/>
+        
+        <ImageView 
+            style="@style/close_image"
+            android:id="@+id/close_password"
+           />
+        
+    </LinearLayout>
+    
+    
+    <TextView 
+        style="@style/textview_register_forget"
+        android:id="@+id/tv_quick_register"
+        android:text="@string/login_hand_quick_register"
+        />
+    
+    <TextView 
+        style="@style/textview_register_forget"
+        android:id="@+id/tv_forget"
+        android:text="@string/login_game_forget"
+        android:layout_marginRight="@dimen/ag_25dp"
+        android:layout_alignParentRight="true"/>
+    
+
+    <Button
+        style="@style/button_blue_style"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/ll_et_password"
+        android:layout_marginTop="@dimen/ag_60dp"
+        android:layout_marginBottom="@dimen/ag_513dp"
+        android:text="@string/login_hand_login_now" />
+    
+    
+    
+
+  </RelativeLayout>
+  
+  </ScrollView>
+  
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/ag_20dp"
+      >
+        
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginRight="@dimen/ag_5dp"
+            android:background="@color/color_gray"/>
+        
+        
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"/>
+         
+         
+         
+        <TextView 
+            android:id="@+id/sdk_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdk版本号"/>
+        
+          
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("/>
+        
+          
+        <TextView 
+            android:id="@+id/channelId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="渠道ID"/>  
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"/>
+        
+         <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ag_5dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:background="@color/color_gray"/>
+        
+        
+    </LinearLayout>
+    
+    
+    
+  </RelativeLayout>
+        
+    
+</RelativeLayout>

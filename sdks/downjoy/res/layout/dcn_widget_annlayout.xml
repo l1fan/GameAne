@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dcn_annview_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:visibility="invisible">
+
+    <com.downjoy.widget.TitleLayout
+        android:id="@+id/dcn_titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.downjoy.widget.DashedLine
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp" />
+
+
+    <WebView
+        android:id="@+id/dcn_content"
+        style="@style/dcn_content"
+        android:scrollbars="vertical"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="0dp" />
+
+    <com.downjoy.widget.DashedLine
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="4dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/dcn_show_nomore"
+            style="@style/dcn_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/dcn_checkbox"
+            android:text="该条不再显示"
+            android:textColor="@color/dcn_gray_light" />
+
+        <TextView
+            android:id="@+id/dcn_next"
+            style="@style/dcn_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/dcn_orange_btn_selector"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:clickable="true"
+            android:text="知道了"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</LinearLayout>

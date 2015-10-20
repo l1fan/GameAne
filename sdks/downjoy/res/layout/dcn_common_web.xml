@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/dcn_actionbar"
+        layout="@layout/dcn_custom_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_title_height"
+        android:background="@drawable/dcn_actionbar_bg_dark" />
+    <!-- 网页内容 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dcn_actionbar"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/dcn_rg_web_title_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dcn_divider_size"
+                android:background="@color/dcn_color_login_box_gb" />
+
+            <WebView
+                android:id="@+id/dcn_common_wv_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/dcn_white"
+                android:overScrollMode="never"
+                android:visibility="visible" />
+            <!-- 底部栏 -->
+            <include
+                android:id="@+id/dcn_ll_web_footer_bar"
+                layout="@layout/dcn_custom_footerbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dcn_footerbar_height"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

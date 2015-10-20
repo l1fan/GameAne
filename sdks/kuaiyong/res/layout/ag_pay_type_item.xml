@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_cash_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_pay_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ag_20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ag_10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ag_more" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/ag_10dp"
+                android:id="@+id/tv_cash_check"
+                style="@style/ag_tv_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ag_pay_red_packet_tv4" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignTop="@+id/ll_pay_image"
+            android:layout_alignBottom="@+id/ll_pay_image"
+            android:id="@+id/iv_cash_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ag_ok_small"
+            android:layout_marginRight="@dimen/ag_20dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp">
+        
+        <!-- The left region -->
+        <RelativeLayout 
+            android:layout_width="128dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="4dp">
+            
+            <!-- The question type region -->
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+            	android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_above="@+id/dk_layout_baidu_logo">
+                
+                <TextView 
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:textColor="@color/dk_color_666666"
+                   	android:layout_marginBottom="4dp"
+                  	android:textSize="@dimen/text_size_14_sp"
+                   	android:text="@string/dk_customer_question_type" />
+                
+                <ScrollView 
+                    android:id="@+id/dk_scroll_view_question_type"
+                    android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_marginBottom="8dp"
+	                android:fadeScrollbars="false"
+		            android:scrollbarStyle="insideOverlay"
+		            android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray">
+		                
+	                <LinearLayout 
+	                    android:id="@+id/dk_layout_question_type"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:paddingLeft="8dp"
+	                    android:paddingRight="8dp"
+	                    android:paddingBottom="8dp"
+	                    android:orientation="vertical"
+	                    android:gravity="center_horizontal">
+	                    
+	                </LinearLayout>
+	            </ScrollView>
+	            
+                <LinearLayout 
+                    android:visibility="gone"
+                    android:id="@+id/dk_layout_question_detail_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    
+                    <Button
+				        android:id="@+id/dk_btn_question_detail_type"
+				        android:layout_width="108dp"
+				        android:layout_height="30dp"
+				        android:gravity="center"
+				        android:textColor="@color/dk_color_666666"
+				        android:layout_marginTop="12dp"
+				        android:text="@string/dk_btn_string_pay"
+				        android:textSize="@dimen/text_size_14_sp"
+				        android:background="@drawable/dk_bg_other_pay_press" />
+                </LinearLayout>
+             </LinearLayout>
+             <!-- The question type region end -->
+                
+             <!-- The bottom logo region -->
+             <LinearLayout 
+                 android:id="@+id/dk_layout_baidu_logo"
+                 android:layout_width="fill_parent"
+                 android:layout_height="56dp"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_alignParentBottom="true">
+                
+                <ImageView
+			        android:id="@+id/dk_image_view_divider_bottom"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/dk_ic_custom_divider"/>
+             
+             	<ImageView
+		            android:layout_width="66dp"
+		            android:layout_height="22dp"
+		            android:layout_marginTop="8dp"
+		            android:background="@drawable/dk_logo_baidu" />
+                    
+                    <TextView 
+				        android:id="@+id/tv_customer_number"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:layout_marginTop="4dp"
+				        android:textColor="#838383"
+				        android:textSize="14sp"
+				        android:gravity="center_horizontal|center_vertical"
+				        android:layout_gravity="center_horizontal"
+				        android:text="@string/dk_customer_service_number" />
+            </LinearLayout>
+            <!-- The bottom logo region end -->
+       	</RelativeLayout>
+       	<!-- The left region end -->
+        
+      	<!-- The right region -->
+      	<LinearLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="fill_parent"
+          	android:orientation="vertical"
+          	android:paddingTop="12dp"
+          	android:paddingLeft="8dp"
+          	android:paddingRight="8dp"
+          	android:layout_marginLeft="12dp">
+             
+            <LinearLayout
+                android:id="@+id/dk_layout_question_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                    
+                <TextView 
+                 	android:layout_width="wrap_content"
+                 	android:layout_height="wrap_content"
+                 	android:textSize="@dimen/text_size_14_sp"
+                 	android:textColor="@color/dk_color_0066cc"
+                 	android:text="@string/dk_customer_tip_question_title"/>
+                
+                <ListView
+                    android:id="@+id/dk_list_view_question"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="4dp"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:scrollbars="vertical"
+                    android:listSelector="@color/dk_transparent"
+                    android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray"/>
+		    </LinearLayout>
+		    
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/dk_layout_question_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:id="@+id/dk_tv_question_detail_title"
+                 	android:layout_width="wrap_content"
+                 	android:layout_height="wrap_content"
+                 	android:textSize="@dimen/text_size_14_sp"
+                 	android:textColor="@color/dk_color_333333"
+                 	android:text="@string/dk_customer_tip_question_title"/>
+                
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="12dp"
+                    android:fadeScrollbars="false"
+                    android:fillViewport="true"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray" >
+
+                    <TextView
+                        android:id="@+id/dk_tv_question_detail_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dk_customer_tip_question_title"
+                        android:textColor="@color/dk_color_666666"
+                        android:textSize="@dimen/text_size_14_sp" />
+
+                </ScrollView>
+            </LinearLayout>
+     	</LinearLayout>
+     	<!-- The right region end -->
+     </LinearLayout>
+</LinearLayout>

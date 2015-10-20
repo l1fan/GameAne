@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/18.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.baidu.demo.test</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    
+    <!-- ↓↓↓ SDK ↓↓↓ -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- ↑↑↑ SDK ↑↑↑ -->
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:name="com.baidu.gamesdk.BDGameApplication" >
+
+         <meta-data android:name="BDPlatformType" android:value="0" />
+        
+        
+        <meta-data android:name="BDGameVersion" android:value="3.2.0" />
+        
+        <activity
+            android:name="com.baidu.platformsdk.LoginActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/bdp_dialog_style_fullscreen"/>
+        <activity
+            android:name="com.baidu.platformsdk.AssistActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/bdp_dialog_style_fullscreen"/> 
+        <activity
+            android:name="com.baidu.platformsdk.BindPhoneActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/bdp_dialog_style_fullscreen"/>
+        
+        <activity
+            android:name="com.baidu.platformsdk.CashierDeskActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false" 
+            android:theme="@style/bdp_dialog_style_fullscreen"
+            android:windowSoftInputMode="adjustPan"/>
+        
+        <activity
+            android:name="com.baidu.platformsdk.WebActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan"/>
+
+        
+        <activity
+            android:name="com.baidu.platformsdk.ModifyPasswordActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/bdp_dialog_style_fullscreen"/>
+        <activity
+            android:name="com.baidu.platformsdk.ThirdPartyLoginActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:exported="false"/>
+        <activity
+            android:name="com.baidu.platformsdk.VisitorBindActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/bdp_dialog_style_fullscreen"/> 
+        <activity
+            android:name="com.baidu.platformsdk.BaiduBeanDetailActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/bdp_dialog_style_fullscreen" /> 
+        <activity
+            android:name="com.baidu.platformsdk.OrderDetailActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/bdp_dialog_style_fullscreen" />
+         
+        
+        <activity
+            android:name="com.baidu.platformsdk.SapiWebActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/bdp_dialog_style_fullscreen" />
+        <activity
+            android:name="com.baidu.platformsdk.SapiLoginProxyActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/bdp_dialog_style_fullscreen" />
+        
+        <service
+            android:name="com.baidu.platformsdk.BDPlatformService"
+            android:exported="false" />
+
+        <!-- ↑↑↑ SDK ↑↑↑ -->
+
+
+        <!-- ↓↓↓ 百度钱包 ↓↓↓ -->
+        <activity
+            android:name="com.baidu.android.pay.ui.WelcomeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivityWelcome"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baidu.android.pay.ui.PayResultActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.baidu.android.pay.ui.PwdCheckActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name="com.baidu.android.pay.ui.PwdSetActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name="com.baidu.android.pay.ui.PwdConfirmActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name="com.baidu.android.pay.ui.PwdPayActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivitTranslucent"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.baidu.android.pay.ui.PwdPaySmsActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivitTranslucent"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baidu.android.pay.ui.WebViewActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.baidu.android.pay.ui.BindFirstActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.baidu.android.pay.ui.BindSecondActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baidu.android.pay.ui.BindSecondCreditAcitvity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baidu.android.pay.ui.BindSecondCredit2Activity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baidu.android.pay.ui.BindThirdActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.baidu.android.pay.ui.SelectBindCardActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baidu.android.pay.ui.LoginActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baidu.android.pay.ui.PassNormalizeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baidu.android.pay.ui.OrderHomeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/EbpayThemeActivit"
+            android:windowSoftInputMode="stateHidden" />
+             
+
+        <!-- ↑↑↑ 百度钱包 ↑↑↑ -->
+        
+        <!-- ↓↓↓ passport ↓↓↓ -->
+        <activity
+            android:name="com.baidu.sapi2.utils.LoginProtectAcitivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/bdp_SapiTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- ↑↑↑ passport ↑↑↑ -->
+
+
+        <!-- ↓↓↓ 银联SDK ↓↓↓ -->
+        <activity android:name="com.unionpay.uppay.PayActivity"
+            android:screenOrientation="landscape" />
+        <!-- ↑↑↑ 银联SDK ↑↑↑ -->
+        
+        <!-- ↓↓↓ 支付宝插件 ↓↓↓ -->
+        <activity android:name="com.alipay.sdk.app.H5PayActivity"
+                   android:configChanges="orientation|keyboardHidden|navigation"
+                   android:exported="false"
+                   android:screenOrientation="behind" />
+        <activity android:name="com.alipay.sdk.auth.AuthActivity"
+                   android:configChanges="orientation|keyboardHidden|navigation"
+                   android:exported="false"
+                   android:screenOrientation="behind" />
+        <!-- ↑↑↑ 支付宝插件 ↑↑↑ -->
+        
+        <!-- ↓↓↓ 多酷SDK ↓↓↓ --> 
+         <activity
+            android:name="com.duoku.platform.ui.DKContainerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+
+        <service android:name="com.duoku.platform.service.DKSuspensionService" />
+
+        <!-- 贴吧 start -->
+        <activity
+            android:name="com.baidu.tiebasdk.ext.motu.SelectBarActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" />
+        <activity
+            android:name="com.baidu.tiebasdk.account.InputUserNameActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.account.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.account.Register2Activity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.account.ActivationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.account.ProtocolActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.frs.FrsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.frs.FrsImageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.mention.MentionActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.mention.ReplyMeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.mention.AtMeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.pb.NewPbActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.pb.ImagePbActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.write.WriteActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.write.VcodeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.write.NewVcodeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.write.AtListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.write.WriteImageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.pb.ImageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baidu.tiebasdk.pb.WebActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.baidu.tiebasdk.more.AccountActivity" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <!-- 贴吧activity end -->
+
+
+        <!-- 贴吧 service begin -->
+        <service
+            android:name="com.baidu.tiebasdk.service.TiebaUpdateService"
+            android:enabled="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.tiebasdk.service.TiebaFullUpdateService"
+            android:enabled="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.tiebasdk.service.ClearTempService"
+            android:enabled="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.tiebasdk.service.FatalErrorService"
+            android:enabled="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.tiebasdk.service.TiebaSyncService"
+            android:enabled="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.tiebasdk.service.TiebaMessageService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.baidu.tiebasdk.service.Message" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.tiebasdk.service.TiebaPrepareImageService"
+            android:enabled="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <!-- 贴吧 service end -->
+
+
+        <!-- push service client -->
+        <receiver android:name="com.duoku.platform.push.MyPushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+        <!-- push service end -->
+
+
+        <!-- 贴吧 receiver start -->
+        <receiver android:name="com.baidu.tiebasdk.service.TiebaReceiver" >
+            <intent-filter>
+                <action android:name="com.baidu.tiebasdk.broadcast.service" />
+                <action android:name="com.baidu.tiebasdk.broadcast.sync" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.tiebasdk.service.InstallReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.tiebasdk.service.SyncLoginReceiverForAs" >
+            <intent-filter>
+                <action android:name="com.baidu.tiebasdk.broadcast.syncLoginFromAS" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 贴吧  receiver end -->
+        <!-- ↑↑↑ 多酷SDK ↑↑↑ -->
+              
+    </application>
+            </manifest>
+            
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions>
+      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
+          </InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.baidu</extensionID>
+    </extensions>
+</application>

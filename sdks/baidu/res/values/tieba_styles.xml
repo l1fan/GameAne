@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="auto_skin_list">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dip</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:fadingEdge">@null</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">0dip</item>
+    </style>
+    
+    <style name="main_tab_bottom">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/tieba_main_bottom_button_color</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tieba_tabs_btn_bg</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:drawablePadding">1dip</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">0dip</item>
+    </style>
+
+    <style name="frs_pb_bottom_bar">
+        <item name="android:paddingTop">7dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/tieba_text_blue_selector_color</item>
+        <item name="android:drawablePadding">2dip</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/tieba_tabs_btn_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">0dip</item>
+    </style>
+
+    <style name="comm_controls">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">0dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:layout_marginRight">0dip</item>
+    </style>
+
+    <style name="title_comm">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_marginBottom">8dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:layout_marginRight">7dip</item>
+        <item name="android:layout_width">51dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/tieba_btn_navbar_selector</item>
+        <item name="android:textColor">@color/tieba_title_btn_text_color</item>
+    </style>
+
+    <style name="button_comm" parent="title_comm">
+        <item name="android:textColor">@color/tieba_btn_text_color</item>
+    </style>
+
+    <style name="title_info">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    
+    <style name="title_info_shadow" parent="@style/title_info">
+        <item name="android:shadowColor">#7E000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:shadowRadius">0</item>
+    </style>
+
+    <style name="title_back_info">
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="title_3_info">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:layout_marginLeft">21dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+    </style>
+
+    <style name="title_margin">
+        <item name="android:layout_marginBottom">0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+    </style>
+
+    <style name="text_info">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <style name="CustomizedWindowTitleBg">
+        <item name="android:background">#047BF0</item>
+    </style>
+
+    <style name="title" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="tieba_app" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item> <!-- remove bar shadow -->
+    </style>
+
+    <style name="custom_animate">
+        <item name="android:windowEnterAnimation">@anim/tieba_custom_menu_open</item>
+        <item name="android:windowExitAnimation">@anim/tieba_custom_menu_close</item>
+    </style>
+
+    <style name="search_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+
+    <style name="UpdateStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="input_username_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+    </style>
+
+    <style name="common_alert_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+    </style>
+
+    <style name="big_image_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="big_image_dialog_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/tieba_big_image_anim </item>
+    </style>
+
+    <style name="personal_big_button_panel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="personal_big_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">95dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="personal_big_button_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dip</item>
+    </style>
+
+    <style name="personal_big_button_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="personal_big_button_text_number">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+
+
+    <style name="text_shadow_style">
+        <item name="android:shadowColor">@color/tieba_black</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowRadius">0</item>
+    </style>
+
+    <style name="text_shadow_style_1">
+        <item name="android:shadowColor">#BFFFFFFF</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowRadius">0</item>
+    </style>
+
+    <style name="sub_pb_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/tieba_sub_pb_enter</item>
+        <item name="android:windowExitAnimation">@anim/tieba_pb_exit_anim</item>
+    </style>
+    
+    <style name="sidebar_radiobtn" mce_bogus="1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#c9c9c9</item>
+ 		<item name="android:button">@null</item> 
+ 		<item name="android:paddingLeft">18dip</item>
+    	<item name="android:background">@drawable/tieba_radio_button_bg</item>
+    	<item name="android:gravity">center_vertical</item> 
+    </style>
+    
+    <style name="sidebar_title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#494a4b</item>
+        <item name="android:paddingLeft">18dip</item>
+        <item name="android:background">@drawable/tieba_frs_sidebar_title</item>
+        <item name="android:gravity">center_vertical</item> 
+    </style>
+    
+    <style name="sidebar_content">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#c9c9c9</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">18dip</item>
+	</style>
+	
+    <style name="sidebar_radiobtn_1" mce_bogus="1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#c9c9c9</item>
+ 		<item name="android:button">@null</item> 
+ 		<item name="android:paddingLeft">18dip</item>
+    	<item name="android:background">@drawable/tieba_radio_button_bg</item>
+    	<item name="android:gravity">center_vertical</item> 
+    </style>
+    
+    <style name="sidebar_title_1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#494a4b</item>
+        <item name="android:paddingLeft">18dip</item>
+        <item name="android:background">@drawable/tieba_frs_sidebar_title</item>
+        <item name="android:gravity">center_vertical</item> 
+    </style>
+    
+    <style name="sidebar_content_1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#7b8591</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">18dip</item>
+	</style>
+	
+    
+    <style name="setting_bg_layout">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+	</style>
+    
+	
+    <style name="setting_bg_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginTop">16dip</item>
+        <item name="android:layout_marginBottom">16dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>        
+	</style>
+	
+    <style name="setting_bg_text_invalid">
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginTop">16dip</item>
+        <item name="android:layout_marginBottom">16dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+	</style>
+	
+    <style name="setting_bg_arrow">
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/tieba_icon_arrow_right</item>
+	</style>
+	
+    <style name="common_image_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">6dip</item>
+        <item name="android:paddingRight">8dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+	</style>
+    
+
+</resources>

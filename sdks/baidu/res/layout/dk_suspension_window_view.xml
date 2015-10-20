@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dk_float_window_bg"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_suspension_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="15.0dp" >
+
+        <ImageView
+            android:id="@+id/dk_iv_sus_account"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dk_user_head" />
+
+        <TextView
+            android:id="@+id/dk_iv_sus_star_bg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/dk_iv_sus_account"
+            android:layout_marginLeft="-20dip"
+            android:layout_marginTop="-20dip"
+            android:layout_toRightOf="@+id/dk_iv_sus_account"
+            android:background="@drawable/dk_icon_star_ace"
+            android:gravity="center"
+            android:padding="2dip"
+            android:text="V23"
+            android:textColor="@color/dk_color_ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dk_tv_sus_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/dk_iv_sus_account"
+            android:text="@string/dk_account_text"
+            android:textColor="@color/dk_gamesdk_white"
+            android:textSize="@dimen/text_size_18_dp" />
+
+        <TextView
+            android:id="@+id/dk_tv_user_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dk_tv_sus_account"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/dk_iv_sus_account"
+            android:text="@string/dk_dk_level_with_colon"
+            android:textColor="@color/dk_gamesdk_white"
+            android:textSize="@dimen/text_size_12_dp" />
+
+        <TextView
+            android:id="@+id/dk_tv_user_upgrage_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dk_tv_sus_account"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/dk_iv_sus_account"
+            android:text="@string/dk_account_upgrade_tips"
+            android:textColor="@color/dk_color_33a1ff"
+            android:textSize="@dimen/text_size_12_dp" />
+
+        <TextView
+            android:id="@+id/dk_tv_user_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dk_tv_sus_account"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/dk_tv_user_grade"
+            android:text="@string/dk_kubi_balance_account"
+            android:textColor="@color/dk_gamesdk_white"
+            android:textSize="@dimen/text_size_12_dp" />
+
+        <TextView
+            android:id="@+id/dk_tv_user_upgrade"
+            android:layout_width="39dip"
+            android:layout_height="19dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dk_tv_sus_account"
+            android:layout_margin="2.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dk_upgrade_bg_normal"
+            android:gravity="center"
+            android:text="@string/dk_account_upgrade"
+            android:textColor="@color/dk_gamesdk_white"
+            android:textSize="@dimen/text_size_14_dp" />
+
+        <ImageView
+            android:id="@+id/btn_enter_user_center"
+            android:layout_width="12.0dip"
+            android:layout_height="18.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dk_suspension_enter_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dk_suspension_important_information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#60000000" >
+
+        <ImageView
+            android:id="@+id/dk_iv_message_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/dk_icon_message" />
+
+        <TextView
+            android:id="@+id/dk_suspension_information_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dk_iv_message_icon"
+            android:padding="5.0dip"
+            android:singleLine="true"
+            android:text="aaaaaaaaaaaa"
+            android:textColor="#ffffC750"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dk_layout_suspension_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_suspension_message"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/dk_iv_sus_message"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dk_suspension_message_selector" />
+
+            <TextView
+                android:id="@+id/dk_tv_sus_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dk_iv_sus_message"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dk_message_title"
+                android:textColor="@color/dk_suspension_text_color_selector"
+                android:textSize="@dimen/text_size_12_sp" />
+
+            <TextView
+                android:id="@+id/dk_hint_sus_message"
+                android:layout_width="13.0dip"
+                android:layout_height="13.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dk_icon_redpoint_bg"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_8_sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_suspension_forum"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <!-- gone -->
+
+            <ImageView
+                android:id="@+id/dk_iv_sus_forum"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dk_suspension_forum_selector" />
+
+            <TextView
+                android:id="@+id/dk_tv_sus_forum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dk_iv_sus_forum"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dk_forum_title"
+                android:textColor="@color/dk_suspension_text_color_selector"
+                android:textSize="@dimen/text_size_12_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_suspension_bar"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <!-- gone -->
+
+            <ImageView
+                android:id="@+id/dk_iv_sus_bar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dk_suspension_bar_selector" />
+
+            <TextView
+                android:id="@+id/dk_tv_sus_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dk_iv_sus_bar"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dk_bar_title"
+                android:textColor="@color/dk_suspension_text_color_selector"
+                android:textSize="@dimen/text_size_12_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_suspension_gifts"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/dk_iv_sus_gifts"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dk_suspension_gifts_selector" />
+
+            <TextView
+                android:id="@+id/dk_tv_sus_gifts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dk_iv_sus_gifts"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dk_gifts_title"
+                android:textColor="@color/dk_suspension_text_color_selector"
+                android:textSize="@dimen/text_size_12_sp" />
+
+            <TextView
+                android:id="@+id/dk_hint_sus_gifts"
+                android:layout_width="13.0dip"
+                android:layout_height="13.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5.0dip"
+                android:background="@drawable/dk_icon_redpoint_bg"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_8_sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_suspension_active"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/dk_iv_sus_active"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dk_suspension_active_selector" />
+
+            <TextView
+                android:id="@+id/dk_tv_sus_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dk_iv_sus_active"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dk_active_title"
+                android:textColor="@color/dk_suspension_text_color_selector"
+                android:textSize="@dimen/text_size_12_sp" />
+
+            <TextView
+                android:id="@+id/dk_hint_sus_active"
+                android:layout_width="13.0dip"
+                android:layout_height="13.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5.0dip"
+                android:background="@drawable/dk_icon_redpoint_bg"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_8_sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_suspension_customer"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/dk_iv_sus_customer"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dk_suspension_customer_selector" />
+
+            <TextView
+                android:id="@+id/dk_tv_sus_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dk_iv_sus_customer"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dk_customer_title"
+                android:textColor="@color/dk_suspension_text_color_selector"
+                android:textSize="@dimen/text_size_12_sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

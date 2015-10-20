@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="@drawable/tieba_title_dialog_bg"
+	android:gravity="center_vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+    <TextView 
+    	android:id="@+id/text" 
+    	android:textSize="13sp"
+    	android:textColor="@color/tieba_white"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+    </TextView>
+</LinearLayout>

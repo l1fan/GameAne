@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:layout_gravity="center"
+    android:background="@drawable/ag_shape_white_only2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            style="@style/ag_tv_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/ag_pay_red_packet_tv22" />
+
+        <ImageView
+            android:id="@+id/ag_tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/close" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="@dimen/ag_15dp"
+        android:background="@color/color_gray_white" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ag_10dp"
+        android:background="@drawable/ag_shape_white"
+        android:hint="@string/ag_pay_tv2"
+        android:inputType="textPassword"
+        android:padding="@dimen/ag_10dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/ag_tv_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ag_20dp"
+        android:layout_marginLeft="@dimen/ag_10dp"
+        android:layout_marginRight="@dimen/ag_10dp"
+        android:layout_marginTop="@dimen/ag_15dp"
+        android:background="@drawable/ag_btn_blue_select"
+        android:text="@string/find_password_sure" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ag_20dp" >
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dcn_login_background"
+    android:orientation="vertical"
+    android:paddingBottom="4dip"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:paddingLeft="2dip">
+
+        <TextView
+            android:id="@+id/dcn_adv_tv_title"
+            style="@style/dcn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dip"
+            android:ellipsize="end" />
+
+        <FrameLayout
+            android:id="@+id/dcn_adv_fl_close"
+            android:layout_width="36dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/dcn_adv_ib_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:background="@android:color/transparent"
+                android:contentDescription="@null"
+                android:src="@drawable/dcn_popup_closed_selector" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.downjoy.android.volley.toolbox.NetworkImageView
+        android:id="@+id/dcn_adv_iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

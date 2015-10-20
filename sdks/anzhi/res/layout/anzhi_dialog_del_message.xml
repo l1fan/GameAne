@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/anzhi_del_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anzhi_bind_bg_message"
+        android:orientation="vertical"
+        android:paddingTop="20dp" 
+        android:paddingBottom="20dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anzhi_friendly_prompt"
+            android:textColor="@color/anzhi_2b2b2b"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider_right"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="5dp"
+            android:background="@color/anzhi_line_color" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="@string/anzhi_del_sel_message"
+            android:textColor="@color/anzhi_666666"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" >
+
+            <Button
+                android:id="@+id/anzhi_no_del"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/anzhi_button_bg_gray"
+                android:text="@string/anzhi_cancel"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/anzhi_del"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/anzhi_button_bg_green"
+                android:text="@string/anzhi_ok"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/tieba_alert_dialog_bj"
+	android:layout_height="wrap_content">
+	
+	<TextView android:layout_height="wrap_content"
+   		android:layout_width="fill_parent"
+        android:gravity="center"
+        android:textColor="#ff2874ff"
+        android:textSize="16sp"
+        android:paddingTop="15dip"
+        android:paddingBottom="18dip"
+  		android:text="@string/tieba_del_post_tip" />
+  	<TextView
+  	    android:id="@+id/confirm_text"
+  	    android:layout_height="wrap_content"
+   		android:layout_width="fill_parent"
+        android:gravity="left"
+        android:textColor="#ff303030"
+        android:textSize="16sp"
+        android:paddingBottom="34dip"
+        android:paddingLeft="20dip"
+  		android:text="@string/tieba_del_post_confirm" />  	  	
+  	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_horizontal">
+        <Button 
+            android:id="@+id/dialog_button_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dip"
+            android:paddingBottom="13dip"
+            android:layout_weight="1"
+        	android:textSize="18sp"
+        	android:textColor="#ff232323"
+        	android:background="@drawable/tieba_alert_dialog_btn_cancel"
+        	android:gravity="center"
+            android:text="@string/tieba_dialog_cancel"/>
+        <Button 
+            android:id="@+id/dialog_button_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dip"
+            android:paddingBottom="13dip"
+            android:layout_weight="1"
+        	android:textSize="18sp"
+        	android:textColor="#ff232323"
+        	android:background="@drawable/tieba_alert_dialog_btn_ok"
+        	android:gravity="center"
+            android:text="@string/tieba_dialog_ok"/>
+    </LinearLayout>
+    
+</LinearLayout>

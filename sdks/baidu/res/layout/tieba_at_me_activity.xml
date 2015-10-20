@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mention_layout_atme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@+id/atme_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="3dip"
+        android:visibility="visible" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/mention_progress_atme"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/tieba_progressbar"
+        android:visibility="gone" >
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/at_nodata"
+		android:gravity="center|center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:visibility="gone"/>
+</FrameLayout>

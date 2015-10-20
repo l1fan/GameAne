@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project nbr="ALIYUN_2" packTime="201410311749" resFlag="ALIYUN" resVersion="2"><node nbr="jars" ver="130629144038" entry=""/><node nbr="conf" ver="140126180924" entry=""/></project>
+<project nbr="SSJJ_2" packTime="201410231402" resFlag="SSJJ" resVersion="2"><node nbr="jars" ver="130629144038" entry=""/><node nbr="conf" ver="140126180924" entry=""/></project>
+<project nbr="PJ_2" packTime="201405301655" resFlag="PJ" resVersion="2"><node nbr="jars" ver="130629144038" entry=""/><node nbr="conf" ver="140126180924" entry=""/></project>
+<project nbr="SG_2" packTime="201405301655" resFlag="SG" resVersion="2"><node nbr="jars" ver="130629144038" entry=""/><node nbr="conf" ver="140126180924" entry=""/></project>
+<project nbr="UC_2" packTime="201405301655" resFlag="UC" default="true" resVersion="2"><node nbr="jars" ver="130629144038" entry=""/><node nbr="conf" ver="140126180924" entry=""/></project>
+<project nbr="SYB_2" packTime="201405301655" resFlag="SYB" resVersion="2"><node nbr="jars" ver="130629144038" entry=""/><node nbr="conf" ver="140126180924" entry=""/></project>
+<project nbr="TY_2" packTime="201405301655" resFlag="TY" resVersion="2"><node nbr="jars" ver="130629144038" entry=""/><node nbr="conf" ver="140126180924" entry=""/></project>

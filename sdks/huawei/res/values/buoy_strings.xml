@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="buoy_validParamFail">应用ID和浮标ID校验失败</string>
+    <string name="buoy_noInit">尚未初始化</string>
+    <string name="buoy_close">关闭</string>
+    <string name="buoy_cancel">取消</string>
+    <string name="buoy_update">更新</string>
+    <string name="buoy_confirm">确定</string>
+    <string name="buoy_app_update">应用更新</string>
+    <string name="buoy_initProgress">正在初始化SDK...</string>
+    <string name="buoy_noNetwork">没有网络连接</string>
+    <string name="buoy_login_fail">登录失败，请重试！</string>
+    <string name="buoy_async_login_notice">欢迎 %1$s</string>
+    <string name="buoy_notification_title_game_coupon">华为游戏券到账，点击查看</string>
+    <string name="buoy_dialog_download_gamebox_content">需要下载最新版本游戏中心才能使用，确认下载？</string>
+    <string name="buoy_dialog_download_gamebox_title">华为游戏中心</string>
+    <string name="buoy_download_gamebox_tips">正在下载华为游戏中心</string>
+    <string name="buoy_dialog_download_wallet_content">需要下载最新版本快捷支付才能使用，确认是否下载？</string>
+    <string name="buoy_dialog_download_wallet_title">提示</string>
+    <string name="buoy_download_wallet_tips">正在下载...</string>
+</resources>

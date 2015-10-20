@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+  
+	<!-- 内容 -->
+	<RelativeLayout
+	    android:layout_marginTop="10dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/pull_header">
+		
+	<!-- 提示、最近更新 -->
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:orientation="vertical"
+			android:id="@+id/pull_content"
+			android:gravity="center_horizontal">
+
+			<!-- 提示 -->
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF262626"
+				android:singleLine="true"
+				android:textSize="12sp"
+				android:paddingTop="14dip"
+				android:id="@+id/pull_text"/>
+
+			<!-- 最近更新 -->
+			<TextView
+			    android:layout_marginTop="4dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/pull_time"
+				android:singleLine="true"
+				android:textColor="#FF262626"
+				android:paddingBottom="14dip"
+				android:textSize="12sp"/>
+		</LinearLayout>
+		
+		<!-- 箭头图像、进度条 -->
+		<FrameLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/pull_content"
+			android:layout_marginRight="10dip"
+			android:layout_centerVertical="true">
+  
+			<!-- 箭头 -->
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:src="@drawable/tieba_pull_icon"
+				android:id="@+id/pull_arrow"
+			/>
+  
+			<!-- 进度条 -->
+			<ProgressBar 
+				android:id="@+id/pull_progress"
+				android:visibility="invisible"
+				android:layout_width="26dip" 
+				android:layout_height="26dip" 
+				android:indeterminateDrawable="@drawable/tieba_pull_progressbar"
+				android:layout_gravity="center"
+				style="?android:attr/progressBarStyle">
+			</ProgressBar>
+
+		</FrameLayout>
+	
+	</RelativeLayout>
+</LinearLayout>

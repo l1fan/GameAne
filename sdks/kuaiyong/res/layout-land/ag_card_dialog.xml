@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/ag_512dp"
+        android:layout_marginLeft="@dimen/ag_10dp"
+        android:layout_marginRight="@dimen/ag_10dp"
+        android:layout_marginTop="@dimen/ag_20dp"
+        android:background="@drawable/dialog_card_background" >
+        
+        <RelativeLayout 
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/ag_10dp">
+            
+          <ImageView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ag_30dp"
+            android:layout_marginRight="@dimen/ag_30dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ag_title_logo" />
+             
+             
+             
+           <ImageView
+            android:id="@+id/iv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_13dp"
+            android:background="@drawable/ag_cancle_1" />
+        
+        </RelativeLayout>
+        
+     <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ag_50dp"
+                android:layout_marginBottom="@dimen/ag_20dp"
+                android:layout_marginLeft="@dimen/ag_20dp"
+                android:layout_marginRight="@dimen/ag_20dp"
+                android:background="@drawable/ag_btn_blue"
+                android:textColor="@color/color_white"
+                android:text="@string/update_now"
+                android:textSize="@dimen/ag_18sp"
+                />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/tv_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_title"
+            android:layout_above="@id/ll"
+            android:layout_marginLeft="@dimen/ag_15dp"
+            android:layout_marginRight="@dimen/ag_15dp"
+            android:layout_marginTop="@dimen/ag_10dp"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarFadeDuration="3000"
+            android:padding="@dimen/ag_10dp"
+            android:text="@string/update_log"
+            android:textSize="@dimen/ag_16sp" />
+
+      
+
+     
+        <View 
+            android:layout_width="match_parent"
+            android:layout_below="@id/rl_title"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_white"/>
+        
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

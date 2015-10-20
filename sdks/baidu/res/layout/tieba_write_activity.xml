@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF7F7F7"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/post_title"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_below="@id/title"
+        android:hint="@string/tieba_write_title_hint"
+        android:maxLength="31"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip"
+        android:singleLine="true"
+        android:textColor="@color/tieba_write_color"
+        android:textColorHint="@color/tieba_write_hint_color"
+        android:textSize="15sp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/post_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tools"
+        android:layout_below="@id/post_title"
+        android:background="#FFF7F7F7"
+        android:gravity="fill_horizontal|top"
+        android:hint="@string/tieba_content"
+        android:maxLength="5000"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/tieba_write_color"
+        android:textColorHint="@color/tieba_write_hint_color"
+        android:textSize="15sp" >
+    </EditText>
+
+    <View
+        android:id="@+id/hold"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dip" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:layout_above="@id/hold">
+
+        <FrameLayout
+            android:id="@+id/image_container"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="8dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dip"
+                android:background="@drawable/tieba_write_image_border"
+                android:clickable="true"
+                android:focusable="false"
+                android:paddingBottom="3dip"
+                android:paddingLeft="2dip"
+                android:paddingRight="2dip"
+                android:paddingTop="2dip"
+                android:scaleType="centerInside"
+                android:visibility="gone" >
+            </ImageView>
+
+            <ProgressBar
+                android:id="@+id/image_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/tieba_progressbar"
+                android:visibility="gone" >
+            </ProgressBar>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/tieba_bg_bottom_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/image_container" >
+
+            <ImageView
+                android:id="@+id/select_at"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="8dip"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/tieba_btn_posts_a" />
+
+            <ImageView
+                android:id="@+id/select_image"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="10dip"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/tieba_btn_posts_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/location_container"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/tieba_pos_icon" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="@string/tieba_def_pos"
+                android:textColor="#ff262626"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/title"
+        style="@style/title_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/comm_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/title_info_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true" >
+        </TextView>
+
+        <Button
+            style="@style/button_comm"
+            android:id="@+id/post"
+            android:layout_gravity="center_vertical"
+            android:text="@string/tieba_send" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

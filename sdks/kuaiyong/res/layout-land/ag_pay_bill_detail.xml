@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/ag_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/ag_10dp"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp"
+                android:paddingTop="@dimen/ag_20dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv9" />
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ag_10dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp"
+                android:paddingTop="@dimen/ag_10dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv100" />
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ag_10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv15" />
+
+                <TextView
+                    android:id="@+id/tv_game_name"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ag_10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv111" />
+
+                <TextView
+                    android:id="@+id/tv_order_money"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ag_10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv122" />
+
+                <TextView
+                    android:id="@+id/tv_reduce_money"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ag_10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv16" />
+
+                <TextView
+                    android:id="@+id/tv_deduction_num"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ag_10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv17" />
+
+                <TextView
+                    android:id="@+id/tv_real_money"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ag_10dp" />
+            </RelativeLayout>
+
+           <!--  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_10dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv18" />
+
+                <TextView
+                    android:id="@+id/tv_pay_mode"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ag_10dp" />
+            </RelativeLayout> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/ag_30dp" >
+
+                <TextView
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:text="@string/ag_pay_red_packet_tv20" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/ag_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ag_10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/ag_10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ag_ok_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ag_5dp"
+            android:text="@string/ag_pay_red_packet_tv21"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/ag_20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

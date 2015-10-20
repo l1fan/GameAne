@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bdp_paycenter_bg_dialog_alert"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="7dip"
+        android:text="@string/bdp_confirm"
+        android:textColor="@color/bdp_dark_gray"
+        android:textSize="16sp"
+        />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bdp_paycenter_dialog_dot_bg"
+        android:contentDescription="@string/bdp_image" />
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical">
+	    
+        <!-- 内容文字 -->
+        <TextView 
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+		    android:paddingLeft="8dip"
+		    android:paddingRight="8dip"
+		    android:paddingTop="20dip"
+		    android:paddingBottom="10dip"
+            android:textColor="@color/bdp_dark_gray"
+            android:textSize="18sp"
+            />
+	    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:orientation="horizontal"
+            >
+            
+            <!-- 按钮A -->
+		    <Button 
+		        android:id="@+id/btn_a"
+		        android:layout_width="0dip"
+		        android:layout_height="40dip"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="8dip"
+		    	android:layout_marginRight="8dip"
+		        android:textColor="@color/bdp_white"
+		        android:background="@drawable/bdp_btn_blue_selector"
+		        android:visibility="gone"
+		        />
+            
+            <!-- 按钮B -->
+		    <Button 
+		        android:id="@+id/btn_b"
+		        android:layout_width="0dip"
+		        android:layout_height="40dip"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="8dip"
+		    	android:layout_marginRight="8dip"
+		        android:textColor="@color/bdp_white"
+		        android:background="@drawable/bdp_btn_blue_selector"
+		        android:visibility="gone"
+		        />
+        </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

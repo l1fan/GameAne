@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/frs_new_guide"
+    android:clickable="true"
+    android:background="#BB000000" >"
+    <ImageView 
+        android:id="@+id/back_to_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tieba_guide_back_app">
+    </ImageView>
+    <ImageView 
+        android:id="@+id/guide_to_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="76dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tieba_guide_frs_post">
+    </ImageView>
+    <ImageView 
+        android:id="@+id/guide_to_pull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/tieba_guide_frs_pull">
+    </ImageView>
+</FrameLayout>

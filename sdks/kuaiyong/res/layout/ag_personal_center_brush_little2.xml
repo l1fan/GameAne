@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/ag_title" />
+
+    <EditText
+        android:id="@+id/et_brush_little"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_title"
+        android:layout_marginTop="@dimen/ag_10dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:hint="刷个小号"
+        android:padding="@dimen/ag_10dp" />
+
+</RelativeLayout>

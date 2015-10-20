@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+	android:textColor="@color/tieba_text_white_selector_color"
+	android:button="@null"
+	android:paddingTop="15dip"
+	android:paddingBottom="15dip"
+	android:gravity="center"
+	android:background="@drawable/tieba_good_class_button_bg"
+/>    
+    

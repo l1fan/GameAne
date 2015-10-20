@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textwidth" format="integer"/>  
+    <attr name="typeface">  
+        <enum name="normal" value="0"/>  
+        <enum name="sans" value="1"/>  
+        <enum name="serif" value="2"/>  
+        <enum name="monospace" value="3"/>  
+    </attr>  
+
+</resources>

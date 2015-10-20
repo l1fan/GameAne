@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+            android:id="@+id/head_text_container"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingLeft="12dip"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/head_layout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="@string/tieba_pull_to_refresh"/>
+
+        <TextView
+                android:id="@+id/head_layout_refresh_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tieba_last_update_time"
+                android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/head_layout_left_arrow"
+            android:layout_toLeftOf="@id/head_text_container"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tieba_adp_down_arrow" />
+
+    <ProgressBar
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/head_text_container"
+            android:layout_centerVertical="true"
+            style="?android:attr/progressBarStyleSmall"
+            android:id="@+id/head_layout_left_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        
+
+</RelativeLayout>

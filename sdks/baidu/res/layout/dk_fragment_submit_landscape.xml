@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp" >
+
+        <!-- The left region -->
+        <RelativeLayout
+            android:layout_width="128dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical" >
+
+            <!-- The question type region -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/dk_layout_baidu_logo"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/dk_customer_question_type"
+                    android:textColor="@color/dk_color_666666"
+                    android:textSize="@dimen/text_size_14_sp" />
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="8dp"
+                    android:fadeScrollbars="false"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray" >
+
+                    <LinearLayout
+                        android:id="@+id/dk_layout_question_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp" >
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <!-- The question type region end -->
+
+            <!-- The bottom logo region -->
+            <RelativeLayout
+                android:id="@+id/dk_layout_baidu_logo"
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/dk_image_view_divider_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dk_ic_custom_divider" />
+
+                <ImageView
+                    android:id="@+id/dk_image_customer_logo"
+                    android:layout_width="66dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/dk_image_view_divider_bottom"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dk_logo_baidu" />
+
+                <TextView
+                    android:id="@+id/tv_customer_number"
+                    android:layout_below="@id/dk_image_customer_logo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/dk_customer_service_number"
+                    android:textColor="#838383"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <!-- The bottom logo region end -->
+        </RelativeLayout>
+        <!-- The left region end -->
+
+        <!-- The right region -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadeScrollbars="false"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray" >
+
+                <LinearLayout
+                    android:id="@+id/dk_layout_question_submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/dk_layout_question_submit_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/dk_et_submit_question"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/dk_payment_edittext_selector"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical|top"
+                            android:hint="@string/dk_customer_tip_submit_text"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="textMultiLine"
+                            android:minLines="5"
+                            android:nextFocusDown="@+id/dk_et_submit_phone"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/dk_color_333333"
+                            android:textSize="@dimen/text_size_14_sp" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/dk_et_submit_phone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/dk_payment_edittext_selector"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:hint="@string/dk_customer_question_phone"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:textColor="@color/dk_color_333333"
+                            android:textSize="@dimen/text_size_14_sp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/dk_btn_submit_question"
+                            android:layout_width="fill_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/dk_payment_btn_pay_selector"
+                            android:gravity="center"
+                            android:text="@string/dk_customer_question_submit"
+                            android:textColor="@color/dk_gamesdk_white"
+                            android:textSize="@dimen/text_size_16_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dk_layout_question_gamequestion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/dk_hint_question_gamequestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/dk_customer_gamequestion_hint"
+                            android:textColor="@color/dk_color_2471d0"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <!-- The right region end -->
+    </LinearLayout>
+
+</LinearLayout>

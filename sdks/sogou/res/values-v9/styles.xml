@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="sg_push_notification_text" parent="android:TextAppearance.StatusBar.EventContent" />
+    <style name="sg_push_notification_title" parent="android:TextAppearance.StatusBar.EventContent.Title" />
+
+</resources>

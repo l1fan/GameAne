@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="60dp" 
+    android:gravity="center"
+    android:visibility="gone">
+    <RelativeLayout
+        android:id="@+id/dk_message_footer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal|center_vertical"
+        >
+	<ProgressBar
+	    android:id="@+id/dk_message_footer_progress"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:indeterminateDrawable="@drawable/dk_message_footer_progressbar"
+	    style="?android:attr/progressBarStyleSmall"
+	     />
+	<TextView 
+	    android:id="@+id/dk_message_footer_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="12sp"
+	    android:layout_toRightOf="@id/dk_message_footer_progress"
+	    android:layout_marginLeft="10dp"
+	    android:text="@string/dk_message_footer_loading"
+	    />
+	</RelativeLayout>
+</RelativeLayout>

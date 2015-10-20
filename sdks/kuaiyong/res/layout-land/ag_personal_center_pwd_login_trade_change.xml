@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/ag_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ag_30dp"
+            android:orientation="vertical" >
+
+            <!-- <TextView
+                android:id="@+id/tv_description"
+                style="@style/ag_tv_descripte_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ag_15dp"
+                android:layout_marginLeft="@dimen/ag_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/pc_pwd_manager_tv12" /> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <EditText
+                    android:id="@+id/et_now_pwd"
+                    style="@style/ag_tv_descripte_large2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ag_edittext_gray"
+                    android:hint="@string/pc_pwd_manager_tv13"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/ag_15dp" />
+                
+                <ImageView 
+            		style="@style/close_image"
+            		android:layout_alignParentRight="true"
+           		 	android:id="@+id/close_local"
+           		 />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <EditText
+                    android:id="@+id/et_new_pwd"
+                    style="@style/ag_tv_descripte_large2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:hint="@string/pc_pwd_manager_tv14"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/ag_15dp" />
+                
+                <ImageView 
+            		style="@style/close_image"
+            		android:layout_alignParentRight="true"
+           		 	android:id="@+id/close_new"
+           		 />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_modify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ag_10dp"
+                android:layout_marginRight="@dimen/ag_10dp"
+                android:layout_marginTop="@dimen/ag_506dp"
+                android:background="@drawable/ag_btn_blue_select"
+                android:text="@string/pc_pwd_manager_tv15"
+                android:textSize="@dimen/ag_18sp"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ag_10dp"
+                android:layout_marginRight="@dimen/ag_25dp"
+                android:layout_marginTop="@dimen/ag_506dp"
+                android:clickable="true"
+                android:text="@string/pc_pwd_manager_tv19"
+                android:textSize="@dimen/ag_16sp"
+                android:textColor="#5BB3EA" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

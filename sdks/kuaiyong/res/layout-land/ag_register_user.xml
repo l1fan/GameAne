@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/color_bg" >
+    
+       <include layout="@layout/ag_title"
+        android:id="@+id/layout_register_user_title"/>
+       
+       
+      <ScrollView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@id/layout_register_user_title"
+          >
+       
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+        
+          >
+       
+       
+    <LinearLayout
+        style="@style/linearlayout_textview" 
+        
+        android:id="@+id/ll_register_user_title"
+        >
+        
+    
+    <TextView 
+        style="@style/textView_linearLayout"
+        android:text="@string/register_user_user_register"
+        />
+    
+    
+     </LinearLayout>
+    
+    
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/ll_et_phonenumer"
+         android:layout_below="@id/ll_register_user_title"
+          >
+     <LinearLayout 
+         style="@style/linearLayout_1"
+         android:layout_gravity="center"
+         android:layout_width="@dimen/ag_400dp"
+        >
+         
+         <ImageView 
+             style="@style/imageView_user_password_phone"
+             android:src="@drawable/ag_username"
+             />
+         
+         
+         <EditText 
+             style="@style/EditText_style_input"
+             android:id="@+id/et_input_username"
+             android:hint="@string/register_user_username"
+             />
+         
+         <ImageView 
+             style="@style/close_image"
+             android:id="@+id/clear_user"/>
+         
+         
+     </LinearLayout>
+     </LinearLayout>
+     
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/ll_verifycode"
+         android:layout_below="@id/ll_et_phonenumer"
+         >
+     <LinearLayout 
+         style="@style/linearLayout_1"
+         android:layout_gravity="center"
+         android:layout_marginTop="@dimen/ag_10dp"
+         android:layout_width="@dimen/ag_400dp"
+         >
+         
+           <ImageView 
+             style="@style/imageView_user_password_phone"
+             android:src="@drawable/ag_pwd"
+             />
+         
+         
+         <EditText 
+             style="@style/EditText_style_input"
+             android:id="@+id/et_input_login_password"
+             android:inputType="textPassword"
+             android:hint="@string/register_user_password"
+             />
+         <ImageView 
+             style="@style/close_image"
+             android:id="@+id/clear_password"
+             />
+         
+         
+     </LinearLayout>
+     </LinearLayout>
+     
+     
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/ll_btn_register_user"
+         android:layout_below="@id/ll_verifycode" >
+     
+     <Button
+         android:id="@+id/btn_register_user" 
+         style="@style/button_blue_style"
+         android:text="@string/register_user_save"
+         android:layout_width="@dimen/ag_400dp"
+         android:layout_gravity="center"
+         android:layout_marginTop="@dimen/ag_30dp"
+         />
+     </LinearLayout>
+     
+        <LinearLayout
+              android:layout_below="@+id/ll_btn_register_user"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginBottom="@dimen/ag_20dp"
+               >
+       <RelativeLayout 
+           android:layout_width="@dimen/ag_400dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           >
+       <TextView 
+        android:id="@+id/tv_register_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ag_30dp"
+        android:textColor="@color/color_baby_blue"
+        android:textSize="@dimen/ag_16sp"
+        android:text="@string/register_user_phone_quick_register"
+     
+        />
+       </RelativeLayout>
+       </LinearLayout>
+ </LinearLayout>    
+ 
+</ScrollView> 
+    
+</RelativeLayout>

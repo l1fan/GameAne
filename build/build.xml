@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Air Native Extension Game Pay SDK" default="ane" basedir="." xmlns:if="ant:if" xmlns:unless="ant:unless">
+	
+	<!-- Config -->
+	<property file="build.config" />
+	<property name="FLEX_HOME" value="${flex.sdk}"/> 
+	<taskdef resource="flexTasks.tasks"  classpath="${flex.sdk}/ant/lib/flexTasks.jar"/> 
+
+	<property name="ane.id" value="${id}" />
+	<property name="tempdir" value="${basedir}/temp" />
+	<available file="../sdks/${ane.id}_ios" type="dir" property="ios.exist"/>
+
+
+	<echo>#########################################</echo>
+	<echo>开始构建 ${ane.id} start ...</echo>
+	
+
+	<!-- 根据游戏需求，给各个渠道分配不同的extension id -->
+	<target name="config" description="Replace extension id">
+		<echo>准备配置文件 configure...</echo>
+		<copy file="conf/extension.xml" todir="${tempdir}" overwrite="true" failonerror="on"/>
+
+		<replace file="${tempdir}/extension.xml" value="com.l1fan.ane.${ane.id}">
+			<replacetoken>@ANEID@</replacetoken>
+		</replace>
+		
+		<!-- 是否支持iOS平台，根据sdks目录下是否包含xxx_ios目录判断 -->
+		<replaceregexp file="${tempdir}/extension.xml" unless:set="ios.exist">
+			<regexp pattern=".?platform name=.iPhone[\S\s]*?platform.?"/>
+			<substitution expression=""/>
+		</replaceregexp>
+	</target>
+
+	<!-- 构建AIR SWC库，该库为flash访问java时的扩展库，需要打包到ANE中，所以需要先编译该库。 -->
+	<target name="swc" description="Build SWC library">
+		<echo>编译swc库 build swc library...</echo>
+
+		<compc output="${tempdir}/gamesdk.swc">
+			<source-path path-element="../src/actionscript"/>
+			<include-sources dir="../src/actionscript" includes="*" />
+			<external-library-path file="${flex.sdk}/frameworks/libs/air/airglobal.swc" append="true"/>
+		</compc>
+	</target>
+
+	<!-- 编译Android源码 -->
+	<target name="jar" description="Build jar library">
+		<echo>编译jar包 build java library</echo>
+		<mkdir dir="${tempdir}/classes/"/>
+        
+        <!-- android代码编译时需要的两个库，other中的库从官方SDK(API22)中取出。如果安装有Android SDK可以修改下列路径为官方的 -->
+        <property name="android.classpath" value="other/android.jar;other/android-support-annotations.jar"/>
+
+		<javac srcdir="../src/java" destdir="${tempdir}/classes/" includeantruntime="false">
+			<include name="com/l1fan/ane/*.java"/>
+			<include name="com/l1fan/ane/${ane.id}/*.java"/>
+			<classpath>
+				<pathelement path="${android.classpath}"/>
+				<pathelement location="${flex.sdk}/lib/android/FlashRuntimeExtensions.jar"/>
+				<fileset dir="../sdks/${ane.id}/libs">
+					<include name="*.jar"/>
+				</fileset>
+			</classpath>
+		</javac>
+
+		<jar destfile="${tempdir}/Android-ARM/ane.jar" basedir="${tempdir}/classes">
+			<zipgroupfileset  dir="../sdks/${ane.id}/libs" includes="*.jar"/>
+		</jar>
+
+		<delete dir="${tempdir}/classes"/>
+	</target>
+
+	<!-- 打包ANE需要Android库资源，拷贝相应资源到Android-ARM/iPhone-ARM目录下供ANE打包使用 -->
+	<target name="res" description="Create jar and copy res" >
+		<echo>拷贝资源 copy resoures...</echo>
+
+		<unzip src="${tempdir}/gamesdk.swc" dest="${tempdir}/Android-ARM" overwrite="true" />
+		<unzip src="${tempdir}/gamesdk.swc" dest="${tempdir}/iPhone-ARM" overwrite="true" if:set="ios.exist" />
+
+		<copy todir="${tempdir}/Android-ARM/" overwrite="true" failonerror="false" quiet="true">
+			<fileset dir="../sdks/${ane.id}">
+				<include name="res/**"/>
+				<include name="libs/armeabi/**" />
+			</fileset>
+		</copy>
+		<!-- 由于AIR早期版本的Bug,so在armeabi和armeabi-v7a下都放一份，否则某些时候最终打包的apk中可能会打不到so -->
+		<copy todir="${tempdir}/Android-ARM/libs/armeabi-v7a/" overwrite="true" failonerror="false" quiet="true">
+			<fileset dir="../sdks/${ane.id}/libs/armeabi" includes="**"/>
+		</copy>
+
+		<copy todir="${tempdir}/iPhone-ARM" overwrite="true" failonerror="false" quiet="true">
+			<fileset dir="../sdks/${ane.id}_ios" includes="**"/>
+		</copy>
+	</target>
+	
+	<!-- 打包ANE -->
+	<target name="ane" description="Create ane" depends="config,jar,swc,res">
+		<echo>打包ANE ane packaging... </echo>
+		<java jar="${flex.sdk}/lib/adt.jar" dir="${tempdir}" failonerror="true" fork="true">
+			<arg value="-package" />
+			<arg value="-target" />
+			<arg value="ane" />
+			<arg value="${basedir}/../ane/${ane.id}/${ane.id}.ane" />
+			<arg value="extension.xml" />
+			<arg line="-swc gamesdk.swc" />
+			<arg line="-platform Android-ARM -C Android-ARM/ ." />
+			<arg line="-platform iPhone-ARM -C iPhone-ARM/ ."  if:set="ios.exist"/>
+		</java>	
+		<delete dir="${tempdir}"/>
+	</target>
+
+	<target name="swf" description="build demo app" depends="swc">
+		<mxmlc file="../demo/ANEDemo.mxml" output="${tempdir}/ANEDemo.swf"  static-rsls="true" failonerror="true" maxmemory="1024m">
+			<source-path path-element="../demo"/>
+			<library-path dir="${tempdir}" includes="*.swc" append="true"/>
+		</mxmlc>
+	</target>
+
+	<target name="android" description="Create android app" depends="swf">
+		<echo>Android Demo App packaging ... </echo>
+		<mkdir dir="../bin"/>
+		<mkdir dir="${basedir}/../ane/${ane.id}/assets/"/>
+		<copy todir="${tempdir}" file="../ane/${ane.id}/ANEDemo-app.xml" />
+		<java jar="${flex.sdk}/lib/adt.jar" dir="${tempdir}" failonerror="true" fork="true" maxmemory="1024m">
+			<arg line="-package -target apk-captive-runtime"/>
+			<arg line="-storetype pkcs12 -keystore ../conf/demo.p12 -storepass 111111"/>
+			<arg value="${basedir}/../bin/${ane.id}_demo.apk"/>
+			<arg value="ANEDemo-app.xml"/>
+			<arg value="ANEDemo.swf"/>
+		 	<arg line="-C ${basedir}/../ane/${ane.id}/assets/ ."/>
+			<arg line="-extdir ${basedir}/../ane/${ane.id}"/>
+		</java>
+		<delete dir="${tempdir}"/>
+
+	</target>
+
+	<target name="ios" description="Create ios app" depends="swf">
+		<echo>iOS Demo App packaging ... </echo>
+		<mkdir dir="../bin"/>
+		<copy todir="${tempdir}" file="../ane/${ane.id}/ANEDemo-app.xml" />
+		<java jar="${flex.sdk}/lib/adt.jar" dir="${tempdir}" failonerror="true" fork="true" maxmemory="512m">
+			<arg line="-package -target ipa-test-interpreter"/>
+			<arg line="-storetype pkcs12 -keystore ../conf/ios.p12 -storepass 111111"/>
+			<arg line="-provisioning-profile ../conf/ios.mobileprovision"/>
+			<arg value="${basedir}/../bin/${ane.id}_demo.ipa"/>
+			<arg value="ANEDemo-app.xml"/>
+			<arg value="ANEDemo.swf"/>
+			<arg line="-extdir ${basedir}/../ane/${ane.id}"/>
+		</java>
+		<delete dir="${tempdir}"/>
+	</target>
+
+	<target name="clean" description="Delete temp directory">
+		<delete dir="${tempdir}"/>
+		<delete dir="../bin"/>
+	</target>
+
+</project>

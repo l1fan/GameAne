@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ag_220dp"
+        android:background="@drawable/dialog_card_background"
+        android:layout_marginLeft="@dimen/ag_10dp"
+        android:layout_marginRight="@dimen/ag_10dp"
+        android:layout_marginTop="@dimen/ag_20dp">
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/ag_5dp" 
+            android:id="@+id/ll_title">
+             
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号信息验证"
+            android:textSize="@dimen/ag_18sp"
+            android:layout_marginTop="@dimen/ag_10dp"
+            android:textColor="@color/color_blue"
+            android:layout_gravity="center"
+            />
+            
+        </LinearLayout>
+      
+        <View 
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_below="@id/ll_title"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:background="@color/color_gray_white"/>
+        
+        <TextView 
+            android:id="@+id/tv_hint"
+            android:layout_below="@id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您长时间未登录，为保证账号安全，请输入登录密码验证身份。"
+            android:textColor="@color/color_inner_remind"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_10dp"/>
+        
+      <LinearLayout
+        style="@style/linearLayout_1"
+        android:id="@+id/ll_et_pwd"
+        android:layout_below="@id/tv_hint"
+        android:layout_height="@dimen/ag_40dp"
+        android:layout_marginTop="@dimen/ag_10dp"
+        android:layout_marginLeft="@dimen/ag_10dp"
+        android:layout_marginRight="@dimen/ag_10dp"
+       >
+        <EditText 
+            style="@style/EditText_style_input"
+            android:id="@+id/et_pwd"
+            android:paddingLeft="@dimen/ag_10dp"
+            android:hint="请输入登录密码"
+            android:inputType="textPassword"
+            android:textColor="@color/color_inner_remind"
+            />
+        
+        <ImageView 
+            style="@style/close_image"
+            android:id="@+id/close_account"
+            />
+        
+    </LinearLayout>
+        
+      <Button 
+          android:id="@+id/btn_sure"
+		  android:background="@drawable/ag_btn_blue"          
+          android:layout_below="@id/ll_et_pwd"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/ag_40dp"
+		  android:layout_marginLeft="@dimen/ag_10dp"
+		  android:layout_marginRight="@dimen/ag_10dp"
+		  android:layout_marginTop="@dimen/ag_15dp"
+          android:text="确定"
+          android:textColor="@color/color_white"/>
+      
+      
+        
+        
+        
+    </RelativeLayout>
+    
+    
+    
+</RelativeLayout>

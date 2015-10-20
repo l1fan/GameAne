@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_vcode_activity_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tieba_backgroundcolor">
+    
+    <LinearLayout 
+		android:id="@id/title" 
+		android:layout_alignParentTop="true"
+		style="@style/title_margin"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<ImageView 
+			android:id="@+id/back" 
+			android:text="@string/tieba_back"
+			style="@style/comm_controls"
+			android:layout_gravity="center_vertical"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</ImageView>
+		<View
+			android:layout_weight="1"
+			android:layout_width="0dip" 
+			android:layout_height="1dip">
+		</View>
+		<Button 
+			android:id="@+id/post" 
+			android:text="@string/tieba_send"
+			android:layout_gravity="center_vertical"
+			style="@style/title_comm"/>
+	</LinearLayout>
+    
+    
+    <com.baidu.tiebasdk.view.BaseWebView
+        android:id="@+id/new_vcode_webview"
+        android:layout_below="@id/title"
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">        
+    </com.baidu.tiebasdk.view.BaseWebView>
+    
+    <TextView
+        android:id="@+id/webview_fail_view"
+        android:layout_below="@id/title"        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="50dip"
+        android:background="@color/tieba_backgroundcolor"
+        android:drawablePadding="10dip"
+        android:drawableTop="@drawable/tieba_fail_bg"
+        android:text="@string/tieba_load_fail"
+        android:textColor="#FFC8C8C8"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:visibility="gone">
+   </TextView>
+   
+	<ProgressBar 
+		android:id="@+id/load_webview_progress"
+		android:visibility="gone"
+		android:indeterminateDrawable="@drawable/tieba_progressbar"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center"
+		android:layout_centerInParent="true"
+		style="?android:attr/progressBarStyleInverse">
+	</ProgressBar>
+	
+		<ProgressBar 
+		android:id="@+id/change_vcode_progress"
+		android:visibility="gone"
+		android:indeterminateDrawable="@drawable/tieba_progressbar"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center"
+		android:layout_centerInParent="true"
+		style="?android:attr/progressBarStyleInverse">
+	</ProgressBar>
+	
+        
+</RelativeLayout>

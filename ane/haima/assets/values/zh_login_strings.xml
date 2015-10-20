@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 登录 -->
+    <string name="zh_login_login">登录</string>
+    <string name="zh_login_logining">正在登录，请稍后...</string>
+    <string name="zh_login_autologining">自动登录中</string>
+    <string name="zh_login_swich">切换账号</string>
+    <string name="zh_login_sure">确&#160;&#160;&#160;定</string>
+    <string name="zh_login_cancle">取&#160;&#160;&#160;消</string>
+    <string name="zh_login_title">海马用户登录</string>
+    <string name="zh_login_pwd">密&#160;&#160;&#160; 码：</string>
+    <string name="zh_login_pwd_hint">请输入密码</string>
+    <string name="zh_login_phoneRegisting">一键注册中</string>
+    <string name="zh_login_autoLogin">自动登录</string>
+    <string name="zh_login_forgotPwdQuest">忘记密码?</string>
+    <string name="zh_login_findPwd">找回密码</string>
+    <string name="zh_login_nameNotLegal">请输入正确格式的账号</string>
+    <string name="zh_login_ValidPwd">密码格式不正确</string>
+    <string name="zh_login_failed">登录失败:</string>
+    <string name="zh_login_edit_hint">用户名/手机号/邮箱</string>
+    <string name="zh_login_phoneReg">手机号一键注册</string>
+    <string name="zh_login_userReg">用户名注册</string>
+    <string name="zh_login_tourist">游客登录</string>
+    <string name="zh_login_phone">客服电话：</string>
+    <string name="zh_login_show_sms">将用您的手机发送验证信息</string>
+    <string name="zh_login_tourist_string">游客</string>
+    <string name="zh_login_welcome">，欢迎回来</string>
+    <!-- 注册 -->
+    <string name="zh_regist_userName_hint">4-20个字母或数字</string>
+    <string name="zh_regist_userName_illegal">用户名应为4-20位的字母或数字(不能为纯数字)</string>
+    <string name="zh_regist_show_pwd">显示密码</string>
+    <string name="zh_regist_pwd_hint">6-20个字母或数字</string>
+    <string name="zh_regist_btnNotice">注册中</string>
+    <string name="zh_regist_regist">注&#160;&#160;&#160;册</string>
+    <string name="zh_regist_pwdNotSame">两次输入的密码不一致</string>
+    <string name="zh_regist_notice_registing">正在注册用户：</string>
+    <string name="zh_regist_congratulation">恭喜</string>
+    <string name="zh_regist_success">注册成功</string>
+    <string name="zh_regist_failederr">注册失败: </string>
+    <string name="zh_regist_failed">注册失败 </string>
+    <string name="zh_regist_cancle">取&#160;&#160;&#160;消 </string>
+    <string name="zh_regist_welcome">欢迎注册 </string>
+    <string name="zh_regist_ValidPwd">密码应为6-20位的字母或数字</string>
+    <string name="zh_hmpass_modifypwd">修改密码</string>
+    <string name="zh_hmpass_secureManage">密保管理</string>
+    <string name="zh_hmpass_consumeRecord">交易记录</string>
+    <string name="zh_recharge_history_title">充值记录</string>
+    <string name="zh_pay_history_title">消费记录</string>
+    <!-- 修改密码View -->
+    <string name="zh_modifypwd_title">修改密码 </string>
+    <string name="zh_modifypwd_newpwd_hint">请输入新密码</string>
+    <string name="zh_modifypwd_repwd_hint">请再次输入新密码</string>
+    <string name="zh_modifypwd_modifying">修改中</string>
+    <string name="zh_modifypwd_success">修改成功</string>
+    <string name="zh_modifypwd_failed">修改失败</string>
+    <string name="zh_modifypwd_notice_registing">正在修改用户密码：</string>
+    <string name="zh_modifypwd_failederr">修改密码失败: </string>
+    <string name="zh_modifypwd_failed">修改密码失败 </string>
+    <string name="zh_modifypwd_oldPwd">请输入原密码 </string>
+    <!-- 安全级别View -->
+    <string name="zh_safety_title">账号安全升级，以保障账号安全</string>
+    <string name="zh_safety_low">低</string>
+    <string name="zh_safety_unsafe">您尚未设置任何密保方式，忘记密码或账号被盗时将无法通过手机找回！</string>
+    <string name="zh_safety_bindphone">手机号绑定</string>
+    <string name="zh_safety_bindemail">邮箱绑定</string>
+    <!-- 支付页 -->
+    <string name="zh_pay_doing">正在进入安全支付环境</string>
+    <string name="zh_pay_now">立即支付 </string>
+    <string name="zh_pay_hmicon">海马币</string>
+    <string name="zh_pay_yuan">元</string>
+    <string name="zh_pay_buy">购买&#160;</string>
+    <string name="zh_pay_success"> &#160;成功! 点击按钮返回。</string>
+    <string name="zh_pay_fail">&#160;&#160;&#160;失败！</string>
+    <string name="zh_pay_notEnough">海马币余额不足,请先充值或选择其他方式支付！</string>
+    <string name="zh_pay_verify">正在验证支付信息</string>
+    <string name="zh_pay_refreshing">刷新余额中...</string>
+    <string name="zh_pay_refreshFailed">刷新余额失败</string>
+    <string name="zh_pay_errorPwd">密码不正确</string>
+    <string name="zh_pay_sure">确认支付</string>
+    <string name="zh_pay_click_recharge">请先点击充值</string>
+    <string name="zh_click_read">[点击查看]</string>
+    <!-- 充值页 -->
+    <string name="zh_recharge_center">海马充值中心</string>
+    <string name="zh_recharge_doing">正在进入安全支付环境</string>
+    <string name="zh_recharge_verify">正在验证支付信息</string>
+    <string name="zh_recharge_success">充值海马币成功! 点击按钮返回。</string>
+    <string name="zh_recharge_refresh">订单验证成功，正在刷新用户信息</string>
+    <string name="zh_recharge_title">支付宝</string>
+    <!-- 19支付页 -->
+    <string name="zh_card_title_pay">充值卡支付</string>
+    <string name="zh_card_title_recharge">充值卡充值</string>
+    <string name="zh_card_orderMoney">订单金额：</string>
+    <string name="zh_card_type">卡&#160;&#160;类&#160;&#160;型：</string>
+    <string name="zh_card_type_yidong">全国移动充值卡</string>
+    <string name="zh_card_type_dianxin">中国电信充值付费卡</string>
+    <string name="zh_card_type_liantong">全国联通一卡通</string>
+    <string name="zh_card_string_money">卡&#160;&#160;面&#160;&#160;额：</string>
+    <string name="zh_card_string_duo">多出的</string>
+    <string name="zh_card_string_exchange">元将转换成</string>
+    <string name="zh_card_string_cun">个海马币自动存入您的海马账户。</string>
+    <string name="zh_card_string_recharge">您本次充值</string>
+    <string name="zh_card_string_recharge_ge">个海马币。（1元=1个海马币）</string>
+    <string name="zh_card_number">卡&#160;&#160;&#160;&#160;&#160;&#160;号：</string>
+    <string name="zh_card_pwd">卡&#160;&#160;&#160;&#160;&#160;&#160;密：</string>
+    <string name="zh_card_number_hint">请输入充值卡卡号</string>
+    <string name="zh_card_pwd_hint">请输入充值卡密码</string>
+    <string name="zh_card_notice">温馨提示：\n1.请确保充值金额与卡实际面额一致，否则会导致充值失败。\n2.支持中国移动、中国联通、中国电信发行的全国通用手机话费充值卡。</string>
+    <string name="zh_card_btnsure">确认支付</string>
+    <string name="zh_card_yuan">元</string>
+    <string name="zh_card_pay_notice">正在支付中...</string>
+    <string name="zh_card_error_toast">输入的卡号或卡密格式不正确。</string>
+
+    <!-- 绑定页面 -->
+    <string name="zh_bind_getAuthCode">获取验证码</string>
+    <string name="zh_bind_authCode_hit">请输入收到的验证码</string>
+    <string name="zh_set_pwd">请设置密码</string>
+    <string name="zh_bind_setPPwd">请设置6-20位密码</string>
+    <string name="zh_bind_setPwd_again">请再次输入6-20位密码</string>
+    <string name="zh_bind_bindEmail_title">邮箱绑定</string>
+    <string name="zh_bind_bindEmail">绑定邮箱</string>
+    <string name="zh_bind_bindEmail_account_hint">请输入绑定的邮箱地址</string>
+    <string name="zh_bind_bindPhone">绑定手机号</string>
+    <string name="zh_bind_bindPhone_title">手机号绑定</string>
+    <string name="zh_bind_bindPhone_account_hint">请输入绑定的手机号</string>
+    <string name="zh_bind_bindPwd">设置新密码</string>
+    <string name="zh_bind_bindPwd_account_hint">请输入绑定的手机号/邮箱</string>
+    <string name="zh_bind_bindPwd_title">您可以通过以下方式找回密码</string>
+    <string name="zh_bind_miao">秒</string>
+    <string name="zh_bind_getAuthCode_again">重新获取</string>
+
+    <!-- 支付宝内容 -->
+    <string name="app_name">支付宝SDK DEMO</string>
+    <string name="settings">设置</string>
+    <string name="update">升级</string>
+    <string name="check_update">查询升级</string>
+    <string name="download">下载</string>
+    <string name="install">安装</string>
+    <string name="result">返回值</string>
+    <string name="launch_preferences">启动设置</string>
+    <string name="preference_attributes">属性设置</string>
+    <string name="global_preference">全局设置</string>
+    <string name="global_preference_summary">安全支付服务和DEMO的通用设置</string>
+    <string name="remote_call_failed">Failure calling remote service</string>
+
+    <string-array name="launch_list_entries">
+        <item>外部商户订单</item>
+        <item>远程订单</item>
+    </string-array>
+
+    <string name="order_mode">订单模式</string>
+    <string name="popup_result">显示返回值</string>
+    <string name="result_status_title">Result Status : </string>
+    <string name="memo_title">Memo : </string>
+    <string name="result_title">Result : </string>
+    <string name="check_result_title">Check Sign Result : </string>
+    <string name="external_token_title">External Token</string>
+    <string name="trade_number_title">Trade Number</string>
+    <string name="payPhaseId_title">Pay PhaseId</string>
+    <string name="taobao_pay">订单支付</string>
+    <string name="taobao_add">增加订单</string>
+    <string name="taobao_reset">订单重置</string>
+    <string name="start_order">打开订单页面</string>
+    <string name="not_null">不能为空</string>
+    <string name="extern_partner">外部商户订单</string>
+    <string name="user_id">USER ID</string>
+    <string name="btn_logon">快速登录</string>
+    <string name="data_auth">数据授权</string>
+    <string name="name">姓名</string>
+    <string name="gender">性别</string>
+    <string name="certinfo">证件</string>
+    <string name="email">邮箱</string>
+    <string name="mobile">电话</string>
+    <string name="address">地址</string>
+    <string name="logonId">LogonId</string>
+    <string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="ensure2">确&#160;定</string>
+    <string name="cancel">取消</string>
+    <string name="content_description_icon">icon</string>
+    <string name="refresh">刷新</string>
+    <string name="processing">加载中</string>
+    <string name="download_fail">下载安装包失败</string>
+    <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
+    <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
+    <string name="redo">重试</string>
+    <string name="install_msp">你尚未安装支付宝移动快捷支付服务，请立即安装</string>
+    <string name="install_alipay">你尚未安装支付宝钱包，请立即安装</string>
+
+    <!-- 充返页面 -->
+    <string name="quick_recharge">马上去充值</string>
+    <string name="goon_recharge">继续充值</string>
+    <string name="zh_custom_edit_hint">输入其它金额</string>
+    <string name="zh_good_name">商品名称:&#10;</string>
+    <string name="zh_pay_money">应付金额 : &#10;</string>
+    <string name="zh_haima_money">海马币 : &#10;</string>
+    <string name="zh_good_name_no">商品名称: &#160;</string>
+    <string name="zh_pay_money_no">应付金额: &#160;</string>
+    <string name="zh_recharge_money_with_money_code">充值金额: &#160;￥</string>
+    <string name="zh_pay_money_with_money_code">应付金额: &#160;￥</string>
+    <string name="zh_haima_money_no">海马币: &#160;</string>
+    <string name="zh_user_id_enter">当前账号: &#10;</string>
+    <string name="zh_user_id">当前账号: &#160;</string>
+    <string name="zh_qq">客服联系方式:&#10;</string>
+    <string name="zh_qq2">客服联系方式: &#160;</string>
+    <string name="zh_kf_phone">客服电话 : 400-517-517</string>
+    <string name="zh_record_title">海马用户充值</string>
+    <string name="zh_pay_title">海马用户消费</string>
+    <string name="zh_choice_paymoney">选择充值金额 (1元=1海马币)</string>
+    <string name="zh_choice_paytype">选择支付方式</string>
+    <string name="zh_record_three_title">优惠专区</string>
+    <string name="zh_record_three_title2">充值专区</string>
+    <string name="zh_record_three_title3">充值消费专区</string>
+    <string name="zh_activity_tourist">游客账号升级为正式账号享受最大100%充返权益</string>
+    <string name="zh_pay_haima_now">本次消费扣减</string>
+    <string name="zh_bi">币</string>
+    <string name="zh_yuan">元</string>
+    <string name="zh_fan">送</string>
+    <string name="zh_chong">充</string>
+    <string name="zh_pre_0">送0元</string>
+    <string name="zh_other_pay_pre">送？元</string>
+    <string name="zh_use_haima_pay">使用海马币支付</string>
+    <string name="zh_org_pls_recharge_type">余额不足，请先充值</string>
+    <string name="zh_pls_input_money">请输入要充值的金额</string>
+    <string name="zh_pay_now">正在执行消费，请稍后</string>
+    <string name="zh_recharge_result1">您已充值成功</string>
+    <string name="zh_recharge_result2">海马币,得到</string>
+    <string name="zh_recharge_result3">海马币赠送!</string>
+    <string name="zh_recharge_big_pay">请输入的金额大于消费的金额</string>
+    <string name="zh_pay_result1">本次支付扣减</string>
+    <string name="zh_payland_title_dialog">海马用户充值</string>
+    <string name="zh_activity_title_dialog">优惠活动</string>
+    <string name="zh_recharge_no0">请输入正确的充值金额</string>
+    <string name="zh_pay_no0">请输入正确的交易金额</string>
+    <!-- 个人中心-->
+    <string name="zh_pay_center">海马支付中心</string>
+    <string name="zh_usercenter_userName">账号:&#160;</string>
+    <string name="zh_usercenter_loginout">注销登录</string>
+    <string name="zh_usercenter_safeupdate">安全升级</string>
+    <string name="zh_usercenter_recordhm">充值海马币</string>
+    <string name="zh_safe_toast">您的安全级别已经达到最高，无需再升级！</string>
+
+    <string name="haima_coins">账户余额:&#160;</string>
+    <string name="haima_coins_with_enter">账户余额:&#10;</string>
+    <string name="please_select_pay_type">请选择支付方式</string>
+
+    <!-- 支付方式 -->
+    <string name="ali_pay_name">支付宝</string>
+    <string name="union_pay_name">银&#160;联</string>
+    <string name="card_pay_name">充值卡</string>
+    <string name="weixin_pay_name">微信</string>
+    <string name="mo9_pay_name">MO9</string>
+    <string name="pp_pay_name">银行卡快捷</string>
+    <string name="haima_coin_pay_type_name">海马币支付 (更多优惠)</string>
+    <string name="ali_pay_type_name">支付宝支付</string>
+    <string name="union_pay_type_name">银联手机支付</string>
+    <string name="card_pay_type_name">手机充值卡支付</string>
+    <string name="weixin_pay_type_name">微信支付</string>
+    <string name="mo9_pay_type_name">MO9支付</string>
+    <string name="pp_pay_type_name">银行卡快捷支付</string>
+    <string name="ali_pay_type_desc">推荐使用，方便快捷</string>
+    <string name="union_pay_type_desc">支持储蓄卡信用卡，无需开通网银</string>
+    <string name="card_pay_type_desc">全面支持移动、联通和电信充值卡</string>
+    <string name="weixin_pay_type_desc">超级方便快捷</string>
+    <string name="mo9_pay_type_desc">轻松付，放心玩，门槛低</string>
+    <string name="pp_pay_type_desc">支持储蓄卡信用卡，无需开通网银</string>
+    <string name="limit_hint_1">该金额已超出支付宝银行卡支付额度，请您使用支付宝余额支付或银联支付</string>
+    <string name="limit_hint_2">该金额已超出银联支付额度，建议您使用支付宝余额支付</string>
+    <string name="limit_hint_3">该金额已超出支付宝银行卡支付额度，建议您使用支付宝余额支付</string>
+
+</resources>

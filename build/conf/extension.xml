@@ -1,0 +1,20 @@
+<extension xmlns="http://ns.adobe.com/air/extension/18.0">
+	<id>@ANEID@</id>
+	<versionNumber>1</versionNumber>
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>ane.jar</nativeLibrary>
+				<initializer>com.l1fan.ane.SDKExtension</initializer>
+				<finalizer>com.l1fan.ane.SDKExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+ 		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libANE.a</nativeLibrary>
+				<initializer>LFANEExtInitializer</initializer>
+				<finalizer>LFANEExtInitializer</finalizer>
+			</applicationDeployment>
+		</platform>
+	</platforms>
+</extension>

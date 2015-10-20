@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+
+    <include
+        android:id="@+id/login_hand_title"
+        layout="@layout/ag_title" />
+    
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_below="@id/login_hand_title">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      
+        android:orientation="vertical" >
+    
+    <LinearLayout
+        style="@style/linearlayout_textview"
+        android:id="@+id/ll_title_desc"
+        
+         >
+
+    <TextView
+        style="@style/textView_linearLayout"
+        android:text="@string/login_hand_7659"
+         />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_title_desc"
+         android:id="@+id/ll_et_username">
+    
+    <LinearLayout
+        style="@style/linearLayout_1"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/ag_400dp"
+        
+       >
+        
+        
+        <ImageView 
+            style="@style/imageView_user_password_phone"
+            android:src="@drawable/ag_username"
+            />
+        
+        
+        <EditText 
+            style="@style/EditText_style_input"
+            android:id="@+id/et_account"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="@string/login_hand_input_user_or_phone"
+            />
+        
+        <ImageView 
+            android:id="@+id/close_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            android:visibility="invisible"/>
+        
+        
+        
+    </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_et_username"
+        android:id="@+id/ll_et_password"
+        >
+    
+    <LinearLayout
+        style="@style/linearLayout_1"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ag_10dp"
+        android:layout_width="@dimen/ag_400dp"
+        >
+        
+        
+        <ImageView 
+            style="@style/imageView_user_password_phone"
+            android:src="@drawable/ag_pwd"
+           	/>
+        
+        
+        <EditText 
+            android:id="@+id/et_login_password"
+            android:hint="@string/login_hand_input_password"
+            android:inputType="textPassword"
+            android:imeOptions="flagNoExtractUi"
+            style="@style/EditText_style_input"/>
+        
+        <ImageView 
+            android:id="@+id/close_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            android:visibility="invisible"/>
+        
+    </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_et_password"
+         >
+    <RelativeLayout 
+        android:layout_gravity="center"
+        android:layout_width="@dimen/ag_400dp"
+        android:layout_height="wrap_content"
+        >
+    
+    <TextView 
+        style="@style/textview_register_forget"
+        android:id="@+id/tv_quick_register"
+        android:text="@string/login_hand_quick_register"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentLeft="true"/>
+    
+    <TextView 
+        style="@style/textview_register_forget"
+        android:id="@+id/tv_forget"
+        android:text="@string/login_game_forget"
+        android:layout_alignParentRight="true"/>
+    
+	</RelativeLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/ll_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_et_password" >
+    <Button
+        android:layout_gravity="center"
+        style="@style/button_blue_style"
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/ag_400dp"
+        android:layout_marginTop="@dimen/ag_30dp"
+        android:layout_marginBottom="@dimen/ag_40dp"
+        android:text="@string/login_hand_login_now"
+        />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+      <LinearLayout 
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/ag_400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/ag_20dp"
+      >
+        
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginRight="@dimen/ag_5dp"
+            android:background="@color/color_gray"/>
+        
+        
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"/>
+         
+         
+        <TextView 
+            android:id="@+id/sdk_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdk版本号"/>
+        
+          
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("/>
+        
+          
+        <TextView 
+            android:id="@+id/channelId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="渠道ID"/>  
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"/>
+        
+         <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ag_5dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:background="@color/color_gray"/>
+        
+        
+    </LinearLayout>
+    </RelativeLayout>
+
+    </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>
+
+

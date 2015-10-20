@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.tiebasdk.view.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_pb_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/title_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/comm_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:layout_toLeftOf="@+id/camera"
+            android:layout_toRightOf="@id/back"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_text"
+                style="@style/title_3_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:gravity="center"
+                android:singleLine="true" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/title_page"
+                style="@style/title_3_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:singleLine="true" >
+            </TextView>
+        </LinearLayout>
+
+        
+        <ImageView
+            android:id="@+id/camera"
+            style="@style/comm_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6.0dip"
+            android:clickable="false"
+            android:visibility="invisible">
+        </ImageView>
+        
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/image_pb_bottom"
+        android:layout_below="@+id/title"
+        android:layout_weight="1" >
+
+        <com.baidu.tiebasdk.view.BaseViewPager
+            android:id="@+id/content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+        </com.baidu.tiebasdk.view.BaseViewPager>
+
+        <ProgressBar
+            android:id="@+id/image_pb_progress"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:indeterminateDrawable="@drawable/tieba_progressbar"
+            android:visibility="gone" >
+        </ProgressBar>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/image_pb_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/reply"
+            style="@style/frs_pb_bottom_bar"
+            android:text="@string/tieba_reply" >
+        </Button>
+
+        <Button
+            android:id="@+id/save"
+            style="@style/frs_pb_bottom_bar"
+            android:text="@string/tieba_save" >
+        </Button>
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/layout_reply"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_above="@+id/hold"
+        android:orientation="horizontal"
+        android:background="@drawable/tieba_bg_bottom_bar">
+
+       <EditText
+               android:id="@+id/reply_content"
+               android:layout_width="0dip"
+               android:layout_height="40dp"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:background="@drawable/tieba_foot_bar_input"
+               android:hint="@string/tieba_pb_reply_hint"
+               android:maxLines="4"
+               android:paddingLeft="9dip"
+               android:paddingRight="9dip"
+               android:textColorHint="#A5A6A8"
+               android:layout_marginLeft="3dip"
+               android:textSize="16sp" />
+
+       <TextView
+               android:id="@+id/reply_button"
+               android:text="@string/tieba_send_post"
+               android:layout_width="52dp"
+               android:layout_height="42dp"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="3dip"
+               android:layout_marginRight="3dip"
+               android:enabled="false"
+               android:gravity="center"
+               android:textSize="14sp"
+               android:textColor="@color/tieba_btn_text_color"
+               android:background="@drawable/tieba_btn_pb_blue_bar">
+       </TextView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/hold"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dip" >
+    </View>
+
+</com.baidu.tiebasdk.view.KeyboardLayout>

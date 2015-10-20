@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:id="@+id/container" >
+
+    <!--
+      content放在最上面，否则在3.0以上的系统中content中
+  	listview切换后无法点击，多点触摸后可点，原因不明
+    -->
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/mention_tabs" />
+
+    <RelativeLayout
+        android:id="@id/title"
+        style="@style/title_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/comm_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/title_info_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/tieba_remind" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/mention_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/replyme_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dip"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/tieba_mention_replyme"
+            android:textColor="#FF3B3B3B"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/atme_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dip"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/tieba_mention_atme"
+            android:textColor="#FF3B3B3B"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+</RelativeLayout>

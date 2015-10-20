@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center_horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent">
+	    <ImageView 
+	    	android:layout_gravity="center_vertical"
+	    	android:src="@drawable/tieba_account_add"
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content" >
+	    </ImageView>
+	    <TextView 
+	        android:id="@+id/add_text"
+		    android:layout_marginTop="15dip"
+		    android:layout_gravity="center_vertical"
+		    android:textSize="13sp"
+	    	android:textColor="#FF3B3B3B"
+	    	android:singleLine="true"
+	    	android:layout_marginLeft="10dip"
+	    	android:layout_marginBottom="15dip"
+	    	android:text="@string/tieba_add_account" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content">
+	    </TextView>    
+    </LinearLayout>
+</LinearLayout>
