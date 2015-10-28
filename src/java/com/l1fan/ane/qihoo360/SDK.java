@@ -174,7 +174,7 @@ public class SDK extends SDKContext {
 	public void antiAddiction() throws JSONException {
 		JSONObject json = getJsonData();
 		Bundle bundle = new Bundle();
-		bundle.putString(ProtocolKeys.ACCESS_TOKEN, json.optString("accessToken"));
+		bundle.putString(ProtocolKeys.ACCESS_TOKEN, mToken);
 		bundle.putString(ProtocolKeys.QIHOO_USER_ID, json.optString("qihooUid"));
 		bundle.putInt(ProtocolKeys.FUNCTION_CODE, ProtocolConfigs.FUNC_CODE_ANTI_ADDICTION_QUERY);
 		Intent intent = new Intent(getActivity(), ContainerActivity.class);

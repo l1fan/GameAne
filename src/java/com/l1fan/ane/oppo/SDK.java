@@ -88,11 +88,11 @@ public class SDK extends SDKContext {
 		//TODO: unfinished
 	}
 	
-	public void toolbarShow() {
+	public void toolBarShow() {
 		GameCenterSDK.getInstance().doShowSprite(getActivity());
 	}
 	
-	public void toolbarHide(){
+	public void toolBarHide(){
 		GameCenterSDK.getInstance().doDismissSprite(getActivity());
 	}
 }

@@ -110,10 +110,11 @@
 	</target>
 
 	<target name="swf" description="build demo app" depends="swc">
-		<replace file="../demo/ANEDemo.mxml" value="com.l1fan.ane.${ane.id}">
+		<copy file="../demo/ANEDemo.mxml" todir="${tempdir}" overwrite="true" failonerror="on"/>
+		<replace file="${tempdir}/ANEDemo.mxml" value="com.l1fan.ane.${ane.id}">
 			<replacetoken>@ANEID@</replacetoken>
 		</replace>
-		<mxmlc file="../demo/ANEDemo.mxml" output="${tempdir}/ANEDemo.swf"  static-rsls="true" failonerror="true" maxmemory="1024m">
+		<mxmlc file="${tempdir}/ANEDemo.mxml" output="${tempdir}/ANEDemo.swf"  static-rsls="true" failonerror="true" maxmemory="1024m">
 			<source-path path-element="../demo"/>
 			<library-path dir="${tempdir}" includes="*.swc" append="true"/>
 		</mxmlc>

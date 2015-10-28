@@ -215,10 +215,10 @@
         <dict>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>com.phoenix.zombie.ios7659</string>
+                <string>com.ky.xSDK.alipay</string>
             </array>
             <key>CFBundleURLName</key>
-            <string>com.ky.xSDK.alipay</string>
+            <string>com.phoenix.zombie.ios7659</string>
         </dict>
     </array>
         ]]></InfoAdditions>

@@ -9,7 +9,7 @@
 			import mx.events.FlexEvent;
 
 
-			private var chsdk:HeTuGameSDK = new HeTuGameSDK('com.l1fan.ane.haima');
+			private var chsdk:HeTuGameSDK = new HeTuGameSDK('@ANEID@');
 
 
 			private function statusHandler(e:StatusEvent):void
@@ -42,13 +42,13 @@
 			{
                 chsdk.addEventListener(StatusEvent.STATUS, statusHandler);
                 var init:Object = new Object();
-                init.appId = "edfd2ae4098863890c1a01b5d7b76d55";
+                init.appId = 10000;
                 init.appKey = "6F7D62E55F4546CB96CD135771FCB5F8";
                 init.appSecret = "ug2KMdLi2JSr4naOE48XmL3h";
                 init.debugMode = false;
                 init.orientation = 1;
                 init.merchantId = "101";
-                chsdk.init("edfd2ae4098863890c1a01b5d7b76d55");
+                chsdk.init(JSON.stringify(init));
 			}
 			
 			protected function onLoginClick(event:MouseEvent):void
@@ -94,12 +94,12 @@
 			
 			protected function onToolbarClick_show(event:MouseEvent):void
 			{
-				chsdk.call('showToolBar');
+				chsdk.call('toolBarShow');
 			}
 
 			protected function onToolbarClick_hide(event:MouseEvent):void
 			{
-				chsdk.call('hideToolBar');				
+				chsdk.call('toolBarHide');				
 			}
 
 			protected function onDebugClick(event:MouseEvent):void

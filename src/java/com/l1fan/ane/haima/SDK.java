@@ -224,12 +224,12 @@ public class SDK extends SDKContext {
 	public void pay() throws JSONException {
 		ZHPayOrderInfo info = new ZHPayOrderInfo();
 		JSONObject pay = getJsonData();
-		info.gameName = pay.optString("appName", getAppName());
-		info.goodName = pay.optString("pname");
-		info.goodPrice = pay.optInt("amount") / 100;
-		info.orderNo = pay.optString("orderId");
+		info.gameName = pay.optString(APPNAME, getAppName());
+		info.goodName = pay.optString(PNAME);
+		info.goodPrice = pay.optInt(AMOUNT) / 100;
+		info.orderNo = pay.optString(ORDER_ID);
 		info.showUrl = pay.optString("showUrl");
-		info.userParam = pay.optString("ext");
+		info.userParam = pay.optString(EXT);
 		HMPay.pay(info, getActivity(), new OnPayListener() {
 
 			@Override
