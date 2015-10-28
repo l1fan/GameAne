@@ -25,7 +25,7 @@ public class SDKContext extends FREContext implements FREFunction {
 	public static final int CODE_ERR_PARAMETER = 12;
 	public static final int CODE_ERR_SDK = 13;
 	public static final int CODE_ERR_CANCEL = 14;
-	public static final int CODE_ERR_INVALID = 10;
+	public static final int CODE_ERR_INVALID = 15;
 
 
 	/** status event code */

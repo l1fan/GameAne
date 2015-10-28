@@ -19,6 +19,6 @@ export AIR_NOANDROIDFLAIR=true
 # ant -q -Did=tongbutui
 # ant -q -Did=wandoujia
 
-ant -q -Did=qihoo360 
-ant -q -Did=qihoo360 android
-adb install -r ../bin/qihoo360_demo.apk 
+ant -q -Did=haima 
+ant -q -Did=haima android
+adb install -r ../bin/haima_demo.apk 

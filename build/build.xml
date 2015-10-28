@@ -51,6 +51,7 @@
         <property name="android.classpath" value="other/android.jar;other/android-support-annotations.jar"/>
 
 		<javac srcdir="../src/java" destdir="${tempdir}/classes/" includeantruntime="false">
+			<compilerarg line="-encoding UTF-8"/>
 			<include name="com/l1fan/ane/*.java"/>
 			<include name="com/l1fan/ane/${ane.id}/*.java"/>
 			<classpath>
@@ -109,6 +110,9 @@
 	</target>
 
 	<target name="swf" description="build demo app" depends="swc">
+		<replace file="../demo/ANEDemo.mxml" value="com.l1fan.ane.${ane.id}">
+			<replacetoken>@ANEID@</replacetoken>
+		</replace>
 		<mxmlc file="../demo/ANEDemo.mxml" output="${tempdir}/ANEDemo.swf"  static-rsls="true" failonerror="true" maxmemory="1024m">
 			<source-path path-element="../demo"/>
 			<library-path dir="${tempdir}" includes="*.swc" append="true"/>

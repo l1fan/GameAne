@@ -9,7 +9,7 @@
 			import mx.events.FlexEvent;
 
 
-			private var chsdk:HeTuGameSDK = new HeTuGameSDK('com.l1fan.ane.qihoo360');
+			private var chsdk:HeTuGameSDK = new HeTuGameSDK('com.l1fan.ane.haima');
 
 
 			private function statusHandler(e:StatusEvent):void
@@ -42,13 +42,13 @@
 			{
                 chsdk.addEventListener(StatusEvent.STATUS, statusHandler);
                 var init:Object = new Object();
-                init.appId = "195";
+                init.appId = "edfd2ae4098863890c1a01b5d7b76d55";
                 init.appKey = "6F7D62E55F4546CB96CD135771FCB5F8";
                 init.appSecret = "ug2KMdLi2JSr4naOE48XmL3h";
                 init.debugMode = false;
                 init.orientation = 1;
                 init.merchantId = "101";
-                chsdk.init(JSON.stringify(init));
+                chsdk.init("edfd2ae4098863890c1a01b5d7b76d55");
 			}
 			
 			protected function onLoginClick(event:MouseEvent):void
@@ -60,6 +60,7 @@
 			{
 			    var pay:Object = new Object();
 			    pay.qihooUid = 377351739;
+			    pay.payID="100087"
 			    pay.uname = "yiyimx";
 			    pay.uid = "377351739";	
 			    pay.notifyUrl="http://www.l1fan.com";

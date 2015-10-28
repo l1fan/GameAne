@@ -28,14 +28,16 @@ of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of the FreeBSD Project.
 
 -->
-
-<platform xmlns="http://ns.adobe.com/air/extension/18.0"> 
-    <description> An optional description</description> 
+<platform xmlns="http://ns.adobe.com/air/extension/18.0">
+    <description> An optional description</description>
     <copyright>2015 (optional)</copyright>
     <linkerOptions>
-        <option>-ios_version_min 5.11</option>
         <option>-framework CoreTelephony</option>
+        <option>-framework AdSupport</option>
         <option>-lsqlite3</option>
-    </linkerOptions> 
+        <option>-rpath @executable_path/Frameworks</option>
+    </linkerOptions>
+    <packagedDependencies>
+        <packagedDependency>xsdkFramework.framework</packagedDependency>
+    </packagedDependencies>
 </platform>
-

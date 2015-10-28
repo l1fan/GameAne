@@ -22,6 +22,13 @@ SDK及文档地址[点此](http://dev.360.cn/wiki/index/id/73)
 `pay.notifyUrl` 通知地址
 查看[支付结果通知服务端接口](http://dev.360.cn/wiki/index/id/68)
 
+
+`uploadScore`      上传积分
+`destroy`          销毁
+`antiAddiction`	   防沉迷
+`realNameRegister` 实名注册
+
+
 ## <span id="qihoo360">海马</span>
 
 查看[联运平台](http://pay.haima.me)，支持android和iOS平台。  
@@ -33,7 +40,9 @@ iOS海马SDK版本v1.3.6
 
 *初始化时可以使用以下参数
 
-- `appId`   iOS必须传此参数来设置appid。 android可以在配置文件中设置，也可以通过此参数设置，同时设置时取此参数。
+- `appId`   iOS必须传此参数来设置appid。 android可以在配置文件中设置，也可以通过此参数设置，同时设置时优先取此参数。
 - `debugMode`  测试更新功能，总会弹出更新窗口
 - `ifErrorType`   1. 表示更新检测失败时,什么都不显示 2. 表示显示确定按钮 3. 表示显示确定和取消按钮。 用于强制更新时是否能跳过
 
+
+TODO
