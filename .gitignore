@@ -3,3 +3,5 @@
 *.ane
 bin/
 temp/
+
+build.config
