@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/19.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.phoenix.zombie</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+        <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+   
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+   
+    <application> 
+              
+    </application>
+            </manifest>
+            
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions><![CDATA[
+            
+            <key>UIDeviceFamily</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+            </array>
+            <key>CFBundleURLTypes</key>
+            <array>
+                <dict>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+                        <string>As2</string>
+                    </array>
+                    <key>CFBundleURLName</key>
+                    <string>com.phoenix.zombie</string>
+                </dict>
+            </array>
+            <key>NSAppTransportSecurity</key> 
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/> 
+            </dict>
+            <key>LSApplicationQueriesSchemes</key>
+            <array>
+                <string>mqqapiwallet</string>
+                <string>weixin</string>
+                <string>alipay</string>
+            </array>
+
+        ]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.i4</extensionID>
+    </extensions>
+</application>

@@ -42,8 +42,8 @@
 			{
                 chsdk.addEventListener(StatusEvent.STATUS, statusHandler);
                 var init:Object = new Object();
-                init.appId = 10000;
-                init.appKey = "6F7D62E55F4546CB96CD135771FCB5F8";
+                init.appId = 2;
+                init.appKey = "118255f8ffec4352a919c52d01a2d674";
                 init.appSecret = "ug2KMdLi2JSr4naOE48XmL3h";
                 init.debugMode = false;
                 init.orientation = 1;
@@ -61,9 +61,9 @@
 			    var pay:Object = new Object();
 			    pay.qihooUid = 377351739;
 			    pay.payID="100087"
-			    pay.uname = "yiyimx";
-			    pay.uid = "377351739";	
-			    pay.notifyUrl="http://www.l1fan.com";
+			    pay.uname = "xxx";
+			    pay.uid = "xxx";	
+			    pay.notifyUrl="xxxx";
 			    pay.amount = "100";
 			    pay.pname = "100元宝";
 			    pay.pid = "4001";

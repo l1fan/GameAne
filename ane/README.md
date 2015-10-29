@@ -2,6 +2,7 @@
 
 - [奇虎360](#qihoo360)
 - [海马](#haima)
+- [爱思助手](#i4)
 
 ## <span id="qihoo360">奇虎360</span>
 
@@ -44,5 +45,16 @@ iOS海马SDK版本v1.3.6
 - `debugMode`  测试更新功能，总会弹出更新窗口
 - `ifErrorType`   1. 表示更新检测失败时,什么都不显示 2. 表示显示确定按钮 3. 表示显示确定和取消按钮。 用于强制更新时是否能跳过
 
+## <span id="i4">爱思助手</span>
+iOS SDK版本v2.1.0  
 
+修改配置文件, As2中的2修改为在爱思后台申请的appId.
+
+	<key>CFBundleURLSchemes</key>
+	<array>
+		<string>As2</string>
+	</array>
+
+
+其他
 TODO
