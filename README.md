@@ -50,7 +50,7 @@
 
 **如果Demo打包出错，请使用`build/other`目录下的`adt.jar`替换Flex SDK目录下的`lib/adt.jar`**[原因及其他解决办法](./build/other/)
 
-测试环境为Flex4.6 with AIR18. Ant 1.9.1+。欢迎测试反馈
+测试环境为Flex4.6 with AIR19. Ant 1.9.1+。欢迎测试反馈
 
 
 ## ANE使用

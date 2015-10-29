@@ -1,4 +1,4 @@
-<extension xmlns="http://ns.adobe.com/air/extension/18.0">
+<extension xmlns="http://ns.adobe.com/air/extension/19.0">
 	<id>@ANEID@</id>
 	<versionNumber>1</versionNumber>
 	<platforms>

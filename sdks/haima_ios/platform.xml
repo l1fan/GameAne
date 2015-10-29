@@ -29,7 +29,7 @@ either expressed or implied, of the FreeBSD Project.
 
 -->
 
-<platform xmlns="http://ns.adobe.com/air/extension/18.0"> 
+<platform xmlns="http://ns.adobe.com/air/extension/19.0"> 
     <description> An optional description</description> 
     <copyright>2015 (optional)</copyright>
     <linkerOptions>
