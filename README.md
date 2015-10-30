@@ -77,22 +77,33 @@ ANE对所有渠道封装成了通用的方法和事件。主要包括`初始化`
 	var sdk:HeTuGameSDK = new HeTuGameSDK('com.l1fan.ane.渠道ID');
 	sdk.addEventListener(StatusEvent.STATUS,statusHandler);
 
-初始化，主要包含的属性 `appId`,`appKey`,`appSecret`。更多属性可查看[ANE详细使用文档](./ane)
+#### 初始化
+主要包含的属性为`appId`,`appKey`,`appSecret`等，某些渠道可能需要一些特殊属性。具体请查看[ANE详细使用文档](./ane)
  
 	var init:Object = new Object();
 	init.appId = "xxx";
 	init.appKey = "xxx";
 	sdk.init(JSON.stringify(init));
 
-用户登录
-	
+初始化完成后会触发事件，并返回相关json数据，根据`data/error`判断成功失败
+
+#### 用户登录
+不需要传递参数
+
 	sdk.userLogin();
 
-用户退出
+完成后触发登录事件，登录成功返回的json数据中均包含`token`信息。用于服务端进一步获取用户信息或验证登录
+
+#### 用户退出
+不需要传递参数
 
 	sdk.userLogout();
 
-支付，更多属性查看[ANE详细使用文档](./ane)
+完成后触发注销事件，返回相关数据
+
+#### 支付
+
+更多属性查看[ANE详细使用文档](./ane)
 
 	var pay:Object = new Object();
 	pay.amount = 100;       //支付金额，以分为单位
@@ -103,16 +114,23 @@ ANE对所有渠道封装成了通用的方法和事件。主要包括`初始化`
 	pay.ext = "xxx";        //扩展参数，会原样返回给服务端
 	sdk.pay(JSON.stringify(pay));
 
+完成后触发支付事件，返回支付结果信息
 
-### 其他
+#### 其他方法
+使用通用的方法调用方式
 	
 	sdk.call(action,data);
+	
+	//比如:
+	sdk.call("switchAccount");
+	sdk.call("toolBarShow");
 
-各个渠道都有一些特殊方法可能需要调用，可以通过`call`的方式进行，其中`action`为要执行的操作，`data`为参数。
+其中`action`为要执行的操作，`data`为参数(可选)。
 
 
 ## 开发
-ActionScript中每调用一次方法，即为向ANE发送一个Action。在java中对应渠道SDK中一个公开的无参方法。
+ActionScript中每调用一次方法，即为向ANE发送一个Action。在渠道SDK中对应一个公开的无参方法。
+在java中通过`getAction()`获取操作,`getData()`、`getJsonData()` 方法获取数据
 
 
 

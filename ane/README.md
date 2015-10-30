@@ -1,13 +1,13 @@
 #ANE详细使用说明
 
-- [奇虎360](#qihoo360)
-- [海马](#haima)
-- [爱思助手](#i4)
-- [同步推](#tongbutui)
+- [奇虎360](#奇虎360)
+- [海马](#海马)
+- [爱思助手](#爱思助手)
+- [同步推](#同步推)
 - [iTools](#itools)
-- [快用](#kuaiyong)
+- [快用](#快用)
 
-## <span id="qihoo360">奇虎360</span>
+## 奇虎360
 
 SDK及文档地址[点此](http://dev.360.cn/wiki/index/id/73)  
 
@@ -45,11 +45,11 @@ iOS海马SDK版本v1.3.6
 	
 	//ios
 	init.appId = "17dcfe3ac35e8b65a7bd13785ca2d800";
-	
+
 	//android
 	init.appId = "e5dc65b49905df4b3e618d7eac2117ea";
 
-## <span id="i4">爱思助手</span>
+## 爱思助手
 iOS SDK版本v2.1.0  
 
 修改配置文件, As2中的2修改为在爱思后台申请的appId.
@@ -64,14 +64,14 @@ iOS SDK版本v2.1.0
 	init.appId = 2;
 	init.appKey = "118255f8ffec4352a919c52d01a2d674";
 
-## <span id="tongbutui">同步推</span>
+## 同步推
 iOS SDK版本v4.1.2
 
 > Demo测试参数
 	
 	init.appId = 100000;
 
-## <span id="itools">iTools</span>
+## iTools
 iOS SDK版本v2.5.0
 
 > Demo测试参数
@@ -79,7 +79,7 @@ iOS SDK版本v2.5.0
 	init.appId = 1;
 	init.appKey = "58C6A68DDDEE471AA43266E427F38D92";
 
-## <span id="kuaiyong">快用</span>
+## 快用
 iOS SDK版本v2.2.3  
 Android SDK版本v2.0.3
 
@@ -90,8 +90,8 @@ Android SDK版本v2.0.3
 	pay.payID = "100087";
 
 	//android
-	init.apKey = "f8ad685fcaf0e92b2fe9c5c7c822610e";
-	pay.PayID = "100246";
+	init.appKey = "f8ad685fcaf0e92b2fe9c5c7c822610e";
+	pay.payID = "100246";
 
 ## 其他
 TODO
