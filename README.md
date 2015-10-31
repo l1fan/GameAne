@@ -19,6 +19,13 @@
 - 搜狗(sogou)
 - 同步推(tongbutui)
 - 豌豆荚(wandoujia)
+- iTools(itools)
+- 爱思助手(i4)
+- 果盘叉叉助手(xx)
+- xy助手(xy)
+- pp助手(pp)
+- 乐8助手(le8)
+- i苹果(iiapple)
 - ...
 
 >括号中字符为本项目规划的渠道ID

@@ -42,8 +42,8 @@
 			{
                 chsdk.addEventListener(StatusEvent.STATUS, statusHandler);
                 var init:Object = new Object();
-                init.appId = 2;
-                init.appKey = "118255f8ffec4352a919c52d01a2d674";
+                init.appId = "101101";
+                init.appKey = "GuopanSDK8^(Llad";
                 init.appSecret = "ug2KMdLi2JSr4naOE48XmL3h";
                 init.debugMode = false;
                 init.orientation = 1;
