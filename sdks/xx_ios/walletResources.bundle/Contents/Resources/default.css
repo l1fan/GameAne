@@ -1,0 +1,123 @@
+
+/* 样式表只是用来设置控件的属性，并不和标准css一致  */
+
+/* 基 础 样 式 表 */
+
+/* 背景色样式 */
+#BG-3{background-color:#f0f0f0};
+
+/* 字体样式 */
+#TX-A{font-size:34px;}
+#TX-B{font-size:28px;}
+#TX-C{font-size:23px;}
+#TX-D{font-size:16px;}
+#TX-E{font-size:14px;}
+#TX-F{font-size:13px;}
+#TX-G{font-size:12px;}
+#TX-H{font-size:15px;}
+#TX-I{font-size:9px;}
+#TX-J{font-size:18px;}
+#TX-K{font-size:11px;}
+
+
+#TX-1{font-color:#333333}
+#TX-2{font-color:#ff0000}
+#TX-3{font-color:#fe5000} /*短信弹框确认文字颜色，购买信息价格文字颜色*/
+#TX-4{font-color:#999999}
+#TX-5{font-color:#5aa5e9}
+#TX-6{font-color:#28b615}
+#TX-7{font-color:#cccccc}
+#TX-8{font-color:#ffffff}
+#TX-9{font-color:#ffeec1}
+#TX-10{font-color:#ffd778}
+#TX-11{font-color:#666666}
+#TX-12{font-color:#555555}
+#TX-13{font-color:#ff7e00}
+#TX-14{font-color:#e1e1e1}
+#TX-15{font-color:#657b92}
+#TX-16{font-color:#a2a2a2}
+
+/* 控件样式表 */
+UIView{font-size:18px;}
+UILabel{background-color:clear;width:100px;height:15}
+UITextField{left:8px;width:304px;height:44px;border-style:none;font-color:#333333;font-size:16px;border-width:.4f;border-color:#d7d7d7;border-color-hi:#fe5000;border-radius:0;background-color:#ffffff}
+UITextView{background-color:#00000000;width:320px;height:100px;}
+UIButton{left:10px;width:300px;height:40px;font-color:#ffffff;font-size:18px;}
+UITableView{width:320px;height:200px;}
+LLInfoView{left:14px;top:14px;width:292px;}
+
+NavBar {left:0px;top:0px;width:320px;height:44px;font-size:19px;font-color:#ffffff;
+	font-style:bold;background-color:#ffffff;background-image:shoushi3.png;background-image-7:shoushi3.png;titleIconName:logo.png;}
+
+/*titleIconName: 绑卡支付界面的标题图标
+ titleIconName2: 历史卡支付界面的标题图标
+ titleText,当自定义导航条title的时候，可以在NavBar后面添加titleText，格式为titleText:xxx即可*/
+    
+.numText{keyboard-type:num;}
+.splitLine{width:320px;height:1px;image:examSplitline.png;}
+
+.confirmBtn{type:custom;background-image:confirmBtn.png;background-image-hi:btn-hi.png;}
+.cancelBtn{type:custom;background-image:quickPaycancelBtn.png;background-image-hi:btn-hi.png;}
+
+/* form page element */
+.formInputField{font-size:18px;border-style:none;}
+
+
+LLColorButton{border-radius:0px;}
+#a-button{normal-color:#fa3807;hi-color:#b73737;disable-color:214,214,214}
+#b-button{normal-color:#fe5000;hi-color:#6f8086;font-color:#ffffff;}
+#c-button{normal-color:#fe932f;hi-color:#cb7320;}
+#d-button{normal-color:#dcdcdc;hi-color:#a9a9a9;}
+#e-button{normal-color:#ffeec1;hi-color:#eeeeee;border-color:#ffd778;border-width:0.8px;font-color:#fe5000;}
+#f-button{normal-color:#ffffff;hi-color:#999999;border-color:#d9d9d9;border-width:0.8px;font-color:#666666;}
+
+#half-button{width:128px;font-size:14px;}
+
+#sms-button-d{background-image:D短信验证码按钮.png;background-image-hi:D短信验证码按钮按压.png;background-image-disable:D短信验证码按钮不可点击.png;
+width:99;height:44;}
+
+#confirm-short-button {
+    background-image:B弹框按钮.png;
+    background-image-hi:B弹框按钮按压.png;
+    background-image-disable:B弹框按钮按压.png;
+    width:129;
+    height:40;
+}
+
+#cancel-short-button {
+    background-image:D弹框按钮.png;
+    background-image-hi:D短信验证码按钮按压.png;
+    background-image-disable:D短信验证码按钮按压.png;
+    width:129;
+    height:40;
+    font-color:#000000;
+}
+
+/* 输入框 */
+#short-textfield{width:280px;}
+#inputVC-sms-textfield{left:8px;width:216px;}
+LLSmallCountDownButton{left:216; top:0; width:88; height:44}
+#disable-textfield{user-interaction-enabled:false;background-color:221,221,221;}
+.deadlineField{font-size:15px;date-color:#999999; word-color:#999999;}
+
+/* 页 面 样 式 */
+basePage{}
+
+#contentSpace{left:10px;width:120px;}
+#printerContentSpace{left:15;width:271px;}
+
+#label-tip{font-color:#999999;font-size:15px;height:44px;width:55px;}
+
+
+
+
+#support-tip{font-color:#666666;font-size:15px;align:center;width:300;height:44px;}
+
+#LLToast_pay{ll_goodds_info:购买%1$s元的%2$s}
+
+/*支付显示方式*/
+#LLPay-Style{style:quickPay}//quickPay，verifyPay
+
+
+/*去掉横屏支持*/
+/*#support-hori{support: false};*/

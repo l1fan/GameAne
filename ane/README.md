@@ -6,6 +6,7 @@
 - [同步推](#同步推)
 - [iTools](#itools)
 - [快用](#快用)
+- [果盘叉叉助手](#叉叉助手)
 
 ## 奇虎360
 
@@ -84,14 +85,23 @@ iOS SDK版本v2.2.3
 Android SDK版本v2.0.3
 
 > Demo测试参数
-
-    //ios
+     
+    //ios 包名必须为 com.ky.xSDK.demo
 	init.appKey = "edfd2ae4098863890c1a01b5d7b76d55";
 	pay.payID = "100087";
 
-	//android
+	//android 包名 com.youran.KyUserDemo
 	init.appKey = "f8ad685fcaf0e92b2fe9c5c7c822610e";
 	pay.payID = "100246";
+
+## 叉叉助手
+iOS SDK版本v2.0.0
+包名(bundle/package id)需要以.guopan结尾
+
+> Demo测试参数
+	
+	init.appId = "101101";
+	init.appKey = "GuopanSDK8^(Llad";
 
 ## 其他
 TODO
