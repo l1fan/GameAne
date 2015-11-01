@@ -7,6 +7,7 @@
 - [iTools](#itools)
 - [快用](#快用)
 - [果盘叉叉助手](#叉叉助手)
+- [XY助手](#xy助手)
 
 ## 奇虎360
 
@@ -84,6 +85,9 @@ iOS SDK版本v2.5.0
 iOS SDK版本v2.2.3  
 Android SDK版本v2.0.3
 
+**由于快用iOS的库使用了Embedded Frameworks，而air打包时不会对其重新签名。导致最终的包与库签名不同。  
+使用[iReSign](https://github.com/maciekish/iReSign)将生成的包重新签名即可正常**
+
 > Demo测试参数
      
     //ios 包名必须为 com.ky.xSDK.demo
@@ -98,10 +102,22 @@ Android SDK版本v2.0.3
 iOS SDK版本v2.0.0
 包名(bundle/package id)需要以.guopan结尾
 
+打包有问题，暂时还不能用。。。
+
 > Demo测试参数
 	
 	init.appId = "101101";
 	init.appKey = "GuopanSDK8^(Llad";
+
+## XY助手
+iOS SDK版本
+
+
+> Demo
+	
+	//ios包名com.xy.sdk
+	init.appId = "100009";
+	init.appKey = "cZZqE43VLVjUC7YxpnBpnwrZ1NMyfuW6"
 
 ## 其他
 TODO
