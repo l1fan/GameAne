@@ -9,6 +9,9 @@
 - [果盘叉叉助手](#叉叉助手)
 - [XY助手](#xy助手)
 - [PP助手](#pp助手)
+- [i苹果](#i苹果)
+- [乐8助手](#乐8助手)
+
 
 ## 奇虎360
 
@@ -136,6 +139,15 @@ iOS SDK版本v1.2.9
 
 	
 	init.appKey = "d680fede516132899f149387cf185031"
+
+## 乐8助手
+iOS SDK版本v1.0.7
+修改配置文件中`LDPAY-l8.payDemo`中的包名修改为`LDPAY-自己的包名`
+	
+> Demo
+
+	//包名必须为l8.payDemo
+	init.appId = "7c814d6a23bf3ae0e1c2a976cbd781b7";
 
 ## 其他
 TODO
