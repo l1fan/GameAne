@@ -1,0 +1,6 @@
+framework module PPAppPlatformKit {
+  umbrella header "PPAppPlatformKit.h"
+
+  export *
+  module * { export * }
+}

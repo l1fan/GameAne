@@ -8,6 +8,7 @@
 - [快用](#快用)
 - [果盘叉叉助手](#叉叉助手)
 - [XY助手](#xy助手)
+- [PP助手](#pp助手)
 
 ## 奇虎360
 
@@ -110,7 +111,7 @@ iOS SDK版本v2.0.0
 	init.appKey = "GuopanSDK8^(Llad";
 
 ## XY助手
-iOS SDK版本
+iOS SDK版本v2.1.1
 
 
 > Demo
@@ -118,6 +119,17 @@ iOS SDK版本
 	//ios包名com.xy.sdk
 	init.appId = "100009";
 	init.appKey = "cZZqE43VLVjUC7YxpnBpnwrZ1NMyfuW6"
+
+
+## PP助手
+iOS SDK版本vS155D1571
+修改配置文件中 teiron76 中的76为自己的appid
+
+> Demo
+	
+	init.appId = "5747";
+	init.appKey = "c5ebb80ee40060baaf381f2d7da1ce23"
+
 
 ## 其他
 TODO

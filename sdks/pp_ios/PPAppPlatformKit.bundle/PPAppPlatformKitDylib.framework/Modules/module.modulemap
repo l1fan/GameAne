@@ -1,0 +1,6 @@
+framework module PPAppPlatformKitDylib {
+  umbrella header "PPAppPlatformKitDylib.h"
+
+  export *
+  module * { export * }
+}
