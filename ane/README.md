@@ -131,5 +131,11 @@ iOS SDK版本vS155D1571
 	init.appKey = "c5ebb80ee40060baaf381f2d7da1ce23"
 
 
+## i苹果
+iOS SDK版本v1.2.9
+
+	
+	init.appKey = "d680fede516132899f149387cf185031"
+
 ## 其他
 TODO
