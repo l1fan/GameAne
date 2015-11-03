@@ -57,7 +57,7 @@
 
 **如果Demo打包出错，请使用`build/other`目录下的`adt.jar`替换Flex SDK目录下的`lib/adt.jar`**[原因及其他解决办法](./build/other/)
 
-测试环境为Flex4.6 with AIR19. Ant 1.9.1+。欢迎测试反馈
+> 测试环境为Flex4.6 with AIR19. Ant 1.9.1+。欢迎测试反馈
 
 
 ## ANE使用
@@ -85,14 +85,21 @@ ANE对所有渠道封装成了通用的方法和事件。主要包括`初始化`
 	sdk.addEventListener(StatusEvent.STATUS,statusHandler);
 
 #### 初始化
-主要包含的属性为`appId`,`appKey`,`appSecret`等，某些渠道可能需要一些特殊属性。具体请查看[ANE详细使用文档](./ane)
+某些渠道需要一定的配置，请先完成配置部分。具体请查看[ANE详细使用文档](./ane)
  
 	var init:Object = new Object();
 	init.appId = "xxx";
 	init.appKey = "xxx";
 	sdk.init(JSON.stringify(init));
 
-初始化完成后会触发事件，并返回相关json数据，根据`data/error`判断成功失败
+初始化完成后会触发事件，并返回相关json数据，根据`data/error`判断成功失败。之后再进行下一步操作
+
+|参数		|说明								|备注	|
+|-----------|-----------------------------------|-------|
+|appId		|在渠道平台申请的应用ID				| 有些渠道会放到配置文件中，如果配置文件中有的话此处可以不传
+|appKey		|在渠道平台申请的应用Key				| 同上。也范指渠道的secret key之类
+
+> 用于Demo测试的[参数数据](./ane)
 
 #### 用户登录
 不需要传递参数
@@ -110,18 +117,35 @@ ANE对所有渠道封装成了通用的方法和事件。主要包括`初始化`
 
 #### 支付
 
-更多属性查看[ANE详细使用文档](./ane)
-
 	var pay:Object = new Object();
 	pay.amount = 100;       //支付金额，以分为单位
 	pay.pname = "100元宝";  //支付商品名
 	pay.pid = "4001";       //支付商品ID
 	pay.orderId = "xxx";    //订单号
-	pay.notifyUrl = "xxx";   //支付结果通知URL地址
 	pay.ext = "xxx";        //扩展参数，会原样返回给服务端
 	sdk.pay(JSON.stringify(pay));
 
 完成后触发支付事件，返回支付结果信息
+
+支付详细参数
+
+|必需参数		|说明								|备注	|
+|-----------|-----------------------------------|-------|
+|amount		|支付金额，以分为单位					|
+|pname		|商品名称								|
+|pid		|商品id								|
+|orderId	|订单号								|
+|ext		|扩展信息，会原样返回服务端				|
+
+其他参数除了备注明确需要的均可不填
+
+|其他参数		|说明								|备注	|
+|-----------|-----------------------------------|-------|
+|qihooUid	|奇虎360用户id						|qihoo360渠道必需
+|notifyUrl	|支付结果通知地址						|qihoo360渠道必需
+|uid 		|游戏用户id 							|qihoo360渠道必需
+|uname 		|游戏用户名 							|qihoo360渠道必需
+|payID		|支付ID 								|快用渠道必需
 
 #### 其他方法
 使用通用的方法调用方式
