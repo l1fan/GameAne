@@ -31,27 +31,16 @@ either expressed or implied, of the FreeBSD Project.
 <platform xmlns="http://ns.adobe.com/air/extension/19.0">
     <description> An optional description</description>
     <copyright>2015 (optional)</copyright>
-    <sdkVersion>6.0.0</sdkVersion>
     <linkerOptions>
         <option>-ios_version_min 6.0</option>
-        <option>-lstdc++</option>
+        <option>-lc++</option>
         <option>-lsqlite3</option>
         <option>-lz</option>
-        <option>-liconv</option>
         <option>-framework MediaPlayer</option>
         <option>-framework AssetsLibrary</option>
-        <option>-framework AVFoundation</option>
-        <option>-framework CoreLocation</option>
-        <option>-framework QuartzCore</option>
         <option>-framework CFNetwork</option>
         <option>-framework AdSupport</option>
-        <option>-framework Security</option>
         <option>-framework CoreTelephony</option>
-        <option>-framework SystemConfiguration</option>
-        <option>-framework CoreGraphics</option>
-        <option>-framework UIKit</option>
-        <option>-framework Foundation</option>
-        <option>-framework AlipaySDK</option>
         <option>-rpath @executable_path/Frameworks</option>
     </linkerOptions>
     <packagedDependencies>
