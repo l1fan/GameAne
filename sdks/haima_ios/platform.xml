@@ -28,33 +28,31 @@ of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of the FreeBSD Project.
 
 -->
-
-<platform xmlns="http://ns.adobe.com/air/extension/19.0"> 
-    <description> An optional description</description> 
+<platform xmlns="http://ns.adobe.com/air/extension/19.0">
+    <description> An optional description</description>
     <copyright>2015 (optional)</copyright>
     <linkerOptions>
-        <option>-ios_version_min 5.11</option>
-
+        <option>-ios_version_min 6.0</option>
         <option>-lstdc++</option>
         <option>-framework AdSupport</option>
-    <option>-framework AudioToolbox</option>
-    <option>-framework Security</option>
-    <option>-framework CoreText</option>
-    <option>-framework CFNetwork</option>
-    <option>-framework SystemConfiguration</option>
-    <option>-framework MobileCoreServices</option>
-    <option>-framework Foundation</option>
+        <option>-framework AudioToolbox</option>
+        <option>-framework Security</option>
+        <option>-framework CoreText</option>
+        <option>-framework CFNetwork</option>
+        <option>-framework SystemConfiguration</option>
+        <option>-framework MobileCoreServices</option>
+        <option>-framework Foundation</option>
         <option>-framework CoreGraphics</option>
         <option>-framework UIKit</option>
         <option>-framework CoreTelephony</option>
         <option>-lsqlite3</option>
         <option>-framework IOKit</option>
-        <option>-framework AlipaySDK</option>
-        <option>-framework ZHPay</option>
-    </linkerOptions> 
-	<packagedDependencies> 
-    <packagedDependency>ZHPaySDK/AlipaySDK.framework</packagedDependency>
-		<packagedDependency>ZHPaySDK/ZHPay.framework</packagedDependency>
-	</packagedDependencies>
+        <option>-rpath @executable_path/Frameworks</option>
+    </linkerOptions>
+    <packagedDependencies>
+        <packagedDependency>ZHPayDependence/AliPay/AlipaySDK.framework</packagedDependency>
+        <packagedDependency>ZHPayDependence/UnionPay/libUPPayPlugin.a</packagedDependency>
+        <packagedDependency>ZHPayDependence/WeChat/libWeChatSDK.a</packagedDependency>
+        <packagedDependency>ZHPay.framework</packagedDependency>
+    </packagedDependencies>
 </platform>
-
