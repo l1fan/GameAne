@@ -33,7 +33,7 @@ either expressed or implied, of the FreeBSD Project.
     <copyright>2015 (optional)</copyright>
     <linkerOptions>
         <option>-ios_version_min 6.0</option>
-        <option>-lstdc++</option>
+        <option>-lc++</option>
         <option>-lsqlite3</option>
         <option>-lz</option>
         <option>-lMobileGestalt</option>

@@ -34,7 +34,7 @@
 		</data>
 		<key>PPAppPlatformKitDylib.pp</key>
 		<data>
-		AkuM5rnrbaIPtsKdh9akyT7RtRg=
+		+lGWHhYhq2K6YZfHPEPVhQWOJnE=
 		</data>
 		<key>PPSource.bundle/image/alertContent_close_highlight_ipad.png</key>
 		<data>
@@ -335,14 +335,6 @@
 		<key>PPSource.bundle/image/boll_account@2x.png</key>
 		<data>
 		zyD2huRjiDhw3Y0CYOfhtWbjRGo=
-		</data>
-		<key>PPSource.bundle/image/boll_forum.png</key>
-		<data>
-		WD340XTs7p6sCuF7kIGFmqyt1II=
-		</data>
-		<key>PPSource.bundle/image/boll_forum@2x.png</key>
-		<data>
-		WD340XTs7p6sCuF7kIGFmqyt1II=
 		</data>
 		<key>PPSource.bundle/image/boll_gift.png</key>
 		<data>
@@ -1404,6 +1396,26 @@
 		<data>
 		NEjs8S3RI6HoNmMijfwxVpg/mlk=
 		</data>
+		<key>PPSource.bundle/image/buoy_recharge.png</key>
+		<data>
+		Wn/0GIxlUYETeiUtL53IK8t15i4=
+		</data>
+		<key>PPSource.bundle/image/buoy_recharge@2x.png</key>
+		<data>
+		mAvL1zXYHFpwAuzTu0xvLGwFLe8=
+		</data>
+		<key>PPSource.bundle/image/buoy_recharge@3x.png</key>
+		<data>
+		Lh31FTn6BGN9GnFG45a7N4aWGFI=
+		</data>
+		<key>PPSource.bundle/image/buoy_recharge_ipad.png</key>
+		<data>
+		cFJcfAHvR6O1327s/TLrKQp/cbQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_recharge_ipad@2x.png</key>
+		<data>
+		6kn9tdx2asfQzKViX068/GgjZJM=
+		</data>
 		<key>PPSource.bundle/image/common_alert_win_bg.png</key>
 		<data>
 		DbsxxiRaLN38nGOcuY3zsnQvykE=
@@ -2424,6 +2436,46 @@
 		<data>
 		OGsXc7NiH/25LyvmjJVA/L39Dio=
 		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight.png</key>
+		<data>
+		TnZdO34EPG2VJej3Y0UgcLmQm5k=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight@2x.png</key>
+		<data>
+		RmkuMLk3BH6eCil7L0l4n1b+Mgs=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight@3x.png</key>
+		<data>
+		AbXgxn6oi70qJPlLV3bXSBpRJog=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight_iPad.png</key>
+		<data>
+		AbZjKYxvJXe6L4C3vpbojAvtXVs=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight_iPad@2x.png</key>
+		<data>
+		sf1H/TXVb7uP4pKXEJVyARPL2d4=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal.png</key>
+		<data>
+		W4zUUkVbF/W5grZdgpt+rR4CiLs=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal@2x.png</key>
+		<data>
+		s5aqlmP9dwtB4C2cfg2XHxF+3Go=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal@3x.png</key>
+		<data>
+		BoNQUBqkB41vCwA4GIuEVQTM4/g=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal_iPad.png</key>
+		<data>
+		1nvEkGOET8kz+WW9qd5dYe+2HI8=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal_iPad@2x.png</key>
+		<data>
+		RKSzjTO1LVyieUBAx350/8VO6WQ=
+		</data>
 		<key>PPSource.bundle/image/icon_out_highlight.png</key>
 		<data>
 		csfbakcyyEEHV4TM74bMkk6IW5U=
@@ -2570,35 +2622,43 @@
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_highlight.png</key>
 		<data>
-		SswU9a5OZEILS0icxaQ1q7CceyI=
+		NVR6HWZ6ZFuWyMfedIxp8FSyXtc=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_highlight@2x.png</key>
 		<data>
-		p1Rdj5lb+g3wpN75oSQLja53qb0=
+		t6ddiRwbjtx+M2k/OA53z4LMbT4=
+		</data>
+		<key>PPSource.bundle/image/icon_recharge_highlight@3x.png</key>
+		<data>
+		5N9Kvoc2OTetcg268nT3QXuhYpc=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_highlight_ipad.png</key>
 		<data>
-		Iq/hEXFLKAzFygVeidQA7nUplA8=
+		jD2cqemdXXqG7n3aubkIbcCGdks=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_highlight_ipad@2x.png</key>
 		<data>
-		4vLsugzQd3G4jWZ6vrxlL8NiWck=
+		mIgvpvIKR49PrYJ47Gh6AVFJG1g=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_normal.png</key>
 		<data>
-		19/H4SyB1VOSJgPddfLJi1A4vaY=
+		fOQ5UAulIbVSf4ruA4Nt9jp2lv4=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_normal@2x.png</key>
 		<data>
-		MKuarxGwK8qLLE1cHQpEBDW/MWI=
+		cpz7t0sG+rII20jcxRF/yYLk5y4=
+		</data>
+		<key>PPSource.bundle/image/icon_recharge_normal@3x.png</key>
+		<data>
+		IJuQvNlw+92p/IDayWYuSWkJDfk=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_normal_ipad.png</key>
 		<data>
-		rFiRDwGvQDgSjEbk5Sj4CZ9fgkc=
+		MaQoZV9ZXKqlW9uXsM8bF5BUAyU=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_normal_ipad@2x.png</key>
 		<data>
-		d8wDRSA+xjWvSA6VHUr1N66dbPM=
+		8z4WS2vUZQ7JB+MWqFc93g2hDK0=
 		</data>
 		<key>PPSource.bundle/image/icon_right_disable.png</key>
 		<data>
@@ -3394,7 +3454,7 @@
 		</data>
 		<key>PPSource.bundle/sdk_dylib_Info.plist</key>
 		<data>
-		9oSbQ5i/hzPxuTIeCyGVbfX3wHE=
+		MWOvviaEeP7H20ostVztKerRu9U=
 		</data>
 		<key>PPSource.bundle/xml/ip_city_dictionary.xml</key>
 		<data>
@@ -3403,6 +3463,10 @@
 		<key>PPSource.bundle/xml/ip_province_dictionary.xml</key>
 		<data>
 		9S0D83T88QIgLutE9KFgdIOlzhw=
+		</data>
+		<key>TRWebViewJavascriptBridge.js.txt</key>
+		<data>
+		EanWgOPc0d+1cy2cSuaRFBUrpsc=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -3441,7 +3505,7 @@
 		</data>
 		<key>PPAppPlatformKitDylib.pp</key>
 		<data>
-		AkuM5rnrbaIPtsKdh9akyT7RtRg=
+		+lGWHhYhq2K6YZfHPEPVhQWOJnE=
 		</data>
 		<key>PPSource.bundle/image/alertContent_close_highlight_ipad.png</key>
 		<data>
@@ -3742,14 +3806,6 @@
 		<key>PPSource.bundle/image/boll_account@2x.png</key>
 		<data>
 		zyD2huRjiDhw3Y0CYOfhtWbjRGo=
-		</data>
-		<key>PPSource.bundle/image/boll_forum.png</key>
-		<data>
-		WD340XTs7p6sCuF7kIGFmqyt1II=
-		</data>
-		<key>PPSource.bundle/image/boll_forum@2x.png</key>
-		<data>
-		WD340XTs7p6sCuF7kIGFmqyt1II=
 		</data>
 		<key>PPSource.bundle/image/boll_gift.png</key>
 		<data>
@@ -4811,6 +4867,26 @@
 		<data>
 		NEjs8S3RI6HoNmMijfwxVpg/mlk=
 		</data>
+		<key>PPSource.bundle/image/buoy_recharge.png</key>
+		<data>
+		Wn/0GIxlUYETeiUtL53IK8t15i4=
+		</data>
+		<key>PPSource.bundle/image/buoy_recharge@2x.png</key>
+		<data>
+		mAvL1zXYHFpwAuzTu0xvLGwFLe8=
+		</data>
+		<key>PPSource.bundle/image/buoy_recharge@3x.png</key>
+		<data>
+		Lh31FTn6BGN9GnFG45a7N4aWGFI=
+		</data>
+		<key>PPSource.bundle/image/buoy_recharge_ipad.png</key>
+		<data>
+		cFJcfAHvR6O1327s/TLrKQp/cbQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_recharge_ipad@2x.png</key>
+		<data>
+		6kn9tdx2asfQzKViX068/GgjZJM=
+		</data>
 		<key>PPSource.bundle/image/common_alert_win_bg.png</key>
 		<data>
 		DbsxxiRaLN38nGOcuY3zsnQvykE=
@@ -5831,6 +5907,46 @@
 		<data>
 		OGsXc7NiH/25LyvmjJVA/L39Dio=
 		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight.png</key>
+		<data>
+		TnZdO34EPG2VJej3Y0UgcLmQm5k=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight@2x.png</key>
+		<data>
+		RmkuMLk3BH6eCil7L0l4n1b+Mgs=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight@3x.png</key>
+		<data>
+		AbXgxn6oi70qJPlLV3bXSBpRJog=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight_iPad.png</key>
+		<data>
+		AbZjKYxvJXe6L4C3vpbojAvtXVs=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight_iPad@2x.png</key>
+		<data>
+		sf1H/TXVb7uP4pKXEJVyARPL2d4=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal.png</key>
+		<data>
+		W4zUUkVbF/W5grZdgpt+rR4CiLs=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal@2x.png</key>
+		<data>
+		s5aqlmP9dwtB4C2cfg2XHxF+3Go=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal@3x.png</key>
+		<data>
+		BoNQUBqkB41vCwA4GIuEVQTM4/g=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal_iPad.png</key>
+		<data>
+		1nvEkGOET8kz+WW9qd5dYe+2HI8=
+		</data>
+		<key>PPSource.bundle/image/icon_myBankCard_normal_iPad@2x.png</key>
+		<data>
+		RKSzjTO1LVyieUBAx350/8VO6WQ=
+		</data>
 		<key>PPSource.bundle/image/icon_out_highlight.png</key>
 		<data>
 		csfbakcyyEEHV4TM74bMkk6IW5U=
@@ -5977,35 +6093,43 @@
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_highlight.png</key>
 		<data>
-		SswU9a5OZEILS0icxaQ1q7CceyI=
+		NVR6HWZ6ZFuWyMfedIxp8FSyXtc=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_highlight@2x.png</key>
 		<data>
-		p1Rdj5lb+g3wpN75oSQLja53qb0=
+		t6ddiRwbjtx+M2k/OA53z4LMbT4=
+		</data>
+		<key>PPSource.bundle/image/icon_recharge_highlight@3x.png</key>
+		<data>
+		5N9Kvoc2OTetcg268nT3QXuhYpc=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_highlight_ipad.png</key>
 		<data>
-		Iq/hEXFLKAzFygVeidQA7nUplA8=
+		jD2cqemdXXqG7n3aubkIbcCGdks=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_highlight_ipad@2x.png</key>
 		<data>
-		4vLsugzQd3G4jWZ6vrxlL8NiWck=
+		mIgvpvIKR49PrYJ47Gh6AVFJG1g=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_normal.png</key>
 		<data>
-		19/H4SyB1VOSJgPddfLJi1A4vaY=
+		fOQ5UAulIbVSf4ruA4Nt9jp2lv4=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_normal@2x.png</key>
 		<data>
-		MKuarxGwK8qLLE1cHQpEBDW/MWI=
+		cpz7t0sG+rII20jcxRF/yYLk5y4=
+		</data>
+		<key>PPSource.bundle/image/icon_recharge_normal@3x.png</key>
+		<data>
+		IJuQvNlw+92p/IDayWYuSWkJDfk=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_normal_ipad.png</key>
 		<data>
-		rFiRDwGvQDgSjEbk5Sj4CZ9fgkc=
+		MaQoZV9ZXKqlW9uXsM8bF5BUAyU=
 		</data>
 		<key>PPSource.bundle/image/icon_recharge_normal_ipad@2x.png</key>
 		<data>
-		d8wDRSA+xjWvSA6VHUr1N66dbPM=
+		8z4WS2vUZQ7JB+MWqFc93g2hDK0=
 		</data>
 		<key>PPSource.bundle/image/icon_right_disable.png</key>
 		<data>
@@ -6801,7 +6925,7 @@
 		</data>
 		<key>PPSource.bundle/sdk_dylib_Info.plist</key>
 		<data>
-		9oSbQ5i/hzPxuTIeCyGVbfX3wHE=
+		MWOvviaEeP7H20ostVztKerRu9U=
 		</data>
 		<key>PPSource.bundle/xml/ip_city_dictionary.xml</key>
 		<data>
@@ -6810,6 +6934,10 @@
 		<key>PPSource.bundle/xml/ip_province_dictionary.xml</key>
 		<data>
 		9S0D83T88QIgLutE9KFgdIOlzhw=
+		</data>
+		<key>TRWebViewJavascriptBridge.js.txt</key>
+		<data>
+		EanWgOPc0d+1cy2cSuaRFBUrpsc=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
