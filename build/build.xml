@@ -50,7 +50,7 @@
         <!-- android代码编译时需要的两个库，other中的库从官方SDK(API22)中取出。如果安装有Android SDK可以修改下列路径为官方的 -->
         <property name="android.classpath" value="other/android.jar;other/android-support-annotations.jar"/>
 
-		<javac srcdir="../src/java" destdir="${tempdir}/classes/" includeantruntime="false">
+		<javac srcdir="../src/java" destdir="${tempdir}/classes/" includeantruntime="false" source="1.7" target="1.7">
 			<compilerarg line="-encoding UTF-8"/>
 			<include name="com/l1fan/ane/*.java"/>
 			<include name="com/l1fan/ane/${ane.id}/*.java"/>
