@@ -56,7 +56,7 @@
 **如果Demo打包出错，请使用`build/other`目录下的`adt.jar`替换Flex SDK目录下的`lib/adt.jar`**[原因及其他解决办法](./build/other/)
 
 > sdks下的目录含_ios后缀的表明渠道支持iOS平台。编译出的ane也会同时支持android和ios平台
-> 测试环境为Flex4.6 with AIR19. Ant 1.9.1+。欢迎测试反馈
+> 测试环境为Flex4.6 with AIR19. Ant 1.9.1+ JDK1.7。欢迎测试反馈
 
 
 ## 文档
