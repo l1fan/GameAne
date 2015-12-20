@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/19.0">
+<application xmlns="http://ns.adobe.com/air/application/20.0">
     <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
-    <id>com.xy.sdk.alipay</id>
+    <id>com.xy.sdk.demo</id>
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
     <versionNumber>0.0.0</versionNumber>
@@ -42,7 +42,7 @@
                 <dict>
                     <key>CFBundleURLSchemes</key>
                     <array>
-                        <string>com.xy.sdk.alipay</string>
+                        <string>com.xy.sdk.demo.alipay</string>
                     </array>
                     <key>CFBundleURLName</key>
                     <string></string>
