@@ -131,6 +131,10 @@
         <item name="android:textSize">13.5sp</item>
         <item name="android:textColor">@color/sogou_game_sdk_color_3d3d3d</item>
     </style>
+    <style name="sogou_game_sdk_pay_bonus_balance" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_3d3d3d</item>
+    </style>
 
     <style name="sogou_game_sdk_pay_voucher" parent="@android:style/Widget.TextView">
         <item name="android:textSize">12sp</item>
@@ -215,7 +219,7 @@
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:windowBackground">@drawable/sogou_game_sdk_login_bg</item>
+        <item name="android:windowBackground">@drawable/sogou_game_sdk_exit_dialog_bg</item>
         <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
     </style>
 

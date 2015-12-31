@@ -14,8 +14,8 @@
         android:orientation="horizontal" >
 
         <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
             android:clickable="false"
             android:indeterminateDrawable="@drawable/sogou_game_sdk_custom_progressbar" />
 
@@ -24,8 +24,8 @@
             android:layout_height="wrap_content"
             android:clickable="false"
             android:text="@string/sogou_game_sdk_looding"
-            android:textColor="#FFD233"
-            android:textSize="20sp" />
+            android:textColor="@color/sogou_game_sdk_color_ff6a00"
+            android:textSize="13sp" />
     </LinearLayout>
 
 </LinearLayout>

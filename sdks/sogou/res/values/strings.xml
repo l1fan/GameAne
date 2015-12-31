@@ -42,6 +42,7 @@
     <string name="sogou_game_sdk_reg_succeed">恭喜你，注册成功!</string>
     <string name="sogou_game_sdk_feed_back_msg">您也可以联系搜狗手游企业客服 QQ:xxxx</string>
     <string name="sogou_game_sdk_bindin_submit_btn">确 定</string>
+    <string name="sogou_game_sdk_bindin_other">不,我就是老用户 >></string>
     <string name="des_title">请您为在该游戏的搜狗游客ID绑定账号</string>
     <string name="des_info">操作完成之后，请使用绑定账号进行登录</string>
 
@@ -58,8 +59,11 @@
     <string name="sogou_game_sdk_pay_pcard">电话充值卡</string>
     <string name="sogou_game_sdk_pay_scoin">S豆充值</string>
     <string name="sogou_game_sdk_pay_jcard">骏网一卡通</string>
+    <string name="sogou_game_sdk_pay_MO9">MO9</string>
     <string name="sogou_game_sdk_pay_record">充值记录</string>
+    <string name="sogou_game_sdk_pay_Bonus">我的红包</string>
     <string name="sogou_game_sdk_pay_voucher">我的代金券</string>
+    <string name="sogou_game_sdk_pay_redpkg">我的红包</string>
     <string name="sogou_game_sdk_pay_phone_dropdown">请选择充值卡</string>
     <string name="sogou_game_sdk_pay_phone_card_head">电话充值卡支付</string>
     <string name="sogou_game_sdk_pay_phone_card_subhead">支持中国移动、联通、电信充值卡支付</string>
@@ -69,14 +73,24 @@
     <string name="sogou_game_sdk_pay_aliwap">网银充值</string>
     <string name="sogou_game_sdk_pay_scoin_balance">账号余额：%1$sS豆</string>
     <string name="sogou_game_sdk_pay_user">账号：%1$s</string>
+    <string name="sogou_game_sdk_pay_game_info">游戏红包余额：%1$s元</string>
     <string name="sogou_game_sdk_pay_money">充值金额：%1$s元</string>
+    <string name="sogou_game_sdk_pay_wallet_history">查看红包记录 >></string>
+    <string name="sogou_game_sdk_pay_wallet_count">收到红包%1$s个</string>
     <string name="sogou_game_sdk_pay_use_voucher">使用%1$s元代金券 >></string>
     <string name="sogou_game_sdk_pay_use_voucher_default">使用代金券>></string>
     <string name="sogou_game_sdk_pay_un_use_voucher">取消使用代金券</string>
     <string name="sogou_game_sdk_pay_goods">购买商品：%1$s%2$s</string>
     <string name="sogou_game_sdk_pay_product">道具名称：%1$s</string>
     <string name="sogou_game_sdk_pay_confirm">确认充值</string>
+    <string name="sogou_game_sdk_pay_bonus_hint">新消息提示：</string>
+    <string name="sogou_game_sdk_pay_bonus_message">您新收到一个红包 %1$s元</string>
+    <string name="sogou_game_sdk_pay_bonus_balance">XXX游戏红包余额：%1$s元</string>
+    <string name="sogou_game_sdk_pay_bonus_received">收到的红包 %1$s个</string>
+    <string name="sogou_game_sdk_pay_links_bonus">查看红包记录>></string>
+    <string name="sogou_game_sdk_pay_bonus_confirm">确认用红包付款</string>
     <string name="sogou_game_sdk_pay_feedback">如有任何问题请点击问题反馈</string>
+    <string name="sogou_game_sdk_pay_red_feedback">红包是搜狗平台推出的一款优惠产品，不定期通过活动的形式发放给玩家的一种虚拟货币，红包里的金额可以用来购买游戏道具，为游戏充值。本活动由朋友玩支持。如有任何问题请点击问题反馈。</string>
     <string name="sogou_game_sdk_pay_tips">温馨提示:</string>
     <string name="sogou_game_sdk_pay_debit_card">借记卡</string>
     <string name="sogou_game_sdk_pay_record_account">账号:%1$s</string>
@@ -169,5 +183,9 @@
     <string name="passport_string_content_sso_bottom_tip">没有账号？</string>
     <string name="passport_string_content_sso_bottom_regist">立即注册</string>
     <string name="passport_string_title_sso">快速登录</string>
+    <!-- 红包记录 -->
+    <string name="sogou_game_sdk_pay_bonus_record_view_tv">红包记录:</string>
+    <string name="sogou_game_sdk_pay_bonus_record_back_tv">返回我的红包 >></string>
+    <string name="sogou_game_sdk_pay_bonus_record_item_amount">红包 %1$s元</string>
 
 </resources>

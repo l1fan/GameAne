@@ -39,15 +39,20 @@
         android:layout_height="230dp"
         android:layout="@layout/sogou_game_sdk_regist_main_land" />
 
-    <TextView
-        android:id="@+id/des_info"
-        style="@style/sogou_game_sdk_bindin_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginBottom="8dp"
+    <RelativeLayout
+        android:id="@+id/sogou_game_sdk_bindin_other_tv"
+        android:layout_width="match_parent"
+        android:layout_height="35.5dp"
         android:layout_marginTop="0dp"
-        android:text="@string/des_info"
-        android:textColor="@color/sogou_game_sdk_color_7b7b7b" />
+        android:background="@drawable/sogou_game_sdk_login_speedy_bottom_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/sogou_game_sdk_bindin_other"
+            android:textSize="14sp" />
+    </RelativeLayout>
 
 </LinearLayout>
