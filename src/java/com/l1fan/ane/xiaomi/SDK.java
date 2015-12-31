@@ -16,7 +16,7 @@ import com.xiaomi.gamecenter.sdk.entry.MiAppType;
 import com.xiaomi.gamecenter.sdk.entry.MiBuyInfoOnline;
 
 public class SDK extends SDKContext {
-	
+
 	public void init() throws JSONException {
 		MiAppInfo appInfo = new MiAppInfo();
 		JSONObject json = getJsonData();
@@ -24,6 +24,7 @@ public class SDK extends SDKContext {
 		appInfo.setAppKey(json.optString(APPKEY));
 		appInfo.setAppType(MiAppType.online); // 网游
 		MiCommplatform.Init(getActivity(), appInfo);
+		dispatchData(EVENT_INIT);
 	}
 
 	public void userLogin() {
@@ -50,20 +51,20 @@ public class SDK extends SDKContext {
 				case MiErrorCode.MI_XIAOMI_GAMECENTER_ERROR_LOGIN_FAIL:
 				case MiErrorCode.MI_XIAOMI_GAMECENTER_ERROR_ACTION_EXECUTED:
 				default:
-					dispatchError(EVENT_LOGIN, "login fail");
+					dispatchError(EVENT_LOGIN, "login fail ["+code+"]");
 					break;
 				}
 			}
 		});
 	}
-	
+
 	public void pay() throws JSONException{
 		MiBuyInfoOnline online = new MiBuyInfoOnline();
 		JSONObject json = getJsonData();
 		online.setCpOrderId(json.optString(ORDER_ID)); //订单号唯一(不为空)
-		online.setCpUserInfo(json.optString(EXT)); //此参数在用户支付成功后会透传给CP的服务器 
+		online.setCpUserInfo(json.optString(EXT)); //此参数在用户支付成功后会透传给CP的服务器
 		online.setMiBi(json.optInt(AMOUNT)/100); //必须是大于1的整数, 10代表10米币,即10元人民币(不为空)
-		
+
 		Bundle mBundle = new Bundle();
 		//mBundle.putString(GameInfoField.GAME_USER_BALANCE, "1000" );  //用户余额
 		//mBundle.putString(GameInfoField.GAME_USER_GAMER_VIP, "vip0");  //vip 等级
@@ -74,19 +75,19 @@ public class SDK extends SDKContext {
 //		mBundle.putString(GameInfoField.GAME_USER_SERVER_NAME, "峡谷");  //所在服务器
 		MiCommplatform.getInstance().miUniPayOnline(getActivity(), online, mBundle, new OnPayProcessListener(){
 		    @Override
-		    public void finishPayProcess(int code) { 
+		    public void finishPayProcess(int code) {
 		        switch(code) {
-		        case MiErrorCode.MI_XIAOMI_GAMECENTER_SUCCESS: 
+		        case MiErrorCode.MI_XIAOMI_GAMECENTER_SUCCESS:
 		             dispatchData(EVENT_PAY);
 		             break;
 		        case MiErrorCode.MI_XIAOMI_GAMECENTER_ERROR_PAY_CANCEL:
-		        case MiErrorCode.MI_XIAOMI_GAMECENTER_ERROR_PAY_FAILURE: 
+		        case MiErrorCode.MI_XIAOMI_GAMECENTER_ERROR_PAY_FAILURE:
 		        case MiErrorCode.MI_XIAOMI_GAMECENTER_ERROR_ACTION_EXECUTED:
 		        default :
-		        	 dispatchError(EVENT_PAY, "pay fail");
-		             break; 
+		        	 dispatchError(EVENT_PAY, "pay fail ["+code+"]");
+		             break;
 		        }
-		    } 
+		    }
 		});
 	}
 }

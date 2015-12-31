@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/20.0">
     <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
-    <id>ANEDemo.mi</id>
+    <id>com.sdk.migame.payment</id>
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
     <versionNumber>0.0.0</versionNumber>
@@ -76,7 +76,7 @@
 
 
             </manifest>
-            
+
         ]]></manifestAdditions>
     </android>
     <iPhone>
@@ -90,6 +90,6 @@
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
 <extensions>
-        <extensionID>com.l1fan.ane.uc</extensionID>
+        <extensionID>com.l1fan.ane.xiaomi</extensionID>
     </extensions>
 </application>
