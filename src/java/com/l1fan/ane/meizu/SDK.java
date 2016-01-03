@@ -75,8 +75,6 @@ public class SDK extends SDKContext {
 	    long ts = System.currentTimeMillis();
 	    String orderStr = String.format("app_id="+mAppId+"&buy_amount=1&cp_order_id="+ORDER_ID+"&create_time="+ts+"&pay_type=0&product_body="+pname+"&product_id="+pid+"&product_per_price="+price+"&product_subject="+pname+"&product_unit=&total_price="+price+"&uid="+mUid+"&user_info="+ext+":"+mAppSecret);
 	    String sign = md5(orderStr);
-	    System.out.println("meizu str:"+orderStr);
-	    System.out.println("meizu str sign:"+sign);
 	    
 		MzBuyInfo info = new MzBuyInfo();
 		info.setBuyCount(1);

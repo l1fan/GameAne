@@ -37,6 +37,7 @@
 	<string name="com_lenovo_lsf_lenovouser_login_error12">无效的三方accesstoken</string>
 	<string name="com_lenovo_lsf_lenovouser_login_error13">无效的realm</string>
 	<string name="com_lenovo_lsf_lenovouser_login_error20">未知错误:</string>
+	<string name="com_lenovo_lsf_lenovouser_login_error21">网络连接出错</string>
 	<string name="com_lenovo_lsf_lenovouser_userinfo_text16">提示</string>
 	<string name="com_lenovo_lsf_lenovouser_userinfo_text17">确定退出当前帐号？</string>
 	<string name="com_lenovo_lsf_lenovouser_userinfo_logouting">正在退出，请稍候</string>

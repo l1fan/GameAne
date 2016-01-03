@@ -56,6 +56,7 @@
     <string name="com_lenovo_pay_zuk_update_tip_text">您的ZUK帐号版本需要更新。</string>
     <string name="com_lenovo_pay_update_btn_text">更新</string>
     <string name="com_lenovo_pay_intallupdate_wait_text">正在等待安装完成</string>
+     <string name="com_lenovo_pay_loginning_cashier_text">正在登入联想收银台</string>
     <string name="com_lenovo_pay_account_different_title">帐号不一致</string>
     <string name="com_lenovo_pay_account_apk_offline_tip">获取不到您的账户信息，请点击登录联想帐号并完成支付。</string>
     <string name="com_lenovo_pay_account_zuk_apk_offline_tip">获取不到您的账户信息，请点击登录ZUK帐号并完成支付。</string>
@@ -64,4 +65,5 @@
         <![CDATA[可使用礼券<Font color=\"#4c96e0\"> %1$s </Font>V币券]]>
 
     </string>
+     <string name="com_lenovo_pay_get_login_info_text">正在载入登陆进程...</string>
 </resources>

@@ -37,22 +37,23 @@ public class SDK extends SDKContext {
 					}
 					dispatchData(EVENT_LOGIN, json);
 				} else {
-					dispatchError(EVENT_LOGIN, "login fail");
+					dispatchError(EVENT_LOGIN, "login fail:"+data);
 				}
 			}
 
 		});
 	}
 
-	public void pay() {
-		JSONObject data = new JSONObject();
+	public void pay() throws JSONException {
+		JSONObject pay = getJsonData();
 		GamePayRequest payRequest = new GamePayRequest();
+		
 		payRequest.addParam("notifyurl", ""); //notifyurl当前版本暂时不用,传空string
 		payRequest.addParam("appid", mAppId); 
-		payRequest.addParam("waresid", data.optString(PID)); //商品编码，联想后台建立
-		payRequest.addParam("exorderno", data.optString(ORDER_ID)); 
-		payRequest.addParam("price", data.opt(AMOUNT));
-		payRequest.addParam("cpprivateinfo", data.optString(EXT));
+		payRequest.addParam("waresid", pay.optInt(PID)); //商品编码，联想后台建立
+		payRequest.addParam("exorderno", pay.optString(ORDER_ID)); 
+		payRequest.addParam("price", pay.optInt(AMOUNT));
+		payRequest.addParam("cpprivateinfo", pay.optString(EXT));
 		LenovoGameApi.doPay(getActivity(), mAppKey, payRequest, new IPayResult(){
 
 			@Override
