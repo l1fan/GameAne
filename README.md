@@ -1,4 +1,4 @@
-# Ane Game SDK 
+# Ane Game SDK
 
 一个方便AIR手游快速接入国内各种Android/iOS渠道的项目
 
@@ -19,6 +19,8 @@
 - 搜狗(sogou)
 - 同步推(tongbutui)
 - 豌豆荚(wandoujia)
+- 拇指玩(muzhiwan)
+- 魅族(meizu)
 - iTools(itools)
 - 爱思助手(i4)
 - 果盘叉叉助手(xx)
@@ -41,13 +43,13 @@
 
 ## 构建
 项目使用[Apache Ant](http://ant.apache.org)构建。Flex SDK路径在`build/build.config`中配置。在`build`目录下执行
- 
+
 	ant -Did=渠道ID
 
 示例:
 
 	ant -Did=xiaomi
-	
+
 生成封装了小米原生SDK的ANE，生成的ane位于目录`ane/xiaomi`中
 
 	ant -Did=xiaomi android
@@ -68,8 +70,3 @@
 ## 开发
 ActionScript中每调用一次方法，即为向ANE发送一个Action。在渠道SDK中对应一个公开的无参方法。
 在java中通过`getAction()`获取操作,`getData()`、`getJsonData()` 方法获取数据
-
-
-
-
-
