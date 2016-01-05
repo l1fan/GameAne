@@ -4,33 +4,34 @@
 
 ## 支持渠道
 
-- 奇虎360(qihoo360)
-- UC(uc)
-- 小米(xiaomi)
-- 安智(anzhi)
-- 百度(baidu)
-- 当乐(downjoy)
-- 金立(gionee)
-- 海马(haima)
-- 华为(huawei)
-- 快用(kuaiyong)
-- 联想(lenovo)
-- OPPO(oppo)
-- 搜狗(sogou)
-- 同步推(tongbutui)
-- 豌豆荚(wandoujia)
-- 拇指玩(muzhiwan)
-- 魅族(meizu)
-- iTools(itools)
-- 爱思助手(i4)
-- 果盘叉叉助手(xx)
-- xy助手(xy)
-- pp助手(pp)
-- 乐8助手(le8)
-- i苹果(iiapple)
-- ...
+|渠道				|id					|Android| iOS|
+|----------|------------|-------|---|
+|奇虎360		|`qihoo360`   |Y			|		|
+|UC					|`uc`				|Y			|		|
+|小米				|`xiaomi`		|Y			|		|
+|安智				|`anzhi`		|Y			|		|
+|百度				|`baidu`		|Y			|		|
+|当乐				|`downjoy`	|Y			|		|
+|金立				|`gionee`		|Y			|		|
+|海马				|`haima`		|Y			|		|
+|华为				|`huawei`		|Y			|		|
+|快用				|`kuaiyong`	|Y			|Y		|
+|联想				|`lenovo`		|Y			|		|
+|OPPO				|`oppo`			|Y			|		|
+|搜狗				|`sogou`		|Y			|		|
+|同步推			|`tongbutui`|Y			|Y		|
+|豌豆荚			|`wandoujia`|Y			|		|
+|拇指玩			|`muzhiwan`	|Y			|		|
+|魅族				|`meizu`		|Y			|		|
+|iTools			|`itools`		|Y			|Y	|
+|爱思助手			|`i4`				|			|Y	|
+|果盘叉叉助手	|`xx`				|			|Y	 |
+|xy助手			|`xy`				|			|Y	  |
+|pp助手			|`pp`				|			|Y	 |
+|乐8助手			|`le8`			|			|Y	|
+|i苹果			|`iiapple`	|			|Y		|
 
->括号中字符为本项目规划的渠道ID
+
 
 ## 目录结构
 
@@ -46,19 +47,24 @@
 
 	ant -Did=渠道ID
 
+---
 示例:
 
 	ant -Did=xiaomi
 
 生成封装了小米原生SDK的ANE，生成的ane位于目录`ane/xiaomi`中
 
+---
 	ant -Did=xiaomi android
 
-使用生成的ANE打包Demo程序，生成apk。将`android`改为`ios`即生成ipa。查看[Demo测试参数](https://github.com/l1fan/GameAne/wiki/Demo%E5%8F%82%E6%95%B0)
+使用生成的ANE打包Demo程序，生成apk。将`android`改为`ios`即生成ipa。查看[Demo测试参数](https://github.com/l1fan/GameAne/wiki/Demo%E5%8F%82%E6%95%B0)。  
+
+---
 **如果Demo打包出错，请使用`build/other`目录下的`adt.jar`替换Flex SDK目录下的`lib/adt.jar`**[原因及其他解决办法](./build/other/)
 
-> sdks下的目录含_ios后缀的表明渠道支持iOS平台。编译出的ane也会同时支持android和ios平台
-> 测试环境为Flex4.6 with AIR19. Ant 1.9.1+ JDK1.7。欢迎测试反馈
+>sdks下的目录含_ios后缀的表明渠道支持iOS平台。编译出的ane也会同时支持android和ios平台
+
+> 测试环境为Flex4.6 with AIR20, Ant 1.9.1+, JDK7。欢迎测试反馈
 
 
 ## 文档
