@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/20.0">
     <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
-    <id>com.nearme.gamecenter.open.demo.nearme.gamecenter</id>
+    <id>com.nearme.onlinesdk.demo</id>
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
     <versionNumber>0.0.0</versionNumber>
@@ -23,6 +23,7 @@
         android:normalScreens="true"
         android:smallScreens="true" />
 
+
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.SEND_SMS" />
@@ -32,7 +33,6 @@
         <uses-permission android:name="android.permission.READ_PHONE_STATE" />
         <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
         <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
         <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
@@ -40,13 +40,13 @@
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
         <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-        <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    	  <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
         <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
         <uses-permission android:name="android.permission.VIBRATE" />
         <uses-permission android:name="android.permission.GET_TASKS" />
         <uses-permission android:name="android.permission.GET_ACCOUNTS" />
         <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    
+
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -54,113 +54,34 @@
 
     <application
         android:allowBackup="true" >
-        
-         <!-- activity for sdk all begin -->
-        <!-- activity for sdk core -->
-        <activity
-            android:name="com.nearme.gamecenter.open.core.LogoActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="com.nearme.gamecenter.open.core.OppoLogoActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="com.nearme.gamecenter.open.core.OnePlusLogoActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="com.nearme.gamecenter.open.core.WebViewBarActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="com.nearme.gamecenter.open.core.ActiveDetailActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-        <!-- activity for sdk upgrade -->
-        <activity
-            android:name="com.oppo.upgrade.activity.ForceUpgradeDialog"
-            android:configChanges="keyboardHidden|orientation|locale"
-            android:launchMode="singleTask"
-            android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
-            android:name="com.oppo.upgrade.activity.UpgradeDialog"
-            android:configChanges="keyboardHidden|orientation|locale"
-            android:launchMode="singleTask"
-            android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
-            android:name="com.oppo.upgrade.activity.MaintainActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:launchMode="singleTask"
-            android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        
-        <!-- OPEN SDK Register start -->
-        <activity
-            android:name="com.oppo.usercenter.opensdk.register.AccountRegisterActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Light.NoTitleBar" >
-            <intent-filter>
-                <action android:name="com.oppo.usercenter.opensdk_register" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.oppo.usercenter.opensdk.register.RegisterClauseActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-        <activity
-            android:name="com.oppo.usercenter.opensdk.login.AccountLoginActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Light.NoTitleBar" >
-            <intent-filter>
-                <action android:name="com.oppo.usercenter.opensdk_login" />
+        <!-- nearme game sdk config goes here -->
+ 		<activity
+ 			android:name="com.nearme.game.sdk.component.proxy.ProxyActivity"
+ 			android:configChanges="keyboardHidden|orientation|screenSize"
+ 			android:theme="@style/Theme_Dialog_Custom"
+ 			android:process=":gcsdk">
+ 		</activity>
+ 		<service
+ 			android:name="com.nearme.game.sdk.component.proxy.ProxyApiService"
+ 			android:process=":gcsdk"
+ 			android:priority="1000">
+ 		</service>
+         <receiver
+             android:name="com.nearme.game.sdk.component.proxy.ProxyUserCenterOperateReceiver"
+             android:exported="true"
+             android:process=":gcsdk">
+             <intent-filter>
+                 <action android:name="com.oppo.usercenter.account_login" />
+                 <action android:name="com.oppo.usercenter.account_logout" />
+                 <action android:name="com.oppo.usercenter.modify_name" />
+             </intent-filter>
+         </receiver>
+         <!-- nearme game sdk config end -->
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.oppo.usercenter.opensdk.findpsw.AccountFindPswActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-        <activity
-            android:name="com.oppo.usercenter.opensdk.register.OneKeyRegSetPswActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-
-        <!-- OPEN SDK Register end -->
-
-        <!-- UserCenter SDK Register start -->
-        <receiver
-            android:name="com.oppo.usercenter.sdk.helper.UserCenterOperateReceiver"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="com.oppo.usercenter.account_login" />
-                <action android:name="com.oppo.usercenter.account_logout" />
-                <action android:name="com.oppo.usercenter.modify_name" />
-            </intent-filter>
-        </receiver>
-        <!-- UserCenter SDK Register end -->
-        
-        
-        <!-- activity for sdk all end !!! -->
-              
     </application>
             </manifest>
-            
+
         ]]></manifestAdditions>
     </android>
     <iPhone>

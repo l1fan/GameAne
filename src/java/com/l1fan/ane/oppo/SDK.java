@@ -4,95 +4,141 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.app.Application.ActivityLifecycleCallbacks;
+import android.os.Build;
+import android.os.Bundle;
 
 import com.l1fan.ane.SDKContext;
-import com.nearme.gamecenter.open.api.ApiCallback;
-import com.nearme.gamecenter.open.api.GameCenterSDK;
-import com.nearme.gamecenter.open.api.GameCenterSettings;
-import com.nearme.oauth.model.UserInfo;
+import com.nearme.game.sdk.GameCenterSDK;
+import com.nearme.game.sdk.callback.ApiCallback;
+import com.nearme.game.sdk.callback.GameExitCallback;
+import com.nearme.game.sdk.common.model.biz.GameCenterSettings;
+import com.nearme.game.sdk.common.model.biz.PayInfo;
 
 public class SDK extends SDKContext {
 	
 	public void init() {
-		
+		lifeCycle();
 		JSONObject json = new JSONObject();
 		String appKey = json.optString(APPKEY);
 		String appSecret = json.optString(APPSECRET);
+		boolean debug = json.optBoolean(DEBUGMODE,false);
+		boolean ori	= json.optBoolean(ORIENTATION,true);
+		GameCenterSettings gameCenterSettings = new GameCenterSettings(false,appKey,appSecret,debug,ori);
 		
-		GameCenterSettings gameCenterSettings = new GameCenterSettings(appKey,appSecret) {
-			
-			@Override
-			public void onForceUpgradeCancel() {
-				dispatchError(EVENT_ERROR, "need to re-login");
-			}
-			
-			@Override
-			public void onForceReLogin() {
-				dispatchError(EVENT_UPDATE, "update cancel");
-			}
-		};
-		
-		GameCenterSettings.isDebugModel = json.optBoolean(DEBUGMODE);
-		GameCenterSettings.isOritationPort = json.optBoolean(ORIENTATION);
 		GameCenterSDK.init(gameCenterSettings, getActivity());
 		dispatchData(EVENT_INIT);
 	}
 	
 	public void userLogin() {
 		
-		final Activity activity = getActivity();
-		final GameCenterSDK sdk = GameCenterSDK.getInstance();
-
-		GameCenterSDK.setmCurrentContext(activity);
-		sdk.doLogin(new ApiCallback() {
+		GameCenterSDK.getInstance().doLogin(getActivity(), new ApiCallback() {
 			
 			@Override
-			public void onSuccess(String content, int code) {
-				final JSONObject json = new JSONObject();
+			public void onSuccess(String msg) {
 				try {
-					json.put(TOKEN, sdk.doGetAccessToken());
-					sdk.doGetUserInfo(new ApiCallback() {
-						
-						@Override
-						public void onSuccess(String content, int paramInt) {
-							UserInfo ui = new UserInfo(content);
-							try {
-								json.put(UID, ui.id);
-							} catch (JSONException e) {
-								e.printStackTrace();
-							}
-							dispatchData(EVENT_LOGIN,json);
-						}
-						
-						@Override
-						public void onFailure(String content, int paramInt) {
-							dispatchError(EVENT_LOGIN, content);
-
-						}
-					}, activity);
+					JSONObject json = new JSONObject(msg);
+					String token = json.getString("token"); 
+					String ssoid = json.getString("ssoid");
+					
+					JSONObject data = new JSONObject();
+					data.put(TOKEN, token);
+					data.put(UID, ssoid);
+					dispatchData(EVENT_LOGIN, data);
 				} catch (JSONException e) {
+					dispatchError(EVENT_LOGIN, e.getMessage());
 					e.printStackTrace();
 				}
-				
-				
 			}
 			
 			@Override
-			public void onFailure(String content, int code) {
-				dispatchError(EVENT_LOGIN, content);
+			public void onFailure(String msg, int code) {
+				dispatchError(EVENT_LOGIN, "login fail:"+msg+":"+code);
 			}
-		}, activity);
+		});
 	}
 	
-	public void pay(){
-		//TODO: unfinished
+	public void pay() throws JSONException{
+		JSONObject pay = getJsonData();
+		
+		PayInfo payInfo = new PayInfo(pay.optString(ORDER_ID), pay.optString(EXT), pay.optInt(AMOUNT));
+		payInfo.setProductName(pay.optString(PNAME));
+		payInfo.setCallbackUrl(pay.optString(NOTIFY_URL));
+		
+		GameCenterSDK.getInstance().doPay(getActivity(), payInfo, new ApiCallback() {
+			
+			@Override
+			public void onSuccess(String msg) {
+				dispatchData(EVENT_PAY,"pay success:"+msg);
+			}
+			
+			@Override
+			public void onFailure(String msg, int code) {
+				dispatchError(EVENT_PAY, "pay fail:"+msg+":"+code);
+			}
+		});
 	}
 	
-	public void toolBarShow() {
-		GameCenterSDK.getInstance().doShowSprite(getActivity());
+	@Override
+	public void dispose() {
+		super.dispose();
+		GameCenterSDK.getInstance().onExit(getActivity(), new GameExitCallback() {
+			
+			@Override
+			public void exitGame() {
+				
+			}
+		});
 	}
 	
-	public void toolBarHide(){
-		GameCenterSDK.getInstance().doDismissSprite(getActivity());
+	private void lifeCycle() {
+		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+			return;
+		}
+		getActivity().getApplication().registerActivityLifecycleCallbacks(
+				new ActivityLifecycleCallbacks() {
+
+					@Override
+					public void onActivityStopped(Activity arg0) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onActivityStarted(Activity arg0) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onActivitySaveInstanceState(Activity arg0,
+							Bundle arg1) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onActivityResumed(Activity arg0) {
+						GameCenterSDK.getInstance().onResume(arg0);
+					}
+
+					@Override
+					public void onActivityPaused(Activity arg0) {
+						GameCenterSDK.getInstance().onPause();
+					}
+
+					@Override
+					public void onActivityDestroyed(Activity arg0) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onActivityCreated(Activity arg0, Bundle arg1) {
+						// TODO Auto-generated method stub
+
+					}
+				});		
 	}
+	
 }
