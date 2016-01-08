@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aipay_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/v_title_bar_aipay"
+        layout="@layout/ipay_ui_title_bar_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:background="@color/ipay_color_2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="预计到账： "
+            android:textColor="@color/ipay_color_4"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_dou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/ipay_color_6"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 豆"
+            android:textColor="@color/ipay_color_4"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ipay_border_bg_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ipay_title_h"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="卡类型："
+                        android:textColor="@color/ipay_color_4"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_card_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/ipay_ui_more"
+                        android:drawablePadding="@dimen/margin_15"
+                        android:gravity="center_vertical"
+                        android:text="盛大卡"
+                        android:textColor="@color/ipay_color_7"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divid_line_h"
+                    android:background="@color/ipay_color_9" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ipay_title_h"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_card_amount_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="卡面额："
+                        android:textColor="@color/ipay_color_4"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/et_card_amount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_card_amount_1"
+                        android:background="@color/transparent"
+                        android:hint="单位（元）"
+                        android:textColorHint="@color/ipay_color_3"
+                        android:textColor="@color/ipay_color_5"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_card_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/ipay_ui_more"
+                        android:drawablePadding="@dimen/margin_15"
+                        android:gravity="center_vertical"
+                        android:text="盛大卡"
+                        android:textColor="@color/ipay_color_7"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divid_line_h"
+                    android:background="@color/ipay_color_9" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ipay_title_h"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_card_number_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="卡    号："
+                        android:textColor="@color/ipay_color_4"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/et_card_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_card_number_1"
+                        android:background="@color/transparent"
+                        android:hint="请输入游戏点卡卡号"
+                        android:textColorHint="@color/ipay_color_3"
+                        android:textColor="@color/ipay_color_5"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divid_line_h"
+                    android:background="@color/ipay_color_9" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ipay_title_h"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_card_password_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="卡    密："
+                        android:textColor="@color/ipay_color_4"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/et_card_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_card_password_1"
+                        android:background="@color/transparent"
+                        android:hint="请输入游戏点卡密码"
+                        android:textColorHint="@color/ipay_color_3"
+                        android:textColor="@color/ipay_color_5"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* "
+                    android:textColor="@color/ipay_color_6"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_yingyongdou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请确保所选面额与卡实际面额一致，否则将可能导致充值失败、意外销卡或资金损失。"
+                    android:textColor="@color/ipay_color_3"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:background="@drawable/ipay_btn_charge"
+                android:text="充值应用豆"
+                android:textColor="@color/ipay_color_1"
+                android:textSize="@dimen/text_size_14" />
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

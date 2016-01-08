@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/ipay_border_bg_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/t_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="提示"
+        android:textColor="@color/ipay_color_10"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divid_line_h"
+        android:background="@color/ipay_color_10" />
+
+    <TextView
+        android:id="@+id/dlg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_20"
+        android:text="文案"
+        android:textColor="@color/ipay_color_5"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dlg_sure"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ipay_btn_charge"
+            android:text="确定"
+            android:textColor="@color/ipay_color_1"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/dlg_cancel"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@color/ipay_color_8"
+            android:visibility="gone"
+            android:text="取消"
+            android:textColor="@color/ipay_color_4"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

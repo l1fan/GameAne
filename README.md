@@ -15,14 +15,16 @@
 |金立				|`gionee`		|Y			|		|
 |海马				|`haima`		|Y			|		|
 |华为				|`huawei`		|Y			|		|
-|快用				|`kuaiyong`	|Y			|Y		|
+|快用				|`kuaiyong`	|Y			|Y	|
 |联想				|`lenovo`		|Y			|		|
 |OPPO				|`oppo`			|Y			|		|
 |搜狗				|`sogou`		|Y			|		|
-|同步推			|`tongbutui`|Y			|Y		|
+|同步推			|`tongbutui`|Y			|Y	|
 |豌豆荚			|`wandoujia`|Y			|		|
 |拇指玩			|`muzhiwan`	|Y			|		|
+|应用汇			|`appchina`	|Y			|		|
 |魅族				|`meizu`		|Y			|		|
+|优酷				|`youku`		|Y			|		|
 |iTools			|`itools`		|Y			|Y	|
 |爱思助手			|`i4`				|			|Y	|
 |果盘叉叉助手	|`xx`				|			|Y	 |
