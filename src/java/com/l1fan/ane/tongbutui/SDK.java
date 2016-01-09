@@ -7,10 +7,15 @@ import com.l1fan.ane.SDKContext;
 import com.tongbu.sdk.bean.TbUser;
 import com.tongbu.sdk.configs.TbPlatform;
 import com.tongbu.sdk.configs.TbPlatformSettings;
+import com.tongbu.sdk.configs.TbToolBarPlace;
 import com.tongbu.sdk.listener.OnInitFinishedListener;
 import com.tongbu.sdk.listener.OnLoginFinishedListener;
+import com.tongbu.sdk.listener.OnSwitchAccountListener;
+import com.tongbu.sdk.widget.TbFloatToolBar;
 
 public class SDK extends SDKContext {
+
+	private TbFloatToolBar toolBar;
 
 	public void init() throws JSONException {
 		TbPlatformSettings settings = new TbPlatformSettings();
@@ -37,6 +42,8 @@ public class SDK extends SDKContext {
 				}
 			}
 		});
+		
+		toolBar = TbFloatToolBar.create(getActivity(), TbToolBarPlace.POSITION_TOP_LEFT);
 	}
 
 	public void userLogin() {
@@ -45,16 +52,38 @@ public class SDK extends SDKContext {
 			@Override
 			public void onLoginFinished(boolean success, TbUser paramTbUser) {
 				if (success) {
-					JSONObject json = new JSONObject();
-					try {
-						json.put(UID, paramTbUser.uid);
-						json.put(TOKEN, paramTbUser.session);
-						json.put(UNAME, paramTbUser.name);
-						json.put("account", paramTbUser.account);
-						dispatchData(EVENT_LOGIN, json);
-					} catch (JSONException e) {
-						e.printStackTrace();
-					}
+					
+					dispatchLoginData(paramTbUser);
+					toolBar.show();
+					TbPlatform.getInstance().setOnSwitchAccountListener(new OnSwitchAccountListener() {
+						
+						@Override
+						public void onSwitchAccountFinished(int flag, TbUser user) {
+							switch (flag) {
+							case SWITCH_ACCOUNT_SUCCESS:
+								dispatchLoginData(user);
+								break;
+							case SWITCH_ACCOUNT_LOGOUT:
+								dispatchData(EVENT_LOGOUT);
+								break;
+							default:
+								break;
+							}
+						}
+					});
+				}
+			}
+			
+			public void dispatchLoginData(TbUser user){
+				JSONObject json = new JSONObject();
+				try {
+					json.put(UID, user.uid);
+					json.put(TOKEN, user.session);
+					json.put(UNAME, user.name);
+					json.put("account", user.account);
+					dispatchData(EVENT_LOGIN, json);
+				} catch (JSONException e) {
+					e.printStackTrace();
 				}
 			}
 		});
@@ -62,10 +91,15 @@ public class SDK extends SDKContext {
 
 	public void userLogout() {
 		TbPlatform.getInstance().tbLogout(getActivity(), 1);
+		dispatchData(EVENT_LOGOUT);
+		toolBar.hide();
 	}
 
-	public void destory() {
+	@Override
+	public void dispose() {
+		super.dispose();
 		TbPlatform.getInstance().tbDestory(getActivity());
+		if(toolBar != null) toolBar.recycle();
 	}
-
+	
 }

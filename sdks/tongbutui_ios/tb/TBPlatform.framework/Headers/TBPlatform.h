@@ -5,7 +5,7 @@
 //  Created by YLo. on 13-12-5.
 //  Copyright (c) 2013年 tongbu.com. All rights reserved.
 //
-//  SDK Version : 4.1.2
+//  SDK Version : 4.2.0 (2015-11-03)TBPlatform.h
 
 #import <UIKit/UIKit.h>
 #import "TBPlatformDefines.h"

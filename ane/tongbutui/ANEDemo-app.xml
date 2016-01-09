@@ -36,8 +36,8 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="22" />
 
-   
-    <application>  
+
+    <application>
         <!-- Activity -->
         <activity
             android:name="com.tongbu.sdk.ui.TbMainActivity"
@@ -76,11 +76,11 @@
 
         <!-- Service -->
         <service android:name="com.tongbu.sdk.service.TbUpdateService" />
-               <meta-data android:name="TONGBU_CHANNEL" 
+               <meta-data android:name="TONGBU_CHANNEL"
            android:value="tongbu" />
     </application>
             </manifest>
-            
+
         ]]></manifestAdditions>
     </android>
     <iPhone>
@@ -91,17 +91,33 @@
                 <string>2</string>
             </array>
 
-            <key>CFBundleURLTypes</key>
-      <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
+            <key>LSApplicationQueriesSchemes</key>
             <array>
-                <string>com.tongbu.demo-tb</string>
+              <string>alipay</string>
+              <string>alipayshare</string>
+              <string>wechat</string>
+              <string>weixin</string>
+              <string>tuihd</string>
+              <string>tbtui</string>
+              <string>abgame.com</string>
             </array>
-            <key>CFBundleURLName</key>
-            <string>com.tongbu.demo</string>
-        </dict>
-    </array>
+            <key>NSAppTransportSecurity</key>
+            <dict>
+              <key>NSAllowsArbitraryLoads</key>
+              <true/>
+            </dict>
+
+            <key>CFBundleURLTypes</key>
+            <array>
+              <dict>
+                  <key>CFBundleURLSchemes</key>
+                  <array>
+                      <string>com.tongbu.demo-tb</string>
+                  </array>
+                  <key>CFBundleURLName</key>
+                  <string>com.tongbu.demo</string>
+              </dict>
+          </array>
         ]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
