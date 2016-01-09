@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/zy_gray" >
+
+    <TextView
+        android:id="@id/zy_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textColor="@color/zy_green"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/zy_tv_app_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zy_tv_title"
+        android:paddingLeft="10dp"
+        android:textColor="@color/zy_white_gray"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@id/zy_iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zy_tv_app_desc"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:id="@id/zy_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/zy_iv_bg"
+        android:layout_alignTop="@id/zy_tv_title"
+        android:src="@drawable/zy_btn_close" />
+
+</RelativeLayout>

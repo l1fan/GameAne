@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="count_color">#000</color>
+    <color name="zy_float_content_textcolor">#848484</color>
+    <color name="zy_float_line_color">#bcbcbc</color>
+    <color name="zy_pay_wel_text_color">#727272</color>
+    <color name="zy_pay_dialog_title_textcolor">#f47525</color>
+    <color name="zy_pay_dialog_content_textcolor">#8f8f8f</color>
+    <color name="zy_pay_dialog_content_balance_textcolor">#5bc65c</color>
+    <color name="zy_pay_continue_game_content_textcolor">#ababab</color>
+    <color name="zy_transparent">#00000000</color>
+    <color name="zy_black">#ff000000</color>
+    <color name="zy_white">#ffffffff</color>
+    <color name="zy_gray">#ff313131</color>
+    <color name="zy_green">#ff739920</color>
+    <color name="zy_white_gray">#ffbfbdbd</color>
+    <color name="zy_small_white">#ffc8c8c8</color>
+    <color name="zy_black_alph">#c0000000</color>
+    <color name="zy_bg_update_dialog">#c8000000</color>
+    <color name="zy_update_dialog_divider">#ff2b2b2b</color>
+    <color name="zy_bg_dialog_btns">#ff323232</color>
+    <color name="zy_tv_prom_home_title">#ff682602</color>
+    <color name="zy_bg_prom_home">#ff2d2c23</color>
+    <color name="zy_app_desc_gray">#ff2d2d2d</color>
+    <color name="zy_pink">#ffe3dab1</color>
+    <color name="zy_red">#ffff0000</color>
+    <color name="zy_download_list_item_bg_deep">#ffe3dab1</color>
+    <color name="zy_download_list_item_bg_light">#fff1edd8</color>
+    <color name="zy_acct_text_color_black">#ff293541</color>
+    <color name="zy_black_alpha_1">#9b000000</color>
+    <color name="zy_vol_bar_blue">#ff6db2df</color>
+    <color name="zy_vol_bar_green">#ff9cd629</color>
+    <color name="zy_notify_text_gray1">#ff6e6e6e</color>
+    <color name="zy_notify_text_gray2">#ffb9b9b9</color>
+    <color name="zy_text_orange">#FF7F00</color>
+    <color name="zy_half_tra">#e0000000</color>
+</resources>

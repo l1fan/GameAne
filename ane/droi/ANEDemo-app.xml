@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/20.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.zhuoyou.pay.sdkclient</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+        <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true" >
+        <activity
+                    android:name="com.zhuoyou.pay.sdk.RechargeActivity"
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+                    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+                </activity>
+
+                <receiver
+                    android:name="com.zhuoyou.pay.sdk.AccountUpdateReceiver"
+                    android:enabled="true"
+                    android:exported="true" >
+                    <intent-filter>
+                        <category android:name="android.intent.category.LAUNCHER" />
+
+                        <action android:name="android.intent.action.PACKAGE_ADDED" />
+                        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                        <data android:scheme="package" />
+                    </intent-filter>
+                    <intent-filter>
+                        <action android:name="droi.account.intent.action.ACCOUNT_UPDATED" />
+                        <action android:name="droi.account.intent.action.ACCOUNT_LOGIN" />
+                        <action android:name="droi.account.intent.action.ACCOUNT_DELETED" />
+                        <action android:name="droi.account.intent.syncinfo.PHONE_BINDED" />
+                        <action android:name="droi.account.intent.syncinfo.LOGIN_CANCELLED" />
+                    </intent-filter>
+                </receiver>
+
+                <activity
+                    android:name="com.alipay.sdk.app.H5PayActivity"
+                    android:configChanges="orientation|keyboardHidden|navigation"
+                    android:exported="false"
+                    android:screenOrientation="behind"
+                    android:windowSoftInputMode="adjustResize|stateHidden" >
+                </activity>
+                <activity
+                    android:name="com.zhuoyi.system.promotion.activity.PromHomeWapScreenActivity"
+                    android:allowTaskReparenting="true"
+                    android:clearTaskOnLaunch="true"
+                    android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+                    android:excludeFromRecents="true"
+                    android:finishOnTaskLaunch="true"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:taskAffinity="system.king.com"
+                    android:theme="@android:style/Theme.NoTitleBar" >
+                </activity>
+                <activity
+                    android:name="com.zhuoyi.system.promotion.activity.PromCommonShortcutActivity"
+                    android:allowTaskReparenting="true"
+                    android:clearTaskOnLaunch="true"
+                    android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+                    android:excludeFromRecents="true"
+                    android:finishOnTaskLaunch="true"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:taskAffinity="system.king.com"
+                    android:theme="@style/zy_transparent" >
+                    <intent-filter android:priority="2147483647" >
+                        <action android:name="android.intent.action.MAIN" />
+                    </intent-filter>
+                </activity>
+                <activity
+                    android:name="com.zhuoyi.system.promotion.activity.PromDesktopAdActivity"
+                    android:allowTaskReparenting="true"
+                    android:clearTaskOnLaunch="true"
+                    android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+                    android:excludeFromRecents="true"
+                    android:finishOnTaskLaunch="true"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:taskAffinity="system.king.com"
+                    android:theme="@style/zy_transparent" >
+                </activity>
+
+                <receiver android:name="com.zhuoyi.system.promotion.receiver.PackageInstallationReceiver" >
+                    <intent-filter android:priority="2147483647" >
+                        <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                        <data android:scheme="package" />
+                    </intent-filter>
+                    <intent-filter android:priority="2147483647" >
+                        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                        <data android:scheme="package" />
+                    </intent-filter>
+                </receiver>
+                <receiver android:name="com.zhuoyi.system.promotion.receiver.PromBootReceiver" >
+                    <intent-filter android:priority="2147483647" >
+                        <action android:name="android.intent.action.BOOT_COMPLETED" />
+                    </intent-filter>
+                </receiver>
+                <receiver android:name="com.zhuoyi.system.receiver.PhoneStatReceiver" >
+                    <intent-filter android:priority="2147483647" >
+                        <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                        <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                        <action android:name="android.intent.action.ANY_DATA_STATE" />
+                        <action android:name="android.net.wifi.STATE_CHANGE" />
+                    </intent-filter>
+                    <intent-filter android:priority="2147483647" >
+                        <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                        <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                        <data android:scheme="file" />
+                    </intent-filter>
+                </receiver>
+
+                <service android:name="com.zhuoyi.system.service.ZyService" />
+
+                <!-- 修改下面属性中的authorities为自己的包名 -->
+                <provider
+                    android:name="com.zhuoyi.system.promotion.provider.PromWebContentProvider"
+                    android:authorities="com.zhuoyou.pay.sdkclient"
+                    android:exported="false" />
+
+                <meta-data
+                    android:name="zy_cp_id"
+                    android:value="s001" />
+                <meta-data
+                    android:name="zy_appid"
+                    android:value="sdkzf0" />
+                <meta-data
+                    android:name="zy_channel_id"
+                    android:value="sdkzfpu01" />
+                <meta-data
+                    android:name="ZY_LOTUSEED_APPKEY"
+                    android:value="lapkey" />
+
+              <!-- 修改为卓易分配的app id -->
+              <meta-data
+                  android:name="zy_app_id"
+                  android:value="152" />
+
+              <!-- 修改为卓易分配的app key -->
+              <meta-data
+                  android:name="zy_app_key"
+                  android:value="9821830595ef8f5578533d964ea01289" />
+
+              <!-- 修改为卓易分配的渠道号 -->
+              <meta-data
+                  android:name="zy_channel"
+                  android:value="152_01" />
+
+
+    </application>
+            </manifest>
+
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions>
+      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
+          </InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.droi</extensionID>
+    </extensions>
+</application>

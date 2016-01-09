@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/zy_tv_empt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zy_white"
+    android:gravity="center"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:textColor="@color/zy_black"
+    android:textSize="20sp" >
+
+</TextView>

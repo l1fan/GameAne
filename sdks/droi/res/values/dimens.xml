@@ -1,0 +1,13 @@
+<resources>
+
+     <dimen name="float_window_view_width">50dp</dimen>
+    <dimen name="float_window_view_height">50dp</dimen>
+    <dimen name="floating_view_touch_slop">2.5dp</dimen>
+    <dimen name="dialog_title_margin_top">14.6dp</dimen>
+    <dimen name="zy_pay_wel_icon_width">14.7dp</dimen>
+    <dimen name="zy_pay_wel_icon_height">14.7dp</dimen>
+    <dimen name="zy_pay_wel_icon_marginleft">12dp</dimen>
+    <dimen name="zy_pay_wel_text_marginleft">4dp</dimen>
+    <dimen name="zy_pay_wel_text_size">10.7sp</dimen>
+    <dimen name="zy_pay_wel_margintop">100dp</dimen>
+</resources>

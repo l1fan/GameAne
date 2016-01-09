@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center_vertical">
+  	<RelativeLayout 
+  	    android:id="@id/zy_rl"
+  		android:layout_width="wrap_content"
+  		android:layout_height="fill_parent"
+  		android:paddingTop="5dip"
+  		android:paddingBottom="5dip"
+  		android:background="@drawable/zy_notify_bg_1"
+  	>
+  		<ImageView
+	  		android:id="@id/zy_iv_notify_icon"
+	  		android:layout_width="48dip"
+	  		android:layout_height="48dip"
+	  		android:adjustViewBounds="true"
+	  		android:layout_centerInParent="true"
+	  	/>
+  	</RelativeLayout>
+  	<LinearLayout 
+  	    android:id="@id/zy_ll"
+  		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/zy_notify_bg_2"
+		android:paddingTop="5dip"
+  		android:paddingBottom="5dip"
+  	>
+  		<TextView
+  			android:id="@id/zy_tv_notify_title"
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:paddingLeft="5dp"
+	  		android:textSize="16sp"
+	  		android:textColor="@color/zy_white"
+	  		android:layout_marginBottom="5dip"
+  		/>
+  		
+  		<TextView
+  			android:id="@id/zy_tv_notify_msg"
+	  		android:layout_width="fill_parent"
+	  		android:paddingLeft="5dp"
+	  		android:layout_height="wrap_content"
+	  		android:textSize="14sp"
+	  		android:singleLine="true"
+	  		android:textColor="@color/zy_black"
+  		/>
+  	</LinearLayout>
+  	
+</LinearLayout>
