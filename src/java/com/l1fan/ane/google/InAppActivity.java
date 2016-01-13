@@ -53,10 +53,16 @@ public class InAppActivity extends Activity {
 				ext);
 		System.out.println("buy intent bundle:" + buyIntentBundle + ",resp code:"
 				+ buyIntentBundle.getInt("RESPONSE_CODE"));
-		PendingIntent pendingIntent = buyIntentBundle.getParcelable("BUY_INTENT");
-		System.out.println("pending intent" + pendingIntent);
-		startIntentSenderForResult(pendingIntent.getIntentSender(), 1001, new Intent(), Integer.valueOf(0),
-				Integer.valueOf(0), Integer.valueOf(0));
+		
+		if (buyIntentBundle.getInt("RESPONSE_CODE") == 0) {
+			PendingIntent pendingIntent = buyIntentBundle.getParcelable("BUY_INTENT");
+			System.out.println("pending intent" + pendingIntent);
+			startIntentSenderForResult(pendingIntent.getIntentSender(), 1001, new Intent(), Integer.valueOf(0),
+					Integer.valueOf(0), Integer.valueOf(0));
+		}else{
+			InAppHelper.getHelper().context.dispatchError(SDKContext.EVENT_PAY,"支付请求不支持，请检查账号");
+		}
+
 	}
 
 	@Override
@@ -73,7 +79,7 @@ public class InAppActivity extends Activity {
 		SDKContext sdk = InAppHelper.getHelper().context;
 
 		int responseCode = data.getIntExtra("RESPONSE_CODE", 0);
-		String purchaseData = data.getStringExtra("INAPP_PURCHASE_DATA");
+		final String purchaseData = data.getStringExtra("INAPP_PURCHASE_DATA");
 		String dataSignature = data.getStringExtra("INAPP_DATA_SIGNATURE");
 
 		if (resultCode == Activity.RESULT_OK && responseCode == 0) {
@@ -90,14 +96,14 @@ public class InAppActivity extends Activity {
 			JSONObject dispatchData = new JSONObject();
 
 			try {
-				final JSONObject p = new JSONObject(purchaseData);
-				dispatchData.put("purchase", p);
+				dispatchData.put("purchase", purchaseData);
 				dispatchData.put("sign", dataSignature);
 				new Thread(new Runnable() {
 
 					@Override
 					public void run() {
 						try {
+							final JSONObject p = new JSONObject(purchaseData);
 							InAppHelper.getHelper().billService.consumePurchase(3, getPackageName(),
 									p.getString("purchaseToken"));
 						} catch (RemoteException e) {
