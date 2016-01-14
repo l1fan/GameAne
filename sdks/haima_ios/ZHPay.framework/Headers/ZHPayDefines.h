@@ -4,7 +4,7 @@
 //
 //  Created by changye on 14-4-16.
 //  Copyright (c) 2014年 haima. All rights reserved.
-//  SDKVer 1.3.1
+//  SDKVer 1.3.8
 
 
 #ifndef ZHAccountSDK_ZHAccountDefines_h

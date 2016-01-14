@@ -4,7 +4,7 @@
 //
 //  Created by changye on 14-4-14.
 //  Copyright (c) 2014年 haima. All rights reserved.
-//  Ver:1.3.1
+//  Ver:1.3.8
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
@@ -63,6 +63,16 @@
  *  @brief 获取SDK版本号
  */
 + (NSString *)getSDKVersion;
+
+/**
+ *  @brief 为解决银联设置支持设备方向
+ */
++ (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
+
+/**
+ *  @brief 为解决银联设置支持设备方向
+ */
++ (BOOL)shouldAutorotate;
 
 @end
 

@@ -45,6 +45,10 @@ either expressed or implied, of the FreeBSD Project.
         <option>-framework CoreGraphics</option>
         <option>-framework UIKit</option>
         <option>-framework CoreTelephony</option>
+        <option>-framework IOKit</option>
+        <option>-framework MapKit</option>
+        <option>-framework ImageIO</option>
+        <option>-lz</option>
         <option>-lsqlite3</option>
         <option>-framework IOKit</option>
         <option>-rpath @executable_path/Frameworks</option>
