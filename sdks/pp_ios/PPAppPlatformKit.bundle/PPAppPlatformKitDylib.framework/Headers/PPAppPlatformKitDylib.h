@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PPAppPlatformKitDelegate.h"
-#import "TRBollView.h"
+#import "TRBuoyMenu.h"
 
 @class TRGlobalConfig;
 @interface PPAppPlatformKitDylib : NSObject
@@ -17,7 +17,7 @@
 @property (nonatomic, weak) id<PPAppPlatformKitDelegate> platformKitDelegate; //静态库代理
 
 @property (nonatomic, weak) TRMainViewController *mainViewController;
-@property (nonatomic, strong) TRBollView *bollView;
+@property (nonatomic, strong) TRBuoyMenu *buoyMenu;
 
 /**
  *  初始化动态库
@@ -131,6 +131,13 @@
  *  获取动态库配置状态（0：测试状态， 1：正式状态）
  */
 - (int)privateDylibContext;
+
+- (void)showMyVouchersView;
+
+/**
+ * 显示支付中心弹窗
+ */
+- (void)showRechargePlatform;
 
 @end
 

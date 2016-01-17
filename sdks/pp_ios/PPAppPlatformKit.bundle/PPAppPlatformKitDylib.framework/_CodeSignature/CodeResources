@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/PPAppPlatformKitDylib.h</key>
 		<data>
-		Dz5dmGZXMwquDgxJOGV50yrjnA4=
+		PA1sLBG7FJ0P1V8xQ/aYmMcBzQc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>PPAppPlatformKitDylib.pp</key>
 		<data>
-		+lGWHhYhq2K6YZfHPEPVhQWOJnE=
+		0KZ5Xkx3ykf0AXdg7sNrx6f+AzM=
 		</data>
 		<key>PPSource.bundle/image/alertContent_close_highlight_ipad.png</key>
 		<data>
@@ -1396,6 +1396,306 @@
 		<data>
 		NEjs8S3RI6HoNmMijfwxVpg/mlk=
 		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00.png</key>
+		<data>
+		yRAIbqP5t8Sq6aA3/MCWoAz6EfQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00@2x.png</key>
+		<data>
+		KeS620oiOV98HIDsVEFaNGpCO+o=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00@3x.png</key>
+		<data>
+		oD0WYTxXNXrN2cGPGLpv4z5/5sM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00_ipad.png</key>
+		<data>
+		iimitZX19KiTnmg9EDatu5EtqvA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00_ipad@2x.png</key>
+		<data>
+		oD0WYTxXNXrN2cGPGLpv4z5/5sM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01.png</key>
+		<data>
+		1XPieFOkc7YZAug5PH88JjIHZ2A=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01@2x.png</key>
+		<data>
+		vSo5QXD/cQ2TEEOAl11I3a5VPEM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01@3x.png</key>
+		<data>
+		vY6N99nMrufUAXul43DOcnrWpYM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01_ipad.png</key>
+		<data>
+		HElGgUOJcdGTUVsBXiZe1dnW+xs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01_ipad@2x.png</key>
+		<data>
+		vY6N99nMrufUAXul43DOcnrWpYM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02.png</key>
+		<data>
+		8v6arumakvmCcCjRjWieVq165Vs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02@2x.png</key>
+		<data>
+		y8RGEGjaoaDXhnemYlLyf/H9IaU=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02@3x.png</key>
+		<data>
+		BZSkV70rWfVuPfA1MCd7rbuQ8vo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02_ipad.png</key>
+		<data>
+		lULiVHzMVkFUHUis7+l8RkXl0gc=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02_ipad@2x.png</key>
+		<data>
+		BZSkV70rWfVuPfA1MCd7rbuQ8vo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03.png</key>
+		<data>
+		LVGPk/cS7WhY/NexSI79WhB7NYg=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03@2x.png</key>
+		<data>
+		YIN6iqTEDwwAi9e7IHaNj6jKpUA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03@3x.png</key>
+		<data>
+		IOF8c9UgGG4gBnsVbL5nEZWzpKk=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03_ipad.png</key>
+		<data>
+		7YngRJtR5Ag5FTXXjdvo4vineRA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03_ipad@2x.png</key>
+		<data>
+		IOF8c9UgGG4gBnsVbL5nEZWzpKk=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04.png</key>
+		<data>
+		IBy8FOhD1874f0+PZrfxWJ+urFo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04@2x.png</key>
+		<data>
+		z3xh2aHUGs50uboCo6byWyyXSAo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04@3x.png</key>
+		<data>
+		Lvb2yhOIxvvtzmCfo9K22GVtJiM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04_ipad.png</key>
+		<data>
+		VHyaJyMwSfB0JQeYJ9HZP33uVZA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04_ipad@2x.png</key>
+		<data>
+		Lvb2yhOIxvvtzmCfo9K22GVtJiM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05.png</key>
+		<data>
+		0GX3B/2B2uONm+20is3E5gmDKTE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05@2x.png</key>
+		<data>
+		DK1D6y+a903ic4MejVVnycNq6Dg=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05@3x.png</key>
+		<data>
+		DGPPvcm5RxHoCHqm+eTyx7XsVjs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05_ipad.png</key>
+		<data>
+		alVeaxGU3fpdku9vfBeiNJfFpdY=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05_ipad@2x.png</key>
+		<data>
+		DGPPvcm5RxHoCHqm+eTyx7XsVjs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06.png</key>
+		<data>
+		tFvwcEHvAhL7z6YU5Mb5FZKYOec=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06@2x.png</key>
+		<data>
+		Heoixg5lWS7znVF3GXyk9hGsjyM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06@3x.png</key>
+		<data>
+		tZ8m11gVbXtLrFhUeJoWmb15edE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06_ipad.png</key>
+		<data>
+		cqOa89qpt8UEDkP0tPcIxNlAcIM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06_ipad@2x.png</key>
+		<data>
+		tZ8m11gVbXtLrFhUeJoWmb15edE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07.png</key>
+		<data>
+		iudMBZRUUBMtiO2KumqAXg7pC3w=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07@2x.png</key>
+		<data>
+		eB+FNw6hZ/CGGETa0N4B9Pg+TR4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07@3x.png</key>
+		<data>
+		5BsmrgP/V1pkwlttAYQFGu+eg70=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07_ipad.png</key>
+		<data>
+		IyGBpY5lw0pqxis3XMZV3LH3YF0=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07_ipad@2x.png</key>
+		<data>
+		5BsmrgP/V1pkwlttAYQFGu+eg70=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08.png</key>
+		<data>
+		jmNhOGYqdfHEB8MgkYcQXlj2u/E=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08@2x.png</key>
+		<data>
+		hpOU3N70VNp5oiFE08G/nSrxWEo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08@3x.png</key>
+		<data>
+		lq4Ka4ny2NOfD+AtM3moaSGBPqE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08_ipad.png</key>
+		<data>
+		TsRMAcO9NXN8/z0Zh4ylk/0SmHY=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08_ipad@2x.png</key>
+		<data>
+		lq4Ka4ny2NOfD+AtM3moaSGBPqE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09.png</key>
+		<data>
+		i7ME0WpiNmtT1YLOCAunCjrkXVc=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09@2x.png</key>
+		<data>
+		lkv33YaJriivR848kV+JcOv3tp4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09@3x.png</key>
+		<data>
+		BxzsTYzq0kjDHKCuveeBTSC9FY4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09_ipad.png</key>
+		<data>
+		nahGAgzinOKLfYvCfTM97zi5Rdc=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09_ipad@2x.png</key>
+		<data>
+		BxzsTYzq0kjDHKCuveeBTSC9FY4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10.png</key>
+		<data>
+		GGhqLM1IuUglYqL8BlYkXFzRU14=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10@2x.png</key>
+		<data>
+		/BYrEBoteVzWj5KVA3AHQlvwymQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10@3x.png</key>
+		<data>
+		9wHoCl+6xx2XYiRmhUD6gaEN6+M=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10_ipad.png</key>
+		<data>
+		Egx/MS2lAWQacdV5aJCqPN1KomI=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10_ipad@2x.png</key>
+		<data>
+		9wHoCl+6xx2XYiRmhUD6gaEN6+M=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11.png</key>
+		<data>
+		UjuO0V1uBNUY7BdNs6RWM55jYL4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11@2x.png</key>
+		<data>
+		eH7WZPj+EwtbcS4aR509J4NsoWs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11@3x.png</key>
+		<data>
+		EAlmOrvDjQnUSGuj3JXnOT63Mhs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11_ipad.png</key>
+		<data>
+		OIWR/jv22/CQgNpl9M5KMasOFJs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11_ipad@2x.png</key>
+		<data>
+		EAlmOrvDjQnUSGuj3JXnOT63Mhs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12.png</key>
+		<data>
+		9DMcmcOBPcktphAxROs9gfN5HSA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12@2x.png</key>
+		<data>
+		T4k49INUwC5F4MFSUMcdB49Ii70=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12@3x.png</key>
+		<data>
+		i7+9100QkgdW1BCn/cVBLNTSirQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12_ipad.png</key>
+		<data>
+		vV9Tb0n0vjeWlrdzNArjLDQrqEA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12_ipad@2x.png</key>
+		<data>
+		i7+9100QkgdW1BCn/cVBLNTSirQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13.png</key>
+		<data>
+		yRAIbqP5t8Sq6aA3/MCWoAz6EfQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13@2x.png</key>
+		<data>
+		KeS620oiOV98HIDsVEFaNGpCO+o=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13@3x.png</key>
+		<data>
+		oD0WYTxXNXrN2cGPGLpv4z5/5sM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13_ipad.png</key>
+		<data>
+		iimitZX19KiTnmg9EDatu5EtqvA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13_ipad@2x.png</key>
+		<data>
+		oD0WYTxXNXrN2cGPGLpv4z5/5sM=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher.png</key>
+		<data>
+		0Hsmeo3LjvCo88kIiYe02haFzsw=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher@2x.png</key>
+		<data>
+		GhYwtH/g5wiBAf7slvoN6eDMF98=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher@3x.png</key>
+		<data>
+		X7HNL3Ydz+/p1At9ElsFC+4ITfQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher_ipad.png</key>
+		<data>
+		FWKDJJZ2DxHVXrS4wFWUHDhiYn8=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher_ipad@2x.png</key>
+		<data>
+		X7HNL3Ydz+/p1At9ElsFC+4ITfQ=
+		</data>
 		<key>PPSource.bundle/image/buoy_recharge.png</key>
 		<data>
 		Wn/0GIxlUYETeiUtL53IK8t15i4=
@@ -1415,6 +1715,46 @@
 		<key>PPSource.bundle/image/buoy_recharge_ipad@2x.png</key>
 		<data>
 		6kn9tdx2asfQzKViX068/GgjZJM=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked.png</key>
+		<data>
+		62l/St2a16c2O/CKCfRfuCjvkns=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked@2x.png</key>
+		<data>
+		78GhpuOrjBKaEbExhjyvt0calpg=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked@3x.png</key>
+		<data>
+		3tcyDbnO8On89et6xUkPftlKQcs=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked_ipad.png</key>
+		<data>
+		Y8zTH4Fjshf5AwUxdij6IUPKAKE=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked_ipad@2x.png</key>
+		<data>
+		3tcyDbnO8On89et6xUkPftlKQcs=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal.png</key>
+		<data>
+		kTckUoHzGxvQQZw73gpmm3vVlhk=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal@2x.png</key>
+		<data>
+		lRUxWGy94+TxKcogO8ljdvVBiH0=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal@3x.png</key>
+		<data>
+		vbc7J7BBKbSvJ1P5OgWnIoC7MHE=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal_ipad.png</key>
+		<data>
+		+foqmu9eLT6rn6GtOeqoWktPGFg=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal_ipad@2x.png</key>
+		<data>
+		vbc7J7BBKbSvJ1P5OgWnIoC7MHE=
 		</data>
 		<key>PPSource.bundle/image/common_alert_win_bg.png</key>
 		<data>
@@ -2244,22 +2584,6 @@
 		<data>
 		D4+ZrwCAMmRwrZHKGTIFxZQzy2w=
 		</data>
-		<key>PPSource.bundle/image/icon_index_06_highlight_iPad.png</key>
-		<data>
-		4mtpEp7W5o1orfq+viwSMBWktDM=
-		</data>
-		<key>PPSource.bundle/image/icon_index_06_highlight_iPad@2x.png</key>
-		<data>
-		YnG9aNj8bCMFzicKNGueGS/AItc=
-		</data>
-		<key>PPSource.bundle/image/icon_index_06_normal_iPad.png</key>
-		<data>
-		1YKBaPCviE57bjiYYiCPhXNQxFU=
-		</data>
-		<key>PPSource.bundle/image/icon_index_06_normal_iPad@2x.png</key>
-		<data>
-		/pzSAy0Yk08QOE0ax+a7cjkbHho=
-		</data>
 		<key>PPSource.bundle/image/icon_label_01.png</key>
 		<data>
 		LgK/blqF+32+24Az8VrG7Su+PLo=
@@ -2272,11 +2596,11 @@
 		<data>
 		1agrs/AHf/4lmDAfnJ2j4Kk3LjU=
 		</data>
-		<key>PPSource.bundle/image/icon_label_01_iPad.png</key>
+		<key>PPSource.bundle/image/icon_label_01_ipad.png</key>
 		<data>
 		6iD8wqWs29yy4umvmYhA0KYCnEU=
 		</data>
-		<key>PPSource.bundle/image/icon_label_01_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_label_01_ipad@2x.png</key>
 		<data>
 		zfbfutOd9I6RFGHnJ6Rf6eLlrHM=
 		</data>
@@ -2292,11 +2616,11 @@
 		<data>
 		lCcGTjkAK52MGXawfsiY3mjyNJw=
 		</data>
-		<key>PPSource.bundle/image/icon_label_02_iPad.png</key>
+		<key>PPSource.bundle/image/icon_label_02_ipad.png</key>
 		<data>
 		vpmrAz3LuQos8t9mOS7pz+zzC2A=
 		</data>
-		<key>PPSource.bundle/image/icon_label_02_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_label_02_ipad@2x.png</key>
 		<data>
 		4IXyeBAxksJzWunxWazEa0z60A0=
 		</data>
@@ -2312,11 +2636,11 @@
 		<data>
 		SGMV/zYJDtvEjp7GZV+UdiShA2o=
 		</data>
-		<key>PPSource.bundle/image/icon_label_03_iPad.png</key>
+		<key>PPSource.bundle/image/icon_label_03_ipad.png</key>
 		<data>
 		2a34iQzkYk6jDR1ijOyAHlvFF94=
 		</data>
-		<key>PPSource.bundle/image/icon_label_03_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_label_03_ipad@2x.png</key>
 		<data>
 		QURrQ+7ls+H7qUnV/LjurLBH02E=
 		</data>
@@ -2428,11 +2752,11 @@
 		<data>
 		CUJD8RhDSOvIfq0lR87za/XD7Qw=
 		</data>
-		<key>PPSource.bundle/image/icon_money_iPad.png</key>
+		<key>PPSource.bundle/image/icon_money_ipad.png</key>
 		<data>
 		KfHpHgFGNkLeohZRhYT8+72sjb4=
 		</data>
-		<key>PPSource.bundle/image/icon_money_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_money_ipad@2x.png</key>
 		<data>
 		OGsXc7NiH/25LyvmjJVA/L39Dio=
 		</data>
@@ -2448,11 +2772,11 @@
 		<data>
 		AbXgxn6oi70qJPlLV3bXSBpRJog=
 		</data>
-		<key>PPSource.bundle/image/icon_myBankCard_highlight_iPad.png</key>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight_ipad.png</key>
 		<data>
 		AbZjKYxvJXe6L4C3vpbojAvtXVs=
 		</data>
-		<key>PPSource.bundle/image/icon_myBankCard_highlight_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight_ipad@2x.png</key>
 		<data>
 		sf1H/TXVb7uP4pKXEJVyARPL2d4=
 		</data>
@@ -2468,11 +2792,11 @@
 		<data>
 		BoNQUBqkB41vCwA4GIuEVQTM4/g=
 		</data>
-		<key>PPSource.bundle/image/icon_myBankCard_normal_iPad.png</key>
+		<key>PPSource.bundle/image/icon_myBankCard_normal_ipad.png</key>
 		<data>
 		1nvEkGOET8kz+WW9qd5dYe+2HI8=
 		</data>
-		<key>PPSource.bundle/image/icon_myBankCard_normal_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_myBankCard_normal_ipad@2x.png</key>
 		<data>
 		RKSzjTO1LVyieUBAx350/8VO6WQ=
 		</data>
@@ -2886,15 +3210,19 @@
 		</data>
 		<key>PPSource.bundle/image/icon_user_head.png</key>
 		<data>
-		2lm4EdKTcJyk0F7ifntrFvLXnnQ=
+		TzfHtrVdgy4rCVeyJa2L5RBlq9E=
 		</data>
 		<key>PPSource.bundle/image/icon_user_head@2x.png</key>
 		<data>
 		2lm4EdKTcJyk0F7ifntrFvLXnnQ=
 		</data>
-		<key>PPSource.bundle/image/icon_user_head_ipad.png</key>
+		<key>PPSource.bundle/image/icon_user_head@3x.png</key>
 		<data>
 		ank9m79yja3fhGAn5Miwy45ubN4=
+		</data>
+		<key>PPSource.bundle/image/icon_user_head_ipad.png</key>
+		<data>
+		pXLWKmlJeu5Hhzkc0wQ9dRApx+o=
 		</data>
 		<key>PPSource.bundle/image/icon_user_head_ipad@2x.png</key>
 		<data>
@@ -2960,6 +3288,14 @@
 		<data>
 		HKH5mvNpXeR6sv6V8s+3N94aHPY=
 		</data>
+		<key>PPSource.bundle/image/icon_voucher_highlight_ipad.png</key>
+		<data>
+		4mtpEp7W5o1orfq+viwSMBWktDM=
+		</data>
+		<key>PPSource.bundle/image/icon_voucher_highlight_ipad@2x.png</key>
+		<data>
+		YnG9aNj8bCMFzicKNGueGS/AItc=
+		</data>
 		<key>PPSource.bundle/image/icon_voucher_normal.png</key>
 		<data>
 		r0iIRkKnx/Ij8uE56qyioVHYRjM=
@@ -2971,6 +3307,14 @@
 		<key>PPSource.bundle/image/icon_voucher_normal@3x.png</key>
 		<data>
 		grKDFFivh/sNxCP4TFJ9Q+4OwfA=
+		</data>
+		<key>PPSource.bundle/image/icon_voucher_normal_ipad.png</key>
+		<data>
+		1YKBaPCviE57bjiYYiCPhXNQxFU=
+		</data>
+		<key>PPSource.bundle/image/icon_voucher_normal_ipad@2x.png</key>
+		<data>
+		/pzSAy0Yk08QOE0ax+a7cjkbHho=
 		</data>
 		<key>PPSource.bundle/image/line.png</key>
 		<data>
@@ -3076,6 +3420,26 @@
 		<data>
 		7myV4142U08VKPF0B6MOL0gRP/k=
 		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon.png</key>
+		<data>
+		dsvyeh1GKTIG/7k23SUq+vgVVTk=
+		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon@2x.png</key>
+		<data>
+		+z8qDiQmJOuLMGOAlI8YVt8fVUE=
+		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon@3x.png</key>
+		<data>
+		iEhlobaSrm9Du4u9D3ZobWObjfM=
+		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon_ipad.png</key>
+		<data>
+		4eJX2l90bPV9n16HrLlQgZs4BCY=
+		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon_ipad@2x.png</key>
+		<data>
+		iEhlobaSrm9Du4u9D3ZobWObjfM=
+		</data>
 		<key>PPSource.bundle/image/no_network_web.png</key>
 		<data>
 		F9h/oFPTmrcmk8XLH59+Ofjph9M=
@@ -3164,46 +3528,6 @@
 		<data>
 		iPjCSuwx5nnLLoC5xPmz9mWwl2Y=
 		</data>
-		<key>PPSource.bundle/image/switchGreen.png</key>
-		<data>
-		NcFrv3YFKQsORTDFhPVkJX2jl9g=
-		</data>
-		<key>PPSource.bundle/image/switchGreen@2x.png</key>
-		<data>
-		dQFU7p4lyobTPK9CqtbJa+4rXb8=
-		</data>
-		<key>PPSource.bundle/image/switchMask.png</key>
-		<data>
-		NjHhkdQB4+JylS7uMffmNGJUTow=
-		</data>
-		<key>PPSource.bundle/image/switchMask@2x.png</key>
-		<data>
-		WwzPiUHRxw760UacNiIjF/0K+kE=
-		</data>
-		<key>PPSource.bundle/image/switchRed.png</key>
-		<data>
-		V4gUpgkcC0iOfXhjZuUA7rol4yA=
-		</data>
-		<key>PPSource.bundle/image/switchRed@2x.png</key>
-		<data>
-		yqWB/PBO8iSNF2DecKs1GQtzVnk=
-		</data>
-		<key>PPSource.bundle/image/switchToggle.png</key>
-		<data>
-		fa9jJeIv0dT9yYnfg33vfnZnw18=
-		</data>
-		<key>PPSource.bundle/image/switchToggle@2x.png</key>
-		<data>
-		gPiG3G969fMnOVFcpdGz1L0+ytw=
-		</data>
-		<key>PPSource.bundle/image/switchToggleHigh.png</key>
-		<data>
-		rXMpHbW0rC0KsOGo5qo5Htn2BHg=
-		</data>
-		<key>PPSource.bundle/image/switchToggleHigh@2x.png</key>
-		<data>
-		mLWaBUnziBHYtPjzJNvUe0GIQz4=
-		</data>
 		<key>PPSource.bundle/image/thirdParty_auth_icon_zhifubao.png</key>
 		<data>
 		rjw0qA3BI782kOQNgPQVcyqOXBU=
@@ -3215,6 +3539,126 @@
 		<key>PPSource.bundle/image/thirdParty_auth_icon_zhifubao@3x.png</key>
 		<data>
 		x6zmz7bujw2k8GwmBh0T5dbCsJA=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn.gif</key>
+		<data>
+		ethdkaGX2Gccidwyy+3ghR+NWQ0=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn@2x.gif</key>
+		<data>
+		MNbrb3ckXOCWObQrM2ivS0Acg68=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn@3x.gif</key>
+		<data>
+		lDLeGVy+Bj6i6LUN/GF5rdYHrAM=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn_ipad.gif</key>
+		<data>
+		MNbrb3ckXOCWObQrM2ivS0Acg68=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn_ipad@2x.gif</key>
+		<data>
+		lDLeGVy+Bj6i6LUN/GF5rdYHrAM=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one.png</key>
+		<data>
+		SBPA6zgZ8PQyzxIsmVNIxVFD65w=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one@2x.png</key>
+		<data>
+		QzZKZ/d62gjQMsWb6v7dkBQnZFc=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one@3x.png</key>
+		<data>
+		aVaF0/+avAHsk2MNcni5J2RfM1c=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one_ipad.png</key>
+		<data>
+		61J+bP5zEug+oUkkN/Q9A4oFwgk=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one_ipad@2x.png</key>
+		<data>
+		ZKQNO6TqF0LfBpQWG2Q4cWTk1SQ=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two.png</key>
+		<data>
+		2igZuHnMx03QhBU131vqrCpxRcw=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two@2x.png</key>
+		<data>
+		9UXca5faAuqc0iYErILH9Y4bEtU=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two@3x.png</key>
+		<data>
+		65oGf8C7bcf3IukmUMmkrFPeqP0=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two_ipad.png</key>
+		<data>
+		3ruJ83TlvGwq7jLWVOsrDeQsqLU=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two_ipad@2x.png</key>
+		<data>
+		KGQVc6E1WHGJtPuhK/Ua5DPrds8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked.png</key>
+		<data>
+		eVcnK8dtwEHHY9StxNlZ9/w81Bg=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked@2x.png</key>
+		<data>
+		4H22Zdpq5or3cAsre9pWO8EKHiw=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked@3x.png</key>
+		<data>
+		8dNP7PoKDpSDdVsaQZolXNgM7d8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked_ipad.png</key>
+		<data>
+		JWbNOO7BVF9ce7MOmK09XRosvHc=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked_ipad@2x.png</key>
+		<data>
+		8dNP7PoKDpSDdVsaQZolXNgM7d8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal.png</key>
+		<data>
+		EDtc1g0VfILkUPc+/B/QDtdDqyc=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal@2x.png</key>
+		<data>
+		x2VjQF1ilt8fmi/dc6KFA9DrOsw=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal@3x.png</key>
+		<data>
+		KzKLyX0EXTvBVFPLSnWXmkn37S8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal_ipad.png</key>
+		<data>
+		SK8R9Lg2LzsPXmuQyLMK6YOBrYo=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal_ipad@2x.png</key>
+		<data>
+		KzKLyX0EXTvBVFPLSnWXmkn37S8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view.png</key>
+		<data>
+		bB3zshR2uDHqzd6RDcyctrmvSFg=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view@2x.png</key>
+		<data>
+		ahZ9zlJd8mYSL5NOfpS8pqdAJ9U=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view@3x.png</key>
+		<data>
+		lKl+FSfumKOzDUYqBN1KI5er/Oc=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view_ipad.png</key>
+		<data>
+		td/Lfi3O/qCafW6mdN6k5MHfLjI=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view_ipad@2x.png</key>
+		<data>
+		/2Ad1RnhLvFmou3lCf9KQucqxFk=
 		</data>
 		<key>PPSource.bundle/image/vip_vipicon_bg.png</key>
 		<data>
@@ -3364,11 +3808,11 @@
 		<data>
 		d/HotgqwPFcGfhXuxj14Rgc3v18=
 		</data>
-		<key>PPSource.bundle/image/vouchers_blue_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_blue_bg_ipad.png</key>
 		<data>
 		4jMOOFCR0ZpV0i4sL1F51ezuj6U=
 		</data>
-		<key>PPSource.bundle/image/vouchers_blue_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_blue_bg_ipad@2x.png</key>
 		<data>
 		MiBREVleiuFyh/l6LTszN00k+Zg=
 		</data>
@@ -3384,11 +3828,11 @@
 		<data>
 		WFOPhOSpuqsHyTnTOBpuevyZzuQ=
 		</data>
-		<key>PPSource.bundle/image/vouchers_green_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_green_bg_ipad.png</key>
 		<data>
 		unm4FYBDy4f99CvnK+FH6EVOHE4=
 		</data>
-		<key>PPSource.bundle/image/vouchers_green_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_green_bg_ipad@2x.png</key>
 		<data>
 		KNcBa2uy2J8+5t5yzzaOI2scxXs=
 		</data>
@@ -3404,11 +3848,11 @@
 		<data>
 		50x6dYeRDc1ApQ/TbJYBKfR5SVA=
 		</data>
-		<key>PPSource.bundle/image/vouchers_grey_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_grey_bg_ipad.png</key>
 		<data>
 		JDiE1M2wU0XNA6+6BMSRyTb//0I=
 		</data>
-		<key>PPSource.bundle/image/vouchers_grey_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_grey_bg_ipad@2x.png</key>
 		<data>
 		kzd/wAjZQ5x7jeUgh3uZaFV8AKo=
 		</data>
@@ -3424,11 +3868,11 @@
 		<data>
 		+rbfz/kWSh6ntZMyFyH0+pJT4PA=
 		</data>
-		<key>PPSource.bundle/image/vouchers_red_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_red_bg_ipad.png</key>
 		<data>
 		u1JiuCgzLXzM0PpAYr/hq0iLo4I=
 		</data>
-		<key>PPSource.bundle/image/vouchers_red_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_red_bg_ipad@2x.png</key>
 		<data>
 		SVO/0E1W3C8d/UryJzvzRiuJWXQ=
 		</data>
@@ -3444,17 +3888,17 @@
 		<data>
 		dkP9yIlXFatni43ODvFg9kk9/2Q=
 		</data>
-		<key>PPSource.bundle/image/vouchers_yellow_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_yellow_bg_ipad.png</key>
 		<data>
 		yI0NZGkmGpmeXfqH2jp2CTXuGNQ=
 		</data>
-		<key>PPSource.bundle/image/vouchers_yellow_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_yellow_bg_ipad@2x.png</key>
 		<data>
 		sytQDHp62SfIdSmBLcRBn9QiBS4=
 		</data>
 		<key>PPSource.bundle/sdk_dylib_Info.plist</key>
 		<data>
-		MWOvviaEeP7H20ostVztKerRu9U=
+		7UsNN8Or+SiOyP5NOgvRspj5QbY=
 		</data>
 		<key>PPSource.bundle/xml/ip_city_dictionary.xml</key>
 		<data>
@@ -3497,7 +3941,7 @@
 		</data>
 		<key>Headers/PPAppPlatformKitDylib.h</key>
 		<data>
-		Dz5dmGZXMwquDgxJOGV50yrjnA4=
+		PA1sLBG7FJ0P1V8xQ/aYmMcBzQc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3505,7 +3949,7 @@
 		</data>
 		<key>PPAppPlatformKitDylib.pp</key>
 		<data>
-		+lGWHhYhq2K6YZfHPEPVhQWOJnE=
+		0KZ5Xkx3ykf0AXdg7sNrx6f+AzM=
 		</data>
 		<key>PPSource.bundle/image/alertContent_close_highlight_ipad.png</key>
 		<data>
@@ -4867,6 +5311,306 @@
 		<data>
 		NEjs8S3RI6HoNmMijfwxVpg/mlk=
 		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00.png</key>
+		<data>
+		yRAIbqP5t8Sq6aA3/MCWoAz6EfQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00@2x.png</key>
+		<data>
+		KeS620oiOV98HIDsVEFaNGpCO+o=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00@3x.png</key>
+		<data>
+		oD0WYTxXNXrN2cGPGLpv4z5/5sM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00_ipad.png</key>
+		<data>
+		iimitZX19KiTnmg9EDatu5EtqvA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_00_ipad@2x.png</key>
+		<data>
+		oD0WYTxXNXrN2cGPGLpv4z5/5sM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01.png</key>
+		<data>
+		1XPieFOkc7YZAug5PH88JjIHZ2A=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01@2x.png</key>
+		<data>
+		vSo5QXD/cQ2TEEOAl11I3a5VPEM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01@3x.png</key>
+		<data>
+		vY6N99nMrufUAXul43DOcnrWpYM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01_ipad.png</key>
+		<data>
+		HElGgUOJcdGTUVsBXiZe1dnW+xs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_01_ipad@2x.png</key>
+		<data>
+		vY6N99nMrufUAXul43DOcnrWpYM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02.png</key>
+		<data>
+		8v6arumakvmCcCjRjWieVq165Vs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02@2x.png</key>
+		<data>
+		y8RGEGjaoaDXhnemYlLyf/H9IaU=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02@3x.png</key>
+		<data>
+		BZSkV70rWfVuPfA1MCd7rbuQ8vo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02_ipad.png</key>
+		<data>
+		lULiVHzMVkFUHUis7+l8RkXl0gc=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_02_ipad@2x.png</key>
+		<data>
+		BZSkV70rWfVuPfA1MCd7rbuQ8vo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03.png</key>
+		<data>
+		LVGPk/cS7WhY/NexSI79WhB7NYg=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03@2x.png</key>
+		<data>
+		YIN6iqTEDwwAi9e7IHaNj6jKpUA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03@3x.png</key>
+		<data>
+		IOF8c9UgGG4gBnsVbL5nEZWzpKk=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03_ipad.png</key>
+		<data>
+		7YngRJtR5Ag5FTXXjdvo4vineRA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_03_ipad@2x.png</key>
+		<data>
+		IOF8c9UgGG4gBnsVbL5nEZWzpKk=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04.png</key>
+		<data>
+		IBy8FOhD1874f0+PZrfxWJ+urFo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04@2x.png</key>
+		<data>
+		z3xh2aHUGs50uboCo6byWyyXSAo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04@3x.png</key>
+		<data>
+		Lvb2yhOIxvvtzmCfo9K22GVtJiM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04_ipad.png</key>
+		<data>
+		VHyaJyMwSfB0JQeYJ9HZP33uVZA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_04_ipad@2x.png</key>
+		<data>
+		Lvb2yhOIxvvtzmCfo9K22GVtJiM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05.png</key>
+		<data>
+		0GX3B/2B2uONm+20is3E5gmDKTE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05@2x.png</key>
+		<data>
+		DK1D6y+a903ic4MejVVnycNq6Dg=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05@3x.png</key>
+		<data>
+		DGPPvcm5RxHoCHqm+eTyx7XsVjs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05_ipad.png</key>
+		<data>
+		alVeaxGU3fpdku9vfBeiNJfFpdY=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_05_ipad@2x.png</key>
+		<data>
+		DGPPvcm5RxHoCHqm+eTyx7XsVjs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06.png</key>
+		<data>
+		tFvwcEHvAhL7z6YU5Mb5FZKYOec=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06@2x.png</key>
+		<data>
+		Heoixg5lWS7znVF3GXyk9hGsjyM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06@3x.png</key>
+		<data>
+		tZ8m11gVbXtLrFhUeJoWmb15edE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06_ipad.png</key>
+		<data>
+		cqOa89qpt8UEDkP0tPcIxNlAcIM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_06_ipad@2x.png</key>
+		<data>
+		tZ8m11gVbXtLrFhUeJoWmb15edE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07.png</key>
+		<data>
+		iudMBZRUUBMtiO2KumqAXg7pC3w=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07@2x.png</key>
+		<data>
+		eB+FNw6hZ/CGGETa0N4B9Pg+TR4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07@3x.png</key>
+		<data>
+		5BsmrgP/V1pkwlttAYQFGu+eg70=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07_ipad.png</key>
+		<data>
+		IyGBpY5lw0pqxis3XMZV3LH3YF0=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_07_ipad@2x.png</key>
+		<data>
+		5BsmrgP/V1pkwlttAYQFGu+eg70=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08.png</key>
+		<data>
+		jmNhOGYqdfHEB8MgkYcQXlj2u/E=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08@2x.png</key>
+		<data>
+		hpOU3N70VNp5oiFE08G/nSrxWEo=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08@3x.png</key>
+		<data>
+		lq4Ka4ny2NOfD+AtM3moaSGBPqE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08_ipad.png</key>
+		<data>
+		TsRMAcO9NXN8/z0Zh4ylk/0SmHY=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_08_ipad@2x.png</key>
+		<data>
+		lq4Ka4ny2NOfD+AtM3moaSGBPqE=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09.png</key>
+		<data>
+		i7ME0WpiNmtT1YLOCAunCjrkXVc=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09@2x.png</key>
+		<data>
+		lkv33YaJriivR848kV+JcOv3tp4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09@3x.png</key>
+		<data>
+		BxzsTYzq0kjDHKCuveeBTSC9FY4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09_ipad.png</key>
+		<data>
+		nahGAgzinOKLfYvCfTM97zi5Rdc=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_09_ipad@2x.png</key>
+		<data>
+		BxzsTYzq0kjDHKCuveeBTSC9FY4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10.png</key>
+		<data>
+		GGhqLM1IuUglYqL8BlYkXFzRU14=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10@2x.png</key>
+		<data>
+		/BYrEBoteVzWj5KVA3AHQlvwymQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10@3x.png</key>
+		<data>
+		9wHoCl+6xx2XYiRmhUD6gaEN6+M=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10_ipad.png</key>
+		<data>
+		Egx/MS2lAWQacdV5aJCqPN1KomI=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_10_ipad@2x.png</key>
+		<data>
+		9wHoCl+6xx2XYiRmhUD6gaEN6+M=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11.png</key>
+		<data>
+		UjuO0V1uBNUY7BdNs6RWM55jYL4=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11@2x.png</key>
+		<data>
+		eH7WZPj+EwtbcS4aR509J4NsoWs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11@3x.png</key>
+		<data>
+		EAlmOrvDjQnUSGuj3JXnOT63Mhs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11_ipad.png</key>
+		<data>
+		OIWR/jv22/CQgNpl9M5KMasOFJs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_11_ipad@2x.png</key>
+		<data>
+		EAlmOrvDjQnUSGuj3JXnOT63Mhs=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12.png</key>
+		<data>
+		9DMcmcOBPcktphAxROs9gfN5HSA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12@2x.png</key>
+		<data>
+		T4k49INUwC5F4MFSUMcdB49Ii70=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12@3x.png</key>
+		<data>
+		i7+9100QkgdW1BCn/cVBLNTSirQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12_ipad.png</key>
+		<data>
+		vV9Tb0n0vjeWlrdzNArjLDQrqEA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_12_ipad@2x.png</key>
+		<data>
+		i7+9100QkgdW1BCn/cVBLNTSirQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13.png</key>
+		<data>
+		yRAIbqP5t8Sq6aA3/MCWoAz6EfQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13@2x.png</key>
+		<data>
+		KeS620oiOV98HIDsVEFaNGpCO+o=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13@3x.png</key>
+		<data>
+		oD0WYTxXNXrN2cGPGLpv4z5/5sM=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13_ipad.png</key>
+		<data>
+		iimitZX19KiTnmg9EDatu5EtqvA=
+		</data>
+		<key>PPSource.bundle/image/buoy_cute_voucher_13_ipad@2x.png</key>
+		<data>
+		oD0WYTxXNXrN2cGPGLpv4z5/5sM=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher.png</key>
+		<data>
+		0Hsmeo3LjvCo88kIiYe02haFzsw=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher@2x.png</key>
+		<data>
+		GhYwtH/g5wiBAf7slvoN6eDMF98=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher@3x.png</key>
+		<data>
+		X7HNL3Ydz+/p1At9ElsFC+4ITfQ=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher_ipad.png</key>
+		<data>
+		FWKDJJZ2DxHVXrS4wFWUHDhiYn8=
+		</data>
+		<key>PPSource.bundle/image/buoy_new_voucher_ipad@2x.png</key>
+		<data>
+		X7HNL3Ydz+/p1At9ElsFC+4ITfQ=
+		</data>
 		<key>PPSource.bundle/image/buoy_recharge.png</key>
 		<data>
 		Wn/0GIxlUYETeiUtL53IK8t15i4=
@@ -4886,6 +5630,46 @@
 		<key>PPSource.bundle/image/buoy_recharge_ipad@2x.png</key>
 		<data>
 		6kn9tdx2asfQzKViX068/GgjZJM=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked.png</key>
+		<data>
+		62l/St2a16c2O/CKCfRfuCjvkns=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked@2x.png</key>
+		<data>
+		78GhpuOrjBKaEbExhjyvt0calpg=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked@3x.png</key>
+		<data>
+		3tcyDbnO8On89et6xUkPftlKQcs=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked_ipad.png</key>
+		<data>
+		Y8zTH4Fjshf5AwUxdij6IUPKAKE=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_clicked_ipad@2x.png</key>
+		<data>
+		3tcyDbnO8On89et6xUkPftlKQcs=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal.png</key>
+		<data>
+		kTckUoHzGxvQQZw73gpmm3vVlhk=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal@2x.png</key>
+		<data>
+		lRUxWGy94+TxKcogO8ljdvVBiH0=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal@3x.png</key>
+		<data>
+		vbc7J7BBKbSvJ1P5OgWnIoC7MHE=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal_ipad.png</key>
+		<data>
+		+foqmu9eLT6rn6GtOeqoWktPGFg=
+		</data>
+		<key>PPSource.bundle/image/close_rewardvoucher_btn_normal_ipad@2x.png</key>
+		<data>
+		vbc7J7BBKbSvJ1P5OgWnIoC7MHE=
 		</data>
 		<key>PPSource.bundle/image/common_alert_win_bg.png</key>
 		<data>
@@ -5715,22 +6499,6 @@
 		<data>
 		D4+ZrwCAMmRwrZHKGTIFxZQzy2w=
 		</data>
-		<key>PPSource.bundle/image/icon_index_06_highlight_iPad.png</key>
-		<data>
-		4mtpEp7W5o1orfq+viwSMBWktDM=
-		</data>
-		<key>PPSource.bundle/image/icon_index_06_highlight_iPad@2x.png</key>
-		<data>
-		YnG9aNj8bCMFzicKNGueGS/AItc=
-		</data>
-		<key>PPSource.bundle/image/icon_index_06_normal_iPad.png</key>
-		<data>
-		1YKBaPCviE57bjiYYiCPhXNQxFU=
-		</data>
-		<key>PPSource.bundle/image/icon_index_06_normal_iPad@2x.png</key>
-		<data>
-		/pzSAy0Yk08QOE0ax+a7cjkbHho=
-		</data>
 		<key>PPSource.bundle/image/icon_label_01.png</key>
 		<data>
 		LgK/blqF+32+24Az8VrG7Su+PLo=
@@ -5743,11 +6511,11 @@
 		<data>
 		1agrs/AHf/4lmDAfnJ2j4Kk3LjU=
 		</data>
-		<key>PPSource.bundle/image/icon_label_01_iPad.png</key>
+		<key>PPSource.bundle/image/icon_label_01_ipad.png</key>
 		<data>
 		6iD8wqWs29yy4umvmYhA0KYCnEU=
 		</data>
-		<key>PPSource.bundle/image/icon_label_01_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_label_01_ipad@2x.png</key>
 		<data>
 		zfbfutOd9I6RFGHnJ6Rf6eLlrHM=
 		</data>
@@ -5763,11 +6531,11 @@
 		<data>
 		lCcGTjkAK52MGXawfsiY3mjyNJw=
 		</data>
-		<key>PPSource.bundle/image/icon_label_02_iPad.png</key>
+		<key>PPSource.bundle/image/icon_label_02_ipad.png</key>
 		<data>
 		vpmrAz3LuQos8t9mOS7pz+zzC2A=
 		</data>
-		<key>PPSource.bundle/image/icon_label_02_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_label_02_ipad@2x.png</key>
 		<data>
 		4IXyeBAxksJzWunxWazEa0z60A0=
 		</data>
@@ -5783,11 +6551,11 @@
 		<data>
 		SGMV/zYJDtvEjp7GZV+UdiShA2o=
 		</data>
-		<key>PPSource.bundle/image/icon_label_03_iPad.png</key>
+		<key>PPSource.bundle/image/icon_label_03_ipad.png</key>
 		<data>
 		2a34iQzkYk6jDR1ijOyAHlvFF94=
 		</data>
-		<key>PPSource.bundle/image/icon_label_03_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_label_03_ipad@2x.png</key>
 		<data>
 		QURrQ+7ls+H7qUnV/LjurLBH02E=
 		</data>
@@ -5899,11 +6667,11 @@
 		<data>
 		CUJD8RhDSOvIfq0lR87za/XD7Qw=
 		</data>
-		<key>PPSource.bundle/image/icon_money_iPad.png</key>
+		<key>PPSource.bundle/image/icon_money_ipad.png</key>
 		<data>
 		KfHpHgFGNkLeohZRhYT8+72sjb4=
 		</data>
-		<key>PPSource.bundle/image/icon_money_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_money_ipad@2x.png</key>
 		<data>
 		OGsXc7NiH/25LyvmjJVA/L39Dio=
 		</data>
@@ -5919,11 +6687,11 @@
 		<data>
 		AbXgxn6oi70qJPlLV3bXSBpRJog=
 		</data>
-		<key>PPSource.bundle/image/icon_myBankCard_highlight_iPad.png</key>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight_ipad.png</key>
 		<data>
 		AbZjKYxvJXe6L4C3vpbojAvtXVs=
 		</data>
-		<key>PPSource.bundle/image/icon_myBankCard_highlight_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_myBankCard_highlight_ipad@2x.png</key>
 		<data>
 		sf1H/TXVb7uP4pKXEJVyARPL2d4=
 		</data>
@@ -5939,11 +6707,11 @@
 		<data>
 		BoNQUBqkB41vCwA4GIuEVQTM4/g=
 		</data>
-		<key>PPSource.bundle/image/icon_myBankCard_normal_iPad.png</key>
+		<key>PPSource.bundle/image/icon_myBankCard_normal_ipad.png</key>
 		<data>
 		1nvEkGOET8kz+WW9qd5dYe+2HI8=
 		</data>
-		<key>PPSource.bundle/image/icon_myBankCard_normal_iPad@2x.png</key>
+		<key>PPSource.bundle/image/icon_myBankCard_normal_ipad@2x.png</key>
 		<data>
 		RKSzjTO1LVyieUBAx350/8VO6WQ=
 		</data>
@@ -6357,15 +7125,19 @@
 		</data>
 		<key>PPSource.bundle/image/icon_user_head.png</key>
 		<data>
-		2lm4EdKTcJyk0F7ifntrFvLXnnQ=
+		TzfHtrVdgy4rCVeyJa2L5RBlq9E=
 		</data>
 		<key>PPSource.bundle/image/icon_user_head@2x.png</key>
 		<data>
 		2lm4EdKTcJyk0F7ifntrFvLXnnQ=
 		</data>
-		<key>PPSource.bundle/image/icon_user_head_ipad.png</key>
+		<key>PPSource.bundle/image/icon_user_head@3x.png</key>
 		<data>
 		ank9m79yja3fhGAn5Miwy45ubN4=
+		</data>
+		<key>PPSource.bundle/image/icon_user_head_ipad.png</key>
+		<data>
+		pXLWKmlJeu5Hhzkc0wQ9dRApx+o=
 		</data>
 		<key>PPSource.bundle/image/icon_user_head_ipad@2x.png</key>
 		<data>
@@ -6431,6 +7203,14 @@
 		<data>
 		HKH5mvNpXeR6sv6V8s+3N94aHPY=
 		</data>
+		<key>PPSource.bundle/image/icon_voucher_highlight_ipad.png</key>
+		<data>
+		4mtpEp7W5o1orfq+viwSMBWktDM=
+		</data>
+		<key>PPSource.bundle/image/icon_voucher_highlight_ipad@2x.png</key>
+		<data>
+		YnG9aNj8bCMFzicKNGueGS/AItc=
+		</data>
 		<key>PPSource.bundle/image/icon_voucher_normal.png</key>
 		<data>
 		r0iIRkKnx/Ij8uE56qyioVHYRjM=
@@ -6442,6 +7222,14 @@
 		<key>PPSource.bundle/image/icon_voucher_normal@3x.png</key>
 		<data>
 		grKDFFivh/sNxCP4TFJ9Q+4OwfA=
+		</data>
+		<key>PPSource.bundle/image/icon_voucher_normal_ipad.png</key>
+		<data>
+		1YKBaPCviE57bjiYYiCPhXNQxFU=
+		</data>
+		<key>PPSource.bundle/image/icon_voucher_normal_ipad@2x.png</key>
+		<data>
+		/pzSAy0Yk08QOE0ax+a7cjkbHho=
 		</data>
 		<key>PPSource.bundle/image/line.png</key>
 		<data>
@@ -6547,6 +7335,26 @@
 		<data>
 		7myV4142U08VKPF0B6MOL0gRP/k=
 		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon.png</key>
+		<data>
+		dsvyeh1GKTIG/7k23SUq+vgVVTk=
+		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon@2x.png</key>
+		<data>
+		+z8qDiQmJOuLMGOAlI8YVt8fVUE=
+		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon@3x.png</key>
+		<data>
+		iEhlobaSrm9Du4u9D3ZobWObjfM=
+		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon_ipad.png</key>
+		<data>
+		4eJX2l90bPV9n16HrLlQgZs4BCY=
+		</data>
+		<key>PPSource.bundle/image/new_voucher_menuicon_ipad@2x.png</key>
+		<data>
+		iEhlobaSrm9Du4u9D3ZobWObjfM=
+		</data>
 		<key>PPSource.bundle/image/no_network_web.png</key>
 		<data>
 		F9h/oFPTmrcmk8XLH59+Ofjph9M=
@@ -6635,46 +7443,6 @@
 		<data>
 		iPjCSuwx5nnLLoC5xPmz9mWwl2Y=
 		</data>
-		<key>PPSource.bundle/image/switchGreen.png</key>
-		<data>
-		NcFrv3YFKQsORTDFhPVkJX2jl9g=
-		</data>
-		<key>PPSource.bundle/image/switchGreen@2x.png</key>
-		<data>
-		dQFU7p4lyobTPK9CqtbJa+4rXb8=
-		</data>
-		<key>PPSource.bundle/image/switchMask.png</key>
-		<data>
-		NjHhkdQB4+JylS7uMffmNGJUTow=
-		</data>
-		<key>PPSource.bundle/image/switchMask@2x.png</key>
-		<data>
-		WwzPiUHRxw760UacNiIjF/0K+kE=
-		</data>
-		<key>PPSource.bundle/image/switchRed.png</key>
-		<data>
-		V4gUpgkcC0iOfXhjZuUA7rol4yA=
-		</data>
-		<key>PPSource.bundle/image/switchRed@2x.png</key>
-		<data>
-		yqWB/PBO8iSNF2DecKs1GQtzVnk=
-		</data>
-		<key>PPSource.bundle/image/switchToggle.png</key>
-		<data>
-		fa9jJeIv0dT9yYnfg33vfnZnw18=
-		</data>
-		<key>PPSource.bundle/image/switchToggle@2x.png</key>
-		<data>
-		gPiG3G969fMnOVFcpdGz1L0+ytw=
-		</data>
-		<key>PPSource.bundle/image/switchToggleHigh.png</key>
-		<data>
-		rXMpHbW0rC0KsOGo5qo5Htn2BHg=
-		</data>
-		<key>PPSource.bundle/image/switchToggleHigh@2x.png</key>
-		<data>
-		mLWaBUnziBHYtPjzJNvUe0GIQz4=
-		</data>
 		<key>PPSource.bundle/image/thirdParty_auth_icon_zhifubao.png</key>
 		<data>
 		rjw0qA3BI782kOQNgPQVcyqOXBU=
@@ -6686,6 +7454,126 @@
 		<key>PPSource.bundle/image/thirdParty_auth_icon_zhifubao@3x.png</key>
 		<data>
 		x6zmz7bujw2k8GwmBh0T5dbCsJA=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn.gif</key>
+		<data>
+		ethdkaGX2Gccidwyy+3ghR+NWQ0=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn@2x.gif</key>
+		<data>
+		MNbrb3ckXOCWObQrM2ivS0Acg68=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn@3x.gif</key>
+		<data>
+		lDLeGVy+Bj6i6LUN/GF5rdYHrAM=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn_ipad.gif</key>
+		<data>
+		MNbrb3ckXOCWObQrM2ivS0Acg68=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_btn_ipad@2x.gif</key>
+		<data>
+		lDLeGVy+Bj6i6LUN/GF5rdYHrAM=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one.png</key>
+		<data>
+		SBPA6zgZ8PQyzxIsmVNIxVFD65w=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one@2x.png</key>
+		<data>
+		QzZKZ/d62gjQMsWb6v7dkBQnZFc=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one@3x.png</key>
+		<data>
+		aVaF0/+avAHsk2MNcni5J2RfM1c=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one_ipad.png</key>
+		<data>
+		61J+bP5zEug+oUkkN/Q9A4oFwgk=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_one_ipad@2x.png</key>
+		<data>
+		ZKQNO6TqF0LfBpQWG2Q4cWTk1SQ=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two.png</key>
+		<data>
+		2igZuHnMx03QhBU131vqrCpxRcw=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two@2x.png</key>
+		<data>
+		9UXca5faAuqc0iYErILH9Y4bEtU=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two@3x.png</key>
+		<data>
+		65oGf8C7bcf3IukmUMmkrFPeqP0=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two_ipad.png</key>
+		<data>
+		3ruJ83TlvGwq7jLWVOsrDeQsqLU=
+		</data>
+		<key>PPSource.bundle/image/tip_loginVouchers_two_ipad@2x.png</key>
+		<data>
+		KGQVc6E1WHGJtPuhK/Ua5DPrds8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked.png</key>
+		<data>
+		eVcnK8dtwEHHY9StxNlZ9/w81Bg=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked@2x.png</key>
+		<data>
+		4H22Zdpq5or3cAsre9pWO8EKHiw=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked@3x.png</key>
+		<data>
+		8dNP7PoKDpSDdVsaQZolXNgM7d8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked_ipad.png</key>
+		<data>
+		JWbNOO7BVF9ce7MOmK09XRosvHc=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_clicked_ipad@2x.png</key>
+		<data>
+		8dNP7PoKDpSDdVsaQZolXNgM7d8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal.png</key>
+		<data>
+		EDtc1g0VfILkUPc+/B/QDtdDqyc=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal@2x.png</key>
+		<data>
+		x2VjQF1ilt8fmi/dc6KFA9DrOsw=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal@3x.png</key>
+		<data>
+		KzKLyX0EXTvBVFPLSnWXmkn37S8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal_ipad.png</key>
+		<data>
+		SK8R9Lg2LzsPXmuQyLMK6YOBrYo=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_btn_normal_ipad@2x.png</key>
+		<data>
+		KzKLyX0EXTvBVFPLSnWXmkn37S8=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view.png</key>
+		<data>
+		bB3zshR2uDHqzd6RDcyctrmvSFg=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view@2x.png</key>
+		<data>
+		ahZ9zlJd8mYSL5NOfpS8pqdAJ9U=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view@3x.png</key>
+		<data>
+		lKl+FSfumKOzDUYqBN1KI5er/Oc=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view_ipad.png</key>
+		<data>
+		td/Lfi3O/qCafW6mdN6k5MHfLjI=
+		</data>
+		<key>PPSource.bundle/image/tip_rewardVoucher_view_ipad@2x.png</key>
+		<data>
+		/2Ad1RnhLvFmou3lCf9KQucqxFk=
 		</data>
 		<key>PPSource.bundle/image/vip_vipicon_bg.png</key>
 		<data>
@@ -6835,11 +7723,11 @@
 		<data>
 		d/HotgqwPFcGfhXuxj14Rgc3v18=
 		</data>
-		<key>PPSource.bundle/image/vouchers_blue_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_blue_bg_ipad.png</key>
 		<data>
 		4jMOOFCR0ZpV0i4sL1F51ezuj6U=
 		</data>
-		<key>PPSource.bundle/image/vouchers_blue_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_blue_bg_ipad@2x.png</key>
 		<data>
 		MiBREVleiuFyh/l6LTszN00k+Zg=
 		</data>
@@ -6855,11 +7743,11 @@
 		<data>
 		WFOPhOSpuqsHyTnTOBpuevyZzuQ=
 		</data>
-		<key>PPSource.bundle/image/vouchers_green_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_green_bg_ipad.png</key>
 		<data>
 		unm4FYBDy4f99CvnK+FH6EVOHE4=
 		</data>
-		<key>PPSource.bundle/image/vouchers_green_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_green_bg_ipad@2x.png</key>
 		<data>
 		KNcBa2uy2J8+5t5yzzaOI2scxXs=
 		</data>
@@ -6875,11 +7763,11 @@
 		<data>
 		50x6dYeRDc1ApQ/TbJYBKfR5SVA=
 		</data>
-		<key>PPSource.bundle/image/vouchers_grey_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_grey_bg_ipad.png</key>
 		<data>
 		JDiE1M2wU0XNA6+6BMSRyTb//0I=
 		</data>
-		<key>PPSource.bundle/image/vouchers_grey_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_grey_bg_ipad@2x.png</key>
 		<data>
 		kzd/wAjZQ5x7jeUgh3uZaFV8AKo=
 		</data>
@@ -6895,11 +7783,11 @@
 		<data>
 		+rbfz/kWSh6ntZMyFyH0+pJT4PA=
 		</data>
-		<key>PPSource.bundle/image/vouchers_red_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_red_bg_ipad.png</key>
 		<data>
 		u1JiuCgzLXzM0PpAYr/hq0iLo4I=
 		</data>
-		<key>PPSource.bundle/image/vouchers_red_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_red_bg_ipad@2x.png</key>
 		<data>
 		SVO/0E1W3C8d/UryJzvzRiuJWXQ=
 		</data>
@@ -6915,17 +7803,17 @@
 		<data>
 		dkP9yIlXFatni43ODvFg9kk9/2Q=
 		</data>
-		<key>PPSource.bundle/image/vouchers_yellow_bg_iPad.png</key>
+		<key>PPSource.bundle/image/vouchers_yellow_bg_ipad.png</key>
 		<data>
 		yI0NZGkmGpmeXfqH2jp2CTXuGNQ=
 		</data>
-		<key>PPSource.bundle/image/vouchers_yellow_bg_iPad@2x.png</key>
+		<key>PPSource.bundle/image/vouchers_yellow_bg_ipad@2x.png</key>
 		<data>
 		sytQDHp62SfIdSmBLcRBn9QiBS4=
 		</data>
 		<key>PPSource.bundle/sdk_dylib_Info.plist</key>
 		<data>
-		MWOvviaEeP7H20ostVztKerRu9U=
+		7UsNN8Or+SiOyP5NOgvRspj5QbY=
 		</data>
 		<key>PPSource.bundle/xml/ip_city_dictionary.xml</key>
 		<data>
