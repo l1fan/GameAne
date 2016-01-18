@@ -158,7 +158,7 @@ isContinueWhenCheckUpdateFailed:(BOOL)isAccept;
 /**
  *  @brief 获取登录的openuid, 用于标记一个用户
  */
-- (NSString*)XYOpenUID;
+- (NSString*) XYOpenUID;
 
 /**
  *  @brief 当前登录用户名

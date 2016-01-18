@@ -1,0 +1,6 @@
+framework module XYPlatform {
+  umbrella header "XYPlatform.h"
+
+  export *
+  module * { export * }
+}
