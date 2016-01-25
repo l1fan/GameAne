@@ -7,6 +7,7 @@
 	<taskdef resource="flexTasks.tasks"  classpath="${flex.sdk}/ant/lib/flexTasks.jar"/> 
 
 	<property name="ane.id" value="${id}" />
+	<property name="mix" value="false" />
 	<property name="tempdir" value="${basedir}/temp" />
 	<available file="../sdks/${ane.id}_ios" type="dir" property="ios.exist"/>
 
@@ -64,6 +65,7 @@
 		</javac>
 
 		<jar destfile="${tempdir}/Android-ARM/ane.jar" basedir="${tempdir}/classes">
+			<exclude name="**/l1fan/ane/SDK*.class" if:true="${mix}"/>
 			<zipgroupfileset  dir="../sdks/${ane.id}/libs" includes="*.jar"/>
 		</jar>
 
