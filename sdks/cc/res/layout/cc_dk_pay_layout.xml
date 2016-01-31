@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/c_f9f7f7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_layout" />
+
+    <include layout="@layout/line_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/c_C8C8CA" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="类型"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dk_type"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:hint="请选择点卡类型"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="面值"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dk_faceValue"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:hint="请选择面值"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="卡号"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/card_number"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/card_password"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_layout" />
+
+    <TextView
+        android:id="@+id/cc_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        style="@style/red_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="25dp"
+        android:text="立即支付" />
+
+</LinearLayout>

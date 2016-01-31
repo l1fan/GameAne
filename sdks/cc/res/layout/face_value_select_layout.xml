@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coupon_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="46.5dp"
+        android:background="@color/c_ffffff"
+        android:gravity="center"
+        android:text="选择面值"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <include layout="@layout/line_layout" />
+
+    <GridView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/c_ffffff"
+        android:padding="6dp"
+        android:horizontalSpacing="6dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="6dp" >
+    </GridView>
+
+</LinearLayout>

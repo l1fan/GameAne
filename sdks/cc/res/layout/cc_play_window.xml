@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.view.CCActivtiyWindowView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/black" >
+
+    <ImageView
+        android:id="@+id/cloes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ccplay_close" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ccplay_chongbi" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/btn_pop"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="虫虫；阿萨斯打算的撒虫虫；阿萨斯打算的撒虫虫；阿萨斯打算的撒虫虫；阿萨斯打算的撒"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_toLeftOf="@+id/btn_pop"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="虫虫；阿萨斯打算的撒虫虫；阿萨斯打算的撒虫虫；阿萨斯打算的撒虫虫；阿萨斯打算的撒"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_pop"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/cloes"
+        android:background="@drawable/ccplay_window_btn_bg"
+        android:text="立即充值"
+        android:textColor="#EA4925"
+        android:textSize="16sp" />
+
+</com.lion.ccpay.view.CCActivtiyWindowView>

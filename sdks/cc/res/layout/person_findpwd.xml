@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f9f7f7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_layout" />
+
+    <include layout="@layout/line_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/c_C8C8C8" />
+
+    <com.lion.ccpay.view.EdittextDeleteLayout
+        android:id="@+id/new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        hint="新密码(6-16位)"
+        inputType="pwd" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/c_C8C8C8" />
+
+    <com.lion.ccpay.view.EdittextDeleteLayout
+        android:id="@+id/retype_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        hint="再次输入新密码"
+        inputType="pwd" />
+
+    <include layout="@layout/line_layout" />
+
+    <Button
+        android:id="@+id/confirm"
+        style="@style/red_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="确定" />
+
+</LinearLayout>

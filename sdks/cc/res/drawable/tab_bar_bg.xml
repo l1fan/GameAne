@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ccplay_tab_bar_bg_s" android:state_selected="true"/>
+    <item><shape>
+            <solid android:color="#ffffff" />
+        </shape></item>
+
+</selector>

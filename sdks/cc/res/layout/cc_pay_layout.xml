@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/c_f9f7f7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_layout" />
+
+    <include layout="@layout/line_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/c_C8C8CA" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="账户余额"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/account_residue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="100虫币"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="订单名称"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="支付金额"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="123"
+                android:textColor="@color/c_e60012"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pay_money_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/coupon_btn_box_line"
+            layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:id="@+id/coupon_btn_box"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/default_pressed_btn"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="代金券"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/selected_coupon_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="100虫币"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/check_use_coupon"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableLeft="@drawable/check_btn_bg"
+                android:gravity="center"
+                android:paddingLeft="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_layout" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        style="@style/red_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="25dp"
+        android:text="立即支付" />
+
+</LinearLayout>

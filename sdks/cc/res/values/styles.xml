@@ -1,0 +1,113 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.lion" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="red_btn_style">
+        <item name="android:background">@drawable/red_btn</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_height">40.0dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="gray_btn_style">
+        <item name="android:background">@drawable/gray_btn</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_height">40.0dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="red_btn_style_white">
+        <item name="android:background">@drawable/red_btn_white</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@drawable/btn_textcolor</item>
+    </style>
+
+    <style name="red_btn_style_voucher">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_height">40.0dp</item>
+        <item name="android:textColor">@drawable/btn_textcolor</item>
+    </style>
+
+    <style name="suspersion_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="item_loading_progressbar">
+        <item name="android:layout_width">72.5dip</item>
+        <item name="android:layout_height">72.5dip</item>
+    </style>
+
+    <style name="text_black_14sp">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="lion_dialog_transparent" parent="@style/lion_dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="lion_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="bill_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="lion_dialog_anim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="bill_dialog_anim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/bill_dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/bill_dialog_exit</item>
+    </style>
+
+    <style name="Animation.Toast" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <style name="bill_text_style">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@drawable/bill_selector_text_color_bg</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/bill_selector_text_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+</resources>

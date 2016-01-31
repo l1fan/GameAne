@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_pserson"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f9f7f7"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_bar_person"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar_person" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/top_bar_person"
+        android:background="@color/c_C8C8CA" />
+
+    <ScrollView
+        android:id="@+id/src"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar_person"
+        android:layout_marginBottom="110dp"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <include layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:id="@+id/layout_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_zhanghao"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="用户名"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="1231461346"
+                    android:textColor="@color/c_C8C8C8" />
+            </LinearLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:id="@+id/layout_nickName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_nicheng"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="昵称"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/nickName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="1231461346"
+                    android:textColor="@color/c_C8C8C8"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_shouji"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="手机"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/nobind"
+                    android:textColor="@drawable/textcolor" />
+            </LinearLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:id="@+id/layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_youxiang"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="邮箱"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/nobind"
+                    android:textColor="@drawable/textcolor" />
+            </LinearLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:id="@+id/layout_updatepwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_xiugaimima"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="修改密码"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <RelativeLayout
+                android:id="@+id/layout_balance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_yue"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="余额"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/refresh_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/default_pressed_btn"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="142虫币  "
+                        android:textColor="@color/c_e60012" />
+
+                    <ImageView
+                        android:id="@+id/refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ccplay_shuaxin" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:id="@+id/layout_voucher"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_daijinquan"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/layout_voucher"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/voucher_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:textColor="@color/c_C8C8C8" />
+            </LinearLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <TextView
+                android:id="@+id/layout_bill"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:drawableLeft="@drawable/ccplay_pay_zhangdan_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/layout_bill"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <include layout="@layout/line_layout" />
+
+            <RelativeLayout
+                android:id="@+id/layout_sms"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/text_sns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_pay_xiaoxi_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/ccplay_layout_sms"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/red_text"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_toRightOf="@+id/text_sns"
+                    android:background="@drawable/circle_red_bg"
+                    android:text=" " />
+            </RelativeLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:id="@+id/layout_help"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/default_pressed_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ccplay_pay_bangzhuzhongxin"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/ccplay_layout_help"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/sdk_versionName"
+                    android:textColor="@color/c_C8C8C8" />
+            </LinearLayout>
+
+            <include layout="@layout/line_layout" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ccplay_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_topup"
+            style="@style/red_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="账户充值" />
+
+        <Button
+            android:id="@+id/exit_login"
+            style="@style/red_btn_style_white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btn_topup"
+            android:layout_marginTop="10dp"
+            android:text="注销账号" />
+    </RelativeLayout>
+
+</RelativeLayout>

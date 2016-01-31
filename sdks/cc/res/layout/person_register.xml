@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f9f7f7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/top_bar_layout" />
+
+        <include layout="@layout/line_layout" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/c_C8C8C8" />
+
+        <com.lion.ccpay.view.EdittextDeleteLayout
+            android:id="@+id/edittextname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            hint="用户名(6-16位字符)" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/c_C8C8C8" />
+
+        <com.lion.ccpay.view.EdittextDeleteLayout
+            android:id="@+id/edittext_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            hint="登录密码(6-16位)"
+            inputType="pwd" />
+
+        <include layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="阅读并接受"
+                android:textColor="@color/c_8E8E8E"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/user_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/user_deal"
+                android:textColor="#3E8BE3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm"
+            style="@style/red_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="完成注册" />
+    </LinearLayout>
+
+</RelativeLayout>

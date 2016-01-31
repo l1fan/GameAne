@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <padding android:left="8dp" android:right="8dp" />
+
+            <solid android:color="@color/c_cc021b" />
+        </shape></item>
+    <item android:state_selected="true"><shape>
+            <padding android:left="8dp" android:right="8dp" />
+
+            <solid android:color="@color/c_cc021b" />
+        </shape></item>
+    <item android:drawable="@drawable/ccplay_pay_bg_chongzhi" android:state_selected="false"></item>
+
+</selector>

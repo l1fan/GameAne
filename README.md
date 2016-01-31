@@ -4,34 +4,36 @@
 
 ## 支持渠道
 
-|渠道				|id					|Android| iOS|
-|----------|------------|-------|---|
-|奇虎360		|`qihoo360`   |Y			|		|
-|UC					|`uc`				|Y			|		|
-|小米				|`xiaomi`		|Y			|		|
-|安智				|`anzhi`		|Y			|		|
-|百度				|`baidu`		|Y			|		|
-|当乐				|`downjoy`	|Y			|		|
-|金立				|`gionee`		|Y			|		|
-|海马				|`haima`		|Y			|		|
-|华为				|`huawei`		|Y			|		|
-|快用				|`kuaiyong`	|Y			|Y	|
-|联想				|`lenovo`		|Y			|		|
-|OPPO				|`oppo`			|Y			|		|
-|搜狗				|`sogou`		|Y			|		|
-|同步推			|`tongbutui`|Y			|Y	|
-|豌豆荚			|`wandoujia`|Y			|		|
-|拇指玩			|`muzhiwan`	|Y			|		|
-|应用汇			|`appchina`	|Y			|		|
-|魅族				|`meizu`		|Y			|		|
-|优酷				|`youku`		|Y			|		|
-|iTools			|`itools`		|Y			|Y	|
-|爱思助手			|`i4`				|			|Y	|
-|果盘叉叉助手	|`xx`				|			|Y	 |
-|xy助手			|`xy`				|			|Y	  |
-|pp助手			|`pp`				|			|Y	 |
-|乐8助手			|`le8`			|			|Y	|
-|i苹果			|`iiapple`	|			|Y		|
+|渠道				|id					|Android| iOS|版本(Android/iOS)|
+|----------|------------|-------|---|---|------------|
+|奇虎360		|`qihoo360`   |Y			|		|v1.1.8(402) |
+|UC					|`uc`				|Y			|		| |
+|小米				|`xiaomi`		|Y			|		|v4.4.33 |
+|安智				|`anzhi`		|Y			|		| |
+|百度				|`baidu`		|Y			|		| |
+|当乐				|`downjoy`	|Y			|		| |
+|金立				|`gionee`		|Y			|		| |
+|海马				|`haima`		|Y			|Y	|v1.1.4/v1.3.7|
+|华为				|`huawei`		|Y			|		| |
+|快用				|`kuaiyong`	|Y			|Y	|v2.0.3/v2.2.3 |
+|联想				|`lenovo`		|Y			|		|v2.4.2.3 |
+|OPPO				|`oppo`			|Y			|		| |
+|搜狗				|`sogou`		|Y			|		| v1.4.30 |
+|同步推			|`tongbutui`|Y			|Y	|v4.2.0  |
+|豌豆荚			|`wandoujia`|Y			|		|v4.0.7		|
+|拇指玩			|`muzhiwan`	|Y			|		|v3.0.9		|
+|应用汇			|`appchina`	|Y			|		|					|
+|魅族				|`meizu`		|Y			|		|v2.1			|
+|优酷				|`youku`		|Y			|		|					|
+|卓易				|`droi`			|Y			|		|				|
+|虫虫				|`cc`				|Y			|		|v1.4.0 |
+|iTools			|`itools`		|			|Y	|	v2.5.0	|
+|爱思助手			|`i4`				|			|Y	|v2.1.0		|
+|果盘叉叉助手	|`xx`				|			|Y	 |v2.1.0	|
+|xy助手			|`xy`				|			|Y	  |v2.2.1		|
+|pp助手			|`pp`				|			|Y	 |vS155D1611|
+|乐8助手			|`le8`			|			|Y	| v1.0.7 |
+|i苹果			|`iiapple`	|			|Y		| v1.2.9|
 
 
 

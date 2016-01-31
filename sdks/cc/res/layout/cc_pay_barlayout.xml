@@ -1,0 +1,26 @@
+<com.lion.ccpay.view.BarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/show_suspersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bar_selector_bg"
+        android:tag="prot" />
+
+    <TextView
+        android:id="@+id/red_text"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignRight="@+id/show_suspersion"
+        android:background="@drawable/circle_red_bg"
+        android:text=" " />
+
+</com.lion.ccpay.view.BarLayout>

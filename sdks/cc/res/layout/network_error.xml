@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/network_error_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/c_f9f7f7"
+    android:clickable="true" >
+
+    <TextView
+        android:id="@+id/setting_network_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_below="@id/progress_layout"
+        android:layout_centerHorizontal="true"
+        android:background="#FAEBCC"
+        android:drawableRight="@drawable/ccplay_no_wifi_right"
+        android:gravity="center"
+        android:paddingRight="10dip"
+        android:text="无法连接到网络，请检测网络设置"
+        android:textColor="#C08B2F"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/no_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ccplay_no_wifi" />
+
+    <Button
+        android:id="@+id/error_retrybtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_wifi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/blue_btn_bg"
+        android:padding="10dip"
+        android:text="重试"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

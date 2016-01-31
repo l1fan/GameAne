@@ -1,0 +1,34 @@
+<com.lion.ccpay.view.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="46.5dp"
+    android:background="@color/c_ffffff" >
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/default_pressed_btn"
+        android:src="@drawable/ccplay_pay_back" />
+
+    <TextView
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:id="@+id/title"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="虫虫充值平台"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/default_pressed_btn"
+        android:src="@drawable/ccplay_shuaxin_browser" />
+
+</com.lion.ccpay.view.TopBarLayout>
