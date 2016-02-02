@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/kaopu_pay_qqservice" >
+
+        <TextView
+            android:id="@+id/kaopu_qqservice_warm"
+            style="@style/kaopu_pay_qqservice_warm"
+            android:text="@string/kaopu_pay_qqservice_warm" />
+
+        <TextView
+            android:id="@+id/kaopu_qqservice_text"
+            style="@style/kaopu_pay_qqservice_text"
+            android:text="@string/kaopu_pay_qq_left" />
+
+        <TextView
+            android:id="@+id/kaopu_qqservice_q"
+            style="@style/kaopu_pay_qqservice_text"
+            android:text="@string/kaopu_qq" />
+
+        <TextView
+            android:id="@+id/kaopu_pay_help_qqnum"
+            style="@style/kaopu_pay_qqservice_qq"
+            android:text="@string/kaopu_help_topup_qq" />
+    </LinearLayout>

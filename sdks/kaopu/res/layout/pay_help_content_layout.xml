@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help_content_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/kaopu_cybz_text"
+        style="@style/kaopu_faqtext"
+        android:text="@string/kaopu_faq_head_text" />
+
+    <ListView
+        android:id="@+id/kaopu_user_help_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/kaopu_float_top"
+        style="@style/kaopu_float_top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/kaopu_pay_person_top"
+                style="@style/kaopu_pay_person_top"
+                android:layout_gravity="right"
+                android:text="@string/kaopu_pay_title" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_pay_return"
+            style="@style/kaopu_pay_return"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="@string/kaopu_btn_return" />
+    </RelativeLayout>
+    <!-- 公用头部 end -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pay_ico_warn"
+            android:drawablePadding="5dp"
+            android:text="交易正在处理~"
+            android:textColor="#ff7000"
+            android:textSize="19sp" />
+
+        <TextView
+            style="@style/kaopu_pay_sucess_text"
+            android:text="若支付成功，资金交很快到帐\n哦，请稍后留意到账情况！" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">>
+
+            <TextView
+                android:id="@+id/text_pay_sucess_record"
+                style="@style/kaopu_pay_sucess_text"
+                android:text="您可在" />
+
+            <TextView
+                android:id="@+id/kaopu_pay_recard"
+                style="@style/kaopu_pay_sucess_text"
+                android:text="充值记录中"
+                android:textColor="#198ed8" />
+
+            <TextView
+                style="@style/kaopu_pay_sucess_text"
+                android:text="查询您的订单情况" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/kaopu_pay_sucess_text"
+                android:text="温馨提示：如有问题请联系QQ：" />
+
+            <TextView
+                style="@style/kaopu_pay_sucess_text"
+                android:text="@string/kaopu_help_topup_qq"
+                android:textColor="#198ed8" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

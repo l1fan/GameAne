@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical"
+        android:paddingBottom="0dp">
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_advert_title" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <LinearLayout
+            style="@style/kaopu_float_input_bg_nopadding"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/kaopu_advert_image_left"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/kaopu_advert_image_right"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_complete_go_game_bt"
+            style="@style/kaopu_float_btn_red"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:text="@string/kaopu_advert_go_game" />
+    </LinearLayout>
+
+</RelativeLayout>

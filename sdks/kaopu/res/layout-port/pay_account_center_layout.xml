@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1f1f1"
+    android:clickable="true">
+
+    <!-- 头部 -->
+    <include
+        android:id="@+id/kaopu_top_title"
+        layout="@layout/pay_kpzs_common_head" />
+
+    <RelativeLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_whmatch"
+        android:layout_above="@+id/kaopu_mycount_pay_nav"
+        android:layout_below="@+id/kaopu_top_title"
+        android:orientation="vertical">
+
+
+        <!-- 账号信息start -->
+        <ScrollView
+            android:id="@+id/kaopu_account_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/kaopu_advert_image">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:id="@+id/kaopu_person_mes"
+                    style="@style/kaopu_person_mes"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/kaopu_pay_usericon_iv"
+                        style="@style/kaopu_person_img"
+                        android:src="@drawable/pay_person_img" />
+
+                    <com.cyjh.pay.widget.BGAFlowLayout
+                        style="@style/kaopu_person_text"
+                        android:layout_toLeftOf="@+id/kaopu_logout_bt"
+
+                        android:layout_toRightOf="@+id/kaopu_pay_usericon_iv">
+
+                        <TextView
+                            android:id="@+id/kaopu_pay_username_description_tv"
+                            style="@style/kaopu_person_text"
+                            android:layout_centerVertical="true"
+                            android:text="@string/kaopu_login_loading_count" />
+
+                        <TextView
+                            android:id="@+id/kaopu_pay_showaccount_tv"
+                            style="@style/kaopu_person_text"
+                            android:layout_centerVertical="true"
+                            android:text="1990willy" />
+                    </com.cyjh.pay.widget.BGAFlowLayout>
+
+                    <TextView
+                        android:id="@+id/kaopu_logout_bt"
+                        style="@style/kaopu_port_account_change_count"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/kaopu_change_count" />
+                </RelativeLayout>
+
+                <!-- 头像信息 end -->
+
+                <LinearLayout
+                    android:id="@+id/kaopu_person_input_bg"
+                    style="@style/kaopu_person_input_bg"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/kaopu_account_safe_bt"
+                        style="@style/kaopu_person_input_line"
+                        android:clickable="true">
+
+                        <TextView
+                            style="@style/kaopu_person_left_text"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/pay_mycount_safe"
+                            android:text="@string/kaopu_account_safe" />
+
+                        <ImageView
+                            style="@style/kaopu_icon_enter"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/kaopu_modify_pwd_bt"
+                        style="@style/kaopu_person_input_line"
+                        android:clickable="true">
+
+                        <TextView
+                            style="@style/kaopu_person_left_text"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/pay_mycount_pwd"
+                            android:text="@string/kaopu_edit_pwd" />
+
+                        <ImageView
+                            style="@style/kaopu_icon_enter"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/kaopu_person_input_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/kaopu_account_vouchers_bt"
+                        style="@style/kaopu_person_input_line"
+                        android:clickable="true">
+
+                        <TextView
+                            style="@style/kaopu_person_left_text"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/pay_icon_vouchers"
+                            android:text="@string/kaopu_account_vouchers" />
+
+                        <ImageView
+                            style="@style/kaopu_icon_enter"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/kaopu_topup_recard_bt"
+                        style="@style/kaopu_person_input_line_no"
+                        android:clickable="true">
+
+                        <TextView
+                            style="@style/kaopu_person_left_text"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/pay_mycount_paylist"
+                            android:text="@string/kaopu_record_title" />
+
+                        <ImageView
+                            style="@style/kaopu_icon_enter"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <!-- 账号信息end -->
+
+
+        <!-- 帮助start -->
+
+        <LinearLayout
+            android:id="@+id/help_content_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="35dp"
+            android:orientation="vertical">
+
+            <com.cyjh.pay.widget.HelpCenterView
+                android:id="@+id/help_center_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <!-- 帮助end -->
+
+
+        <!-- 消息start -->
+
+        <ListView
+            android:id="@+id/kaopu_user_msg_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <!-- 消息end -->
+
+        <LinearLayout
+            android:id="@+id/kaopu_help_qq"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e1e1e1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/kaopu_faqtips"
+                android:text="@string/kaopu_faq_tips" />
+
+            <TextView
+                style="@style/kaopu_faqtips"
+                android:text="@string/kaopu_help_other_qq"
+                android:textColor="#198ed8" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/kaopu_advert_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerInside" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/kaopu_mycount_pay_nav"
+        style="@style/kaopu_mycount_pay_nav"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/kaopu_account_bt"
+            style="@style/kaopu_mycount_pay_nav_list"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/kaopu_account_iv"
+                style="@style/kaopu_mycount_pay_nav_img_user" />
+
+            <TextView
+                android:id="@+id/kaopu_account_tv"
+                style="@style/kaopu_mycount_text"
+                android:text="@string/kaopu_left_logo_user" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kaopu_help_bt"
+            style="@style/kaopu_mycount_pay_nav_list"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/kaopu_help_iv"
+                style="@style/kaopu_mycount_pay_nav_img_help" />
+
+            <TextView
+                android:id="@+id/kaopu_help_tv"
+                style="@style/kaopu_mycount_text"
+                android:text="@string/kaopu_left_logo_help" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kaopu_msg_bt"
+            style="@style/kaopu_mycount_pay_nav_list"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/kaopu_msg_iv"
+                style="@style/kaopu_mycount_pay_nav_img_mes" />
+
+            <TextView
+                android:id="@+id/kaopu_msg_tv"
+                style="@style/kaopu_mycount_text"
+                android:text="@string/kaopu_left_logo_mes" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

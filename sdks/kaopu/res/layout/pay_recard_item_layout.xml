@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/kaopu_hauto"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/kaopu_time_tv"
+        android:textColor="#6e6c6c"
+        android:drawablePadding="3dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="014/10/20 20:30" />
+
+    <TextView
+        android:id="@+id/kaopu_amount_tv"
+        style="@style/kaopu_record_list_body"
+        android:text="￥10" />
+
+    <TextView
+        android:id="@+id/kaopu_pay_method_tv"
+        style="@style/kaopu_record_list_body"
+        android:drawableLeft="@drawable/pay_ico_cardpay"
+        android:text="@string/kaopu_record_list_way_card" />
+
+</LinearLayout>

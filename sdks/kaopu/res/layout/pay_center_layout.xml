@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/common_floatbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/kaopu_pay_person_top"
+                    style="@style/kaopu_pay_person_top"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_pay_title" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_pay_return"
+                style="@style/kaopu_pay_return"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:text="@string/kaopu_btn_return_game" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+        <!-- 用户头部 -->
+
+        <LinearLayout
+            android:id="@+id/pay_record_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/kaopu_pay_username_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:text="账号: "
+                android:textColor="#4c4b4b"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/kaopu_show_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="1990willy"
+                android:textColor="#4c4b4b"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:text="游戏: "
+                android:textColor="#4c4b4b"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/kaopu_show_game_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="暖暖环游世界"
+                android:textColor="#4c4b4b"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 充值头部：比例说明begin -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/kaopu_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kaopu_pay_money_rate"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <!-- 充值头部：比例说明end -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:text="请选择支付方式："
+            android:textColor="#2f2f2f" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kaopu_alipay_bt"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/pay_way_select_alipay"
+                android:gravity="center"
+                android:text="支付宝"
+                android:textColor="#313131"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/kaopu_bank_bt"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/pay_way_select_bankcard"
+                android:gravity="center"
+                android:text="银行卡"
+                android:textColor="#313131"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/kaopu_vouchers_bt"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/pay_way_select_vouchers"
+                android:gravity="center"
+                android:text="代金券"
+                android:textColor="#313131"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

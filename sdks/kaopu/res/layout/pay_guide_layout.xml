@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay_setbox"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/kaopu_whauto"
+        android:text="您的设置需要设置浮窗，才能正常使用。"
+        android:textColor="#3e80c6"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/kaopu_pay_gosetting_bt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="25dp"
+        android:background="#3e80c6"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="前往设置"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/kaopu_pay_nervernotify_cb"
+        style="@style/kaopu_whauto"
+        android:text="  下次不再询问"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

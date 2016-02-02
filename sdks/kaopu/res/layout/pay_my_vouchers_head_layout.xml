@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 页面头部 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp" >
+
+        <!-- 公用头部 end -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingTop="10dp"
+            android:text="@string/kaopu_vouchers_record_head"
+            android:textColor="#ff7000"
+            android:textSize="15sp" />
+        <!-- 代金券使用情况 -->
+
+        <LinearLayout
+            android:id="@+id/kaopu_vouchers_usage_ly"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pay_bg_input"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center|left"
+                android:text="@string/kaopu_vouchers_hint_text"
+                android:textColor="#929292"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/kaopu_vouchers_usage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/pay_icon_drop_noborder"
+                android:gravity="center"
+                android:text="@string/kaopu_vouchers_hint_sort" />
+        </LinearLayout>
+        <!-- 选择游戏 -->
+
+        <LinearLayout
+            android:id="@+id/kaopu_vouchers_game_ly"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pay_bg_input"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center|left"
+                android:text="@string/kaopu_vouchers_hint_game"
+                android:textColor="#929292"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/kaopu_vouchers_game_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/pay_icon_drop_noborder"
+                android:gravity="center"
+                android:text="@string/kaopu_vouchers_hint_sort" />
+        </LinearLayout>
+        <!-- 列表头部 -->
+
+        <include
+            android:id="@+id/kaopu_select_title_top"
+            layout="@layout/pay_my_vouchers_list_title" />
+
+    </LinearLayout>
+
+</LinearLayout>

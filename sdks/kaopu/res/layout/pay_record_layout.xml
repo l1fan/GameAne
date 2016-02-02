@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_whmatch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/kaopu_pay_person_top"
+                    style="@style/kaopu_pay_person_top"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_record_title" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_pay_return"
+                style="@style/kaopu_pay_return"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:text="@string/kaopu_btn_return" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/kaopu_pay_record_user"
+            style="@style/kaopu_hauto"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/kaopu_pay_username_description_tv"
+                style="@style/kaopu_person_text"
+                android:text="@string/kaopu_login_loading_count" 
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/kaopu_username_tv"
+                style="@style/kaopu_person_text" />
+
+            <TextView
+                style="@style/kaopu_person_text_obj"
+                android:text="@string/kaopu_text_game" />
+
+            <TextView
+                android:id="@+id/kaopu_gamename_tv"
+                style="@style/kaopu_person_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kaopu_pay_record_nav"
+            style="@style/kaopu_record_nav"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/kaopu_tag_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/kaopu_one_day_tag"
+                    style="@style/kaopu_record_nav_left"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:text="@string/kaopu_record_nav_day" />
+
+                <RadioButton
+                    android:id="@+id/kaopu_one_week_tag"
+                    style="@style/kaopu_record_nav_mid"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:text="@string/kaopu_record_nav_week" />
+
+                <RadioButton
+                    android:id="@+id/kaopu_one_month_tag"
+                    style="@style/kaopu_record_nav_right"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:text="@string/kaopu_record_nav_month" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kaopu_hauto"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/kaopu_record_list_title"
+                android:text="@string/kaopu_record_list_pay_time" />
+
+            <TextView
+                style="@style/kaopu_record_list_title"
+                android:text="@string/kaopu_record_list_pay_money" />
+
+            <TextView
+                style="@style/kaopu_record_list_title"
+                android:text="@string/kaopu_record_list_pay_way" />
+
+        </LinearLayout>
+
+        <TextView style="@style/kaopu_record_list_devider" />
+
+        <ListView
+            android:id="@+id/kaopu_recard_list_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

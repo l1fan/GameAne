@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:clickable="true" >
+
+    <include layout="@layout/pay_kpzs_common_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kaopu_float_top" >
+
+        <!-- 头像信息 end -->
+
+        <LinearLayout
+            android:id="@+id/kaopu_emaill_input_ly"
+            style="@style/kaopu_person_input_bg"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <LinearLayout style="@style/kaopu_person_input_line" >
+
+                <EditText
+                    android:id="@+id/kaopu_check_maill_et"
+                    style="@style/kaopu_person_logText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:hint="@string/kaopu_emaill_notice"
+                    android:maxLength="24"
+                    android:textCursorDrawable="@null" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kaopu_emaill_view_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您绑定的邮箱是:"
+                android:textColor="#87000000" />
+
+            <TextView
+                android:id="@+id/kaopu_emaill_view_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="290617236@qq.com"
+                android:textColor="#87000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_email_check_commit_bt"
+            style="@style/kaopu_float_btn_red"
+            android:layout_below="@id/kaopu_emaill_input_ly"
+            android:clickable="true"
+            android:text="@string/kaopu_emaill_check_submit" />
+    </RelativeLayout>
+
+</RelativeLayout>

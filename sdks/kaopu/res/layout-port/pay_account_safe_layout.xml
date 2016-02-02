@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:clickable="true" >
+
+    <!-- 公用头部start -->
+
+    <include layout="@layout/pay_kpzs_common_head" />
+    <!-- 公用头部 end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kaopu_float_top" >
+
+        <!-- 头像信息 end -->
+
+        <LinearLayout
+            android:id="@+id/kaopu_person_input_bg"
+            style="@style/kaopu_person_input_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/kaopu_account_safe_bt"
+                style="@style/kaopu_person_input_line" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/pay_phone_num"
+                        style="@style/kaopu_account_safe_left_text"
+                        android:drawableLeft="@drawable/pay_mycount_phone_gray"
+                        android:text="绑定手机可用于找回账号/密码"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kaopu_phone_binding_status_tv"
+                        style="@style/kaopu_account_safe_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="未绑定"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/kaopu_modify_phonenum"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/pay_drw_port_change_account_normal"
+                    android:text="修改"
+                    android:textColor="#ff7000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kaopu_modify_pwd_bt"
+                style="@style/kaopu_person_input_line" >
+
+                <!-- 绑定邮箱可用于找回账号/密码等 -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/kaopu_edit_emaill_tv"
+                        style="@style/kaopu_account_safe_left_text"
+                        android:drawableLeft="@drawable/pay_mycount_user"
+                        android:text="绑定邮箱可用于找回账号/密码"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kaopu_email_binding_status_tv"
+                        style="@style/kaopu_account_safe_left_text"
+                        android:layout_marginLeft="30dp"
+                        android:text="未绑定"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/kaopu_modify_email"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/pay_drw_port_change_account_normal"
+                    android:text="修改"
+                    android:textColor="#ff7000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/kaopu_email_check_bt"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:layout_toLeftOf="@+id/kaopu_modify_email"
+                    android:background="@drawable/pay_drw_port_change_account_normal"
+                    android:text="验证"
+                    android:textColor="#ff7000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

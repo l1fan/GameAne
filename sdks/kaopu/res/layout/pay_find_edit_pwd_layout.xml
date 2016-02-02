@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="密码修改" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <TextView
+            android:id="@+id/kaopu_pay_fasten_message"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="请输入您的新密码"
+            android:textColor="#36000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/kaopu_pay_findpwd_pwd_ed"
+            style="@style/kaopu_float_input_bg"
+            android:layout_height="43dp"
+            android:layout_marginTop="0dp"
+            android:hint="@string/kaopu_reg_passwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="29"
+            android:singleLine="true"
+            android:textColor="#929292"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/kaopu_complete_check_bt"
+            style="@style/kaopu_float_btn_red"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:text="立即修改" />
+    </LinearLayout>
+
+</RelativeLayout>

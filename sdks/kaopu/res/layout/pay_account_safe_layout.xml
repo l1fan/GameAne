@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:clickable="true">
+
+    <!-- 公用头部start -->
+
+    <include layout="@layout/pay_kpzs_common_head" />
+    <!-- 公用头部 end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kaopu_float_top">
+
+        <LinearLayout
+            android:id="@+id/kaopu_person_input_bg"
+            style="@style/kaopu_person_input_bg"
+            android:layout_below="@id/kaopu_float_top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/kaopu_account_safe_bt"
+                style="@style/kaopu_person_input_line_land"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/pay_phone_num"
+                    style="@style/kaopu_account_safe_left_text"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/pay_mycount_phone_gray"
+                    android:text="152****7218" />
+
+                <Button
+                    android:id="@+id/kaopu_modify_phonenum"
+                    style="@style/kaopu_account_safe_left_text"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBaseline="@+id/pay_phone_num"
+                    android:layout_alignBottom="@+id/pay_phone_num"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/pay_drw_port_change_account_normal"
+                    android:text="修改"
+                    android:textColor="#ff7000" />
+
+                <TextView
+                    android:id="@+id/kaopu_phone_binding_status_tv"
+                    style="@style/kaopu_account_safe_left_text"
+                    android:layout_alignBaseline="@+id/pay_phone_num"
+                    android:layout_alignBottom="@+id/pay_phone_num"
+                    android:layout_centerInParent="true"
+                    android:text="未绑定" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kaopu_modify_pwd_bt"
+                style="@style/kaopu_person_input_line_land"
+                android:clickable="true">
+
+                <!-- 绑定邮箱可用于找回账号/密码等 -->
+
+                <TextView
+                    android:id="@+id/kaopu_edit_emaill_tv"
+                    style="@style/kaopu_account_safe_left_text"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/pay_mycount_user"
+                    android:text="111111111@qq.com" />
+
+                <Button
+                    android:id="@+id/kaopu_modify_email"
+                    style="@style/kaopu_account_safe_left_text"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBaseline="@+id/kaopu_edit_emaill_tv"
+                    android:layout_alignBottom="@+id/kaopu_edit_emaill_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/pay_drw_port_change_account_normal"
+                    android:text="修改"
+                    android:textColor="#ff7000" />
+
+                <TextView
+                    android:id="@+id/kaopu_email_binding_status_tv"
+                    style="@style/kaopu_account_safe_left_text"
+                    android:layout_alignBaseline="@+id/kaopu_edit_emaill_tv"
+                    android:layout_alignBottom="@+id/kaopu_edit_emaill_tv"
+                    android:layout_centerHorizontal="true"
+                    android:text="未绑定" />
+
+                <Button
+                    android:id="@+id/kaopu_email_check_bt"
+                    style="@style/kaopu_account_safe_left_text"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBaseline="@+id/kaopu_edit_emaill_tv"
+                    android:layout_alignBottom="@+id/kaopu_edit_emaill_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/pay_drw_port_change_account_normal"
+                    android:text="验证"
+                    android:textColor="#ff7000" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 账号信息end -->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kaopu_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <!-- 页面头部 -->
+
+    <RelativeLayout
+        android:id="@+id/kaopu_float_top"
+        style="@style/kaopu_float_top"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/kaopu_pay_person_top"
+                style="@style/kaopu_pay_person_top"
+                android:layout_gravity="right"
+                android:text="@string/kaopu_reg_screenshot_title" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_pay_return"
+            style="@style/kaopu_pay_return"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="@string/kaopu_btn_return" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/kaopu_float_top"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/kaopu_screenshot_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

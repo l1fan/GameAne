@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_fasten_title" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <TextView
+            android:id="@+id/kaopu_pay_fasten_message"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/kaopu_fasten_msg"
+            android:textColor="#36000000"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/kaopu_fasten_tel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/kaopu_fasten_tel_bt"
+                style="@style/kaopu_float_btn_red"
+                android:background="@drawable/pay_common_btn_green"
+                android:text="@string/kaopu_fasten_tel" />
+
+            <ImageView
+                android:id="@+id/kaopu_fasten_tel_img_commend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/kaopu_fasten_tel_bt"
+                android:layout_alignTop="@+id/kaopu_fasten_tel_bt"
+                android:src="@drawable/pay_bg_commend" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/kaopu_fasten_email_bt"
+            style="@style/kaopu_float_btn_red"
+            android:clickable="true"
+            android:text="@string/kaopu_fasten_email" />
+
+        <TextView
+            android:id="@+id/kaopu_fasten_next"
+            style="@style/kaopu_deal_text"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="@string/kaopu_fasten_next"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

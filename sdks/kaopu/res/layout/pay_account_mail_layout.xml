@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/kaopu_float_top"
+        style="@style/kaopu_float_top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/kaopu_pay_person_top"
+                style="@style/kaopu_pay_person_top"
+                android:layout_gravity="right"
+                android:text="@string/kaopu_mail_title" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_pay_return"
+            style="@style/kaopu_pay_return"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="@string/kaopu_btn_return" />
+    </RelativeLayout>
+    <!-- 公用头部 end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kaopu_float_top" >
+
+        <LinearLayout
+            android:id="@+id/kaopu_person_mes"
+            style="@style/kaopu_person_mes" >
+
+            <ImageView
+                android:id="@+id/kaopu_usericon_iv"
+                style="@style/kaopu_person_img"
+                android:src="@drawable/pay_person_img" />
+
+            <TextView
+                style="@style/kaopu_person_text"
+                android:text="@string/kaopu_login_loading_count" />
+
+            <TextView
+                android:id="@+id/kaopu_username_tv"
+                style="@style/kaopu_person_text"
+                android:text=":1990willy" />
+        </LinearLayout>
+        <!-- 头像信息 end -->
+
+        <TextView
+            android:id="@+id/kaopu_mail_tip"
+            style="@style/kaopu_mail_tip"
+            android:layout_below="@id/kaopu_person_mes"
+            android:clickable="false"
+            android:text="@string/kaopu_mail_tip" />
+
+        <LinearLayout
+            android:id="@+id/kaopu_person_input_bg"
+            style="@style/kaopu_person_input_bg"
+            android:layout_below="@id/kaopu_mail_tip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/kaopu_person_input_line"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/kaopu_person_left_text"
+                    android:text="@string/kaopu_mail" />
+
+                <EditText
+                    android:id="@+id/kaopu_person_email_ed"
+                    style="@style/kaopu_person_logText"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_save_email_bt"
+            style="@style/kaopu_float_btn_red"
+            android:layout_below="@id/kaopu_person_input_bg"
+            android:clickable="true"
+            android:text="@string/kaopu_btn_save" />
+    </RelativeLayout>
+
+</RelativeLayout>

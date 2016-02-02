@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical"
+        android:paddingBottom="40dp" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_pwd_find" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <LinearLayout
+            style="@style/kaopu_deal"
+            android:layout_marginTop="40dp"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/kaopu_deal_text_green"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/kaopu_find_passwd_other"
+                android:textColor="#929292" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/kaopu_deal"
+            style="@style/kaopu_deal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/kaopu_deal_text_blue"
+                android:clickable="true"
+                android:text="@string/kaopu_linkQQ" />
+
+            <TextView
+                android:id="@+id/kaopu_find_pwd_qq_bt"
+                style="@style/kaopu_deal_text_line"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:clickable="true"
+                android:text="@string/kaopu_help_other_qq" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

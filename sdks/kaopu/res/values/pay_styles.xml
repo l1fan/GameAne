@@ -1,0 +1,893 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- wh parent -->
+    <style name="kaopu_whauto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="kaopu_hauto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="kaopu_wauto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="kaopu_w0hauto">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="kaopu_whmatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- singleLine -->
+    <style name="kaopu_singleLine">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!-- singleLine -->
+    <!-- xiaobiqin begin -->
+    <style name="kaopu_common_floatbox">
+        <item name="android:layout_width">362dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#f3f3f3</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="kaopu_float_top" parent="kaopu_hauto">
+        <item name="android:background">#3f4249</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="kaopu_float_logo" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_logo</item>
+    </style>
+
+    <style name="kaopu_float_top_text_noline" parent="kaopu_hauto">
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="kaopu_float_top_text" parent="kaopu_whauto">
+        <item name="android:drawableLeft">@drawable/pay_float_line</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="kaopu_float_close" parent="kaopu_whauto">
+        <item name="android:drawableLeft">@drawable/pay_float_close</item>
+    </style>
+
+    <style name="kaopu_float_input_bg" parent="kaopu_hauto">
+        <item name="android:background">@drawable/pay_bg_input</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="kaopu_float_input_bg_nopadding" parent="kaopu_hauto">
+        <item name="android:background">@drawable/pay_bg_input</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_height">43dp</item>
+    </style>
+
+    <style name="kaopu_logText" parent="kaopu_hauto">
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#929292</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="kaopu_logText_nopadding" parent="kaopu_logText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">38dip</item>
+        <item name="android:layout_marginTop">1dip</item>
+    </style>
+
+    <style name="kaopu_float_btn_red" parent="kaopu_hauto">
+        <item name="android:background">@drawable/pay_common_btn_red</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@drawable/pay_text_btn</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="kaopu_deal" parent="kaopu_hauto">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="kaopu_deal_text" parent="kaopu_whauto">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#6aaaea</item>
+    </style>
+
+    <style name="kaopu_deal_text_line" parent="kaopu_deal_text">
+        <item name="android:background">@drawable/pay_deal_line</item>
+    </style>
+
+    <style name="kaopu_deal_left" parent="kaopu_deal">
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="kaopu_deal_text_blue" parent="kaopu_whauto">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#929292</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="kaopu_deal_text_blue_update" parent="kaopu_whauto">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#929292</item>
+        <item name="android:layout_marginTop">45dp</item>
+        <item name="android:layout_marginBottom">45dp</item>
+    </style>
+
+    <style name="kaopu_deal_text_green" parent="kaopu_deal_text_blue">
+        <item name="android:textColor">#ff7000</item>
+    </style>
+
+    <style name="kaopu_float_input_user" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_icon_user</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="kaopu_float_input_psw" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_icon_psw</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="kaopu_icon_drop" parent="kaopu_wauto">
+        <item name="android:background">@drawable/pay_icon_drop</item>
+        <item name="android:layout_marginRight">3dp</item>
+    </style>
+
+    <style name="kaopu_loginBtn" parent="kaopu_hauto">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="kaopu_float_btn_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@drawable/pay_text_btn</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="kaopu_float_btn_green_small" parent="kaopu_float_btn_common">
+        <item name="android:background">@drawable/pay_common_btn_green</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="kaopu_float_btn_red_small" parent="kaopu_float_btn_common">
+        <item name="android:background">@drawable/pay_common_btn_red</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="kaopu_other_link" parent="kaopu_hauto">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="kaopu_deal_text_blue_line" parent="kaopu_deal_text_blue">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="kaopu_login_loading_bg">
+        <item name="android:layout_width">244dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:background">#fff</item>
+    </style>
+
+    <style name="kaopu_login_loading_notice" parent="kaopu_hauto">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="kaopu_login_loading_text" parent="kaopu_whauto">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="kaopu_login_loading_grey" parent="kaopu_login_loading_text">
+        <item name="android:textColor">#515151</item>
+    </style>
+
+    <style name="kaopu_login_loading_red" parent="kaopu_login_loading_text">
+        <item name="android:textColor">#ff7000</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="kaopu_login_loading_notice_text" parent="kaopu_whauto">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#515151</item>
+    </style>
+
+    <style name="kaopu_change_count" parent="kaopu_whauto">
+        <item name="android:background">#ffffff</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="kaopu_change_count_text" parent="kaopu_whauto">
+        <item name="android:drawableLeft">@drawable/pay_change_count_icon</item>
+        <item name="android:textColor">#ff7000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="kaopu_left_logo" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_left_logo</item>
+    </style>
+
+    <style name="kaopu_left_logo_hide" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_left_logo_common_hide</item>
+    </style>
+
+    <style name="kaopu_left_logo_open" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_bg_logo_open</item>
+        <!-- <item name="android:layout_marginLeft">5dp</item> -->
+        <item name="android:paddingLeft">11dp</item>
+        <item name="android:paddingRight">11dp</item>
+    </style>
+
+    <style name="kaopu_right_logo_open" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_bg_logo_right</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:paddingRight">11dp</item>
+    </style>
+
+    <style name="kaopu_left_logo_icon" parent="kaopu_whauto">
+        <item name="android:textColor">#a3a3a3</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginLeft">9dp</item>
+        <item name="android:layout_marginRight">9dp</item>
+    </style>
+
+    <style name="kaopu_left_logo_user" parent="kaopu_left_logo_icon">
+        <item name="android:drawableTop">@drawable/pay_logo_user</item>
+    </style>
+
+    <style name="kaopu_left_logo_help" parent="kaopu_left_logo_icon">
+        <item name="android:drawableTop">@drawable/pay_logo_help</item>
+    </style>
+
+    <style name="kaopu_left_logo_mes" parent="kaopu_left_logo_icon">
+        <item name="android:drawableTop">@drawable/pay_logo_mes</item>
+    </style>
+
+    <!-- 个人资料 -->
+    <style name="kaopu_pay_person_top" parent="kaopu_whauto">
+        <item name="android:textColor">#ff7000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="kaopu_pay_return" parent="kaopu_whauto">
+        <item name="android:textColor">@drawable/pay_text_back</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/pay_btn_back</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="kaopu_person_mes" parent="kaopu_hauto">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="kaopu_person_img" parent="kaopu_whauto">
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="kaopu_person_text" parent="kaopu_whauto">
+        <item name="android:textColor">#4c4b4b</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="kaopu_person_input_bg" parent="kaopu_hauto">
+        <item name="android:background">@drawable/pay_person_input</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="kaopu_person_input_line_no">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="kaopu_person_input_line" parent="kaopu_person_input_line_no">
+        <item name="android:background">@drawable/pay_person_line</item>
+    </style>
+        <style name="kaopu_person_input_line_land" parent="kaopu_person_input_line_no_land">
+        <item name="android:background">@drawable/pay_person_line</item>
+    </style>
+        <style name="kaopu_person_input_line_no_land">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+
+    </style>
+
+    <style name="kaopu_person_left_text" parent="kaopu_whauto">
+        <item name="android:textColor">#656565</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="kaopu_person_logText" parent="kaopu_hauto">
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#929292</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center|right</item>
+    </style>
+
+    <style name="kaopu_icon_enter" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_icon_enter</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="kaopu_mycount_pay_nav_list">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pay_mycount_nav_hover</item>
+    </style>
+
+    <style name="kaopu_faqtext" parent="kaopu_whauto">
+        <item name="android:textColor">#ff7000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="kaopu_faqtips" parent="kaopu_whauto">
+        <item name="android:textColor">#565555</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="kaopu_mycount_pay_nav_img" parent="kaopu_whauto">
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="kaopu_mycount_pay_nav_img_user" parent="kaopu_mycount_pay_nav_img">
+        <item name="android:background">@drawable/pay_mycount_nav_user_bg</item>
+    </style>
+
+    <style name="kaopu_mycount_pay_nav_img_help" parent="kaopu_mycount_pay_nav_img">
+        <item name="android:background">@drawable/pay_mycount_nav_help_bg</item>
+    </style>
+
+    <style name="kaopu_mycount_pay_nav_img_mes" parent="kaopu_mycount_pay_nav_img">
+        <item name="android:background">@drawable/pay_mycount_nav_mes_bg</item>
+    </style>
+
+    <style name="kaopu_mycount_text" parent="kaopu_wauto">
+        <item name="android:textColor">#a3a3a3</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="kaopu_mycount_pay_nav" parent="kaopu_hauto">
+        <item name="android:background">@drawable/pay_bg_mycount_nav</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    <!-- 个人资料 -->
+    <!-- xiaobiqin end -->
+    <!-- baohua begin -->
+    <!-- 充值记录 -->
+    <style name="kaopu_record_head" parent="kaopu_hauto">
+        <item name="android:background">#fff</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="kaopu_person_text_obj" parent="kaopu_person_text">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="kaopu_person_text_val" parent="kaopu_person_text_obj">
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <style name="kaopu_record_nav" parent="kaopu_hauto">
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:paddingRight">17dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:background">#f1f1f1</item>
+    </style>
+
+    <style name="kaopu_record_nav_a">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/pay_text_record_nav</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="kaopu_record_nav_left" parent="kaopu_record_nav_a">
+        <item name="android:background">@drawable/pay_btn_record_nav_left</item>
+    </style>
+
+    <style name="kaopu_record_nav_mid" parent="kaopu_record_nav_a">
+        <item name="android:background">@drawable/pay_btn_record_nav_mid</item>
+        <item name="android:layout_marginLeft">-2dp</item>
+        <item name="android:layout_marginRight">-2dp</item>
+    </style>
+
+    <style name="kaopu_record_nav_right" parent="kaopu_record_nav_a">
+        <item name="android:background">@drawable/pay_btn_record_nav_right</item>
+    </style>
+
+    <style name="kaopu_record_list_common">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="kaopu_record_list_body" parent="kaopu_record_list_common">
+        <item name="android:textColor">#6e6c6c</item>
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+
+    <style name="kaopu_record_list_title" parent="kaopu_record_list_common">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="kaopu_record_list_devider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <!-- 帮助页面 -->
+    <style name="kaopu_help_title">
+        <item name="android:textColor">#2c2c2c</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="kaopu_help_text" parent="kaopu_whauto">
+        <item name="android:textColor">#2c2c2c</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="kaopu_help_link" parent="kaopu_whauto">
+        <item name="android:textColor">#198ed8</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- 消息页面 -->
+
+    <style name="kaopu_msg_list_c" parent="kaopu_hauto">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="kaopu_msg_list" parent="kaopu_msg_list_c">
+        <item name="android:background">#f1f1f1</item>
+    </style>
+
+    <style name="kaopu_msg_list_unread" parent="kaopu_msg_list_c">
+        <item name="android:background">#f1f1f1</item>
+    </style>
+
+    <style name="kaopu_msg_list_open" parent="kaopu_msg_list_c">
+        <item name="android:background">#e8e8e9</item>
+    </style>
+
+    <style name="kaopu_msg_list_ico_c">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="kaopu_msg_list_ico" parent="kaopu_msg_list_ico_c">
+        <item name="android:background">@drawable/pay_ico_msg</item>
+    </style>
+
+    <!-- 添加用户帮助样式 -->
+    <style name="kaopu_help_list_ico" parent="kaopu_msg_list_ico_c">
+        <item name="android:background">@drawable/pay_icon_down</item>
+    </style>
+
+    <style name="kaopu_msg_list_ico_open" parent="kaopu_msg_list_ico_c">
+        <item name="android:background">@drawable/pay_ico_msg_open</item>
+    </style>
+
+    <style name="kaopu_msg_list_title_c">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="kaopu_msg_list_title" parent="kaopu_msg_list_title_c">
+        <item name="android:textColor">#4c4b4b</item>
+    </style>
+
+    <style name="kaopu_msg_list_title_unread" parent="kaopu_msg_list_title_c">
+        <item name="android:textColor">#ff7000</item>
+    </style>
+
+    <style name="kaopu_msg_list_time" parent="kaopu_whauto">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="kaopu_msg_list_time_unread" parent="kaopu_msg_list_time">
+        <item name="android:textColor">#ff7000</item>
+    </style>
+
+    <style name="kaopu_msg_list_detail" parent="kaopu_hauto">
+        <item name="android:paddingLeft">42dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="kaopu_msg_list_detail_welcome" parent="kaopu_hauto">
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">#757575</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="kaopu_msg_list_detail_content" parent="kaopu_hauto">
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">#080808</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="kaopu_msg_list_detail_sender" parent="kaopu_hauto">
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">#ff7000</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- 密保邮箱 -->
+    <style name="kaopu_mail_tip" parent="kaopu_hauto">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <!-- 支付中心 -->
+    <style name="kaopu_person_text_s" parent="kaopu_whauto">
+        <item name="android:textColor">#4c4b4b</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="kaopu_person_text_obj_s" parent="kaopu_person_text_s">
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="kaopu_pay_nav">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/pay_nav_way</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/pay_text_pay_nav</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">8sp</item>
+    </style>
+
+    <style name="kaopu_pay_qqservice" parent="kaopu_whauto">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="kaopu_pay_qqservice_warm" parent="kaopu_whauto">
+        <item name="android:textColor">#ff7000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="kaopu_pay_qqservice_text" parent="kaopu_whauto">
+        <item name="android:textColor">#313131</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="kaopu_pay_qqservice_qq" parent="kaopu_whauto">
+        <item name="android:textColor">#198ed8</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="kaopu_pay_right_nav_a">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@drawable/pay_btn_pay_right_nav</item>
+    </style>
+
+    <style name="kaopu_pay_right_text" parent="@style/kaopu_hauto">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="kaopu_pay_right_title" parent="@style/kaopu_whauto">
+        <item name="android:textColor">#2f2f2f</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="kaopu_pay_right_moneytab">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/pay_btn_moneytab</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/pay_text_pay_nav</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="kaopu_float_btn_red_nomargin" parent="kaopu_hauto">
+        <item name="android:background">@drawable/pay_common_btn_red</item>
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:layout_marginBottom">13dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@drawable/pay_text_btn</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="kaopu_float_input_bg_nomargin" parent="kaopu_hauto">
+        <item name="android:background">@drawable/pay_bg_input</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="kaopu_pay_footer_title" parent="@style/kaopu_hauto">
+        <item name="android:textColor">#313131</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:background">@drawable/pay_footer_tri</item>
+    </style>
+
+    <style name="kaopu_pay_footer_text" parent="@style/kaopu_hauto">
+        <item name="android:textColor">#484545</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/pay_footer_dot</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="kaopu_pay_logText" parent="kaopu_hauto">
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#929292</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="kaopu_pay_editText_l">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@drawable/pay_edittext_l</item>
+    </style>
+
+    <style name="kaopu_pay_editText_r">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/pay_edittext_r</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#474646</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- baohua end -->
+    <!-- 竖版 -->
+
+    <style name="kaopu_port_record_list_title" parent="kaopu_record_list_title">
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="kaopu_port_record_list_body" parent="kaopu_record_list_body">
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="kaopu_port_person_text_s" parent="kaopu_person_text_s">
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="kaopu_port_person_text_obj_s" parent="kaopu_person_text_obj_s">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="kaopu_port_pay_person_info" parent="kaopu_hauto">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="kaopu_port_pay_nav" parent="kaopu_pay_nav">
+        <item name="android:paddingLeft">13dp</item>
+    </style>
+
+    <style name="kaopu_port_pay_qqservice_warm" parent="kaopu_pay_qqservice_warm">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="kaopu_port_pay_qqservice_text" parent="kaopu_pay_qqservice_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="kaopu_port_person_text" parent="kaopu_person_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="kaopu_port_person_img" parent="kaopu_person_img">
+        <item name="android:layout_marginRight">7dp</item>
+    </style>
+
+    <style name="kaopu_port_person_text_w" parent="kaopu_port_person_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="kaopu_port_account_change_count" parent="kaopu_change_count_text">
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/pay_btn_port_change_account</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="kaopu_float_input_tel" parent="kaopu_whauto">
+        <item name="android:background">@drawable/pay_bg_phone_gray</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="kaopu_logText_nopadding_hint" parent="kaopu_logText_nopadding">
+        <item name="android:textColorHint">#36000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="kaopu_float_input_checkcode" parent="kaopu_hauto">
+        <item name="android:background">@drawable/pay_bg_input</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    <!-- sdk 5 -->
+    <style name="kaopu_person_input_bg_2">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="kaopu_account_safe_left_text" parent="kaopu_whauto">
+        <item name="android:textColor">#656565</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="kaopu_pay_sucess_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textColor">#313131</item>
+    </style>
+
+</resources>

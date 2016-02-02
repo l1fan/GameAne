@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_check_tel_title" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <LinearLayout
+            style="@style/kaopu_float_input_bg_nopadding"
+            android:orientation="horizontal" >
+
+            <ImageView style="@style/kaopu_float_input_tel" />
+
+            <EditText
+                android:id="@+id/kaopu_pay_reg_accout_ed"
+                style="@style/kaopu_logText_nopadding_hint"
+                android:layout_marginRight="5dp"
+                android:hint="@string/kaopu_reg_tel_hint"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kaopu_float_input_bg_nopadding"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/kaopu_pay_reg_checkcode_ed"
+                style="@style/kaopu_logText_nopadding_hint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pay_bg_input"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <com.cyjh.pay.widget.TimeTextView
+                android:id="@+id/kaopu_pay_reg_get_checkcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/pay_bg_checkcode"
+                android:gravity="center"
+                android:text="@string/kaopu_reg_get_checkcode"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_check_email_commit"
+            style="@style/kaopu_float_btn_red"
+            android:clickable="true"
+            android:text="立即验证" />
+
+        <TextView
+            android:id="@+id/kaopu_check_email_message"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/kaopu_fasten_email_message"
+            android:textColor="#98000000"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/kaopu_check_return"
+            style="@style/kaopu_deal_text"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="@string/kaopu_check_return"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

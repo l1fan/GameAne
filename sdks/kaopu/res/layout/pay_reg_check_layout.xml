@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_count_check_reg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <LinearLayout
+            style="@style/kaopu_hauto"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                style="@style/kaopu_float_input_bg"
+                android:layout_centerInParent="false"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/kaopu_check_code_et"
+                    style="@style/kaopu_logText"
+                    android:hint="请输入验证码"
+                    android:inputType="text"
+                    android:maxLength="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <com.cyjh.pay.widget.CheckView
+                    android:id="@+id/kaopu_checkview"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:id="@+id/kaopu_refresh_checkview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/pay_icon_refresh" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_complete_check_bt"
+            style="@style/kaopu_float_btn_red"
+            android:clickable="true"
+            android:text="确定" />
+    </LinearLayout>
+
+</RelativeLayout>

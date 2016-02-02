@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:clickable="true" >
+
+    <include layout="@layout/pay_kpzs_common_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kaopu_float_top" >
+
+        <!-- 头像信息 end -->
+
+        <TextView
+            android:id="@+id/kaopu_pay_check_message"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="请选择任意一种方式验证"
+            android:textColor="#87000000"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/kaopu_check_tel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kaopu_pay_check_message" >
+
+            <TextView
+                android:id="@+id/kaopu_check_tel_bt"
+                style="@style/kaopu_float_btn_red"
+                android:background="@drawable/pay_common_btn_green"
+                android:clickable="true"
+                android:text="@string/kaopu_check_tel_title" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/kaopu_check_email_bt"
+            style="@style/kaopu_float_btn_red"
+            android:layout_below="@id/kaopu_check_tel_layout"
+            android:layout_marginBottom="22dp"
+            android:clickable="true"
+            android:text="@string/kaopu_check_emailurl" />
+    </RelativeLayout>
+
+</RelativeLayout>

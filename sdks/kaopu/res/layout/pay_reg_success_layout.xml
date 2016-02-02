@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_count_reg_succeed" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <LinearLayout
+            style="@style/kaopu_float_input_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kaopu_pay_account_ed"
+                style="@style/kaopu_logText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kaopu_float_input_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kaopu_pay_password_ed"
+                style="@style/kaopu_logText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kaopu_deal"
+            style="@style/kaopu_deal"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/kaopu_deal_text_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="截屏保存可将帐号密码截图保存到手机相册中，防止遗忘哦" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/kaopu_loginBtn"
+            style="@style/kaopu_loginBtn" >
+
+            <TextView
+                android:id="@+id/kaopu_reg_screenshot_save"
+                style="@style/kaopu_float_btn_green_small"
+                android:clickable="true"
+                android:text="@string/kaopu_reg_screenshot_save" />
+
+            <TextView
+                android:id="@+id/kaopu_login_game_bt"
+                style="@style/kaopu_float_btn_red_small"
+                android:clickable="true"
+                android:text="@string/kaopu_account_login_title" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/pay_bg_input"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/kaopu_select_titlet_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="18dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="18dp"
+        android:text="@string/kaopu_vouchers_slected_head"
+        android:textColor="#ff7000"
+        android:textSize="14sp" />
+
+
+    <include
+        android:id="@+id/kaopu_select_title_top"
+        layout="@layout/pay_select_vouchers_list_title" />
+
+</LinearLayout>

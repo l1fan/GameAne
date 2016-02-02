@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kaopu_float_top"
+    style="@style/kaopu_float_top"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/kaopu_pay_person_top"
+            style="@style/kaopu_pay_person_top"
+            android:layout_gravity="right"
+            android:text="@string/kaopu_pay_title" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/kaopu_pay_return"
+        style="@style/kaopu_pay_return"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:text="@string/kaopu_btn_return_game" />
+
+</RelativeLayout>
+
+<!-- 公用头部 end -->

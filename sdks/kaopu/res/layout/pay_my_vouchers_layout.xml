@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kaopu_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <!-- 页面头部 -->
+
+    <RelativeLayout
+        android:id="@+id/kaopu_float_top"
+        style="@style/kaopu_float_top"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/kaopu_pay_person_top"
+                style="@style/kaopu_pay_person_top"
+                android:layout_gravity="right"
+                android:text="@string/kaopu_account_vouchers" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_pay_return"
+            style="@style/kaopu_pay_return"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="@string/kaopu_btn_return" />
+    </RelativeLayout>
+
+
+    <com.cyjh.pay.widget.CustomScrollView
+        android:id="@+id/kaopu_vouchers_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/kaopu_float_top"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/kaopu_user_vouchers_lsitview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:choiceMode="none"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false" />
+
+            <include
+                android:id="@+id/kaopu_select_title_bottom"
+                layout="@layout/pay_my_vouchers_list_title"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp" />
+
+
+        </FrameLayout>
+
+    </com.cyjh.pay.widget.CustomScrollView>
+
+
+    <include
+        android:id="@+id/kaopu_vouchers_norecord_layout"
+        layout="@layout/pay_vouchers_norecord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/kaopu_float_top"
+        android:visibility="gone" />
+
+</RelativeLayout>

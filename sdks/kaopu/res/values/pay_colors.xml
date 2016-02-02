@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="pay_logo_hover">#ff7000</color>
+    <color name="pay_logo">#a3a3a3</color>
+
+
+    <color name="pay_msg_open">#4c4b4b</color>
+    <color name="pay_msg_close">#ff7000</color>
+    
+    <color name="pay_accountlv_bg">#c0c0c0</color>
+    <color name="pay_account_item_clickbg">#ff7000</color>
+    <color name="pay_account_textcolor">#9b9090</color>
+    <color name="pay_url_textcolor">#0000FF</color>
+
+    <color name="pay_vouchers_choose_bg">#f2f2f2</color>
+    <color name="pay_vouchers_loading_choose_bg">#B9B5B5</color>
+    <color name="pay_vouchers_white">#ffffff</color>
+
+
+</resources>

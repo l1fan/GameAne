@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_login_loading_bg"
+        style="@style/kaopu_login_loading_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/kaopu_login_loading_notice"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/kaopu_login_loading_grey"
+                android:text="@string/kaopu_login_loading_count" />
+
+            <TextView
+                android:id="@+id/kaopu_show_account_tv"
+                style="@style/kaopu_login_loading_red"
+                android:text="1990willy" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kaopu_login_loading_notice"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kaopu_show_loading_tv"
+                style="@style/kaopu_login_loading_notice_text"
+                android:text="@string/kaopu_loading_text" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

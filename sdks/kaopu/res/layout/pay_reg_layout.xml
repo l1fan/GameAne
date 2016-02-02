@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="@string/kaopu_fast_reg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <LinearLayout
+            style="@style/kaopu_float_input_bg_nopadding"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/kaopu_register_pwd_ed"
+                style="@style/kaopu_logText_nopadding_hint"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="@string/kaopu_reg_passwd_hint"
+                android:inputType="textPassword"
+                android:maxLength="29"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_complete_register_bt"
+            style="@style/kaopu_float_btn_red"
+            android:clickable="true"
+            android:text="@string/kaopu_reg_over" />
+
+        <LinearLayout
+            android:id="@+id/kaopu_deal"
+            style="@style/kaopu_deal"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/kaopu_deal_text_blue"
+                android:text="@string/kaopu_reg_agree_title"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kaopu_register_rule_bt"
+                style="@style/kaopu_deal_text"
+                android:clickable="true"
+                android:text="@string/kaopu_reg_contract_title"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/kaopu_other_link"
+            style="@style/kaopu_other_link"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/kaopu_pay_reg_account"
+                style="@style/kaopu_deal_text"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/pay_bg_person"
+                android:gravity="center_vertical"
+                android:text="账号注册"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kaopu_pay_reg_textView_padding"
+                style="@style/kaopu_deal_text_blue_line"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/kaopu_pay_reg_account"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/kaopu_pay_reg_tel"
+                style="@style/kaopu_deal_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/kaopu_pay_reg_textView_padding"
+                android:clickable="true"
+                android:drawableLeft="@drawable/pay_bg_login_phone"
+                android:gravity="center_vertical"
+                android:text="@string/kaopu_reg_tel_title"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kaopu_pay_reg_textview_login"
+                style="@style/kaopu_deal_text"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text="@string/kaopu_reg_return_login"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

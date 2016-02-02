@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/kaopu_vouchers_record_td_no"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/kaopu_vouchers_record_td_money"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/kaopu_vouchers_record_td_expiration_date"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/kaopu_vouchers_record_td_use_date"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!-- 列表分隔线 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bfbfbf" />
+</LinearLayout>

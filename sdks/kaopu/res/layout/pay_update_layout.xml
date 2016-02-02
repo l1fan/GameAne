@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text_noline"
+                    android:text="@string/kaopu_update_title" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <LinearLayout
+            style="@style/kaopu_deal_left"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                style="@style/kaopu_deal_text_blue_update"
+                android:text="@string/kaopu_update_tip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_update_immediately_tv"
+            style="@style/kaopu_float_btn_red"
+            android:clickable="true"
+            android:text="@string/kaopu_update_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

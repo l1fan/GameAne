@@ -1,0 +1,73 @@
+ <!-- 支付左侧 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kaopu_pay_left"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="22"
+    android:background="@drawable/pay_drw_pay_left"
+    android:orientation="vertical" >
+
+    <!-- 支付左侧 :个人信息 -->
+
+    <LinearLayout
+        style="@style/kaopu_port_pay_person_info">
+
+        <TextView
+            style="@style/kaopu_port_person_text_obj_s"
+            android:text="@string/kaopu_port_left_logo_user" />
+
+        <TextView
+            android:id="@+id/kaopu_show_account_tv"
+            style="@style/kaopu_port_person_text_s"
+            android:text="1990willy" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/kaopu_port_pay_person_info">
+
+        <TextView
+            style="@style/kaopu_port_person_text_obj_s"
+            android:text="@string/kaopu_port_text_game" />
+
+        <TextView
+            android:id="@+id/kaopu_show_game_tv"
+            style="@style/kaopu_port_person_text_s"
+            android:text="暖暖环游世界" />
+    </LinearLayout>
+
+    <!-- 支付左侧 :充值方式导航 -->
+
+    <RadioGroup 
+        android:id="@+id/kaopu_pay_radiogroup"
+        style="@style/kaopu_hauto" >        
+        <!-- 支付左侧 :充值方式导航 -支付宝 -->
+        <RadioButton
+            android:id="@+id/kaopu_alipay_bt"
+            style="@style/kaopu_port_pay_nav"
+            android:drawableLeft="@drawable/pay_btn_ico_alipay"
+            android:text="@string/kaopu_record_list_way_ali" >
+        </RadioButton>
+        <!-- 支付左侧 :充值方式导航 -财付通 -->
+        <RadioButton
+            android:id="@+id/kaopu_tenpay_bt"
+            style="@style/kaopu_port_pay_nav"
+            android:drawableLeft="@drawable/pay_btn_ico_tenpay"
+            android:text="@string/kaopu_record_list_way_ten"
+            android:visibility="gone" >
+        </RadioButton>
+        <!-- 支付左侧 :充值方式导航 -电话充值 -->
+        <RadioButton
+            android:id="@+id/kaopu_cardpay_bt"
+            style="@style/kaopu_port_pay_nav"
+            android:drawableLeft="@drawable/pay_btn_ico_cardpay"
+            android:text="@string/kaopu_record_list_way_card" >
+        </RadioButton>
+        <!-- 支付左侧 :充值方式导航 -手机充值卡 -->
+        <RadioButton
+            style="@style/kaopu_port_pay_nav"
+            android:drawableLeft="@drawable/pay_btn_ico_phonepay"
+            android:text="@string/kaopu_record_list_way_phone" 
+            android:visibility="gone">
+        </RadioButton>
+    </RadioGroup>
+</LinearLayout><!-- 支付右侧 -->

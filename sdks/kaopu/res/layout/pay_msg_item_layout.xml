@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_close_layout"
+        style="@style/kaopu_msg_list_open"
+        android:orientation="horizontal" >
+
+        <TextView 
+            android:id="@+id/kaopu_msg_icon_tv"
+            style="@style/kaopu_msg_list_ico" />
+
+        <TextView
+            android:id="@+id/kaopu_msg_title_tv"
+            style="@style/kaopu_msg_list_title_unread"
+            android:textColor="#ff7000"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/kaopu_msg_time_tv"
+            style="@style/kaopu_msg_list_time_unread"
+            android:text="2014/10/20 20:30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kaopu_open_layout"
+        style="@style/kaopu_msg_list_detail"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/kaopu_msg_list_detail_welcome"
+            android:text="@string/kaopu_text_welcome" />
+
+        <TextView
+            android:id="@+id/kaopu_msg_content_tv"
+            style="@style/kaopu_msg_list_detail_content"
+            android:text="您在2014/10/20  20:30充值500元的资金已到帐，请注意查收！您" />
+
+        <TextView
+            style="@style/kaopu_msg_list_detail_sender"
+            android:text="@string/kaopu_msg_sender_kaopu" />
+    </LinearLayout>
+
+</LinearLayout>

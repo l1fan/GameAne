@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/kaopu_float_top"
+        style="@style/kaopu_float_top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/kaopu_pay_person_top"
+                style="@style/kaopu_pay_person_top"
+                android:layout_gravity="right"
+                android:text="@string/kaopu_pay_title" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_pay_return"
+            style="@style/kaopu_pay_return"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="@string/kaopu_btn_return" />
+    </RelativeLayout>
+    <!-- 公用头部 end -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1">
+
+        <!-- 页面头部 -->
+        <LinearLayout
+            android:id="@+id/common_floatbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- 用户头部 -->
+
+            <LinearLayout
+                android:id="@+id/pay_record_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/kaopu_pay_username_description_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:text="账号: "
+                    android:textColor="#4c4b4b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/kaopu_show_account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:text="1990willy"
+                    android:textColor="#4c4b4b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:text="游戏: "
+                    android:textColor="#4c4b4b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/kaopu_show_game_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:text="暖暖环游世界"
+                    android:textColor="#4c4b4b"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <!-- 输入代金券 begin -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/pay_bg_input"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/kaopu_vouchers_input_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="center|left"
+                        android:hint="输入你的代金券"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:textColor="#929292"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/kaopu_vouchers_select_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="选择代金券"
+                    android:textColor="#ff7000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/kaopu_vouchers_recharge_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pay_common_btn_red"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/kaopu_pay_btn_text"
+                    android:textColor="@drawable/pay_text_btn"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="温馨提示："
+                        android:textColor="#ff7000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="如有问题请联系QQ："
+                        android:textColor="#4c4b4b"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="2088846837"
+                        android:textColor="#54abe2"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="15dp"
+                    android:text="代金券充值注意事项："
+                    android:textColor="#ff7000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="1.每笔充值只可使用1张代金券。\n2.代金券面额需与本次充值金额相同，才可使用。"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/kaopu_common_floatbox"
+        style="@style/kaopu_common_floatbox"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/kaopu_float_top"
+            style="@style/kaopu_float_top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/kaopu_float_logo"
+                    style="@style/kaopu_float_logo" />
+
+                <TextView
+                    android:id="@+id/kaopu_float_top_text"
+                    style="@style/kaopu_float_top_text"
+                    android:layout_gravity="right"
+                    android:text="账号找回" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaopu_float_close"
+                style="@style/kaopu_float_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+        </RelativeLayout>
+        <!-- 公用头部 end -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/kaopu_pay_fasten_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="您的账号是："
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/kaopu_pay_find_success_username"
+                style="@style/kaopu_deal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="1990wilhy" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kaopu_pay_fasten_messe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="请妥善保管您的账号，以防再次丢失"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/kaopu_pay_find_success_complete_bt"
+            style="@style/kaopu_float_btn_red"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:text="进入游戏" />
+    </LinearLayout>
+
+</RelativeLayout>

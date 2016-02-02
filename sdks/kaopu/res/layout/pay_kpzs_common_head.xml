@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kaopu_float_top"
+    style="@style/kaopu_float_top"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/kaopu_float_logo"
+            style="@style/kaopu_float_logo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/kaopu_pay_return"
+        style="@style/kaopu_pay_return"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:text="@string/kaopu_btn_return" />
+
+</RelativeLayout>

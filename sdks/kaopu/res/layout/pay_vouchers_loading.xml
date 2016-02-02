@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:gravity="center"
+    android:background="@drawable/pay_loading_selector"
+    android:orientation="horizontal">
+
+    <!-- 加载更多 -->
+    <com.cyjh.pay.widget.GifView
+        android:id="@+id/kaopu_loading_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/kaopu_footer_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="@string/kaopu_vouchers_loading_text"
+        android:textSize="14sp"></TextView>
+</LinearLayout>

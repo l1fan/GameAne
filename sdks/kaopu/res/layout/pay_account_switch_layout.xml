@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kaopu_change_count"
+    android:clickable="true"
+    style="@style/kaopu_change_count" >
+
+    <TextView
+        style="@style/kaopu_change_count_text"
+        android:text="@string/kaopu_change_count" />
+
+</LinearLayout>

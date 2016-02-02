@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/20.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.example.kpsupersdk</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MEDIA_MOUNTED" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true" >
+        <!-- kaopu star -->
+         <activity android:name="com.cyjh.pay.activity.SelectVouchersActivity"></activity>
+         <activity android:name="com.cyjh.pay.activity.VouchersSuccessActivity"></activity>
+         <activity android:name="com.cyjh.pay.activity.VouchersActivity"></activity>
+         <activity android:name="com.cyjh.pay.activity.PayCenterActivity"></activity>
+         <activity android:name="com.cyjh.pay.activity.GuideActivity"></activity>
+         <activity
+             android:name="com.cyjh.pay.activity.PayWebActivity"
+             android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+ 
+         <receiver android:name="com.cyjh.pay.download.DownLoadCompleteReceiver">
+             <intent-filter>
+                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+             </intent-filter>
+         </receiver>
+ 
+         <service android:name="com.cyjh.pay.service.PushMsgService" />
+ 
+         <!--添加 靠谱 SDK 必需的参数。此处 value 仅用于示例,请在 DK 平台注册申请 -->
+         <meta-data
+             android:name="KAOPU_APPKEY"
+             android:value="20003" />
+         <meta-data
+             android:name="KAOPU_SECRETKEY"
+             android:value="7CFCC850-F3D7-4D2B-9EAB-32EF51A77AB0" />
+         <meta-data
+             android:name="KAOPU_APPID"
+             android:value="20003001" />
+         <meta-data
+             android:name="KAOPU_APPVERSION"
+             android:value="2.0" />
+    </application>
+            </manifest>
+
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions>
+      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
+          </InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.kaopu</extensionID>
+    </extensions>
+</application>

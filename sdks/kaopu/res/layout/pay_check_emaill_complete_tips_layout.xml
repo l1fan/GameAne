@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:clickable="true" >
+
+    <include layout="@layout/pay_kpzs_common_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kaopu_float_top"
+        android:layout_marginTop="26dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/kaopu_email_check_commit_tv"
+            style="@style/kaopu_float_btn_red"
+            android:layout_marginTop="60dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:text="完成验证" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/kaopu_email_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#87000000"
+            android:text="验证邮件已发送到你的邮箱，请登录邮箱完成验证，完成验证后点击&quot;完成验证按钮&quot;"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>
