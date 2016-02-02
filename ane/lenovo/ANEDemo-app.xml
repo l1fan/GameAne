@@ -16,7 +16,7 @@
 <android>
         <colorDepth>16bit</colorDepth>
         <manifestAdditions><![CDATA[
-            <manifest android:installLocation="preferExternal">
+            <manifest android:installLocation="auto">
                <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"

@@ -11,7 +11,7 @@
 |小米				|`xiaomi`		|Y			|		|v4.4.33 |
 |安智				|`anzhi`		|Y			|		| |
 |百度				|`baidu`		|Y			|		| |
-|当乐				|`downjoy`	|Y			|		| |
+|当乐				|`downjoy`	|Y			|		|v4.2 |
 |金立				|`gionee`		|Y			|		| |
 |海马				|`haima`		|Y			|Y	|v1.1.4/v1.3.7|
 |华为				|`huawei`		|Y			|		| |
@@ -27,6 +27,7 @@
 |优酷				|`youku`		|Y			|		|					|
 |卓易				|`droi`			|Y			|		|				|
 |虫虫				|`cc`				|Y			|		|v1.4.0 |
+|靠谱				|`kaopu`		|Y			|		|v5.2  |
 |iTools			|`itools`		|			|Y	|	v2.5.0	|
 |爱思助手			|`i4`				|			|Y	|v2.1.0		|
 |果盘叉叉助手	|`xx`				|			|Y	 |v2.1.0	|
