@@ -33,7 +33,6 @@
             android:background="@drawable/dk_icon_star_ace"
             android:gravity="center"
             android:padding="2dip"
-            android:text="V23"
             android:textColor="@color/dk_color_ffffff"
             android:textSize="10sp"
             android:textStyle="bold" />
@@ -131,7 +130,6 @@
             android:layout_toRightOf="@+id/dk_iv_message_icon"
             android:padding="5.0dip"
             android:singleLine="true"
-            android:text="aaaaaaaaaaaa"
             android:textColor="#ffffC750"
             android:textSize="14sp" />
     </RelativeLayout>

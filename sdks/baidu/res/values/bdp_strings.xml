@@ -171,6 +171,8 @@
     <string name="bdp_passport_pay_cancel">用户放弃支付</string>
     <string name="bdp_passport_pay_unsupport">不支持的支付方式</string>
     <string name="bdp_passport_pay_invalid_login">无效的百度钱包登录状态</string>
+    <string name="bdp_passport_pay_login_fail">百度钱包登录失败</string>
+    <string name="bdp_passport_pay_logout">百度钱包退出登录</string>
     <string name="bdp_passport_invalid_passport">会话失效</string>
     <string name="bdp_passport_login_cancel">登录取消</string>
     
@@ -205,11 +207,11 @@
     <string name="bdp_error_weak_password">密码为极弱密码</string>
     <string name="bdp_error_same_password">原登录密码和新密码相同</string>
     <string name="bdp_error_token_invalid">您的账号登录信息已失效，请重新登录</string>
-    <string name="bdp_error_network_error">网络异常，请检查网络状态后重试！</string>
+    <string name="bdp_error_network_error">网络异常，请检查网络状态后重试。</string>
     
     <string name="bdp_amazing_loading">努力加载中…</string>
     <string name="bdp_amazing_loading_fail">获取失败，请点击重试……</string>
-    <string name="bdp_amazing_loading_no_more_page">已经到底啦！</string>
+    <string name="bdp_amazing_loading_no_more_page">已经到底啦</string>
     
     <string name="bdp_sso_login_title">百度账号授权登录</string>
     <string name="bdp_sso_login_loading">正在授权中…</string>
@@ -226,6 +228,7 @@
     <string name="bdp_paycenter_caifutong">财付通</string>
     <string name="bdp_paycenter_game_card">游戏卡</string>
     <string name="bdp_paycenter_credit_key_card">信用卡一键支付</string>
+    <string name="bdp_paycenter_yibao_cash_card">易宝储蓄卡</string>
     <string name="bdp_paycenter_91_bi">91币</string>
     <string name="bdp_paycenter_ku_bi_exchange">酷币兑换</string>
     <string name="bdp_paycenter_title">支付中心</string>
@@ -260,15 +263,15 @@
     <string name="bdp_paycenter_tips_verifycode_send_success">短信验证码已发送，请注意查收</string>
     <string name="bdp_paycenter_tips_verifycode_send_fail">短信验证码发送失败，请稍后重试</string>
     <string name="bdp_paycenter_tips_request_fali">请求失败,请稍后重试</string>
-    <string name="bdp_paycenter_tips_paychannel_get_fail">获取支付渠道失败，请稍后重试！</string>
-    <string name="bdp_paycenter_tips_balance_get_fail">获取账户余额失败，请稍后重试！</string>
+    <string name="bdp_paycenter_tips_paychannel_get_fail">获取支付渠道失败，请稍后重试。</string>
+    <string name="bdp_paycenter_tips_balance_get_fail">获取账户余额失败，请稍后重试。</string>
     <string name="bdp_paycenter_tips_unlogin">请先登录</string>
     <string name="bdp_paycenter_tips_un_order">支付订单信息错误</string>
     <string name="bdp_paycenter_tips_un_opay_channel_version">当前版本没有对应支付渠道,请尝试升级</string>
     <string name="bdp_paycenter_tips_paychannel_error">渠道信息错误，请尝试重新支付</string>
     <string name="bdp_paycenter_tv_string_loading">加载中…</string>
     <string name="bdp_paycenter_tv_commit_wait">正在提交，请稍侯..</string>
-    <string name="bdp_paycenter_tip_payment_network_error">网络异常，请检查网络状态后重试！</string>
+    <string name="bdp_paycenter_tip_payment_network_error">网络异常，请检查网络状态后重试。</string>
     <string name="bdp_paycenter_tip_input_null">输入不能为空</string>
     <string name="bdp_paycenter_tip_input_error_amount">请输入正确的金额</string>
     <string name="bdp_paycenter_tip_balance_unenough">您的余额不足，请调整支付金额</string>
@@ -277,8 +280,8 @@
     <string name="bdp_paycenter_customer_default">百度支付</string>
     <string name="bdp_paycenter_customer_service_number">4000&#8211;826&#8211;898</string>
     <string name="bdp_paycenter_current_consume_pay">本次代付金额：</string>
-    <string name="bdp_paycenter_tip_pay_info_inaccount">(扣除支付金额后所剩余金额将自动存入百度账户！)</string>
-    <string name="bdp_paycenter_tip_unpay_info_inaccount">(所选金额不足以支付金额将自动存入账户余额！)</string>
+    <string name="bdp_paycenter_tip_pay_info_inaccount">(扣除支付金额后所剩余金额将自动存入百度账户。)</string>
+    <string name="bdp_paycenter_tip_unpay_info_inaccount">(所选金额不足以支付金额将自动存入账户余额。)</string>
     <string name="bdp_paycenter_tip_card_number_hint">请输入卡序列号(%s)</string>
     <string name="bdp_paycenter_tip_card_password_hint">请输入卡密码(%s)</string>
     <string name="bdp_paycenter_tip_mobile_card_number_hint">请输入卡序列号</string>
@@ -300,8 +303,8 @@
      <string name="bdp_paycenter_tip_credit_card_date_hint">卡片有效期(格式0218)</string>
     <string name="bdp_paycenter_tip_credit_card_code_hint">卡校验码(格式267)</string>      
     <string name="bdp_paycenter_tip_credit_card_codeordate_error">信用卡号、卡片有效期或校验码长度格式错误</string>      
-    <string name="bdp_paycenter_tip_credit_card_notnull_error">手机号不能为空!!</string>      
-    <string name="bdp_paycenter_tip_credit_card_verify_pno">短信验证码</string>
+    <string name="bdp_paycenter_tip_credit_card_notnull_error">手机号不能为空</string>      
+    <string name="bdp_paycenter_tip_bank_card_verify_pno">短信验证码</string>
       
     <string name="bdp_paycenter_pay_need_pay_number">需支付：%1$s个%2$s</string>
     <string name="bdp_paycenter_pay_pay_after_balance">支付后%1$s余额：%2$s个</string>
@@ -316,7 +319,7 @@
     <string name="bdp_paycenter_btn_string_pay">支付</string>
     <string name="bdp_paycenter_tip_card_info_title">温馨提示：</string>
     <string name="bdp_paycenter_tip_card_info_content">请选择与卡面金额相符的金额充值！仅支持通用的%s</string>
-    <string name="bdp_paycenter_tip_card_pay_result">充值结果可能有几分钟的延迟，稍后你可以进行查询！！</string>
+    <string name="bdp_paycenter_tip_card_pay_result">充值结果可能有几分钟的延迟，稍后你可以进行查询。</string>
     <string name="bdp_paycenter_current_account">当前账号：%s</string>
     <string name="bdp_paycenter_baidubean_balance">余额：%s百度币</string>
     <string name="bdp_paycenter_baidu_bean">百度币</string>
@@ -338,7 +341,7 @@
     <string name="bdp_paycenter_pay_input_amount_tips">请填写充值金额：</string>
     <string name="bdp_paycenter_pay_select_card_amount_tips">请选择%s面额：</string>
     <string name="bdp_paycenter_pay_big_tips">(单笔金额超过%s元，请使用其他支付方式。)</string>
-    <string name="bdp_paycenter_pay_upper_limit_tips1">单笔金额超过%s元，请使用其他支付方式！</string>
+    <string name="bdp_paycenter_pay_upper_limit_tips1">单笔金额超过%s元，请使用其他支付方式。</string>
     <string name="bdp_paycenter_pay_upper_limit_tips2">单笔金额超过100000元</string>
     <string name="bdp_paycenter_pay_lower_limit_tips1">消费金额最低%s元</string>
     <string name="bdp_paycenter_pay_max_unit">单笔金额最高%s元</string>
@@ -352,7 +355,7 @@
     <string name="bdp_paycenter_tip_pay_dialog_all_amount">%1$s金额：%2$s元</string>
     <string name="bdp_paycenter_tip_pay_dialog_good_price">应付金额：%s元</string>
     <string name="bdp_paycenter_tip_pay_dialog_baiduben_save">存入账户：%s百度币</string>
-    <string name="bdp_paycenter_tip_pay_dialog_exchange_tips">(由于存在通道费率，游戏卡1元=%s百度币)</string>
+    <string name="bdp_paycenter_tip_pay_dialog_exchange_tips">(游戏卡需扣除%1$s通道费，按卡金额的%2$s来使用)</string> 
     <string name="bdp_paycenter_tip_pay_dialog_failpay_baidubean">所扣除金额不足以支付商品，%s将自动存入百度币账户。</string>
     <string name="bdp_paycenter_tip_is_not_pay">是否进行支付？</string>
     <string name="bdp_paycenter_tip_tip">提示</string>
@@ -366,26 +369,44 @@
     <string name="bdp_paycenter_credit_pay_money_label">本次支付金额：</string>
     <string name="bdp_paycenter_credit_input_info_label">请输入信用卡信息</string>
     <string name="bdp_paycenter_credit_pay_money">%s元</string>
-    <string name="bdp_paycenter_tips_query_card_info">获取信用卡信息</string>
+    <string name="bdp_paycenter_credit_query_card_info">获取信用卡信息</string>
     <string name="bdp_paycenter_credit_pay_by_binded_card">使用已关联的信用卡支付</string>
     <string name="bdp_paycenter_credit_support_bank">支持银行列表</string>
     <string name="bdp_paycenter_credit_unbind_card">目前没有绑定任何信用卡</string>
     <string name="bdp_paycenter_credit_binded_card">已绑定的信用卡</string>
     <string name="bdp_paycenter_credit_card_manage">信用卡管理</string>
     <string name="bdp_paycenter_credit_use_other_card">使用其他信用卡支付</string>
-    <string name="bdp_paycenter_credit_card_choose">%1$s，卡尾号(%2$s)</string>
+    <string name="bdp_paycenter_bank_card_choose">%1$s，卡尾号(%2$s)</string>
     <string name="bdp_paycenter_credit_pay">支付</string>
     <string name="bdp_paycenter_credit_dialog_close">关闭</string>
-    <string name="bdp_paycenter_credit_remove_bind">解除绑定</string>
-    <string name="bdp_paycenter_credit_cardno">卡号:*** **** **** %s</string>
+    <string name="bdp_paycenter_bank_card_remove_bind">解除绑定</string>
+    <string name="bdp_paycenter_bank_card_no">卡号:*** **** **** %s</string>
     <string name="bdp_paycenter_credit_removebind_ensure">你确定解绑尾号%s的信用卡?</string>
-    <string name="bdp_paycenter_tips_credit_removebind_fail">解绑失败，请稍后重试</string>
+    <string name="bdp_paycenter_tips_bank_card_removebind_fail">解绑失败，请稍后重试</string>
     <string name="bdp_paycenter_tips_verify_sms_code">短信验证</string>
     <string name="bdp_paycenter_tips_verify_code_fail">你输入的验证码错误</string>
     <string name="bdp_paycenter_tips_pwd_error">支付密码错误，请重试</string>
    	<string name="bdp_paycenter_tips_verify_pay_pwd">验证支付密码</string>
    	<string name="bdp_paycenter_hint_input_pay_pwd">请输入%s支付密码</string>
    	<string name="bdp_paycenter_find_pay_pwd">找回支付密码</string>
+   	
+    <string name="bdp_paycenter_yibao_cash_card_manage">储蓄卡管理</string>
+    <string name="bdp_paycenter_yibao_cash_card_support_bank_list">储蓄卡支持银行列表</string>
+    <string name="bdp_paycenter_yibao_cash_card_removebind_ensure">你确定解绑尾号%s的储蓄卡?</string>
+    <string name="bdp_paycenter_yibao_cash_card_binded_card">已绑定的储蓄卡</string>
+    <string name="bdp_paycenter_yibao_cash_card_unbind_card">目前没有绑定任何储蓄卡</string>
+    <string name="bdp_paycenter_yibao_cash_card_input_info_label">请输入储蓄卡信息</string>
+    <string name="bdp_paycenter_yibao_cash_card_number_hint">储蓄卡号</string>
+    <string name="bdp_paycenter_yibao_cash_card_phone_hint">储蓄卡关联手机号</string>
+    <string name="bdp_paycenter_yibao_cash_card_idcard_hint">身份证号</string>
+    <string name="bdp_paycenter_yibao_cash_card_realname_hint">真实姓名</string>
+    <string name="bdp_paycenter_yibao_cash_card_no_error">储蓄卡号长度格式错误</string>
+    <string name="bdp_paycenter_yibao_cash_card_pay_by_binded">使用已关联的储蓄卡支付</string>
+    <string name="bdp_paycenter_yibao_cash_card_use_other">使用其他储蓄卡支付</string>
+    <string name="bdp_paycenter_yibao_cash_card_query_card_info">获取储蓄卡信息</string>
+    <string name="bdp_paycenter_yibao_cash_card_notnull_phoneno_error">手机号不能为空</string>
+    <string name="bdp_paycenter_yibao_cash_card_notnull_id_error">身份证号不能为空</string>
+    <string name="bdp_paycenter_yibao_cash_card_notnull_real_name_error">真实姓名不能为空</string>
     
    	
     <string name="bdp_paycenter_pay_result_notify_account">当前账号：%1$s</string>
@@ -418,6 +439,8 @@
     <string name="bdp_paycenter_order_list_empty_baidu_bean">暂无百度币明细记录</string>
     <string name="bdp_paycenter_order_list_empty_consume">暂无消费明细记录</string>
     
+    <string name="bdp_paycenter_paychannel_error_qq">很抱歉，当前手机未安装QQ或版本不支持。</string>
+    
     
     <string name="bdp_task_unit">百度币</string>
     <string name="bdp_task_list_title">任务中心</string>
@@ -445,13 +468,18 @@
     <string name="bdp_paycenter_add_amount_pay">还需支付：%1$s元</string>
     <string name="bdp_paycenter_pay">立即支付</string>
     <string name="bdp_paycenter_more_payment">更多支付方式</string>
+    <string name="bdp_paycenter_use_balance_voucher">使用余额%1$s元代金券</string>
     <string name="bdp_paycenter_use_voucher">使用%1$s元代金券</string>
     <string name="bdp_paycenter_voucher_expire">(%1$s到期)</string>
     <string name="bdp_paycenter_use_baidu_bean">使用百度币</string>
     <string name="bdp_paycenter_pay_amount">支付%1$s元</string>
     <string name="bdp_paycenter_voucher_pay_tips">确认要使用%1$s元代金券支付？超出金额部分将自动作废。</string>
+    <string name="bdp_paycenter_balance_voucher_pay_tips">本次使用余额代金券%1$s元，剩余%2$s元可下次使用。</string>
+    <string name="bdp_paycenter_balance_voucher_pay_tips_1">确认使用余额%1$s元代金券支付，超出金额将作废。</string>
     <string name="bdp_alipay_install_fail">支付宝插件安装失败</string>
     <string name="bdp_paycenter_channel_check_fail">支付渠道信息验证失败!!</string>
+    
+    
      <!-- paycenter -->
     
 </resources>

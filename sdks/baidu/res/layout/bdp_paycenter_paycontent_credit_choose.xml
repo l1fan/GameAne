@@ -67,7 +67,7 @@
 
     <!-- 选择已关联的信用卡 -->
 
-    <com.baidu.platformsdk.pay.widget.CreditCardChooseLayout
+    <com.baidu.platformsdk.pay.widget.BankCardChooseLayout
         android:id="@+id/cccl_choose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

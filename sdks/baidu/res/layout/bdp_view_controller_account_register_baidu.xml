@@ -155,7 +155,7 @@
 		                android:id="@+id/img_pass_del"
 		                android:layout_width="wrap_content"
 		                android:layout_height="wrap_content"
-		                android:layout_marginRight="5dip"
+		                android:padding="3dip"
 		                android:contentDescription="@string/bdp_image"
 		                android:src="@drawable/bdp_icon_text_clear_selector"
 		                android:visibility="gone" />
@@ -164,9 +164,9 @@
 		                android:id="@+id/img_password_show"
 		                android:layout_width="wrap_content"
 		                android:layout_height="wrap_content"
-		                android:layout_marginRight="5dip"
+		                android:padding="3dip"
 		                android:contentDescription="@string/bdp_image"
-		                android:src="@drawable/bdp_icon_password_show" />
+		                android:src="@drawable/bdp_account_icon_pwd_shown" />
 		
 		        </LinearLayout>
 		        

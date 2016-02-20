@@ -10,12 +10,22 @@ import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.Application.ActivityLifecycleCallbacks;
+import android.os.Build;
+import android.os.Bundle;
 
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
 import com.adobe.fre.FREWrongThreadException;
 
+/**
+ * init
+ * userLogin
+ * pay
+ * userLogout
+ *
+ */
 public class SDKContext extends FREContext implements FREFunction {
 	
 	public static final String TAG = "GamePaySDK-ANE";
@@ -64,6 +74,9 @@ public class SDKContext extends FREContext implements FREFunction {
 	@Override
 	public void dispose() {
 		System.out.println("sdk context dispose");
+	}
+	
+	public SDKContext(){
 	}
 
 	/**
@@ -238,5 +251,86 @@ public class SDKContext extends FREContext implements FREFunction {
 		}
 
 		return json.toString();
+	}
+	
+	/**
+	 * 返回json对象中key对应的值。可以输入多个key值，按顺序查找，只要匹配到就直接返回，后面的不再查询。
+	 * @param json
+	 * @param keys 多个key值，注意顺序
+	 * @return 不存在时返回null
+	 */
+	protected Object jsonOpt(JSONObject json, String... keys){
+		for (String key : keys) {
+			if (json.has(key)) {
+				return json.opt(key);
+			}
+		}
+		return null;
+	}
+	
+	/**
+	 * activity life cycle api14
+	 */
+	protected void onResume() {
+		
+	}
+	
+	/**
+	 * activity life cycle，api14
+	 */
+	protected void onPause(){
+		
+	}
+	
+	/**
+	 * register activity life cycle, then {@link #onResume()} and {@link #onPause()} override will be called
+	 */
+	protected void regLifecycle() {
+		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+			return;
+		}
+		final Activity activity = getActivity();
+		activity.getApplication().registerActivityLifecycleCallbacks(
+				new ActivityLifecycleCallbacks() {
+
+					@Override
+					public void onActivityStopped(Activity arg0) {
+
+					}
+
+					@Override
+					public void onActivityStarted(Activity arg0) {
+
+					}
+
+					@Override
+					public void onActivitySaveInstanceState(Activity arg0,
+							Bundle arg1) {
+					}
+
+					@Override
+					public void onActivityResumed(Activity arg0) {
+						if (arg0.equals(activity)) {
+							onResume();
+						}
+					}
+
+					@Override
+					public void onActivityPaused(Activity arg0) {
+						if (arg0.equals(activity)) {
+							onPause();
+						}
+					}
+
+					@Override
+					public void onActivityDestroyed(Activity arg0) {
+
+					}
+
+					@Override
+					public void onActivityCreated(Activity arg0, Bundle arg1) {
+
+					}
+				});		
 	}
 }

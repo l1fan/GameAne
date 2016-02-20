@@ -3,6 +3,11 @@ package com.l1fan.ane.baidu;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.Activity;
+
+import com.baidu.gamesdk.ActivityAdPage;
+import com.baidu.gamesdk.ActivityAdPage.Listener;
+import com.baidu.gamesdk.ActivityAnalytics;
 import com.baidu.gamesdk.BDGameSDK;
 import com.baidu.gamesdk.BDGameSDKSetting;
 import com.baidu.gamesdk.BDGameSDKSetting.Domain;
@@ -14,8 +19,10 @@ import com.l1fan.ane.SDKContext;
 
 public class SDK extends SDKContext {
 
-	public void init() throws JSONException {
+	protected ActivityAnalytics mActivityAnalytics;
+	protected ActivityAdPage mActivityAdPage;
 
+	public void init() throws JSONException {
 		BDGameSDKSetting mBDGameSDKSetting = new BDGameSDKSetting();
 		JSONObject data = getJsonData();
 		mBDGameSDKSetting.setAppID(data.optInt(APPID));// APPID设置
@@ -29,6 +36,7 @@ public class SDK extends SDKContext {
 			mBDGameSDKSetting.setOrientation(Orientation.PORTRAIT);// 设置为竖屏
 		}
 
+		final Activity activity = getActivity();
 		BDGameSDK.init(getActivity(), mBDGameSDKSetting, new IResponse<Void>() {
 
 			@Override
@@ -36,6 +44,12 @@ public class SDK extends SDKContext {
 				switch (resultCode) {
 				case ResultCode.INIT_SUCCESS:
 					dispatchData(EVENT_INIT, resultDesc);
+					BDGameSDK.getAnnouncementInfo(getActivity());
+					mActivityAnalytics = new ActivityAnalytics(activity);
+					mActivityAdPage = new ActivityAdPage(activity, new Listener(){
+						@Override
+						public void onClose() {}
+					});
 					break;
 				case ResultCode.INIT_FAIL:
 				default:
@@ -51,9 +65,12 @@ public class SDK extends SDKContext {
 			public void onResponse(int resultCode, String resultDesc, Void arg2) {
 				if(resultCode == ResultCode.SESSION_INVALID){ 
 					dispatchData(EVENT_LOGOUT, resultDesc);
+					BDGameSDK.closeFloatView(getActivity());
 				}
 			}
 		});
+		
+		regLifecycle();
 	}
 
 	private IResponse<Void> listener = new IResponse<Void>() {
@@ -67,6 +84,7 @@ public class SDK extends SDKContext {
 					json.put(UID, BDGameSDK.getLoginUid());
 					json.put(TOKEN, BDGameSDK.getLoginAccessToken());
 					dispatchData(EVENT_LOGIN, json);
+					BDGameSDK.showFloatView(getActivity());
 				} catch (JSONException e) {
 					e.printStackTrace();
 				}
@@ -75,6 +93,7 @@ public class SDK extends SDKContext {
 				dispatchError(EVENT_LOGIN, resultDesc);
 				break;
 			case ResultCode.LOGIN_CANCEL: // TODO 操作前后的登录状态没变化
+				dispatchError(EVENT_LOGIN, ""+resultDesc);
 				break;
 			}
 		}
@@ -113,6 +132,18 @@ public class SDK extends SDKContext {
 			}
 		});
 	}
+		
+	@Override
+	protected void onResume() {
+		mActivityAdPage.onResume();
+		mActivityAnalytics.onResume();
+	}
+
+	@Override
+	protected void onPause() {
+		mActivityAdPage.onPause();
+		mActivityAnalytics.onPause();
+	}
 	
 	public void toolBarShow(){
 		BDGameSDK.showFloatView(getActivity());
@@ -124,6 +155,7 @@ public class SDK extends SDKContext {
 
 	public void userLogout() {
 		BDGameSDK.logout();
+		dispatchData(EVENT_LOGOUT);
 	}
 
 	public void destory() {

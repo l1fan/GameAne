@@ -60,18 +60,28 @@
 
     <LinearLayout
         android:id="@+id/dk_layout_progress_prefecture"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="160dip"
+        android:layout_height="46dip"
         android:layout_below="@id/dk_layout_prefecture_header"
         android:layout_gravity="center"
         android:background="@drawable/dk_bottom_dialog_new"
         android:gravity="center"
         android:orientation="horizontal" >
 
-        <include
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            layout="@layout/dk_common_progress" />
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="6dp"
+            android:indeterminateDrawable="@drawable/dk_bg_progress_loading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/dk_tv_string_loading"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout

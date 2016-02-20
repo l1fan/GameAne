@@ -19,6 +19,7 @@
     <string name="dk_user_register_process">正在注册...</string>
     <string name="dk_user_login_sucess">登录成功</string>
     <string name="dk_user_cancle_login">用户取消登录</string>
+    <string name="dk_user_notice_text">公&#160;&#160;告</string>
     <string name="dk_user_request_error">%s , 请稍候重试！</string>
     <string name="dk_user_requesterror_net_timeout">网络超时，请稍候重试！</string>
     <string name="dk_user_requesterror_server_dead">网络异常，请稍后重试!</string>
@@ -435,7 +436,8 @@
     <string name="dk_cashcoupon_platform_text">平台代金券</string>
     <string name="dk_cashcoupon_no_platform_text">非平台代金券</string>
     <string name="dk_cashcoupon_date_text">有效期：%s</string>
-    <string name="dk_cashcoupon_kubi_text">酷币</string>
+    <string name="dk_cashcoupon_kubi_text">元</string>
+    <string name="dk_cashcoupon_kubi_type">(余额)\t\t\t\t面值</string>
     <string name="dk_cashcoupon_user_text">使用</string>
     <string name="dk_message_bt_gift">查看礼包详情</string>
     <string name="dk_message_bt_activity">查看活动</string>
@@ -569,5 +571,10 @@
     <string name="dk_customer_gamequestion_hint">您好，您咨询的问题属于游戏内部问题，游戏开发商有专门处理此类问题的客服，您可以直接向其反馈，客服电话：%s。感谢您对百度移动游戏的支持！</string>
     <string name="dk_account_upgrade_tips">升级帐号获取更多福利-></string>
     <string name="dk_account_upgrade">升级</string>
+    
+     <string name="dk_float_view_title">百度移动游戏</string>
 
+    <!-- 3.5 -->
+    <string name="dk_actionnotice_link">立即查看</string>
+    
 </resources>

@@ -10,7 +10,7 @@
 |UC					|`uc`				|Y			|		| |
 |小米				|`xiaomi`		|Y			|		|v4.4.33 |
 |安智				|`anzhi`		|Y			|		| |
-|百度				|`baidu`		|Y			|		| |
+|百度				|`baidu`		|Y			|		|v3.5.2 |
 |当乐				|`downjoy`	|Y			|		|v4.2 |
 |金立				|`gionee`		|Y			|		| |
 |海马				|`haima`		|Y			|Y	|v1.1.4/v1.3.7|

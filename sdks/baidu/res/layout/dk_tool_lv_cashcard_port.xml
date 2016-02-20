@@ -77,7 +77,28 @@
             android:text="@string/dk_cashcoupon_kubi_text"
             android:textColor="@color/dk_color_ffffff"
             android:textSize="@dimen/text_size_14_sp" />
+        
+        <TextView
+            android:id="@+id/dk_cashcoupon_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/dk_cashcoupon_kubi"
+            android:text="@string/dk_cashcoupon_kubi_type"
+            android:textColor="@color/dk_color_ffffff"
+            android:textSize="@dimen/text_size_14_sp"
+            android:visibility="gone" />
 
+        <TextView
+            android:id="@+id/dk_cashcoupon_oldvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/dk_cashcoupon_type"
+            android:textColor="@color/dk_color_ffffff"
+            android:textSize="@dimen/text_size_14_sp"
+            android:visibility="gone" />
+        
         <ImageView
             android:id="@+id/dk_cashcoupon_use_iv"
             android:layout_width="63dp"
