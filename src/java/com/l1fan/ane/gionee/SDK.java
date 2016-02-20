@@ -15,8 +15,8 @@ public class SDK extends SDKContext {
 	private String mApiKey;
 
 	public void init() throws JSONException{
-		JSONObject json = getJsonData();
-		mApiKey = json.optString(APPKEY);
+		JSONObject init = getJsonData();
+		mApiKey = init.optString(APPKEY,init.optString("apiKey"));
 		GamePlatform.init(getActivity(), mApiKey);
 		dispatchData(EVENT_INIT);
 	}
@@ -54,7 +54,7 @@ public class SDK extends SDKContext {
 		OrderInfo orderInfo = new OrderInfo();
 		orderInfo.setApiKey(json.optString(mApiKey));
 		orderInfo.setOutOrderNo(json.optString(ORDER_ID));
-		orderInfo.setSubmitTime(String.valueOf(System.currentTimeMillis()));
+		orderInfo.setSubmitTime(json.optString("submitTime"));
 		payer.pay(orderInfo, payer.new GamePayCallback(){
 			@Override
 			public void onPaySuccess() {

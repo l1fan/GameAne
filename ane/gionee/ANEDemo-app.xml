@@ -23,7 +23,6 @@
         android:normalScreens="true"
         android:smallScreens="true" />
     
-        <!-- 开始添加Amigo Play SDK需要的权限,开发者重点关注 -->
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         <uses-permission android:name="android.permission.GET_TASKS" />
         <uses-permission android:name="android.permission.INTERNET" />
@@ -34,7 +33,6 @@
         <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
         <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-        <!-- 结束添加权限 -->
 
 
     <uses-sdk
@@ -45,15 +43,17 @@
         android:allowBackup="true" >
 
         
-       <!-- Amigo Play SDK组件声明开始 -->
-        <service android:name="com.gionee.gsp.floatingwindow.FloatingWindowService">
+        <service android:name="com.gionee.gsp.floatingwindow.FloatingWindowService" >
             <intent-filter>
                 <action android:name="com.gionee.pay.ic.FloatingWindowService" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
-        <activity android:name="com.gionee.gsp.service.activity.AssistActivity" android:configChanges="mcc|mnc|orientation|screenSize" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!-- Amigo Play SDK组件声明结束 -->
+
+        <activity
+            android:name="com.gionee.gsp.service.activity.AssistActivity"
+            android:configChanges="mcc|mnc|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
               
     </application>
             </manifest>
