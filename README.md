@@ -16,7 +16,7 @@
 |海马				|`haima`		|Y			|Y	|v1.1.4/v1.3.7|
 |华为				|`huawei`		|Y			|		|v3.31.70.305 |
 |快用				|`kuaiyong`	|Y			|Y	|v2.0.3/v2.2.3 |
-|联想				|`lenovo`		|Y			|		|v2.4.2.3 |
+|联想				|`lenovo`		|Y			|		|v2.6.1 |
 |OPPO				|`oppo`			|Y			|		| |
 |搜狗				|`sogou`		|Y			|		| v1.4.30 |
 |同步推			|`tongbutui`|Y			|Y	|v4.2.0  |

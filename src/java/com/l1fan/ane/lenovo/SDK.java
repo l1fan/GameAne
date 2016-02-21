@@ -50,7 +50,7 @@ public class SDK extends SDKContext {
 		
 		payRequest.addParam("notifyurl", ""); //notifyurl当前版本暂时不用,传空string
 		payRequest.addParam("appid", mAppId); 
-		payRequest.addParam("waresid", pay.optInt(PID)); //商品编码，联想后台建立
+		payRequest.addParam("waresid", jsonOpt(pay, "waresid","waresId",PID)); //商品编码，联想后台建立
 		payRequest.addParam("exorderno", pay.optString(ORDER_ID)); 
 		payRequest.addParam("price", pay.optInt(AMOUNT));
 		payRequest.addParam("cpprivateinfo", pay.optString(EXT));
