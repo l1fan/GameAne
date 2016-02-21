@@ -17,7 +17,7 @@
 |华为				|`huawei`		|Y			|		|v3.31.70.305 |
 |快用				|`kuaiyong`	|Y			|Y	|v2.0.3/v2.2.3 |
 |联想				|`lenovo`		|Y			|		|v2.6.1 |
-|OPPO				|`oppo`			|Y			|		| |
+|OPPO				|`oppo`			|Y			|		|v2.0.0 |
 |搜狗				|`sogou`		|Y			|		| v1.4.30 |
 |同步推			|`tongbutui`|Y			|Y	|v4.2.0  |
 |豌豆荚			|`wandoujia`|Y			|		|v4.0.7		|

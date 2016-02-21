@@ -3,30 +3,29 @@ package com.l1fan.ane.oppo;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.Activity;
-import android.app.Application.ActivityLifecycleCallbacks;
-import android.os.Build;
-import android.os.Bundle;
-
 import com.l1fan.ane.SDKContext;
 import com.nearme.game.sdk.GameCenterSDK;
 import com.nearme.game.sdk.callback.ApiCallback;
 import com.nearme.game.sdk.callback.GameExitCallback;
 import com.nearme.game.sdk.common.model.biz.GameCenterSettings;
 import com.nearme.game.sdk.common.model.biz.PayInfo;
+import com.nearme.game.sdk.common.model.biz.ReportUserGameInfoParam;
 
 public class SDK extends SDKContext {
 	
-	public void init() {
-		lifeCycle();
-		JSONObject json = new JSONObject();
-		String appKey = json.optString(APPKEY);
-		String appSecret = json.optString(APPSECRET);
-		boolean debug = json.optBoolean(DEBUGMODE,false);
-		boolean ori	= json.optBoolean(ORIENTATION,true);
+	private String mAppId;
+
+	public void init() throws JSONException {
+		regLifecycle();
+		JSONObject init = getJsonData();
+		String appId = init.optString(APPID);
+		String appKey = init.optString(APPKEY);
+		String appSecret = init.optString(APPSECRET);
+		boolean debug = init.optBoolean(DEBUGMODE,false);
+		boolean ori	= init.optBoolean(ORIENTATION,true);
 		GameCenterSettings gameCenterSettings = new GameCenterSettings(false,appKey,appSecret,debug,ori);
-		
 		GameCenterSDK.init(gameCenterSettings, getActivity());
+		mAppId = appId;
 		dispatchData(EVENT_INIT);
 	}
 	
@@ -36,19 +35,34 @@ public class SDK extends SDKContext {
 			
 			@Override
 			public void onSuccess(String msg) {
-				try {
-					JSONObject json = new JSONObject(msg);
-					String token = json.getString("token"); 
-					String ssoid = json.getString("ssoid");
+				
+				GameCenterSDK.getInstance().doGetTokenAndSsoid(new ApiCallback() {
 					
-					JSONObject data = new JSONObject();
-					data.put(TOKEN, token);
-					data.put(UID, ssoid);
-					dispatchData(EVENT_LOGIN, data);
-				} catch (JSONException e) {
-					dispatchError(EVENT_LOGIN, e.getMessage());
-					e.printStackTrace();
-				}
+					@Override
+					public void onSuccess(String resultMsg) {
+						try {
+							JSONObject json = new JSONObject(resultMsg);
+							String token = json.getString("token"); 
+							String ssoid = json.getString("ssoid");
+							
+							JSONObject data = new JSONObject();
+							data.put(TOKEN, token);
+							data.put(UID, ssoid);
+							dispatchData(EVENT_LOGIN, data);
+						} catch (JSONException e) {
+							dispatchError(EVENT_LOGIN, e.getMessage());
+							e.printStackTrace();
+						}
+					}
+					
+					@Override
+					public void onFailure(String paramString, int paramInt) {
+						dispatchError(EVENT_LOGIN, "login fail:"+paramString+":"+paramInt);
+
+					}
+				});
+				System.out.println("login result is "+msg);
+				
 			}
 			
 			@Override
@@ -79,6 +93,23 @@ public class SDK extends SDKContext {
 		});
 	}
 	
+	public void sendRoleInfo() throws JSONException{
+		JSONObject role = getJsonData();
+		ReportUserGameInfoParam params = new ReportUserGameInfoParam(role.optString("gameId",mAppId), role.optString("service"), role.optString("role"), role.optString("grade"));
+		GameCenterSDK.getInstance().doReportUserGameInfoData(params, new ApiCallback() {
+			
+			@Override
+			public void onSuccess(String paramString) {
+				dispatchData("SEND_ROLE_INFO");
+			}
+			
+			@Override
+			public void onFailure(String msg, int code) {
+				dispatchError("SEND_ROLE_INFO", "send role info fail:"+msg+":"+code);
+			}
+		});
+	}
+	
 	@Override
 	public void dispose() {
 		super.dispose();
@@ -91,54 +122,13 @@ public class SDK extends SDKContext {
 		});
 	}
 	
-	private void lifeCycle() {
-		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-			return;
-		}
-		getActivity().getApplication().registerActivityLifecycleCallbacks(
-				new ActivityLifecycleCallbacks() {
-
-					@Override
-					public void onActivityStopped(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityStarted(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivitySaveInstanceState(Activity arg0,
-							Bundle arg1) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityResumed(Activity arg0) {
-						GameCenterSDK.getInstance().onResume(arg0);
-					}
-
-					@Override
-					public void onActivityPaused(Activity arg0) {
-						GameCenterSDK.getInstance().onPause();
-					}
-
-					@Override
-					public void onActivityDestroyed(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityCreated(Activity arg0, Bundle arg1) {
-						// TODO Auto-generated method stub
-
-					}
-				});		
+	@Override
+	protected void onResume() {
+		GameCenterSDK.getInstance().onResume(getActivity());
 	}
 	
+	@Override
+	protected void onPause() {
+		GameCenterSDK.getInstance().onPause();
+	}
 }

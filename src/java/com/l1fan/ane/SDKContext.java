@@ -60,6 +60,7 @@ public class SDKContext extends FREContext implements FREFunction {
 	public static final String TOKEN = "token";
 	public static final String UID = "uid";
 	public static final String PNAME = "pname";
+	public static final String PDESC = "pdesc";
 	public static final String PID = "pid";
 	public static final String UNAME = "uname";
 	public static final String EXT = "ext";
