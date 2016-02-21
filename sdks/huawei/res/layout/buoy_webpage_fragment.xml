@@ -24,11 +24,4 @@
         android:progressDrawable="@drawable/buoy_probar_style"
         style="?android:attr/progressBarStyleHorizontal" />
 
-    <WebView
-        android:id="@+id/webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottomDevider"
-        android:layout_below="@id/head" />
-
 </RelativeLayout>

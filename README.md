@@ -12,9 +12,9 @@
 |安智				|`anzhi`		|Y			|		| |
 |百度				|`baidu`		|Y			|		|v3.5.2 |
 |当乐				|`downjoy`	|Y			|		|v4.2 |
-|金立				|`gionee`		|Y			|		| |
+|金立				|`gionee`		|Y			|		|v3.0.7.o |
 |海马				|`haima`		|Y			|Y	|v1.1.4/v1.3.7|
-|华为				|`huawei`		|Y			|		| |
+|华为				|`huawei`		|Y			|		|v3.31.70.305 |
 |快用				|`kuaiyong`	|Y			|Y	|v2.0.3/v2.2.3 |
 |联想				|`lenovo`		|Y			|		|v2.4.2.3 |
 |OPPO				|`oppo`			|Y			|		| |

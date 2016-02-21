@@ -4,7 +4,7 @@
     <id>com.huawei.gb.huawei</id>
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
-    <versionNumber>0.0.0</versionNumber>
+    <versionNumber>3.3.1</versionNumber>
     <initialWindow>
         <content>ANEDemo.swf</content>
     <autoOrients>true</autoOrients>
@@ -70,7 +70,8 @@
         <!-- 浮标依赖的Activity声明，建议将此Activity的屏幕方向与应用的屏幕方向设置为一样的 -->
         <activity
             android:name="com.huawei.gamebox.buoy.sdk.activity.WebPageActivity"
-            android:configChanges="orientation|screenSize" />
+            android:configChanges="orientation|screenSize" 
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.huawei.gamebox.buoy.sdk.activity.NoticeActivity"
             android:configChanges="orientation|screenSize" />
@@ -81,14 +82,7 @@
             android:theme="@style/buoy_baseDialog" >
         </activity>
 
-        <!-- 切换帐号的广播，由开发者自行实现逻辑，并修改package路径；其中的exported参数必须添加，防止其他应用的广播干扰 -->
-        <receiver
-            android:name="com.huawei.gb.huawei.ChangeUserReceiver"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="com.huawei.gamebox.changeUserLogin" />
-            </intent-filter>
-        </receiver>
+  
 
         <!-- 浮标中下载依赖的广播 -->
         <receiver android:name="com.huawei.gamebox.buoy.sdk.service.download.DownloadBroadcastReceiver" >
