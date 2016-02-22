@@ -31,6 +31,9 @@ public class SDK extends SDKContext {
 		
 		System.out.println("type ->"+type+";eventValues->"+map.toString());
 		AppsFlyerLib.trackEvent(getActivity(), type, map);
-
+	}
+	
+	public  String getAppsFlyerUID(){
+		return AppsFlyerLib.getAppsFlyerUID(getActivity());
 	}
 }
