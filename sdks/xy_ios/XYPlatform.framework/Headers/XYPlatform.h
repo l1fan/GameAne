@@ -319,6 +319,14 @@ isContinueWhenCheckUpdateFailed:(BOOL)isAccept;
 - (void) XYEnterMessage:(int) mFlag;
 
 
+/**
+ * @brief 进入积分商城
+ *
+ * @param iFlag 预留标识 传0
+ *
+ */
+- (void) XYEnterIntegralmall:(int) iFlag;
+
 @end
 
 
