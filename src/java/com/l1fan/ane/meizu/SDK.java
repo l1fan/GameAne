@@ -68,12 +68,12 @@ public class SDK extends SDKContext {
 	public void pay() throws JSONException{
 		JSONObject pay = getJsonData();
 		String orderId = pay.optString(ORDER_ID);
-	    String price = pay.optString(AMOUNT);
+	    String price = String.valueOf(pay.optInt(AMOUNT)/100.00);
 	    String ext = pay.optString(EXT);
 	    String pname = pay.optString(PNAME);
 	    String pid = pay.optString(PID);
 	    long ts = System.currentTimeMillis();
-	    String orderStr = String.format("app_id="+mAppId+"&buy_amount=1&cp_order_id="+ORDER_ID+"&create_time="+ts+"&pay_type=0&product_body="+pname+"&product_id="+pid+"&product_per_price="+price+"&product_subject="+pname+"&product_unit=&total_price="+price+"&uid="+mUid+"&user_info="+ext+":"+mAppSecret);
+	    String orderStr = String.format("app_id="+mAppId+"&buy_amount=1&cp_order_id="+orderId+"&create_time="+ts+"&pay_type=0&product_body="+pname+"&product_id="+pid+"&product_per_price="+price+"&product_subject="+pname+"&product_unit=&total_price="+price+"&uid="+mUid+"&user_info="+ext+":"+mAppSecret);
 	    String sign = md5(orderStr);
 	    
 		MzBuyInfo info = new MzBuyInfo();
