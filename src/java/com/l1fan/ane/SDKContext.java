@@ -289,10 +289,19 @@ public class SDKContext extends FREContext implements FREFunction {
 	protected Object jsonOpt(JSONObject json, String... keys){
 		for (String key : keys) {
 			if (json.has(key)) {
-				return json.opt(key);
+				try {
+					return json.get(key);
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		return null;
+	}
+	
+	protected String jsonOptString(JSONObject json, String... keys){
+		Object ret = jsonOpt(json, keys);
+		return ret == null ? "":ret.toString();
 	}
 	
 	/**
