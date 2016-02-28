@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/azuc_list_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/gift_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/azuc_rec" />
+
+        <LinearLayout
+            android:id="@+id/ll_giftcontent"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gift_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/anzhi_494949"
+                android:textSize="@dimen/text_size_22_pt" />
+
+            <TextView
+                android:id="@+id/gift_validity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/anzhi_a6a6a6"
+                android:textSize="@dimen/text_size_15_pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ProgressBar
+                    android:id="@+id/gift_bar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/azuc_gift_progress_normal"
+                    android:progress="30"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/gift_num"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_a6a6a6"
+                    android:textSize="@dimen/text_size_15_pt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/anzhi_d8d8d8" />
+
+            <LinearLayout
+                android:id="@+id/get_gift_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_get_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/azuc_getgift_bg" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tv_get_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即领取"
+                    android:textColor="@color/anzhi_a6a6a6"
+                    android:textSize="@dimen/text_size_15_pt" >
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

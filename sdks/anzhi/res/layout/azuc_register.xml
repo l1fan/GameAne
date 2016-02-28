@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anzhi_bind_bg_ad"
+    android:orientation="vertical"
+    android:paddingBottom="13dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                style="@style/azuc_left_arrows"
+                android:layout_gravity="center_vertical"
+                android:padding="7dp"
+                android:layout_weight="0.15" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/azuc_text_5"
+                android:layout_width="203dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.37"
+                android:gravity="center"
+                android:paddingRight="53dp"
+                android:text="@string/azuc_register_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#ffefefef" >
+
+            <RelativeLayout
+                android:id="@+id/ll_left"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.00"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/rg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/azuc_register_name"
+                    android:textColor="@color/anzhi_ee8a05"
+                    android:textSize="@dimen/text_size_20_pt" />
+
+                <View
+                    android:id="@+id/divider_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dip"
+                    android:layout_alignLeft="@id/rg_name"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/rg_name"
+                    android:background="@color/anzhi_ee8a05" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/anzhi_e5e5e5" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/anzhi_ececec" />
+
+            <RelativeLayout
+                android:id="@+id/ll_right"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_40"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/rg_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/azuc_register_tel"
+                    android:textColor="@color/anzhi_2b2b2b"
+                    android:textSize="@dimen/text_size_20_pt" />
+
+                <View
+                    android:id="@+id/divider_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dip"
+                    android:layout_alignLeft="@id/rg_tel"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/rg_tel"
+                    android:background="@color/anzhi_line_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

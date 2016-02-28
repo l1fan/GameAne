@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/anzhi_f0f0f0" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/azuc_vip_bg" >
+
+            <RelativeLayout
+                android:id="@+id/img_header_lay"
+                android:layout_width="66dip"
+                android:layout_height="66dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_heard"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/anzhi_default_header"
+                    android:gravity="center"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/img_header_arc"
+                    android:layout_width="66dip"
+                    android:layout_height="66dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/anzhi_default_header3"
+                    android:gravity="center"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_header_lay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/vip_name"
+                    style="@style/azuc_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:includeFontPadding="false"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/azuc_ic_vip_enable" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/azuc_space_seam" >
+
+            <TextView
+                style="@style/azuc_vip_item_title"
+                android:text="@string/azuc_vip_condition" />
+
+            <LinearLayout
+                android:id="@+id/ll_rechange"
+                style="@style/azuc_ll_person_vip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_current_rechange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/text_size_20_pt" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/azuc_recharge_explain"
+                        android:textColor="@color/anzhi_a6a6a6"
+                        android:textSize="@dimen/text_size_16_pt" >
+                    </TextView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_rechange"
+                    style="@style/azuc_btn_bg_green_min"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/azuc_recharge" >
+                </Button>
+                <TextView
+                    android:id="@+id/tv_finished"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="@string/azuc_connection_finish"
+                    android:textColor="@color/anzhi_40c656"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/azuc_ll_person_vip_down"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_current_connection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/text_size_20_pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="@dimen/azuc_space_seam"
+                        android:text="@string/azuc_connection_explain"
+                        android:textColor="@color/anzhi_a6a6a6"
+                        android:textSize="@dimen/text_size_16_pt" >
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_connection"
+                    style="@style/azuc_btn_bg_green_min"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    
+                    android:text="@string/azuc_connection_add" />
+
+                <TextView
+                    android:id="@+id/tv_connected"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="@string/azuc_connection_finish"
+                    android:textColor="@color/anzhi_40c656"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/azuc_vip_item_title"
+                android:layout_marginTop="@dimen/azuc_space_seam"
+                android:text="@string/azuc_vip_right" />
+
+            <LinearLayout
+                android:id="@+id/ll_vip_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/azuc_frame_down_normal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_welfare"
+                    style="@style/azuc_vip_image" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/azuc_iv_vip_welfare" />
+
+                    <TextView
+                        style="@style/azuc_vip_text"
+                        android:text="@string/azuc_vip_active_1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="30dp"
+                    android:background="@color/anzhi_d8d8d8" />
+
+                <LinearLayout
+                    android:id="@+id/ll_account"
+                    style="@style/azuc_vip_image" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/azuc_iv_account_sevice" />
+
+                    <TextView
+                        style="@style/azuc_vip_text"
+                        android:text="@string/azuc_vip_account" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="30dp"
+                    android:background="@color/anzhi_d8d8d8" />
+
+                <LinearLayout
+                    android:id="@+id/ll_service"
+                    style="@style/azuc_vip_image" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/azuc_iv_1to1" />
+
+                    <TextView
+                        style="@style/azuc_vip_text"
+                        android:text="@string/azuc_vip_service" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/azuc_space_seam"
+            android:paddingRight="@dimen/azuc_space_seam" >
+
+            <TextView
+                style="@style/azuc_vip_item_title"
+                android:text="@string/azuc_vip_right" />
+
+            <LinearLayout
+                android:id="@+id/ll_vip_welfare"
+                style="@style/azuc_ll_vip_right" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/azuc_vip_welfare_normal" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/azuc_vip_right"
+                        android:text="@string/azuc_vip_active_1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        style="@style/azuc_vip_right_hint"
+                        android:text="@string/azuc_vip_active_hint" />
+                </LinearLayout>
+
+                <ImageView style="@style/azuc_vip_arrows" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_vip_account"
+                style="@style/azuc_ll_vip_right" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/azuc_iv_account_sevice" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/azuc_vip_right"
+                        android:text="@string/azuc_vip_account" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        style="@style/azuc_vip_right_hint"
+                        android:text="@string/azuc_vip_account_hint" />
+                </LinearLayout>
+
+                <ImageView style="@style/azuc_vip_arrows" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_vip_1to1"
+                style="@style/azuc_ll_vip_right_down" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/azuc_iv_1to1" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/azuc_vip_right"
+                        android:text="@string/azuc_vip_service" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        style="@style/azuc_vip_right_hint"
+                        android:text="@string/azuc_vip_service_hint" />
+                </LinearLayout>
+
+                <ImageView style="@style/azuc_vip_arrows" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@drawable/anzhi_bind_bg_ad"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" >
+
+            <TextView
+                style="@style/azuc_text_ad_tittle"
+                android:layout_weight="1"
+                android:text="@string/azuc_login_tip" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/anzhi_button_bg_close" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#cfcfcf" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/azuc_content"
+            android:textColor="@color/anzhi_494949"
+            android:textSize="@dimen/text_size_18_pt" />
+
+        <RelativeLayout
+            android:id="@+id/rl_qq"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/anzhi_window_input" >
+
+            <TextView
+                android:id="@+id/tv_msg_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/azuc_tv_qq"
+                android:textColor="@color/anzhi_666666"
+                android:textSize="@dimen/font_16" />
+
+            <EditText
+                android:id="@+id/anzhi_tel_mail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_msg_content"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/azuc_hint_qq"
+                android:singleLine="true"
+                android:textColor="@color/anzhi_666666"
+                android:textColorHint="@color/anzhi_999999"
+                android:inputType="number"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tel"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/anzhi_window_input" >
+
+            <TextView
+                android:id="@+id/tv_tel_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/azuc_tv_tel"
+                android:textColor="@color/anzhi_666666"
+                android:textSize="@dimen/font_16" />
+
+            <EditText
+                android:id="@+id/ed_tel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_tel_content"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/azuc_hint_tel"
+                android:singleLine="true"
+                android:textColor="@color/anzhi_666666"
+                android:textColorHint="@color/anzhi_999999"
+                android:inputType="number"
+                android:textSize="14sp" >
+				
+         
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_code"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/anzhi_window_input" >
+
+                <TextView
+                    android:id="@+id/tv_code_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/anzhi_validatecode"
+                    android:textColor="@color/anzhi_666666"
+                    android:textSize="@dimen/font_16" />
+
+                <EditText
+                    android:id="@+id/anzhi_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_code_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/anzhi_input_validatecode"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_666666"
+                    android:textColorHint="@color/anzhi_999999"
+                    android:textSize="@dimen/font_14" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_mail_getcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/anzhi_button_bg_orange_nopading"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/anzhi_get_authcode_txt"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/anzhi_mail_bind"
+            style="@style/azuc_btn_bg_green"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/azuc_tv_submit" />
+    </LinearLayout>
+
+</LinearLayout>

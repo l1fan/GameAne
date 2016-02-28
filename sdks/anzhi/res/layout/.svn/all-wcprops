@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/uc/!svn/ver/3570/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout
+END
+activity_back.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/activity_back.xml
+END
+azuc_account_safe.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_account_safe.xml
+END
+azuc_update_bind_tel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_update_bind_tel.xml
+END
+azuc_update_bind_email.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_update_bind_email.xml
+END
+azuc_float_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_float_menu.xml
+END
+azuc_register.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/uc/!svn/ver/3553/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_register.xml
+END
+azuc_update_tip.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_update_tip.xml
+END
+azuc_update_qq.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_update_qq.xml
+END
+azuc_textlink.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_textlink.xml
+END
+azuc_mygiftbaglist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_mygiftbaglist_item.xml
+END
+azuc_update_nick.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_update_nick.xml
+END
+azuc_progress_loading.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_progress_loading.xml
+END
+azuc_message_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_message_list_item.xml
+END
+azuc_actionbar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_actionbar.xml
+END
+azuc_float_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_float_layout.xml
+END
+azuc_update_bind_tel_clear.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_update_bind_tel_clear.xml
+END
+azuc_vip.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_vip.xml
+END
+azuc_update_bind_email_clear.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/uc/!svn/ver/3570/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_update_bind_email_clear.xml
+END
+azuc_download_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_download_dialog.xml
+END
+azuc_strategy_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_strategy_item.xml
+END
+azuc_account_history_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_account_history_item.xml
+END
+azuc_account_saft_window.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_account_saft_window.xml
+END
+azuc_javascript_prompt_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_javascript_prompt_dialog.xml
+END
+azuc_gift_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_gift_details.xml
+END
+azuc_out_ad.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_out_ad.xml
+END
+azuc_star_chooser_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_star_chooser_item.xml
+END
+azuc_register_name.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/uc/!svn/ver/3536/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_register_name.xml
+END
+azuc_gift_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_gift_main.xml
+END
+azuc_gift_bag.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_gift_bag.xml
+END
+azuc_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/uc/!svn/ver/3568/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_login.xml
+END
+azuc_strategy_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_strategy_list.xml
+END
+azuc_loadmore.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_loadmore.xml
+END
+azuc_pwd_modify.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_pwd_modify.xml
+END
+azuc_updata_game.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_updata_game.xml
+END
+azuc_register_tel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/uc/!svn/ver/3518/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_register_tel.xml
+END
+azuc_last_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_last_login.xml
+END
+azuc_loginfail_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_loginfail_dialog.xml
+END
+azuc_charge_pwd_setting.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_charge_pwd_setting.xml
+END
+azuc_message_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_message_detail.xml
+END
+azuc_webview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_webview.xml
+END
+azuc_del_message_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_del_message_one.xml
+END
+azuc_account_saft_window_tel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_account_saft_window_tel.xml
+END
+azuc_ucenter_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_ucenter_main.xml
+END
+azuc_charge_pwd_setting_clear.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/uc/!svn/ver/3533/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_charge_pwd_setting_clear.xml
+END
+azuc_gift_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_gift_item.xml
+END
+azuc_account_saft_window_mail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_account_saft_window_mail.xml
+END
+azuc_user_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/uc/!svn/ver/3570/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_user_detail.xml
+END
+azuc_message_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_message_list.xml
+END
+azuc_notice.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_notice.xml
+END
+azuc_birthday_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_birthday_dialog.xml
+END
+azuc_mygiftbaglist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/uc/!svn/ver/3570/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_mygiftbaglist.xml
+END
+azuc_qqbind_guide.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_qqbind_guide.xml
+END
+azuc_dialog_del_message.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_dialog_del_message.xml
+END
+azuc_login_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/uc/!svn/ver/3449/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res/layout/azuc_login_dialog.xml
+END

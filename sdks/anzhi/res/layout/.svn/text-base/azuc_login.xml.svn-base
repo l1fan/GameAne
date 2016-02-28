@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anzhi_bind_bg_ad"
+    android:orientation="vertical"
+    android:paddingBottom="13dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/azuc_text_5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/azuc_login_title" />
+
+        <LinearLayout
+            android:id="@+id/azuc_ll_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_title"
+            android:background="@drawable/anzhi_window_input"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/azuc_login_input"
+                android:text="@string/azuc_login_account" />
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/azuc_login_account_hint"
+                android:textColor="@color/anzhi_494949"
+                android:textColorHint="@color/anzhi_a6a6a6"
+                android:textSize="@dimen/text_size_18_pt" />
+
+            <View
+                android:id="@+id/line_account"
+                android:layout_width="1px"
+                android:layout_height="20dp"
+                android:background="@color/anzhi_d8d8d8" />
+
+            <ImageView
+                android:id="@+id/iv_account"
+                style="@style/azuc_arrows_down" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_code"
+            style="@style/azuc_ll_login"
+            android:layout_below="@id/azuc_ll_login"
+            android:layout_marginTop="13dp" >
+
+            <TextView
+                style="@style/azuc_login_input"
+                android:text="@string/azuc_login_pwd" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                style="@style/azuc_login_input_hint"
+                android:hint="@string/azuc_login_pwd_hint"
+                android:password="true" />
+
+            <TextView
+                android:id="@+id/login_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/azuc_login_forget_pwd"
+                android:textColor="@color/anzhi_a6a6a6"
+                android:textSize="@dimen/text_size_18_pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_login_code"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/azuc_btn_bg_orange_mid"
+                android:layout_width="@dimen/space_0"
+                android:layout_weight="1"
+                android:text="@string/azuc_register" />
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/azuc_btn_bg_green"
+                android:layout_width="@dimen/space_0"
+                android:layout_marginLeft="13dp"
+                android:layout_weight="1"
+                android:text="@string/azuc_login_now" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_register"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/space_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_qq_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/anzhi_login_qq_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/azuc_qq_login"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/text_size_18_pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/space_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_weibo_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/anzhi_login_weibo_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/azuc_weibo_login"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/text_size_18_pt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="108dp"
+            android:layout_below="@id/azuc_ll_login"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/anzhi_e5e5e5"
+            android:dividerHeight="0.5dip"
+            android:fadingEdge="none"
+            android:paddingLeft="1px"
+            android:paddingRight="1px"
+            android:visibility="gone" >
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/anzhi_494949"
+            android:textSize="@dimen/text_size_18_pt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:indeterminateDrawable="@drawable/anzhi_progressbar" />
+
+            <TextView
+                android:id="@+id/load_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/azuc_login_dialog"
+                android:textColor="@color/anzhi_666666"
+                android:textSize="@dimen/text_size_16_pt" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/load_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/anzhi_666666"
+            android:textSize="@dimen/text_size_16_pt"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_change"
+            style="@style/azuc_btn_bg_green"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="13dp"
+            android:text="@string/azuc_login_switch" />
+    </LinearLayout>
+
+</LinearLayout>

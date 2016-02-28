@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/anzhi_window_input" >
+
+            <TextView
+                android:id="@+id/tv_msg_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/anzhi_telnumber"
+                android:textColor="@color/anzhi_666666"
+                android:textSize="@dimen/font_16" />
+
+            <EditText
+                android:id="@+id/ed_tel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_msg_content"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/anzhi_input_telnumber"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/anzhi_666666"
+                android:textColorHint="@color/anzhi_999999"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/anzhi_window_input" >
+
+                <TextView
+                    android:id="@+id/tv_code_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/anzhi_validatecode"
+                    android:textColor="@color/anzhi_666666"
+                    android:textSize="@dimen/font_16" />
+
+                <EditText
+                    android:id="@+id/ed_telCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_code_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/anzhi_input_six_validatecode"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_666666"
+                    android:textColorHint="@color/anzhi_999999"
+                    android:textSize="@dimen/font_14" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_rg_getCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/anzhi_button_bg_orange_nopading"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/anzhi_get_authcode_txt"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/anzhi_window_input"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_tel_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/anzhi_rg_pwd"
+                android:textColor="@color/anzhi_666666"
+                android:textSize="@dimen/font_16" />
+
+            <EditText
+                android:id="@+id/ed_telPwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/azuc_input_pwd"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/anzhi_666666"
+                android:textColorHint="@color/anzhi_999999"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_rg_tel"
+            style="@style/azuc_btn_bg_green"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/azuc_register_now" />
+    </LinearLayout>
+
+</LinearLayout>

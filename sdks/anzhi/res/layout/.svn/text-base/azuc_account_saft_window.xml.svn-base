@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anzhi_bind_bg"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/anzhi_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/anzhi_button_bg_close" />
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bind_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_30"
+                    android:text="@string/anzhi_bind_phone"
+                    android:textColor="@color/anzhi_ee8a05"
+                    android:textSize="@dimen/font_18" />
+
+                <View
+                    android:id="@+id/divider_left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/anzhi_ee8a05" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bind_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_30"
+                    android:text="@string/anzhi_bind_email"
+                    android:textColor="@color/anzhi_2b2b2b"
+                    android:textSize="@dimen/font_18" />
+
+                <View
+                    android:id="@+id/divider_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/anzhi_line_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

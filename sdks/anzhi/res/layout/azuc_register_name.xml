@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+      
+        android:background="@drawable/anzhi_window_input"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/azuc_register_account"
+            android:textColor="@color/anzhi_666666"
+            android:textSize="@dimen/font_16" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/azuc_input_name"
+            android:lines="1"
+            android:singleLine="true"
+            android:digits="abcdefjhigklmnopqrstuvwxyzABCDEFJHIGKLMNOPQRSTUVWXYZ1234567890"
+            android:textColor="@color/anzhi_666666"
+            android:textColorHint="@color/anzhi_999999"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/anzhi_window_input"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/azuc_register_pwd"
+            android:textColor="@color/anzhi_666666"
+            android:textSize="@dimen/font_16" />
+
+        <EditText
+            android:id="@+id/ed_namePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:digits="abcdefjhigklmnopqrstuvwxyzABCDEFJHIGKLMNOPQRSTUVWXYZ1234567890"
+            android:gravity="center_vertical"
+            android:hint="@string/azuc_input_pwd"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/anzhi_666666"
+            android:textColorHint="@color/anzhi_999999"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_rg_name"
+        style="@style/azuc_btn_bg_green"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/azuc_register_now" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_register"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/anzhi_login_qq_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/azuc_qq_login"
+                android:textColor="@color/anzhi_494949"
+                android:textSize="@dimen/text_size_18_pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/anzhi_login_weibo_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/azuc_weibo_login"
+                android:textColor="@color/anzhi_494949"
+                android:textSize="@dimen/text_size_18_pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

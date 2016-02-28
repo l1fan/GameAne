@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="space_0">0dip</dimen>
+    <dimen name="azuc_space_seam">7dip</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="size_10">10dip</dimen>
+    <dimen name="size_8">8dip</dimen>
+    <dimen name="size_7">7dip</dimen>
+    <dimen name="size_6">6dip</dimen>
+    <dimen name="size_12">12dip</dimen>
+    <dimen name="size_14">14dip</dimen>
+    <dimen name="size_5">5dip</dimen>
+    <!-- 按钮高度 -->
+    <dimen name="size_40">40dip</dimen>
+    <dimen name="size_35">35dip</dimen>
+
+    <!-- 用户中心 -->
+    <dimen name="size_20">20dip</dimen>
+    <dimen name="size_16">16dip</dimen>
+    <dimen name="size_180">180dip</dimen>
+    <dimen name="size_50">50dip</dimen>
+    <dimen name="size_58">58dip</dimen>
+    <dimen name="size_60">60dip</dimen>
+    <dimen name="size_48">48dip</dimen>
+    <dimen name="size_56">56dip</dimen>
+    <dimen name="size_100">100dip</dimen>
+    <dimen name="size_70">70dip</dimen>
+    <dimen name="size_80">80dip</dimen>
+    <dimen name="size_95">95dip</dimen>
+    <dimen name="size_130">120dip</dimen>
+    <dimen name="size_150">150dip</dimen>
+    <dimen name="size_30">30dip</dimen>
+
+</resources>

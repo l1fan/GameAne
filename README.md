@@ -9,7 +9,7 @@
 |奇虎360		|`qihoo360`   |Y			|		|v1.1.8(402) |
 |UC					|`uc`				|Y			|		|v3.5.3.1 |
 |小米				|`xiaomi`		|Y			|		|v4.4.33 |
-|安智				|`anzhi`		|Y			|		| |
+|安智				|`anzhi`		|Y			|		|v3.5.2 |
 |百度				|`baidu`		|Y			|		|v3.5.2 |
 |当乐				|`downjoy`	|Y			|		|v4.2 |
 |金立				|`gionee`		|Y			|		|v3.0.7.o |
@@ -22,7 +22,7 @@
 |同步推			|`tongbutui`|Y			|Y	|v4.2.0  |
 |豌豆荚			|`wandoujia`|Y			|		|v4.0.7		|
 |拇指玩			|`muzhiwan`	|Y			|		|v3.0.9		|
-|应用汇			|`appchina`	|Y			|		|v6.2.0		|
+|应用汇			|`appchina`	|Y			|		|					|
 |魅族				|`meizu`		|Y			|		|v2.1			|
 |优酷				|`youku`		|Y			|		|					|
 |卓易				|`droi`			|Y			|		|				|
@@ -31,7 +31,7 @@
 |iTools			|`itools`		|			|Y	|	v2.5.0	|
 |爱思助手			|`i4`				|			|Y	|v2.1.0		|
 |果盘叉叉助手	|`xx`				|			|Y	 |v2.1.0	|
-|xy助手			|`xy`				|			|Y	  |v2.2.2		|
+|xy助手			|`xy`				|			|Y	  |v2.2.1		|
 |pp助手			|`pp`				|			|Y	 |vS155D1611|
 |乐8助手			|`le8`			|			|Y	| v1.0.7 |
 |i苹果			|`iiapple`	|			|Y		| v1.2.9|

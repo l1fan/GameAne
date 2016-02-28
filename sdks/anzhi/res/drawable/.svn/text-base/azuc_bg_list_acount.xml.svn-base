@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/anzhi_e8e8e8" android:state_pressed="true"/>
+    <item android:drawable="@color/anzhi_e8e8e8" android:state_focused="true"/>
+    <item android:drawable="@color/anzhi_e8e8e8" android:state_selected="true"/>
+    <item android:drawable="@color/white"/>
+
+</selector>

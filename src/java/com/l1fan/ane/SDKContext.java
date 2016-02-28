@@ -11,6 +11,9 @@ import org.json.JSONObject;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application.ActivityLifecycleCallbacks;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -67,6 +70,11 @@ public class SDKContext extends FREContext implements FREFunction {
 	public static final String AMOUNT = "amount";
 	public static final String NOTIFY_URL = "notifyUrl";
 	public static final String ORDER_ID = "orderId";
+	public static final String GAMESVR = "gameServer";
+	public static final String ROLEID = "roleId";
+	public static final String ROLENAME = "roleName";
+	public static final String ROLELEVEL = "roleLevel";
+	public static final String PARTYNAME = "partyName";
 	/**************/
 
 	private String mAction;
@@ -169,7 +177,7 @@ public class SDKContext extends FREContext implements FREFunction {
 	 * @throws JSONException
 	 */
 	protected JSONObject getJsonData() throws JSONException {
-		if (mData == "") {
+		if ("".equals(mData)) {
 			return new JSONObject();
 		}
 		return new JSONObject(mData);
@@ -252,6 +260,24 @@ public class SDKContext extends FREContext implements FREFunction {
 		}
 
 		return json.toString();
+	}
+	
+	/**
+	 * get the app metadata info from androidmanifest.xml 
+	 * @return
+	 */
+	protected Bundle getMetaData() {
+		Activity context = getActivity();
+		try {
+			Bundle md = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA).metaData;
+			for (String key : md.keySet()) {
+				System.out.println("config:" + key + "="+md.get(key));
+			}
+			return md;
+		} catch (NameNotFoundException | NullPointerException e) {
+			e.printStackTrace();
+			return new Bundle();
+		}
 	}
 	
 	/**

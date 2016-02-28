@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anzhi_bind_bg_ad"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:id="@+id/login_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/anzhi_494949"
+        android:textSize="@dimen/text_size_18_pt" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateDrawable="@drawable/anzhi_progressbar" />
+
+        <TextView
+            android:id="@+id/load_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/azuc_login_dialog"
+            android:textColor="@color/anzhi_666666"
+            android:textSize="@dimen/text_size_16_pt" />
+    </LinearLayout>
+
+   
+
+    <Button
+        android:id="@+id/btn_change"
+        style="@style/azuc_btn_bg_green"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="13dp"
+        android:text="@string/azuc_login_switch" />
+
+</LinearLayout>

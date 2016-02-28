@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anzhi_bind_bg_ad"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/azuc_text_ad_tittle"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:text="@string/azuc_login_tip" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/anzhi_button_bg_close" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#cfcfcf" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/azuc_login_tip_content"
+        android:textColor="@color/anzhi_494949"
+        android:textSize="@dimen/text_size_18_pt" />
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/azuc_login_service"
+        android:textColor="@color/anzhi_FF0000"
+        android:textSize="@dimen/text_size_16_pt" />
+
+    <Button
+        android:id="@+id/btn_i_know"
+        style="@style/azuc_btn_bg_green"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:text="@string/azuc_login_iknow" />
+
+</LinearLayout>

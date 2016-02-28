@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 市场字体大小 -->
+    <!-- 11pt -->
+    <dimen name="text_size_11_pt">7dip</dimen>
+    <!-- 12pt -->
+    <dimen name="text_size_12_pt">9dip</dimen>
+    <!-- 13pt -->
+    <dimen name="text_size_13_pt">10dip</dimen>
+    <!-- 14pt -->
+    <dimen name="text_size_14_pt">10dip</dimen>
+    <!-- 15pt -->
+    <dimen name="text_size_15_pt">11dip</dimen>
+    <!-- 16pt -->
+    <dimen name="text_size_16_pt">12dip</dimen>
+    <!-- 17pt -->
+    <dimen name="text_size_17_pt">12dip</dimen>
+    <!-- 18pt -->
+    <dimen name="text_size_18_pt">13dip</dimen>
+    <!-- 19pt -->
+    <dimen name="text_size_19_pt">14dip</dimen>
+    <!-- 20pt -->
+    <dimen name="text_size_20_pt">14dip</dimen>
+    <!-- 21pt -->
+    <dimen name="text_size_21_pt">15dip</dimen>
+    <!-- 22pt -->
+    <dimen name="text_size_22_pt">16dip</dimen>
+    <!-- 23pt -->
+    <dimen name="text_size_23_pt">16dip</dimen>
+    <!-- 24pt -->
+    <dimen name="text_size_24_pt">17dip</dimen>
+    <!-- 25pt -->
+    <dimen name="text_size_25_pt">17dip</dimen>
+    <!-- 26pt -->
+    <dimen name="text_size_26_pt">17dip</dimen>
+    <!-- 27pt -->
+    <dimen name="text_size_27_pt">18dip</dimen>
+    <!-- 28pt -->
+    <dimen name="text_size_28_pt">19dip</dimen>
+    <!-- 29pt -->
+    <dimen name="text_size_29_pt">19dip</dimen>
+    <!-- 30pt -->
+    <dimen name="text_size_30_pt">20dip</dimen>
+    <!-- 31pt -->
+    <dimen name="text_size_31_pt">21dip</dimen>
+    <!-- 32pt -->
+    <dimen name="text_size_32_pt">21dip</dimen>
+    <!-- 33pt -->
+    <dimen name="text_size_33_pt">22dip</dimen>
+    <!-- 34pt -->
+    <dimen name="text_size_34_pt">23dip</dimen>
+    <!-- 35pt -->
+    <dimen name="text_size_35_pt">23dip</dimen>
+    <!-- 36pt -->
+    <dimen name="text_size_36_pt">24dip</dimen>
+    <!-- 37pt -->
+    <dimen name="text_size_37_pt">25dip</dimen>
+    <!-- 38pt -->
+    <dimen name="text_size_38_pt">25dip</dimen>
+    <!-- 39pt -->
+    <dimen name="text_size_39_pt">26dip</dimen>
+
+    <style name="azuc_text_1">
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_22_pt</item>
+    </style>
+    <style name="azuc_text_2">
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_19_pt</item>
+    </style>
+
+    <style name="azuc_text_3">
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_24_pt</item>
+    </style>
+
+    <style name="azuc_text_4">
+        <item name="android:textColor">@color/anzhi_494949</item>
+        <item name="android:textSize">@dimen/text_size_20_pt</item>
+    </style>
+
+    <style name="azuc_text_6">
+        <item name="android:textColor">@color/anzhi_494949</item>
+        <item name="android:textSize">@dimen/text_size_24_pt</item>
+    </style>
+
+    <style name="azuc_text_5">
+        <item name="android:textColor">@color/anzhi_2b2b2b</item>
+        <item name="android:textSize">@dimen/text_size_24_pt</item>
+    </style>
+
+    <style name="azuc_text_7">
+        <item name="android:textColor">@color/anzhi_a6a6a6</item>
+        <item name="android:textSize">@dimen/text_size_15_pt</item>
+    </style>
+
+    <style name="azuc_text_8">
+        <item name="android:textColor">@color/anzhi_2b2b2b</item>
+        <item name="android:textSize">@dimen/text_size_24_pt</item>
+    </style>
+
+    <style name="azuc_text_9">
+        <item name="android:textColor">@color/anzhi_494949</item>
+        <item name="android:textSize">@dimen/text_size_18_pt</item>
+    </style>
+
+    <style name="azuc_text_10">
+        <item name="android:textColor">@color/anzhi_a6a6a6</item>
+        <item name="android:textSize">@dimen/text_size_18_pt</item>
+    </style>
+
+    <style name="azuc_vip_right" parent="azuc_text_6">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 退出广告弹窗的字体 -->
+    <style name="azuc_text_ad_tittle" parent="azuc_text_8">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="azuc_vip_right_hint" parent="azuc_text_7">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 登录输入框字体 -->
+    <style name="azuc_login_input" parent="azuc_text_9">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!-- 输入框样式 -->
+    <style name="azuc_login_input_hint" parent="azuc_text_9">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/anzhi_a6a6a6</item>
+        <item name="android:textColor">@color/anzhi_757575</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>

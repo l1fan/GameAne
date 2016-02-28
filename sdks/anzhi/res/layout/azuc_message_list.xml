@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/message_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/anzhi_e5e5e5"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/anzhi_message_no" />
+
+        <TextView
+            android:id="@+id/tv_no_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/anzhi_message_no"
+            android:textColor="@color/anzhi_494949" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/anzhi_e5e5e5"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/anzhi_e5e5e5"
+        android:dividerHeight="0.5dip"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/msg_del_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anzhi_msg_del_bg"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/msg_del_action"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/anzhi_del_message_disable"
+            android:gravity="center"
+            android:text="@string/anzhi_del"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/msg_sel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="11dp"
+            android:src="@drawable/anzhi_chk_unchecked_normal" />
+    </LinearLayout>
+
+</LinearLayout>

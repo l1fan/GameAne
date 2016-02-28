@@ -1,0 +1,284 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="Theme.UPPay" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 个人中心页面各个条目的样式 -->
+    <style name="azuc_ll_person">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_58</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/azuc_frame_bg_up</item>
+    </style>
+
+    <style name="azuc_ll_vip_right" parent="azuc_ll_person">
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="azuc_ll_vip_right_down" parent="azuc_ll_vip_right">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/azuc_frame_down_normal</item>
+    </style>
+
+    <style name="azuc_ll_person_vip">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:background">@drawable/azuc_frame_up_normal</item>
+    </style>
+
+    <style name="azuc_ll_person_vip_down" parent="azuc_ll_person_vip">
+        <item name="android:background">@drawable/azuc_frame_down_normal</item>
+    </style>
+
+    <style name="azuc_ll_person_down">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_60</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/azuc_frame_bg_down</item>
+    </style>
+
+  <!-- 左箭头 -->
+    <style name="azuc_left_arrows">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/anzhi_arrow_back_a</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+    <!-- 右箭头 -->
+    <style name="azuc_right_arrows">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/azuc_arrow_right</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+    <!-- 上箭头 -->
+    <style name="azuc_arrows_up">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/azuc_arrow_up</item>
+    </style>
+    <!-- 下箭头 -->
+    <style name="azuc_arrows_down">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/azuc_arrow_down</item>
+    </style>
+
+    <!-- 个人中心VIP界面 -->
+    <style name="azuc_vip_arrows" parent="azuc_right_arrows">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/azuc_arrow_right_red</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="azuc_iv_item">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="azuc_tv_item">
+        <item name="android:textColor">@color/anzhi_494949</item>
+        <item name="android:textSize">@dimen/text_size_20_pt</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="azuc_float_menu_item">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="azuc_float_menu_update">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">7sp</item>
+    </style>
+
+    <style name="azuc_person_info">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/azuc_bg_half_tras</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="azuc_person_info_txt_1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/azuc_zero</item>
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_19_pt</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="azuc_person_info_txt_2">
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_24_pt</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="azuc_btn_bg_orange_mid" parent="azuc_btn_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_20_pt</item>
+        <item name="android:background">@drawable/anzhi_button_bg_orange_nopading</item>
+    </style>
+    <!-- 浅蓝背景的按钮 -->
+    <style name="azuc_btn_bg_light_blue" parent="azuc_btn_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_20_pt</item>
+        <item name="android:background">@drawable/anzhi_button_bg_light_blue</item>
+    </style>
+
+    <style name="azuc_btn_bg_green_min" parent="azuc_btn_base">
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_16_pt</item>
+        <item name="android:background">@drawable/anzhi_button_bg_green_nopading</item>
+    </style>
+
+    <!-- 绿色按钮的样式 -->
+    <style name="azuc_btn_bg_green" parent="azuc_btn_base">
+        <item name="android:background">@drawable/anzhi_button_bg_green_nopading</item>
+    </style>
+
+    <style name="azuc_btn_bg_gray" parent="azuc_btn_base">
+        <item name="android:background">@drawable/anzhi_button_bg_gray</item>
+    </style>
+
+    <style name="azuc_btn_bg_orange_min">
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_16_pt</item>
+        <item name="android:background">@drawable/anzhi_button_bg_orange_nopading</item>
+    </style>
+
+    <style name="azuc_btn_light_blue" parent="azuc_btn_base">
+        <item name="android:background">@drawable/anzhi_button_bg_light_blue</item>
+    </style>
+
+    <style name="azuc_space_with_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="azuc_space_heigh_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+    <style name="azuc_red_point">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:src">@drawable/azuc_red_point</item>
+    </style>
+
+    <!-- 按钮的基本样式 -->
+    <style name="azuc_btn_base">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textColor">@color/C_white</item>
+        <item name="android:textSize">@dimen/text_size_20_pt</item>
+    </style>
+
+    <!-- VIP页面内容标题的样式 -->
+    <style name="azuc_vip_item_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@color/anzhi_f7f7f7</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/anzhi_ef8b00</item>
+        <item name="android:textSize">@dimen/text_size_20_pt</item>
+    </style>
+
+    <style name="azuc_vip_image">
+        <item name="android:layout_width">@dimen/space_0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="azuc_vip_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">@dimen/text_size_20_pt</item>
+        <item name="android:textColor">@color/anzhi_494949</item>
+    </style>
+
+    <!-- 礼包下面的进度条 -->
+    <style name="progressbar_gift" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/azuc_gift_progress_normal</item>
+        <item name="android:progressDrawable">@drawable/azuc_getgift_pressed</item>
+    </style>
+
+    <!-- 礼包标题文字样式 -->
+    <style name="azuc_giftdetails_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/anzhi_494949</item>
+        <item name="android:textSize">@dimen/text_size_20_pt</item>
+    </style>
+    <!-- 礼包内容文字样式 -->
+    <style name="azuc_giftdetails_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/anzhi_a6a6a6</item>
+        <item name="android:textSize">@dimen/text_size_16_pt</item>
+    </style>
+    <!-- 更多礼包内容文字样式 -->
+    <style name="azuc_giftdetails_more_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/anzhi_909090</item>
+        <item name="android:textSize">@dimen/text_size_16_pt</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- 注册登录页面样式 -->
+    <style name="azuc_ll_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/anzhi_window_input</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

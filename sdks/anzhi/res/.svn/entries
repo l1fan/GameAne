@@ -1,0 +1,47 @@
+10
+
+dir
+3582
+https://192.168.0.112/svn/uc/AnzhiUserCenter/3.5/UserCenterSDK_V3_5/res
+https://192.168.0.112/svn/uc
+
+
+
+2015-09-11T03:45:15.114483Z
+3582
+xugh
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3444004f-e11f-d345-9dd8-c1f35ce2f6ef
+
+
+
+
+
+
+0
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+layout
+dir
+
+values
+dir
+

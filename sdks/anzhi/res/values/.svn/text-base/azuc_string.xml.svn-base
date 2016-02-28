@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="azuc_return_game">返回游戏</string>
+    <string name="azuc_customer_service">客服</string>
+
+    <!-- 账号安全绑定 -->
+    <string name="anzhi_title_safe">账号安全绑定</string>
+    <string name="anzhi_bind_txt_new">绑定</string>
+    <string name="anzhi_unbind_txt_new">解绑</string>
+    <string name="anzhi_cannot_unbind_msg">当前账号已处于登陆状态，无法解绑！</string>
+
+    <!-- 账号安全绑定引导弹窗 -->
+    <string name="anzhi_get_authcode_txt">获取验证码 </string>
+    <string name="anzhi_bind_tel_present_1">您的账号存在安全隐患，请绑定手机号，绑定后可使用手机号进行登录或找回密码</string>
+    <string name="anzhi_bind_tel_present_2">您刚才完成了一笔消费，为保证您的资金安全，请绑定手机号</string>
+    <string name="anzhi_bind_mail_present_1">您的账号存在安全隐患，请绑定邮箱，绑定后可使用邮箱进行登录或找回密码</string>
+    <string name="anzhi_bind_mail_present_2">您刚才完成了一笔消费，为保证您的资金安全，请绑定邮箱</string>
+    <string name="anzhi_bind_txt">立即绑定</string>
+    <string name="anzhi_unbind_txt">解除绑定</string>
+    <string name="anzhi_bind_safe_level1">高风险</string>
+    <string name="anzhi_bind_safe_level2">有风险</string>
+    <string name="anzhi_bind_safe_level3">安全</string>
+
+    <!-- 安智论坛 -->
+    <string name="anzhi_upload_image">上传图片</string>
+    <string name="anzhi_upload_image_illegal">对不起,上传的图片格式不符合要求!</string>
+    <string name="anzhi_not_find_image">没要找到要上传的图片</string>
+    <string name="anzhi_SDcard_no_exit">请插入手机存储卡再使用本功能</string>
+    <string name="anzhi_choose_pic">请选择5M以下的图片</string>
+    <string name="anzhi_choose_pic_again">所选图片尺寸大于3000*3000，请重新选择</string>
+
+    <!-- 表单检查 -->
+    <string name="anzhi_user_tel_txt">请输入手机号码!</string>
+    <string name="anzhi_user_tel_error">您输入的手机号码有误！</string>
+    <string name="anzhi_user_auth_code_txt">请输入6位验证码</string>
+    <string name="anzhi_user_pwd_is_null">密码不能为空</string>
+    <string name="anzhi_user_pwd_error2">新密码设置暂不支持特殊字符</string>
+    <string name="anzhi_user_pwd_no_same">密码两次输入不一致!</string>
+    <string name="anzhi_user_pwd_error1">密码长度为6-16位字母或数字</string>
+    <!-- 通用字符 -->
+
+    <string name="anzhi_ok">确定</string>
+    <string name="confirm">确定</string>
+    <string name="anzhi_cancel">取消</string>
+    <string name="network_error">网络大塞车啊，款检查一下手机网络吧</string>
+    <string name="network_refresh">重试</string>
+    <string name="no_content">每每这个时候，感觉心里空荡荡的~</string>
+    <string name="dialog_title">温馨提示</string>
+    <string name="azuc_network_error">网络连接异常，请稍后重试</string>
+
+    <!-- 星座 -->
+    <string name="anzhi_star_mo_jie">摩羯座</string>
+    <string name="anzhi_star_shuiping">水瓶座</string>
+    <string name="anzhi_star_shuangyu">双鱼座</string>
+    <string name="anzhi_star_baiyang">白羊座</string>
+    <string name="anzhi_star_jinniu">金牛座</string>
+    <string name="anzhi_star_shuangzi">双子座</string>
+    <string name="anzhi_star_juxie">巨蟹座</string>
+    <string name="anzhi_star_shizi">狮子座</string>
+    <string name="anzhi_star_chunv">处女座</string>
+    <string name="anzhi_star_tianping">天平座</string>
+    <string name="anzhi_star_tianxie">天蝎座</string>
+    <string name="anzhi_star_sheshou">射手座</string>
+
+    <!-- 标题 -->
+    <string name="anzhi_game_bbs">安智游戏论坛</string>
+    <string name="azuc_title_safe">账号安全绑定</string>
+    <string name="azuc_title_bind_email">绑定邮箱</string>
+    <string name="azuc_title_bind_tel">绑定手机</string>
+    <string name="azuc_title_currency_history">充值记录</string>
+    <string name="azuc_title_consum_history">充值|消费记录</string>
+    <string name="azuc_title_chongzhi_btn">充值</string>
+    <string name="azuc_title_findpwd">密码/账号找回</string>
+    <string name="azuc_title_login">安智账号登录</string>
+    <string name="azuc_title_message">消息</string>
+    <string name="azuc_title_set_paypwd">设置支付密码</string>
+    <string name="azuc_title_clear_paypwd">清除支付密码</string>
+    <string name="azuc_title_register">安智账号注册</string>
+    <string name="azuc_title_unbind_email">解绑邮箱</string>
+    <string name="azuc_title_unbind_tel">解绑手机</string>
+    <string name="azuc_title_nick">昵称</string>
+    <string name="azuc_title_qq">QQ</string>
+    <string name="azuc_title_star">星座</string>
+    <string name="azuc_title_user_center">个人中心</string>
+    <string name="azuc_title_notice">安智公告板</string>
+    <string name="azuc_title_vip">VIP专区</string>
+
+    <!-- 个人中心界面 -->
+
+    <string name="azuc_currency">安智币</string>
+    <string name="azuc_gift_certificate">礼券</string>
+    <string name="azuc_gift_bag">礼包</string>
+    <string name="azuc_meaasge">消息</string>
+    <string name="azuc_vip">VIP专区</string>
+    <string name="azuc_anzhi_recharge">安智币充值</string>
+    <string name="azuc_pay_pwd">安智币支付密码</string>
+    <string name="azuc_expense_record">充值|消费记录</string>
+    <string name="azuc_account_saft">账号安全</string>
+    <string name="azuc_change_pwd">修改登录密码</string>
+    <string name="azuc_change_account">切换账号</string>
+    <string name="azuc_zero">0</string>
+
+    <!-- VIP有关内容 -->
+    <string name="azuc_vip_condition">VIP所需条件</string>
+    <string name="azuc_accumulative_recharge">累计充值：</string>
+    <string name="azuc_recharge">充值</string>
+    <string name="azuc_recharge_explain">累计充值是指购买安智币(消费安智币除外)或游戏中购买道具(运营商花费、短信支付除外)</string>
+    <string name="azuc_connection_type">网上联系方式：</string>
+    <string name="azuc_connection_finish">已完成</string>
+    <string name="azuc_connection_add">去完善</string>
+    <string name="azuc_connection_explain">完善联系方式是指在个人资料中填写手机号与 QQ号</string>
+    <string name="azuc_vip_right">VIP会员专属特权</string>
+    <string name="azuc_vip_welfare">VIP福利</string>
+    <string name="azuc_vip_active">VIP会员专属活动</string>
+    <string name="azuc_vip_active_1">会员专属活动</string>
+    <string name="azuc_vip_active_hint">专属VIP用户的特殊福利，你想要的这里都有</string>
+    <string name="azuc_vip_account">账号私人助手</string>
+    <string name="azuc_vip_account_hint">账号、充值问题，快速解答，快速解决</string>
+    <string name="azuc_vip_service">1对1专属客服</string>
+    <string name="azuc_vip_service_hint">专职、专业、专注，为您提供最优质的服务</string>
+    <string name="azuc_unbind_tel_message">解绑手机号后，您将不再享受VIP福利，是否确认解绑?</string>
+    <string name="azuc_del_qq_message">删除QQ后，您将不再享受VIP福利，是否确认删除?</string>
+
+    <!-- 退出广告位文字 -->
+    <string name="azuc_out_game">退出游戏</string>
+    <string name="azuc_out_game_tip">确定要退出游戏吗？</string>
+    <string name="azuc_goto_forum">去论坛看看</string>
+    <string name="azuc_other_game">小伙伴们还在玩这些游戏</string>
+
+    <!-- 悬浮球 -->
+
+
+    <string name="azuc_person">个人中心</string>
+    <string name="azuc_gift">礼包</string>
+    <string name="azuc_strategy">攻略</string>
+    <string name="azuc_forum">论坛</string>
+    <string name="azuc_msg">消息</string>
+
+    <!-- 登录界面 -->
+    <string name="azuc_login_title">安智账号登录</string>
+    <string name="azuc_login_account">账号：</string>
+    <string name="azuc_login_account_hint">手机号/邮箱/用户名</string>
+    <string name="azuc_login_pwd">密码：</string>
+    <string name="azuc_login_pwd_hint">6-16位字符</string>
+    <string name="azuc_login_forget_pwd">忘记密码</string>
+    <string name="azuc_login_tel_pwd_register">手机号一键注册</string>
+    <string name="azuc_login_now">立即登录</string>
+    
+    <string name="azuc_register">快速注册</string>
+    <string name="azuc_login_name_register">用户名注册</string>
+    <string name="azuc_qq_login">QQ登录</string>
+    <string name="azuc_weibo_login">微博登录</string>
+    <string name="azuc_login_dialog">登录中，请稍候</string>
+    <string name="azuc_login_switch">切换账号</string>
+    <string name="azuc_login_tip">温馨提示</string>
+    <string name="azuc_login_tip_content">您已连续5次注册或登录失败，若需要帮助请联系客服</string>
+    <string name="azuc_login_service">点此联系客服>></string>
+    <string name="azuc_login_iknow">我知道了</string>
+    
+    <!-- 注册界面 -->
+    <string name="azuc_register_title">安智账号注册</string>
+    <string name="azuc_register_tel">手机号注册</string>
+    <string name="azuc_register_name">用户名注册</string>
+    <string name="azuc_register_account">账号：</string>
+    <string name="azuc_register_account_hint">手机号/邮箱/用户名</string>
+    <string name="azuc_input_name">请输入用户名</string>
+    <string name="azuc_input_pwd">请输入6-16位密码</string>
+    
+    
+    <string name="azuc_register_pwd">密码：</string>
+    <string name="azuc_register_pwd_hint">6-16位字符</string>
+    <string name="azuc_register_forget_pwd">忘记密码</string>
+    <string name="azuc_register_tel_pwd_register">手机号一键注册</string>
+    <string name="azuc_register_now">立即注册</string>
+    <string name="azuc_register_name_register">用户名注册</string>
+
+ 
+    <!-- 礼包界面 -->
+    <string name="azuc_gift_all">全部礼包</string>
+    <string name="azuc_gift_my">我的礼包</string>
+    <string name="azuc_gift_more">更多</string>
+    <string name="azuc_gift_hot">热门礼包</string>
+    <string name="azuc_gift_detail">礼包详情</string>
+    <string name="azuc_gift_obtaining">领取中</string>
+    <string name="azuc_gift_obtained">已领取</string>
+    <string name="azuc_gift_obtain">立即领取</string>
+    <string name="azuc_gift_obtain_fail">领取失败</string>
+    <string name="azuc_gift_obtained_toast">礼包领取成功!</string>
+    <string name="azuc_gift_obtain_head">礼包领取</string>
+    <string name="azuc_tip">提示</string>
+    <string name="azuc_cancel">取消</string>
+    <string name="azuc_gift_finish">发放完毕</string>
+    <string name="azuc_gift_use">使用</string>
+    <string name="azuc_activation_copy">激活码已复制</string>
+    <string name="azuc_down_message">还未下载该软件，下载后可以领取礼包</string>
+    <string name="azuc_down_btn">下载</string>
+
+    <!-- 礼包详情页 -->
+    <string name="azuc_gift_details">礼包详情</string>
+    <string name="azuc_gift_validity">有效期</string>
+    <string name="azuc_gift_usemethod">使用方法</string>
+    <string name="azuc_gift_userange">使用范围</string>
+    <string name="azuc_gift_other">该软件的其他礼包</string>
+
+    <!-- 绑定界面 -->
+    <string name="azuc_safe_bind_reminder">绑定的手机号/邮箱，可作为账号进行登录及找回密码</string>
+
+    <!-- 绑定界面 -->
+    <string name="azuc_pic_upload_reminder">正在上传图片，请稍候</string>
+
+    <!-- qq引导页 -->
+    <string name="azuc_content">完善如下资料，即可享有VIP福利特权，专属返利，1对1客服期待您的光临</string>
+    <string name="azuc_tv_qq">ＱＱ号：</string>
+    <string name="azuc_tv_tel">手机号：</string>
+    <string name="azuc_tv_code">验证码：</string>
+    <string name="azuc_tv_getcode">获取验证码</string>
+    <string name="azuc_tv_submit">提交</string>
+    <string name="azuc_hint_qq">请输入QQ号</string>
+    <string name="azuc_hint_tel">请输入手机号</string>
+    <string name="azuc_hint_code">请输入验证码</string>
+
+    <!-- 游戏更新 -->
+    <string name="azuc_btn_update">立即下载</string>
+    <string name="azuc_update_instruction">更新说明：</string>
+    <string name="azuc_update_downing">正在下载，请稍候...</string>
+
+</resources>
