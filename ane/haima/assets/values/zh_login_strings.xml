@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- 更新 -->
+    <string name="zh_update_forced_test">这里是强制更新测试</string>
+    <string name="zh_update_not_froced_test">这里是非强制更新测试</string>
+    <string name="zh_update_click_confirm">请点击确认按钮进行更新。</string>
+    <string name="zh_need_to_update">检测到新版本，需要更新吗？</string>
+    <string name="zh_update_fail_click_retry">检查更新失败，请点击重试。</string>
+    <string name="zh_update_fail_retry">检查更新失败，是否重试？</string>
     <!-- 登录 -->
     <string name="zh_login_login">登录</string>
     <string name="zh_login_logining">正在登录，请稍后...</string>
@@ -71,6 +78,7 @@
     <string name="zh_pay_yuan">元</string>
     <string name="zh_pay_buy">购买&#160;</string>
     <string name="zh_pay_success"> &#160;成功! 点击按钮返回。</string>
+    <string name="zh_voucher_pay_success"> 支付成功 ! </string>
     <string name="zh_pay_fail">&#160;&#160;&#160;失败！</string>
     <string name="zh_pay_notEnough">海马币余额不足,请先充值或选择其他方式支付！</string>
     <string name="zh_pay_verify">正在验证支付信息</string>
@@ -78,6 +86,8 @@
     <string name="zh_pay_refreshFailed">刷新余额失败</string>
     <string name="zh_pay_errorPwd">密码不正确</string>
     <string name="zh_pay_sure">确认支付</string>
+    <string name="zh_cancel_pay">取消支付</string>
+    <string name="zh_weixin_pay_fail">微信支付失败！</string>
     <string name="zh_pay_click_recharge">请先点击充值</string>
     <string name="zh_click_read">[点击查看]</string>
     <!-- 充值页 -->
@@ -201,13 +211,19 @@
     <string name="zh_haima_money_no">海马币: &#160;</string>
     <string name="zh_user_id_enter">当前账号: &#10;</string>
     <string name="zh_user_id">当前账号: &#160;</string>
-    <string name="zh_qq">客服联系方式:&#10;</string>
-    <string name="zh_qq2">客服联系方式: &#160;</string>
+    <string name="zh_qq">客服:&#10;</string>
+    <string name="zh_qq2">客服: &#160;</string>
     <string name="zh_kf_phone">客服电话 : 400-517-517</string>
     <string name="zh_record_title">海马用户充值</string>
     <string name="zh_pay_title">海马用户消费</string>
     <string name="zh_choice_paymoney">选择充值金额 (1元=1海马币)</string>
     <string name="zh_choice_paytype">选择支付方式</string>
+    <string name="zh_choice_preferential_activity">请选择优惠活动</string>
+    <string name="zh_charge_back_scale">该充返卡充返比例</string>
+    <string name="back_scale">%充值返利</string>
+    <string name="use_rule">使用规则：</string>
+    <string name="begin_to_end_time">&#160;至&#160;</string>
+    <string name="zh_charge_back_count"></string>
     <string name="zh_record_three_title">优惠专区</string>
     <string name="zh_record_three_title2">充值专区</string>
     <string name="zh_record_three_title3">充值消费专区</string>
@@ -232,15 +248,23 @@
     <string name="zh_activity_title_dialog">优惠活动</string>
     <string name="zh_recharge_no0">请输入正确的充值金额</string>
     <string name="zh_pay_no0">请输入正确的交易金额</string>
+    <string name="sure_employ">确认使用</string>
     <!-- 个人中心-->
     <string name="zh_pay_center">海马支付中心</string>
     <string name="zh_usercenter_userName">账号:&#160;</string>
     <string name="zh_usercenter_loginout">注销登录</string>
     <string name="zh_usercenter_safeupdate">安全升级</string>
     <string name="zh_usercenter_recordhm">充值海马币</string>
+    <string name="zh_my_props_layout">我的充返卡</string>
+    <string name="zh_my_voucher_layout">我的代金券</string>
+    <string name="zh_vip_privilege_layout">VIP及特权</string>
+    <string name="zh_voucher_layout">我的代金券</string>
+    <string name="zh_my_message">我的消息</string>
     <string name="zh_safe_toast">您的安全级别已经达到最高，无需再升级！</string>
 
     <string name="haima_coins">账户余额:&#160;</string>
+    <string name="vip_level">VIP等级:&#160;</string>
+    <string name="vip_level_enter">VIP等级:&#10;</string>
     <string name="haima_coins_with_enter">账户余额:&#10;</string>
     <string name="please_select_pay_type">请选择支付方式</string>
 
@@ -251,6 +275,8 @@
     <string name="weixin_pay_name">微信</string>
     <string name="mo9_pay_name">MO9</string>
     <string name="pp_pay_name">银行卡快捷</string>
+    <string name="use_rechange_voucher_name">充值代金券</string>
+    <string name="use_haiyou_name">海游宝</string>
     <string name="haima_coin_pay_type_name">海马币支付 (更多优惠)</string>
     <string name="ali_pay_type_name">支付宝支付</string>
     <string name="union_pay_type_name">银联手机支付</string>
@@ -267,5 +293,108 @@
     <string name="limit_hint_1">该金额已超出支付宝银行卡支付额度，请您使用支付宝余额支付或银联支付</string>
     <string name="limit_hint_2">该金额已超出银联支付额度，建议您使用支付宝余额支付</string>
     <string name="limit_hint_3">该金额已超出支付宝银行卡支付额度，建议您使用支付宝余额支付</string>
+
+    <!-- MessageCenter -->
+    <string name="read_message">已读取</string>
+    <string name="unread_message">未读取</string>
+    <string name="message_type_btn_0">了解</string>
+    <string name="message_type_btn_1">查看</string>
+    <string name="message_type_btn_2">领取</string>
+    <string name="message_type_btn_3">兑换</string>
+    <string name="message_type_btn_4">使用</string>
+    <string name="message_type_btn_5">抢！</string>
+    <string name="desc_shrinkup">收起</string>
+    <string name="desc_spread">显示更多</string>
+    <string name="message_voucher_money">金额</string>
+    <string name="term_of_validity">领取有效期</string>
+    <string name="prop_charge_scale">返利比例</string>
+    <string name="prop_use_period">使用有效期</string>
+    <string name="voucher_exchange_amount">兑换金额</string>
+    <string name="voucher_exchange_period">兑换有效期</string>
+    <string name="message_not_unread_title">抱歉,您暂时没有未读消息</string>
+    <string name="message_not_read_title">抱歉,您暂时没有已读消息</string>
+    <string name="message_not_content">您可以关注下方我们的官方微信公众号,您将能获得各类消息,和不定期发布活动信息。官方微信公众号：</string>
+    <string name="gongzhonghao">haimawanfw</string>
+
+    <!-- PullToRefreshListView -->
+    <string name="list_pull_to_refresh">下拉刷新</string>
+    <string name="list_refreshing">正在刷新...</string>
+    <string name="list_release_to_refresh">释放刷新</string>
+    <string name="list_load_more">加载更多</string>
+    <string name="loading">正在加载...</string>
+    <string name="no_more">没有更多数据了</string>
+    <string name="immediate_use">立即使用</string>
+
+    <string name="upgrade_vip_get_props1">抱歉，您还没有充返卡，您可以升级VIP获取</string>
+    <string name="upgrade_vip_get_props2">或者参加拆红包活动获取</string>
+    <string name="other_pay_type">其他支付方式</string>
+    <!-- 代金券 -->
+    <string name="symbol_yuan">¥&#160;</string>
+    <string name="voucher_apply">适用</string>
+    <string name="voucher_everal_game">款游戏</string>
+    <string name="voucher_all_game">适用全部游戏</string>
+    <string name="voucher_apply_the_following_games">适用以下游戏：&#10;</string>
+    <string name="voucher_valid_period_receive">前领取有效</string>
+    <string name="voucher_valid_period_use">前使用有效</string>
+    <string name="voucher_receive_success">领取成功</string>
+    <string name="voucher_check_all">查看全部</string>
+    <string name="immediately_receive">立即领用</string>
+    <string name="voucher_not_receive">还未领取</string>
+    <string name="voucher_to_use">可使用</string>
+    <string name="applicable_scope_of_game">适用游戏范围</string>
+    <string name="voucher_game">游戏代金券</string>
+    <string name="voucher_to_use_num">可用代金券</string>
+    <string name="zhang">张</string>
+    <string name="voucher_amount_tv">代金券&#160;¥</string>
+
+    <string name="voucher_not_receive_title">抱歉，您暂时没有代金券</string>
+    <string name="voucher_not_receive_text">请关注我们的微信公众号:haimawanfw,关注该公众号后将能获得代金券，另外还会不定期发布代金券信息.
+    </string>
+    <string name="voucher_not_use_title">抱歉,您暂时没有可使用代金券</string>
+    <string name="voucher_not_use_text">海马会不定期举办各种促销活动,根据促销活动的规则,您有可能获得代金券,请关注海马官方微信号:</string>
+
+    <string name="prop_help">充返卡帮助使用说明：
+        海马充返卡是充值海马币时使用的，在您充值海马币时，进入我的充返卡选择使用不同比例的充返卡，即可得到相应比例的返利。
+
+        A、如何获得充返卡？
+        海马会不定期举办各种促销活动，根据促销活动的规则，您有可能获得充返卡；
+        在海马充值海马币，升级成为VIP，您将获得对应比例的充返卡作为奖励；
+
+        B、充返卡如何使用？
+        在海马客户端或者游戏中充值海马币，选择使用我的充返卡，既可以得到相应比例的返利，例如：
+        您选择充值100元的同时，选择使用了一张70%的充返卡，那么您将实际到账170海马币；
+
+        C、充返卡有有效期么？
+        返利卡有有效期，登录您的海马账号，在用户中心中点击“我的充返卡”，可以查看每张充返卡的有效期，请务必在充返卡失效前使用。</string>
+    <string name="voucher_help">代金券帮助使用说明：
+        海马代金券是海马币消费时使用的，在您消费海马币时，进入我的代金券选择使用不同金额的代金券，即可冲抵同等金额的海马币。
+
+        A、如何获得代金券？
+        海马会不定期举办各种促销活动，根据促销活动的规则，您有可能获得代金券，请关注海马官方微信号：haimawanfw；
+        在海马客户端或者游戏中登录海马账号，您可以在用户中心查看“我的代金券”。
+
+        B、代金券如何使用？
+        在游戏收银台购买游戏道具时，选择使用我的代金券，例如：
+        您需要购买价值100海马币的游戏道具，同时，选择使用了一张面额为30元的代金券，那么您将只需实际支付70元人民币即可；
+
+        C、哪些游戏可以使用代金券？代金券有有效期么？
+        代金券有使用范围限制，登陆您的海马账号，在用户中心点击“我的代金券”，可以查看每张代金券的使用范围，请务必在对应的游戏中使用代金券。
+        代金券有有效期，登陆您的海马账号，在用户中心点击“我的代金券”，可以查看每张代金券的有效期，请务必在代金券失效前使用。
+
+        D、代金券可以同时使用多张吗？面额大于要充值的道具时，找零吗？
+        代金券每笔交易只能使用一张；
+        代金券不能兑现，不找零。</string>
+    <string name="message_help">我的消息说明：
+
+        A、什么时候收到消息？
+
+        为了不打扰您的使用，只当您在打开应用时，我们才会下发消息。同时为了保证消息的有效性，您只能收到或查看最近三个月的信息。
+
+        B、我的消息都有什么内容？
+
+        我们将不定期发布优惠活动信息，同时您也能收到代金券、充返卡、礼包等信息，在活动时间内，您可以随时领取和使用。
+
+        欢迎您随时关注“我的消息”。
+    </string>
 
 </resources>

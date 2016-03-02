@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/20.0">
     <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
-    <!-- <id>com.hmpaysdkexample</id> -->
-    <id>com.hydx.payDemo</id>
+    <id>com.hmpaysdkexample</id>
+    <!-- <id>com.hydx.payDemo</id> -->
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
     <versionNumber>0.0.0</versionNumber>
@@ -24,6 +24,8 @@
         android:normalScreens="true"
         android:smallScreens="true" />
 
+    <permission android:name="me.haima.www.permission.READ_BASICDATA" />
+    <permission android:name="me.haima.www.permission.WRITE_BASICDATA" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
@@ -36,6 +38,7 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -51,7 +54,7 @@
     <application
         android:allowBackup="true" >
 
-        <!-- SDK 中用到的 Activity(包括第三方) BEGIN -->
+        <!-- SDK中用到的Activity(包括第三方) BEGIN -->
         <!-- SDK Activity BEGIN -->
         <activity
             android:name="com.haima.loginplugin.activities.ZHLoginActivity"
@@ -63,18 +66,38 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name="com.haima.payPlugin.activities.ZHReChargeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name="com.haima.payPlugin.activities.ZHPayActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.haima.payPlugin.activities.PayWebControlActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="com.haima.payPlugin.activities.PayWebControlActivity"
+            android:name="com.haima.loginplugin.activities.ZHMyPropsActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.haima.loginplugin.activities.ZHVoucherActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.haima.loginplugin.activities.ZHVipPrivilegeActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.haima.loginplugin.views.ImageAndTextDialog"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.haima.loginplugin.activities.ZHMessageCenterActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!-- SDK Activity END -->
-
 
         <!-- Union Pay Activity BEGIN -->
         <activity
@@ -85,6 +108,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <!-- Union Pay Activity END -->
+
         <!-- Ali Pay Activity START -->
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
@@ -97,11 +121,17 @@
             android:exported="false"
             android:screenOrientation="behind" />
         <!-- Ali Pay Activity END -->
-        <!-- SDK 中用到的 Activity(包括第三方) END -->
+        <!-- SDK中用到的Activity(包括第三方) END -->
 
-        <meta-data
-            android:name="HMKey"
-            android:value="e5dc65b49905df4b3e618d7eac2117ea" />
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <meta-data android:name="HMKey" android:value="e5dc65b49905df4b3e618d7eac2117ea" />
+        <!-- 是否横屏，true为横屏，false为竖屏 -->
+        <meta-data android:name="isLandscape" android:value="false" />
+        <!-- 是否是测试模式 (测试模式下会弹出更新窗口) -->
+        <meta-data android:name="isTestMode" android:value="false" />
+        <!-- 如果检查更新失败 需要的提示. 1:在失败不弹出任何提示框 2:弹出只有确认的提示框,相当于强制更新 3:弹出带确定和取消的提示框,非强制更新 -->
+        <meta-data android:name="ifErrorType" android:value="1" />
+        <!-- init end  -->
 
     </application>
             </manifest>

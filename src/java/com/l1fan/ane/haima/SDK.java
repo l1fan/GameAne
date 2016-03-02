@@ -43,16 +43,22 @@ public class SDK extends SDKContext {
 		 *            如果检查更新失败 需要的提示 详见本页下方检查更新失败回调
 		 * @return boolean 初始化失败返回false 参数不正确
 		 */
-		registerLifeCycle();
+		regLifecycle();
+
 		JSONObject json = getJsonData();
-		boolean isTest = json.optBoolean(DEBUGMODE, false);
-		int errTyep = json.optInt("ifErrorType", 1);
-		boolean init = HMPay.init(getActivity(), false, json.optString(APPID, null), updateListener, isTest, errTyep);
+		Bundle md = getMetaData();
+		boolean isLandscape = json.optBoolean("isLandscape",md.getBoolean("isLandscape",false));
+		String appid = json.optString(APPID, json.optString("HMKey",md.getString("HMKey",null)));
+		boolean isTestMode = json.optBoolean("isTestMode",md.getBoolean("isTestMode"));
+		int ifErrorType = json.optInt("ifErrorType",md.getInt("ifErrorType",1));
+		
+		boolean init = HMPay.init(getActivity(), isLandscape, appid, updateListener, isTestMode, ifErrorType);
 		if (init) {
 			dispatchData(EVENT_INIT);
 		}else{
 			dispatchError(EVENT_INIT, "haima init error");
 		}
+		
 		HMPay.setLoginListener(loginListener);
 		HMPay.setLoginCancelListener(new OnLoginCancelListener() {
 
@@ -98,9 +104,9 @@ public class SDK extends SDKContext {
 		public void onLoginSuccess(ZHPayUserInfo paramZHPayUserInfo) {
 			JSONObject json = new JSONObject();
 			try {
-				json.put(UID, paramZHPayUserInfo.uid);
+				json.put(UID, paramZHPayUserInfo.userId);
 				json.put(TOKEN, paramZHPayUserInfo.loginToken);
-				json.put("udid", paramZHPayUserInfo.udid);
+				json.put(UNAME, paramZHPayUserInfo.userName);
 				dispatchData(EVENT_LOGIN, json);
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -118,52 +124,14 @@ public class SDK extends SDKContext {
 		}
 	};
 	
-	@SuppressLint("NewApi")
-	private void registerLifeCycle() {
-		if (Build.VERSION.SDK_INT < 14) {
-			return;
-		}
-		Activity activity = getActivity();
-		activity.getApplication().registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
-
-			@Override
-			public void onActivityStopped(Activity activity) {
-
-			}
-
-			@Override
-			public void onActivityStarted(Activity activity) {
-
-			}
-
-			@Override
-			public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
-			}
-
-			@Override
-			public void onActivityResumed(Activity activity) {
-				if (activity.equals(activity)) {
-					HMPay.onResume(activity);
-				}
-			}
-
-			@Override
-			public void onActivityPaused(Activity activity) {
-				if (activity.equals(activity)) {
-					HMPay.onPause();
-				}
-			}
-
-			@Override
-			public void onActivityDestroyed(Activity activity) {
-
-			}
-
-			@Override
-			public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-
-			}
-		});
+	@Override
+	protected void onPause() {
+		HMPay.onPause();
+	};
+	
+	@Override
+	protected void onResume() {
+		HMPay.onResume(getActivity());
 	}
 
 	public void userLogin() {
