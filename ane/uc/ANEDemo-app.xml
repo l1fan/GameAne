@@ -68,6 +68,13 @@
         </activity>
         <!-- alipay sdk end -->
 
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <meta-data android:name="gameId" android:value="119474" />
+        <!-- 是否打开调试模式。在为 true 的时候,会连接到联调测试环境 (sdk.test4.g.uc.cn),当为 false 的时候则会连接到正式环境(sdk.g.uc.cn) -->
+        <meta-data android:name="debugMode" android:value="false" />
+
+
+
     </application>
 
 

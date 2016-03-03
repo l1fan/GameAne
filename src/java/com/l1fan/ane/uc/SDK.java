@@ -3,6 +3,7 @@ package com.l1fan.ane.uc;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.Bundle;
 import cn.uc.gamesdk.UCCallbackListener;
 import cn.uc.gamesdk.UCCallbackListenerNullException;
 import cn.uc.gamesdk.UCGameSDK;
@@ -20,13 +21,14 @@ public class SDK extends SDKContext {
 
 	public void init() throws UCCallbackListenerNullException, JSONException {
 		JSONObject init = getJsonData();
+		Bundle md = getMetaData();
 		GameParamInfo gpi = new GameParamInfo();
-		gpi.setGameId(init.optInt(APPID));
+		gpi.setGameId(init.optInt(APPID,init.optInt("gameId",md.getInt("gameId"))));
 		gpi.setFeatureSwitch(new FeatureSwitch(true, true));
 		UCGameSDK.defaultSDK().setOrientation(UCOrientation.PORTRAIT);
 		UCGameSDK.defaultSDK().setLogoutNotifyListener(logoutListener);
 		UCGameSDK.defaultSDK().setLoginUISwitch(UCLoginFaceType.USE_WIDGET);
-		UCGameSDK.defaultSDK().initSDK(getActivity(), UCLogLevel.DEBUG, init.optBoolean("debugMode", false), gpi,
+		UCGameSDK.defaultSDK().initSDK(getActivity(), UCLogLevel.DEBUG, init.optBoolean("debugMode", md.getBoolean(DEBUGMODE,false)), gpi,
 				initListener);
 	}
 
