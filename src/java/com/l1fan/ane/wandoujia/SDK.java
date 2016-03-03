@@ -3,9 +3,6 @@ package com.l1fan.ane.wandoujia;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.Activity;
-import android.app.Application.ActivityLifecycleCallbacks;
-import android.os.Build;
 import android.os.Bundle;
 
 import com.l1fan.ane.SDKContext;
@@ -18,27 +15,25 @@ import com.wandoujia.mariosdk.plugin.api.model.model.LoginFinishType;
 import com.wandoujia.mariosdk.plugin.api.model.model.LogoutFinishType;
 import com.wandoujia.mariosdk.plugin.api.model.model.PayResult;
 import com.wandoujia.mariosdk.plugin.api.model.model.UnverifiedPlayer;
-import com.wandoujia.mariosdk.plugin.api.model.model.WandouPlayer;
 
 public class SDK extends SDKContext {
 
 	private WandouGamesApi wandouGamesApi;
 
 	public void init() throws JSONException {
-
+		regLifecycle();
+		
 		JSONObject json = getJsonData();
-		long appKey = json.optLong(APPKEY);
-		String secretKey = json.optString(APPSECRET);
+		Bundle md = getMetaData();
+		long appKey = Long.valueOf(json.optString(APPKEY,md.getString(APPKEY)).replace("wdj.", ""));
+		System.out.println("app key is:"+appKey);
+		String secretKey = json.optString(APPSECRET,md.getString(APPSECRET));
 		wandouGamesApi = new WandouGamesApi.Builder(getActivity(), appKey,
 				secretKey).create();
 		wandouGamesApi.setLogEnabled(true);
 		wandouGamesApi.init(getActivity());
 
 		dispatchData(EVENT_INIT);
-
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-			lifeCycle();
-		}
 		
 		
 		wandouGamesApi.addWandouAccountListener(new WandouAccountListener() {
@@ -125,51 +120,14 @@ public class SDK extends SDKContext {
 		});
 	}
 	
-	private void lifeCycle() {
-		getActivity().getApplication().registerActivityLifecycleCallbacks(
-				new ActivityLifecycleCallbacks() {
-
-					@Override
-					public void onActivityStopped(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityStarted(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivitySaveInstanceState(Activity arg0,
-							Bundle arg1) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityResumed(Activity arg0) {
-						wandouGamesApi.onResume(arg0);
-					}
-
-					@Override
-					public void onActivityPaused(Activity arg0) {
-						wandouGamesApi.onPause(arg0);
-					}
-
-					@Override
-					public void onActivityDestroyed(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityCreated(Activity arg0, Bundle arg1) {
-						// TODO Auto-generated method stub
-
-					}
-				});		
+	@Override
+	protected void onResume() {
+		wandouGamesApi.onResume(getActivity());
+	}
+	
+	@Override
+	protected void onPause() {
+		wandouGamesApi.onPause(getActivity());
 	}
 }
 

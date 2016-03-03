@@ -200,6 +200,14 @@
                   android:theme="@android:style/Theme.NoDisplay"
                   android:configChanges="orientation|screenSize"
                   android:screenOrientation="portrait"/>
+
+              <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+              <!-- 注意appKey要加上wdj.前缀 -->
+              <meta-data android:name="appKey" android:value="wdj.100008237" />
+              <!-- 将值修改为平台申请的Secret Key -->
+              <meta-data android:name="appSecret" android:value="10159606448b775c8de9d0e79a4bfff3" />
+                  
+
     </application>
 
 
