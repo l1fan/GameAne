@@ -4,6 +4,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 import com.appchina.model.ErrorMsg;
 import com.appchina.usersdk.Account;
@@ -21,11 +22,12 @@ public class SDK extends SDKContext {
 
 	public void init() throws JSONException{
 		JSONObject init = getJsonData();
+		Bundle md = getMetaData();
 		CPInfo cp = new CPInfo();
-		cp.loginId = init.optInt("loginId");
-		cp.loginKey = init.optString("loginKey");
-		cp.appid = init.optString(APPID);
-		cp.appkey = init.optString(APPKEY);
+		cp.loginId = init.optInt("loginId",md.getInt("loginId"));
+		cp.loginKey = init.optString("loginKey",md.getString("loginKey"));
+		cp.appid = init.optString(APPID,String.valueOf(md.get(APPID)));
+		cp.appkey = init.optString(APPKEY,md.getString(APPKEY));
 		cp.orientation = init.optInt(ORIENTATION,CPInfo.PORTRAIT);
 		
 		YYHSDKAPI.initSDKAPI(getActivity(), cp, new InitCallback() {
