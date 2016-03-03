@@ -79,6 +79,20 @@
          </receiver>
          <!-- nearme game sdk config end -->
 
+         <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+         <meta-data android:name="appKey" android:value="c5217trjnrmU6gO5jG8VvUFU0" />
+         <meta-data android:name="appSecret" android:value="e2eCa732422245E8891F6555e999878B" />
+         <!-- 是否打开debug开关,是:true 否:false -->
+         <meta-data android:name="debugMode" android:value="false" />
+         <!-- 是否横屏，true为竖屏，false为横屏 -->
+         <meta-data android:name="orientation" android:value="true" />
+         <!-- init end -->
+         
+         <!-- 配置支付参数，优先取代码中参数 pay start -->
+         <!-- CP服务端回调地址 -->
+         <meta-data android:name="notifyUrl" android:value="http://xxx" />
+         <!-- pay end  -->
+
     </application>
             </manifest>
 

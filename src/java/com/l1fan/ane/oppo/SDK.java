@@ -3,6 +3,8 @@ package com.l1fan.ane.oppo;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.Bundle;
+
 import com.l1fan.ane.SDKContext;
 import com.nearme.game.sdk.GameCenterSDK;
 import com.nearme.game.sdk.callback.ApiCallback;
@@ -14,18 +16,22 @@ import com.nearme.game.sdk.common.model.biz.ReportUserGameInfoParam;
 public class SDK extends SDKContext {
 	
 	private String mAppId;
+	private String mNotifyUrl;
 
 	public void init() throws JSONException {
 		regLifecycle();
 		JSONObject init = getJsonData();
-		String appId = init.optString(APPID);
-		String appKey = init.optString(APPKEY);
-		String appSecret = init.optString(APPSECRET);
-		boolean debug = init.optBoolean(DEBUGMODE,false);
-		boolean ori	= init.optBoolean(ORIENTATION,true);
+		Bundle md = getMetaData();
+		String appKey = init.optString(APPKEY,md.getString(APPKEY));
+		String appSecret = init.optString(APPSECRET,md.getString(APPSECRET));
+		boolean debug = init.optBoolean(DEBUGMODE,md.getBoolean(DEBUGMODE,false));
+		boolean ori	= init.optBoolean(ORIENTATION,md.getBoolean(ORIENTATION,true));
 		GameCenterSettings gameCenterSettings = new GameCenterSettings(false,appKey,appSecret,debug,ori);
 		GameCenterSDK.init(gameCenterSettings, getActivity());
-		mAppId = appId;
+		
+		mAppId = init.optString(APPID,md.getString(APPID));
+		mNotifyUrl = md.getString(NOTIFY_URL);
+		
 		dispatchData(EVENT_INIT);
 	}
 	
@@ -77,7 +83,7 @@ public class SDK extends SDKContext {
 		
 		PayInfo payInfo = new PayInfo(pay.optString(ORDER_ID), pay.optString(EXT), pay.optInt(AMOUNT));
 		payInfo.setProductName(pay.optString(PNAME));
-		payInfo.setCallbackUrl(pay.optString(NOTIFY_URL));
+		payInfo.setCallbackUrl(pay.optString(NOTIFY_URL,mNotifyUrl));
 		
 		GameCenterSDK.getInstance().doPay(getActivity(), payInfo, new ApiCallback() {
 			
