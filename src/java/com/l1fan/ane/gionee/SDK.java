@@ -3,6 +3,8 @@ package com.l1fan.ane.gionee;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.Bundle;
+
 import com.gionee.gamesdk.AccountInfo;
 import com.gionee.gamesdk.GamePayer;
 import com.gionee.gamesdk.GamePlatform;
@@ -16,7 +18,8 @@ public class SDK extends SDKContext {
 
 	public void init() throws JSONException{
 		JSONObject init = getJsonData();
-		mApiKey = init.optString(APPKEY,init.optString("apiKey"));
+		Bundle md = getMetaData();
+		mApiKey = init.optString(APPKEY,init.optString("apiKey",md.getString("apiKey")));
 		GamePlatform.init(getActivity(), mApiKey);
 		dispatchData(EVENT_INIT);
 	}

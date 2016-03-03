@@ -55,6 +55,9 @@
             android:configChanges="mcc|mnc|orientation|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
               
+            <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+            <meta-data android:name="apiKey" android:value="6F7D62E55F4546CB96CD135771FCB5F8" />
+            <!-- init end -->
     </application>
             </manifest>
             
