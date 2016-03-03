@@ -197,7 +197,8 @@
         <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
         <meta-data android:name="loginId" android:value="1" />
         <meta-data android:name="loginKey" android:value="3c480af8" />
-        <meta-data android:name="appId" android:value="10029900000001100299" />
+        <!-- 注意这里设置的appid的值需要加上yyh.前缀 -->
+        <meta-data android:name="appId" android:value="yyh.10029900000001100299" />
         <meta-data android:name="appKey" android:value="QjQ5Q0VERDZCREI0NUEzMDAxRThFNjIyRDgzODdDMzlBMTdDQjA3M01USTJNVE0xT1RJM01qa3dPVEV4TlRjME16a3JNVFExTmpnM05UQXdPRFU0TURneE5qUTROVFl4T0RNek5Ua3lPVGsyTkRFek9EZzJNVGt6" />
 
 

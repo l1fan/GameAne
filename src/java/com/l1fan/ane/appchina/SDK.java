@@ -26,7 +26,8 @@ public class SDK extends SDKContext {
 		CPInfo cp = new CPInfo();
 		cp.loginId = init.optInt("loginId",md.getInt("loginId"));
 		cp.loginKey = init.optString("loginKey",md.getString("loginKey"));
-		cp.appid = init.optString(APPID,String.valueOf(md.get(APPID)));
+		cp.appid = init.optString(APPID,md.getString(APPID,"")).replace("yyh.", "");
+		System.out.println("appid is:"+cp.appid);
 		cp.appkey = init.optString(APPKEY,md.getString(APPKEY));
 		cp.orientation = init.optInt(ORIENTATION,CPInfo.PORTRAIT);
 		
