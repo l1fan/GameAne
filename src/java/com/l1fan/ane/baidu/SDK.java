@@ -4,6 +4,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 import com.baidu.gamesdk.ActivityAdPage;
 import com.baidu.gamesdk.ActivityAdPage.Listener;
@@ -21,21 +22,29 @@ public class SDK extends SDKContext {
 
 	protected ActivityAnalytics mActivityAnalytics;
 	protected ActivityAdPage mActivityAdPage;
+	private String mDebugCBUrl;
 
 	public void init() throws JSONException {
 		BDGameSDKSetting mBDGameSDKSetting = new BDGameSDKSetting();
 		JSONObject data = getJsonData();
-		mBDGameSDKSetting.setAppID(data.optInt(APPID));// APPID设置
-		mBDGameSDKSetting.setAppKey(data.optString(APPKEY));// APPKEY设置
-		mBDGameSDKSetting.setDomain(Domain.RELEASE);// 设置为正式模式
-
-		int ori = data.optInt(ORIENTATION, 1);
-		if (ori == 0) {
-			mBDGameSDKSetting.setOrientation(Orientation.LANDSCAPE);// 设置为横屏
-		} else {
-			mBDGameSDKSetting.setOrientation(Orientation.PORTRAIT);// 设置为竖屏
+		Bundle md = getMetaData();
+		mBDGameSDKSetting.setAppID(data.optInt(APPID,md.getInt(APPID)));
+		mBDGameSDKSetting.setAppKey(data.optString(APPKEY,md.getString(APPKEY)));
+		
+		if (data.optBoolean(DEBUGMODE,md.getBoolean(DEBUGMODE,false))) {
+			mBDGameSDKSetting.setDomain(Domain.DEBUG);
+		}else{
+			mBDGameSDKSetting.setDomain(Domain.RELEASE);
 		}
 
+		if (data.optBoolean(ORIENTATION, md.getBoolean(ORIENTATION,false))) {
+			mBDGameSDKSetting.setOrientation(Orientation.LANDSCAPE);
+		} else {
+			mBDGameSDKSetting.setOrientation(Orientation.PORTRAIT);
+		}
+
+		mDebugCBUrl = data.optString("debugCallbackUrl",md.getString("debugCallbackUrl"));
+		
 		final Activity activity = getActivity();
 		BDGameSDK.init(getActivity(), mBDGameSDKSetting, new IResponse<Void>() {
 
@@ -111,7 +120,7 @@ public class SDK extends SDKContext {
 		payOrderInfo.setTotalPriceCent(json.optLong(AMOUNT));// 以分为单位,long类型
 		payOrderInfo.setRatio(json.optInt("ratio", 1)); // 兑换比例,此时不生效
 		payOrderInfo.setExtInfo(json.optString(EXT));// 该字段在支付通知中原样返回,不超过500个字符
-		BDGameSDK.pay(payOrderInfo, null, new IResponse<PayOrderInfo>() {
+		BDGameSDK.pay(payOrderInfo, json.optString("debugCallbackUrl",mDebugCBUrl), new IResponse<PayOrderInfo>() {
 
 			@Override
 			public void onResponse(int resultCode, String resultDesc, PayOrderInfo arg2) {

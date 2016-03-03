@@ -438,6 +438,18 @@
         
         <!-- ↑↑↑ 多酷SDK ↑↑↑ -->
         
+        
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <meta-data android:name="appId" android:value="3067515" />
+        <meta-data android:name="appKey" android:value="f3Os4GAOqxgm79GqbnkT9L8T" />
+        <!-- 设置横竖屏，true为横屏，false为竖屏 -->
+        <meta-data android:name="orientation" android:value="false" />
+        <!-- 设置调试模式，当为true时可通过支付接口传入debugCallbackUrl来模拟测试支付结果通知(SDK服务端会在支付成功时链接该url) -->
+        <meta-data android:name="debugMode" android:value="false" />
+        <!-- 仅在调试模式为true时生效，正式模式时无效，支付结果只会通知到后台配置的回调地址 -->
+        <meta-data android:name="debugCallbackUrl" android:value="http://xxx" />
+        <!-- init end  -->
+        
     </application>
             </manifest>
             
