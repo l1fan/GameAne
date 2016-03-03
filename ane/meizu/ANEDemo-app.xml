@@ -39,7 +39,11 @@
     <application
         android:allowBackup="true" >
 
-        
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <meta-data android:name="appId" android:value="2732536" />
+        <meta-data android:name="appKey" android:value="2e42ee673703448897c6f39b0f0c2c72" />
+        <meta-data android:name="appSecret" android:value="bL8glBdog4GOyxZRkrsSL4D3uIse1yrV" />
+
 
     </application>
             </manifest>

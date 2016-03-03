@@ -6,6 +6,8 @@ import java.security.NoSuchAlgorithmException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.Bundle;
+
 import com.l1fan.ane.SDKContext;
 import com.meizu.gamecenter.sdk.LoginResultCode;
 import com.meizu.gamecenter.sdk.MzAccountInfo;
@@ -23,9 +25,10 @@ public class SDK extends SDKContext {
 
 	public void init() throws JSONException {
 		JSONObject init = getJsonData();
-		mAppId = init.optString(APPID);
-		String appKey =  init.optString(APPKEY);
-		mAppSecret = init.optString(APPSECRET);
+		Bundle md = getMetaData();
+		mAppId = init.optString(APPID,String.valueOf(md.get(APPID)));
+		String appKey =  init.optString(APPKEY,md.getString(APPKEY));
+		mAppSecret = init.optString(APPSECRET,md.getString(APPSECRET));
 		
 		MzGameCenterPlatform.init(getActivity(), mAppId, appKey);
 		
