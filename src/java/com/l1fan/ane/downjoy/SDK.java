@@ -3,9 +3,6 @@ package com.l1fan.ane.downjoy;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.Activity;
-import android.app.Application.ActivityLifecycleCallbacks;
-import android.os.Build;
 import android.os.Bundle;
 
 import com.downjoy.CallbackListener;
@@ -21,11 +18,15 @@ public class SDK extends SDKContext {
 	private Downjoy downjoy;
 
 	public void init() throws JSONException {
+		regLifecycle();
+
 		JSONObject init = getJsonData();
-		String appId = init.optString(APPID);
-		String appKey = init.optString(APPKEY);
-		String merchantId = init.optString("merchantId");
-		String serverSeqNum = init.optString("serverSeqNum","1");
+		Bundle md = getMetaData();
+		String appId = init.optString(APPID,String.valueOf(md.get(APPID)));
+		String appKey = init.optString(APPKEY,md.getString(APPKEY));
+		String merchantId = init.optString("merchantId",String.valueOf(md.get("merchantId")));
+		String serverSeqNum = init.optString("serverSeqNum",String.valueOf(md.get("serverSeqNum")));
+		
 		downjoy = Downjoy.getInstance(getActivity(), merchantId, appId, serverSeqNum, appKey, new InitListener() {
 
 			@Override
@@ -34,7 +35,7 @@ public class SDK extends SDKContext {
 			}
 		});
 		downjoy.showDownjoyIconAfterLogined(true);
-		lifeCycle();
+
 	}
 
 
@@ -88,7 +89,7 @@ public class SDK extends SDKContext {
 	
 	public void pay() throws JSONException{
 		JSONObject pay = getJsonData();
-		downjoy.openPaymentDialog(getActivity(), (float) (pay.optInt(AMOUNT)/100.00), pay.optString(PNAME), pay.optString(PNAME), pay.optString(ORDER_ID), pay.optString("serverName"), pay.optString("roleName"), new CallbackListener<String>() {
+		downjoy.openPaymentDialog(getActivity(), (float) (pay.optInt(AMOUNT)/100.00), pay.optString(PNAME), pay.optString(PNAME), pay.optString(ORDER_ID), pay.optString("serverName"), pay.optString("playerName"), new CallbackListener<String>() {
 
 			@Override
 			public void callback(int code, String data) {
@@ -124,57 +125,13 @@ public class SDK extends SDKContext {
 		sdkcall(downjoy);
 	}
 	
-	private void lifeCycle() {
-		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-			return;
-		}
-		getActivity().getApplication().registerActivityLifecycleCallbacks(
-				new ActivityLifecycleCallbacks() {
-
-					@Override
-					public void onActivityStopped(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityStarted(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivitySaveInstanceState(Activity arg0,
-							Bundle arg1) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityResumed(Activity arg0) {
-						if (downjoy != null) {
-							downjoy.resume(arg0);
-						}
-					}
-
-					@Override
-					public void onActivityPaused(Activity arg0) {
-						if (downjoy != null) {
-							downjoy.pause();
-						}
-					}
-
-					@Override
-					public void onActivityDestroyed(Activity arg0) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onActivityCreated(Activity arg0, Bundle arg1) {
-						// TODO Auto-generated method stub
-
-					}
-				});		
+	@Override
+	protected void onResume() {
+		downjoy.resume(getActivity());
+	}
+	
+	@Override
+	protected void onPause() {
+		downjoy.pause();
 	}
 }

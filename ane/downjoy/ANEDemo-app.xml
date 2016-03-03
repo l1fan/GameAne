@@ -126,6 +126,13 @@
            android:screenOrientation="portrait" >
         </activity>
               
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <meta-data android:name="appId" android:value="195" />
+        <meta-data android:name="appKey" android:value="j5VEvxhc" />
+        <meta-data android:name="merchantId" android:value="101" />
+        <!-- 进入后台 添加服务器 选项中进行填写，其中服务器序号即SERVER_SEQ_NUM，由CP自己指定，一般从1开始即可，不同服务器序列号可使用不同计费通知地址 -->
+        <meta-data android:name="serverSeqNum" android:value="1" />
+
     </application>
             </manifest>
             
