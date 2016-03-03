@@ -3,6 +3,8 @@ package com.l1fan.ane.kuaiyong;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.Bundle;
+
 import com.anguotech.sdk.bean.PayInfo;
 import com.anguotech.sdk.bean.UserInfoLogin;
 import com.anguotech.sdk.interfaces.InitCallBack;
@@ -13,15 +15,13 @@ import com.l1fan.ane.SDKContext;
 
 public class SDK extends SDKContext {
 
-	static final String TEST_APPKEY = "f8ad685fcaf0e92b2fe9c5c7c822610e";
-	
-	/**
-	 * mArg is AppKey
-	 * @throws JSONException 
-	 */
+	private String mPayID;
+
 	public void init() throws JSONException {
 		JSONObject json = getJsonData();
-		AnGuoManager.Instance().Init(getActivity(), json.optString(APPKEY), new InitCallBack() {
+		Bundle md = getMetaData();
+		mPayID = json.optString("payID",String.valueOf(md.get("payID")));
+		AnGuoManager.Instance().Init(getActivity(), json.optString(APPKEY,md.getString(APPKEY)), new InitCallBack() {
 
 			@Override
 			public void onCancel() {
@@ -94,10 +94,10 @@ public class SDK extends SDKContext {
 		PayInfo payInfo = new PayInfo();
 		JSONObject json = getJsonData();
 		payInfo.setFee(json.optInt(AMOUNT) / 100);
-		payInfo.setGame(json.optString("payID"));
+		payInfo.setGame(json.optString("payID",mPayID));
 		payInfo.setSubject(json.optString(PNAME));
 		payInfo.setDealSeq(json.optString(ORDER_ID));
-//		payInfo.setGamesvr(json.optString("gamesvr"));
+		payInfo.setGamesvr(json.optString(GAMESVR));
 //		payInfo.setUid(json.optString("uid"));
 //		payInfo.setNotifyUrl(json.optString("notifyUrl"));
 //		payInfo.setPkgid(json.optString("packId"));

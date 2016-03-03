@@ -22,10 +22,10 @@
 |同步推			|`tongbutui`|Y			|Y	|v4.2.0  |
 |豌豆荚			|`wandoujia`|Y			|		|v4.0.7		|
 |拇指玩			|`muzhiwan`	|Y			|		|v3.0.9		|
-|应用汇			|`appchina`	|Y			|		|					|
+|应用汇			|`appchina`	|Y			|		|v6.2.0		|
 |魅族				|`meizu`		|Y			|		|v2.1			|
-|优酷				|`youku`		|Y			|		|					|
-|卓易				|`droi`			|Y			|		|				|
+|优酷				|`youku`		|Y			|		|v1.9.6		|
+|卓易				|`droi`			|Y			|		|v2.1.5		|
 |虫虫				|`cc`				|Y			|		|v1.4.0 |
 |靠谱				|`kaopu`		|Y			|		|v5.2  |
 |iTools			|`itools`		|			|Y	|	v2.5.0	|

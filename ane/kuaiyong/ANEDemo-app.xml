@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/20.0">
     <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
-    <id>com.ky.xSDK.demo</id>
+    <!-- <id>com.ky.xSDK.demo</id> -->
+    <id>com.youran.KyUserDemo</id>
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
-    <versionNumber>0.0.0</versionNumber>
+    <versionNumber>2.0.0</versionNumber>
     <initialWindow>
         <content>ANEDemo.swf</content>
         <autoOrients>true</autoOrients>
@@ -196,7 +197,11 @@
         <meta-data
             android:name="GAMESCREEN"
             android:value="0" />
-              
+            
+            <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+            <meta-data android:name="appKey" android:value="f8ad685fcaf0e92b2fe9c5c7c822610e" />        
+            <meta-data android:name="payID" android:value="100246" />        
+
     </application>
             </manifest>
             
