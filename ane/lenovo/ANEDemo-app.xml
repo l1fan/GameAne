@@ -228,6 +228,10 @@
 
         <!-- 登录配置结束 -->
 
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <meta-data android:name="appKey" android:value="MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAIOH4o9cE0zxHr/IvD7fdoeM/1oamSBwQjS61OqlmG6jhoZ1gmFMbdlH+HCO/EZ8KOQ9JSux9YhEGK+KVhxGdZ0lN/1YhRH0Ynk0zJooocXLq87S2scPem3GWAESlKsg605PutnoDyKwQvdns67nPZvwRRMeh7nfXMiFBWdXtwEzAgMBAAECgYA9mhjMF82aTZufKv6vW62B0tGNe8OX47u+QnqR4zi/KKtKsiJ8O3V/PCvpW65fvKrSKqkMC+75ARumq12lJILUhBIVj8Ygcn8BYy1BtNeCTwAxCwJtOEyaiFr0sglJbJRLN3OVJNFfO6zgmiqY1/ni6Lx/d2t6fUVU8qZu5TNP0QJBAOe5lCbbha7rHQxcFmEgOnDe3yYf7K8V7ZiM9qWzkEjuxpig9sZPu272R2eGzck+mkls3vqjNcNKl7BF4U2VTNUCQQCRT0pvkTm6yWnrCDxeOTT17XrmMxpXXqfN7tQ0WSk0+/Kw9Lesz6IhJ57YGRqtgvGu2zRblPdVkjsKMtMw9nnnAkA8q6stjVZwGODvJoE5ht2mRcQ5UCyBHwWpZmcBtYT2g4X92k8iVyflAphpc7MXmMt+pAGxr9/YtQQIRBOcY5XNAkBYoGfiDE2No3M6qtdHENVAegvPg7O5Pj5S2CwNkaQUcObhDyFIAYv9dNDpNMaUtZz67S/N+9mvE3V3DvDImExZAkBq6iJqFZx82UR1w+a+l56dlyPTX6It2px5sw2aW/QFaLHO1SClakXKvUHL4/xyo/gVHzDQ1M9JD9mKQAJ6vynb" />
+        <!-- init end  -->
+
     </application>
             </manifest>
 

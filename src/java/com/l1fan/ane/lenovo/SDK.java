@@ -3,6 +3,8 @@ package com.l1fan.ane.lenovo;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.Bundle;
+
 import com.l1fan.ane.SDKContext;
 import com.lenovo.lsf.gamesdk.LenovoGameApi;
 import com.lenovo.lsf.gamesdk.LenovoGameApi.GamePayRequest;
@@ -17,8 +19,9 @@ public class SDK extends SDKContext {
 
 	public void init() throws Exception {
 		JSONObject json = getJsonData();
-		mAppKey = json.optString(APPKEY);
-		mAppId = json.optString(APPID);
+		Bundle md = getMetaData();
+		mAppKey = json.optString(APPKEY,md.getString(APPKEY));
+		mAppId = json.optString(APPID,md.getString("lenovo.open.appid"));
 		LenovoGameApi.doInit(getActivity(), mAppId);
 		dispatchData(EVENT_INIT);
 	}
