@@ -20,8 +20,9 @@ public class SDK extends SDKContext {
 	public void init() throws JSONException {
 		MiAppInfo appInfo = new MiAppInfo();
 		JSONObject json = getJsonData();
-		appInfo.setAppId(json.optString(APPID));
-		appInfo.setAppKey(json.optString(APPKEY));
+		Bundle md = getMetaData();
+		appInfo.setAppId(json.optString(APPID,md.getString(APPID,"")).replace("mi.", ""));
+		appInfo.setAppKey(json.optString(APPKEY,md.getString(APPKEY,"")).replace("mi.", ""));
 		appInfo.setAppType(MiAppType.online); // 网游
 		MiCommplatform.Init(getActivity(), appInfo);
 		dispatchData(EVENT_INIT);

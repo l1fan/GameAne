@@ -72,6 +72,12 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <!-- 注意参数前要加上mi.前缀 -->
+        <meta-data android:name="appId" android:value="mi.2882303761517239138" />
+        <meta-data android:name="appKey" android:value="mi.5691723970138" />
+
+
     </application>
 
 
