@@ -29,13 +29,18 @@ import com.l1fan.ane.SDKContext;
 public class SDK extends SDKContext {
 	
 	private String mAppId;
+	private String mPayId;
+	private String mPrivateKey;
 
 	public void init() throws JSONException {
 		JSONObject init = getJsonData();
-		mAppId = init.optString(APPID);
-		String cpId = init.optString(CPID);
-		String appKey = init.optString(APPKEY,init.optString("privateKey"));
+		Bundle md = getMetaData();
+		mAppId = init.optString(APPID,md.getString(APPID,"")).replace("hw.", "");
+		String cpId = init.optString(CPID,md.getString(CPID,"")).replace("hw.", "");
+		String appKey = init.optString(APPKEY,init.optString("buoSecret",md.getString("buoSecret")));
 		
+		mPayId = init.optString("payId",md.getString("payId")).replace("hw.", "");
+		mPrivateKey = init.optString("privateKey",md.getString("privateKey"));
 		int ret = OpenSDK.init(getActivity(), mAppId, cpId , appKey, new UserInfo() {
 			
 			@Override
@@ -99,7 +104,7 @@ public class SDK extends SDKContext {
 
         Map<String, String> params = new HashMap<String, String>();
         // 必填字段，不能为null或者""，请填写从联盟获取的支付ID
-        params.put(PayParams.USER_ID, json.optString("payId"));
+        params.put(PayParams.USER_ID, json.optString("payId",mPayId));
         // 必填字段，不能为null或者""，请填写从联盟获取的应用ID
         params.put(PayParams.APPLICATION_ID, mAppId);
         // 必填字段，不能为null或者""，单位是元，精确到小数点后两位，如1.00
@@ -113,7 +118,7 @@ public class SDK extends SDKContext {
         
         String noSign = HuaweiPayUtil.getSignData(params);
         System.out.println("nosign==>"+noSign);
-        String sign = Rsa.sign(noSign, json.optString("privateKey"));
+        String sign = Rsa.sign(noSign, json.optString("privateKey",mPrivateKey));
         System.out.println("sign==>"+sign);
 		
         Map<String, Object> payInfo = new HashMap<String, Object>();
@@ -130,7 +135,7 @@ public class SDK extends SDKContext {
         // 必填字段，不能为null或者""
         payInfo.put(PayParams.APPLICATION_ID, mAppId);
         // 必填字段，不能为null或者""
-        payInfo.put(PayParams.USER_ID, json.optString("payId"));
+        payInfo.put(PayParams.USER_ID, json.optString("payId",mPayId));
         // 必填字段，不能为null或者""
         payInfo.put(PayParams.SIGN, json.optString("sign",sign));
         

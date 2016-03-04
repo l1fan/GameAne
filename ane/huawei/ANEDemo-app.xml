@@ -92,6 +92,22 @@
             </intent-filter>
         </receiver>
               
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <!-- 设置分配的应用ID,注意需要添加hw.前缀 -->
+        <meta-data android:name="appId" android:value="hw.10172150" />  
+        <!-- 设置CPID,注意需要添加hw.前缀 -->
+        <meta-data android:name="cpId" android:value="hw.900086000000103770" /> 
+        <!-- 设置浮标密钥BUO_SECRET-->
+        <meta-data android:name="buoSecret" android:value="MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAK2yrlGlXXF6E+e2z8QHXB5cF+Eb434jGTf7H9AOOaSz4GceTSJakqKcrID6tntId4JbZXXhTNvMRubEXVwjlkhuH5kOLCN2dgaMzqyVtsKCf6YwR0KkRp84Cv84o9kyZDcmvPJvSNLOS+zGCzN7Iaxu7HPtauKlhGhGr3KrwWqdAgMBAAECgYAHgYEm5g5zqOLTUIMJ5YeFiFU/1QSvnrSoRqHJS9QR2fQIgLa0lVVg0YRiznK0QR1o9Kodve6kUN9/eVzPbno/9KUg3x2OYKLv7Sc3sDaLdM3u0PsTTOTmyKnLg7D8eTv12PP6N5vV5HvLLI8UCzyOvDleHBHp+Tc822scSe6aAQJBAO6Xo4LK1GRLF8oG9Ekd+AgvhAFo5V/uFNu3BxT2J99CxW4mZT+UCctbBWi18NQWo1XGXKS4AxAiA8E5kYQgW/UCQQC6Xvabbo1tKuG8WVyCRUufEZ04GUbaBcRvE/QHEXlwvbsKJAFKo6e3lF6nnYWyjzI/d5j2QYN1dKVdsHt0vxMJAkEAsSdspA+gNju/lSUmuyeCY+mL9VQChAEOAbnbi0fegRpd55Sgtt1fjFuwH3iAMaoBaw3W+gMbWx42dYEeN+GjBQJBAI7+C4IIGXSYASiM+6Br4HCEiDchla3z3NpI2eOOcbmhqN9H7sHAvQ7qRJGgF5N/sNLnRTIz49P7kmFG5gIWFFkCQDv4lcPjCffuW63qKn6exq6968v/J5IRYU0hBxV0OC6oFdZfI8QO/j8e46fwSLnsjGJDIzKRBp/8shY8N8BvNQM=" />
+
+        <!-- 设置支付ID(原昵称),注意需要添加hw.前缀 -->
+        <meta-data android:name="payId" android:value="hw.900086000000103770" /> 
+        <!-- 设置支付私钥, 如果​发起支付时使用服务端进行签名请忽略下面参数，具体参考配置文档注意事项 -->
+        <meta-data android:name="privateKey" android:value="MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAjdeJFzQ5fFZDpIKyf5n4UpiV+aommZ3B06SAXX0U+PwsQ68+WnZpFl7YPO1YzJoFE5SuIYOM6Ux1Id0vVZ23zwIDAQABAkA850sp93aneLLatHPIbmg9rt7WsMSaOS68nWmwusCCl7/whM1S1za1gil8kWCmW0KosXG/5m8R/IoKU25C95ohAiEA1nVhMDDC2JGiDYv+MqNJr9ncLjuT8YtHJgeAM4bM/f0CIQCpUTo+IKKzvKkBSXPsV0ZHubOZ54kSGjG9hNyh8L/wuwIfLTyVQ5UFhKkzhagB9qx63p0V1Kq8ijbWyy7J3BSTKQIhAJUob4ynp217d88gbDT6NXmeSG/+nqwJ02PHla47rntdAiEAryI2K6zcq77OCSEIRT4QyuvJKHXfq/be6GrLUH20QUM=" />         
+        <!-- init end -->
+      
+              
+              
     </application>
             </manifest>
             
