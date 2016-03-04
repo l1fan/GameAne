@@ -71,7 +71,7 @@ public class SDK extends SDKContext {
 	public void pay() throws JSONException{
 		JSONObject pay = getJsonData();
 		PayParams params = new PayParams();
-		params.setAmount(pay.optInt(AMOUNT));
+		params.setAmount(pay.optInt(AMOUNT)/100);
 		params.setOrderId(pay.optString(ORDER_ID));
 		params.setExtraParam(pay.optString(EXT));
 		params.setPropsName(pay.optString(PNAME));
