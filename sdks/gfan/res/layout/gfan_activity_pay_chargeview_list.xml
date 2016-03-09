@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gfan_bg_border"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/top_bar_pay"
+        android:layout_alignParentTop="true"
+        layout="@layout/gfan_top_bar_pay" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar_pay" >
+
+        <LinearLayout
+            android:id="@+id/ll_payment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <GridView
+                android:id="@+id/payment_charge_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="170dp"
+                android:background="@color/white"
+                android:cacheColorHint="@color/white"
+                android:numColumns="5" />
+
+            <Button
+                android:id="@+id/confirm_btn_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/gfan_selector_btn_orange"
+                android:textColor="@color/text_orange" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

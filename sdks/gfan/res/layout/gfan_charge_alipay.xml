@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" 
+    android:visibility="invisible">
+
+    <include
+        android:id="@+id/top_bar_pay"
+        android:layout_alignParentTop="true"
+        layout="@layout/gfan_top_bar_pay" />
+
+    <TextView
+        android:id="@+id/charge_tv_balance_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_pay"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/charge_tv_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_tv_balance_info"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/charge_edit_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_tv_input"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/charge_tv_exchangeinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/charge_edit_input"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/charge_edit_input"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/charge_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_below="@+id/charge_edit_input" >
+
+        <RadioButton
+            android:id="@+id/charge_rb_debitcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/text_debit_card"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:layout_marginLeft="40dp"
+            android:id="@+id/charge_rb_creditcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/text_credit_card"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/charge_btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/charge_rg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gfan_selector_btn_orange"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text_orange" />
+
+</RelativeLayout>

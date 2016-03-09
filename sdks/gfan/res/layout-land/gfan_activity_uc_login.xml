@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gfan_uc_bg_border"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:focusableInTouchMode="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gfan_uc_logo" />
+
+            <!-- Title -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:shadowColor="@color/black"
+                android:shadowDy="-2.0"
+                android:shadowRadius="0.1"
+                android:singleLine="true"
+                android:text="@string/login_game"
+                android:textAppearance="@style/topbar_title"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+        <!--
+        <include
+            android:id="@+id/top_bar"
+            android:layout_alignParentTop="true"
+            layout="@layout/gfan_top_bar_login"
+            android:visibility="invisible" />-->
+
+
+        <!-- 免注册登录的按钮 -->
+
+
+        <!--
+    <Button
+        android:id="@+id/btn_onekey_login"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/gfan_input_button_yellow"
+        android:gravity="center"
+        android:text="@string/onekey_login"
+        android:textColor="#c3710f"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    名注册登录的提示
+
+    <TextView
+        android:id="@+id/tx_onekey_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_onekey_login"
+        android:layout_marginLeft="11dip"
+        android:layout_marginRight="11dip"
+        android:paddingBottom="8dp"
+        android:text="@string/onekey_login_tip"
+        android:textColor="#9f9f9f"
+        android:visibility="gone" />-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_ad"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_ad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dip" >
+
+                <LinearLayout
+                    android:id="@+id/ll_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gfan_uc_blank_2"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:id="@+id/et_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@color/transparent"
+                            android:drawableLeft="@drawable/gfan_uc_user"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/hint_input_username"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/text_hint" />
+
+                        <TextView
+                            android:id="@+id/to_choose_account_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true" />
+
+                        <Button
+                            android:id="@+id/to_choose_account"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/to_choose_account_margin"
+                            android:background="@drawable/down_user"
+                            android:gravity="right" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawableLeft="@drawable/gfan_uc_key"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/hint_input_password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/text_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_onekey_login"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gfan_uc_selector_btn_orange"
+                        android:gravity="center"
+                        android:text="@string/onekey_try"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gfan_uc_selector_btn_green"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/gfan_uc_selector_btn_orange" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_register1"
+                        android:textColor="#ffbb7b"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_regist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="@string/text_register2"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--
+    <LinearLayout
+        android:id="@+id/otheraccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tx_onekey_login"
+        android:layout_below="@+id/tx_onekey_login"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dip"
+            android:text="@string/other_account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#9f9f9f" />
+
+        <ImageButton
+            android:id="@+id/btn_weibo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/weibolink" />
+    </LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

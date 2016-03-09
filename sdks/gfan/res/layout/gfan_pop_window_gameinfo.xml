@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/game_info_title_bg">
+        
+        <LinearLayout 
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            
+	        <ImageView
+	            android:id="@+id/iv"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:layout_margin="4dp"
+	            android:background="@drawable/game_info_logo"/>
+	        
+			<TextView 
+			    android:layout_toRightOf="@id/iv"
+			    android:layout_width="wrap_content"
+			    android:layout_height="30dp"
+			    android:text="机锋游戏中心"
+			    android:textColor="@color/white"
+			    android:textSize="16sp"
+			    android:layout_centerInParent="true"
+			    android:gravity="center"/>
+		</LinearLayout>
+		
+        
+        <ImageView
+            android:id="@+id/game_info_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/game_info_close"
+            android:layout_margin="10dp"/>
+        
+    </LinearLayout>
+	
+    <LinearLayout
+        android:orientation="vertical" 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/F2D6B1"
+        >
+        
+	    <WebView
+	        android:id="@+id/webview"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:background="@color/F2D6B1"
+	        android:fillViewport="true"
+	        android:overScrollMode="never" >
+	        
+	            
+	            
+	    </WebView>
+	    
+	    <ImageView 
+	      android:id="@+id/vector_icon"
+	      android:layout_height="wrap_content"
+	      android:layout_width="wrap_content"
+	      android:scaleType="fitXY"
+	      android:layout_gravity="right"
+	      android:src="@drawable/vector_gfan_icon"
+	      />
+	      
+  	 </LinearLayout>
+    
+    <ImageView 
+      android:id="@+id/ad_image"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:scaleType="fitXY"
+      android:visibility="gone"
+      />
+
+</LinearLayout>

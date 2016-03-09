@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" 
+        android:paddingRight="10dp"
+        >
+
+        <!-- 付款帐号 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_charge_user"
+            android:textColor="#323232"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/headerview_tv_payaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ff0000" />
+        
+        <TextView
+            android:id="@+id/headerview_tv_modifyaccount"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#323232" />
+    </LinearLayout>
+
+    <!-- 账户余额 -->
+
+    <TextView
+        android:id="@+id/headerview_tv_account_balance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/headerview_hint_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <!-- 支付名称 -->
+
+        <TextView
+            android:id="@+id/headerview_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp" />
+
+        <!-- 产品名 -->
+
+        <TextView
+            android:id="@+id/headerview_tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerview_tv_desc"
+            android:paddingLeft="20dp"
+            android:visibility="gone" />
+
+        <!-- 所购内容 -->
+
+        <TextView
+            android:id="@+id/headerview_tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerview_tv_desc"
+            android:paddingLeft="20dp" />
+    </RelativeLayout>
+    
+    <!-- 支付数额 -->
+
+    <LinearLayout
+        android:id="@+id/ll_pay_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/headerview_tv_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/charge_edit_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:background="@drawable/gfan_kuang"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/charge_tv_exchangeinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

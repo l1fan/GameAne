@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gfan_uc_bg_border"
+        android:orientation="vertical" >
+		<!-- 2014-3-14 替换 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:focusableInTouchMode="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gfan_uc_logo" />
+
+            <!-- Title -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:shadowColor="@color/black"
+                android:shadowDy="-2.0"
+                android:shadowRadius="0.1"
+                android:singleLine="true"
+                android:text="@string/register_account"
+                android:textAppearance="@style/topbar_title"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/top_bar"
+            android:layout_alignParentTop="true"
+            layout="@layout/gfan_top_bar_login"
+            android:visibility="invisible" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:layout_below="@+id/top_bar" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gfan_uc_blank_4"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/et_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:background="@color/transparent"
+                        android:drawableLeft="@drawable/gfan_uc_user"
+                        android:hint="@string/hint_username"
+                        android:inputType="textNoSuggestions"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/text_hint" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:drawablePadding="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawableLeft="@drawable/gfan_uc_mail"
+                        android:hint="@string/hint_email"
+                        android:maxLength="32"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/text_hint" />
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:background="@color/transparent"
+                        android:drawableLeft="@drawable/gfan_uc_lock"
+                        android:hint="@string/hint_password"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/text_hint" />
+
+                    <EditText
+                        android:id="@+id/et_password2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/gfan_uc_lock"
+                        android:hint="@string/hint_confirm_password"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/text_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical" >
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gfan_uc_selector_btn_gray"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/register_hint_login"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gfan_uc_selector_btn_green"
+                        android:text="@string/submit"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

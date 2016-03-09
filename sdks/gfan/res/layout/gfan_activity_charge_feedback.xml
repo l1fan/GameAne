@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gfan_bg_border"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/top_bar_pay"
+        android:layout_alignParentTop="true"
+        layout="@layout/gfan_top_bar_pay" />
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/gfan_close"
+        android:textColor="#ffffff" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar_pay" >
+
+        <LinearLayout
+            android:id="@+id/ll_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#323232"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#323232"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gfan_qq"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gfan_or"
+                android:paddingLeft="20dp"
+                android:textColor="#323232"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gfan_tel"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:background="@drawable/gfan_selector_btn_orange"
+                android:text="@string/register_label"
+                android:textColor="@color/text_orange" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
