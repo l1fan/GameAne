@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/20.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.paojiao.sdk.sample</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+        <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+        
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <!--在SDCard中创建与删除文件权限  -->
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <!-- 往SDCard写入数据权限 -->
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <!-- 从SDCard读取数据权限 -->
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+        <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+       
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true" >
+
+        <!--PaoJiao SDK-->
+        <service android:name="com.paojiao.sdk.service.FloatViewService"
+            android:exported="true"/>
+        <activity android:name="com.paojiao.sdk.H5WebViewActivity"/>
+        <activity android:name="com.paojiao.sdk.CustomerServicesActivity"/>
+        <!--PaoJiao SDK-->
+        
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start -->
+        <meta-data android:name="appId" android:value="10" />
+        <meta-data android:name="appKey" android:value="MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAOM6rlce79Mg2qX7ilajVEKAuR7qCdGF+DQrMafTjbwob6MhSZBp/+g0yPA1QEbWnGnZc4iMj16wxYN36sKGYq22bbNvmqMYK2e+8bpKPEpxdqN2pZ6LamXB5D1FLsUmpnKNXPfeV2PNTmGDEMA6PRNs+a7oriXouWcSsByyzCXDAgMBAAECgYEAzFFqjDnsKarEEDWzOZ4ZWMcILi0BcR4GhVpFhwOp0YOGhmebDzjQ+8ni2GL5jfjRojf+M8036UwH/ePo+sr9lEW0K5B/DWj/tpQ1VpO5hNuiV4IpzaU7h7n87h8k0LpBTaYSyYF7pi0ylw0FcwDAkMOvzhmUXdetv5YZaVKUejkCQQD3D267jIv/JtuBrt5izgNcCrH5o+F8+bpoFjpkZQH4Ck2Tly5SIAPtCAiTFGHk343vojlgq/LygKYEyr0LV9G3AkEA63OMq8W1F5RMsUll4Vb7QlgiEl9YEzfNxaa4wtxzqBmZ8ASZBHIt4jENDw2uGL1IcZRSipUqjjka11HWi+icVQJBAJUvdng9+FOMjUQT6inTqOetdab/NKwYyF0N/xicfcHfxtR2l/vzZSt+jF70EeD4tWacmPUtH7kbwiRmoBz3XKUCQDyv38Y2g2K8ergHbxcR0FldVgreQFlTvNoBCwZOxBDD6IWQ6c/XjjQK6I7Eu+bsgsujq1LE998IoP52vZH6NrECQQCQP4EAAu9f1mW7+pXg9psc7arYtFwzKfYArDc3rKHMRpbTiwBCUXZGyy/mfSW6Onu70EJsG44ePxy8ytm1KZ+9" />
+        
+        <!-- init end  -->
+
+    </application>
+            </manifest>
+
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions><![CDATA[
+            <key>UIDeviceFamily</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+            </array>
+        ]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.paojiao</extensionID>
+    </extensions>
+</application>
