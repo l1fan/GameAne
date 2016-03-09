@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="m4399_ope_dialog_text_green">#67b512</color>
+    <color name="m4399_ope_dialog_text_grey">#999999</color>
+    <color name="m4399_ope_usercenter_orange">#FFFF7F17</color>
+    <color name="m4399_ope_usercenter_white">#FFFFFFFF</color>
+    <color name="m4399_ope_usercenter_black">#FF333333</color>
+    <color name="m4399_ope_usercenter_grey">#FF999999</color>
+    <color name="m4399_ope_usercenter_grey_light">#FFAAAAAA</color>
+    <color name="m4399_ope_usercenter_brown">#FF8F5005</color>
+    <color name="m4399_ope_usercenter_nav_bar_bg">#FFFF9515</color>
+	<color name="m4399_ope_transparent">#00000000</color>
+</resources>

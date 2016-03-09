@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 个人中心Activity by.zhengxu -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/m4399_ope_usercenter_white"
+    android:orientation="vertical"
+    android:id="@+id/usercenter_activity_main"
+    tools:context="${packageName}.${activityClass}" >
+    <fragment
+        android:id="@+id/usercenter_fragment"
+        android:name="cn.m4399.operate.ui.fragment.UserCenterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

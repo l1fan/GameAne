@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="m4399_ope_usercenter_avatar_size">65dp</dimen>
+    <dimen name="m4399_ope_usercenter_nickname_font_size">18sp</dimen>
+    <dimen name="m4399_ope_usercenter_username_font_size">12sp</dimen>
+    <dimen name="m4399_ope_usercenter_youbi_label_font_size">13sp</dimen>
+    <dimen name="m4399_ope_usercenter_youbi_balance_font_size">13sp</dimen>
+    <dimen name="m4399_ope_usercenter_account_type_image_size">18dp</dimen>
+    <dimen name="m4399_ope_dialog_common_width">300dp</dimen>
+    <dimen name="m4399_ope_dialog_common_height">185dp</dimen>
+
+</resources>

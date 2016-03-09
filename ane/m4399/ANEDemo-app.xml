@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/20.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>cn.m4399.game</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+        <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+        
+        <!-- Common permission -->
+       <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+       <uses-permission android:name="android.permission.INTERNET" />
+       <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+       <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+       <!-- For Dial custom service hotline -->
+       <uses-permission android:name="android.permission.CALL_PHONE" />
+       <!-- SMS pay permission -->
+       <uses-permission android:name="android.permission.SEND_SMS" />
+       <uses-permission android:name="android.permission.READ_SMS" />
+       <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+       <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+       <!-- Alipay permission -->
+       <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <!-- YouYiFu permission -->
+       <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+       <uses-permission android:name="android.permission.RECEIVE_SMS" />
+       <uses-permission android:name="android.permission.WRITE_SMS" />
+       
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true" >
+
+        <!-- For 4399 recharging SDK. 请不要在此处修改RechargeActivity的方向设置，因为某些2.3的机型启动Activity总是先启动竖屏，然后强制转换成横屏，这会导致潜在问题. -->
+        <!-- activity的配置不能少于orientation|screenSize|keyboardHidden，这些配置是为了防止Activity被系统或第三方界面强拉成竖屏时，发生重建而加入的。SDK的Activity支持横屏或竖屏，但不支持横竖屏切换，否则会包初始化问题-->
+        <activity
+            android:name="cn.m4399.recharge.ui.activity.RechargeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:theme="@style/m4399ActivityTheme" />
+        <!-- For 4399 Operation SDK -->
+        <activity
+            android:name="cn.m4399.operate.ui.activity.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@style/m4399TransparentStyle" />
+        <activity
+            android:name="cn.m4399.operate.ui.activity.UserCenterActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.m4399.operate.ui.activity.CustomWebActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <service
+            android:name="cn.m4399.recharge.service.smsm.SmsmService"
+            android:enabled="true"
+            android:exported="false"
+            android:process="system" >
+        </service>
+
+        <receiver android:name="cn.m4399.recharge.service.smsm.SmsmStartReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 以下为第三方支付SDK Activity&Service配置 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- For YouYiFu -->
+        <activity
+            android:name="com.arcsoft.hpay100.HPaySdkActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/hpay_dialog_style" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.web.HPayWebActivity"
+            android:screenOrientation="behind"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/hpay_custom_confim_dialog" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.web.HPayWebFullActivity"
+            android:screenOrientation="behind"
+            android:configChanges="keyboardHidden|screenSize|orientation" >
+        </activity>
+
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start -->
+        <!-- 设置AppKey,需要添加 m.前缀 -->
+        <meta-data android:name="appKey" android:value="m.40027" />
+        <!-- 设置DEBUG模式,用于接入过程中开关日志输出,发布时必须设置为false或 -->
+        <meta-data android:name="debugMode" android:value="false" />
+        <!-- 设置横竖屏方向，0为横屏，1为竖屏,6为180度横屏,7为180度竖屏 -->
+        <meta-data android:name="orientation" android:value="1" />
+        
+        <!-- init end  -->
+
+    </application>
+            </manifest>
+
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions><![CDATA[
+            <key>UIDeviceFamily</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+            </array>
+        ]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.m4399</extensionID>
+    </extensions>
+</application>

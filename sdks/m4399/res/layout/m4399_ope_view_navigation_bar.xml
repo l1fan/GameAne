@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  个人中心 导航栏 by.zhengxu  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@color/m4399_ope_usercenter_nav_bar_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+    <ImageView 
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/m4399_ope_nav_logo"
+        />
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/m4399_ope_usercenter_white"
+        android:paddingLeft="5dp"
+        android:id="@+id/navigation_title"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:id="@+id/navigation_right_view_group"
+    	android:layout_gravity="center_vertical"
+    	android:gravity="center_vertical"
+    	>
+
+        <Button
+            android:id="@+id/back_to_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/m4399_ope_nav_btn_selector"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="#FF8F5005"
+            android:text="@string/m4399_ope_usercenter_back_to_game" />
+
+    </LinearLayout>
+
+</LinearLayout>
