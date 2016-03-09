@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/20.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.yiyou.gamesdk.testapp</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+             <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+        <uses-permission android:name="ANDROID.PERMISSION.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        <uses-permission android:name="ANDROID.PERMISSION.WRITE_SETTINGS"/>
+        <!-- 自动添加短信验证码权限 -->
+        <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+        <uses-permission android:name="android.permission.READ_SMS"/>
+        <uses-permission android:name="android.permission.WRITE_SMS" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.webkit.permission.PLUGIN" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+        
+        <uses-sdk
+            android:minSdkVersion="8"
+            android:targetSdkVersion="21" />
+
+
+        <application android:allowBackup="true" >
+      
+            <!--该Activity必须添加-->
+          	<activity
+          	    android:name="com.yiyou.gamesdk.container.MainActivity"
+          	    android:theme="@android:style/Theme.Translucent"
+          	    android:configChanges="screenSize|orientation|keyboardHidden"
+          	    android:launchMode="singleTask"
+          	    android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+          	<!-- 悬浮窗service,漏掉会造成SDK初始化失败-->
+          	<service android:name="com.yiyou.gamesdk.container.FloatService" />
+
+          	<!-- alipay sdk begin -->
+          	<activity
+          	    android:name="com.alipay.sdk.app.H5PayActivity"
+          	    android:configChanges="orientation|keyboardHidden|navigation"
+          	    android:exported="false"
+          	    android:screenOrientation="behind"
+          	    android:windowSoftInputMode="adjustResize|stateHidden">
+          	</activity>
+          	<activity
+          	    android:name="com.alipay.sdk.auth.AuthActivity"
+          	    android:configChanges="orientation|keyboardHidden|navigation"
+          	    android:exported="false"
+          	    android:screenOrientation="behind">
+          	</activity>
+
+          	<!-- alipay sdk end -->
+
+          	<!-- 现在支付 -->
+          	<activity
+          	    android:theme="@android:style/Theme.Dialog"
+          	    android:name="com.ipaynow.plugin.activity.PayMethodActivity"
+          	    android:configChanges="keyboardHidden|orientation"
+          	    android:screenOrientation="portrait"
+          	    android:exported="false">
+          	</activity>
+          	<activity
+          	    android:name="com.ipaynow.plugin.inner_plugin.prepay_plugin.activity.PrePayActivity"
+          	    android:windowSoftInputMode="adjustResize"
+          	    android:screenOrientation="portrait" >
+          	</activity>
+          	<activity
+          	    android:name="com.ipaynow.plugin.inner_plugin.prepay_plugin.activity.NotifyActivity"
+          	    android:configChanges="orientation"
+          	    android:exported="false"
+          	    android:screenOrientation="portrait" >
+          	</activity>
+
+          	<!-- 银联 -->
+          	<activity
+          	    android:name="com.unionpay.uppay.PayActivity"
+          	    android:configChanges="orientation|keyboardHidden"
+          	    android:excludeFromRecents="true"
+          	    android:label="@string/app_name"
+          	    android:screenOrientation="portrait" >
+          	</activity>
+
+          	<!-- 微信简版 -->
+          	<activity
+          	    android:name="com.ipaynow.plugin.inner_plugin.wechatwp.activity.WeChatNotifyActivity"
+          	    android:configChanges="orientation|keyboardHidden"
+          	    android:theme="@android:style/Theme.NoDisplay">
+          	</activity>
+
+
+            <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+            <!-- 修改 assets 目录下的TTGameSDKConfig.cfg文件，写入游戏联运平台申请获得的 API KEY -->
+            
+            <!-- 从TT平台申请的游戏ID -->
+            <meta-data android:name="appId" android:value="10000" />
+            <!-- 屏幕方向,1竖屏，2横屏 -->
+            <meta-data android:name="orientation" android:value="1" />
+            
+            <!-- 是否打开调试模式。在为 true 的时候,会连接到联调测试环境 ,当为 false 的时候则会连接到正式环境 -->
+            <meta-data android:name="debugMode" android:value="false" />
+            <!-- 此参数仅在 debug 模式下生效,用于测试指定 CPID(debug模式下必须传，不然无法回调) -->
+            <meta-data android:name="cpId" android:value="G100" />
+
+            <!-- init end -->
+
+        </application>
+
+
+            </manifest>
+            
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions><![CDATA[
+            <key>UIDeviceFamily</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+            </array>
+        ]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.tt</extensionID>
+    </extensions>
+</application>
