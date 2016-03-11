@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:id="@+id/qm_ll_float_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/qm_float_menu_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/qm_tv_float_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qm_float_menu_account"
+            android:padding="4dp"
+            android:text="@string/qm_float_menu_account"
+            android:textColor="@color/main_white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/qm_tv_float_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qm_float_menu_gift"
+            android:padding="4dp"
+            android:text="@string/qm_float_menu_gift"
+            android:textColor="@color/main_white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/qm_tv_float_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qm_float_menu_feedback"
+            android:padding="4dp"
+            android:text="@string/qm_float_menu_feedback"
+            android:textColor="@color/main_white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/qm_tv_float_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qm_float_menu_help"
+            android:padding="4dp"
+            android:text="@string/qm_float_menu_help"
+            android:textColor="@color/main_white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/qm_tv_float_forum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qm_float_menu_forum"
+            android:padding="4dp"
+            android:text="@string/qm_float_menu_forum"
+            android:textColor="@color/main_white"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_list_item_height"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/qm_tree_item_selector">
+
+    <TextView
+        android:id="@+id/item_lv_qmid"
+        android:textColor="@color/main_black"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_20"/>
+
+    <Button
+        android:id="@+id/item_btn_del"
+        android:background="@drawable/qm_btn_del"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_margin="13dp"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

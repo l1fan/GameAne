@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dialog_common"
+    android:orientation="vertical">
+
+    <FrameLayout
+        style="@style/title_common_container"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/qmCloseDialog"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/qm_btn_back_selector" />
+
+        <TextView
+            style="@style/title_common_text"
+            android:layout_gravity="center"
+            android:text="@string/qm_title_bind" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/qmBindTelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/input_common_container"
+            android:orientation="horizontal">
+
+            <com.qmyxzs.sdk.ui.controls.EmailAutoCompleteTextView
+                android:id="@+id/qmBindTelAccount"
+                style="@style/input_common_edit"
+                android:hint="@string/qm_hint_account_phone"
+                android:inputType="phone"
+                android:nextFocusForward="@+id/qmRegTelPwd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/input_common_container"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/qmBindTelPwd"
+                style="@style/input_common_edit"
+                android:hint="@string/qm_hint_pwd"
+                android:inputType="textEmailAddress"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/input_common_container"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/qmBindTelCode"
+                    style="@style/input_common_edit"
+                    android:layout_weight="2"
+                    android:hint="@string/qm_hint_phonecode"
+                    android:inputType="number"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/qmBindSendTelCode"
+                style="@style/button_common_green"
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/qm_btn_phonecaptcha"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/qmBindTelCommit"
+            style="@style/button_common_green"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/qm_btn_regcommit" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dialog_common"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/qm_title_black_normal"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/qmWebViewBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/qm_btn_back_selector" />
+
+        <TextView
+            android:id="@+id/qmWebViewTitle"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/main_white"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_green" />
+
+    <WebView
+        android:id="@+id/qmWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</LinearLayout>

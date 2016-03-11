@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dialog_common"
+    android:orientation="vertical">
+
+    <FrameLayout
+        style="@style/title_common_container"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/qmCloseDialog"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/qm_btn_back_selector" />
+
+        <TextView
+            style="@style/title_common_text"
+            android:layout_gravity="center"
+            android:text="@string/qm_title_paylist" />
+    </FrameLayout>
+
+    <com.qmyxzs.sdk.ui.controls.pull.NiceRefreshLayout
+        android:id="@+id/rl_pay_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ListView
+            android:id="@+id/pay_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:layout_weight="1.0"/>
+
+    </com.qmyxzs.sdk.ui.controls.pull.NiceRefreshLayout>
+
+</LinearLayout>

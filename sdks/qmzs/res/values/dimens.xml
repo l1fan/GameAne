@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text_size_12" type="dimen">12dip</item>
+    <item name="text_size_14" type="dimen">14dip</item>
+    <item name="text_size_15" type="dimen">15dip</item>
+    <item name="text_size_16" type="dimen">16dip</item>
+    <item name="text_size_17" type="dimen">17dip</item>
+    <item name="text_size_18" type="dimen">18dip</item>
+    <item name="text_size_19" type="dimen">19dip</item>
+    <item name="text_size_20" type="dimen">20dip</item>
+    <item name="text_size_24" type="dimen">24dip</item>
+    <item name="text_size_32" type="dimen">32dip</item>
+    <item name="default_list_item_height" type="dimen">36dip</item>
+    <item name="default_tree_padding" type="dimen">10dip</item>
+    <item name="default_list_padding" type="dimen">5dip</item>
+</resources>

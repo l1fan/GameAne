@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="activity_transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="progress_dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">#00ffffff</item>
+    </style>
+
+    <style name="dialog_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/dialog_white</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:minWidth">360dp</item>
+    </style>
+
+    <style name="dialog_progress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/dialog_white</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:minWidth">300dp</item>
+    </style>
+
+    <style name="title_common_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/qm_title_black_normal</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="title_common_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_19</item>
+        <item name="android:textColor">@color/main_white</item>
+    </style>
+
+    <style name="input_common_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:background">@drawable/qm_input_container_normal</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="input_common_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/qm_corner_normal</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/main_black</item>
+        <item name="android:textColorHint">@color/main_gray</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textCursorDrawable" tools:ignore="NewApi">@null</item>
+    </style>
+
+    <style name="setting_common_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/qm_setting_container_selector</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="button_common_green">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/qm_btn_green_selector</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="button_common_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/qm_btn_gray_selector</item>
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="button_common_blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/qm_btn_blue_selector</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="button_common_gray_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/qm_btn_gray_right_selector</item>
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="radio_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_17</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pay_money_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="pay_info_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="pay_info_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="pay_info_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="pay_detail_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+	<style name="TreeNodeStyle">
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="float_menu_left_anim">
+        <item name="android:windowEnterAnimation">@anim/qm_float_left_in</item>
+        <item name="android:windowExitAnimation">@anim/qm_float_left_out</item>
+    </style>
+
+    <style name="float_menu_right_anim">
+        <item name="android:windowEnterAnimation">@anim/qm_float_right_in</item>
+        <item name="android:windowExitAnimation">@anim/qm_float_right_out</item>
+    </style>
+</resources>

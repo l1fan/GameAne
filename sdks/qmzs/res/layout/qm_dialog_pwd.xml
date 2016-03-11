@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dialog_common"
+    android:orientation="vertical">
+
+    <FrameLayout
+        style="@style/title_common_container"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/qmCloseDialog"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/qm_btn_back_selector" />
+
+        <TextView
+            style="@style/title_common_text"
+            android:layout_gravity="center"
+            android:text="@string/qm_title_pwd" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        style="@style/input_common_container"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/qmOldPwd"
+            android:hint="@string/qm_hint_old_pwd"
+            style="@style/input_common_edit"
+            android:inputType="textPassword"
+            android:password="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/input_common_container"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/qmNewPwd"
+            android:hint="@string/qm_hint_new_pwd"
+            style="@style/input_common_edit"
+            android:inputType="textPassword"
+            android:password="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/input_common_container"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/qmNewPwd2"
+            android:hint="@string/qm_hint_new_pwd2"
+            style="@style/input_common_edit"
+            android:inputType="textPassword"
+            android:password="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/qm_btn_modify_confirm"
+        style="@style/button_common_green"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/qm_btn_modify_confirm" />
+</LinearLayout>

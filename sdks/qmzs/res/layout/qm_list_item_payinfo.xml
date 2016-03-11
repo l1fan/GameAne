@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/qm_tree_item_selector"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+        <TextView
+            android:id="@+id/tv_payinfo_gamename"
+            android:textColor="@color/main_black"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_18"
+            android:text="梦幻西游"/>
+
+        <TextView
+            android:id="@+id/tv_payinfo_payfee"
+            android:textColor="@color/main_black"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/text_size_18"
+            android:text="200元"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/tv_payinfo_time_d"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="支付时间："/>
+
+        <TextView
+            android:id="@+id/tv_payinfo_time"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_payinfo_time_d"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="2016/01/01"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/tv_payinfo_id_d"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="订  单  号："/>
+
+        <TextView
+            android:id="@+id/tv_payinfo_id"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_payinfo_id_d"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="00000000100100000100101010"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/tv_payinfo_title_d"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="商品名称："/>
+
+        <TextView
+            android:id="@+id/tv_payinfo_title"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_payinfo_title_d"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="梦幻币"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/tv_payinfo_msg_d"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="商品描述："/>
+
+        <TextView
+            android:id="@+id/tv_payinfo_msg"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_payinfo_msg_d"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="这是梦幻币，呵呵呵"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/tv_payinfo_flag_d"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="支付状态："/>
+
+        <TextView
+            android:id="@+id/tv_payinfo_flag"
+            android:textColor="@color/main_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_payinfo_flag_d"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="支付成功"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:background="@drawable/qm_tree_item_selector_sub">
+
+    <ImageView
+        android:id="@+id/iv_item_payway_thumb_sub"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_item_payway_thumb_sub"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/iv_item_payway_name_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16"/>
+
+        <TextView
+            android:id="@+id/iv_item_payway_info_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_item_payway_name_sub"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_12"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:src="@drawable/qm_arrow_down"
+        android:id="@+id/iv_item_payway_arrow_sub"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/qm_switch_close" android:state_focused="false" android:state_checked="false"/>
+    <item android:drawable="@drawable/qm_switch_open" android:state_checked="true"/>
+
+</selector>
