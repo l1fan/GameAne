@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/20.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.example.bfgamesdkdemo</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+        <uses-permission android:name="android.permission.CALL_PHONE"/>
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <uses-permission android:name="android.permission.VIBRATE" />
+    
+        <!-- 在SDCard中创建与删除文件权限 -->
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+        <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+        <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true" >
+        <service android:name="com.baofeng.game.sdk.BallWindowServices"></service>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxLoginActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxAccountCenterActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme">
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxGoWebsiteActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxBaseActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxPaymentActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxRegistertActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxGuestLoginTipActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxBindAcctountActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxForgetPwdActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxThirdLoginActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CxChangePwdActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme" >
+        </activity>
+        <activity
+            android:name="com.baofeng.game.sdk.activity.CustomerActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CxCustomTheme" >
+        </activity>
+        <!-- 银联 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+      	</activity>    
+    		<activity
+          android:name="com.alipay.sdk.auth.AuthActivity"
+          android:configChanges="orientation|keyboardHidden|navigation"
+          android:exported="false"
+          android:screenOrientation="behind">
+    		</activity>
+        
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <!-- 配置appId或gameId,注意添加bf.前缀 -->
+        <meta-data android:name="gameId" android:value="bf.20922" />
+        <!-- init end  -->
+
+
+    </application>
+            </manifest>
+
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions>
+      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
+          </InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.baofeng</extensionID>
+    </extensions>
+</application>

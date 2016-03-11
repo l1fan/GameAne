@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BFYX</string>
+    <string name="login">登录</string>
+    <string name="guest_login">游客登陆</string>
+    <string name="register">注册</string>
+    <string name="sure">确认</string>
+    <string name="cancel">取消</string>
+    <string name="account">用户名：</string>
+    <string name="password">密码：</string>
+    <string name="back">返回</string>
+    <string name="verify">验证</string>
+    <string name="new_password">新密码</string>
+    <string name="confim_password">确认密码</string>
+    <string name="change_password">修改密码</string>
+    <string name="save_password">保存密码，下次快速登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="third_login">其他方式登录</string>
+    <string name="login_hint">手机号/邮箱/用户名</string>
+    <string name="network_error">当前网络不可用，请检查网络是否开启</string>
+    <string name="invaild_account_input">您的输入有误，请输入6-50位的用户名</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="mail_register">使用邮箱方式注册</string>
+    <string name="phone_register">使用手机方式注册</string>
+    <string name="input_verification">请输入验证码</string>
+    <string name="confim_password_error">两次输入的密码不一致，请检查输入</string>
+    <string name="invail_password">您输入的密码有误，请输入正确的密码</string>
+    <string name="invail_phone">请输入正确的手机号</string>
+    <string name="invail_mail">请输入正确的邮箱账号</string>
+    <string name="account_hint">手机号/邮箱/用户名</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="mail_bind">请输入绑定的邮箱号</string>
+    <string name="phone_bind">请输入绑定的手机号</string>
+    <string name="guest_login_tips">您当前的账号为游客账号，为了您的账号安全请您绑定手机或者邮箱.绑定完后可使用绑定账号登陆</string>
+    <string name="guest_pay_tips">游客账号不能进行充值操作</string>
+    <string name="bind_phone">绑定手机</string>
+    <string name="bind_email">绑定邮箱</string>
+    <string name="bind_cancel">下次绑定，继续游戏</string>
+    <string name="hint_password">请输入6位数以上密码</string>
+    <string name="hint_phone">请输入手机号</string>
+    <string name="hint_email">请输入邮箱账号</string>
+    <string name="hint_old_password">请输入旧密码</string>
+    <string name="hint_new_password">请输入6位数以上新密码</string>
+    <string name="hint_confim_passwrod">请再次输入6位数以上密码</string>
+    <string name="hint_confim_new_password">请再次输入6位数以上密码</string>
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="return_game">返回游戏</string>
+    <string name="account_id">用户名：</string>
+    <string name="phone_findpwd_tips">请使用注册的手机号或者绑定的手机号找回密码.</string>
+    <string name="email_findpw_tips">温馨提示:系统会随机发送一个验证码到你邮箱，请注意查收.</string>
+
+</resources>

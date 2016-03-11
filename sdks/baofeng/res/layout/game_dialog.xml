@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:minHeight="150dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical" 
+    android:background="@color/main_bg"
+    >
+    
+    <include layout="@layout/title"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="21.0dp"
+        android:textColor="@color/blue"
+        android:textSize="16.0sp" />
+
+    <include
+         android:id="@+id/game_dialog_layout"
+         layout="@layout/confim_button_layout"/>
+</LinearLayout>

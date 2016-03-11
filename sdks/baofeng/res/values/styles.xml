@@ -1,0 +1,53 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <!-- Application theme. -->
+    
+    <style name="CxCustomTheme" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+	
+    <style name="ProgressDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+    	<item name="android:windowNoTitle">true</item>
+	</style>
+	
+     <style name="AccountEditTextStyle">
+    	<item name="android:background">@drawable/edit_bg</item>
+    	<item name="android:paddingLeft">10dp</item>
+    	<item name="android:drawablePadding">10dp</item>
+    	<item name="android:textColor">@color/black</item>
+    	<item name="android:textColorHint">@color/hint_color</item>
+	</style>
+	
+     <style name="PasswordEditTextStyle">
+    	<item name="android:background">@drawable/edit_bg</item>
+    	<item name="android:paddingLeft">10dp</item>
+    	<item name="android:inputType">textPassword</item>
+    	<item name="android:drawableLeft">@drawable/icon_password</item>
+    	<item name="android:drawablePadding">10dp</item>
+    	<item name="android:textColor">@color/black</item>
+    	<item name="android:textColorHint">@color/hint_color</item>
+	 </style>
+	
+     <style name="CustomBlueButtonStyle">
+         <item name="android:background">@drawable/button_bg</item>
+         <item name="android:textColor">@color/blue</item>
+         <item name="android:textSize">18sp</item>
+     </style>
+     
+     <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+	    <item name="android:maxHeight">50dip</item>
+	    <item name="android:minHeight">8dip</item>
+	    <item name="android:indeterminateOnly">false</item>
+	    <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+	    <item name="android:progressDrawable">@drawable/progress_bg</item>
+</style>
+     
+     
+
+</resources>

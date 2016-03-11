@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/margin_top"
+    android:layout_marginLeft="@dimen/margin_left_and_right"
+    android:layout_marginRight="@dimen/margin_left_and_right"
+    android:orientation="vertical" >
+    
+        <EditText
+            android:id="@+id/phone_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_hight"
+            android:hint="@string/hint_phone"
+            style="@style/AccountEditTextStyle"
+            android:drawableLeft="@drawable/icon_phone"
+            android:imeOptions="actionDone"
+            android:textSize="@dimen/edit_text_size"
+            android:inputType="phone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_hight"
+            android:layout_marginTop="@dimen/margin_top">
+            
+            <Button
+                android:id="@+id/get_verification_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_hight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/get_verifycode_textsize"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/get_verify_code"
+                android:text="@string/get_verification_code" />
+
+            <EditText
+                android:id="@+id/verification_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_hight"
+                android:layout_toLeftOf="@id/get_verification_button"
+                style="@style/AccountEditTextStyle"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textSize="@dimen/edit_text_size"
+                android:drawableLeft="@drawable/icon_verifycode"
+                android:hint="@string/input_verification"/>
+
+        </RelativeLayout>
+</LinearLayout>

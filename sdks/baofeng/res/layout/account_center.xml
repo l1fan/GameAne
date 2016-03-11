@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@color/blue" >
+
+        <ImageView
+            android:id="@+id/center_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_and_right"
+            android:src="@drawable/cx_logo" />
+
+        <ImageView
+            android:id="@+id/center_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_and_right"
+            android:src="@drawable/icon_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <TextView
+                android:id="@+id/center_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_id"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/center_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_user"
+                android:textColor="@color/blue"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/center_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_user_id"
+                android:layout_marginTop="5dp"
+                android:text="@string/bind_phone"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/center_user_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_user_phone"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/blue"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/center_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_user_phone_number"
+                android:layout_marginTop="5dp"
+                android:text="@string/bind_email"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/center_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_email"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/cx_client"
+                    android:layout_width="@dimen/center_iv_width"
+                    android:layout_height="@dimen/center_iv_width"
+                    android:background="@drawable/cx_kefu" />
+
+                <ImageView
+                    android:id="@+id/change_pw"
+                    android:layout_width="@dimen/center_iv_width"
+                    android:layout_height="@dimen/center_iv_width"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/change_pd" />
+
+                <ImageView
+                    android:id="@+id/find_pw"
+                    android:layout_width="@dimen/center_iv_width"
+                    android:layout_height="@dimen/center_iv_width"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/find_pd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/change_account"
+                    android:layout_width="@dimen/center_iv_width"
+                    android:layout_height="@dimen/center_iv_width"
+                    android:background="@drawable/change_account" 
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/personal_info"
+                    android:layout_width="@dimen/center_iv_width"
+                    android:layout_height="@dimen/center_iv_width"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/user_info" />
+
+                <ImageView
+                    android:id="@+id/pay_info"
+                    android:layout_width="@dimen/center_iv_width"
+                    android:layout_height="@dimen/center_iv_width"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/charge_record" />
+            </TableRow>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backtogame"
+        style="@style/CustomBlueButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/return_game" />
+
+</LinearLayout>

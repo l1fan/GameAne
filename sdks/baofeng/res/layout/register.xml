@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:id="@+id/phone_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/phone_account_layout"
+            layout="@layout/phone_account_layout" />
+
+        <EditText
+            android:id="@+id/phone_password_edit"
+            style="@style/PasswordEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_hight"
+            android:layout_marginLeft="@dimen/margin_left_and_right"
+            android:layout_marginRight="@dimen/margin_left_and_right"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/edit_text_size"
+            android:hint="@string/hint_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mail_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/mail_account_edit"
+            style="@style/AccountEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_hight"
+            android:layout_marginLeft="@dimen/margin_left_and_right"
+            android:layout_marginRight="@dimen/margin_left_and_right"
+            android:layout_marginTop="@dimen/margin_top"
+            android:drawableLeft="@drawable/icon_email"
+            android:textSize="@dimen/edit_text_size"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/mail_password"
+            style="@style/PasswordEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_hight"
+            android:layout_marginLeft="@dimen/margin_left_and_right"
+            android:layout_marginRight="@dimen/margin_left_and_right"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/edit_text_size"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/mail_comfim_password"
+            style="@style/PasswordEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_hight"
+            android:layout_marginLeft="@dimen/margin_left_and_right"
+            android:layout_marginRight="@dimen/margin_left_and_right"
+            android:layout_marginTop="@dimen/margin_top"
+            android:drawableLeft="@drawable/icon_confim_paw"
+            android:hint="@string/hint_confim_passwrod"
+            android:textSize="@dimen/edit_text_size"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/button_layout"
+        layout="@layout/confim_button_layout" />
+
+</LinearLayout>

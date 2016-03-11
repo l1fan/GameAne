@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- values xhdpi -->
+    <dimen name="center_iv_width">60dip</dimen>
+    <dimen name="edit_text_hight">35dp</dimen>
+    <dimen name="title_hight">45dp</dimen>
+    <dimen name="margin_top">11dp</dimen>
+    <dimen name="guest_login_textsize">20sp</dimen>
+</resources>

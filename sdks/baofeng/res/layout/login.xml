@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:layout_marginTop="@dimen/margin_top" >
+
+        <Button
+            android:id="@+id/guest_login"
+            android:layout_width="@dimen/guest_button_width"
+            android:layout_height="@dimen/guest_button_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/guest_login"
+            android:text="@string/guest_login"
+            android:textColor="@color/guest_text_color"
+            android:textSize="@dimen/guest_login_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/guest_login"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/AccountEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_hight"
+                android:drawableLeft="@drawable/icon_user"
+                android:hint="@string/login_hint"
+                android:textSize="@dimen/edit_text_size"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/PasswordEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_hight"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/password_hint"
+                android:textSize="@dimen/edit_text_size"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:layout_marginTop="@dimen/margin_top" >
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox_bg"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/forget_password"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/forget_password"
+            android:layout_toRightOf="@id/checkbox"
+            android:singleLine="true"
+            android:text="@string/save_password"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+    <include layout="@layout/confim_button_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/third_login" />
+
+        <ImageButton
+            android:id="@+id/weixin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/weixin" />
+
+        <ImageButton
+            android:id="@+id/qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/qq" />
+
+        <ImageButton
+            android:id="@+id/sina_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sina" />
+        
+        <ImageButton
+            android:id="@+id/baofeng_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/baofeng" />
+    </LinearLayout>
+
+</LinearLayout>

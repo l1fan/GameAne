@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minWidth="400dp"
+    android:minHeight="250dp"
+    android:background="@color/main_bg" >
+    
+    <TextView
+        android:id="@+id/update_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_hight"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/blue" />
+
+    <ProgressBar
+        android:id="@+id/update_download_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        style="@style/ProgressBar_Mini"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/update_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:id="@+id/update_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/update_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sure"
+                style="@style/CustomBlueButtonStyle" />
+
+            <Button
+                android:id="@+id/cancel_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                style="@style/CustomBlueButtonStyle"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/update_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            style="@style/CustomBlueButtonStyle"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

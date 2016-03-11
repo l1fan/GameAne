@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 非 touch时背景 -->
+    <item
+        android:drawable="@drawable/ball_bg"
+        android:state_focused="true"
+        android:state_pressed="true"/>
+    
+     <!-- touch时背景 -->
+    <item android:state_focused="false" android:state_pressed="true"
+        android:drawable="@drawable/ball_bg_touch" />
+</item>
