@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/20.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>cn.jugamesdk.demo.ju</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+        <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+               <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+        
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true" >
+
+        <activity
+            android:name="cn.jugame.sdk.activity.SdkWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="cn.jugame.sdk.activity.SdkWebActivityTranslucent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service
+            android:name="cn.jugame.sdk.service.DownloadService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jugame.sdk.service.DOWNLOAD_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="cn.jugame.sdk.service.ShowMsgService"            
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jugame.sdk.service.SHOWMSG_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start -->
+        <meta-data android:name="cpId" android:value="8868" />
+        <meta-data android:name="gameId" android:value="1000" />
+        <!-- 设置DEBUG模式 -->
+        <meta-data android:name="debugMode" android:value="false" />
+        <!-- 设置横竖屏方向，0为横屏，1为竖屏 -->
+        <meta-data android:name="orientation" android:value="1" />
+        
+        <!-- init end  -->
+
+    </application>
+            </manifest>
+
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions><![CDATA[
+            <key>UIDeviceFamily</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+            </array>
+        ]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.m8868</extensionID>
+    </extensions>
+</application>
