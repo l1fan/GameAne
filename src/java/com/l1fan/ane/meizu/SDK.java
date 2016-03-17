@@ -12,6 +12,7 @@ import com.l1fan.ane.SDKContext;
 import com.meizu.gamecenter.sdk.LoginResultCode;
 import com.meizu.gamecenter.sdk.MzAccountInfo;
 import com.meizu.gamecenter.sdk.MzBuyInfo;
+import com.meizu.gamecenter.sdk.MzGameBarPlatform;
 import com.meizu.gamecenter.sdk.MzGameCenterPlatform;
 import com.meizu.gamecenter.sdk.MzLoginListener;
 import com.meizu.gamecenter.sdk.MzPayListener;
@@ -22,17 +23,38 @@ public class SDK extends SDKContext {
 	private String mAppId;
 	private String mUid;
 	private String mAppSecret;
+	private MzGameBarPlatform mzGameBarPlatform;
 
 	public void init() throws JSONException {
+		regLifecycle();
+		
 		JSONObject init = getJsonData();
 		Bundle md = getMetaData();
 		mAppId = init.optString(APPID,String.valueOf(md.get(APPID)));
 		String appKey =  init.optString(APPKEY,md.getString(APPKEY));
 		mAppSecret = init.optString(APPSECRET,md.getString(APPSECRET));
 		
+		mzGameBarPlatform = new MzGameBarPlatform(getActivity(), MzGameBarPlatform.GRAVITY_RIGHT_BOTTOM);
+		mzGameBarPlatform.onActivityCreate();
+
 		MzGameCenterPlatform.init(getActivity(), mAppId, appKey);
-		
 		dispatchData(EVENT_INIT);
+
+	}
+	
+	@Override
+	protected void onResume() {
+		mzGameBarPlatform.onActivityResume();
+	}
+	
+	@Override
+	protected void onPause() {
+		mzGameBarPlatform.onActivityPause();
+	}
+	
+	@Override
+	public void dispose() {
+		mzGameBarPlatform.onActivityDestroy();
 	}
 	
 	public void userLogin(){
