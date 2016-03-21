@@ -54,7 +54,7 @@ public class SDK extends SDKContext {
 		    // 个人中心里切换帐号的回调
 		    @Override
 		    public void onSwitchUserAccountFinished(User userInfo) {
-		    	loginSuc(userInfo);
+		    	dispatchData(EVENT_LOGOUT, "success");
 		    }
 
 		});
