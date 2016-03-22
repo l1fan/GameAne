@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全局变量 -->
+    <string name="ipay_common_unit">酷币</string>
+    <string name="ipay_token_unit">赠币</string>
+    <string name="ipay_common_pay_fail">支付失败，请重试。</string>
+    <string name="ipay_common_dialog_title">提  示</string>
+    <string name="pay_network_unconnent">网络连接失败，请检查网络！</string>
+    <string name="ipay_title_tv_sub">酷派收银台</string>
+    <string name="ipay_common_loading">正在加载%s...</string>
+    
+    <!-- 一键支付 -->
+    <string name="aipay_pay_fail">支付失败，请重试。</string>
+
+    <!-- 查询界面  interface-->
+    <string name="pay_query_payresult_time_out">未查到支付结果，是否继续查询</string>
+    <string name="pay_query_chargeresult_time_out">未查到支付结果，是否继续查询</string>
+    <string name="pay_querying_payresult">正在查询支付结果...</string>
+    <string name="pay_querying_chargeresult">正在查询充值结果...</string>
+    <string name="pay_querying_Ensure">继续查询</string>
+    <string name="pay_querying_Cancel">取消查询</string>
+
+    <!-- 财付通/wap -->
+    <string name="pay_tenpay_title">财付通提示</string>
+    <string name="pay_tenpay_init">正在初始化,请稍侯。。。</string>
+    <string name="pay_tenpay_err_66200004">稍后查询</string>
+    <string name="pay_tenpay_err_66210013">查询订单信息出错</string>
+    <string name="pay_tenpay_err_66210020">暂不支持此支付类型</string>
+    <string name="pay_tenpay_err_66210035">此订单已支付成功，请勿重复支付</string>
+    <string name="pay_tenpay_err_data">应用出现异常，请退出重新登录</string>
+
+    <!-- game pay -->
+    <string name="ipay_sub_game_final_rate_msg">本次充值%1$s元,其中支付商户%2$s元,剩余%3$s元充入酷派账户%4$s酷币（代第三方收取%5$s元手续费）.</string>
+    <string name="ipay_sub_game_final_no_rate_msg">本次充值%1$s元,其中支付商户%2$s元,剩余%3$s元充入酷派账户%4$s酷币.</string>
+   	<string name="ipay_sub_game_chargefeee_tips">本次支付%1$s元，其中%2$s元为通道手续费，实际到账%3$s元</string>
+   	<string name="ipay_sub_game_final_rate_msg_new">支付%1$s元，其中支付商品%2$s元(含%3$s元手续费)，剩余%4$s元将存入%5$s酷币(其中%6$s元为手续费)</string>
+   	<string name="ipay_sub_game_final_rate_msg_charge">支付%1$s元，其中支付商品%2$s元，剩余%3$s元将存入%4$s酷币(其中%5$s元为手续费)</string>
+   	<string name="ipay_sub_game_final_rate_msg_pay">支付%1$s元，其中支付商品%2$s元(含%3$s元手续费)，剩余%4$s元将存入%5$s酷币</string>
+    <string name="ipay_sub_game_balance_yuan">%1$s元</string>
+    
+</resources>
