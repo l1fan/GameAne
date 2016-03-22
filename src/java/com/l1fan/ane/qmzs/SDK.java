@@ -3,6 +3,8 @@ package com.l1fan.ane.qmzs;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.Handler;
+
 import com.l1fan.ane.SDKContext;
 import com.qmyxzs.sdk.QMCode;
 import com.qmyxzs.sdk.QMGameSdk;
@@ -22,7 +24,6 @@ public class SDK extends SDKContext {
 				switch (code) {
 				case QMCode.CODE_INIT_SUCCESS:
 					dispatchData(EVENT_INIT);
-					QMGameSdk.getInstance().setInternalLoginResponse(loginResp);
 					break;
 				case QMCode.CODE_INIT_FAILED:
 					dispatchError(EVENT_INIT, msg);
@@ -35,45 +36,81 @@ public class SDK extends SDKContext {
 		
 		//true is landscape ,false is portrait
 		QMGameSdk.getInstance().setOrientation(false); 
+		
+		QMGameSdk.getInstance().setInternalLoginResponse(new IResponse<UserInfo>() {
+			
+			@Override
+			public void onResponse(int code, String msg, UserInfo data) {
+				switch (code) {
+				case QMCode.CODE_LOGIN_SUCCESS:
+					dispatchData(EVENT_LOGOUT);
+					break;
+				case QMCode.CODE_LOGIN_FAILED:
+				case QMCode.CODE_UNINIT:
+				case QMCode.CODE_UNLOGIN:
+					dispatchError(EVENT_LOGIN, msg);
+					break;
+				default:
+					break;
+				}
+			}
+		});
+		
 	}
 	
 	public void userLogin(){
-		QMGameSdk.getInstance().login(loginResp);
+		QMGameSdk.getInstance().login(new IResponse<UserInfo>() {
+			
+			@Override
+			public void onResponse(int code, String msg, UserInfo data) {
+				switch (code) {
+				case QMCode.CODE_LOGIN_SUCCESS:
+					if (data != null) {
+						JSONObject login = new JSONObject();
+						try {
+							login.put(UID, data.getAccountId());
+							login.put(TOKEN, data.getsId());
+							login.put(UNAME, data.getQmId());
+						} catch (JSONException e) {
+							e.printStackTrace();
+						}
+						dispatchData(EVENT_LOGIN, login);
+						QMGameSdk.getInstance().openFloatView();
+					}else{
+						dispatchError(EVENT_LOGIN, "data is null:"+msg);
+					}
+					break;
+				case QMCode.CODE_LOGIN_FAILED:
+				case QMCode.CODE_UNINIT:
+				case QMCode.CODE_UNLOGIN:
+					dispatchError(EVENT_LOGIN, msg);
+					break;
+				default:
+					break;
+				}
+			}
+		});
 	}
 	
-	private IResponse<UserInfo> loginResp = new IResponse<UserInfo>() {
-		
-		@Override
-		public void onResponse(int code, String msg, UserInfo data) {
-			switch (code) {
-			case QMCode.CODE_LOGIN_SUCCESS:
-				if (data != null) {
-					JSONObject login = new JSONObject();
-					try {
-						login.put(UID, data.getAccountId());
-						login.put(TOKEN, data.getsId());
-						login.put(UNAME, data.getQmId());
-					} catch (JSONException e) {
-						e.printStackTrace();
-					}
-					dispatchData(EVENT_LOGIN, login);
-				}else{
-					dispatchError(EVENT_LOGIN, "data is null:"+msg);
-				}
-				break;
-			case QMCode.CODE_LOGIN_FAILED:
-			case QMCode.CODE_UNINIT:
-			case QMCode.CODE_UNLOGIN:
-				dispatchError(EVENT_LOGIN, msg);
-				break;
-			default:
-				break;
-			}
-		}
-	};
-	
 	public void switchAccount(){
-		QMGameSdk.getInstance().switchAccount(loginResp);
+		QMGameSdk.getInstance().switchAccount(new IResponse<UserInfo>() {
+			
+			@Override
+			public void onResponse(int code, String msg, UserInfo data) {
+				switch (code) {
+				case QMCode.CODE_LOGIN_SUCCESS:
+					dispatchData(EVENT_LOGOUT);
+					break;
+				case QMCode.CODE_LOGIN_FAILED:
+				case QMCode.CODE_UNINIT:
+				case QMCode.CODE_UNLOGIN:
+					dispatchError(EVENT_LOGIN, msg);
+					break;
+				default:
+					break;
+				}
+			}
+		});
 	}
 	
 	public void pay() throws JSONException{
