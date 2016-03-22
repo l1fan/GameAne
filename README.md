@@ -18,7 +18,8 @@
 |快用				|`kuaiyong`	|Y			|Y	|v2.0.3/v2.2.3 |
 |联想				|`lenovo`		|Y			|		|v2.6.1 |
 |OPPO				|`oppo`			|Y			|		|v2.0.0 |
-|搜狗				|`sogou`		|Y			|		| v1.4.30 |
+|搜狗				|`sogou`		|Y			|		|v1.4.30 |
+|酷派       |`coolpad`  |Y      |   |v1.2.8  |
 |同步推			|`tongbutui`|Y			|Y	|v4.2.0  |
 |豌豆荚			|`wandoujia`|Y			|		|v4.0.7		|
 |拇指玩			|`muzhiwan`	|Y			|		|v3.0.9		|

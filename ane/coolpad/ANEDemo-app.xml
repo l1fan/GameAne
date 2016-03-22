@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/20.0">
+    <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
+    <id>com.iapppay.coolpad360</id>
+    <filename>ANEDemo</filename>
+    <name>ANEDemo</name>
+    <versionNumber>0.0.0</versionNumber>
+    <initialWindow>
+        <content>ANEDemo.swf</content>
+    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <softKeyboardBehavior>none</softKeyboardBehavior>
+    </initialWindow>
+
+<android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+             <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+        
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        
+        <!-- bank 卡支付 -->
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+        <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+
+    <application android:allowBackup="true" >
+        
+      <!-- 添加DataEye需要配置的Meta start -->
+      <!-- DC_APPID 是一组32位的代码，可以在g.dataeye.com创建游戏后获得. -->
+      <!-- DC_CHANNEL对应于您的发布渠道，不同渠道需要做相应的修改 -->
+      <!-- “DataEye”的部分要按照实际情况设置，一定要记得替换哦 -->
+      <!-- <meta-data
+          android:name="DC_APPID"
+          android:value="A2B1B3431A880A2F2BDBE00E04BBFD1C" >
+      </meta-data>
+      <meta-data
+          android:name="DC_CHANNEL"
+          android:value="DataEye" /> -->
+      <!-- 添加DataEye需要配置的Meta end -->
+        
+        
+      <!-- 微信wap支付 -->
+       <activity
+          android:name="com.iapppay.pay.channel.weixinpay.WeixinWapPayActivity"
+          android:theme="@android:style/Theme.Translucent"
+          android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection" />
+      
+      <!-- 酷派ID SDK -->
+       <activity
+          android:name="com.coolcloud.uac.android.api.comm.AssistActivity"
+          android:configChanges="keyboardHidden|orientation|navigation"
+          android:launchMode="singleTop"
+          android:windowSoftInputMode="adjustPan"
+          android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+      <!-- 显示网页界面 -->
+      <activity
+          android:name="com.iapppay.ui.WebActivity"
+          android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+          android:launchMode="singleInstance" >
+      </activity>
+      <activity
+          android:name="com.iapppay.ui.activity.ServiceCenterActivity"
+          android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection" />
+      <activity
+          android:name="com.iapppay.fastpay.ui.InputBankCarNoActivity"
+          android:launchMode="singleTask" >
+      </activity>
+      <activity
+          android:name="com.iapppay.fastpay.ui.InputBankCarMoreInfoActivity"
+          android:launchMode="singleTask" >
+      </activity>
+      <activity
+          android:name="com.iapppay.fastpay.ui.VerificationCodeActivity"
+          android:launchMode="singleTask" >
+      </activity>
+      <activity android:name="com.iapppay.fastpay.ui.CommonWebActivity" >
+      </activity>
+
+      <!-- 收银台-普通 -->
+      <activity
+          android:name="com.iapppay.ui.activity.normalpay.PayHubActivity"
+          android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+          android:theme="@android:style/Theme.Translucent.NoTitleBar">
+      </activity>
+       <!-- 收银台-爱贝快付-->
+      <activity
+          android:name="com.iapppay.ui.activity.minipay.MiniPayHubActivity"
+          android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+          android:launchMode="singleTask"
+          android:theme="@android:style/Theme.Translucent" >
+      </activity>
+      <!-- 收银台-酷币 -->
+      <activity
+          android:name="com.iapppay.ui.activity.iapppay.IAppPayHubActivity"
+          android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+          android:launchMode="singleTask"
+          android:theme="@android:style/Theme.Translucent" >
+      </activity>
+      
+      <activity android:name="com.iapppay.ui.activity.minipay.BankCardActivity" 
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+          />
+      <!-- 游戏卡和话费卡界面-->
+      <activity
+          android:name="com.iapppay.pay.channel.gamepay.GamepayActivity"
+          android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+          android:launchMode="singleTask" >
+      </activity>
+
+      <!-- alipay sdk begin (新的支付宝) -->
+      <activity
+          android:name="com.alipay.sdk.app.H5PayActivity"
+          android:configChanges="orientation|keyboardHidden|navigation"
+          android:exported="false"
+          android:screenOrientation="portrait" >
+      </activity>
+      <activity
+          android:name="com.alipay.sdk.auth.AuthActivity"
+          android:configChanges="orientation|keyboardHidden|navigation"
+          android:exported="false"
+          android:screenOrientation="portrait" >
+      </activity>
+      <!-- alipay sdk end -->
+      <!-- 银联3.1.0 start -->
+      <activity
+          android:name="com.unionpay.uppay.PayActivity"
+          android:configChanges="orientation|keyboardHidden|screenSize"
+          android:excludeFromRecents="true"
+          android:label="@string/app_name"
+          android:screenOrientation="portrait" />
+      <!-- 银联3.1.0 end -->
+      
+        
+
+        <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+        <!-- 填写申请的酷派app id和key，注意id添加coolpad.前缀 -->
+        <meta-data android:name="appId" android:value="coolpad.2000000682" />
+        <meta-data android:name="appKey" android:value="2335581b4f0e447ea4da2750b91fe81b" />
+        <!-- 设置横竖屏，0为横屏，1为竖屏 -->
+        <meta-data android:name="orientation" android:value="1" />
+        <!-- 平台申请的应用私钥 -->
+        <meta-data android:name="privateKey" android:value="MIICXAIBAAKBgQCAk8UmGl63sjMZPNXiqLszDv8biNrHvDEG4w7+VVKTMwzlhsWCnkxMZiFBAAGnNWR1qGN7d6vfB+J+Uh4DPTpVoo7gDl7eTQb2M7t89zHPVK6DRbVw2IJmQXFQwSMMqR9YY3sHNeBvcdnbE1FiLVT5ExLtawg3H1V8jpfONPLXwwIDAQABAoGAUlxVoP6rRYgEa1oot7PVlfM5Pm3/lonZ7ctsQ0ZsSpYc4LnfsrersBSLoJNce7sbyrI+Z0xU79yhHMGFMBX8UwW4SpHkObjbVNdbVhxayZH/DhuhQUEdBMtNIKoy1kjPriVO3yi1oNG2gIfn/ZeuieWz7Xfo3G4eh35FMkgWBMECQQDs6tc9kjoCHXRgThDkjRxPKxCA63eyHVuy9U89mZd+H4NJ3GKT2sBxLNCkdV2ezoPRmX+pLttX7RpHgGkuV0fJAkEAiu79tCU86QrwYYmWLSDSQ329ZMJhuxoxdfVJNSqqTBBNw5r0/Azk/Mb7E0+a49+/5UJhOG533GqFRrJn8fIBKwJBAJ64jk7foiE8nnTOmB6mMusPDNVx6xTW+lIgal/4gDes4QYgsaIgkYDA517mijwUWteXIKG1lJmJbWutqcm0C5ECQAdaFjrOLab3WTkQGs5Qik/f+4G1d457GFrxm+ogU9qqkjLjpEsiM4vcy7R95ehhErqDBLoDvnv/dwYCstVuxPkCQH4bcFr1/Jdu51KgsY5VJI8mNOTW2TduJ0nzKt1inzgmzZpnMoAmVtf5txpHRsYZ2GWQ7rJGoUnYW3LPzw32mQY=" />
+        <meta-data android:name="publicKey" android:value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoNKUlNprDmHnt2AKv695Q+ckGp83qU38iRdXhk8CcNQor+vdN0MDn43TWZDuqIxoW7dtc35CZdSE01LmZOqoMsUKmd4ORNE0lzeYSRICdrTgWmFUQWujeGsQaYwdJM/mzfkM6jLIsO12lDtIScUPTsERmmxn17csGKHiD4R9L/QIDAQAB" />
+
+        <!-- 注意支付时的商品pid需要到平台申请(waresid) -->
+        <!-- 客户端接入使用的是酷派提供的支付SDK 3.6.2_1.2，其已经集成了账户系统，但貌似是旧版本的，所以暂时不需要服务端登录验证 -->
+        <!-- init end -->
+
+    </application>
+
+
+            </manifest>
+
+        ]]></manifestAdditions>
+    </android>
+    <iPhone>
+        <InfoAdditions><![CDATA[
+            <key>UIDeviceFamily</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+            </array>
+        ]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+<extensions>
+        <extensionID>com.l1fan.ane.coolpad</extensionID>
+    </extensions>
+</application>
