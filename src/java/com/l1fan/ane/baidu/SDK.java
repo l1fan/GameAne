@@ -67,7 +67,23 @@ public class SDK extends SDKContext {
 			}
 		});
 
-		BDGameSDK.setSuspendWindowChangeAccountListener(listener);
+		BDGameSDK.setSuspendWindowChangeAccountListener(new IResponse<Void>() {
+			
+			@Override
+			public void onResponse(int resultCode, String resultDesc, Void arg2) {
+				switch (resultCode) {
+				case ResultCode.LOGIN_SUCCESS:
+					dispatchData(EVENT_LOGOUT);
+					break;
+				case ResultCode.LOGIN_FAIL:
+					dispatchError(EVENT_LOGIN, resultDesc);
+					break;
+				case ResultCode.LOGIN_CANCEL: // TODO 操作前后的登录状态没变化
+					dispatchError(EVENT_LOGIN, ""+resultDesc);
+					break;
+				}
+			}
+		});
 		BDGameSDK.setSessionInvalidListener(new IResponse<Void>() {
 			
 			@Override
@@ -82,34 +98,32 @@ public class SDK extends SDKContext {
 		regLifecycle();
 	}
 
-	private IResponse<Void> listener = new IResponse<Void>() {
-
-		@Override
-		public void onResponse(int resultCode, String resultDesc, Void arg2) {
-			switch (resultCode) {
-			case ResultCode.LOGIN_SUCCESS:
-				JSONObject json = new JSONObject();
-				try {
-					json.put(UID, BDGameSDK.getLoginUid());
-					json.put(TOKEN, BDGameSDK.getLoginAccessToken());
-					dispatchData(EVENT_LOGIN, json);
-					BDGameSDK.showFloatView(getActivity());
-				} catch (JSONException e) {
-					e.printStackTrace();
-				}
-				break;
-			case ResultCode.LOGIN_FAIL:
-				dispatchError(EVENT_LOGIN, resultDesc);
-				break;
-			case ResultCode.LOGIN_CANCEL: // TODO 操作前后的登录状态没变化
-				dispatchError(EVENT_LOGIN, ""+resultDesc);
-				break;
-			}
-		}
-	};
-
 	public void userLogin() {
-		BDGameSDK.login(listener);
+		BDGameSDK.login(new IResponse<Void>() {
+			
+			@Override
+			public void onResponse(int resultCode, String resultDesc, Void arg2) {
+				switch (resultCode) {
+				case ResultCode.LOGIN_SUCCESS:
+					JSONObject json = new JSONObject();
+					try {
+						json.put(UID, BDGameSDK.getLoginUid());
+						json.put(TOKEN, BDGameSDK.getLoginAccessToken());
+						dispatchData(EVENT_LOGIN, json);
+						BDGameSDK.showFloatView(getActivity());
+					} catch (JSONException e) {
+						e.printStackTrace();
+					}
+					break;
+				case ResultCode.LOGIN_FAIL:
+					dispatchError(EVENT_LOGIN, resultDesc);
+					break;
+				case ResultCode.LOGIN_CANCEL: // TODO 操作前后的登录状态没变化
+					dispatchError(EVENT_LOGIN, ""+resultDesc);
+					break;
+				}
+			}
+		});
 	}
 
 	public void pay() throws JSONException {
