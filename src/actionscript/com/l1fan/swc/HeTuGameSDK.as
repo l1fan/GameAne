@@ -180,6 +180,10 @@ package com.l1fan.swc
 		public function isSupportUserLogout():Boolean
 		{
 			var o:Object = call("isSupportUserLogout");
+			if (!o)
+			{
+				return true;
+			}
 			if (o && int(o) == 1)
 			{
 				return true;
