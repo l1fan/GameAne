@@ -9,7 +9,6 @@ import com.l1fan.ane.SDKContext;
 import com.pengyouwan.sdk.api.ISDKEventCode;
 import com.pengyouwan.sdk.api.ISDKEventExtraKey;
 import com.pengyouwan.sdk.api.OnSDKEventListener;
-import com.pengyouwan.sdk.api.OrientationInfo;
 import com.pengyouwan.sdk.api.PYWPlatform;
 import com.pengyouwan.sdk.api.SDKConfig;
 import com.pengyouwan.sdk.api.User;
@@ -36,7 +35,6 @@ public class SDK extends SDKContext {
 				String erroMsg;
 				switch (code) {
 				case ISDKEventCode.CODE_LOGIN_SUCCESS:
-				case ISDKEventCode.CODE_CHANGE_ACCOUNT_SUCCESS:
 					User user = (User) data.getSerializable(ISDKEventExtraKey.EXTRA_USER);
 					JSONObject login = new JSONObject();
 					try {
@@ -48,6 +46,19 @@ public class SDK extends SDKContext {
 					}
 					dispatchData(EVENT_LOGIN, login);
 					FloatViewTool.instance(getActivity()).showFloatView();
+					break;
+				case ISDKEventCode.CODE_CHANGE_ACCOUNT_SUCCESS:
+					dispatchData(EVENT_LOGOUT);
+					user = (User) data.getSerializable(ISDKEventExtraKey.EXTRA_USER);
+					login = new JSONObject();
+					try {
+						login.put(UID, user.getUserId());
+						login.put(TOKEN, user.getToken());
+						login.put(UNAME, user.getUserName());
+					} catch (JSONException e) {
+						e.printStackTrace();
+					}
+					dispatchData(EVENT_LOGIN, login);
 					break;
 				case ISDKEventCode.CODE_LOGIN_FAILD:
 	                erroMsg = data.getString(ISDKEventExtraKey.EXTRA_ERRO);
