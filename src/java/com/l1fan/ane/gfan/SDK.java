@@ -3,67 +3,55 @@ package com.l1fan.ane.gfan;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.Activity;
-
 import com.l1fan.ane.SDKContext;
-import com.mappn.sdk.pay.GfanPay;
-import com.mappn.sdk.pay.GfanPayCallback;
-import com.mappn.sdk.pay.GfanPayInitCallback;
-import com.mappn.sdk.pay.model.Order;
-import com.mappn.sdk.uc.GfanUCCallback;
-import com.mappn.sdk.uc.GfanUCenter;
-import com.mappn.sdk.uc.User;
+import com.mappn.sdk.Gfan;
+import com.mappn.sdk.gfanpay.GfanPay.Listener;
+import com.mappn.sdk.gfanpay.GfanPayResult;
+import com.mappn.sdk.init.InitControl;
+import com.mappn.sdk.uc.LoginControl;
+import com.mappn.sdk.uc.LoginResult;
 
 public class SDK extends SDKContext {
 
 	public void init(){
-		Activity activity = getActivity();
-		GfanPay.getInstance(activity.getApplicationContext()).init(activity, new GfanPayInitCallback() {
+		Gfan.init(getActivity(), new InitControl.Listener() {
 			
 			@Override
-			public void onSuccess() {
+			public void onComplete() {
 				dispatchData(EVENT_INIT);
 			}
-			
-			@Override
-			public void onError() {
-				dispatchError(EVENT_INIT, "init failed");
-			}
-		});;
+		});
+		
 	}
 	
 	public void userLogin(){
-		GfanUCenter.login(getActivity(), new GfanUCCallback() {
+		Gfan.login(getActivity(), new LoginControl.Listener() {
 			
-			private static final long serialVersionUID = 1L;
-
 			@Override
-			public void onSuccess(User user, int type) {
-				if (type == GfanUCenter.RETURN_TYPE_LOGIN) {
+			public void onComplete(LoginResult result) {
+				switch (result.getLoginType()) {
+				case Common:
+				case Quick:
 					JSONObject data = new JSONObject();
 					try {
-						data.put(UID, user.getUid());
-						data.put(UNAME, user.getUserName());
-						data.put(TOKEN, user.getToken());
+						data.put(UID, result.getUserId());
+						data.put(UNAME, result.getUserName());
+						data.put(TOKEN, result.getToken());
 					} catch (JSONException e) {
 						e.printStackTrace();
 					}
 					dispatchData(EVENT_LOGIN, data);
-					
+					break;					
+				default:
+					break;
 				}
 			}
-			
-			@Override
-			public void onError(int paramInt) {
-				dispatchError(EVENT_LOGIN, "login failed");
-			}
-
 		});
 	}
 	
-	public void userLogout(){
-		GfanUCenter.logout(getActivity());
-		dispatchData(EVENT_LOGOUT);
+	@Override
+	public boolean isSupportUserLogout() {
+		return false;
 	}
 	
 	public void pay() throws JSONException{
@@ -72,18 +60,24 @@ public class SDK extends SDKContext {
 		String pdesc = pay.optString(PDESC,pname);
 		int price = pay.optInt(AMOUNT)/10;
 		String orderId = pay.optString(ORDER_ID);
-		Order order = new Order(pname, pdesc, price, orderId);
 		
-		GfanPay.getInstance(getActivity()).pay(order, new GfanPayCallback() {
+		Gfan.pay(getActivity(),orderId, price, pname, pdesc, pay.optString(EXT), new Listener() {
 			
 			@Override
-			public void onSuccess(User user, Order order) {
-				dispatchData(EVENT_PAY, "number is:"+order.getNumber());
-			}
-			
-			@Override
-			public void onError(User user) {
-				dispatchError(EVENT_PAY,"pay failed");
+			public void onComplete(GfanPayResult result) {
+				switch (result.getStatusCode()) {
+				case Success:
+					dispatchData(EVENT_PAY);
+					break;
+				case UserBreak:
+					dispatchError(EVENT_PAY, CODE_ERR_CANCEL,"pay cancel");
+					break;
+				case Fail:
+					dispatchError(EVENT_PAY, "pay failed");
+					break;
+				default:
+					break;
+				}
 			}
 		});
 	}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/20.0">
     <!--注意此文件为Demo配置文件，集成主要参考<android>标签下配置内容 -->
-    <id>com.u3d.sdk.demo</id>
+    <id>com.mappn.gfansdkdemo</id>
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
     <versionNumber>0.0.0</versionNumber>
@@ -23,24 +23,17 @@
         android:normalScreens="true"
         android:smallScreens="true" />
 
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
         <uses-permission android:name="android.permission.INTERNET" />
-      <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-      <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-      <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-      <uses-permission android:name="android.permission.VIBRATE" />
-      <uses-permission android:name="android.webkit.permission.PLUGIN" />
-      <uses-permission android:name="android.permission.READ_SMS" />
-      <uses-permission android:name="android.permission.READ_SETTINGS" />
-      <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-      <uses-permission android:name="android.permission.GET_TASKS" />
-      <uses-permission android:name="android.permission.READ_LOGS" />
-      <uses-permission android:name="android.permission.NFC" />
-      <uses-feature android:name="android.hardware.nfc.hce" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+        <uses-permission android:name="android.permission.NFC" />
+        <uses-permission android:name="android.permission.GET_TASKS" />
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -51,127 +44,110 @@
         android:taskAffinity="com.junnet.heepay" >
         
         <activity
-            android:name="com.mappn.sdk.uc.activity.LoginActivity"
-            android:theme="@style/Transparent" />
-        <activity
-            android:name="com.mappn.sdk.uc.activity.RegisterActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Transparent" />
-        <activity
-            android:name="com.mappn.sdk.uc.activity.ChooseAccountActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Transparent" />
-        <activity
-            android:name="com.mappn.sdk.pay.payment.PaymentsActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Transparent" />
-        <activity
-            android:name="com.mappn.sdk.pay.chargement.ChargeActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Transparent" />
-        <activity
-            android:name="com.mappn.sdk.pay.account.LoginActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Transparent"
-            android:windowSoftInputMode="adjustUnspecified" />
-        <activity
-            android:name="com.mappn.sdk.uc.activity.WebViewActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Transparent" />
-        <activity
-            android:name="com.mappn.sdk.pay.chargement.FeedbackActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Transparent" />
-        <!-- 免注册登录 -->
-        <activity
-            android:name="com.mappn.sdk.uc.activity.OnekeyLoignActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Transparent" />
-        <!-- 完善用户信息 -->
-        <activity
-            android:name="com.mappn.sdk.uc.activity.ModfiyActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Transparent" />
+             android:name="com.mappn.sdk.uc.LoginActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <!-- 启动页 -->
+         <activity
+             android:name="com.mappn.sdk.init.SplashActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+         <!-- 邀请码页面 -->
+         <activity
+             android:name="com.mappn.sdk.init.InviteActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.PsdRetrievalActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.ChangePsdActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.BindPhoneNumActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.floatview.NomalQuestionActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <!-- 充值支付页面 -->
+         <activity
+             android:name="com.mappn.sdk.gfanpay.ChargeActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <!-- 消费页面 -->
+         <activity
+             android:name="com.mappn.sdk.gfanpay.ConsumeActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.floatview.NotificationActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.RegisterActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.floatview.GiftCenterActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.ModfiyActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.PersonalCenterActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-        <service android:name="com.mappn.sdk.pay.GfanPayService" />
-        <!-- mo9 -->
-        <activity
-            android:name="com.mokredit.payment.MktPayment"
-            android:configChanges="keyboardHidden|orientation"
-            android:windowSoftInputMode="adjustResize" />
-        <!-- start for net bank -->
-    <activity android:name="com.unionpay.uppay.PayActivity" />
-        <!-- end for net bank -->
-        <!--alipay sdk begin -->
-        <activity
-            android:name="com.alipay.android.mini.window.sdk.MiniPayActivity"
-            android:configChanges="orientation"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:label="@string/msp_app_name"
-            android:launchMode="singleTop"
-            android:process="com.alipay.sdk"
-            android:screenOrientation="portrait"
-            android:theme="@style/MspAppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden" >
-            <intent-filter android:priority="800" >
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        
-        <activity
-            android:name="com.alipay.android.mini.window.sdk.MiniWebActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:launchMode="singleTop"
-            android:process="com.alipay.sdk"
-            android:theme="@style/MspAppTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        
-        <service android:name="com.alipay.android.app.MspService"
-            android:process="com.alipay.sdk"
-            android:exported="false" >
-            <intent-filter android:priority="800" />
-        </service>
-        
-        <!--alipay sdk end -->
-        <!-- 微信支付 start-->
-        <activity
-            android:name="com.ipaynow.plugin.activity.PayMethodActivity"
-            android:theme="@android:style/Theme.Dialog"
-            android:configChanges="orientation|keyboardHidden"
-            android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
-            android:theme="@android:style/Theme.NoDisplay">
-        </activity>
-        <!-- 微信支付  end-->
-        <!-- 框支付插件  start-->
-    <activity
-      android:name="com.wangyin.wepay.kuang.ui.WePayActivity"
-      android:screenOrientation="portrait" 
-      >
-    </activity>
-        <!-- 框支付插件  end-->
-  
-    <activity android:name="com.mappn.sdk.uc.activity.SynGameInfoActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-    
-    <!-- 机峰游戏闪屏 -->
-      <activity 
-          android:name="com.mappn.sdk.uc.activity.GfanSplashActivity"
-          android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
-          android:launchMode="singleTask"
-          ></activity>
+         <!-- 现在支付 -->
+         <activity
+             android:name="com.ipaynow.plugin.activity.PayMethodActivity"
+             android:configChanges="keyboardHidden|orientation"
+             android:exported="false"
+             android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Dialog" />
+
+         <!-- 微信支付 -->
+         <activity
+             android:name="com.ipaynow.plugin.inner_plugin.wechatwp.activity.WeChatNotifyActivity"
+             android:theme="@android:style/Theme.NoDisplay" />
+         <!-- 银联支付 -->
+         <activity
+             android:name="com.unionpay.uppay.PayActivity"
+             android:configChanges="orientation|keyboardHidden"
+             android:excludeFromRecents="true"
+             android:screenOrientation="portrait"
+             android:windowSoftInputMode="adjustResize" />
+         <activity
+             android:name="com.mappn.sdk.uc.MyGfanTicket"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <!-- 充值卡支付 -->
+         <activity
+             android:name="com.mappn.sdk.gfanpay.phoneCard.PhoneCardActivity"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.CardsBoxActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.RecordsOfConsumptionActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.floatview.NotificationDetailActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+         <activity
+             android:name="com.mappn.sdk.uc.UnBindPhoneActivity"
+             android:screenOrientation="behind"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
     
         <!-- 设置机锋支付 key(appkey),登录开发者后台申请 -->
         <meta-data

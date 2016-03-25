@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gfan_splash"
-    android:orientation="vertical" >
-    
+    tools:context=".init.SplashActivity"
+    android:background="@drawable/gfan_splash_bg_port">
 
-</LinearLayout>
+</RelativeLayout>
+<!-- From: file:/Users/lizeng/Work/pro_android/GfanSDK/SDK/src/main/res/layout-port/gfan_splash_activity.xml -->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/lizeng/Work/pro_android/GfanSDK/SDK/src/main/res/values-land/gfan_dimens.xml -->
+    <eat-comment/>
+    <dimen name="gfan_edit_layout_height">46dp</dimen>
+    <dimen name="gfan_uc_bg_lr_margin">60dp</dimen>
+    <dimen name="gfan_uc_bg_padding">60dp</dimen>
+    <dimen name="gfan_uc_bg_tb_margin">10dp</dimen>
+</resources>
