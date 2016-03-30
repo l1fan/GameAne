@@ -108,7 +108,8 @@ public class SDK extends SDKContext {
         // 必填字段，不能为null或者""，请填写从联盟获取的应用ID
         params.put(PayParams.APPLICATION_ID, mAppId);
         // 必填字段，不能为null或者""，单位是元，精确到小数点后两位，如1.00
-        params.put(PayParams.AMOUNT, String.valueOf(json.optInt(AMOUNT) / 100.00));
+        params.put(PayParams.AMOUNT, String.format("%.2f", json.optInt(AMOUNT) / 100.00));
+
         // 必填字段，不能为null或者""，道具名称
         params.put(PayParams.PRODUCT_NAME, json.optString(PNAME));
         // 必填字段，不能为null或者""，道具描述
@@ -123,7 +124,7 @@ public class SDK extends SDKContext {
 		
         Map<String, Object> payInfo = new HashMap<String, Object>();
 		// 必填字段，不能为null或者""
-        payInfo.put(PayParams.AMOUNT, String.valueOf(json.optInt(AMOUNT) / 100.00));
+        payInfo.put(PayParams.AMOUNT, String.format("%.2f", json.optInt(AMOUNT) / 100.00));
         // 必填字段，不能为null或者""
         payInfo.put(PayParams.PRODUCT_NAME, json.optString(PNAME));
         // 必填字段，不能为null或者""
