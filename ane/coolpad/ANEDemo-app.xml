@@ -159,8 +159,9 @@
         <meta-data android:name="appKey" android:value="2335581b4f0e447ea4da2750b91fe81b" />
         <!-- 设置横竖屏，0为横屏，1为竖屏 -->
         <meta-data android:name="orientation" android:value="1" />
-        <!-- 平台申请的应用私钥 -->
+        <!-- 平台申请的应用私钥, 如果是客户端下单的话需要，服务端下单时可以忽略 -->
         <meta-data android:name="privateKey" android:value="MIICXAIBAAKBgQCAk8UmGl63sjMZPNXiqLszDv8biNrHvDEG4w7+VVKTMwzlhsWCnkxMZiFBAAGnNWR1qGN7d6vfB+J+Uh4DPTpVoo7gDl7eTQb2M7t89zHPVK6DRbVw2IJmQXFQwSMMqR9YY3sHNeBvcdnbE1FiLVT5ExLtawg3H1V8jpfONPLXwwIDAQABAoGAUlxVoP6rRYgEa1oot7PVlfM5Pm3/lonZ7ctsQ0ZsSpYc4LnfsrersBSLoJNce7sbyrI+Z0xU79yhHMGFMBX8UwW4SpHkObjbVNdbVhxayZH/DhuhQUEdBMtNIKoy1kjPriVO3yi1oNG2gIfn/ZeuieWz7Xfo3G4eh35FMkgWBMECQQDs6tc9kjoCHXRgThDkjRxPKxCA63eyHVuy9U89mZd+H4NJ3GKT2sBxLNCkdV2ezoPRmX+pLttX7RpHgGkuV0fJAkEAiu79tCU86QrwYYmWLSDSQ329ZMJhuxoxdfVJNSqqTBBNw5r0/Azk/Mb7E0+a49+/5UJhOG533GqFRrJn8fIBKwJBAJ64jk7foiE8nnTOmB6mMusPDNVx6xTW+lIgal/4gDes4QYgsaIgkYDA517mijwUWteXIKG1lJmJbWutqcm0C5ECQAdaFjrOLab3WTkQGs5Qik/f+4G1d457GFrxm+ogU9qqkjLjpEsiM4vcy7R95ehhErqDBLoDvnv/dwYCstVuxPkCQH4bcFr1/Jdu51KgsY5VJI8mNOTW2TduJ0nzKt1inzgmzZpnMoAmVtf5txpHRsYZ2GWQ7rJGoUnYW3LPzw32mQY=" />
+        <!-- 公钥，用于客户端验证 -->
         <meta-data android:name="publicKey" android:value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoNKUlNprDmHnt2AKv695Q+ckGp83qU38iRdXhk8CcNQor+vdN0MDn43TWZDuqIxoW7dtc35CZdSE01LmZOqoMsUKmd4ORNE0lzeYSRICdrTgWmFUQWujeGsQaYwdJM/mzfkM6jLIsO12lDtIScUPTsERmmxn17csGKHiD4R9L/QIDAQAB" />
 
         <!-- 注意支付时的商品pid需要到平台申请(waresid) -->

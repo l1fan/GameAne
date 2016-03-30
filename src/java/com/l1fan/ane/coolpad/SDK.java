@@ -101,13 +101,21 @@ public class SDK extends SDKContext {
 	}
 	
 	public void pay() throws JSONException{
+		
+		
 		JSONObject pay = getJsonData();
 
 		AccountBean account = CoolPadPay.buildAccount(getActivity(), mToken, mAppId, mOpenId);
 		
-		String uid = pay.optString(UID);
-		String priKey = pay.optString("privateKey",mPrivateKey);
-		String genUrl = genUrl(mAppId,uid,pay.optString(EXT),priKey,pay.optInt(PID),pay.optInt(AMOUNT)/100.00,pay.optString(ORDER_ID),pay.optString(NOTIFY_URL));
+		String genUrl;
+		if (pay.has("transid") || pay.has("transId")) {
+			genUrl = "transid="+pay.optString("transid",pay.optString("transId"))+"&appid="+mAppId;
+		}else{
+			String uid = pay.optString(UID);
+			String priKey = pay.optString("privateKey",mPrivateKey);
+			genUrl = genUrl(mAppId,uid,pay.optString(EXT),priKey,pay.optInt(PID),pay.optInt(AMOUNT)/100.00,pay.optString(ORDER_ID),pay.optString(NOTIFY_URL));
+		}
+	
 		CoolPadPay.startPay(getActivity(), genUrl, account, new IPayResultCallback() {
 
 			@SuppressWarnings("deprecation")
