@@ -146,11 +146,29 @@ public class SDK extends SDKContext {
 		Matrix.execute(getActivity(), intent, new QiHooCallback(getAction()));
 	}
 
-	/**
-	 * 3.5 销毁接口【客户端调用】(必接) 以退出登录状态并释放资源。调用完该接口后,360SDK 又回到未初始化状态。
-	 */
 	public void destroy() {
-		Matrix.destroy(getActivity());
+		Bundle bundle = new Bundle();
+		Intent intent = new Intent();
+		intent.putExtra(ProtocolKeys.FUNCTION_CODE, ProtocolConfigs.FUNC_CODE_QUIT);
+		intent.putExtra(ProtocolKeys.IS_SCREEN_ORIENTATION_LANDSCAPE, false);
+		Matrix.invokeActivity(getActivity(), intent, new IDispatcherCallback() {
+			
+			@Override
+			public void onFinished(String data) {
+				try {
+					JSONObject json = new JSONObject(data);
+					int which = json.optInt("which");
+					if (which == 2) {
+						dispatchData(EVENT_DESTROY);
+					}else{
+						dispatchError(EVENT_DESTROY, data);
+					}
+				} catch (JSONException e) {
+					dispatchError(EVENT_DESTROY, e.getMessage());
+					e.printStackTrace();
+				}
+			}
+		});
 	}
 
 	/**
@@ -203,6 +221,11 @@ public class SDK extends SDKContext {
 	public Object matrix() throws Exception {
 		Method method = Matrix.class.getMethod(getData(), Activity.class);
 		return method.invoke(null, getActivity());
+	}
+	
+	@Override
+	public void dispose() {
+		Matrix.destroy(getActivity());
 	}
 
 	/**

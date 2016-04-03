@@ -107,15 +107,15 @@ public class SDK extends SDKContext {
 		downjoy.logout(getActivity());
 	}
 	
-	public void exit(){
+	public void destroy(){
 		downjoy.openExitDialog(getActivity(), new CallbackListener<String>() {
 			
 			@Override
 			public void callback(int code, String arg1) {
 				if (code == CallbackStatus.SUCCESS) {
-					dispatchData("DOWNJOY_EXIT");
+					dispatchData(EVENT_DESTROY);
 				}else{
-					dispatchError("DOWNJOY_EXIT", "exit");
+					dispatchError(EVENT_DESTROY, CODE_ERR_CANCEL,arg1+":"+code);
 				}
 			}
 		});

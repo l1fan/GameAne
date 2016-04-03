@@ -48,6 +48,7 @@ public class SDKContext extends FREContext implements FREFunction {
 	public static final String EVENT_PAY = "SDK_HeTu_Pay";
 	public static final String EVENT_ERROR = "SDK_HeTu_Error";
 	public static final String EVENT_EXIT = "SDK_HeTu_Exit";
+	public static final String EVENT_DESTROY = "SDK_HeTu_Destroy";
 	
 	
 	/****** json members *******/

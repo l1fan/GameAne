@@ -6,7 +6,9 @@ import org.json.JSONObject;
 import android.os.Bundle;
 import cn.uc.gamesdk.UCCallbackListener;
 import cn.uc.gamesdk.UCCallbackListenerNullException;
+import cn.uc.gamesdk.UCFloatButtonCreateException;
 import cn.uc.gamesdk.UCGameSDK;
+import cn.uc.gamesdk.UCGameSDKStatusCode;
 import cn.uc.gamesdk.UCLogLevel;
 import cn.uc.gamesdk.UCLoginFaceType;
 import cn.uc.gamesdk.UCOrientation;
@@ -66,7 +68,22 @@ public class SDK extends SDKContext {
 				try {
 					json.put(TOKEN, UCGameSDK.defaultSDK().getSid());
 					dispatchData(EVENT_LOGIN,json);
+					UCGameSDK.defaultSDK().createFloatButton(getActivity(), new UCCallbackListener<String>() {
+
+						@Override
+						public void callback(int statuscode, String arg1) {
+							if(statuscode == UCGameSDKStatusCode.SDK_OPEN){ //将要打开SDK界面
+							}else if(statuscode == UCGameSDKStatusCode.SDK_CLOSE){ //将要关闭SDK界面,返回游戏画面
+							}
+						}});
+					UCGameSDK.defaultSDK().showFloatButton(getActivity(), 100, 50, true);
 				} catch (JSONException e) {
+					e.printStackTrace();
+				} catch (IllegalStateException e) {
+					e.printStackTrace();
+				} catch (UCCallbackListenerNullException e) {
+					e.printStackTrace();
+				} catch (UCFloatButtonCreateException e) {
 					e.printStackTrace();
 				}
 			}
@@ -103,12 +120,15 @@ public class SDK extends SDKContext {
 	}
 
 	public void destroy() {
-		final String event = getAction();
 		UCGameSDK.defaultSDK().exitSDK(getActivity(), new UCCallbackListener<String>() {
 
 			@Override
-			public void callback(int paramInt, String paramT) {
-				dispatchData(event);
+			public void callback(int statuscode, String data) {
+				if (UCGameSDKStatusCode.SDK_EXIT_CONTINUE==statuscode) {
+					dispatchData(EVENT_DESTROY,"destroy:"+data);
+				}else if (UCGameSDKStatusCode.SDK_EXIT==statuscode) {
+					dispatchError(EVENT_DESTROY, CODE_ERR_CANCEL,data+":"+statuscode);
+				}
 			}
 		});
 	}
