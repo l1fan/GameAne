@@ -1,24 +1,42 @@
-#!/bin/bash
+#! /bin/bash
+
+# sh test.sh anzhi android
 
 # remove air prefix of package id
 export AIR_NOANDROIDFLAIR=true
 
-# ant -q -Did=qihoo360
-# ant -q -Did=uc
-# ant -q -Did=xiaomi
-# ant -q -Did=anzhi 
-# ant -q -Did=baidu
-# ant -q -Did=downjoy
-# ant -q -Did=gionee
-# ant -q -Did=haima
-# ant -q -Did=huawei
-# ant -q -Did=kuaiyong
-# ant -q -Did=lenovo
-# ant -q -Did=oppo
-# ant -q -Did=sogou
-# ant -q -Did=tongbutui
-# ant -q -Did=wandoujia
+echo "test $1 $2"
 
-ant -q -Did=haima 
-ant -q -Did=haima android
-adb install -r ../bin/haima_demo.apk 
+appid=$1
+# android or ios
+apptype=$2 || "android"
+
+build_ane()
+{ 
+  ant -q -Did=$appid
+}
+
+build_app(){
+  ant -q -Did=$appid $apptype
+}
+
+install(){
+  echo "安装apk install..."
+  adb install -r ../bin/${appid}_demo.apk
+}
+
+case $apptype in
+  android ) 
+    build_app
+    install
+    ;; 
+  ios ) build_app;;
+  in ) install;;
+  *) 
+    apptype="android"
+    build_ane
+    build_app
+    install
+  ;;
+
+esac
