@@ -18,7 +18,8 @@ public class AlarmReceiver extends BroadcastReceiver{
 			NotificationCompat.Builder builder = new Builder(context)
 			.setSmallIcon(context.getApplicationInfo().icon)
 			.setContentTitle(intent.getStringExtra("title"))
-			.setContentText(intent.getStringExtra("text"));
+			.setContentText(intent.getStringExtra("text"))
+			.setAutoCancel(true);
 			
 			Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage(context.getPackageName());
 			intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT | Intent.FLAG_ACTIVITY_SINGLE_TOP);

@@ -15,33 +15,48 @@ public class SDK extends SDKContext {
 	
 	static final String ACTION = "com.l1fan.action.alarm.start"; 
 	
+	//对应ios NSClendarUnit 枚举 ，2为每年，3为每月...  秒为单位
+	static final long INTERVAL[] = {0,0,365*24*60*60,30*24*60*60,24*60*60,60*60,60,1,7*24*60*60};
+	
 	private Activity context;
+	AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 	
 	public void localNotify() throws JSONException{
 		context = getActivity();
 		schedule();
 	}
 	
-	public void cancel(){
+	public void cancelLocalNotify(){
+		String data =  getData();
+		Intent intent = new Intent(ACTION);
+		PendingIntent pi = PendingIntent.getBroadcast(context, data.hashCode(), intent, PendingIntent.FLAG_UPDATE_CURRENT);
+		am.cancel(pi);
+	}
+	
+	public void cancelAllLocalNotify(){
 		
 	}
 	
 	private void schedule() throws JSONException{
 		JSONObject notify = getJsonData();
 		Intent intent = new Intent(ACTION);
+		
 		intent.putExtra("title", notify.optString("title"));
 		intent.putExtra("text", notify.optString("text"));
-		
-		PendingIntent pi = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+		intent.putExtra("id", notify.optString("id"));
+
+		String id =  notify.optString("id","0");
+		PendingIntent pi = PendingIntent.getBroadcast(context, id.hashCode(), intent, PendingIntent.FLAG_UPDATE_CURRENT);
 		
 		System.out.println("cu ts : "+ System.currentTimeMillis());
 		System.out.println("notify is:"+notify.toString());
 		
-		AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-		if (notify.has("every")) {
-			am.setRepeating(AlarmManager.RTC_WAKEUP, notify.optLong("at"), notify.optLong("every"), pi);
-		}else{
-		    am.set(AlarmManager.RTC_WAKEUP, notify.optLong("at"), pi);
+		long interval;
+		try{
+			interval = INTERVAL[notify.optInt("every",0)] * 1000;
+		}catch(Exception e){
+			interval = 0;
 		}
+		am.setRepeating(AlarmManager.RTC_WAKEUP, notify.optLong("at"), interval, pi);
 	}
 }
