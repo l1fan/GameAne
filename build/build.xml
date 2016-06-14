@@ -8,6 +8,7 @@
 
 	<property name="ane.id" value="${id}" />
 	<property name="mix" value="false" />
+	<property name="nov4" value="false" />
 	<property name="tempdir" value="${basedir}/temp" />
 	<available file="../sdks/${ane.id}_ios" type="dir" property="ios.exist"/>
 
@@ -66,7 +67,8 @@
 
 		<jar destfile="${tempdir}/Android-ARM/ane.jar" basedir="${tempdir}/classes">
 			<exclude name="**/l1fan/ane/SDK*.class" if:true="${mix}"/>
-			<zipgroupfileset  dir="../sdks/${ane.id}/libs" includes="*.jar"/>
+			<zipgroupfileset  dir="../sdks/${ane.id}/libs" includes="*.jar" excludes="android-support-v4.jar" if:true="${nov4}"/>
+			<zipgroupfileset  dir="../sdks/${ane.id}/libs" includes="*.jar" unless:true="${nov4}"/>
 		</jar>
 
 		<delete dir="${tempdir}/classes"/>
