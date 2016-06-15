@@ -19,7 +19,6 @@ public class SDK extends SDKContext {
 	static final long INTERVAL[] = {0,0,365*24*60*60,30*24*60*60,24*60*60,60*60,60,1,7*24*60*60};
 	
 	private Activity context;
-	AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 	
 	public void localNotify() throws JSONException{
 		context = getActivity();
@@ -30,6 +29,7 @@ public class SDK extends SDKContext {
 		String data =  getData();
 		Intent intent = new Intent(ACTION);
 		PendingIntent pi = PendingIntent.getBroadcast(context, data.hashCode(), intent, PendingIntent.FLAG_UPDATE_CURRENT);
+		AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 		am.cancel(pi);
 	}
 	
@@ -57,6 +57,7 @@ public class SDK extends SDKContext {
 		}catch(Exception e){
 			interval = 0;
 		}
+		AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 		am.setRepeating(AlarmManager.RTC_WAKEUP, notify.optLong("at"), interval, pi);
 	}
 }
