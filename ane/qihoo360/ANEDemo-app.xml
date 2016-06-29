@@ -24,6 +24,9 @@
         android:normalScreens="true"
         android:resizeable="true"
         android:smallScreens="true" />
+    <!-- 亲加sdk所需权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
      <!-- 添加360SDK必需要的权限。begin -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
@@ -62,6 +65,10 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.READ_SETTINGS" />
     <!-- qiku end -->
+
+    <!-- QDAS打点SDK所需权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
     <!-- 添加360SDK必需要的权限。end -->
 
    
@@ -219,6 +226,29 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         </activity>
         <!-- qiku组件 end -->
+
+        <!-- UpdateLib start -->
+        <service
+            android:name="com.qihoo.appstore.updatelib.CheckUpdateService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qihoo.appstore.updatelib.CheckUpdateAcitivty"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- UpdateLib end -->
+
+        <!-- gameunion plugin start -->
+        <activity
+            android:name="com.qihoo.gameunionforsdk.SimpleWebView"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode|layoutDirection"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+        <!-- gameunion plugin end -->
+
+        <!-- 默认参数，不需要修改，直接复制就行 -->
+        <meta-data android:name="DC_APPKEY" android:value="02522a2b2726fb0a03bb19f2d8d9524d"/>
+
               
     </application>
             </manifest>
