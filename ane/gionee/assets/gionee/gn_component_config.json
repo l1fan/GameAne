@@ -1,11 +1,11 @@
-[
+﻿[
     {
         "id":1,
         "name":"AmigoPlay安全插件",
         "packageName":"com.gionee.gsp",
         "path":"gionee/Amigo_Play.apk",
         "product":"com.gionee.gsp",
-        "currentVersion":"3.0.7.o",
+        "currentVersion":"3.1.4.a",
         "minVersion":"0",
         "rom":"4.0.0",
         "model":"",
