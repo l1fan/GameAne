@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:singleLine="true"
-                android:text="@string/dcn_lastest_version"
+                android:text="更新时间"
                 android:textColor="@color/dcn_light_black"
                 android:textSize="15sp" />
 

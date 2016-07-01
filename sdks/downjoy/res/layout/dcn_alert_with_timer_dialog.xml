@@ -55,10 +55,16 @@
             android:textColor="@color/dcn_select_account_blue"
             android:textSize="18sp" />
 
-        <View
-            android:layout_width="@dimen/dcn_divider_size"
+        <Button
+            android:id="@+id/dcn_btn_neutral"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:background="@color/dcn_color_login_box_gb" />
+            android:layout_weight="1"
+            android:background="@drawable/dcn_dialog_button_bg"
+            android:gravity="center"
+            android:textColor="@color/dcn_select_account_blue"
+            android:textSize="18sp"
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/dcn_btn_positive"

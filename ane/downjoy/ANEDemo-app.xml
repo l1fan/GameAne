@@ -4,7 +4,7 @@
     <id>com.downjoy.sdkdemo</id>
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
-    <versionNumber>0.0.0</versionNumber>
+    <versionNumber>4.2.4</versionNumber>
     <initialWindow>
         <content>ANEDemo.swf</content>
     <autoOrients>true</autoOrients>
@@ -31,7 +31,6 @@
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
         <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-        <!-- ali -->
         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
         <uses-permission android:name="android.permission.READ_SMS" />
         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -40,13 +39,19 @@
         <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
         <uses-permission android:name="android.permission.GET_TASKS" />
         <uses-permission android:name="android.permission.READ_LOGS" />
-        <!-- nfc -->
         <!-- 打电话权限 -->
         <uses-permission android:name="android.permission.CALL_PHONE" />
         <!-- nfc权限 -->
         <uses-permission android:name="android.permission.NFC" />
         <!-- 手机震动 -->
         <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.FLASHLIGHT" />
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+        <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
 
 
 
@@ -62,8 +67,20 @@
         <activity
            android:name="com.downjoy.activity.SdkActivity"
            android:configChanges="orientation|keyboardHidden|screenSize"
+           android:screenOrientation="behind"
            android:theme="@style/dcn_dialog_activity"
-           android:windowSoftInputMode="stateHidden|adjustResize" />
+           android:windowSoftInputMode="stateHidden|adjustResize">
+           <!--V4.2.2 添加-->
+           <intent-filter>
+              <action android:name="android.intent.action.VIEW" />
+
+              <category android:name="android.intent.category.DEFAULT" />
+              <category android:name="android.intent.category.BROWSABLE" />
+              <!--需要替换成自己的appid,195是demo的appid-->
+              <!--<data android:scheme="dcnngsdk替换成自己的appId"></data>-->
+              <data android:scheme="dcnngsdk195"></data>
+           </intent-filter>
+      </activity>
         <!-- UPPay sdk begin -->
         <activity
            android:name="com.unionpay.uppay.PayActivity"
@@ -80,9 +97,12 @@
            android:name="com.alipay.sdk.app.H5PayActivity"
            android:configChanges="orientation|keyboardHidden|navigation"
            android:exported="false"
-           android:screenOrientation="behind"
-           android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-
+           android:screenOrientation="behind"></activity>
+        <activity
+           android:name="com.alipay.sdk.auth.AuthActivity"
+           android:configChanges="orientation|keyboardHidden|navigation"
+           android:exported="false"
+           android:screenOrientation="behind"></activity>
         <!-- alipay sdk end -->
         <!-- QQ sdk end -->
         <activity
@@ -112,19 +132,23 @@
         <!--  nfc  -->
         <activity
            android:name="com.wepayplugin.nfc.ui.PayStartActivity"
-           android:configChanges="orientation|keyboardHidden"
-           android:screenOrientation="portrait" >
-        </activity>
+           android:configChanges="keyboardHidden|orientation|screenSize"
+           android:screenOrientation="behind"></activity>
         <activity
            android:name="com.wepayplugin.nfc.ui.SwiperCardActivity"
-           android:configChanges="orientation|keyboardHidden"
-           android:screenOrientation="portrait" >
-        </activity>
-        <activity
+           android:configChanges="keyboardHidden|orientation|screenSize"
+           android:screenOrientation="behind"></activity>
+       <activity
            android:name="com.wepayplugin.nfc.ui.PayResultActivity"
-           android:configChanges="orientation|keyboardHidden"
-           android:screenOrientation="portrait" >
-        </activity>
+           android:configChanges="keyboardHidden|orientation|screenSize"
+           android:screenOrientation="behind"></activity>
+       <!--wechat-->
+       <activity
+           android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+           android:configChanges="orientation|screenLayout"
+           android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoDisplay" />
+
               
         <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
         <meta-data android:name="appId" android:value="195" />

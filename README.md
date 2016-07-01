@@ -11,7 +11,7 @@
 |小米				|`xiaomi`		|Y			|		|v4.6.11 |
 |安智				|`anzhi`		|Y			|		|v3.5.2 |
 |百度				|`baidu`		|Y			|		|v3.5.2 |
-|当乐				|`downjoy`	|Y			|		|v4.2 |
+|当乐				|`downjoy`	|Y			|		|v4.2.4 |
 |金立				|`gionee`		|Y			|		|v3.0.7.o |
 |海马				|`haima`		|Y			|Y	|v1.1.7/v1.3.7|
 |华为				|`huawei`		|Y			|		|v3.31.70.305 |

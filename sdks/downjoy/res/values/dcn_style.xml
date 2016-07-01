@@ -9,7 +9,6 @@
     </style>
 
     <style name="dcn_full_screen_activity" parent="@android:style/Theme.NoTitleBar.Fullscreen">
-
     </style>
 
     <style name="dcn_dialog_login" parent="@android:style/Theme.Dialog">

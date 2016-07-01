@@ -109,6 +109,7 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/dcn_version_name"
                     style="@style/dcn_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
