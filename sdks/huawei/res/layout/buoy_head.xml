@@ -23,7 +23,7 @@
         android:includeFontPadding="false"
         android:paddingLeft="14dp"
         android:paddingRight="14dp"
-        android:text="返回游戏"
+        android:text="@string/buoy_back"
         android:textColor="#FFFFFF"
         android:textSize="14sp" />
 

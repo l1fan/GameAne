@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_usage_layout"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+         
+    <ImageView 
+        android:id="@+id/first_usage_cover"
+        android:background="#b3000000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+        
+    <ImageView 
+        android:id="@+id/first_usage_small_icon"
+        android:src="@drawable/buoy_icon_hide_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <ImageView
+        android:id="@+id/first_usage"
+        android:src="@drawable/buoy_first_usage"
+        android:layout_alignLeft="@id/first_usage_small_icon"
+        android:layout_marginLeft="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+</RelativeLayout>

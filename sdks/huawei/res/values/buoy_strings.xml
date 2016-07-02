@@ -1,21 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="buoy_validParamFail">应用ID和浮标ID校验失败</string>
-    <string name="buoy_noInit">尚未初始化</string>
-    <string name="buoy_close">关闭</string>
-    <string name="buoy_cancel">取消</string>
-    <string name="buoy_update">更新</string>
-    <string name="buoy_confirm">确定</string>
-    <string name="buoy_app_update">应用更新</string>
-    <string name="buoy_initProgress">正在初始化SDK...</string>
-    <string name="buoy_noNetwork">没有网络连接</string>
-    <string name="buoy_login_fail">登录失败，请重试！</string>
-    <string name="buoy_async_login_notice">欢迎 %1$s</string>
-    <string name="buoy_notification_title_game_coupon">华为游戏券到账，点击查看</string>
-    <string name="buoy_dialog_download_gamebox_content">需要下载最新版本游戏中心才能使用，确认下载？</string>
-    <string name="buoy_dialog_download_gamebox_title">华为游戏中心</string>
-    <string name="buoy_download_gamebox_tips">正在下载华为游戏中心</string>
-    <string name="buoy_dialog_download_wallet_content">需要下载最新版本快捷支付才能使用，确认是否下载？</string>
-    <string name="buoy_dialog_download_wallet_title">提示</string>
-    <string name="buoy_download_wallet_tips">正在下载...</string>
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="buoy_validParamFail">The app ID or CP ID is invalid.</string>
+    <string name="buoy_noInit">SDK not initialized.</string>
+    <string name="buoy_close">Close</string>
+    <string name="buoy_cancel">Cancel</string>
+    <string name="buoy_update">Update</string>
+    <string name="buoy_confirm">Install</string>
+    <string name="buoy_app_update">App update</string>
+    <string name="buoy_initProgress">Initializing SDK…</string>
+    <string name="buoy_noNetwork">No Internet connection.</string>
+    <string name="buoy_login_fail">Login failed. Please try again.</string>
+    <string name="buoy_async_login_notice">Welcome %1$s</string>
+    <string name="buoy_notification_title_game_coupon">Game tickets received, touch to view</string>
+    <string name="buoy_download_gamebox_tips">Downloading HiGame…</string>
+    <string name="buoy_dialog_download_gamebox_tips">You need to install the latest HiGame version to use this feature. Install it?</string>
+    <string name="buoy_dialog_download_gamebox_title">Notice</string>
+    <string name="buoy_download_notification_tips">Downloading…</string>
+    <string name="buoy_gamebox_appname">HiGame</string>
+	<string name="screen_record">Record game</string>
+	<string name="screen_record_description">You can record and share your game. The screen recording process will use the microphone, so you can give commentary as you\'re playing. Continue?</string>
+	<string name="standard_definition">SD</string>
+	<string name="high_definition">HD</string>
+	<string name="buoy_continue">Continue</string>
+	<string name="buoy_svid_amount_max_length">You have reached the time limit. Your game recording has been saved.</string>
+	<string name="buoy_gamebox_sign_invalid_msg">HiGame client signature verification is not legitimate. Use of this service is prohibited.</string>
+	<string name="buoy_init_record_service">Initializing game recording service…</string>
+	<string name="buoy_msg_app_not_install">App not installed. Cannot enter.</string>
+	<string name="buoy_msg_app_download_failed">Download failed.</string>
+	<string name="buoy_msg_no_new_version">Updated version not detected.</string>
+	<string name="buoy_game_user_role">Role:</string>
+	<string name="buoy_game_user_area">Area:</string>
+	<string name="buoy_game_user_rank">Level:</string>
+	<string name="buoy_game_user_login_time">Login time:</string>
+	<string name="buoy_game_user_login_info">Information:</string>
+	<string name="buoy_msg_copy_successs">Successfully copied.</string>
+	<string name="buoy_tips_record_usage">Touch the dock for 2 seconds to quickly start recording your game.</string>
+	<string name="buoy_back">Back</string>
+	
+	<!-- 快捷支付 -->
+	<string name="pay_plugn_msg_install_service">Installing quick pay service…</string>
+	<string name="pay_plugn_msg_check_version">Checking quick pay version…</string>
 </resources>
