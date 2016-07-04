@@ -3,13 +3,20 @@ package com.l1fan.ane.tongbutui;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.Bundle;
+
 import com.l1fan.ane.SDKContext;
+import com.tongbu.sdk.bean.TbOrderInfo;
 import com.tongbu.sdk.bean.TbUser;
+import com.tongbu.sdk.configs.TbPayInfo;
 import com.tongbu.sdk.configs.TbPlatform;
 import com.tongbu.sdk.configs.TbPlatformSettings;
 import com.tongbu.sdk.configs.TbToolBarPlace;
+import com.tongbu.sdk.listener.OnCheckPayListener;
 import com.tongbu.sdk.listener.OnInitFinishedListener;
+import com.tongbu.sdk.listener.OnLeavePlatformListener;
 import com.tongbu.sdk.listener.OnLoginFinishedListener;
+import com.tongbu.sdk.listener.OnPayProcessListener;
 import com.tongbu.sdk.listener.OnSwitchAccountListener;
 import com.tongbu.sdk.widget.TbFloatToolBar;
 
@@ -20,9 +27,11 @@ public class SDK extends SDKContext {
 	public void init() throws JSONException {
 		TbPlatformSettings settings = new TbPlatformSettings();
 		JSONObject json = getJsonData();
-		settings.setAppId(json.optString(APPID));
-		settings.setOrient(json.optInt(ORIENTATION,1));
-
+		Bundle md = getMetaData();
+		settings.setAppId(json.optString(APPID,md.getString(APPID)).replace("tb.", ""));
+		settings.setOrient(json.optInt(ORIENTATION,md.getInt(ORIENTATION, 1)));
+		settings.setContinueWhenCheckUpdateFailed(true);
+		
 		TbPlatform.getInstance().tbInit(getActivity(), settings, new OnInitFinishedListener() {
 
 			@Override
@@ -88,6 +97,70 @@ public class SDK extends SDKContext {
 			}
 		});
 	}
+	
+	public void pay() throws JSONException{
+		JSONObject json = getJsonData();
+		TbPayInfo payInfo = new TbPayInfo();
+		final String orderId = json.optString(ORDER_ID);
+		payInfo.setSerial(orderId);
+		payInfo.setNeedPayRMB(json.optInt(AMOUNT)/100);
+		payInfo.setPayDescription(json.getString(PNAME));
+		TbPlatform.getInstance().tbUniPayForCoin(getActivity(), payInfo, new OnPayProcessListener() {
+			
+			@Override
+			public void onBuyGoodsDidSuccessWithOrder(String paramString) {
+				dispatchData(EVENT_PAY,"success:"+paramString);
+			}
+			
+			@Override
+			public void onBuyGoodsDidStartRechargeWithOrder(String paramString) {
+               
+                
+               final OnCheckPayListener listener = new OnCheckPayListener() {
+					
+					@Override
+					public void CheckOrderFinished(TbOrderInfo info) {
+						switch (info.code) {
+						case 1:
+						case 3:
+							dispatchData(EVENT_PAY, "success:"+info.code+":"+info.message);
+							break;
+						default:
+							dispatchError(EVENT_PAY, "fail:"+info.code+":"+info.message);
+							break;
+						}
+					}
+				};
+				
+                TbPlatform.getInstance().tbLeavedSDKPlatform(new OnLeavePlatformListener() {
+					
+					@Override
+					public void onLeaveFinished(int type, String paramString) {
+						switch (type) {
+						case TBPlatformLeavedFromUserPay:
+							TbPlatform.getInstance().tbCheckPaySuccess(getActivity(), orderId, listener);
+							break;
+						default:
+							break;
+						}
+					}
+				});
+
+			}
+
+			@Override
+			public void onBuyGoodsDidFailedWithOrder(String paramString, int paramInt) {
+				dispatchError(EVENT_PAY, paramInt + ":"+ paramString);
+			}
+			
+			@Override
+			public void onBuyGoodsDidCancelByUser(String paramString) {
+				dispatchError(EVENT_PAY, CODE_ERR_CANCEL, "cancel");
+			}
+		});
+		
+		
+	}
 
 	public void userLogout() {
 		TbPlatform.getInstance().tbLogout(getActivity(), 1);
@@ -98,7 +171,7 @@ public class SDK extends SDKContext {
 	@Override
 	public void dispose() {
 		super.dispose();
-		TbPlatform.getInstance().tbDestory(getActivity());
+		TbPlatform.getInstance().tbDestroy(getActivity());
 		if(toolBar != null) toolBar.recycle();
 	}
 	

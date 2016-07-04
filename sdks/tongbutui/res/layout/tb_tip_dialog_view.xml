@@ -1,74 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/tb_layout_tip_bg"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/tb_tipdialog_bg"
-    android:orientation="vertical">
-
-    <TextView
-        android:text="@string/tb_base_tip"
-        android:id="@+id/tb_tv_tip_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tb_tv_tip_msg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:textSize="16sp" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_marginTop="15dp"
-        android:background="#c6c6c6" />
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:layout_gravity="center"
+    android:minWidth="280dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/material_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="@drawable/tb_material_card"
+        android:orientation="vertical">
 
-        <Button
-            android:text="@string/tb_base_tip_cancel"
-            android:id="@+id/tb_bt_tip_neg"
-            android:layout_width="wrap_content"
-            android:layout_height="43dp"
-            android:layout_weight="1"
-            android:background="@drawable/tb_tipdialog_left_selector"
-            android:gravity="center"
-            android:textColor="#037BFF"
-            android:textSize="16sp" />
+        <LinearLayout
+            android:id="@+id/contentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/tb_iv_tip_line"
-            android:layout_width="0.5dp"
-            android:layout_height="43dp"
-            android:background="#c6c6c6" />
+            <TextView
+                android:textColor="#DE000000"
+                android:textSize="23sp"
+                android:id="@+id/title"
+                android:text="Material title"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <Button
-            android:text="@string/tb_base_tip_dialog_ok"
-            android:id="@+id/tb_bt_tip_pos"
-            android:layout_width="wrap_content"
-            android:layout_height="43dp"
-            android:layout_weight="1"
-            android:background="@drawable/tb_tipdialog_right_selector"
-            android:gravity="center"
-            android:textColor="#037BFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="14dp">
+
+                <LinearLayout
+                    android:id="@+id/message_content_view"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="23dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:textColor="#8a000000"
+                        android:textSize="16sp"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

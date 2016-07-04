@@ -4,7 +4,7 @@
     <!--V1.0.0-->
     <string name="tb_app_name">同步SDK</string>
     <string name="tb_login_username">账号 :</string>
-    <string name="tb_login_username_msg">同步账号/邮箱</string>
+    <string name="tb_login_username_msg">同步账号/邮箱/手机号</string>
     <string name="tb_login_pwd">密码 :</string>
     <string name="tb_login_pwd_msg">请输入密码</string>
     <string name="tb_login_rempwd">记住密码</string>
@@ -13,8 +13,8 @@
     <string name="tb_user_login">用户登录</string>
     <string name="tb_login_forgetpwd">忘记密码?</string>
     <string name="tb_login_dialog_forgetpwd">忘记密码</string>
-    <string name="tb_login_fastregister">一秒注册</string>
-    <string name="tb_login_title">或使用新浪微博账号直接登录</string>
+    <string name="tb_login_fastregister">立即注册</string>
+    <string name="tb_login_title">使用第三方账号登录，无需注册</string>
     <string name="tb_login_weibologin">微博账号登录</string>
     <string name="tb_login_loading">努力登录中...</string>
     <string name="tb_login_get_history">正在获取登录记录</string>
@@ -95,4 +95,45 @@
     <string name="tb_base_close">关闭</string>
     <string name="tb_web_net_error">网络不通畅，请检查后再试</string>
 
+    <!--V1.2.0-->
+    <string name="tb_register_mobile">手机号 :</string>
+    <string name="tb_register_mobile_hint">请输入11位中国大陆手机号码</string>
+    <string name="tb_register_code">验证码 :</string>
+    <string name="tb_register_password">密　码 :</string>
+    <string name="tb_register_code_hint">请输入短信验证码</string>
+    <string name="tb_register_btn_send">发送验证码</string>
+    <string name="tb_register_bt_resend">重新发送</string>
+    <string name="tb_register_bt_remain">%1$ss后重发</string>
+    <string name="tb_register_fail_mobile_empty">手机号码不能为空</string>
+    <string name="tb_register_fail_mobile_error">请输入正确的手机号码</string>
+    <string name="tb_register_fail_code_empty">验证码不能为空</string>
+    <string name="tb_base_send_success">发送成功</string>
+    <string name="tb_base_send_failed">发送失败，请重试</string>
+    <string name="tb_register_bind_username">请输入待绑定同步账号</string>
+    <string name="tb_register_bind_password">请填写与账号对应的密码</string>
+    <string name="tb_register_confirm_bind">确认绑定</string>
+    <string name="tb_register_bind_title">完善账号信息</string>
+    <string name="tb_login_qq">QQ登录</string>
+    <string name="tb_login_wb">微博登录</string>
+
+    <string name="tb_base_bind_success">绑定成功</string>
+    <string name="tb_base_create_account">创建账号</string>
+    <string name="tb_base_binding">绑定中...</string>
+    <string name="tb_base_bind">绑定</string>
+    <string name="tb_bind_tip_msg">如果已有同步账号，请绑定，以保证数据同步。如果未注册过同步账号，请选择“自动注册”。</string>
+    <string name="tb_login_oauth_failed">授权失败，请重试!</string>
+    <string name="tb_login_failed">登录失败，请重试！！</string>
+    <string name="tb_register_auto">自动注册</string>
+    <string name="tb_base_server_error">服务器数据处理异常，请重试！</string>
+    <string name="tb_pass_security_tip">为了增加支付系统的安全性，防止账号盗刷风险，请设置您的支付密码</string>
+    <string name="tb_base_confirm">确定</string>
+    <string name="tb_base_complete">完成</string>
+    <string name="tb_security_pass_title">请输入支付密码</string>
+    <string name="tb_security_pass_confirm_title">请再次输入支付密码</string>
+    <string name="tb_security_pass_fail_length">支付密码必须为6位数字</string>
+    <string name="tb_security_pass_fail_confirm">两次输入的密码不一致，请重新输入</string>
+    <string name="tb_security_pass_fail">设置失败，请重新设置</string>
+
+    <string name="tb_security_pass_tip_title">支付密码设置成功</string>
+    <string name="tb_security_pass_tip_msg">您可以去个人中心进行支付密码的管理与查看</string>
 </resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/tb_tab_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.tongbu.sdk.widget.password.TbGridPasswordView
+            android:id="@+id/tb_pass_view"
+            android:layout_width="250dp"
+            android:layout_height="45dp" />
+
+        <Button
+            android:id="@+id/tb_bt_commit"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/tb_base_btn_selector"
+            android:text="@string/tb_base_confirm"
+            android:textColor="@color/tb_base_text_white" />
+
+    </LinearLayout>
+
+</LinearLayout>

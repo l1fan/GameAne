@@ -2,4 +2,13 @@
 <resources>
     <color name="tb_base_tab_press">#157efb</color>
     <color name="tb_base_tab_normal">#919295</color>
+    <color name="tb_base_text_black">#ff333333</color>
+    <color name="tb_base_text_gray">#ff7f7f7f</color>
+    <color name="tb_base_text_white">#ffffffff</color>
+    <color name="tb_btn_green">#37ac17</color>
+    <color name="tb_btn_gray">#d6d6d6</color>
+    <color name="tb_card_background">#ffffff</color>
+    <color name="tb_card_shadow">#10000000</color>
+    <color name="tb_lite_blue">#ff359ff2</color>
+    <color name="tb_window_background">#00000000</color>
 </resources>

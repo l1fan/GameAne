@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="50dp"
-    android:orientation="vertical">
+    android:layout_height="50dp">
 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#bbbbbb" />
 
     <LinearLayout
         android:id="@+id/tb_ll_title_back"
@@ -43,29 +49,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
 
-        <ImageView
+        <com.tongbu.sdk.widget.TbTabButton
+            android:id="@+id/tb_btn_title_mobile"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/tb_tab_logo" />
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:text="手机注册"
+            android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/tb_tv_title_main"
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical" />
+
+
+        <com.tongbu.sdk.widget.TbTabButton
+            android:id="@+id/tb_btn_title_account"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/tb_user_login"
-            android:textColor="#ff333333"
-            android:textSize="20sp" />
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:text="账号注册"
+            android:textSize="12sp" />
     </LinearLayout>
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:layout_alignParentBottom="true"
-        android:background="#bbbbbb" />
-
 </RelativeLayout>
+

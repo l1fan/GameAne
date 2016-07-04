@@ -1,14 +1,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#f0f0f0">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
@@ -20,129 +19,103 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/tb_register_username"
+                    android:text="@string/tb_register_mobile"
                     android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <com.tongbu.sdk.widget.TbClearAbleEditText
-                    android:id="@+id/tb_et_register_username"
+                    android:id="@+id/tb_et_register_mobile"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:background="@null"
-                    android:hint="@string/tb_register_username_msg"
+                    android:hint="@string/tb_register_mobile_hint"
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:singleLine="true"
                     android:textColor="#ff333333"
                     android:textColorHint="#ababab"
                     android:textCursorDrawable="@null"
-                    android:textSize="14sp"
-                    tools:ignore="RtlHardcoded,UnusedAttribute" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <View
                 android:id="@+id/tb_line_register_name"
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="5dp"
                 android:background="#ebebeb" />
 
             <LinearLayout
                 android:id="@+id/tb_ll_register_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/tb_register_name"
+                    android:text="@string/tb_register_code"
                     android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <com.tongbu.sdk.widget.TbClearAbleEditText
-                    android:id="@+id/tb_et_register_name"
-                    android:layout_width="match_parent"
+                    android:id="@+id/tb_et_register_code"
+                    android:layout_width="120dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:background="@null"
-                    android:hint="@string/tb_register_name_msg"
-                    android:imeOptions="actionNext"
+                    android:hint="@string/tb_register_code_hint"
+                    android:imeOptions="actionDone"
                     android:inputType="text"
                     android:singleLine="true"
                     android:textColor="#ff333333"
                     android:textColorHint="#ababab"
                     android:textCursorDrawable="@null"
-                    android:textSize="14sp"
-                    tools:ignore="RtlHardcoded,UnusedAttribute" />
+                    android:textSize="14sp" />
+
+                <com.tongbu.sdk.widget.TbCountDownButton
+                    android:id="@+id/tb_bt_register_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/tb_btn_green_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text="@string/tb_register_btn_send"
+                    android:textColor="@color/tb_base_text_white"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <View
                 android:id="@+id/tb_line_register_identity"
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="5dp"
                 android:background="#ebebeb" />
 
+
             <LinearLayout
-                android:id="@+id/tb_ll_register_identity"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/tb_register_identity"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
-
-                <com.tongbu.sdk.widget.TbClearAbleEditText
-                    android:id="@+id/tb_et_register_identity"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-                    android:background="@null"
-                    android:hint="@string/tb_register_identity_msg"
-                    android:imeOptions="actionNext"
-                    android:inputType="text"
-                    android:singleLine="true"
-                    android:textColor="#ff333333"
-                    android:textColorHint="#ababab"
-                    android:textCursorDrawable="@null"
-                    android:textSize="14sp"
-                    tools:ignore="RtlHardcoded,UnusedAttribute" />
-            </LinearLayout>
-
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:background="#ebebeb" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/tb_register_pwd"
+                    android:text="@string/tb_register_password"
                     android:textColor="#000000"
                     android:textSize="16sp" />
 
@@ -154,44 +127,6 @@
                     android:layout_marginLeft="5dp"
                     android:background="@null"
                     android:hint="@string/tb_register_pwd_msg"
-                    android:imeOptions="actionNext"
-                    android:inputType="textPassword"
-                    android:longClickable="false"
-                    android:singleLine="true"
-                    android:textColor="#ff333333"
-                    android:textColorHint="#ababab"
-                    android:textCursorDrawable="@null"
-                    android:textSize="14sp"
-                    tools:ignore="RtlHardcoded,UnusedAttribute" />
-            </LinearLayout>
-
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:background="#ebebeb" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/tb_register_pwd_again"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
-
-                <com.tongbu.sdk.widget.TbClearAbleEditText
-                    android:id="@+id/tb_et_register_repassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-                    android:background="@null"
-                    android:hint="@string/tb_register_pwd_again_msg"
                     android:imeOptions="actionDone"
                     android:inputType="textPassword"
                     android:longClickable="false"
@@ -199,9 +134,10 @@
                     android:textColor="#ff333333"
                     android:textColorHint="#ababab"
                     android:textCursorDrawable="@null"
-                    android:textSize="14sp"
-                    tools:ignore="RtlHardcoded,UnusedAttribute" />
+                    android:textSize="14sp" />
             </LinearLayout>
+
+
         </LinearLayout>
 
 
@@ -211,11 +147,12 @@
             android:id="@+id/tb_bt_register_commit"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/tb_btn_green_bg"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/tb_base_btn_selector"
             android:text="@string/tb_register_commit"
             android:textColor="@android:color/white"
-            android:textSize="15sp" />
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -252,8 +189,7 @@
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:ignore="RtlHardcoded">
+            android:orientation="vertical">
 
 
             <TextView
@@ -288,16 +224,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical"
-            tools:ignore="RtlHardcoded">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/tb_ll_login_qq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="30dp"
-                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
@@ -320,16 +255,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_toRightOf="@id/tb_ll_login_qq"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tb_wb_icon"
-                    tools:ignore="RtlHardcoded" />
+                    android:src="@drawable/tb_wb_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -345,4 +279,3 @@
 
 
 </ScrollView>
-
