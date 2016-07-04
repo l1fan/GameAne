@@ -3,17 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@color/color_bg"
+    android:background="@color/ag_color_bg"
     android:gravity="center_horizontal" >
 
     <include
-        android:id="@+id/card_title"
+        android:id="@+id/ag_card_title"
         layout="@layout/ag_title" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/card_title"
+        android:layout_below="@id/ag_card_title"
         android:scrollbars="none" >
 
         <LinearLayout
@@ -22,72 +22,76 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/tv_phone_change_descripte"
+                android:id="@+id/ag_tv_phone_change_descripte"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/ag_10dp"
                 android:gravity="center_horizontal"
-                android:text="@string/pc_pwd_manager_tv23" />
+                android:text="@string/ag_pc_pwd_manager_tv23" />
 
 			<EditText
-                    android:id="@+id/et_newphone"
+                    android:id="@+id/ag_et_newphone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/color_white"
-                    android:hint="@string/register_phone_input_newphone_number"
+                    android:background="@color/ag_color_white"
+                    android:hint="@string/ag_register_phone_input_newphone_number"
                     android:inputType="number"
                     android:maxLength="11"
                     android:layout_marginBottom="20dp"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/ag_color_gray"
                     android:padding="@dimen/ag_10dp" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color_white"
+                android:background="@color/ag_color_white"
                 android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
                 <EditText
-                    android:id="@+id/et_newphone_change_verify_code"
+                    android:id="@+id/ag_et_newphone_change_verify_code"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:background="@color/color_white"
-                    android:hint="@string/register_phone_input_verifycode"
+                    android:background="@color/ag_color_white"
+                    android:hint="@string/ag_register_phone_input_verifycode"
                     android:inputType="textPassword"
                     android:focusable="true"  
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/ag_color_gray"
     				android:focusableInTouchMode="true"
                     android:padding="@dimen/ag_10dp" />
 
                 <Button
-                    android:id="@+id/btn_obtain_verify_code"
+                    android:id="@+id/ag_btn_obtain_verify_code"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/color_blue"
+                    android:background="@color/ag_color_blue"
                     android:singleLine="true"
-                    android:text="@string/register_phone_obtain_verifycode"
-                    android:textColor="@color/color_white"
+                    android:text="@string/ag_register_phone_obtain_verifycode"
+                    android:textColor="@color/ag_color_white"
                     android:textSize="@dimen/ag_16sp" />
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_next"
+                android:id="@+id/ag_btn_next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/ag_25dp"
                 android:layout_marginRight="@dimen/ag_25dp"
                 android:layout_marginTop="@dimen/ag_25dp"
                 android:background="@drawable/ag_btn_blue_select"
-                android:text="@string/find_password_next_step"
-                android:textColor="@color/color_white" />
+                android:text="@string/ag_find_password_next_step"
+                android:textColor="@color/ag_color_white" />
 
             <TextView
-                android:id="@+id/tv_phone_change_no_verify_code"
+                android:id="@+id/ag_tv_phone_change_no_verify_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/ag_25dp"
                 android:gravity="center_horizontal"
-                android:text="@string/pc_pwd_manager_tv9" />
+                android:text="@string/ag_pc_pwd_manager_tv9" />
         </LinearLayout>
     </ScrollView>
 

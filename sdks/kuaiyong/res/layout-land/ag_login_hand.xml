@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <RelativeLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_bg">
+    android:background="@color/ag_color_bg">
 
     <include
-        android:id="@+id/login_hand_title"
+        android:id="@+id/ag_login_hand_title"
         layout="@layout/ag_title" />
     
     <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
-    android:layout_below="@id/login_hand_title">
+    android:layout_below="@id/ag_login_hand_title">
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,14 +21,14 @@
         android:orientation="vertical" >
     
     <LinearLayout
-        style="@style/linearlayout_textview"
-        android:id="@+id/ll_title_desc"
+        style="@style/ag_linearlayout_textview"
+        android:id="@+id/ag_ll_title_desc"
         
          >
 
     <TextView
-        style="@style/textView_linearLayout"
-        android:text="@string/login_hand_7659"
+        style="@style/ag_textView_linearLayout"
+        android:text="@string/ag_login_hand_7659"
          />
 
     </LinearLayout>
@@ -39,11 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/ll_title_desc"
-         android:id="@+id/ll_et_username">
+        android:layout_below="@id/ag_ll_title_desc"
+         android:id="@+id/ag_ll_et_username">
     
     <LinearLayout
-        style="@style/linearLayout_1"
+        style="@style/ag_linearLayout_1"
         android:layout_gravity="center"
         android:layout_width="@dimen/ag_400dp"
         
@@ -51,23 +49,24 @@
         
         
         <ImageView 
-            style="@style/imageView_user_password_phone"
+            style="@style/ag_imageView_user_password_phone"
             android:src="@drawable/ag_username"
             />
         
         
         <EditText 
-            style="@style/EditText_style_input"
-            android:id="@+id/et_account"
+            style="@style/ag_EditText_style_input"
+            android:id="@+id/ag_et_account"
             android:imeOptions="flagNoExtractUi"
-            android:hint="@string/login_hand_input_user_or_phone"
+            android:hint="@string/ag_login_hand_input_user_or_phone"
+            android:textColorHint="@color/ag_color_gray"
             />
         
         <ImageView 
-            android:id="@+id/close_account"
+            android:id="@+id/ag_close_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/close"
+            android:src="@drawable/ag_close"
             android:visibility="invisible"/>
         
         
@@ -79,12 +78,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/ll_et_username"
-        android:id="@+id/ll_et_password"
+        android:layout_below="@id/ag_ll_et_username"
+        android:id="@+id/ag_ll_et_password"
         >
     
     <LinearLayout
-        style="@style/linearLayout_1"
+        style="@style/ag_linearLayout_1"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/ag_10dp"
         android:layout_width="@dimen/ag_400dp"
@@ -92,23 +91,24 @@
         
         
         <ImageView 
-            style="@style/imageView_user_password_phone"
+            style="@style/ag_imageView_user_password_phone"
             android:src="@drawable/ag_pwd"
            	/>
         
         
         <EditText 
-            android:id="@+id/et_login_password"
-            android:hint="@string/login_hand_input_password"
+            android:id="@+id/ag_et_login_password"
+            android:hint="@string/ag_login_hand_input_password"
             android:inputType="textPassword"
             android:imeOptions="flagNoExtractUi"
-            style="@style/EditText_style_input"/>
+            style="@style/ag_EditText_style_input"
+            android:textColorHint="@color/ag_color_gray"/>
         
         <ImageView 
-            android:id="@+id/close_password"
+            android:id="@+id/ag_close_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/close"
+            android:src="@drawable/ag_close"
             android:visibility="invisible"/>
         
     </LinearLayout>
@@ -119,7 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/ll_et_password"
+        android:layout_below="@id/ag_ll_et_password"
          >
     <RelativeLayout 
         android:layout_gravity="center"
@@ -128,16 +128,16 @@
         >
     
     <TextView 
-        style="@style/textview_register_forget"
-        android:id="@+id/tv_quick_register"
-        android:text="@string/login_hand_quick_register"
+        style="@style/ag_textview_register_forget"
+        android:id="@+id/ag_tv_quick_register"
+        android:text="@string/ag_login_hand_quick_register"
         android:layout_marginLeft="0dp"
         android:layout_alignParentLeft="true"/>
     
     <TextView 
-        style="@style/textview_register_forget"
-        android:id="@+id/tv_forget"
-        android:text="@string/login_game_forget"
+        style="@style/ag_textview_register_forget"
+        android:id="@+id/ag_tv_forget"
+        android:text="@string/ag_login_game_forget"
         android:layout_alignParentRight="true"/>
     
 	</RelativeLayout>
@@ -145,19 +145,20 @@
     
     
     <LinearLayout
-        android:id="@+id/ll_btn_login"
+        android:id="@+id/ag_ll_btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@+id/ll_et_password" >
+        android:layout_below="@+id/ag_ll_et_password" >
     <Button
         android:layout_gravity="center"
-        style="@style/button_blue_style"
-        android:id="@+id/btn_login"
+        style="@style/ag_button_blue_style"
+        android:id="@+id/ag_btn_login"
         android:layout_width="@dimen/ag_400dp"
+        android:layout_height="@dimen/ag_50dp"
         android:layout_marginTop="@dimen/ag_30dp"
         android:layout_marginBottom="@dimen/ag_40dp"
-        android:text="@string/login_hand_login_now"
+        android:text="@string/ag_login_hand_login_now"
         />
     </LinearLayout>
     
@@ -182,38 +183,43 @@
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/ag_10dp"
             android:layout_marginRight="@dimen/ag_5dp"
-            android:background="@color/color_gray"/>
+            android:background="@color/ag_color_gray"/>
         
         
          <TextView 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="V"/>
+            android:text="@string/ag_v"
+            android:textColor="@color/ag_color_black_textview"/>
          
          
         <TextView 
-            android:id="@+id/sdk_version"
+            android:id="@+id/ag_sdk_version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sdk版本号"/>
+            android:text="@string/ag_sdkVersion"
+            android:textColor="@color/ag_color_black_textview"/>
         
           
         <TextView 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="("/>
+            android:text="@string/ag_left"
+            android:textColor="@color/ag_color_black_textview"/>
         
           
         <TextView 
-            android:id="@+id/channelId"
+            android:id="@+id/ag_channelId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="渠道ID"/>  
+            android:text="@string/ag_channleID"
+            android:textColor="@color/ag_color_black_textview"/>  
         
         <TextView 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=")"/>
+            android:text="@string/ag_right"
+            android:textColor="@color/ag_color_black_textview"/>
         
          <View 
             android:layout_width="0dp"
@@ -222,7 +228,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/ag_5dp"
             android:layout_marginRight="@dimen/ag_10dp"
-            android:background="@color/color_gray"/>
+            android:background="@color/ag_color_gray"/>
         
         
     </LinearLayout>

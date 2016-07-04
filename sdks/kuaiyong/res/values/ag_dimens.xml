@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--默认  -->
-    
+    <!-- 默认 -->
+
+
     <!-- sp -->
+    <dimen name="ag_12sp">12sp</dimen>
     <dimen name="ag_14sp">14sp</dimen>
     <dimen name="ag_16sp">16sp</dimen>
     <dimen name="ag_17sp">17sp</dimen>
@@ -62,14 +64,11 @@
     <dimen name="ag_300dp">300dp</dimen>
     <dimen name="ag_400dp">400dp</dimen>
     <dimen name="ag_450dp">450dp</dimen>
-  
-  
-    
-    
-     <!-- 适配参数 -->
+
+    <!-- 适配参数 -->
     <dimen name="ag_500dp">25dp</dimen>
     <dimen name="ag_501dp">60dp</dimen>
-    <dimen name="ag_502dp">16dp</dimen>  
+    <dimen name="ag_502dp">16dp</dimen>
     <dimen name="ag_503dp">0dp</dimen>
     <dimen name="ag_504dp">5dp</dimen>
     <dimen name="ag_505dp">45dp</dimen>
@@ -84,8 +83,10 @@
     <dimen name="ag_515dp">30dp</dimen>
     <dimen name="ag_516dp">20dp</dimen>
     <dimen name="ag_517dp">0dp</dimen>
-    
+    <dimen name="ag_bobble_move_distance">60px</dimen>
+    <dimen name="ag_519dp">15dp</dimen>
 
     <!-- other -->
+    <dimen name="ag_anim_circle_indicator_height">30dp</dimen>
 
 </resources>

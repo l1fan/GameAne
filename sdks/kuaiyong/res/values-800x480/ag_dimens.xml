@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 800x480 -->
+    <!-- 适配参数 -->
+    <dimen name="ag_500dp">25dp</dimen>
+    <dimen name="ag_501dp">60dp</dimen>
+    <dimen name="ag_502dp">10dp</dimen>
+    <dimen name="ag_503dp">0dp</dimen>
+    <dimen name="ag_504dp">5dp</dimen>
+    <dimen name="ag_505dp">45dp</dimen>
+    <dimen name="ag_506dp">25dp</dimen>
+    <dimen name="ag_508dp">30dp</dimen>
+    <dimen name="ag_509dp">10dp</dimen>
+    <dimen name="ag_510dp">4dp</dimen>
+    <dimen name="ag_511dp">10dp</dimen>
+    <dimen name="ag_512dp">10dp</dimen>
+    <dimen name="ag_513dp">20dp</dimen>
+    <dimen name="ag_514dp">2dp</dimen>
+    <dimen name="ag_515dp">35dp</dimen>
+    <dimen name="ag_516dp">10dp</dimen>
+    <dimen name="ag_517dp">0dp</dimen>
+    <dimen name="ag_519dp">8dp</dimen>
+
+</resources>

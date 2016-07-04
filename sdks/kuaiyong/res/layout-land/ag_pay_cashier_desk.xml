@@ -3,17 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@color/color_bg"
+    android:background="@color/ag_color_bg"
     android:gravity="center_horizontal" >
 
     <include
-        android:id="@+id/card_title"
+        android:id="@+id/ag_card_title"
         layout="@layout/ag_title" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/card_title"
+        android:layout_below="@id/ag_card_title"
         android:scrollbars="none" >
 
         <LinearLayout
@@ -22,11 +22,11 @@
             android:orientation="vertical" >
 
             <RelativeLayout
-                android:id="@+id/rl_pwd_trade_change"
+                android:id="@+id/ag_rl_pwd_trade_change"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ag_15dp"
-                android:background="@color/color_white"
+                android:background="@color/ag_color_white"
                 android:gravity="center_vertical" >
 
                 <TextView
@@ -40,7 +40,7 @@
                     android:text="@string/ag_pay_red_packet_tv2" />
 
                 <LinearLayout
-                    android:id="@+id/ll_pwd_trade_change"
+                    android:id="@+id/ag_ll_pwd_trade_change"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
@@ -49,12 +49,12 @@
                     android:orientation="horizontal" >
 
                     <TextView
-                        android:id="@+id/tv_recharge"
+                        android:id="@+id/ag_tv_recharge"
                         style="@style/ag_tv_blue"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/ag_15dp"
-                        android:text="50.00元" />
+                        android:text="@string/ag_pay_tv20" />
                 </LinearLayout>
             </RelativeLayout>
 
@@ -66,30 +66,32 @@
                 android:text="@string/ag_pay_red_packet_tv3" />
 
             <LinearLayout
-                android:id="@+id/ll_cash_check"
+                android:id="@+id/ag_ll_cash_check"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color_white"
+                android:background="@color/ag_color_white"
                 android:orientation="vertical" >
 
                 <com.anguotech.sdk.view.MyListView
-                    android:id="@+id/listview"
+                    android:id="@+id/ag_listview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/color_white"
+                    android:background="@color/ag_color_white"
+                    android:divider="@color/ag_color_gray_white"
+                    android:dividerHeight="0.5dp"
                     android:scrollbars="none" >
                 </com.anguotech.sdk.view.MyListView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:background="@color/color_bg" />
+                    android:background="@color/ag_color_bg" />
 
                 <LinearLayout
-                    android:id="@+id/rl_cash_check_more"
+                    android:id="@+id/ag_rl_cash_check_more"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/color_white"
+                    android:background="@color/ag_color_white"
                     android:gravity="center_vertical" >
 
                     <ImageView
@@ -99,7 +101,7 @@
                         android:src="@drawable/ag_more" />
 
                     <TextView
-                        android:id="@+id/tv_cash_check_more"
+                        android:id="@+id/ag_tv_cash_check_more"
                         style="@style/ag_tv_normal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -109,12 +111,12 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_pay_sure"
+                android:id="@+id/ag_btn_pay_sure"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/ag_50dp"
                 android:layout_margin="@dimen/ag_25dp"
                 android:background="@drawable/ag_btn_blue_select"
-                android:textColor="@color/color_white" />
+                android:textColor="@color/ag_color_white" />
         </LinearLayout>
     </ScrollView>
 

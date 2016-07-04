@@ -5,19 +5,19 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/tv_remind"
+        android:id="@+id/ag_tv_remind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/ag_60dp"
-        android:text="亲，没有找到该网页。" 
+        android:text="@string/ag_not_find_web" 
         android:layout_marginLeft="@dimen/ag_10dp"
         android:textSize="@dimen/ag_16sp"/>
 
     <ImageView
         android:layout_width="@dimen/ag_200dp"
         android:layout_height="@dimen/ag_200dp"
-        android:layout_below="@+id/tv_remind"
+        android:layout_below="@+id/ag_tv_remind"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/ag_40dp"
         android:src="@drawable/ag_logo" />

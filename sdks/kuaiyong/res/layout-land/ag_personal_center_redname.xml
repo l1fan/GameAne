@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/ag_color_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/ag_card_title"
+        layout="@layout/ag_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ag_card_title"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" 
+        android:gravity="center">
+
+        <ListView
+            android:id="@+id/ag_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ag_10dp"
+            android:divider="@color/ag_color_bg"
+            android:dividerHeight="@dimen/ag_5dp"
+            android:scrollbars="none"
+            android:visibility="gone"
+             >
+        </ListView>
+
+        <ImageView
+            android:id="@+id/ag_iv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ag_wallet_details"
+            
+            />
+    </LinearLayout>
+
+</RelativeLayout>

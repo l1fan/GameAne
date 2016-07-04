@@ -4,10 +4,10 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/ag_15dp"
     android:layout_marginTop="@dimen/ag_15dp"
-    android:background="@color/color_bg" >
+    android:background="@color/ag_color_bg" >
 
     <com.anguotech.sdk.view.MyGridView
-        android:id="@+id/gridview"
+        android:id="@+id/ag_gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numColumns="3"

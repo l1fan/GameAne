@@ -20,7 +20,7 @@
 
         <ProgressBar
             android:id="@+id/ag_progressBar1"
-            style="@style/MyProgress_style_image"
+            style="@style/ag_MyProgress_style_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -32,8 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ag_15dp"
-            android:text="正在读取数据..."
-            android:textColor="@color/color_black_textview"
+            android:text="@string/ag_progress_obtain_data"
+            android:textColor="@color/ag_color_black_textview"
             android:textSize="@dimen/ag_16sp" >
         </TextView>
     </LinearLayout>

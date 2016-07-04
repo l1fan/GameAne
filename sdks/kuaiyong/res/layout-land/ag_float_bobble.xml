@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/float_id"
+        android:id="@+id/ag_float_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ag_float_bobble"

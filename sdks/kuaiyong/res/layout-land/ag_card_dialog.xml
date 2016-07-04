@@ -4,23 +4,23 @@
     android:layout_height="wrap_content" >
 
     <RelativeLayout
-        android:id="@+id/rl_dialog_content"
+        android:id="@+id/ag_rl_dialog_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="@dimen/ag_512dp"
         android:layout_marginLeft="@dimen/ag_10dp"
         android:layout_marginRight="@dimen/ag_10dp"
         android:layout_marginTop="@dimen/ag_20dp"
-        android:background="@drawable/dialog_card_background" >
+        android:background="@drawable/ag_dialog_card_background" >
         
         <RelativeLayout 
-            android:id="@+id/rl_title"
+            android:id="@+id/ag_rl_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/ag_10dp">
             
           <ImageView
-            android:id="@+id/tv"
+            android:id="@+id/ag_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/ag_30dp"
@@ -32,7 +32,7 @@
              
              
            <ImageView
-            android:id="@+id/iv_cancle"
+            android:id="@+id/ag_iv_cancle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -44,32 +44,32 @@
         </RelativeLayout>
         
      <LinearLayout
-            android:id="@+id/ll"
+            android:id="@+id/ag_ll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/btn_update"
+                android:id="@+id/ag_btn_update"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/ag_50dp"
                 android:layout_marginBottom="@dimen/ag_20dp"
                 android:layout_marginLeft="@dimen/ag_20dp"
                 android:layout_marginRight="@dimen/ag_20dp"
                 android:background="@drawable/ag_btn_blue"
-                android:textColor="@color/color_white"
-                android:text="@string/update_now"
+                android:textColor="@color/ag_color_white"
+                android:text="@string/ag_update_now"
                 android:textSize="@dimen/ag_18sp"
                 />
         </LinearLayout>
         
         <TextView
-            android:id="@+id/tv_explain"
+            android:id="@+id/ag_tv_explain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rl_title"
-            android:layout_above="@id/ll"
+            android:layout_below="@+id/ag_rl_title"
+            android:layout_above="@id/ag_ll"
             android:layout_marginLeft="@dimen/ag_15dp"
             android:layout_marginRight="@dimen/ag_15dp"
             android:layout_marginTop="@dimen/ag_10dp"
@@ -77,7 +77,7 @@
             android:scrollbarStyle="outsideOverlay"
             android:scrollbarFadeDuration="3000"
             android:padding="@dimen/ag_10dp"
-            android:text="@string/update_log"
+            android:text="@string/ag_update_log"
             android:textSize="@dimen/ag_16sp" />
 
       
@@ -85,9 +85,9 @@
      
         <View 
             android:layout_width="match_parent"
-            android:layout_below="@id/rl_title"
+            android:layout_below="@id/ag_rl_title"
             android:layout_height="1dp"
-            android:background="@color/color_gray_white"/>
+            android:background="@color/ag_color_gray_white"/>
         
         
         

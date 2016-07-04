@@ -6,7 +6,7 @@
     <RelativeLayout 
         android:layout_width="match_parent"
         android:layout_height="@dimen/ag_100dp"
-        android:background="@drawable/dialog_card_background"
+        android:background="@drawable/ag_dialog_card_background"
         android:layout_marginLeft="@dimen/ag_10dp"
         android:layout_marginRight="@dimen/ag_10dp"
         android:layout_marginTop="@dimen/ag_20dp">
@@ -17,14 +17,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/ag_5dp" 
-            android:id="@+id/ll_title">
+            android:id="@+id/ag_ll_title">
              
             <TextView 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="温馨提示"
+            android:text="@string/ag_warm_tishi"
             android:textSize="@dimen/ag_18sp"
-            android:textColor="@color/color_blue"
+            android:textColor="@color/ag_color_blue"
             android:layout_gravity="center"
             />
             
@@ -33,11 +33,12 @@
         
         
         <TextView 
-            android:layout_below="@id/ll_title"
+            android:layout_below="@id/ag_ll_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_error_msg_remind"
-            android:text="错误提示"
+            android:id="@+id/ag_tv_error_msg_remind"
+            android:text="@string/ag_error_tishi"
+            android:textColor="@color/ag_color_black_textview"
             android:layout_marginLeft="@dimen/ag_10dp"
             android:layout_marginRight="@dimen/ag_10dp"
             android:layout_marginTop="@dimen/ag_10dp"/>

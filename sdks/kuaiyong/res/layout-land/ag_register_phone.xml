@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <RelativeLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
-    android:background="@color/color_bg">
+    android:background="@color/ag_color_bg">
     
     <include layout="@layout/ag_title"
-        android:id="@+id/register_phone_title"/>
+        android:id="@+id/ag_register_phone_title"/>
     
     
     <ScrollView 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/register_phone_title"
+        android:layout_below="@id/ag_register_phone_title"
         >
         
     
@@ -27,14 +25,14 @@
     
     
     <LinearLayout 
-        style="@style/linearlayout_textview"
-        android:id="@+id/ll_register_phone_title"
+        style="@style/ag_linearlayout_textview"
+        android:id="@+id/ag_ll_register_phone_title"
         
         >
     
     <TextView 
-        style="@style/textView_linearLayout"
-        android:text="@string/register_phone_recomond"
+        style="@style/ag_textView_linearLayout"
+        android:text="@string/ag_register_phone_recomond"
         />
     
      </LinearLayout>
@@ -43,30 +41,31 @@
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:orientation="vertical"
-         android:id="@+id/ll_et_phonenumer"
-         android:layout_below="@id/ll_register_phone_title"
+         android:id="@+id/ag_ll_et_phonenumer"
+         android:layout_below="@id/ag_ll_register_phone_title"
          >
      <LinearLayout 
-         style="@style/linearLayout_1"
+         style="@style/ag_linearLayout_1"
          android:layout_gravity="center"
          android:layout_width="@dimen/ag_400dp"
          >
          
          <ImageView 
-             style="@style/imageView_user_password_phone"
+             style="@style/ag_imageView_user_password_phone"
              android:src="@drawable/ag_phone"
             />
          
          
          <EditText 
-             android:id="@+id/et_input_phone_number"
-             android:hint="@string/register_phone_input_phone_number"
+             android:id="@+id/ag_et_input_phone_number"
+             android:hint="@string/ag_register_phone_input_phone_number"
              android:inputType="phone"
-             style="@style/EditText_style_input"/>
+             style="@style/ag_EditText_style_input"
+             android:textColorHint="@color/ag_color_gray"/>
          
          <ImageView 
-             style="@style/close_image"
-             android:id="@+id/phone"
+             style="@style/ag_close_image"
+             android:id="@+id/ag_phone"
             />
          
      </LinearLayout>
@@ -76,11 +75,11 @@
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:orientation="vertical"
-         android:id="@+id/ll_verifycode"
-         android:layout_below="@id/ll_et_phonenumer"
+         android:id="@+id/ag_ll_verifycode"
+         android:layout_below="@id/ag_ll_et_phonenumer"
          >
      <LinearLayout
-         style="@style/linearlayout_contain_obtainVerifyCodeButton"
+         style="@style/ag_linearlayout_contain_obtainVerifyCodeButton"
          android:layout_gravity="center"
          android:layout_width="@dimen/ag_400dp"
          >
@@ -92,20 +91,21 @@
          >
          
          <EditText 
-             android:id="@+id/et_input_verifycode"
-             android:hint="@string/register_phone_input_verifycode"
-             style="@style/EditText_style_input"
+             android:id="@+id/ag_et_input_verifycode"
+             android:hint="@string/ag_register_phone_input_verifycode"
+             style="@style/ag_EditText_style_input"
              android:paddingLeft="@dimen/ag_10dp"
-             android:inputType="number"/>
+             android:inputType="number"
+             android:textColorHint="@color/ag_color_gray"/>
          
          
          
      </LinearLayout>
      
      <Button 
-         style="@style/obtainVerifyCodeButton"
-         android:id="@+id/btn_obtain_verifycode"
-         android:text="@string/register_phone_obtain_verifycode"
+         style="@style/ag_obtainVerifyCodeButton"
+         android:id="@+id/ag_btn_obtain_verifycode"
+         android:text="@string/ag_register_phone_obtain_verifycode"
          />
      
      </LinearLayout>
@@ -113,23 +113,24 @@
      
      
      <LinearLayout
-         android:id="@+id/ll_btn_next_step"
+         android:id="@+id/ag_ll_btn_next_step"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:orientation="vertical"
-         android:layout_below="@id/ll_verifycode" >
+         android:layout_below="@id/ag_ll_verifycode" >
      <Button 
          android:layout_width="@dimen/ag_400dp"
-         android:id="@+id/btn_next_step"
-         style="@style/button_blue_style"
-         android:text="@string/register_phone_next_step"
+         android:layout_height="@dimen/ag_50dp"
+         android:id="@+id/ag_btn_next_step"
+         style="@style/ag_button_blue_style"
+         android:text="@string/ag_register_phone_next_step"
          android:layout_gravity="center"
          android:layout_marginTop="@dimen/ag_30dp"
         />
     </LinearLayout>
      
      <LinearLayout 
-         android:layout_below="@id/ll_btn_next_step"
+         android:layout_below="@id/ag_ll_btn_next_step"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:layout_marginBottom="@dimen/ag_20dp"
@@ -141,12 +142,12 @@
          android:layout_marginTop="@dimen/ag_30dp"
          >
      <TextView 
-        android:id="@+id/tv_register_user"
+        android:id="@+id/ag_tv_register_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/color_baby_blue"
+        android:textColor="@color/ag_color_baby_blue"
         android:textSize="@dimen/ag_16sp"
-        android:text="@string/register_phone_user_register"
+        android:text="@string/ag_register_phone_user_register"
         />
     </RelativeLayout>
     </LinearLayout>

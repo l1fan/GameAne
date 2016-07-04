@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ag_shape_white_only2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="@dimen/ag_10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/ag_20dp"
+                android:layout_marginRight="@dimen/ag_20dp"
+                android:id="@+id/ag_pay_back"
+                android:src="@drawable/ag_title_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/ag_20dp"
+                android:textSize="@dimen/ag_24sp"
+                android:textColor="@color/ag_color_black_textview"
+                android:text="@string/ag_pay_red_packet_tv23"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/ag_15dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:background="@color/ag_color_gray_white"/>
+
+        <TextView
+            style="@style/ag_tv_descripte_little"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ag_10dp"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:textSize="@dimen/ag_18sp"
+            android:text="@string/ag_pay_tv27"
+            android:textColor="@color/ag_color_black_textview"/>
+
+        <EditText
+            android:id="@+id/ag_pay_pwd_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ag_10dp"
+            android:background="@drawable/ag_shape_white"
+            android:hint="@string/ag_pay_tv2"
+            android:inputType="textPassword"
+            android:padding="@dimen/ag_10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/ag_color_gray"
+            android:textColor="@color/ag_color_black_textview"
+            android:textCursorDrawable="@null"/>
+
+        <Button
+            android:id="@+id/ag_btn_open_pwd"
+            style="@style/ag_tv_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ag_50dp"
+            android:layout_marginBottom="@dimen/ag_30dp"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:background="@drawable/ag_btn_blue_select"
+            android:text="@string/ag_pay_tv28"/>
+
+    </LinearLayout>
+
+</LinearLayout>

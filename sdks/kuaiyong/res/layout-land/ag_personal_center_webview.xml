@@ -8,22 +8,22 @@
     android:gravity="center_horizontal" >
 
     <include
-        android:id="@+id/card_title"
+        android:id="@+id/ag_card_title"
         layout="@layout/ag_title" />
 
     <TextView
         android:gravity="center"
-        android:id="@+id/center_imageview"
+        android:id="@+id/ag_center_imageview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/card_title"
+        android:layout_below="@id/ag_card_title"
         android:visibility="gone" />
 
     <WebView
-        android:id="@+id/center_webview"
+        android:id="@+id/ag_center_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/card_title"
+        android:layout_below="@id/ag_card_title"
         android:visibility="gone" />
 
 </RelativeLayout>

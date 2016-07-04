@@ -3,23 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
-    android:background="@color/color_bg"
+    android:background="@color/ag_color_bg"
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:gravity="center_horizontal" >
 
     <include
-        android:id="@+id/card_title"
+        android:id="@+id/ag_card_title"
         layout="@layout/ag_title" />
 
     <ScrollView
-        android:id="@+id/scrollview"
+        android:id="@+id/ag_scrollview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/card_title"
+        android:layout_below="@id/ag_card_title"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/ag_10dp"
-        android:scrollbars="none" >
+        android:scrollbars="none"
+        android:overScrollMode="never" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,29 +32,53 @@
             <include layout="@layout/ag_personal_center_gridview" />
 
             <Button
-                android:id="@+id/btn_exit"
+                android:id="@+id/ag_btn_exit"
                 style="@style/ag_tv_large"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/ag_506dp"
+                android:layout_height="@dimen/ag_50dp"
+                android:layout_marginBottom="@dimen/ag_10dp"
                 android:layout_marginLeft="@dimen/ag_506dp"
                 android:layout_marginRight="@dimen/ag_506dp"
                 android:layout_marginTop="@dimen/ag_15dp"
                 android:background="@drawable/ag_btn_red"
-                android:text="@string/pc_account_exit"
-                android:textColor="@color/color_red" />
+                android:text="@string/ag_pc_account_exit"
+                android:textColor="@color/ag_color_red" />
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ag_506dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/ag_5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客服QQ: "
+                    android:textColor="@color/ag_color_black_textview"
+                    android:textSize="@dimen/ag_20sp" />
+
+                <TextView
+                    android:id="@+id/ag_personal_center_service_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ag_10dp"
+                    android:layout_marginRight="@dimen/ag_10dp"
+                    android:textColor="@color/ag_color_login_qq"
+                    android:textSize="@dimen/ag_20sp" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
     <RelativeLayout
-        android:id="@+id/rl_ad"
+        android:id="@+id/ag_rl_ad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:visibility="gone" >
 
         <ImageView
-            android:id="@+id/iv_ad"
+            android:id="@+id/ag_iv_ad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"

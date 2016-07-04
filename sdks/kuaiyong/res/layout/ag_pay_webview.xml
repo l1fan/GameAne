@@ -3,16 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@color/color_bg"
+    android:background="@color/ag_color_bg"
     android:gravity="center_horizontal"
     android:orientation="vertical" >
 
     <include
-        android:id="@+id/card_title"
+        android:id="@+id/ag_card_title"
         layout="@layout/ag_title" />
 
     <WebView
-        android:id="@+id/webview"
+        android:id="@+id/ag_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none" />

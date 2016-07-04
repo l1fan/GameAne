@@ -84,7 +84,8 @@
     <dimen name="ag_514dp">10dp</dimen>
     <dimen name="ag_515dp">30dp</dimen>
     <dimen name="ag_516dp">20dp</dimen>
-    <dimen name="ag_517dp">50dp</dimen>     
+    <dimen name="ag_517dp">50dp</dimen> 
+    <dimen name="ag_518dp">80dp</dimen>     
 
     <!-- other -->
 

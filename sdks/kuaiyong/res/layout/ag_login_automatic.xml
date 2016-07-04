@@ -2,17 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:background="@color/color_bg"
+   android:background="@color/ag_color_bg"
      >
     
     
     <include layout="@layout/ag_title"
-        android:id="@+id/layout_title"/>
+        android:id="@+id/ag_layout_title"/>
     
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/layout_title">
+        android:layout_below="@id/ag_layout_title">
     
     
     <RelativeLayout 
@@ -21,17 +21,17 @@
        >
    
     <RelativeLayout
-        android:id="@+id/rl_passport_info"
+        android:id="@+id/ag_rl_passport_info"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ag_200dp"
       
         android:layout_marginLeft="@dimen/ag_10dp"
         android:layout_marginRight="@dimen/ag_10dp"
         android:layout_marginTop="@dimen/ag_10dp"
-        android:background="@drawable/dialog_card_background" >
+        android:background="@drawable/ag_dialog_card_background" >
 
         <ImageView
-            android:id="@+id/user_image"
+            android:id="@+id/ag_user_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -41,48 +41,48 @@
 
         
         <LinearLayout 
-            android:id="@+id/ll_passport_name"
+            android:id="@+id/ag_ll_passport_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_below="@id/user_image"
+            android:layout_below="@id/ag_user_image"
             android:layout_marginTop="@dimen/ag_26dp"
             android:gravity="center">
             
         
         
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/ag_textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_auto_tv_1"
-            android:textColor="@color/color_black_textview"
+            android:text="@string/ag_login_auto_tv_1"
+            android:textColor="@color/ag_color_black_textview"
             android:textSize="@dimen/ag_17sp"
             android:layout_marginRight="@dimen/ag_10dp" />
         
         <TextView 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/color_black_textview"
+            android:textColor="@color/ag_color_black_textview"
             android:textSize="@dimen/ag_17sp"
-            android:text="@string/login_auto_tv_3"/>
+            android:text="@string/ag_login_auto_tv_3"/>
 
         <TextView
-            android:id="@+id/tv_passport_name"
+            android:id="@+id/ag_tv_passport_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/ag_5dp"
             android:layout_marginRight="@dimen/ag_5dp"
             android:textSize="@dimen/ag_17sp"
-            android:textColor="@color/color_black_textview"
-            android:text="@string/login_auto_tv_passname" />
+            android:textColor="@color/ag_color_black_textview"
+            android:text="@string/ag_login_auto_tv_passname" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/ag_17sp"
-            android:textColor="@color/color_black_textview"
-            android:text="@string/login_auto_tv_2" />
+            android:textColor="@color/ag_color_black_textview"
+            android:text="@string/ag_login_auto_tv_2" />
         
         </LinearLayout>
         
@@ -90,62 +90,61 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_below="@id/ll_passport_name"
+            android:layout_below="@id/ag_ll_passport_name"
             >
 		<RelativeLayout
-		    android:id="@+id/rl_subname"
+		    android:id="@+id/ag_rl_subname"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content" 
 		    android:layout_gravity="center"
 		    android:layout_marginTop="@dimen/ag_12dp"
 		    >    
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/ag_textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/ag_17sp"
-            android:textColor="@color/color_black_textview"
-            android:text="@string/login_auto_tv_subuser" />
+            android:textColor="@color/ag_color_black_textview"
+            android:text="@string/ag_login_auto_tv_subuser" />
 
         <TextView
-            android:id="@+id/tvSubName"
+            android:id="@+id/ag_tvSubName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/textView2"
+            android:layout_toRightOf="@id/ag_textView2"
             android:textSize="@dimen/ag_17sp"
-            android:textColor="@color/color_black_textview"
-            android:text="@string/login_auto_tv_subuser_name" />
+            android:textColor="@color/ag_color_black_textview"
+            android:text="@string/ag_login_auto_tv_subuser_name" />
 		</RelativeLayout>
 		</LinearLayout>
     </RelativeLayout>
     
     <Button 
-        android:id="@+id/btn_after_seconds"
+        android:id="@+id/ag_btn_after_seconds"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/rl_passport_info"
+        android:layout_height="@dimen/ag_50dp"
+        android:layout_below="@id/ag_rl_passport_info"
         android:layout_marginTop="@dimen/ag_15dp"
         android:layout_marginLeft="@dimen/ag_10dp"
         android:layout_marginRight="@dimen/ag_10dp"
         android:background="@drawable/ag_btn_baby_blue"
-        android:textColor="@color/color_white"
+        android:textColor="@color/ag_color_white"
         android:textSize="@dimen/ag_18sp"
-        android:text="@string/login_auto_tv_time_show"/>
+        android:text="@string/ag_login_auto_tv_time_show"/>
     
     
     <Button 
-        android:id="@+id/btn_switch_passport"
+        android:id="@+id/ag_btn_switch_passport"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_after_seconds"
+        android:layout_height="@dimen/ag_50dp"
+        android:layout_below="@id/ag_btn_after_seconds"
         android:layout_marginTop="@dimen/ag_15dp"
         android:layout_marginLeft="@dimen/ag_10dp"
         android:layout_marginRight="@dimen/ag_10dp"
         android:background="@drawable/ag_btn_white"
-        android:text="@string/login_auto_tv_switch_pass"
+        android:text="@string/ag_login_auto_tv_switch_pass"
         android:textSize="@dimen/ag_18sp"
-        android:textColor="@color/color_baby_blue"/>
-    
+        android:textColor="@color/ag_color_baby_blue"/>
     
     
   </RelativeLayout>

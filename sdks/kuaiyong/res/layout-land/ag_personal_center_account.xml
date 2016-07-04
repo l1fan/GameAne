@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/color_white"
+    android:background="@color/ag_color_white"
     android:gravity="center_vertical"
     android:orientation="vertical" >
 
@@ -20,13 +20,12 @@
             android:layout_marginLeft="@dimen/ag_20dp"
             android:orientation="horizontal" >
 
-            <com.anguotech.sdk.view.CircleImageView
-                android:id="@+id/iv_account"
+            <ImageView
+                android:id="@+id/ag_iv_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ag_head_image"
-                app:border_color="#FFffff"
-                app:border_width="1dp" />
+             	 />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -41,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/ag_5dp"
-                    android:text="@string/pc_account"
+                    android:text="@string/ag_pc_account"
                     android:textSize="@dimen/ag_16sp" />
 
                 <LinearLayout
@@ -55,8 +54,8 @@
                         style="@style/ag_tv_normal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/pc_account_little1"
-                        android:textColor="@color/color_black"
+                        android:text="@string/ag_pc_account_little1"
+                        android:textColor="@color/ag_color_black"
                         android:textSize="@dimen/ag_16sp" />
 
                     <TextView
@@ -64,27 +63,28 @@
                         style="@style/ag_tv_normal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/pc_account_little2"
-                        android:textColor="@color/color_black"
+                        android:text="@string/ag_pc_account_little2"
+                        android:textColor="@color/ag_color_black"
                         android:textSize="@dimen/ag_16sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            android:id="@+id/iv_flush_little"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/ag_iv_flush_little"
+            android:layout_width="@dimen/ag_86dp"
+            android:layout_height="@dimen/ag_50dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/ag_20dp"
             android:background="@drawable/ag_btn_white"
-            android:text="@string/pc_flush_little"
-            android:textColor="@color/color_personal_center_blue"
+            android:text="@string/ag_pc_flush_little"
+            android:textColor="@color/ag_color_personal_center_blue"
             android:textSize="14sp" />
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/ag_ll_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/ag_15dp"
@@ -93,6 +93,7 @@
         android:orientation="horizontal" >
 
         <LinearLayout
+            android:id="@+id/ag_ll_account_level"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -105,17 +106,18 @@
                 android:layout_marginLeft="@dimen/ag_25dp" >
 
                 <ImageView
+                    android:id="@+id/ag_iv_account_level"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ag_experience" />
 
                 <TextView
-                    android:id="@+id/tv_account_level"
+                    android:id="@+id/ag_tv_account_level"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:paddingTop="@dimen/ag_5dp"
-                    android:text="3"
+                    android:text="@string/ag_pc_account_level"
                     android:textColor="#EAAF35" />
             </RelativeLayout>
 
@@ -126,22 +128,24 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/tv_account_exp"
+                    android:id="@+id/ag_tv_account_exp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/ag_5dp"
-                    android:text="90/100"
-                    android:textColor="@color/color_black_textview" />
+                    android:text="@string/ag_pc_account_show_num"
+                    android:textColor="@color/ag_color_black_textview" />
             </LinearLayout>
         </LinearLayout>
 
         <View
             android:layout_width="0.5dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/ag_15dp"
-            android:background="@color/color_gray_white" />
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:background="@color/ag_color_gray_white" />
 
         <LinearLayout
+            android:id="@+id/ag_ll_account_balance"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -149,18 +153,19 @@
             android:orientation="horizontal" >
 
             <ImageView
+                android:id="@+id/ag_iv_account_point_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/ag_25dp"
                 android:src="@drawable/ag_money" />
 
             <TextView
-                android:id="@+id/tv_account_point_balance"
+                android:id="@+id/ag_tv_account_point_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/ag_5dp"
-                android:text="90/100"
-                android:textColor="@color/color_black_textview" />
+                android:text="@string/ag_pc_account_show_num"
+                android:textColor="@color/ag_color_black_textview" />
         </LinearLayout>
     </LinearLayout>
 

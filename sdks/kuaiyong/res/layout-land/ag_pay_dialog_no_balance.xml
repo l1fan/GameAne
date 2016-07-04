@@ -31,12 +31,12 @@
                     android:text="@string/ag_pay_tv7" />
 
                 <TextView
-                    android:id="@+id/tv_pay_balance"
+                    android:id="@+id/ag_tv_pay_balance"
                     style="@style/ag_tv_normal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="0.00元" />
+                    android:text="@string/ag_pay_tv22" />
             </LinearLayout>
 
             <TextView
@@ -54,20 +54,20 @@
             android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/btn_pay_no_balance_give_up"
+                android:id="@+id/ag_btn_pay_no_balance_give_up"
                 style="@style/ag_tv_white"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/ag_50dp"
                 android:layout_margin="@dimen/ag_10dp"
                 android:layout_weight="1"
                 android:background="@drawable/ag_btn_gray"
                 android:text="@string/ag_pay_tv5" />
 
             <Button
-                android:id="@+id/btn_pay_no_balance_now_recharge"
+                android:id="@+id/ag_btn_pay_no_balance_now_recharge"
                 style="@style/ag_tv_white"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/ag_50dp"
                 android:layout_margin="@dimen/ag_10dp"
                 android:layout_weight="1"
                 android:background="@drawable/ag_btn_blue_select"

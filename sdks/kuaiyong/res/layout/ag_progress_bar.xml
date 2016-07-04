@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="@drawable/bg_loading_dialog"
+    android:background="@drawable/ag_bg_loading_dialog"
     android:gravity="center" >
 
     <View
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ag_10dp"
-            android:text="正在加载"
+            android:text="@string/ag_progress_obtain_data"
             android:textColor="#ffffff"
             android:textSize="@dimen/ag_16sp" >
         </TextView>

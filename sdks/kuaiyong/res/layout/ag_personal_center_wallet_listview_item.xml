@@ -12,7 +12,7 @@
         android:orientation="vertical" >
 
         <LinearLayout
-            android:id="@+id/ll_bg"
+            android:id="@+id/ag_ll_bg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/ag_corner_red"
@@ -31,18 +31,19 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="2" >
+                    android:layout_weight="3" >
 
                     <TextView
-                        android:id="@+id/tv_red_packet_balance"
+                        android:id="@+id/ag_tv_red_packet_balance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:text="@string/pc_wallet5"
+                        android:text="@string/ag_pc_wallet5"
                         android:layout_marginLeft="@dimen/ag_508dp"
                         android:layout_marginTop="@dimen/ag_30dp"
-                        android:textColor="@color/color_white"
-                        android:textSize="28sp" />
+                        android:textColor="@color/ag_color_white"
+                        android:singleLine="true"
+                        android:textSize="26sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -51,8 +52,8 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="@dimen/ag_3dp"
                         android:layout_marginTop="@dimen/ag_3dp"
-                        android:text="@string/pc_wallet5"
-                        android:textColor="@color/color_white" />
+                        android:text="@string/ag_pc_wallet5"
+                        android:textColor="@color/ag_color_white" />
                 </RelativeLayout>
 
                 <View
@@ -60,10 +61,10 @@
                     android:layout_marginTop="@dimen/ag_10dp"
                     android:layout_marginBottom="@dimen/ag_10dp"
                     android:layout_height="match_parent"
-                    android:background="@color/color_bg" />
+                    android:background="@color/ag_color_bg" />
 
                 <TextView
-                    android:id="@+id/tv_red_packet_descripte"
+                    android:id="@+id/ag_tv_red_packet_descripte"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -71,8 +72,8 @@
                     android:gravity="center"
                     android:padding="@dimen/ag_5dp"
                     android:textSize="@dimen/ag_16sp"
-                    android:text="100元通用红包（CHID）"
-                    android:textColor="@color/color_white" />
+                    android:text="@string/ag_pc_wallet11"
+                    android:textColor="@color/ag_color_white" />
             </LinearLayout>
         </LinearLayout>
 
@@ -95,17 +96,19 @@
                     android:orientation="horizontal" >
 
                     <TextView
+                        android:textColor="@color/ag_color_black_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/pc_wallet6" 
+                        android:text="@string/ag_pc_wallet6" 
                         android:textSize="@dimen/ag_14sp"/>
 
                     <TextView
-                        android:id="@+id/tv_red_packet_validity"
+                        android:id="@+id/ag_tv_red_packet_validity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/ag_14sp"
-                        android:text="2015-3-1至2015-9-20" />
+                        android:text="@string/ag_pc_wallet12"
+                        android:textColor="@color/ag_color_black_textview" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -118,14 +121,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/ag_14sp"
-                        android:text="@string/pc_wallet7" />
+                        android:text="@string/ag_pc_wallet7" 
+                        android:textColor="@color/ag_color_black_textview"/>
 
                     <TextView
-                        android:id="@+id/tv_red_packet_scope"
+                        android:id="@+id/ag_tv_red_packet_scope"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/ag_14sp"
-                        android:text="仅适用于刀塔传奇、少年三国志、大闹天宫、大闹天宫、大闹天宫、" />
+                        android:text="@string/ag_pc_wallet13"
+                        android:textColor="@color/ag_color_black_textview" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -135,14 +140,14 @@
                 android:layout_margin="@dimen/ag_10dp" >
 
                 <TextView
-                    android:id="@+id/tv_red_packet_id"
+                    android:id="@+id/ag_tv_red_packet_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:singleLine="true"
-                    android:text="ID:22343546565653"
+                    android:text="@string/ag_pc_wallet14"
                     android:textSize="@dimen/ag_14sp"
-                    android:textColor="@color/color_red" />
+                    android:textColor="@color/ag_color_red" />
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>

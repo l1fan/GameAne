@@ -6,7 +6,7 @@
     >
 
     <LinearLayout
-        android:id="@+id/ll_balance_change"
+        android:id="@+id/ag_ll_balance_change"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/ag_shape_btn"
@@ -14,13 +14,13 @@
         android:padding="3dp" >
 
         <TextView
-            android:id="@+id/tv_balance_change"
+            android:id="@+id/ag_tv_balance_change"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/ag_shape_oval_white"
             android:gravity="center"
             android:text="10"
-            android:textColor="@color/color_blue" />
+            android:textColor="@color/ag_color_blue" />
     </LinearLayout>
 
 </LinearLayout>

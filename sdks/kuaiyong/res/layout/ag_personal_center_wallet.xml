@@ -3,63 +3,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@color/color_bg"
+    android:background="@color/ag_color_bg"
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:gravity="center_horizontal" >
 
     <include
-        android:id="@+id/card_title"
+        android:id="@+id/ag_card_title"
         layout="@layout/ag_title" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/card_title"
-        android:scrollbars="none" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-
-            <include layout="@layout/ag_personal_center_wallet_balance" />
-
-            <RelativeLayout
-                android:layout_gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/ag_50dp"
-                android:layout_marginTop="@dimen/ag_10dp" >
-
-                <com.anguotech.sdk.view.MyListView
-                    android:id="@+id/listview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:divider="@color/color_bg"
-                    android:dividerHeight="@dimen/ag_5dp"
-                    android:scrollbars="none" >
-                </com.anguotech.sdk.view.MyListView>
-
-                <ImageView
-                    android:id="@+id/iv_red_empty"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ag_red_envelope_empty"
-                    android:visibility="gone" />
-            </RelativeLayout>
-        </LinearLayout>
-    </ScrollView>
-
-    <Button
-        android:id="@+id/btn_recharge"
-        style="@style/ag_tv_blue"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/ag_card_title"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/ag_50dp" >
+
+        <ListView
+            android:id="@+id/ag_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/ag_color_bg"
+            android:dividerHeight="@dimen/ag_5dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ag_btn_recharge"
+        style="@style/ag_tv_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ag_50dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/color_white"
+        android:background="@color/ag_color_white"
         android:gravity="center"
-        android:text="@string/pc_wallet8" />
+        android:text="@string/ag_pc_wallet8" />
 
 </RelativeLayout>

@@ -2,13 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/rl_brush"
+    android:id="@+id/ag_rl_brush"
     android:layout_gravity="center_horizontal"
     android:gravity="center_vertical" 
-    android:background="@color/color_white">
+    android:background="@color/ag_color_white">
 
     <ImageView
-        android:id="@+id/iv_brush_img"
+        android:id="@+id/ag_iv_brush_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -17,16 +17,17 @@
         android:src="@drawable/ag_head_small" />
 
     <TextView
-        android:id="@+id/tv_brush_name"
+        android:id="@+id/ag_tv_brush_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/iv_brush_img"
-        android:text="小号001"
+        android:layout_toRightOf="@+id/ag_iv_brush_img"
+        android:text="@string/ag_pc_account_little"
+        android:textColor="@color/ag_color_black_textview"
         android:textSize="@dimen/ag_18sp" />
 
     <ImageView
-        android:id="@+id/iv_brush_check"
+        android:id="@+id/ag_iv_brush_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -38,7 +39,7 @@
     <View
         android:layout_width="wrap_content"
         android:layout_height="0.5dp"
-        android:layout_below="@id/iv_brush_img"
-        android:background="@color/color_gray_white" />
+        android:layout_below="@id/ag_iv_brush_img"
+        android:background="@color/ag_color_gray_white" />
 
 </RelativeLayout>

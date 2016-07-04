@@ -61,7 +61,7 @@
     <dimen name="ag_300dp">300dp</dimen>
     <dimen name="ag_400dp">400dp</dimen>
     <dimen name="ag_450dp">450dp</dimen>
-  
+    <dimen name="ag_bobble_move_distance">100px</dimen>
   
     
     
@@ -81,7 +81,8 @@
     <dimen name="ag_513dp">20dp</dimen>
     <dimen name="ag_516dp">20dp</dimen>  
     <dimen name="ag_517dp">50dp</dimen>     
-
+	<dimen name="ag_518dp">60dp</dimen> 
+	
     <!-- other -->
 
 </resources>

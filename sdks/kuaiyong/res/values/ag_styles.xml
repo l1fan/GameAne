@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <style name="AppBaseTheme" parent="@android:style/Theme.DeviceDefault.Light"></style>
+    
+    <style name="ag_AppTheme" parent="AppBaseTheme">
+         <!-- 设置没有标题 -->  
+        <item name="android:windowNoTitle">true</item>  
+        <!-- 设置activity切换动画 -->  
+        <item name="android:windowAnimationStyle">@style/ag_activityAnimation</item>  
+    </style> 
+
+    
+     <style name="ag_activityAnimation" parent="@android:style/Animation">  
+        <item name="android:activityOpenEnterAnimation">@anim/ag_push_right_in</item>  
+        <item name="android:activityOpenExitAnimation">@anim/ag_push_left_out</item>  
+        <item name="android:activityCloseEnterAnimation">@anim/ag_push_left_in</item>  
+        <item name="android:activityCloseExitAnimation">@anim/ag_push_right_out</item> 
+    </style> 
+    
+    
+    
+    <style name="ag_init_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    
     <!-- 输入账号或者密码的LinearLayout样式 -->
-    <style name="linearLayout_1">
+    <style name="ag_linearLayout_1">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/ag_50dp</item>
         <item name="android:background">@drawable/ag_linearlayout_input</item>
@@ -13,9 +45,9 @@
     </style>
 
     <!-- 蓝色按钮的样式，比如立即登陆，确认注册，下一步 -->
-    <style name="button_blue_style">
+    <style name="ag_button_blue_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">@dimen/ag_50dp</item>
         <item name="android:background">@drawable/ag_btn_blue_select</item>
         <item name="android:layout_marginLeft">@dimen/ag_25dp</item>
         <item name="android:layout_marginRight">@dimen/ag_25dp</item>
@@ -36,107 +68,100 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
-    
-     <!--progressbar加载样式（初始化用的）  -->
- 	<style name="MyProgress_style_image" parent="@android:style/Widget.ProgressBar">
+    <!-- progressbar加载样式（初始化用的） -->
+    <style name="ag_MyProgress_style_image" parent="@android:style/Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/ag_loading_progress_image</item>
-    </style>   
-    
- 	
- 	<!--EditText样式，这个是登录，注册，找回密码界面的EditText统一样式  -->
- 	<style name="EditText_style_input">
- 	    <item name="android:layout_width">0dp</item>
- 	    <item name="android:layout_weight">1</item>
- 	    <item name="android:layout_height">wrap_content</item>
- 	    <item name="android:background">@null</item>
- 	    <item name="android:singleLine">true</item>
- 	    <item name="android:layout_gravity">center</item>
- 	    <item name="android:textSize">@dimen/ag_16sp</item>
- 	    <item name="android:paddingLeft">@dimen/ag_5dp</item>
- 	</style>
- 	
- 	<!--找回密码页面，注册页面的LinearLayout用来显示一个标题的  -->
- 	<style name="linearlayout_textview">
- 	    <item name="android:layout_width">match_parent</item>
- 	    <item name="android:layout_height">wrap_content</item>
- 	    <item name="android:orientation">vertical</item>
- 	    <item name="android:layout_marginTop">@dimen/ag_45dp</item>
- 	</style>
- 	
- 	<!--LinearLayout标题中textview样式  -->
- 	<style name="textView_linearLayout">
- 	    <item name="android:layout_width">wrap_content</item>
- 	    <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- EditText样式，这个是登录，注册，找回密码界面的EditText统一样式 -->
+    <style name="ag_EditText_style_input">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/ag_16sp</item>
+        <item name="android:paddingLeft">@dimen/ag_5dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColorHint">@color/ag_color_gray</item>
+        <item name="android:textColor">@color/ag_color_black_textview</item>
+    </style>
+
+    <!-- 找回密码页面，注册页面的LinearLayout用来显示一个标题的 -->
+    <style name="ag_linearlayout_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/ag_45dp</item>
+    </style>
+
+    <!-- LinearLayout标题中textview样式 -->
+    <style name="ag_textView_linearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:textSize">@dimen/ag_17sp</item>
-        <item name="android:textColor">@color/color_black_textview</item>
- 	</style>
- 	
- 	<!--获取验证码的按钮样式  -->
- 	<style name="obtainVerifyCodeButton">
- 	    <item name="android:layout_width">0dp</item>
- 	    <item name="android:layout_weight">1</item>
- 	    <item name="android:layout_height">@dimen/ag_50dp</item>
- 	    <item name="android:background">@drawable/ag_btn_blue</item>
- 	    <item name="android:layout_marginLeft">@dimen/ag_10dp</item>
- 	    <item name="android:textSize">@dimen/ag_18sp</item>
- 	    <item name="android:textColor">@color/color_white</item>
- 	</style>
- 	
- 	<!--包裹验证码按钮的父布局linearlayout  -->
- 	<style name="linearlayout_contain_obtainVerifyCodeButton">
- 	    <item name="android:layout_width">match_parent</item>
- 	    <item name="android:layout_height">wrap_content</item>
- 	    <item name="android:orientation">horizontal</item>
- 	    <item name="android:layout_marginTop">@dimen/ag_15dp</item>
- 	    <item name="android:layout_marginLeft">@dimen/ag_25dp</item>
- 	    <item name="android:layout_marginRight">@dimen/ag_25dp</item>
- 	</style>
+        <item name="android:textColor">@color/ag_color_black_textview</item>
+    </style>
 
- 	<!--登录界面快速注册，忘记了的textview样式  -->
- 	<style name="textview_register_forget">
- 	    <item name="android:layout_width">wrap_content</item>
- 	    <item name="android:layout_height">wrap_content</item>
- 	    <item name="android:layout_below">@id/ll_et_password</item>
- 	    <item name="android:layout_marginLeft">@dimen/ag_25dp</item>
- 	    <item name="android:layout_marginTop">@dimen/ag_15dp</item>
- 	    <item name="android:textColor">@color/color_baby_blue</item>
- 	    <item name="android:textSize">@dimen/ag_16sp</item>
- 	</style>
- 	
- 	
- 	<!--登录，密码，手机的显示imageView样式  -->
- 	<style name="imageView_user_password_phone">
- 	    <item name="android:layout_width">wrap_content</item>
- 	    <item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_marginLeft">@dimen/ag_10dp</item>
-		<item name="android:layout_gravity">center</item>
- 	</style>
+    <!-- 获取验证码的按钮样式 -->
+    <style name="ag_obtainVerifyCodeButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/ag_50dp</item>
+        <item name="android:background">@drawable/ag_btn_blue</item>
+        <item name="android:layout_marginLeft">@dimen/ag_10dp</item>
+        <item name="android:textSize">@dimen/ag_18sp</item>
+        <item name="android:textColor">@color/ag_color_white</item>
+    </style>
 
- 	
- 	<!-- 叉号的ImageView样式  -->
- 	<style name="close_image">
- 	    <item name="android:layout_width">wrap_content</item>
- 	    <item name="android:layout_height">wrap_content</item>
- 	    <item name="android:src">@drawable/close</item>
- 	    <item name="android:visibility">invisible</item>
- 	</style>
- 	
+    <!-- 包裹验证码按钮的父布局linearlayout -->
+    <style name="ag_linearlayout_contain_obtainVerifyCodeButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/ag_15dp</item>
+        <item name="android:layout_marginLeft">@dimen/ag_25dp</item>
+        <item name="android:layout_marginRight">@dimen/ag_25dp</item>
+    </style>
 
+    <!-- 登录界面快速注册，忘记了的textview样式 -->
+    <style name="ag_textview_register_forget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/ag_ll_et_password</item>
+        <item name="android:layout_marginLeft">@dimen/ag_25dp</item>
+        <item name="android:layout_marginTop">@dimen/ag_15dp</item>
+        <item name="android:textColor">@color/ag_color_baby_blue</item>
+        <item name="android:textSize">@dimen/ag_16sp</item>
+    </style>
 
+    <!-- 登录，密码，手机的显示imageView样式 -->
+    <style name="ag_imageView_user_password_phone">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ag_10dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
 
+    <!-- 叉号的ImageView样式 -->
+    <style name="ag_close_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ag_close</item>
+        <item name="android:visibility">invisible</item>
+    </style>
 
     <!-- font gray -->
     <style name="ag_tv_color_gray">
-        <item name="android:textColor">@color/cutting_line</item>
+        <item name="android:textColor">@color/ag_cutting_line</item>
     </style>
 
     <style name="ag_tv_color_gray2">
-      <!--   <item name="android:textColor">@color/color_gray</item> -->
+        <item name="android:textColor">@color/ag_color_gray</item>
     </style>
-    
-    
-    
+
     <!-- descripte_little -->
     <style name="ag_tv_descripte_little" parent="@style/ag_tv_color_gray">
         <item name="android:textSize">@dimen/ag_16sp</item>
@@ -153,7 +178,7 @@
     <style name="ag_tv_normal">
 
         <!-- #333333 -->
-        <item name="android:textColor">@color/color_black_textview</item>
+        <item name="android:textColor">@color/ag_color_black_textview</item>
         <!-- 40 -->
         <item name="android:textSize">@dimen/ag_16sp</item>
     </style>
@@ -161,7 +186,7 @@
     <style name="ag_tv_little">
 
         <!-- #333333 -->
-        <item name="android:textColor">@color/color_black_textview</item>
+        <item name="android:textColor">@color/ag_color_black_textview</item>
         <!-- 40 -->
         <item name="android:textSize">@dimen/ag_14sp</item>
     </style>
@@ -169,46 +194,40 @@
     <style name="ag_tv_large">
 
         <!-- #333333 -->
-        <item name="android:textColor">@color/color_black_textview</item>
+        <item name="android:textColor">@color/ag_color_black_textview</item>
         <!-- 40 -->
         <item name="android:textSize">@dimen/ag_22sp</item>
     </style>
 
     <style name="ag_tv_blue">
-        <item name="android:textColor">@color/color_blue</item>
+        <item name="android:textColor">@color/ag_color_blue</item>
         <!-- 40 -->
         <item name="android:textSize">@dimen/ag_18sp</item>
     </style>
 
     <style name="ag_tv_blue_large">
-        <item name="android:textColor">@color/color_blue</item>
+        <item name="android:textColor">@color/ag_color_blue</item>
         <!-- 40 -->
         <item name="android:textSize">@dimen/ag_22sp</item>
     </style>
 
     <style name="ag_tv_red">
-        <item name="android:textColor">@color/color_red</item>
+        <item name="android:textColor">@color/ag_color_red</item>
         <!-- 40 -->
         <item name="android:textSize">@dimen/ag_18sp</item>
     </style>
 
     <style name="ag_tv_white">
-        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textColor">@color/ag_color_white</item>
         <!-- 40 -->
         <item name="android:textSize">@dimen/ag_22sp</item>
     </style>
 
-
     <!-- dialog anim -->
-    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+    <style name="ag_dialogWindowAnim" mce_bogus="1" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/ag_dialog_anim_in</item>
         <item name="android:windowExitAnimation">@anim/ag_dialog_anim_out</item>
     </style>
-	
-    <!-- circleimageview -->
-     <declare-styleable name="CircleImageView">
-        <attr name="border_width" format="dimension" />
-        <attr name="border_color" format="color" />
-        <attr name="border_overlay" format="boolean" />
-    </declare-styleable>
+
+
 </resources>

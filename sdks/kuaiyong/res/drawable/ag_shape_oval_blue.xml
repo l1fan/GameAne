@@ -6,12 +6,12 @@
     <corners android:radius="@dimen/ag_10dp" />
 
     <!-- 实心 -->
-    <solid android:color="@color/color_blue" />
+    <solid android:color="@color/ag_color_blue" />
 
     <!-- 描边 -->
     <stroke
         android:width="1dp"
-        android:color="@color/color_blue" />
+        android:color="@color/ag_color_blue" />
 
 
 </shape>

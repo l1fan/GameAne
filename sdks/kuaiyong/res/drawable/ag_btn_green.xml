@@ -4,7 +4,7 @@
     
      <corners android:radius="10dp" />
 
-   	 <solid android:color="@color/color_green" />
+   	 <solid android:color="@color/ag_color_green" />
     
     
 

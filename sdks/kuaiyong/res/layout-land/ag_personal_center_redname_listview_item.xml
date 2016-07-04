@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ag_edittext_gray"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号:"
+                android:textColor="@color/ag_color_black"
+                android:textSize="@dimen/ag_16sp" />
+
+            <TextView
+                android:id="@+id/ag_tv_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ag_pay_tv15"
+                android:textColor="@color/ag_color_black"
+                android:textSize="@dimen/ag_16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ag_tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_8dp"
+            android:text="@string/ag_pay_tv16"
+            android:textSize="@dimen/ag_14sp"
+            android:textColor="@color/ag_color_black_textview"
+            android:layout_marginBottom="@dimen/ag_10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ag_15dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/ag_8dp"
+        android:padding="@dimen/ag_8dp" >
+
+        <TextView
+            android:id="@+id/ag_tv_order_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ag_3dp"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:text="@string/ag_pay_tv17"
+            android:textSize="@dimen/ag_28sp"
+            android:textColor="@color/ag_color_red" 
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ag_3dp"
+            android:text="@string/ag_pay_tv18"
+            android:textColor="@color/ag_color_red"
+            android:textSize="@dimen/ag_20sp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+</LinearLayout>

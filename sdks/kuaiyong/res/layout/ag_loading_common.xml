@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:gravity="center"
-    android:background="@drawable/bg_loading_dialog" 
+    android:background="@drawable/ag_bg_loading_dialog" 
     >
 
     <View
@@ -34,8 +34,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ag_10dp"
-            android:text="请稍等..."
-            android:textColor="@color/color_white"
+            android:text="@string/ag_progress_obtain_data"
+            android:textColor="@color/ag_color_white"
             android:textSize="@dimen/ag_16sp" >
         </TextView>
     </LinearLayout>

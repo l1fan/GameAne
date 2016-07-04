@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.anguotech.sdk.view.RedPacketViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ag_red_packet_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ag_140dp"
+    android:background="@color/ag_color_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/ag_10dp"
+    android:paddingLeft="@dimen/ag_518dp"
+    android:paddingRight="@dimen/ag_518dp"
+    android:paddingTop="@dimen/ag_10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ag_110dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ag_15dp"
+            android:layout_marginRight="@dimen/ag_15dp"
+            android:layout_marginTop="@dimen/ag_5dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ag_pc_wallet5"
+                android:textColor="@color/ag_color_login_qq"
+                android:textSize="@dimen/ag_12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ag_tv_red_packet_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#010101"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/ag_color_login_qq"
+                    android:textSize="@dimen/ag_12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ag_red_packet_allow_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/ag_15dp"
+                android:singleLine="true"
+                android:text="满100元可通用"
+                android:textColor="@color/ag_color_login_qq"
+                android:textSize="@dimen/ag_12sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/ag_red_packet_line"
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_10dp"
+            android:background="@color/ag_color_bg" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ag_100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ag_20dp"
+            android:layout_marginTop="@dimen/ag_5dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ag_tv_red_packet_descripte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="满100元可通用"
+                    android:textColor="@color/ag_color_black"
+                    android:textSize="@dimen/ag_16sp" />
+
+                <TextView
+                    android:id="@+id/ag_tv_red_packet_validity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/ag_5dp"
+                    android:text="@string/ag_pc_wallet12"
+                    android:textColor="#626262"
+                    android:textSize="@dimen/ag_12sp" />
+
+                <TextView
+                    android:id="@+id/ag_tv_red_packet_scope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/ag_5dp"
+                    android:text="适用于全部游戏"
+                    android:textColor="#626262"
+                    android:textSize="@dimen/ag_12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/ag_15dp"
+                android:paddingRight="@dimen/ag_15dp" >
+
+                <TextView
+                    android:id="@+id/ag_tv_red_packet_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/ag_pc_wallet14"
+                    android:textColor="#b2b2b2"
+                    android:textSize="@dimen/ag_12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.anguotech.sdk.view.RedPacketViewGroup>

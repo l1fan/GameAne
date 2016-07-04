@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  	<color name="color_deep_blue">#0388DB</color>
-    <color name="cutting_line">#999999</color>
-    <color name="color_bg">#F0F0F0</color>
-    <color name="color_gray_white">#e5e5e5</color>
-    <color name="color_blue">#14a0e6</color>
-    <color name="color_green">#4fcb2d</color>
-    <color name="color_white">#ffffff</color>
-    <color name="color_baby_blue">#28a3e9</color>
-    <color name="color_red">#f14645</color>
-    <color name="color_gray">#b3b3b3</color>
-    <color name="color_black">#000000</color>
+  	<color name="ag_color_deep_blue">#0388DB</color>
+    <color name="ag_cutting_line">#999999</color>
+    <color name="ag_color_bg">#F0F0F0</color>
+    <color name="ag_color_gray_white">#e5e5e5</color>
+    <color name="ag_color_blue">#14a0e6</color>
+    <color name="ag_color_green">#4fcb2d</color>
+    <color name="ag_color_white">#ffffff</color>
+    <color name="ag_color_baby_blue">#28a3e9</color>
+    <color name="ag_color_red">#f14645</color>
+    <color name="ag_color_gray">#b3b3b3</color>
+    <color name="ag_color_black">#000000</color>
     <!--黑色字体颜色  -->
-    <color name="color_black_textview">#333333</color>
+    <color name="ag_color_black_textview">#333333</color>
     <!--在编辑框内的提示文字的颜色  -->
-    <color name="color_inner_remind">#b2b2b2</color>
+    <color name="ag_color_inner_remind">#b2b2b2</color>
     <!--在非编辑框内的文字提示颜色  -->
-	<color name="color_outter_remind">#999999</color>
+	<color name="ag_color_outter_remind">#999999</color>
 	<!-- 一些有点击事件的文字颜色，蓝色的  -->
-	<color name="color_click_textView">#14a0e6</color>
+	<color name="ag_color_click_textView">#14a0e6</color>
 	<!-- 大标题的下划线颜色  -->
-	<color name="color_title_line">#e4e3e3</color>
+	<color name="ag_color_title_line">#e4e3e3</color>
 	<!-- 红包页面的id的颜色 -->
-	<color name="color_id">#c74619</color>
+	<color name="ag_color_id">#c74619</color>
 	<!-- 充值金额文字的颜色 50.00  -->
-	<color name="color_recharge_money">#f44c19</color>
+	<color name="ag_color_recharge_money">#f44c19</color>
 	<!-- 小额免密下的额度设置灰色描边 -->
-	<color name="color_stroke_bg_gray">#e6e6e6</color>
+	<color name="ag_color_stroke_bg_gray">#e6e6e6</color>
 	<!-- 虚线的颜色 -->
-	<color name="color_dotted_line">#cacaca</color>
+	<color name="ag_color_dotted_line">#cacaca</color>
 	<!--个人中心页面的一些颜色  -->
-	<color name="color_personal_center_gray">#e5e5e5</color>
-	<color name="color_personal_center_blue">#14a2e7</color>
-	<color name="color_personal_center_red">#f14645</color>	
+	<color name="ag_color_personal_center_gray">#e5e5e5</color>
+	<color name="ag_color_personal_center_blue">#14a2e7</color>
+	<color name="ag_color_personal_center_red">#f14645</color>	
 	
-	<color name="color_red_packet_red">#E56D34</color>
-	<color name="color_red_packet_yellow">#E5B335</color>
-	<color name="color_red_packet_gray">#D9D9D9</color>
+	<color name="ag_color_red_packet_red">#E56D34</color>
+	<color name="ag_color_red_packet_yellow">#E5B335</color>
+	<color name="ag_color_red_packet_gray">#D9D9D9</color>
+	<color name="ag_color_login">#a0a0a0</color>
+	<color name="ag_color_login_qq">#a9a9a9</color>
 
 </resources>

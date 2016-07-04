@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:scrollbars="none"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ag_shape_white_only2"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ag_tv_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ag_20dp"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/ag_24sp"
+            android:textColor="@color/ag_color_black_textview"
+            android:text="@string/ag_pay_red_packet_tv23"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/ag_15dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:background="@color/ag_color_gray_white"/>
+
+        <TextView
+            android:id="@+id/ag_tv_descripte_little"
+            style="@style/ag_tv_descripte_little"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ag_10dp"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:textSize="@dimen/ag_18sp"
+            android:text="@string/ag_pay_tv23"
+            android:textColor="@color/ag_color_black_textview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ag_10dp"
+            android:text="@string/ag_pay_tv24"
+            android:textSize="@dimen/ag_16sp"
+            android:textColor="@color/ag_cutting_line"
+            />
+
+        <Button
+            android:id="@+id/ag_btn_open_pwd"
+            style="@style/ag_tv_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ag_50dp"
+            android:layout_marginBottom="@dimen/ag_20dp"
+            android:layout_marginLeft="@dimen/ag_10dp"
+            android:layout_marginRight="@dimen/ag_10dp"
+            android:layout_marginTop="@dimen/ag_15dp"
+            android:background="@drawable/ag_btn_blue_select"
+            android:text="@string/ag_pay_tv25"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ag_20dp">
+
+            <TextView
+                android:id="@+id/ag_tv_next_say"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/ag_25dp"
+                android:clickable="true"
+                android:padding="@dimen/ag_10dp"
+                android:text="@string/ag_pay_tv26"
+                android:textColor="@color/ag_color_black_textview"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
