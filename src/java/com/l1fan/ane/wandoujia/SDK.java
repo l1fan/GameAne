@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.l1fan.ane.SDKContext;
 import com.wandoujia.mariosdk.plugin.api.api.WandouGamesApi;
+import com.wandoujia.mariosdk.plugin.api.api.WandouGamesApi.ExitCallback;
 import com.wandoujia.mariosdk.plugin.api.model.callback.OnLoginFinishedListener;
 import com.wandoujia.mariosdk.plugin.api.model.callback.OnLogoutFinishedListener;
 import com.wandoujia.mariosdk.plugin.api.model.callback.OnPayFinishedListener;
@@ -26,7 +27,6 @@ public class SDK extends SDKContext {
 		JSONObject json = getJsonData();
 		Bundle md = getMetaData();
 		long appKey = Long.valueOf(json.optString(APPKEY,md.getString(APPKEY)).replace("wdj.", ""));
-		System.out.println("app key is:"+appKey);
 		String secretKey = json.optString(APPSECRET,md.getString(APPSECRET));
 		wandouGamesApi = new WandouGamesApi.Builder(getActivity(), appKey,
 				secretKey).create();
@@ -106,7 +106,7 @@ public class SDK extends SDKContext {
 		String desc = pay.optString(PNAME);
 		long price = pay.optLong(AMOUNT);
 		String order = pay.optString(ORDER_ID);
-		wandouGamesApi.pay(getActivity(), desc, price, order,new OnPayFinishedListener() {
+		wandouGamesApi.pay(getActivity(), desc, price, 1, order,new OnPayFinishedListener() {
 			
 			@Override
 			public void onPaySuccess(PayResult arg0) {
@@ -118,6 +118,27 @@ public class SDK extends SDKContext {
 				dispatchError(EVENT_PAY, "pay fail:"+result.getStatus());
 			}
 		});
+	}
+	
+	public void submitGameInfo(){
+		//TODO
+	}
+	
+	@Override
+	public void dispose() {
+         wandouGamesApi.exit(getActivity(), new ExitCallback() {
+			
+			@Override
+			public void onGameExit() {
+				
+			}
+			
+			@Override
+			public void onChannelExit() {
+				
+			}
+		}, false);
+		super.dispose();
 	}
 	
 	@Override

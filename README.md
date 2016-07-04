@@ -21,7 +21,7 @@
 |搜狗				|`sogou`		|Y			|		|v1.4.34 |
 |酷派       |`coolpad`  |Y      |   |v1.2.8  |
 |同步推			|`tongbutui`|Y			|Y	|v1.3.0/v4.2.0  |
-|豌豆荚			|`wandoujia`|Y			|		|v4.0.7		|
+|豌豆荚			|`wandoujia`|Y			|		|v5.2.3	|
 |拇指玩			|`muzhiwan`	|Y			|		|v3.0.9		|
 |应用汇			|`appchina`	|Y			|		|v6.2.0		|
 |魅族				|`meizu`		|Y			|		|v2.1			|
