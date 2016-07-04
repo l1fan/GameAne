@@ -4,7 +4,7 @@
     <id>com.sogou.gamecenter.sdk.demo</id>
     <filename>ANEDemo</filename>
     <name>ANEDemo</name>
-    <versionNumber>0.0.0</versionNumber>
+    <versionNumber>11.3.4</versionNumber>
     <initialWindow>
         <content>ANEDemo.swf</content>
         <autoOrients>true</autoOrients>
@@ -57,49 +57,36 @@
         android:allowBackup="true" >
                 <!-- START:搜狗游戏SDK必要配置 -->
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SpeedyPerfectAccountDialog"
-                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
-                    android:screenOrientation="portrait"
-                    android:theme="@style/Activity_MyDialog" />
-                <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouLoginActivity"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouLoginActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
-                    android:theme="@style/Activity_MyDialog" />
-                <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouRegistUserActivity"
+                    android:theme="@style/Activity_MyDialog"
+                    android:windowBackground="@null" />
+
+                        <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouOneClickLoginActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
-                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-                    android:windowBackground="@null"
-                    android:windowSoftInputMode="stateHidden|adjustResize" />
+                    android:theme="@style/Activity_MyDialog"
+                    android:windowBackground="@null" />
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouPerfectUserActivity"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouOneClickLoginPasswordActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
-                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-                    android:windowBackground="@null"
-                    android:windowSoftInputMode="stateHidden|adjustResize" />
+                    android:theme="@style/Activity_MyDialog"
+                    android:windowBackground="@null" />
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouThirdLoginActivity"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouNormalLoginActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
-                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-                    android:windowBackground="@null"
-                    android:windowSoftInputMode="stateHidden|adjustResize" />
+                    android:theme="@style/Activity_MyDialog"
+                    android:windowBackground="@null" />
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouPayRecordActivity"
-                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
-                    android:screenOrientation="portrait"
-                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-                    android:windowBackground="@null"
-                    android:windowSoftInputMode="stateHidden|adjustResize" />
-                <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouFeedBackActivity"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouRegistUserActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
@@ -107,7 +94,7 @@
                     android:windowBackground="@null"
                     android:windowSoftInputMode="stateHidden|adjustResize" />
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouFeedBackRecordActivity"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouThirdLoginActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
@@ -115,7 +102,30 @@
                     android:windowBackground="@null"
                     android:windowSoftInputMode="stateHidden|adjustResize" />
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouWebViewActivity"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouPayRecordActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowBackground="@null"
+                    android:windowSoftInputMode="stateHidden|adjustResize" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouFeedBackActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowBackground="@null"
+                    android:windowSoftInputMode="stateHidden|adjustResize" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouFeedBackRecordActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowBackground="@null"
+                    android:windowSoftInputMode="stateHidden|adjustResize" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouWebViewActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
@@ -123,7 +133,7 @@
                     android:windowBackground="@null"
                     android:windowSoftInputMode="stateHidden|adjustUnspecified" />
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouPayActivity"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouPayActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
@@ -131,16 +141,15 @@
                     android:windowBackground="@null"
                     android:windowSoftInputMode="adjustPan" />
                 <activity
-                    android:name="com.sogou.passportsdk.activity.FindPasswordActivity"
-                    android:configChanges="orientation|keyboardHidden"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouMyGiftActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
                     android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
                     android:windowBackground="@null"
-                    android:windowSoftInputMode="stateHidden|adjustUnspecified" >
-                </activity>
+                    android:windowSoftInputMode="adjustPan" />
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouEditUserActivity"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouEditUserActivity"
                     android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
@@ -148,13 +157,121 @@
                     android:windowBackground="@null"
                     android:windowSoftInputMode="stateHidden|adjustResize" />
                 <activity
-                    android:name="com.sogou.gamecenter.sdk.SogouAliwapActivity"
-                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouAliwapActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
                     android:launchMode="singleTask"
                     android:screenOrientation="portrait"
                     android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
                     android:windowBackground="@null"
                     android:windowSoftInputMode="stateHidden|adjustResize" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouRecomGameActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowBackground="@null"
+                    android:windowSoftInputMode="stateHidden|adjustResize" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouGameInfoActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowBackground="@null"
+                    android:windowSoftInputMode="stateHidden|adjustResize" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouGiftCenterDetailActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowSoftInputMode="adjustPan" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouGiftCenterActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowSoftInputMode="adjustPan" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SogouAccountActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowSoftInputMode="adjustPan" />
+                <activity
+                    android:name="com.sogou.passportsdk.activity.FindPasswordActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowSoftInputMode="adjustPan" />
+                <activity
+                    android:name="com.sogou.gamecenter.sdk.activity.SohuWebViewActivity"
+                    android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+                    android:launchMode="singleTask"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:windowSoftInputMode="adjustPan" />
+                <!-- ==== -->
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.LoginActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.AccountBindingActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.ForgetPasswordActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.SetPayPasswordActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.UserCenterActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.SafeActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.VoucherActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.ChargeCenterActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.ResetLoginPasswordActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:screenOrientation="portrait"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.AccountBindingInquireActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.ResetPayPasswordActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.ForgetPayPasswordActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+                    android:name="com.pengyouwan.sdk.activity.MyVoucherActivity"
+                    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <!-- END :搜狗游戏SDK必要配置 -->
+
+
                 <!-- START: QQ单点登录必要声明 -->
                 <activity
                     android:name="com.tencent.connect.common.AssistActivity"
@@ -183,49 +300,20 @@
                 <meta-data
                     android:name="sg_passport_sdk_version"
                     android:value="1.3" />
-                <!-- START:  QQ单点登录必要声明 -->
+                <!-- 不接入此功能时，告知搜狗在游戏上线前由搜狗在后台操作隐藏QQ登录入口 -->
+                <meta-data android:name="QQ_APPID" android:value="100294784"/>
+                <!-- END: QQ单点登录必要声明 -->
 
 
                 <!-- 支付宝必要声明 -->
                 <activity
-                    android:name="com.alipay.android.mini.window.sdk.MiniPayActivity"
-                    android:configChanges="orientation"
-                    android:excludeFromRecents="true"
+                    android:name="com.alipay.sdk.app.H5PayActivity"
+                    android:configChanges="orientation|keyboardHidden|navigation|screenSize"
                     android:exported="false"
-                    android:label="@string/msp_app_name"
-                    android:launchMode="singleTop"
-                    android:process="com.alipay.sdk"
-                    android:screenOrientation="portrait"
-                    android:theme="@style/MspAppTheme"
+                    android:screenOrientation="behind"
                     android:windowSoftInputMode="adjustResize|stateHidden" >
-                    <intent-filter android:priority="800" >
-                        <action android:name="android.intent.action.MAIN" />
-
-                        <category android:name="android.intent.category.DEFAULT" />
-                    </intent-filter>
-                </activity>
-                <activity
-                    android:name="com.alipay.android.mini.window.sdk.MiniWebActivity"
-                    android:configChanges="orientation|keyboardHidden|navigation"
-                    android:excludeFromRecents="true"
-                    android:exported="false"
-                    android:launchMode="singleTop"
-                    android:process="com.alipay.sdk"
-                    android:screenOrientation="portrait"
-                    android:theme="@style/MspAppTheme" >
-                    <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-
-                        <category android:name="android.intent.category.DEFAULT" />
-                    </intent-filter>
                 </activity>
 
-                <service
-                    android:name="com.alipay.android.app.MspService"
-                    android:exported="false"
-                    android:process="com.alipay.sdk" >
-                    <intent-filter android:priority="800" />
-                </service>
                 <!-- 接入银联所需的声明 -->
                 <activity
                     android:name="com.unionpay.uppay.PayActivity"
@@ -236,7 +324,17 @@
                     android:theme="@style/Theme.UPPay"
                     android:windowSoftInputMode="adjustResize" />
 
-                <!-- END:搜狗游戏SDK必要配置 -->
+                
+                <!-- 配置渠道初始化参数, 如果在代码中也传递了参数，优先取代码中参数 init start-->
+                <!-- 游戏编号id，平台为每款游戏分配 -->
+                <meta-data android:name="gid" android:value="100" />
+                <!-- 平台为每款游戏分配游戏秘钥 -->
+                <meta-data android:name="appKey" android:value="f0da851f02e56c515fca559ac8af9251b7baf6fdc1783fca112467e180380cad" />
+                <!-- 环境参数true为开发环境, false是正式环境, 提交至搜狗审核时候请务必使用正式环境 -->
+                <meta-data android:name="devMode" android:value="false" />
+                
+
+
 
     </application>
             </manifest>

@@ -51,6 +51,7 @@
     <string name="sogou_game_sdk_pay_scoin_about">什么是S豆？</string>
     <string name="sogou_game_sdk_pay_scoin_modify_pwd">修改支付密码</string>
     <string name="sogou_game_sdk_pay_alipay">支付宝</string>
+    <string name="sogou_game_sdk_pay_wxpay">微信</string>
     <string name="sogou_game_sdk_pay_refresh">刷新</string>
     <string name="sogou_game_sdk_pay_deposit_card">储蓄卡</string>
     <string name="sogou_game_sdk_pay_union">银联</string>
@@ -90,7 +91,8 @@
     <string name="sogou_game_sdk_pay_links_bonus">查看红包记录>></string>
     <string name="sogou_game_sdk_pay_bonus_confirm">确认用红包付款</string>
     <string name="sogou_game_sdk_pay_feedback">如有任何问题请点击问题反馈</string>
-    <string name="sogou_game_sdk_pay_red_feedback">红包是搜狗平台推出的一款优惠产品，不定期通过活动的形式发放给玩家的一种虚拟货币，红包里的金额可以用来购买游戏道具，为游戏充值。本活动由朋友玩支持。如有任何问题请点击问题反馈。</string>
+    <string name="sogou_game_sdk_pay_red_feedback">红包是搜狗平台推出的一款优惠产品，不定期通过活动的形式发放给玩家的一种虚拟货币，红包里的金额可以用来购买游戏道具，为游戏充值。本活动由朋友玩支持。如有任何问题请点击问题反馈。
+</string>
     <string name="sogou_game_sdk_pay_tips">温馨提示:</string>
     <string name="sogou_game_sdk_pay_debit_card">借记卡</string>
     <string name="sogou_game_sdk_pay_record_account">账号:%1$s</string>
@@ -158,9 +160,11 @@
 
     <!-- 内悬浮 -->
     <string name="sogou_game_sdk_float_menu_forum">论坛</string>
-    <string name="sogou_game_sdk_float_menu_customer_service">客服</string>
-    <string name="sogou_game_sdk_float_menu_switch_user">切换账号</string>
-    <string name="sogou_game_sdk_float_menu_activity">搜狗活动</string>
+    <string name="sogou_game_sdk_float_menu_service">客服</string>
+    <string name="sogou_game_sdk_float_menu_recom_game">推荐游戏</string>
+    <string name="sogou_game_sdk_float_menu_user">账户</string>
+    <string name="sogou_game_sdk_float_menu_pack">礼包</string>
+    <string name="sogou_game_sdk_float_menu_activity">活动</string>
     <string name="sogou_game_sdk_float_menu_perfect_account">完善账号</string>
 
     <!-- 活动 -->
@@ -187,5 +191,33 @@
     <string name="sogou_game_sdk_pay_bonus_record_view_tv">红包记录:</string>
     <string name="sogou_game_sdk_pay_bonus_record_back_tv">返回我的红包 >></string>
     <string name="sogou_game_sdk_pay_bonus_record_item_amount">红包 %1$s元</string>
+    <!-- 礼包中心 -->
+    <string name="sogou_game_sdk_giftcenter_view_head_gift_count">礼包个数：%1$s个</string>
+    <string name="sogou_game_sdk_giftcenter_view_head_gift_detail_remainscount">剩余数量：%1$s个</string>
+    <string name="sogou_game_sdk_giftcenter_view_bag_item_getgift">领取</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_reco_item_install">安装</string>
+    <string name="sogou_game_sdk_giftcenter_view_bag_item_key">激活码：%1$s</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_bag_item_gotgift">已领取</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_bag_item_copy">复制</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_gift_item_install">安装</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_activationcode">激活码：%1$s</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_head_title">搜狗礼包中心</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_details_expiredformat">截止至%1$s</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_head_gift_detail_name">《%1$s》%2$s</string>
+    <string name="sogou_game_sdk_mygift_expired">已过期</string>
+    <string name="sogou_game_sdk_pay_giftcenter_recotv">大家还领了这些礼包</string>
+    <string name="sogou_game_sdk_pay_giftcenter_empty_msg">《%1$s》暂时没有可领取的礼包，来看看其他游戏的礼包吧~</string>
+    <string name="sogou_game_sdk_pay_giftcenter_game_name_format">《%1$s》</string>
 
+    <!--账户-->
+    <string name="sogou_game_sdk_float_account_record_amount">支付%1$s元</string>
+    <string name="sogou_game_sdk_float_account_record_setting">前去设置</string>
+    <string name="sogou_game_sdk_switch_account_text">切换账号></string>
+    <string name="sogou_game_sdk_switch_account_setting_setting">立即设置</string>
+    <string name="sogou_game_sdk_switch_account_setting_update">确认修改</string>
+    
+    <!-- 登录注册流程-->
+    <string name="sogou_game_sdk_one_click_login">一键登录</string>
+    <string name="sogou_game_sdk_one_click_login_note">发送短信完成验证 手机号即为账号</string>
+    <string name="sogou_game_sdk_other_login">其他方式注册、登录</string>
 </resources>

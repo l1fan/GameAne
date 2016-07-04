@@ -24,6 +24,9 @@
     <color name="sogou_game_sdk_main_font_color">#686868</color>
     <color name="sogou_game_sdk_list_font_color">#7E7E7E</color>
     <color name="sogou_game_sdk_input_font_color">#A7A7A7</color>
+    <color name="sogou_game_sdk_color_333333">#333333</color>
+    <color name="sogou_game_sdk_color_666666">#666666</color>
+    <color name="sogou_game_sdk_color_999999">#999999</color>
     <color name="sogou_game_sdk_color_c72f2a">#c72f2a</color>
     <color name="sogou_game_sdk_color_3d3d3d">#3d3d3d</color>
     <color name="sogou_game_sdk_color_7d7d7d">#7d7d7d</color>
@@ -36,8 +39,21 @@
     <color name="sogou_game_sdk_color_black">#333333</color>
     <color name="sogou_game_sdk_color_ffffff">#ffffff</color>
     <color name="sogou_game_sdk_color_ff6a00">#ff6a00</color>
+    <color name="sogou_game_sdk_color_ffceac">#ffceac</color>
     <color name="sogou_game_sdk_color_111111">#111111</color>
     <color name="sogou_game_sdk_color_676767">#676767</color>
     <color name="sogou_game_sdk_color_feebd8">#feebd8</color>
+    <color name="sogou_game_sdk_color_dac3a1">#DAC3A1</color>
+    <color name="sogou_game_sdk_color_ab9170">#AB9170</color>
+    <color name="sogou_game_sdk_color_4d2f17">#4D2F17</color>
+    <color name="sogou_game_sdk_color_555555">#555555</color>
+    <color name="sogou_game_sdk_color_bbbbbb">#bbbbbb</color>
+    <color name="sogou_game_sdk_color_eeeeee">#eeeeee</color>
+
+    <color name="sogou_game_sdk_color_df913c">#DF913C</color>
+
+    <color name="sogou_game_sdk_background_tab_pressed">#FFE77C30</color>
+    <drawable name="sogou_game_sdk_drawable_transparent">#00000000</drawable>
+
 
 </resources>

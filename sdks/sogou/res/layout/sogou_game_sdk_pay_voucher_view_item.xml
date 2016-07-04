@@ -19,7 +19,7 @@
     <RelativeLayout
         android:id="@+id/sogou_game_sdk_voucher_item_rl"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
+        android:layout_height="60dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/sogou_game_sdk_pay_voucher_y" >

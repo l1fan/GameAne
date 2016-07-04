@@ -172,6 +172,13 @@
         <item name="android:textSize">13.5sp</item>
         <item name="android:textColor">@color/sogou_game_sdk_white</item>
     </style>
+    <style name="sogou_game_sdk_game_info_screen" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">113dp</item>
+        <item name="android:layout_height">173dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/sogou_game_sdk_app_default_icon</item>
+    </style>
 
     <style name="sogou_game_sdk_pay_s20_c72f2a" parent="@android:style/Widget.TextView">
         <item name="android:textSize">13.5sp</item>

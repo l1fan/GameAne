@@ -163,7 +163,6 @@
             android:textColor="@color/sogou_game_sdk_color_ffffff"
             android:textSize="14sp" />
     </RelativeLayout>
-
     <LinearLayout
         android:id="@+id/line_forget_password"
         android:layout_width="220dp"
