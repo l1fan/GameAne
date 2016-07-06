@@ -39,10 +39,14 @@
         <uses-permission android:name="android.permission.VIBRATE" />
         <uses-permission android:name="android.permission.WAKE_LOCK" />
         <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.BLUETOOTH"/>
 
         <uses-permission android:name="android.webkit.permission.PLUGIN" />
         <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
+        <!-- bugly需要的权限 -->
+        <uses-permission android:name="android.permission.READ_LOGS" />
+        
         <!-- 读取短信验证码	可选 -->
         <uses-permission android:name="android.permission.RECEIVE_SMS" />
         <uses-permission android:name="android.permission.READ_SMS" />
