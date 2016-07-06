@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="count_color">#000</color>
+
     <color name="zy_float_content_textcolor">#848484</color>
     <color name="zy_float_line_color">#bcbcbc</color>
     <color name="zy_pay_wel_text_color">#727272</color>
@@ -8,6 +8,8 @@
     <color name="zy_pay_dialog_content_textcolor">#8f8f8f</color>
     <color name="zy_pay_dialog_content_balance_textcolor">#5bc65c</color>
     <color name="zy_pay_continue_game_content_textcolor">#ababab</color>
+    <color name="zy_pay_voucher_text">#3d3d3d</color>
+    
     <color name="zy_transparent">#00000000</color>
     <color name="zy_black">#ff000000</color>
     <color name="zy_white">#ffffffff</color>
@@ -34,4 +36,21 @@
     <color name="zy_notify_text_gray2">#ffb9b9b9</color>
     <color name="zy_text_orange">#FF7F00</color>
     <color name="zy_half_tra">#e0000000</color>
+    
+    <color name="lib_droi_account_text_color">#cdcdcd</color>
+	<color name="lib_droi_account_edit_text_color">#cdcdcd</color>
+	<color name="lib_droi_account_text_green_color">#29bd68</color>
+	<color name="lib_droi_account_diabled_color">#cdcdcd</color>
+	<color name="lib_droi_account_fragment_background_color">#fff3f3f3</color>
+	<color name="lib_droi_account_color_light_grey">#888888</color>
+	
+	<color name="lib_droi_account_layout_background">#FFFFFF</color>
+	<color name="lib_droi_account_layout_titleColor">#888888</color>
+	<!-- land color -->
+	<color name="lib_droi_account_land_titleColor">#FFFFFF</color>
+	<color name="lib_droi_account_land_titleBackground">#29bd69</color>
+	
+	
+	<color name="lib_droi_account_login_background">#f6f6f6</color>
+	<color name="lib_droi_account_login_title">#959aa2</color>
 </resources>

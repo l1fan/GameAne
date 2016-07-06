@@ -9,6 +9,7 @@ import com.zhuoyou.pay.sdk.account.UserInfo;
 import com.zhuoyou.pay.sdk.entity.PayParams;
 import com.zhuoyou.pay.sdk.listener.IZYLoginCheckListener;
 import com.zhuoyou.pay.sdk.listener.ZYInitListener;
+import com.zhuoyou.pay.sdk.listener.ZYLoginListener;
 import com.zhuoyou.pay.sdk.listener.ZYRechargeListener;
 
 public class SDK extends SDKContext {
@@ -21,33 +22,41 @@ public class SDK extends SDKContext {
 	}
 	
 	public void userLogin(){
-		ZYGameManager.init(getActivity(), new ZYInitListener() {
+		ZYGameManager.login(getActivity(), new ZYLoginListener() {
 			
 			@Override
-			public void iniSuccess(UserInfo uInfo) {
-				JSONObject data = new JSONObject();
-				try {
-					mId =  uInfo.getOpenId();
-					mToken = uInfo.getAccessToken();
-					data.put(UID,mId);
-					data.put(TOKEN, mToken);
-				} catch (JSONException e) {
-					e.printStackTrace();
-				}
-				
-				dispatchData(EVENT_LOGIN,data);
-			}
-			
-			@Override
-			public void iniFail(String message) {
-				dispatchError(EVENT_LOGIN, message);
-			}
-			
-			@Override
-			public void accountLogout() {
+			public void logout() {
 				dispatchData(EVENT_LOGOUT);
 			}
-		});
+			
+			@Override
+			public void login() {
+				ZYGameManager.init(getActivity(), new ZYInitListener() {
+					
+					@Override
+					public void iniSuccess(UserInfo uInfo) {
+						JSONObject data = new JSONObject();
+						try {
+							mId =  uInfo.getOpenId();
+							mToken = uInfo.getAccessToken();
+							data.put(UID,mId);
+							data.put(TOKEN, mToken);
+						} catch (JSONException e) {
+							e.printStackTrace();
+						}
+						
+						dispatchData(EVENT_LOGIN,data);						
+					}
+					
+					@Override
+					public void iniFail(String message) {
+						dispatchError(EVENT_LOGIN, message);
+					}
+				});
+				
+				
+			}
+		}, ZYGameManager.LOIGN_THEME_PORTRAIT);
 	}
 	
 	public void checkLogin(){

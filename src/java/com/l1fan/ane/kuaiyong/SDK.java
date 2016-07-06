@@ -132,7 +132,7 @@ public class SDK extends SDKContext {
 		roler.setRole_UserParty(json.optString(PARTYNAME,"无"));
 		roler.setServer_Name(json.optString(GAMESVR,"svrname"));
 		roler.setServer_Id(json.optString("gameServerId","0"));
-		AGPlatFormManager.getInstance().SetRoleData(getActivity(), AGRolerInfo.AG_CREATE_ROLE, roler);
+		AGPlatFormManager.getInstance().SetRoleData(getActivity(), json.optInt("type"), roler);
 	}
 	
 	@Override
