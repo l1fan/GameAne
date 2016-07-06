@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_gray_while"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_notice_down_ccplay" />
+
+        <LinearLayout
+            android:id="@+id/ac_account_ll"
+            style="@style/style_ac_mycenter_llbg"
+            android:background="@drawable/common_frame_two_selector" >
+
+            <TextView
+                style="@style/style_ac_mycenter_tvname"
+                android:drawableLeft="@drawable/lion_icon_account"
+                android:text="@string/text_user_center_account" />
+
+            <TextView
+                android:id="@+id/activity_cc_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/ccpay_iv_goto_arrow"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ac_nike_name_ll"
+            style="@style/style_ac_mycenter_llbg"
+            android:background="@drawable/common_frame_bottom_selector" >
+
+            <TextView
+                style="@style/style_ac_mycenter_tvname"
+                android:drawableLeft="@drawable/lion_icon_nickname"
+                android:text="@string/text_user_center_nikename" />
+
+            <TextView
+                android:id="@+id/ac_nike_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="7.5dip"
+                android:drawableRight="@drawable/lion_icon_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ac_phone_ll"
+            style="@style/style_ac_mycenter_llbg"
+            android:layout_marginTop="7.5dp"
+            android:background="@drawable/common_frame_two_selector" >
+
+            <TextView
+                style="@style/style_ac_mycenter_tvname"
+                android:drawableLeft="@drawable/lion_icon_phone"
+                android:text="@string/text_user_center_phone" />
+
+            <TextView
+                android:id="@+id/ac_phone_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="7.5dip"
+                android:drawableRight="@drawable/lion_icon_right" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ac_update_pwd_tv"
+            style="@style/style_ac_mycenter_llbg"
+            android:background="@drawable/common_frame_bottom_selector"
+            android:drawableLeft="@drawable/lion_icon_password"
+            android:drawablePadding="7.5dip"
+            android:drawableRight="@drawable/lion_icon_right"
+            android:text="@string/text_user_center_updatepwd" />
+
+        <LinearLayout
+            android:id="@+id/ac_balance_money_ll"
+            style="@style/style_ac_mycenter_llbg"
+            android:layout_marginTop="7.5dip"
+            android:background="@drawable/common_frame_two_selector" >
+
+            <TextView
+                style="@style/style_ac_mycenter_tvname"
+                android:drawableLeft="@drawable/lion_icon_balance"
+                android:text="@string/text_user_center_balance" />
+
+            <LinearLayout
+                android:id="@+id/ac_money_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ac_wallet_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.lion.ccpay.widget.RefreshView
+                    android:id="@+id/activity_refresh_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7.5dp"
+                    android:src="@drawable/lion_icon_refresh" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ac_bill_log_tv"
+            style="@style/style_ac_mycenter_llbg"
+            android:background="@drawable/common_frame_bottom_selector"
+            android:drawableLeft="@drawable/lion_icon_bill"
+            android:drawablePadding="7.5dip"
+            android:drawableRight="@drawable/lion_icon_right"
+            android:text="@string/text_user_center_bill" />
+
+        <LinearLayout
+            android:id="@+id/ac_vouncher_ll"
+            style="@style/style_ac_mycenter_llbg"
+            android:background="@drawable/common_frame_bottom_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ac_vouncher_tv"
+                style="@style/style_ac_mycenter_tvname"
+                android:drawableLeft="@drawable/lion_icon_vouchers"
+                android:drawablePadding="7.5dip"
+                android:text="@string/text_user_center_vouncher" />
+
+            <TextView
+                android:id="@+id/ac_vouncher_how_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="7.5dip"
+                android:drawableRight="@drawable/lion_icon_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_ac_mycenter_llbg"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ac_recharge_tv"
+                style="@style/style_dlg_btn_right"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:text="@string/text_account_recharge" />
+
+            <TextView
+                android:id="@+id/ac_change_account_tv"
+                style="@style/style_dlg_sign"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_account_change" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

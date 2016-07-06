@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="action_menu_search" type="id"/>
+    <item name="action_menu_post" type="id"/>
+    <item name="action_menu_post_media" type="id"/>
+    <item name="action_menu_post_normal" type="id"/>
+    <item name="activity_community_subject_detail_header_content" type="id"/>
+    <item name="layout_fit_input_layout" type="id"/>
+    <item name="dlg_title" type="id"/>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/activity_user_recharge_card_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:background="@drawable/common_gray_2_red_selector"
+        android:gravity="center"
+        android:minWidth="70.0dip"
+        android:paddingLeft="7.5dip"
+        android:paddingRight="7.5dip"
+        android:textColor="@drawable/common_textcolor_black_2_white_selector"
+        android:textSize="14.0sp" />
+
+</LinearLayout>

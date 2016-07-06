@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_basic_bg">#FFF4F5F7</color>
+    <color name="common_white">#FFFFFFFF</color>
+    <color name="common_white_pre">#80FFFFFF</color>
+    <color name="common_basic_red">#FFD33D3E</color>
+    <color name="common_basic_red_pre">#80D33D3E</color>
+    <color name="common_line">#FFE6E6E6</color>
+    <color name="common_black">#FF000000</color>
+    <color name="common_gray_light">#FFe1e1e1</color>
+    <color name="common_gray_while">#F4F5F7</color>
+    <color name="common_gray_deep">#FFcccccc</color>
+    <color name="common_textcolor_gray">#FF646464</color>
+    <color name="common_gray">#FFdedede</color>
+
+    <color name="common_floating_pre">#FF393939</color>
+    <color name="common_transparent">#00000000</color>
+    <color name="common_translucence_deep">#A0000000</color>
+    <color name="common_translucence">#80000000</color>
+    <color name="common_translucence_light">#40000000</color>
+	    <color name="common_search_bg">#F1F1F1</color>
+    <color name="common_game_info_size">#3c3c3c</color>
+    <color name="common_yellow">#FFAE00</color>
+    <color name="common_blue">#0090ff</color>
+    <color name="common_black_translucence">#b0000000</color>
+</resources>

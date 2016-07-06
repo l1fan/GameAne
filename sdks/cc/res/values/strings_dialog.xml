@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dlg_loading">正在加载中,请稍候&#8230;</string>
+    <string name="dlg_sure">确定</string>
+    <string name="dlg_cancel">取消</string>
+    <string name="dlg_notice">提示</string>
+    <string name="dlg_activity">最新活动</string>
+    
+    <string name="dlg_login">虫虫登录</string>
+    <string name="dlg_enter_game">进入游戏</string>
+    <string name="dlg_goto_regiest">一键注册</string>
+    <string name="dlg_forgot_pwd">忘记密码</string>
+    <string name="dlg_login_notice">将用您的手机发送一条短信进行验证</string>
+    <string name="dlg_login_notice_2">已为您获取到虫虫账号</string>
+    
+    <string name="dlg_login_ing_notice" formatted="false">虫虫用户%s登录中&#8230;</string>
+    <string name="dlg_upload_ing">发布中,请稍候&#8230;</string>
+    <string name="dlg_login_ing_btn">切换账号</string>
+    <string name="dlg_get_security_code">获取验证码</string>
+    <string name="dlg_next_step">下一步</string>
+    <string name="dlg_forgot_pwd_notice">未绑定手机的用户，联系QQ:2802586192</string>
+    <string name="dlg_finish">完成</string>
+    <string name="dlg_get_phone_fail_notice">您可以使用其他手机号进行注册</string>
+    <string name="dlg_get_phone_fail_notice_2">注册即同意</string>
+    <string name="dlg_get_phone_fail_notice_3">《虫虫用户协议》</string>
+    
+    <string name="dlg_already_bind_phone">已绑定手机号:</string>
+    <string name="dlg_bind_phone">绑定手机号</string>
+    <string name="dlg_bindphone_notice">绑定手机号，保障账户安全，同时快速找回密码</string>
+    <string name="dlg_bindphone_code_checked">验证完毕，请绑定新的手机号</string>
+    <string name="dlg_bindphone_check_first">请先验证绑定的手机号，才可绑定新的手机号</string>
+    <string name="dlg_contact_service">若已绑定的手机号无法验证，\n请先联系虫虫客服：2802586192</string>
+    <string name="dlg_input_nick_name">请输入昵称</string>
+    <string name="dlg_edit_nikename">修改昵称</string>
+    <string name="dlg_edit_pwd">修改密码</string>
+    <string name="dlg_chang_recharge_account">更换充值帐号</string>
+    <string name="dlg_chang_recharge_account_notices">虫币将充值到更换后的帐号中（请确保输入的帐号无误）</string>
+    <string name="dlg_update_phone">更换手机号码</string>
+    <string name="text_user_wallet_balance_money">金额</string>
+    
+    <string name="dlg_ccpay_check_notice_1">账户余额</string>
+    <string name="dlg_ccpay_check_notice_2">订单名称</string>
+    <string name="dlg_ccpay_check_notice_3">支付金额</string>
+    
+    <string name="dlg_register_fast">快速注册</string>
+
+
+
+</resources>

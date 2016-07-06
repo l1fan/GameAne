@@ -1,113 +1,165 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="Theme.lion" parent="android:style/Theme.Light">
+    <style name="CCpayTheme" parent="android:Theme.Light">
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@android:color/white</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:textColor">#ff333333</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:screenOrientation">portrait</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
     </style>
 
-    <style name="red_btn_style">
-        <item name="android:background">@drawable/red_btn</item>
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:layout_height">40.0dp</item>
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-
-    <style name="gray_btn_style">
-        <item name="android:background">@drawable/gray_btn</item>
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:layout_height">40.0dp</item>
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-
-    <style name="red_btn_style_white">
-        <item name="android:background">@drawable/red_btn_white</item>
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:textColor">@drawable/btn_textcolor</item>
-    </style>
-
-    <style name="red_btn_style_voucher">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:layout_height">40.0dp</item>
-        <item name="android:textColor">@drawable/btn_textcolor</item>
-    </style>
-
-    <style name="suspersion_dialog" parent="@android:Theme.Dialog">
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowIsTranslucent">true</item>
-    </style>
-
-    <style name="item_loading_progressbar">
-        <item name="android:layout_width">72.5dip</item>
-        <item name="android:layout_height">72.5dip</item>
-    </style>
-
-    <style name="text_black_14sp">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:textColor">#ff333333</item>
-    </style>
-
-    <style name="lion_dialog_transparent" parent="@style/lion_dialog">
-        <item name="android:backgroundDimEnabled">false</item>
-    </style>
-
-    <style name="lion_dialog" parent="@android:Theme.Dialog">
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowIsTranslucent">false</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-    </style>
-
-    <style name="bill_dialog" parent="@android:Theme.Dialog">
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowIsTranslucent">false</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:backgroundDimEnabled">false</item>
-    </style>
-
-    <style name="lion_dialog_anim" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
-        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
-    </style>
-
-    <style name="bill_dialog_anim" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/bill_dialog_enter</item>
-        <item name="@android:windowExitAnimation">@anim/bill_dialog_exit</item>
-    </style>
-
-    <style name="Animation.Toast" parent="@android:style/Animation">
-        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
-        <item name="android:windowExitAnimation">@anim/toast_exit</item>
-    </style>
-
-    <style name="bill_text_style">
-        <item name="android:layout_height">30dp</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:textColor">@drawable/bill_selector_text_color_bg</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:background">@drawable/bill_selector_text_bg</item>
+    <style name="textview_red_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">40.0dip</item>
+        <item name="android:background">@drawable/common_red_frame_round_selector</item>
         <item name="android:gravity">center</item>
-        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/common_white</item>
     </style>
+
+    <style name="style_dlg_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">125.0dip</item>
+        <item name="android:minHeight">40.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="style_dlg_sign" parent="style_dlg_btn">
+        <item name="android:background">@drawable/common_red_round_selector</item>
+        <item name="android:textColor">@color/common_basic_red</item>
+    </style>
+
+    <style name="style_dlg_btn_right" parent="style_dlg_btn">
+        <item name="android:background">@drawable/common_red_frame_round_selector</item>
+        <item name="android:textColor">@color/common_white</item>
+    </style>
+
+    <style name="style_dlg_title">
+        <item name="android:id">@id/dlg_title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/common_dialog_title_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">50.0dip</item>
+        <item name="android:textColor">@color/common_basic_red</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="style_dlg_phone_notice">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginBottom">13.0dip</item>
+    </style>
+
+    <style name="style_ac_mycenter_tvname">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="style_ac_mycenter_llbg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="actionbart_menu_list_item">
+        <item name="android:layout_width">125.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:background">@drawable/common_menu_list_item_selector</item>
+        <item name="android:drawablePadding">7.5dip</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">@drawable/common_textcolor_black_2_red_selector</item>
+    </style>
+
+    <style name="layout_floating_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">50.0dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:textSize">10.0sp</item>
+    </style>
+
+    <style name="fragment_text_tab" parent="regiest_style">
+        <item name="android:drawableBottom">@drawable/common_line_transparent_2_red_selector</item>
+    </style>
+
+    <style name="regiest_style">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/common_transparent_selector</item>
+        <item name="android:textColor">@drawable/common_textcolor_black_2_red_selector</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="textview_red_stroke_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">53.0dip</item>
+        <item name="android:minHeight">23.0dip</item>
+        <item name="android:background">@drawable/common_red_round_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/common_basic_red</item>
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:paddingLeft">7.5dip</item>
+        <item name="android:paddingRight">7.5dip</item>
+    </style>
+
+    <style name="activity_rechargeable_care_btn">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginLeft">15.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/common_btn_red_two_redpre_selector</item>
+    </style>
+
+    <style name="activity_bill_tab_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/common_basic_red</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="activity_expense_choice_type">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/common_expense_choice_selsetor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+    </style>
+
+    <style name="transparent" parent="@style/CCpayTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+　　</style>
 
 </resources>

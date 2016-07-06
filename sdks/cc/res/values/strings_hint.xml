@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hint_account">手机号/邮箱/虫虫账号</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="hint_phone">请输入手机号</string>
+    <string name="hint_security_code">请输入验证码</string>
+    <string name="dlg_input_old_pwd">请输入原密码</string>
+    <string name="dlg_input_new_pwd">请输入新密码</string>
+    <string name="dlg_input_second_pwd">再次填写新密码</string>
+
+    <string name="hint_feedback_content">请描述您遇到的问题或建议（譬如代金券 、论坛 、充值遇到的问题）</string>
+    <string name="hint_feedback_contact">请填写您的联系方式（非必填）</string>
+    <string name="hint_input_post_title">请输入标题</string>
+    <string name="hint_input_post_content">请输入贴子内容</string>
+    
+    <string name="hint_input_card_no">请输入充值卡账号</string>
+    <string name="hint_input_card_pwd">请输入充值卡密码</string>
+    <string name="text_user_balance_to_cc_btn">立即充值</string>
+    <string name="text_intput_card_num">请输入卡号</string>
+    
+    <string name="hint_regiest_account">请输入账号</string>
+</resources>

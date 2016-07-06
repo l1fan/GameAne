@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dlg_margin"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/dlg_ll_two_btn" >
+
+    <TextView
+        android:id="@+id/dlg_close"
+        style="@style/style_dlg_sign"
+        android:text="@string/dlg_cancel" />
+
+    <View
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/dlg_sure"
+        style="@style/style_dlg_btn_right"
+        android:text="@string/dlg_sure" />
+
+</LinearLayout>
