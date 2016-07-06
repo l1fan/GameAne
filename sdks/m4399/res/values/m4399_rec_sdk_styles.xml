@@ -14,6 +14,14 @@
         <item name="android:windowBackground">@drawable/m4399_rec_btn_normal_grey</item>
     </style>
 
+	<style name="m4399PermissionActivityStyle" parent="android:Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowBackground">@null</item>
+		<item name="android:backgroundDimEnabled">false</item>
+		<item name="android:background">@null</item>
+	</style>
+
 	<style name="m4399RecPageStyle">
         <item name="android:orientation">vertical</item>
         <item name="android:background">@drawable/m4399_rec_page_bg</item>

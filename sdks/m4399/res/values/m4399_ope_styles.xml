@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="m4399TransparentStyle" parent="android:Theme.Light">
+    <style name="m4399TransparentStyle" parent="android:Theme.Light.NoTitleBar.Fullscreen">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@color/m4399_ope_transparent</item>

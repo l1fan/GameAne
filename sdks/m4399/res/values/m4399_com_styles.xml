@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
         <style name="m4399BaseDialogStyle" parent="@android:style/Theme.Dialog">
-        <item name="android:windowBackground">@drawable/m4399_com_base_dialog_bg</item>
+        <item name="android:windowBackground">@drawable/m4399_ope_dialog_main_bg</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:background">@null</item>

@@ -25,70 +25,56 @@
         
         <!-- Common permission -->
        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+       <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
        <uses-permission android:name="android.permission.INTERNET" />
        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-       <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
-       <!-- For Dial custom service hotline -->
+       <!-- For Dial 4399 hotline -->
        <uses-permission android:name="android.permission.CALL_PHONE" />
        <!-- SMS pay permission -->
        <uses-permission android:name="android.permission.SEND_SMS" />
-       <uses-permission android:name="android.permission.READ_SMS" />
        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-       <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-       <!-- Alipay permission -->
-       <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
         <!-- YouYiFu permission -->
        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
        <uses-permission android:name="android.permission.RECEIVE_SMS" />
        <uses-permission android:name="android.permission.WRITE_SMS" />
-       
+       <uses-permission android:name="android.permission.READ_SMS" />
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="23" />
 
     <application
         android:allowBackup="true" >
+                
+        <!--6.0系统授权辅助Actiivty-->
+        <activity
+            android:name="cn.m4399.common.permission.AuthActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@style/m4399PermissionActivityStyle" />
 
         <!-- For 4399 recharging SDK. 请不要在此处修改RechargeActivity的方向设置，因为某些2.3的机型启动Activity总是先启动竖屏，然后强制转换成横屏，这会导致潜在问题. -->
         <!-- activity的配置不能少于orientation|screenSize|keyboardHidden，这些配置是为了防止Activity被系统或第三方界面强拉成竖屏时，发生重建而加入的。SDK的Activity支持横屏或竖屏，但不支持横竖屏切换，否则会包初始化问题-->
         <activity
             android:name="cn.m4399.recharge.ui.activity.RechargeActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:launchMode="singleTask"
             android:exported="true"
             android:theme="@style/m4399ActivityTheme" />
         <!-- For 4399 Operation SDK -->
         <activity
             android:name="cn.m4399.operate.ui.activity.LoginActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:launchMode="singleTask"
             android:theme="@style/m4399TransparentStyle" />
         <activity
             android:name="cn.m4399.operate.ui.activity.UserCenterActivity"
             android:hardwareAccelerated="false"
-            android:launchMode="singleTask"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="cn.m4399.operate.ui.activity.CustomWebActivity"
-            android:launchMode="singleTask"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-
-        <service
-            android:name="cn.m4399.recharge.service.smsm.SmsmService"
-            android:enabled="true"
-            android:exported="false"
-            android:process="system" >
-        </service>
-
-        <receiver android:name="cn.m4399.recharge.service.smsm.SmsmStartReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
 
         <!-- 以下为第三方支付SDK Activity&Service配置 -->
         <activity

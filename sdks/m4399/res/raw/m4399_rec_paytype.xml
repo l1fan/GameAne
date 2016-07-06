@@ -80,6 +80,9 @@
         <page title="m4399_rec_duanxincz" />
         <instructiron insLink="m4399_rec_ins_link_sms_yidong" insTitle="m4399_rec_ins_sms_yidong_title" />
     </paytype>
+    <paytype id="126">
+        <page title="m4399_rec_rec_wycz"/>
+    </paytype>
     <paytype id="222">
         <shortname>m4399_rec_yikatong</shortname>
         <page title="m4399_rec_yikatongcz" />

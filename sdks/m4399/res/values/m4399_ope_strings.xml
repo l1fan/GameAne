@@ -102,7 +102,6 @@
     <string name="m4399_ope_stay_msg">享受更多精彩游戏内容</string>
     <string name="m4399_ope_network_error_when_downloading">网络不太对劲，换个试试吧或等下再更新</string>
     <string name="m4399_ope_install_abnormal_apk">糟糕，检查到安装包有错，请您重新尝试</string>
-    
 
     <!-- For pre-pay -->
     <string name="m4399_ope_requesting_recharge">正在生成充值订单</string>
