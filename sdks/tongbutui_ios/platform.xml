@@ -41,6 +41,7 @@ either expressed or implied, of the FreeBSD Project.
         <option>-framework CoreText</option>
         <option>-framework AssetsLibrary</option>
         <option>-framework CoreTelephony</option>
+        <option>-framework CoreMotion</option>
         <option>-lsqlite3</option>
         <option>-framework TBPlatform</option>
         <option>-rpath @executable_path/Frameworks</option>

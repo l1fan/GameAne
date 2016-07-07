@@ -140,6 +140,7 @@
               <true/>
             </dict>
 
+            <!-- 修改name为自己的包名，修改schemes为包名-tb -->
             <key>CFBundleURLTypes</key>
             <array>
               <dict>
@@ -151,6 +152,11 @@
                   <string>com.tongbu.demo</string>
               </dict>
           </array>
+          
+           <!-- 初始化参数, 如果使用代码传递参数, 优先取代码中传递的参数 -->
+          <key>appId</key>
+          <string>100000</string>
+          
         ]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
