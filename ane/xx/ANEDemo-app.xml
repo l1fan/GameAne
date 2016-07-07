@@ -113,14 +113,16 @@
                 <dict>
                     <key>CFBundleURLSchemes</key>
                     <array>
-                        <string>cDemo.GPGameSDK-SDKDemo.guopan</string>
+                        <string></string>
                     </array>
+                    <!-- 修改string属性值为包名，包名须以.guopan结尾 -->
                     <key>CFBundleURLName</key>
                     <string>Demo.GPGameSDK-SDKDemo.guopan</string>
                 </dict>
             </array>
             <key>LSApplicationQueriesSchemes</key>
             <array>
+                <string>XXAppstore</string>
                 <string>cydia</string>
                 <string>xxassistant</string>
                 <string>xxassistantsdk</string>
@@ -136,6 +138,21 @@
             <key>CFBundleAllowMixedLocalizations</key>
             <true/>
             
+            <!-- 初始化参数 appId,appKey分别指从平台获取的appid和secretKey  如果使用代码传递参数，优先取代码中传递的参数 -->
+            <key>appId</key>
+            <string>101101</string>
+            <key>appKey</key>
+            <string>GuopanSDK8^(Llad</string>
+            
+            <!--
+                打包ipa时可能会遇到编译链接(duplicate symbol)错误，将{flex sdk}/lib/aot/bin/ld64/ld64替换为系统的ld命令(*nix)。
+
+                1. 重命名ld64文件，作为备份。
+                2. 执行以下命令，将系统ld命令链接为新的ld64。
+                      ln -s /usr/bin/ld {flex sdk}/lib/aot/bin/ld64/ld64
+                3. 重新打包ipa
+                4. 恢复旧的ld64文件
+            -->
 
         ]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>

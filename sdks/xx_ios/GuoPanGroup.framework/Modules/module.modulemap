@@ -1,0 +1,6 @@
+framework module GuoPanGroup {
+  umbrella header "GuoPanGroup.h"
+
+  export *
+  module * { export * }
+}

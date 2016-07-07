@@ -41,10 +41,15 @@ either expressed or implied, of the FreeBSD Project.
         <option>-framework CFNetwork</option>
         <option>-framework AdSupport</option>
         <option>-framework CoreTelephony</option>
+        <option>-framework CoreMotion</option>
         <option>-rpath @executable_path/Frameworks</option>
     </linkerOptions>
     <packagedDependencies>
         <packagedDependency>AlipaySDK.framework</packagedDependency>
+        <packagedDependency>GuoPanGroup.framework</packagedDependency>
+        <packagedDependency>IOKit.framework</packagedDependency>
+        <packagedDependency>IOMobileFramebuffer.framework</packagedDependency>
+        <packagedDependency>IOSurface.framework</packagedDependency>
         <packagedDependency>libGPGameSDK.a</packagedDependency>
         <packagedDependency>libcrypto.a</packagedDependency>
         <packagedDependency>libprotobuf_64.a</packagedDependency>
