@@ -40,6 +40,7 @@
             <key>CFBundleURLTypes</key>
             <array>
                 <dict>
+                    <!-- 修改值LDPAY-包名中的包名为自己的 -->
                     <key>CFBundleURLSchemes</key>
                     <array>
                         <string>LDPAY-l8.payDemo</string>
@@ -61,6 +62,10 @@
                 <string>cydia</string>
                 <string>wechat</string>
             </array>
+            
+            <!-- 配置应用ID，优先取代码中传递的参数 -->
+            <key>appId</key>
+            <string>7c814d6a23bf3ae0e1c2a976cbd781b7</string>
 
         ]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>

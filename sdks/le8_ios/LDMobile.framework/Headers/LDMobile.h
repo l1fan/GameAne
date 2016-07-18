@@ -3,7 +3,7 @@
 //
 //  Created by LD on 15-08-03.
 //  Copyright (c) 2015年 L8. All rights reserved.
-//  Ver 1.0.6
+//  Ver 1.1.0
 
 
 #ifndef LDMobileSDK_LDMobileSDK_h
@@ -39,7 +39,7 @@ typedef enum {
 @property (nonatomic, copy) NSString *orderName;				/* 订单标题/商品名称，不超过255个字符，不可为空 */
 @property (nonatomic, copy) NSString *body;                     /* 游戏名/商品详情，不超过400字符，不可为空 */
 @property (nonatomic, copy) NSString *userParam;                /* 开发者自定义参数，不超过255个字符，可为空，服务器异步通知时会原样回传 */
-@property double price;                                         /* 商品价格，单位：元 需>0 double类型*/
+@property double price;                                         /* 商品价格，单位：元 需>=0.01 double类型*/
 @end
 
 #pragma mark - 登陆等回调方法 *************************************************************
@@ -73,7 +73,7 @@ typedef enum {
  *  @param hasNewVersion    有新版为YES
  *  @param isMustUpdate     强更为YES
  *
- *  @note  sdk会自动提示，开发者不用做任何操作
+ *  @note  sdk会自动提示，开发者收到回调后不用做任何操作，此回调仅作告知作用
  */
 - (void)LDMobileCheckNewVersion:(BOOL)hasNewVersion mustUpdate:(BOOL)isMustUpdate;
 

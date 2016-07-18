@@ -3,7 +3,7 @@
 //
 //  Created by LD on 15-08-03.
 //  Copyright (c) 2015年 L8. All rights reserved.
-//  Ver:1.0.6
+//  Ver:1.1.0
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
