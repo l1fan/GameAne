@@ -40,6 +40,7 @@
             <key>CFBundleURLTypes</key>
             <array>
                 <dict>
+                    <!-- 修改为自己的包名.alipay -->
                     <key>CFBundleURLSchemes</key>
                     <array>
                         <string>com.xy.sdk.demo.alipay</string>
@@ -65,6 +66,11 @@
             <key>CFBundleAllowMixedLocalizations</key>
             <true/>
             
+            <!-- 配置应用ID和key,优先取代码中传递的参数 -->
+            <key>appId</key>
+            <string>100009</string>
+            <key>appKey</key>
+            <string>cZZqE43VLVjUC7YxpnBpnwrZ1NMyfuW6</string>
 
         ]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>

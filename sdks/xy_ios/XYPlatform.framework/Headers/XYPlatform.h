@@ -4,7 +4,7 @@
 //
 //  Created by Eason on 21/04/2014.
 //  Copyright (c) 2014 www.xyzs.com. All rights reserved.
-//  XY SDK v2.0.0 iPhoneOS
+//  XY SDK v2.4.0 iPhoneOS
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -291,14 +291,14 @@ isContinueWhenCheckUpdateFailed:(BOOL)isAccept;
 - (void) XYEnterUserCenter:(int) uFlag;
 
 
-/**
- * @brief 进入论坛BBS
- *
- * @param bFlag 预留标识 传0
- *
- */
-
-- (void) XYEnterAppBBS:(int) bFlag;
+///**
+// * @brief 进入论坛BBS
+// *
+// * @param bFlag 预留标识 传0
+// *
+// */
+//
+//- (void) XYEnterAppBBS:(int) bFlag;
 
 
 /**
@@ -327,8 +327,15 @@ isContinueWhenCheckUpdateFailed:(BOOL)isAccept;
  */
 - (void) XYEnterIntegralmall:(int) iFlag;
 
-@end
+/**
+ * @brief 进入游戏攻略
+ *
+ * @param iFlag 预留标识 传0
+ *
+ */
+- (void) XYEnterStrategy:(int) sFlag;
 
+@end
 
 #pragma mark-- 悬浮工具条
 
