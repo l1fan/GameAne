@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="button_hight">30dp</dimen>
+    <dimen name="button_horizontal_margin">50dp</dimen>
+    <dimen name="textview_hight">40dp</dimen>
+    <dimen name="button_padding">5dp</dimen>
+    <dimen name="imageview_margintop">15dp</dimen>
+    <dimen name="layout_margin_leftandright">35dp</dimen>
+    <dimen name="layout_imagematgin_leftandright">9.5dp</dimen>
+    <dimen name="layout_view_width">1dp</dimen>
+    <dimen name="layout_view_hight">20dp</dimen>
+    <dimen name="edittext_paddingleft">6dp</dimen>
+    <dimen name="layout_button_marginright">10dp</dimen>
+    <dimen name="edittext_padding">8dp</dimen>
+
+    <dimen name="button_textsize">13sp</dimen>
+    <dimen name="button_regist_textsize">16sp</dimen>
+    <dimen name="textview_textsize">20sp</dimen>
+	<!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="layout_width">450dp</dimen>
+    <dimen name="layout_hight">300dp</dimen>
+    <dimen name="item_layout_hight">50dp</dimen>
+    <dimen name="item_layout_hight1">70dp</dimen>
+    <dimen name="layout_margin">30dp</dimen>
+    <dimen name="layout_width1">40dp</dimen>
+    <dimen name="layout_hight1">35dp</dimen>
+    <dimen name="layout_marginTop">10dp</dimen>
+    <dimen name="layout_marginLeft">15dp</dimen>
+    <dimen name="layout_marginBottom">5dp</dimen>
+    <dimen name="layout_hight_view">2dp</dimen>
+    <dimen name="layout_margin_right">20dp</dimen>
+    <dimen name="layout_width_facebook">150dp</dimen>
+    <dimen name="dialog_view_hight">100dp</dimen>
+
+    <dimen name="textSize_title">25sp</dimen>
+    <dimen name="textBtn">20sp</dimen>
+    <dimen name="textForget">15sp</dimen>
+    <dimen name="textForgets">11sp</dimen>
+</resources>

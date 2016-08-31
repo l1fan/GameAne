@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/layout_hight"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bindlogin_linear"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_layout_hight"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/bindlogin_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/layout_margin"
+                    android:layout_marginLeft="@dimen/layout_marginBottom"
+                    android:layout_weight="1"
+                    android:src="@drawable/facebook_logo" />
+
+                <TextView
+                    android:id="@+id/bindlogin_account"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textBtn"/>
+
+                <ImageView
+                    android:id="@+id/bindlogin_dowm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/layout_margin"
+                    android:layout_marginRight="@dimen/layout_marginBottom"
+                    android:layout_weight="1"
+                    android:src="@drawable/down" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bindlogin_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_layout_hight"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_marginLeft"
+                android:background="@drawable/btn_bg2"
+                android:text="@string/login"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textBtn" />
+
+            <Button
+                android:id="@+id/bindlogin_btn_bind"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_layout_hight"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_marginLeft"
+                android:background="@drawable/btn_bg1"
+                android:text="@string/bind"
+                android:gravity="center"
+                android:textColor="@color/button"
+                android:textSize="@dimen/textBtn" />
+
+            <Button
+                android:id="@+id/bindlogin_btn_facebook"
+                android:layout_width="@dimen/layout_width_facebook"
+                android:layout_height="@dimen/item_layout_hight"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_marginLeft"
+                android:background="@drawable/facebook_btn" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

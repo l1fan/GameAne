@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="line">#E8E9E5</color>
+    <color name="background">#F3F3F3</color>
+    <color name="button">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textColor">#F21414</color>
+    <color name="transparent">#0000</color>
+    <color name="green">#7AB700</color>
+    <array name="textHintColor">#F0F0F0</array>
+
+    <!-- 自定义Loding_Dialog_Start -->
+    <color name="bocop_dialog_bg">#77000000</color>
+    <!-- 自定义Loding_Dialog_End -->
+</resources>
