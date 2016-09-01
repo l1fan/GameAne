@@ -1,15 +1,27 @@
 package com.l1fan.ane.ht;
 
+import java.util.ArrayList;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.xutils.common.Callback.CancelledException;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.facebook.FacebookException;
 import com.facebook.share.Sharer;
 import com.facebook.share.widget.GameRequestDialog;
 import com.facebook.share.widget.GameRequestDialog.Result;
+import com.google.gson.Gson;
 import com.ht.htloginsdk.bean.LoginBean;
+import com.ht.htloginsdk.googlepayutils.BillingBroadcastReceiver.IabBroadcastListener;
+import com.ht.htloginsdk.googlepayutils.GooglePay;
+import com.ht.htloginsdk.googlepayutils.GooglePay.InitQueryHandler;
+import com.ht.htloginsdk.googlepayutils.GooglePay.ProductListHandler;
+import com.ht.htloginsdk.googlepayutils.IabResult;
+import com.ht.htloginsdk.googlepayutils.ProductListBean;
 import com.ht.htloginsdk.utils.HTSdk;
 import com.ht.htloginsdk.utils.HeTuCallback;
 import com.ht.htloginsdk.utils.HtFacebookInviteCallback;
@@ -18,12 +30,21 @@ import com.ht.htloginsdk.utils.HtLoginManager;
 import com.ht.htloginsdk.utils.LoginUtils;
 import com.l1fan.ane.SDKContext;
 
-public class SDK extends SDKContext {
+public class SDK extends SDKContext implements IabBroadcastListener {
+
+	static String mAppId;
+	static String mCooServer;
+	static String mCooUid;
+	static String mChannel;
+	static SDKContext context;
 
 	public void init() throws JSONException {
+		context = this;
 		JSONObject json = getJsonData();
 		Bundle md = getMetaData();
-		HTSdk.sdkInitialize(getActivity(), json.optString(APPID, md.getString(APPID,"")), json.optString("channel",md.getString("channel","")));
+		mAppId = json.optString(APPID, md.getString(APPID,""));
+		mChannel = json.optString("channel",md.getString("channel",""));
+		HTSdk.sdkInitialize(getActivity(), mAppId, mChannel);
 		HtLoginManager.getInstance().setLoginListener(new HeTuCallback<LoginBean>() {
 			
 			@Override
@@ -76,7 +97,44 @@ public class SDK extends SDKContext {
 			}
 		});
 		
-		dispatchData(EVENT_INIT);
+        GooglePay.init(getActivity(),this, new InitQueryHandler() {
+			
+			@Override
+			public void onIabSetupFinished(IabResult result) {
+				if (result.isSuccess()) {
+					dispatchData(EVENT_INIT);
+				}else{
+					dispatchError(EVENT_INIT, result.getMessage());
+				}
+			}
+		});
+		
+	}
+	
+	public void productList(){
+		GooglePay.productList(mAppId, getActivity().getPackageName(), mChannel, mCooServer, new ProductListHandler() {
+
+			@Override
+			public void onSuccess(ArrayList<ProductListBean> data) {
+				String list = new Gson().toJson(data);
+				dispatchData("HT_PLIST", list);	
+			}
+
+			@Override
+			public void onError(Throwable paramThrowable, boolean paramBoolean) {
+				dispatchError("HT_PLIST", paramThrowable.getMessage());
+			}
+			
+			@Override
+			public void onFinished() {
+				
+			}
+
+			@Override
+			public void onCancelled(CancelledException arg0) {
+				
+			}
+		});
 	}
 	
 	public void userLogin(){
@@ -99,7 +157,17 @@ public class SDK extends SDKContext {
 		LoginUtils.doShare(getActivity(), captionStr, desStr, linkString, pictureString);
 	}
 	
-	public void pay(){
+	public void pay() throws JSONException{
+
+		Activity entryActivity = getActivity();
+		Intent intent = new Intent(entryActivity,GPActivity.class);
+		intent.putExtra("payData", getData());
+		intent.putExtra("appId", mAppId);
+		intent.putExtra("cooServer", mCooServer);
+		entryActivity.startActivity(intent);
+	}
+	
+	public void pay3rd(){
 		LoginUtils.startTopUp(getActivity());
 	}
 	
@@ -112,6 +180,20 @@ public class SDK extends SDKContext {
 		String version = json.optString("version");
 		String coo_server = json.optString("coo_server");
 		String coo_uid = json.optString("coo_uid");
+		mCooServer = coo_server;
+		mCooUid = coo_uid;
 		LoginUtils.bindStatistics(getActivity(), type, version, coo_server, coo_uid);
+	}
+	
+	@Override
+	public void dispose() {
+		super.dispose();
+		GooglePay.onDestroy(getActivity());
+	}
+
+	@Override
+	public void receivedBroadcast() {
+		// TODO Auto-generated method stub
+		
 	}
 }

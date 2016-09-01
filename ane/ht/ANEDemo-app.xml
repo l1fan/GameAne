@@ -90,7 +90,7 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="8487000" />
-        <!-- 设置fb appid，修改请到ane中的sdks/ht/res/value/string.xml中修改，再重新打包ane -->
+        <!-- 设置fb appid，修改请到ane中的sdks/ht/res/value/string.xml中修改，再打包ane -->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -112,6 +112,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/Transparent" >
         </activity>
+        <activity
+            android:name="com.l1fan.ane.ht.GPActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
         
         <!-- 配置appId, 如果在代码中也传递了参数，优先取代码中参数 init start-->
         <meta-data android:name="appId" android:value="" />
@@ -119,7 +125,7 @@
         <meta-data android:name="channel" android:value="" />
 
         <!-- 
-        1. 统计接口需在登录成功后，创建完角色时调用
+        1. 统计接口需在登录成功后，创建或登录角色时调用，否则会影响支付操作
               var o:Object = new Object();
               o.type = "reg";     // log/reg分别指已创建和未创建角色
               o.version = "";     // 版本  ？  
